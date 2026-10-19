@@ -937,7 +937,7 @@ dsh plugin --profile web add dshmarket
 - [spidu-lee/dsh-refresh](https://github.com/spidu-lee/dsh-refresh) — 让 F5、Ctrl+F5 和 Ctrl+Shift+R 都能刷新 DeepSeek Harness 页面。
 - [SpookySandwich/dsh-plugin-smooth-stream](https://github.com/SpookySandwich/dsh-plugin-smooth-stream) — 给 DeepSeek Harness 加入更好的流式文字动画。
 - [sqfcyily/dsh-workspace-files](https://github.com/sqfcyily/dsh-workspace-files) — 在DeepSeek Harness Web GUI 中浏览工作区的目录/文件，并结合 Git 显示文件改动。
-- [StarsHarryZhu/dsh-intelligent-UI](https://github.com/StarsHarryZhu/dsh-intelligent-UI) — 渐进式交互：回复里的可交互卡片，由 27 个固定组件搭成（滑块、输入框、表格、图表、函数图像、公式排版、答题按钮、动画播放器）。调节控件在浏览器内重算、不再调用模型，模型不写任何 HTML 或 JavaScript；内置微积分引擎（定积分、导数、极限、求和、求根、泰勒多项式）和一个教模型用法的技能。需要 DeepSeek Harness >= 0.2.1-alpha.1
+- [StarsHarryZhu/dsh-intelligent-UI](https://github.com/StarsHarryZhu/dsh-intelligent-UI) — 渐进式交互：回复里的可交互卡片，由 31 个固定组件搭成（滑块、输入框、可排序表格、图表、函数图像、公式排版、分页、勾选清单、流程图、答题按钮、动画播放器）。调节控件在浏览器内重算，不再调用模型；模型不写任何 HTML 或 JavaScript。内置微积分引擎（定积分、导数、极限、求和、求根、泰勒多项式）和一个教模型何时用卡片的技能。
 - [stephenlzc/dsh-swarm-panel#dsh-swarm-plugin](https://github.com/stephenlzc/dsh-swarm-panel/tree/main/dsh-swarm-plugin) — DeepSeek Harness swarm 的 Conversation Flow 可观测性，支持查看拓扑、检查路由消息、HITL 暂停、Live 跟随和子会话导航。
 - [Storm-Starlight/dsh-mcp-skills-board](https://github.com/Storm-Starlight/dsh-mcp-skills-board) — DeepSeek Harness 的 MCP 服务器与技能管理面板：侧栏面板加插件页配置区，支持搜索、状态灯、逐行开关、详情，以及按 Codex mcp_servers 字段设计的添加服务器表单。
 - [studyzy/dsh-suggest-prompt](https://github.com/studyzy/dsh-suggest-prompt) — 每次完成的 agent 回合后，一次有界的辅助 LLM 调用把一条建议的下一句 prompt 写入会话日志；Web 输入框将其渲染为幽灵占位文字，按 Tab 采纳。
@@ -2122,6 +2122,7 @@ dsh plugin --profile web add dshmarket
 - [m-rui001/dsh-mate-companion](https://github.com/m-rui001/dsh-mate-companion) — 有生物钟、会真实睡觉、有自己的记忆和情绪的 AI 伴侣，主动冲动以独立 turn 投递。
 - [MacilyDots/dsh-prompt-inject](https://github.com/MacilyDots/dsh-prompt-inject) — 注册一个可配置的 prompt 变量，让使用 complete: true 人格的 agent 预设也能收到一段注入文本；插件本身不含内容，文本由配置提供。
 - [MengYuil/dsh-ponytail](https://github.com/MengYuil/dsh-ponytail) — ponytail 移植：常驻的「懒惰资深开发者」编码人设，带强度档位与 review、audit、debt、gain、help 技能，适用于 DeepSeek Harness。
+- [minutiae3/dsh-thinking-zh](https://github.com/minutiae3/dsh-thinking-zh) — 让模型的内部思考（reasoning）使用简体中文书写。
 - [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
 - [MycatQieZi/dsh-persona-shaoxin](https://github.com/MycatQieZi/dsh-persona-shaoxin) — 把写在 Markdown 里的人设挂载成系统提示词段落：改 `~/.dsh/persona/*.md` 即可改变回答风格，保存后 150 毫秒自动重载而无需重启，项目级 `.dsh/persona/` 下的同名文件覆盖全局配置。
 - [pbwheel/dsh-workbuddy-expert](https://github.com/pbwheel/dsh-workbuddy-expert) — 把 WorkBuddy 桌面端召唤落盘的本地专家带进 DSH：设置页市场只读扫描本地专家目录，卡片浏览/搜索/分类，一键安装（导出到 ~/.dsh/experts/，含角色描述、skills 与头像）、更新与卸载；输入框旁的专家胶囊为当前会话切换专家——整组替换角色描述与 skills（可选工具白名单），保留全部会话历史，在下一个模型请求边界生效。
@@ -4490,6 +4491,7 @@ dsh plugin --profile web add dshmarket
 - [haochi72/dsh-auto-continue-429](https://github.com/haochi72/dsh-auto-continue-429) — 遇到 RATE_LIMIT（429）或配额耗尽（insufficient_quota）错误时自动发送 continue 恢复对话。每会话独立计数连续失败次数（默认 20，可设 1-100），带工具栏开关条与设置页配置卡片。
 - [hasan-aghayev/dsh-task-orchestrator](https://github.com/hasan-aghayev/dsh-task-orchestrator) — 自动编排复杂的 DeepSeek Harness 请求：判断任务是否适合委派，创建考虑依赖关系的计划，分配受数量限制的 researcher、architect、backend、frontend、tester 和 documentation worker，收集结构化证据，并将结果交给最终 reviewer。该 bundle 会一起启用工作流引擎和面向模型的 subagent 工具；关闭插件时也会同时关闭完整的工具组。
 - [hawk2048/oh-my-dsh](https://github.com/hawk2048/oh-my-dsh) — OMC 风格的多智能体编排层：29 个 omd-* skill + 12 条 /omd-* 命令，覆盖 plan-execute-review-verify 流水线与 team/autopilot/ralph 等模式。
+- [HeliosTangDev/dsh-ops-conventions](https://github.com/HeliosTangDev/dsh-ops-conventions) — 每会话每版本注入一条极短的「操作约定」门铃（入口清单绝对路径 + 版本号）；约定版本一改，下一轮就重新注入（闲聊轮也算）。可选硬拦截：操作类轮次里未读索引前，拒绝 write/edit 等写类工具（闲聊轮与 shell 默认不拦）。清单可随包自带，也可指向自己的目录；零依赖、路径可配置。用于解决「约定记了但干活时不提就不用」。
 - [helllo-shijie/motor-hospital-plugins#motor-repair-flow](https://github.com/helllo-shijie/motor-hospital-plugins/tree/main/plugins/motor-repair-flow) — 按诊断结论与电机功率编排标准化维修工序，每步含工时、人员与质检点。
 - [Hercules-debug/dsh-flock](https://github.com/Hercules-debug/dsh-flock) — 无编排者的自组织多智能体集群。真实 DSH 子智能体通过共享的只追加日志协调，由各智能体自行决定读写时机，无拓扑、每个智能体只派发一次；另附快照模式，由调度层把邻居视图冻结进提示词并驱动环形/网状/群集收敛。
 - [heyadhithya/fullstack-expert](https://github.com/heyadhithya/fullstack-expert) — 以证据驱动的全栈工程工作流：先勘察后规划、要求显式验证证据、敏感操作走审批门控。
@@ -5355,6 +5357,7 @@ dsh plugin --profile web add dshmarket
 - [MichengAI/dsh-skills-manager](https://github.com/MichengAI/dsh-skills-manager) — 在设置里管理本地 DSH 技能，并只读查看公共 Agent 技能。
 - [minivv/dsh-agent-skills](https://github.com/minivv/dsh-agent-skills) — 在 DSH 设置面板中浏览、启用、停用和管理来自 Claude Code、Codex、OpenCode、Gemini 及自定义目录的 Agent Skills。
 - [MiraculousGarfield/dsh-ops-health](https://github.com/MiraculousGarfield/dsh-ops-health) — 一键健康检查：侧边栏按钮经纯 HTTP 路由（独立于工具注册表）调用 check-health.ps1 并渲染结构化报告卡片；配色跟随当前主题，Windows/PowerShell。
+- [MjxUpUp/Forge#forge-dsh](https://github.com/MjxUpUp/Forge/tree/main/plugins/forge-dsh) — 为 DeepSeek Harness 提供 Forge 质量门禁：任务门禁、改前必读、危险命令拦截与质量评分，经 DSH 类型化拦截点由本地 forge CLI 执行。需本机安装 forge CLI，缺失时插件 fail-open 并在会话开始时尽力提示；任务门禁还要求项目已执行 forge init。
 - [mkiea/dsh-forge](https://github.com/mkiea/dsh-forge) — DeepSeek Harness 插件组合分析工具：依赖树、冲突检测、风险评估（含预测）、可视化与组合模拟。
 - [Monter-code/dsh-live-reload](https://github.com/Monter-code/dsh-live-reload) — DSH 插件免重启热重载：清模块缓存、按 junction 路径匹配、失败时带版本号重新导入， 并在会话标题栏注册一颗刷新按钮，让页面立刻加载新的插件 bundle。
 - [moon16u/dsh-pouch#dsh-plugin-restart](https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-plugin-restart) — 安全的分离式 DSH 重启：/restart 与 /dsh-restart 斜杠命令（原生候选样式）加 dsh_restart Agent 工具；分离的 worker 在 3 秒后重启 DSH，会话不冻结。
