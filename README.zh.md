@@ -4373,6 +4373,7 @@ dsh plugin --profile web add dshmarket
 - [WODE25500/dsh-token-headroom](https://github.com/WODE25500/dsh-token-headroom) — DeepSeek Harness 的上下文压缩/headroom——压缩在线上下文让 prompt 保持小，又不丢关键状态(layer 3)。
 - [WODE25500/dsh-token-rtk](https://github.com/WODE25500/dsh-token-rtk) — DeepSeek Harness 的输入冗余剪枝——送进模型前剪掉重复/冗余 token(layer ②)。
 - [WODE25500/dsh-token-skills](https://github.com/WODE25500/dsh-token-skills) — 四层省 Token，不牺牲模型智能：handoff、rtk、headroom、caveman 四个省 token 的 skill，每个也是独立可装插件。
+- [woshipixiu1234/dsh-invest-bundle](https://github.com/woshipixiu1234/dsh-invest-bundle) — 投研插件：10 个工具（检索、正文抓取、来源审计、断言核验、数值严谨、通道体检、workflow 装载、图表引擎、PDF 渲染、PDF 准出），外加 23 个改造自 ai-berkshire 的技能。六阶段 workflow 让段永平/巴菲特/芒格/李录四个 Agent 并行研究、交叉质证，最终产出带封面、表格、图注与页码的图文 PDF。需 Python 3.10+；图表与 PDF 工具还需 python-docx 与 matplotlib。
 - [wyzh0117/dsh-skill-select](https://github.com/wyzh0117/dsh-skill-select) — 侧边栏技能选择器：列出已安装技能并标注 Global 与所属 repo，支持本会话勾选与常驻默认启动、可选 Guard、Codex/Grok/Hermes 用户技能，以及 /skill 注入。
 - [xi-kari/dsh-amphoreus](https://github.com/xi-kari/dsh-amphoreus) — 把 δ-me13（翁法罗斯）的 13 张黄金裔角色技能卡变成席位工作区：逐席配色与壁纸、首轮自动注入技能卡、对话表情、每席记忆便签与预设、Alt+数字切席，以及用于派发与移交的总览画布；技能套件本身从可配置的本地目录读取，不随插件打包。
 - [xiaxi626/dsh-skills-nexus](https://github.com/xiaxi626/dsh-skills-nexus) — 通用 skill 适配器，将含 SKILL.md 的 GitHub 仓库克隆并 symlink 到官方 skills 根目录，注册为 DSH skill。
