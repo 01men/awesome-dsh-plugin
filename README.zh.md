@@ -2748,6 +2748,7 @@ dsh plugin --profile web add dshmarket
 - [Missher12/dsh-missher-brain](https://github.com/Missher12/dsh-missher-brain) — 协调兼容的记忆与学习提供方进行有界项目召回，提供共享设置和提供方生命周期管理。
 - [Missher12/dsh-missher-memory](https://github.com/Missher12/dsh-missher-memory) — 按项目隔离的本地记忆，支持审核后检索、来源追溯、可回滚整理与通用 Cordis 服务；Harness 适配提供搜索和设置页，可选接入 Brain。
 - [Missher12/Missher-MSE-Learning](https://github.com/Missher12/Missher-MSE-Learning) — 为 DSH 持久保存分作用域的用户纠错与方法候选，提供限额召回和可跨重启恢复的完成结算。
+- [moondrop12138/dsh-zcode-workspace-memory](https://github.com/moondrop12138/dsh-zcode-workspace-memory) — 把 ZCode 的工作区记忆移植到 DeepSeek Harness：每个工作区一份 Markdown 记忆目录（MEMORY.md 索引 + 一事实一文件），主会话开始时注入，每轮成功对话后由后台提取请求补充；左栏页面只读浏览已存文件。
 - [MoonlitDropOfBlood/dsh-memory-manager](https://github.com/MoonlitDropOfBlood/dsh-memory-manager) — ZCode 风格持久化项目记忆：设置内完整管理页、索引式注入与 agent 记忆工具。
 - [moononnn/DeepSeek-Harness-Hanako-Memory](https://github.com/moononnn/DeepSeek-Harness-Hanako-Memory) — Hana 式助手管理：可视化配置助手预设（卡片、四性格「元」、头像裁剪），并完整复刻 Hana 记忆系统（滚动摘要、分层编译、SQLite 事实库、深度记忆）。
 - [NattoCB/dsh-plugin-memory](https://github.com/NattoCB/dsh-plugin-memory) — 五层持久记忆系统：相关性注入、LLM 自动提取、画像轮替与六个 agent 工具。
