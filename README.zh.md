@@ -174,6 +174,7 @@ dsh plugin --profile web add dshmarket
 - [Aisland-SJL/dsh-worktable#01_content](https://github.com/Aisland-SJL/dsh-worktable/tree/main/01_content) — DeepSeek Harness 的工作台插件：收集自建项目与挂载的插件条目，支持改名、图标、排序、显示隐藏、项目与会话绑定和项目文件柜；内置自研分栏工作区引擎，窗格可拖拽分割、标签页管理，带资源管理器、终端、浏览器、动画与自定义窗口；项目内 agent 写完 widget-result.json 后，产物会自动挂载进对应窗口。
 - [AK-blank/dsh-plugin-offpeak-badge](https://github.com/AK-blank/dsh-plugin-offpeak-badge) — 在侧边栏品牌位显示 DeepSeek API 当前按空闲还是高峰时段计费，内置中国法定节假日与调休日历，中英双语。
 - [AKIRACOD/dsh-drag-and-drop](https://github.com/AKIRACOD/dsh-drag-and-drop) — 拖放 fork：文档以可删除「文件芯片」挂在输入框上方，不打字也能发送。
+- [aklnaaw/dsh-xiaoke-widget](https://github.com/aklnaaw/dsh-xiaoke-widget) — 右下角的 Claude 拟人桌宠「小克」：显示余额、今日已用、峰谷定价与每轮消耗，泡泡内容可编辑（文本、余额、今日、峰谷、图片、随机语句与并列加权选择），支持逐行样式与字体、悬浮快捷编辑、音效与自定义角色/音效；内置会呼吸、会眨眼的动态角色，余额低于预警线时切换成哭脸，动图分 256/384 两档，并可在资源管理里安装 512 高清包；台词 63 条。二创自 MeteorNOX/DeepSeek-Balance-Whale-Widget（MIT）。
 - [AKS1st/dock](https://github.com/AKS1st/dock) — DSH Web 工作台基座插件：提供 VSCode 风格布局外壳（活动栏/侧边栏/编辑器区/面板/状态栏）和 ctx.workbench 开放注册表，供功能插件挂载面板、视图与命令。
 - [AKS1st/dock-editor](https://github.com/AKS1st/dock-editor) — dock 系列文本查看与编辑器：支持撤销重做、Ctrl+S 保存、未保存确认和二进制检测，作为 dock-files 的默认文本查看器。
 - [AKS1st/dock-files](https://github.com/AKS1st/dock-files) — dock 系列文件浏览插件：侧边栏目录树浏览会话工作区，支持新建/重命名/复制粘贴/删除、拖放导入、粘贴本地文件与剪贴板图片。
@@ -1100,6 +1101,7 @@ dsh plugin --profile web add dshmarket
 - [xinspark/dsh-better-session-title](https://github.com/xinspark/dsh-better-session-title) — 把会话顶栏标题换成工作区与会话面包屑，可在顶栏下拉里切换工作区、会话与子智能体。
 - [Xinyuan-Gao/xy-dsh#xy-dsh-lamp](https://github.com/Xinyuan-Gao/xy-dsh/tree/main/xy-dsh-lamp) — macOS 系统级置顶灯板：每个 Agent 一盏灯、一个会话一行，收起时一个任务一盏灯；有审批或提问等你处理时该灯转蓝闪烁，根 Agent 结束时发系统通知。
 - [Xinyuan-Gao/xy-dsh#xy-dsh-question-nav](https://github.com/Xinyuan-Gao/xy-dsh/tree/main/xy-dsh-question-nav) — 在输入框上方常驻当前提问，另有按时间排列的历次提问下拉，点任意一条把对话视图回退到那一轮；被折进「过程」分组的提问会先自动展开，Esc、滚动或点击面板外即收起。
+- [xixingyingmie/dsh-gpt-niang-widget](https://github.com/xixingyingmie/dsh-gpt-niang-widget) — 右下角的 GPT / ChatGPT 拟人桌宠「GPT娘」：显示余额、今日已用、峰谷定价与每轮消耗，泡泡内容可编辑（文本、余额、今日、峰谷、图片、随机语句与并列加权选择），支持逐行样式与字体、悬浮快捷编辑、音效、自定义角色图/动图/音效与吸附翻转，台词 54 条、分五组；路由、bundle id 与数据文件均与其它桌宠隔离，可与小鲸鱼、小克同时运行。二创自 MeteorNOX/DeepSeek-Balance-Whale-Widget（MIT）。
 - [xiyuepcl/dsh-approval-translator](https://github.com/xiyuepcl/dsh-approval-translator) — DSH审批汉化 — 审批弹窗在渲染前自动翻译成中文：DeepSeek 驱动、宿主侧完成，React 重渲染也无法还原。
 - [xkjxziochu/dsh-input-optimizer](https://github.com/xkjxziochu/dsh-input-optimizer) — 把 DSH 输入框里的草稿通过 harness 自身的 LLM 路由改写成更清晰、更可执行的提示词，采纳前先显示原文与优化后的对比。
 - [xlennart/dsh-goal-mode-enhance](https://github.com/xlennart/dsh-goal-mode-enhance) — 为 DSH Web 界面提供可视化的会话目标生命周期：composer 上方的目标栏支持创建、多行编辑、暂停、恢复、完成与清除并实时显示轮次进度，工具行入口带阶段色点，设置页提供目标总览。
