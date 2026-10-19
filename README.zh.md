@@ -345,6 +345,7 @@ dsh plugin --profile web add dshmarket
 - [deepseekbluefish/dsh-screenshot-plugin](https://github.com/deepseekbluefish/dsh-screenshot-plugin) — 微信式界面内截屏按钮：拖动框选、8 个手柄微调，Enter 确认截取、Esc 取消；PNG 自动编号保存，\[Shot N HH:mm] 标记自动写入输入框。仅 Windows，已在 DeepSeek Harness Desktop 实测。
 - [delaydai/dsh-jumpbar](https://github.com/delaydai/dsh-jumpbar) — DSH Web 用户消息跳转条：对话区右缘 minimap 式横杠条带，悬停预览消息内容、点击跳转置顶、拖拽快速浏览，并带当前视口标记。
 - [demacia1314/dsh-airdrop](https://github.com/demacia1314/dsh-airdrop) — ⭐ 支持拖拽上传：任意文件、整个文件夹，拖到窗口任意位置即可；支持远程上传——字节直传服务器的会话工作区，部署在服务器上的 DSH 也能像本地一样拖了就发。
+- [Dengzi555/dsh-quotalk](https://github.com/Dengzi555/dsh-quotalk) — 选中文字添加到主对话，或在原生侧边栏中结合上下文实时追问。
 - [dennisrongo/dsh-plugins#dsh-weather](https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-weather) — shell 浮层中的可拖动天气条，预报与地理编码来自 Open-Meteo；位置跨会话持久保存。
 - [Devin-AXIS/deepseek-design#deepseek-idesign](https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-idesign) — 可视化设计工作室，支持网站、App 原型、海报、信息卡、报告和杂志的模板创建、元素编辑、选区级 AI 草稿衔接与导出。
 - [Devin-AXIS/deepseek-design#deepseek-ivideo](https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-ivideo) — 可视化视频工作室，支持可编辑时间线、动画和素材控制、27 个模板、整段与选区级 AI 草稿衔接、校验、预览和导出。
@@ -3090,6 +3091,7 @@ dsh plugin --profile web add dshmarket
 - [helloHub1212/dsh-windows-mcp](https://github.com/helloHub1212/dsh-windows-mcp) — 通过官方 MCP 客户端桥接层把 CursorTouch/Windows-MCP 桌面自动化服务器接入 DSH，把截屏、UI 树快照、鼠标键盘输入、剪贴板、进程与注册表等工具注册成 mcp__windows__* 供模型调用，并附带 windows_mcp_doctor 诊断工具；Computer Use 默认关闭，需在插件面板里打开。
 - [Hercules-debug/huixuan-assistant](https://github.com/Hercules-debug/huixuan-assistant) — 购物助手：在 DSH 对话里搜索、对比、挑选并推荐商品，支持比价与选购建议，覆盖电商购物场景，数据来自拼多多开放平台官方 API，含价格、销量、服务标签、商品图与推广链接。
 - [hezhongtang/dsh-capability-optimizer](https://github.com/hezhongtang/dsh-capability-optimizer) — 以 advisor / reviewer / designer 角色无头调用 Claude Code，回复作为参考答案。
+- [HildebrandYu/dsh-open-with](https://github.com/HildebrandYu/dsh-open-with) — 讓 DSH 擁有自己的「副檔名 → 開啟 app」規則：卡片、側邊預覽與變更審查用你指定的 app 開啟， 而 macOS 的 Finder 雙擊預設不受影響。規則在設定頁編輯、存於 ~/.dsh/open-with.json； 「顯示文件位置」仍走 Finder。
 - [Hongcheng-LI/dsh-zotero](https://github.com/Hongcheng-LI/dsh-zotero) — 通过 Zotero 本地 API（无需 API Key）操作文献库：检索条目/分类、读元数据与摘要、列附件、读全文（缓存未命中时现场解析 PDF）、下载 PDF、管理笔记。
 - [HorusJiang/dsh-jev-tools](https://github.com/HorusJiang/dsh-jev-tools) — 把 Jev 判定变成三件自动动作的 DeepSeek Harness 插件：精简超长工具输出、筛查抓取页面里针对模型的指令、挑选下一步该用的 skill；另有 jev_ask 与 jev_gate 两个工具、可跨重启的判定账本，以及 /jev-status 报告。需要 TypeSafe API key，没有时完全惰性，不发任何请求。
 - [HorusJiang/dsh-map-tools](https://github.com/HorusJiang/dsh-map-tools) — 地图与路径规划工具：驾车/公交/步行/骑行路线、地理编码与 POI 搜索。默认零 key 使用 OSM/OSRM 免费数据，可选配置高德 key 获得更优的国内覆盖。
@@ -3116,6 +3118,7 @@ dsh plugin --profile web add dshmarket
 - [isheng-eqi/dsh-educoder](https://github.com/isheng-eqi/dsh-educoder) — 走头歌（EduCoder）平台 JSON API 完成作业，无浏览器自动化。educoder_sweep 扫描所有课程中仍有未通过关卡的作业——已完成的作业直接跳过、一个关卡都不读，因此全量扫描不消耗模型 token——并可一次做完；选择题同样零 token，因为平台会在任意一次提交的响应里回吐标准答案；代码题由模型生成，以 evaluate:0 上传后每关只触发一次评测，再按平台返回的报错重试。三个工具：educoder_sweep、educoder_homework、educoder_account。
 - [ising-tech/isingq-toolkit#dsh-plugin](https://github.com/ising-tech/isingq-toolkit/tree/main/packages/dsh-plugin) — IsingQ 原生插件：引导式 QUBO 建模与本地校验，用户确认后提交远端求解。
 - [Islulua/dsh-code-navigator#code-navigator](https://github.com/Islulua/dsh-code-navigator/tree/main/packages/code-navigator) — 为 DeepSeek Harness 提供持久化的 C/C++、Python 和 TypeScript 定义跳转及独立工作区界面。
+- [it-glen/dsh-mcp-manager](https://github.com/it-glen/dsh-mcp-manager) — 面向 DSH 的 MCP 服务器管理器：在面板中增删改、启用或停用 Model Context Protocol 服务器，支持 stdio 与 streamable-HTTP 两种传输、按服务器设置工具调用超时、实时查看连接状态与工具数量，并持久化到项目级或主目录的 mcp.json。@wingsky-1/dsh-mcp-manager 的维护分支。
 - [izwarm195/dsh-net-tools](https://github.com/izwarm195/dsh-net-tools) — 让沙箱里的 agent 通过你的本地代理联网：net_fetch 抓取网页，net_proxy_status 查看代理状态。
 - [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) — 将 DSH 连接到本机 Beav，面向小红书（RED/RedNote）、社交媒体运营和自媒体 AI 创作，覆盖选题研究、知识库、文案、图片、音频与短视频工作流，并保留审批和产物追踪。
 - [James-web11/dsh-matlab-mcp](https://github.com/James-web11/dsh-matlab-mcp) — 把 MathWorks MATLAB/Simulink MCP 服务器注册进 dsh profile，让会话获得 mcp__matlab__* 工具，用于运行 MATLAB 代码以及读取、编辑与测试 Simulink 模型。
