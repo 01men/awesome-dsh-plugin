@@ -1752,6 +1752,7 @@ dsh plugin --profile web add dshmarket
 - [yq1930/dsh-skin-asuka-p01](https://github.com/yq1930/dsh-skin-asuka-p01) — 非官方明日香主题皮肤：双人物精绘立绘、城市穹顶日夜背景，含表现方式、穹顶背景开关、立绘位置、背景强度和人物大小五项设置。
 - [YRN-playmaker/dsh-wallpaper_share](https://github.com/YRN-playmaker/dsh-wallpaper_share) — 把 Wallpaper Engine 当前应用的壁纸经本地桥接同步为 DSH Web 界面背景：预览/捕获/完整三档渲染、显示器锁定、本地与市场壁纸库面板、专注透镜与眼动追踪、沉浸模式，以及支持直链与网盘分享链接安装、一键启动的 Windows 应用启动器。
 - [yryd/dafy-whale-theme](https://github.com/yryd/dafy-whale-theme) — 海洋蓝主题：游动鱼群、上升气泡、输入框上方的「每日鱼语」，以及左上角品牌区替换；「设置 → 海洋主题」提供 7 组 32 项可调（品牌文字与字号、徽章、主色、水印、鱼群、语录、整体缩放），改动即时生效无需刷新，并带二次确认的一键恢复默认。
+- [YSDLNGF/dsh-acrylic-light](https://github.com/YSDLNGF/dsh-acrylic-light) — 让 DeepSeek Harness 桌面版透出桌面壁纸：主窗口启用 Windows Acrylic 材质负责模糊，页面按层分区处理——顶栏与主面板完全透明，输入栏与悬停预览保留雾面底色以保证文字清晰。支持实时调参。窗口材质需先用 apply-when-closed.ps1 对 app.asar 打一次补丁；只装插件只会改变页面样式。
 - [yu502950715yang/dsh-use-wallpaper](https://github.com/yu502950715yang/dsh-use-wallpaper) — 把本机 Wallpaper Engine 壁纸放到 dsh Web 界面背后：scene 壁纸在浏览器内实时渲染（three.js 播放器 + Rust/WASM CPU 粒子模拟），视频与 web 壁纸原样播放，其余回退 preview 图，不需要安装 Wallpaper Engine 运行时。壁纸库从 Steam 创意工坊目录（431960）自动探测或手动指定，设置面板可选壁纸、配壁纸库与引擎目录、调光晕与暂停/画质。
 - [yunxiiQwQ/dsh-maid-whale-UI#maid-whale-webui](https://github.com/yunxiiQwQ/dsh-maid-whale-UI/tree/main/maid-whale-webui) — DSH 桌面端与 Web UI 鲸鱼女仆主题，提供亮暗配色、海洋插画、手绘边框和 Windows 原生桌宠。
 - [yzke/dsh-icon-theme](https://github.com/yzke/dsh-icon-theme) — 为 DSH 设置和侧边栏自动分配并支持自定义的 Fluent 风格图标，离线内置 SVG，默认保留插件原图标。
@@ -5474,6 +5475,7 @@ dsh plugin --profile web add dshmarket
 - [WODE25500/dsh-wsl](https://github.com/WODE25500/dsh-wsl) — DeepSeek Harness 的 WSL(Windows Subsystem for Linux)桥接：跑 Linux 命令、管理发行版、路径转换与跨系统复制。
 - [worksAssistant/dsh-quickref](https://github.com/worksAssistant/dsh-quickref) — 开发者速查工具箱：12 个主题 195 条速查 + 6 个零依赖工具（正则实时测试、JSON 格式化、时间戳转换、Base64/URL 编解码、Cron 生成、行 diff），设置页可搜索查阅。
 - [wpeng77/dsh-llm-trace](https://github.com/wpeng77/dsh-llm-trace) — 线路层 LLM 检查器：抓取模型调用的原始 HTTP 请求与响应报文，经 llm/stream 瀑布把每次抓取归属到发起它的会话。请求面板把报文渲染成带每节点大小的可折叠树——实测一次请求有 98.6% 是单个 973 项的数组——响应面板则把 OpenAI 风格的 SSE chunk 流重新组装成推理、正文、工具调用与用量。在对话栏标签页与本地查看页展示。
+- [wweir/dsh-advisor](https://github.com/wweir/dsh-advisor) — 自动二审：受限子会话用只读工具复核 agent 最近的工作，最多投递一条有证据支撑的提醒，没有问题则保持沉默。
 - [WwW7olFWwW/dsh-codebase-watcher](https://github.com/WwW7olFWwW/dsh-codebase-watcher) — Codebase Memory 知識圖譜的保鮮插件：比對圖譜 Branch 節點的 head_sha 與 git rev-parse HEAD、給出精確的落後提交數，只重建落後的專案且走 codebase-memory-mcp CLI（不受 MCP 工具 60 秒上限約束），逐專案監看檔案變更，並把同一份狀態呈現在設定卡片與 REST 控制面。
 - [wyzh0117/dsh-port-manager](https://github.com/wyzh0117/dsh-port-manager) — dsh 原生右侧栏页签：列出本机监听的端口及占用它的进程，并可对每个端口执行打开、复制地址、定位工作目录或结束进程。
 - [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) — 开发配套守护：滚动快照、插件失败自动回退、启动失败救援、设置页管理面板。
