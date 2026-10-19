@@ -4920,7 +4920,6 @@ dsh plugin --profile web add dshmarket
 - [ahian-lee/dsh-attention-notifier](https://github.com/ahian-lee/dsh-attention-notifier) — 任务完成或等待批准、回答时播放提示音并发送通知；提示音可在设置页更换（合成音色或自选音频文件），内置猫咪 hachimi 音效，just for fun。可选的 Windows 补丁额外提供任务栏数字角标、闪烁与原生通知。
 - [AhYi8/dsh-gotify-notify](https://github.com/AhYi8/dsh-gotify-notify) — 每轮会话结束时向 Gotify 服务器推送通知，支持模板、优先级与按结束原因区分标题。
 - [AK-blank/dsh-plugin-mac-notify](https://github.com/AK-blank/dsh-plugin-mac-notify) — 会话结束、或 Agent 卡在等你回答／批准／排错时，发一条 macOS 系统通知；横幅带上最后一条回复并播放你的系统提示音，点击即可回到 DSH 页面。
-- [alvinunreal/openpets#dsh](https://github.com/alvinunreal/openpets/tree/main/packages/dsh) — 将 DeepSeek Harness 的生命周期状态、错误与审批请求，桥接到本地运行的 OpenPets 桌面伙伴。
 - [amlyczz/dsh-lark-link](https://github.com/amlyczz/dsh-lark-link) — DeepSeek Harness 的高可靠飞书/Lark 桥接：扫码一键认证、卡片化命令与意图确认、at-least-once 零丢失出站队列、多媒体出入站、/doctor 会话日志 ZIP，并复用 DSH Web GUI 把会话归入正确工作区。
 - [andyfan1094/dsh-feishu](https://github.com/andyfan1094/dsh-feishu) — 接入飞书自建应用，把每个飞书会话映射到独立的 DSH Agent，经卡片 JSON 2.0 流式回复，不可用时回退纯文本。
 - [aokamoaki/dsh-notify](https://github.com/aokamoaki/dsh-notify) — 对话完成通知：回合完成/出错/目标完成/提问/审批时弹出 Windows toast 与提示音，仅后台提醒，会话头部铃铛即控制中心。
@@ -5043,6 +5042,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/dsh-notification](https://github.com/omdsh-dev/dsh-notification) — 回合完成桌面通知，按结果分控 + 关键词过滤。
 - [omdsh-dev/dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode) — 从 Web GUI 一键在 VS Code 中打开工作区目录。
 - [openma-ai/deepseek-harness-acp](https://github.com/openma-ai/deepseek-harness-acp) — ACP profile 插件与独立 stdio server，可从 Zed 等 ACP 客户端使用完整 DSH agent，并共享 DSH 凭据与会话。
+- [OpenPetsHQ/openpets#dsh](https://github.com/OpenPetsHQ/openpets/tree/main/packages/dsh) — 将 DeepSeek Harness 的生命周期状态、错误与审批请求，桥接到本地运行的 OpenPets 桌面伙伴。
 - [Oscar-Williams/dsh-deepcanary](https://github.com/Oscar-Williams/dsh-deepcanary) — 面向 DeepSeek Harness 的证据优先注意力监督，提供 C0–C3 策略、去重 Inbox 提醒、静默时段和脱敏结果记录。
 - [PAKIKNOWLEDGE/dsh-notify-skill](https://github.com/PAKIKNOWLEDGE/dsh-notify-skill) — 你不在电脑前时由 agent 邮件提醒你：goal 完成、阻塞、向你提问决策前、长任务节点时触发，自带零依赖 Node SMTP 发送器。
 - [paleech0/dsh-notify-desktop](https://github.com/paleech0/dsh-notify-desktop) — DSH 桌面端会话的 Windows 原生 Toast 通知（宿主侧）：回合结束、审批、提问与未应答催办，按情况可选音效并支持导入自定义音效；点击通知把 DSH 窗口拉回前台。
@@ -5934,7 +5934,6 @@ dsh plugin --profile web add dshmarket
 
 ### 🛒 插件市场与管理
 
-- [01men/ybkk-AIOS](https://github.com/01men/ybkk-AIOS) — 企业 AI 资源平台，由 22 个 cordis 插件组成：组织/账号/角色 IAM、OIDC 认证与 App SSO、MCP 服务管理（平台自身亦作为 MCP Server 对外提供调用）、NAS 资产存储、Skill 市场、Agent 与应用管理、SaaS 连接器纳管、企业门户数据通道、部门 Agent 工作台面板、钉钉群桥消息与审批推送、远程 dsh 一键接入与工具远程代理、计量、钱包计费、模型网关、审计告警、平台自更新与带审核的第三方插件市场——70+ 个运维工具可直接被 dsh Agent 调用。
 - [1e0zj/dsh-plugin-mall](https://github.com/1e0zj/dsh-plugin-mall) — 开放式插件市场：GitHub dsh-plugin 话题实时搜索，逐仓库 package.json 验证（dsh.bundle/dsh.client 声明徽章与只看已验证过滤），npm 优先安装带同源防抢注校验，更新检测，并附五个可在无界面环境使用的 agent 工具。
 - [2768651338/dsh-plugin-manager](https://github.com/2768651338/dsh-plugin-manager) — 设置 → 插件里的插件管理页：已装插件中文名与白话描述、一键启停、界面内改备注，支持搜索与筛选。
 - [863683348/dsh-feed](https://github.com/863683348/dsh-feed) — 跨生态聚合数据层（"聚合的聚合"）：把 GitHub dsh-plugin 主题与 npm registry 归一化为开放 JSON 索引，供模型工具、CLI 与轻量 stdio MCP 服务查询。
