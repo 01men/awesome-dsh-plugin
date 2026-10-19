@@ -726,6 +726,7 @@ dsh plugin --profile web add dshmarket
 - [Microqian2th/dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider) — 把官方「推理等级」那一行改成一条可拖动的连续轨道：填充从蓝渐变到紫罗兰，较高档位带星尘粒子，官方数值文字跟着档位变色。Off 档保持官方灰，不改写官方任何文字。
 - [miisaka19800/dsh-restart-fab](https://github.com/miisaka19800/dsh-restart-fab) — DSH 网页界面右下角的一键重启按钮：全屏遮罩原地重启 dsh 进程并自动刷新页面；无需启动脚本，跨 Windows/macOS/Linux。
 - [miiy/dsh-terminal-keybar](https://github.com/miiy/dsh-terminal-keybar) — 在触屏设备上补齐手机软键盘缺少的按键（Esc、Tab、回车、Ctrl-C、方向键），以半透明按键列浮在活动终端旁。
+- [milu7/dsh-directory-plugin](https://github.com/milu7/dsh-directory-plugin) — 让 DSH 桌面端「新建工作区」的文件夹选择框从你设定的目录开始（仅 Windows），并在设置里提供配置入口；目录不存在时静默回退到原生选择框。
 - [mimateinn/dsh-i18n](https://github.com/mimateinn/dsh-i18n) — 为 DeepSeek Harness 界面新增 20 种语言（繁体中文香港/台湾、日语、韩语、法语、德语、西班牙语、葡萄牙语、意大利语、俄语、乌克兰语、波兰语、荷兰语、土耳其语、阿拉伯语、印地语、印尼语、越南语、泰语、瑞典语），逐条精译并带运行时兜底，另加自动翻译，把市场与第三方文本翻译成你的语言。
 - [Minecraftbe/dsh-toolfold](https://github.com/Minecraftbe/dsh-toolfold) — Codex 风格的工具调用折叠，将多个工具调用折叠到一行内。
 - [minivv/dsh-activity-bell](https://github.com/minivv/dsh-activity-bell) — 侧边栏活动铃铛：会话跑完后铃铛显示红色角标，点一下把工作区列表换成按天分组的最近活动列表，尚未打开过的完成项带绿点。
@@ -5735,6 +5736,7 @@ dsh plugin --profile web add dshmarket
 - [xbzbing/dsh-auth-gateway](https://github.com/xbzbing/dsh-auth-gateway) — 为 dsh web 提供密码与 TOTP 双因素认证网关：登录前拦截全部 HTTP/WebSocket 请求，含按来源锁定、全局限流与一次性备份代码。
 - [xgone/dsh-remote](https://github.com/xgone/dsh-remote) — 为 DeepSeek Harness Web UI 提供安全远程访问：登录门禁、MFA/TOTP、签名会话 Cookie、可选的 admin/user/guest 角色、浏览器内工作区选择和按允许目录限制的远程文件预览。
 - [XiaoSHang05/dsh-rice-guard](https://github.com/XiaoSHang05/dsh-rice-guard) — 监控一轮对话的思考流与正文流，在模型开始自我复读时中断该轮。
+- [xiezouqu12/dsh-info-records](https://github.com/xiezouqu12/dsh-info-records) — 本机加密的 DeepSeek Harness 账密库：侧边栏管理记录，智能体登录前按站点取用；对话收录默认关闭，逐条可设仅手动；AES-256-GCM 加密，密钥由 Windows DPAPI / macOS 钥匙串 / Linux Secret Service 保护。
 - [xlennart/dsh-auto-review-jev](https://github.com/xlennart/dsh-auto-review-jev) — DeepSeek Harness 审批守护者：权限请求先由审查模型裁决，支持 System One 决策 API 后端（TypeSafe Jev／硅基流动／自部署 Laya）、可配置的低置信度策略与免审白名单。
 - [xtd1145/dsh-full-access-switch](https://github.com/xtd1145/dsh-full-access-switch) — 给 DeepSeek Harness 加 Full access 一次性开关：新工作区与新对话默认 danger-full-access 并跳过逐个确认；可作为 dsh bundle 安装，也可用脚本打补丁。
 - [Yazzyk/dsh-file-shield](https://github.com/Yazzyk/dsh-file-shield) — 屏蔽 agent 对指定文件或目录的读取、搜索、写入与编辑，使其内容不进入对话——含敏感词的文件也在其中，避免它们的文字让之后的 provider 请求以 400 失败。规则在插件页面上点选。
