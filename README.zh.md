@@ -1114,6 +1114,7 @@ dsh plugin --profile web add dshmarket
 - [xlennart/dsh-goal-mode-enhance](https://github.com/xlennart/dsh-goal-mode-enhance) — 为 DSH Web 界面提供可视化的会话目标生命周期：composer 上方的目标栏支持创建、多行编辑、暂停、恢复、完成与清除并实时显示轮次进度，工具行入口带阶段色点，设置页提供目标总览。
 - [xlennart/dsh-side-chat](https://github.com/xlennart/dsh-side-chat) — 在主对话旁边打开原生并排侧聊：独立归档的真实 DSH 会话、按需读取父会话上下文、选文引用与保留或删除的生命周期。
 - [Xliecc/dsh-session-theme](https://github.com/Xliecc/dsh-session-theme) — 打开页面时左侧边栏直接显示每个会话的主题，无需点进会话。启动时预热会话投影缓存，让冷会话也能显示真实标题。
+- [xmlans/dsh-xmlans](https://github.com/xmlans/dsh-xmlans) — DSH 桌宠兰酱：透明置顶窗口里的天使翅膀女仆，随会话状态（思考、工作、等待、完成、出错）做出动作，显示任务进度和 DeepSeek 余额，可以拖动、摸头、戳一下、碰翅膀。
 - [XMoon/dsh-pi-tui](https://github.com/XMoon/dsh-pi-tui) — DeepSeek Harness 的第三方 TUI 模式（dsh --profile pi-tui），基于内置 pi-tui fork 构建：覆盖主会话循环（审批、命令、会话切换与全文搜索），以及预设、技能、模型/设置菜单与斜杠命令。
 - [xmwengxing/dsh-client-ui-sidebar-perfmon](https://github.com/xmwengxing/dsh-client-ui-sidebar-perfmon) — 右侧栏主机性能监控：CPU、内存、交换内存仪表盘，显卡频率与显存条，CPU / 显卡 / 主板 / 硬盘温度，以及可按 CPU、内存、进程名排序的进程列表。
 - [xmwengxing/dsh-sidebar-enhancement](https://github.com/xmwengxing/dsh-sidebar-enhancement) — 侧边栏文件树增强：重命名、新建、上传、下载（目录当场打包为 zip）、复制完整路径与删除；128 种文本扩展名的可编辑文档渲染器，支持 Ctrl/Cmd+S 保存与版本冲突检测；另有一个独立的下侧终端面板，带标签页与持久化在 DSH home 里的快捷命令库。
