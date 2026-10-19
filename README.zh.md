@@ -766,6 +766,7 @@ dsh plugin --profile web add dshmarket
 - [nico-zhuang/dsh-chat-file-actions](https://github.com/nico-zhuang/dsh-chat-file-actions) — 打开和复制本轮的本地文件与网页链接。
 - [nikoart-liu/dsh-open-in-x](https://github.com/nikoart-liu/dsh-open-in-x) — 从 DSH Web UI 使用已安装的文件管理器、终端和受支持的编辑器打开工作区目录。
 - [ninglovegithub/dsh-workspace-combiner](https://github.com/ninglovegithub/dsh-workspace-combiner) — 多工作区管理器：把文档锚点目录与若干代码项目仓库组合进同一会话，注入绝对路径、递归文件索引、前后端端点落点索引与可选的开发规范，并把可写目录同步进沙盒。
+- [NingTiAn-byte/dsh-intelligent-ui](https://github.com/NingTiAn-byte/dsh-intelligent-ui) — 在 DSH rc.2 Web 对话中生成可离线重放的图表与交互式原理演示，支持可选高德行程、确认式追问和 HTML 导出。
 - [NingYuanLee/dsh-image-viewer-pro](https://github.com/NingYuanLee/dsh-image-viewer-pro) — Web UI 的聊天图片查看器：接管内容图片点击（Markdown 图、以 blob: URL 渲染的消息附件图、read_image 结果），打开弹层后支持以指针为中心的滚轮缩放与可编辑百分比、拖动平移、90° 旋转、带进度下载、复制为 PNG、用默认应用打开，以及会话内 ←/→ 图集浏览。
 - [nirvanaslash/dsh-artifact-preview](https://github.com/nirvanaslash/dsh-artifact-preview) — 在对话中新增产出文件卡片行，并提供可拖拽分屏的产物预览面板，支持 Markdown、源码、CSV、JSON、图片、HTML，以及本地端口预览。
 - [Nishikinov/dsh-sidebar-settings-button](https://github.com/Nishikinov/dsh-sidebar-settings-button) — 在侧边栏顶部 Plugins 之前新增「设置」一行，点击即打开原生设置面板。
@@ -2960,6 +2961,7 @@ dsh plugin --profile web add dshmarket
 - [ding112/MoneyPal#dsh-moneypal](https://github.com/ding112/MoneyPal/tree/main/packages/dsh-moneypal) — 面向 DSH 的个人记账插件，基于结构化的beancount账本工具。
 - [dingchenhui0618-arch/dsh-delivery-receipt](https://github.com/dingchenhui0618-arch/dsh-delivery-receipt) — 项目收尾用的交付回执面板。触发一次即汇总分支与 commit、测试与构建结果、截图的宽高与 sha256、密钥扫描结论，然后只按证据把每一条分进三区：已验证、仅本地、未验证。落在未验证区的声明只保留标签，正文位置显式留空而不是把声明印出来——措辞自信而背后什么都没有的句子，正是回执要防的东西。测试失败与密钥扫描命中同样是有证据的事实，因此进已验证区并带红色色调，而不是被悄悄丢掉。
 - [dingchenhui0618-arch/dsh-ship-receipt](https://github.com/dingchenhui0618-arch/dsh-ship-receipt) — 项目收尾时生成一张可公开的交付回执。`ship_receipt` 工具自己测量能测的、记录被告知的，再把每一条硬性分进三区：已验证（本次采集到、且能在别处复现的证据——真跑过的命令与退出码、已入版本库文件的哈希、确实扫到文件的扫描、本地记录的远端里存在的 git 引用）、仅本地（只在这台机器上成立——未提交改动、未推送提交、别人看不到的产物）、未验证（没有证据，包括人写的任何一句话）。没有证据的声明只留标签、正文留空，而不是把声明照原样印出来；回执里含分支与 commit、产物的字节数与 sha256（PNG 附带宽高），以及推送前三步检查的结论。
+- [donyue7/dsh-aoci-bind](https://github.com/donyue7/dsh-aoci-bind) — DSH Host 侧 AOCI 接入工具：发现带 AOCI 索引的工作区、诊断与修复 MCP 绑定、初始化未接入仓库，并提供状态与体检工具。
 - [drscrewdriver/dsh-bash-terminal-ts](https://github.com/drscrewdriver/dsh-bash-terminal-ts) — 一个 shell 工具：Windows 上支持 PowerShell / Git Bash / WSL / MSYS2 四种后端，外加交互式 PTY 终端；MSYS2 后端以 bash.exe -lc 启动，让 /etc/profile 把 /usr/bin 与 /mingw64/bin 带进 PATH，并为 PTY 环境注入 MSYSTEM=MINGW64。TypeScript 编写，面向 DSH 0.1.2+。
 - [drscrewdriver/dsh-patch-edit-plus](https://github.com/drscrewdriver/dsh-patch-edit-plus) — 补丁风格文件编辑：单个 apply_patch 工具，接受 git/unified diff（默认）与 Codex apply_patch 语法（可选开启），在完整只读校验后全量原子应用；删除与移动走沙箱感知路径，并提供 dry-run 模式。
 - [drshy-org/lightroom-py](https://github.com/drshy-org/lightroom-py) — 通过 lightroom-py MCP 服务器把 Adobe Lightroom Classic 接入为 dsh 原生工具：读取目录、应用 develop 设置与预设、导出 JPEG/TIFF/PSD/DNG、写入星级/色标/关键词/IPTC——15 个工具，直接驱动本机安装的 Lightroom Classic，不经云端；Python 包在 PyPI 上，Lightroom 插件一条命令安装。
