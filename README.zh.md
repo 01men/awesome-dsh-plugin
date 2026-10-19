@@ -194,6 +194,7 @@ dsh plugin --profile web add dshmarket
 - [AlyceStocking/hover-glossary](https://github.com/AlyceStocking/hover-glossary) — 悬停聊天消息中的术语时显示本地词库释义。
 - [amazing-fish/dsh-piano-nav](https://github.com/amazing-fish/dsh-piano-nav) — 提供完整历史轮次导航、过程步骤折叠、最终结果与结构化问答琴键，以及鼠标连续跟随交互。
 - [Amengclass/dsh-settings-hub](https://github.com/Amengclass/dsh-settings-hub) — 统一收纳 DeepSeek Harness 里的第三方插件设置：自动发现、分组，并在一个可折叠的导航入口下拖拽排序。
+- [amstlkqp114514/dsh-desktop-tweaks](https://github.com/amstlkqp114514/dsh-desktop-tweaks) — 桌面修改：F11 全屏切换；使终端使用 Ctrl+C/V 复制粘贴，从通用设置内开启/关闭。
 - [Andor-Z/dsh-turn-outline](https://github.com/Andor-Z/dsh-turn-outline) — 在侧边栏按用户轮次折叠会话（输入、工具步骤、输出），一键跳回对话原位。
 - [anitman/dsh-plugin-video-player](https://github.com/anitman/dsh-plugin-video-player) — 侧栏浮动窗口里的抖音式刷视频：本地/SMB NAS 文件夹上下滑动，或粘贴在线视频地址（yt-dlp 解析，支持 bilibili/YouTube 与 cookies.txt 登录态）；窗口随视频宽高比自适应，支持全屏、拖动缩放、Range 流式播放，并提供 agent 视频推送队列端点。
 - [ankesu/dsh-live2d-pet](https://github.com/ankesu/dsh-live2d-pet) — DSH 的 Live2D 桌宠：悬浮的 Cubism 模型，表情随状态变化并跟随鼠标；尺寸与位置由插件配置驱动；内置官方 Haru 示例模型（© Live2D Inc.）。
@@ -2001,6 +2002,7 @@ dsh plugin --profile web add dshmarket
 - [SpookySandwich/dsh-plugin-rollout-scout](https://github.com/SpookySandwich/dsh-plugin-rollout-scout) — 检测账号当前被分配到哪个对话模型：并发发起一次性探测会话，按段落开头的写法为流式思维链打分，读起来像旧模型的在数秒内中止。附带离线自检，用同一分类器回放 13 条人工标注的思维链。
 - [star-Cosmo/dsh-model-tidy](https://github.com/star-Cosmo/dsh-model-tidy) — DSH 模型列表整理：把任意模型从选择器隐藏、给它改一个自己的显示名（保留厂商计费倍率），并用箭头调整排序；支持搜索、渠道级批量开关与一键恢复。只改显示，不重写任何渠道配置。
 - [starefinger/dsh-llm-qwen-local](https://github.com/starefinger/dsh-llm-qwen-local) — 面向 vLLM OpenAI 兼容端点上本地部署的 Qwen 模型的 LLM 适配器插件,支持按模型多模态开关、完全可配置的推理档位,以及可在前端编辑部署配置的 Web 设置页。
+- [STLI69/coding-plan](https://github.com/STLI69/coding-plan) — 火山方舟 Ark Coding Plan 的 provider 路由：为 DeepSeek Harness 收录全部 15 个 Coding Plan 模型，每个模型可调思考强度；清单由单一数据源生成，并每周自动探测是否过期。
 - [stoneface10/dsh-codex-connect-plus](https://github.com/stoneface10/dsh-codex-connect-plus) — 为 DSH 添加基于 ChatGPT/Codex OAuth 的 Codex 模型及 gpt-image-2 文生图和编辑能力，无需 OpenAI Platform API Key。
 - [Stormycry-cryp/dsh-AuthInOne](https://github.com/Stormycry-cryp/dsh-AuthInOne) — 为 DeepSeek Harness 47f 提供账号登录、API 与自定义 Provider 配置、模型切换、纯文本模型图片兜底，以及 Token 与费用归因。
 - [suntianc/dsh-antigravity-auth](https://github.com/suntianc/dsh-antigravity-auth) — 通过非官方 Antigravity OAuth 通道提供 LLM 路由、网页搜索、图片生成与编辑、视频理解、配额状态和 DSH Web 设置控件。
@@ -2880,7 +2882,7 @@ dsh plugin --profile web add dshmarket
 - [asdasdsdsdasdasdasd/dsh-computer-use](https://github.com/asdasdsdsdasdasdasd/dsh-computer-use) — Linux X11 电脑控制插件：9 个工具（截图、鼠标移动/点击/拖拽/滚轮、输入、快捷键），由零依赖 Python XTest 助手驱动——原生像素坐标、每次操作返回坐标校验、可选自动截图。
 - [Asher-2000/dsh-expert-mode](https://github.com/Asher-2000/dsh-expert-mode) — 专家模式 agent preset（v0.9.2，npm 包 dsh-expert-mode，双语双份）：首席协调官 + 17 位领域专家子代理，按任务特性自动委派。特性：任务调度器（文件系统任务状态机 pending/ready/running/done/failed + 依赖DAG + 原子认领 + 重试 + 崩溃恢复）、质量门禁（高风险任务五段式：需求澄清→实现→验证→独立评审→集成，最多回炉2轮）、五锚约束（每轮回顾/收敛/反跑题/协作检查/资源感知自检）+ 近距离引导（身份/任务/输出格式模板）+ 渐进式披露（省token约28%）+ 专家持久化 + 专家间文件消息总线（P2P直连，零协调官中转）+ 交叉评审 + 经验沉淀 + 简单任务快速通道 + 故障自动重试。专家：数据分析/文案/法务/产品/前端/UI-UX/架构/社交运营/增长/量化/财务/后端/DevOps/数据库/QA/安全/生图短视频。
 - [Astervolans/dsh-literature-search](https://github.com/Astervolans/dsh-literature-search) — 面向 DeepSeek Harness 的文献检索：pubmed_search、pubmed_paper、pubmed_related 走官方 NCBI E-utilities（含 elink 相关文献排序），scholar_search、scholar_cite 走 Google Scholar（MLA/APA/Chicago/Harvard/Vancouver/BibTeX，需 SerpApi 后端）。两个后端统一为同一种 paper 结构，设置卡片可配置 API key、Scholar 后端与速率/条数上限。
-- [Aurum807/dsh-bilibili-video-summary](https://github.com/Aurum807/dsh-bilibili-video-summary) — 用 yt-dlp 下载 B 站视频，产出转写稿与抽帧图，并注册写总结所需的技能；当用户消息只有一条视频链接时自动启用。需 PATH 上有 yt-dlp 与 ffmpeg。
+- [Aurum807/dsh-bilibili-video-summary](https://github.com/Aurum807/dsh-bilibili-video-summary) — 用 yt-dlp 下载 B 站视频、抽帧并转写：优先用站方字幕，没有字幕时调用本机 faster-whisper。注册写总结所需的技能，当用户消息只有一条视频链接时自动启用。需 PATH 上有 yt-dlp 与 ffmpeg，转写另需 faster-whisper。
 - [aurumple/dsh-rea-toggle](https://github.com/aurumple/dsh-rea-toggle) — 一个开关，实时把某个 MCP 服务器的工具 schema 与说明块从每个 agent 的模型上下文中移除或放回，无需重启——针对 REA 在任何任务下都会注入的 207 个工具 schema 而做。输入框下方胶囊、/rea on|off|status|toggle 与 GET/POST /rea-toggle/state 三种驱动方式；位置跨重启保持，子智能体在第一步之前就被覆盖。
 - [AusertDream/TravelPlanner](https://github.com/AusertDream/TravelPlanner) — 中文旅行规划 agent 预设「旅行规划助手」（面向国内行程）：实时查 12306 余票、飞猪 / 途牛机票与酒店价格、高德真实路线，核实闭馆与天气，交付一份可离线打开的单文件 HTML 路书（可拖动地图、三档酒店、分项预算）；附 9 个技能、引导用户补齐 Key 的环境自检，以及 12306 MCP 的预售期补丁；只规划查询，不代订代付。
 - [Azhe0306/dsh-connectors#desktop-connector](https://github.com/Azhe0306/dsh-connectors/tree/main/packages/desktop-connector) — Windows 桌面控制连接器：通过 10 个工具截屏（含被遮挡与半出屏窗口）、枚举与置顶窗口、移动/点击/拖拽/滚轮鼠标、发送组合键与任意中文文字。基于 koffi FFI：无需编译器、不每次起子进程，自带 GDI 截图与 PNG 编码。
