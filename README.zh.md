@@ -817,6 +817,7 @@ dsh plugin --profile web add dshmarket
 - [ph4310822/dsh-edex-jarvis-ui#bundle](https://github.com/ph4310822/dsh-edex-jarvis-ui/tree/main/packages/bundle) — 在 DSH Web 界面上叠加 JARVIS 风格科幻 HUD 外壳：电光青色 VITAL SIGNS 生命体征 / RT-MONITOR 实时监控 / RT-LOG 事件日志左栏，右侧 POWER CORE 能源核心仪表、旋转扫描的 RADAR 雷达盘与上下行流量图，左下文件系统浏览器（带文件预览），以及带 JARVIS 头部横幅、跟随当前工作区的终端风格输入框。
 - [ph4310822/dsh-edex-ui#bundle](https://github.com/ph4310822/dsh-edex-ui/tree/main/packages/bundle) — 在 DSH Web 界面上叠加 eDEX-UI 风格外壳：左侧系统遥测栏（含每核 CPU 迷你趋势图）、右侧 encom-globe 世界地图与上下行流量图、左下文件系统浏览器（带文件预览），以及跟随当前工作区的终端风格输入框。
 - [Phant0Meow/dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth) — 手机优先的 DSH 前端体验优化：输入框自动折叠、手机回车换行、侧边栏/顶部栏/设置页压缩、禁缩放回弹，以及审批/提问/任务完成通知（页面卡片、Web Push、webhook）；零 dsh 本体改动。
+- [Phoeky/dsh-refresh-plugin](https://github.com/Phoeky/dsh-refresh-plugin) — 为 DeepSeek Harness 桌面 Web UI 补上 F5 / Ctrl+R 页面刷新功能（生产版默认没有刷新菜单项与裸 F5 快捷键）。通过客户端捕获阶段按键监听绑定软刷新（F5、Ctrl+R）与防缓存硬刷新（F5 加修饰键、Ctrl+Shift+R，附加 _dsh_refresh 时间戳）。
 - [Physicolor/dsh-lifeline](https://github.com/Physicolor/dsh-lifeline) — DeepSeek Harness 右侧消息导航轨道：逐条消息刻度、悬浮预览抽屉、平滑跳转、星标回看、实时平移动画（可打断）、完整会话索引与虚拟化、面板动态避让、官方 --dsw-* token 样式。
 - [Physicolor/dsh-ui-harmonizer](https://github.com/Physicolor/dsh-ui-harmonizer) — DeepSeek Harness UI 协调器：规范化官方未完善、自相矛盾的界面，协调已装插件间的样式冲突并统一视觉语言（全部遵循官方设计令牌）——支持实时自定义对话宽度、markdown 字号、工作区缩放、UI 字体栈，并在设置页提供圆角中栏卡片；纯客户端 dsh bundle，零模型开销，无 host 端，可无残留移除。
 - [Physicolor/dsh-widgets](https://github.com/Physicolor/dsh-widgets) — DeepSeek Harness Web UI 右侧部件栏：实时会话统计、任务/上下文/热力图/引用部件、OpenCode Go 用量、多列网格布局（1/2/4 列）与 2x4 长切片、连续放大波浪与逐实例尺寸；部件可在设置页安装、排序与调整大小。
@@ -1198,7 +1199,7 @@ dsh plugin --profile web add dshmarket
 - [zhuifengqug/dsh-adaptive-reasoning](https://github.com/zhuifengqug/dsh-adaptive-reasoning) — 炭灰余烬风格的 DSH Web 像素推理强度滑块：以近黑木炭、暗红裂纹和橙红高温核心呈现 4px 像素化 WebGL 火焰，拖动时逐档点燃；支持 0–100 无极拖动、16ms 节流写入与松手吸附。
 - [zhuran305-web/dsh-feedback-combined](https://github.com/zhuran305-web/dsh-feedback-combined) — 一键点赞/点踩反馈 UI，评分摘要自动注入模型上下文。
 - [zhxnix/dsh-sidebar-annotations](https://github.com/zhxnix/dsh-sidebar-annotations) — 为 DSH 提供网页与小程序元素注释、折叠注释附件及源码定位。
-- [Zian-anson/dsh-prompt-seed](https://github.com/Zian-anson/dsh-prompt-seed) — 把一行种子展开成具体可执行的 prompt，语义保真闸门做五类越线判定、定向修复、无条件复核；已精确的指令近原样通过；纯信号（如数字）按上下文锚点推断、推不出就明说；短指令在度契约内有度展开；会话消息只做错字级轻润色；一键恢复原文，带版本历史。
+- [Zian-anson/dsh-prompt-seed](https://github.com/Zian-anson/dsh-prompt-seed) — 输入框有内容时单次调用优化草稿，空白时预测下一句；两类任务独立，支持草稿保护、结果预览和原文恢复。
 - [ZichengGurrr/dsh-window#kit](https://github.com/ZichengGurrr/dsh-window/tree/main/kit) — DSH 三件套全家桶：Windows 原生窗口（WebView2）+ DeepEye 视觉（GLM-4V-Flash）+ 语音输入（麦克风按钮），一条命令装齐。
 - [ZichengGurrr/dsh-window#plugin](https://github.com/ZichengGurrr/dsh-window/tree/main/plugin) — DSH 的 Windows 原生窗口（WebView2）：一键安装，自动从 GitHub Releases 下载应用 zip、创建桌面快捷方式，并提供 desktop_launch 工具在对话中一键启动。
 - [zizhongfeiyang/dsh-settings-drawer](https://github.com/zizhongfeiyang/dsh-settings-drawer) — 让你选择 DeepSeek Harness 设置页左侧导航要显示哪些栏目。
@@ -5848,6 +5849,7 @@ dsh plugin --profile web add dshmarket
 - [TwinsEarth/dsh-windows2macos](https://github.com/TwinsEarth/dsh-windows2macos) — 一条指令同时下发给所有在线的 Windows 与 macOS 机器，可跨网络跨区域：零依赖中继只通过出站连接与各机通信（Tailscale 内网、公网 VPS + TLS、或隧道），各机在各自的项目副本上执行，结果连同 commit、工作区指纹与命令哈希一并回传，因此"环境不一致"会被判为 unverifiable，而不会被误当成结果分歧。下发指令需要独立于设备令牌的 operator token。
 - [TZHR-invest/dsh-plugins#dsh-lan-gateway](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-lan-access) — 完整的 Web GUI 局域网/远程访问方案：0.0.0.0 绑定、crypto.randomUUID polyfill、令牌门卫（401 登录页 + WebSocket 拦截，回环豁免）、特权围栏与设置持久化放行，附带幂等安装器与升级恢复。
 - [Very12345/dsh-ssh-workspace](https://github.com/Very12345/dsh-ssh-workspace) — 面向 Linux/macOS 的 SSH 工作区，支持导入 SSH config、选择远端目录，文件工具、Bash 与持久远程终端沿用 DSH 原生会话权限。
+- [Wanderingss/dsh-ws-deflate](https://github.com/Wanderingss/dsh-ws-deflate) — 在不修改 DSH 安装目录的前提下，为 DSH 的 WebSocket 传输启用 permessage-deflate。
 - [wangzhishou/onebox-dsh-bridge](https://github.com/wangzhishou/onebox-dsh-bridge) — DeepSeek Harness 的 Android 客户端实现:扫码配对 + 端到端加密云端中继,把本机 dsh web 桥接到万宝盒 App。
 - [wanjiaju3108/dsh-feishu-assistant](https://github.com/wanjiaju3108/dsh-feishu-assistant) — 给同事的运维请求通道——同事在飞书私聊里提的事先排进串行队列，由已配对的管理员在审批卡上放行后才进入那条共享的 DSH 会话（带注入的人设执行），回答回到提交人。
 - [wanjiaju3108/dsh-feishu-cui](https://github.com/wanjiaju3108/dsh-feishu-cui) — 免运维的远程 DSH——拿飞书私聊当界面，机器人出站长连接、不需要公网入口，工作区、会话（切换与改名）、模型、推理深度、权限预设、余额都用卡片操作，工具审批与 agent 反问也在同一个聊天里回。
