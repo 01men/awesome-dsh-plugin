@@ -603,6 +603,7 @@ dsh plugin --profile web add dshmarket
 - [KNGLOKIKO/dsh-plugin-approval-zh](https://github.com/KNGLOKIKO/dsh-plugin-approval-zh) — 在 Web 客户端把 DeepSeek Harness 的权限审批面板本地化为中文：授权原因优先走内置词表翻译，词表未收录的由宿主侧模型路由兜底。
 - [Knight-Zjy/dsh-workspace-categories](https://github.com/Knight-Zjy/dsh-workspace-categories) — DSH 侧边栏工作区浏览器的分类树：工作区与其会话挂到自建分类下（折叠状态记忆），行可在分类间拖拽，新建工作区可直接落进某个分类（走系统目录选择器），分类可原地重命名与删除，底栏开关可把面板切回原生列表。
 - [kongdexu/dsh-nav-pointer](https://github.com/kongdexu/dsh-nav-pointer) — 聊天区左侧的消息指针导轨：每条用户消息一个横条，点击滚动定位，悬停显示预览气泡。
+- [kongkongya367-glitch/dsh-bingo-ren](https://github.com/kongkongya367-glitch/dsh-bingo-ren) — 为 DeepSeek Harness 桌面端添加可拖动重启按钮与插件面板：插件清单变化时提醒重启，按 profile 记录新增与移除、跟踪试用、显示宿主启动状态，并提供回滚、最小启动与可恢复的残留清理。
 - [konglong87/dsh-input-list](https://github.com/konglong87/dsh-input-list) — DSH 常用内容、提示词收藏与 Prompt 管理插件：在 composer 输入框旁保存、编辑、删除和一键回填常用提示词、Prompt 模板、工作流指令与可复用文本，不自动发送。
 - [konnga/dsh-hud](https://github.com/konnga/dsh-hud) — 当前工作区的只读 Git 面板：分支、改动清单、差异与图片前后对比，外加输入框上方的三枚胶囊（Git 状态、工具与技能活动、会话运行时长），以及本会话改动归因与审阅进度。
 - [kouyichi/dsh-tui-app](https://github.com/kouyichi/dsh-tui-app) — dsh 交互式终端聊天应用：流式对话、工具卡片、任务面板、全文搜索、轨迹回放、多会话标签与 A2A 派发（Ink 实现）。
@@ -3476,6 +3477,7 @@ dsh plugin --profile web add dshmarket
 - [Roarpeng/GraphFlow](https://github.com/Roarpeng/GraphFlow) — 面向编程 Agent 的本地代码知识图谱：提供 10 个 MCP 工具，覆盖分层上下文压缩、DAG 规划、增量 AST 建图、跨会话技能飞轮、诊断与图谱产物导入导出。
 - [robiteame/dsh-session-tree-extension](https://github.com/robiteame/dsh-session-tree-extension) — Pi 风格的追加式多分支会话树:在任意历史节点开分支或跳转而不删除旧历史,可将分支克隆为新会话,并在 WebUI 树面板中浏览(明暗主题)。在原版 Harness 上优雅降级运行。
 - [RoseSamaras/reaudit-ai-plugin#dsh-reaudit](https://github.com/RoseSamaras/reaudit-ai-plugin/tree/main/packages/dsh-reaudit) — 通过内置的 @deepseek-ai/dsh-mcp-client 桥接挂载托管的 Reaudit MCP 服务（https://mcp.reaudit.io/mcp），用 REAUDIT_API_KEY 做 bearer 鉴权：238 个 mcp__reaudit__* 工具，覆盖品牌在 AI 回答里的可见度（ChatGPT、Perplexity、Gemini、Google AI Overviews）、竞品与引用分析、站点审计、内容生成与社媒排期。
+- [Rosynb666/dsh-whale-catch](https://github.com/Rosynb666/dsh-whale-catch) — 右侧栏「鱼篓」不用 agent 登记，自动汇总本场会话产出或改动的文件，支持预览、一键打包 zip 与归档。
 - [rotifer-protocol/rotifer-playground#rotifer](https://github.com/rotifer-protocol/rotifer-playground/tree/main/plugins/rotifer) — Rotifer 协议的技能包加 Rotifer MCP 服务，以 DSH 自带的技能提供器与 MCP 客户端实例的形式挂载：搜索 Gene、按 Arena 排名比较、在本地项目里安装或回滚 Gene，并创建和运行本地 Agent。MCP 服务锁定版本，只开放 evolve 工具集，不含发布与登录。
 - [Roykf/dsh-tool-weather](https://github.com/Roykf/dsh-tool-weather) — 面向模型的天气工具，基于公开 Open-Meteo API 查询当前天气与 7 天预报，无需 API Key。
 - [roymina/dsh-cad](https://github.com/roymina/dsh-cad) — 只读 CAD 工具：查看、提取 DWG/DXF 图纸，导出 SVG/PNG 预览或转换 DXF。
