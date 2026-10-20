@@ -1083,6 +1083,7 @@ dsh plugin --profile web add dshmarket
 - [Winter-And-You-Gone/dsh-turn-fold](https://github.com/Winter-And-You-Gone/dsh-turn-fold) — 更好的折叠栏：将工具调用与 Think 段自动折叠为步骤折叠栏，回合结束后整回合收拢为带实时指标（耗时/首字/token/tok/s/缓存命中）的回合折叠栏，只保留最终总结正文；前导图标可自定义，内置动态扑克牌（运行中花色循环卡牌动画、收起牌堆、展开扇形），提供官方折叠方式设置行，适配 DSH 新旧版本。零侵入 DSH 源码。
 - [Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl](https://github.com/Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl) — DSH Web 界面右下角的 DeepSeek 余额鲸鱼挂件：三套形象切换（默认 / 顶碗 / 拿碗）、余额与今日已用、每轮对话消耗提示、峰谷价换算、按压音效与随机台词。基于 MeteorNOX/DeepSeek-Balance-Whale-Widget 修改。
 - [Witherwithwinter/DSH-Codinput](https://github.com/Witherwithwinter/DSH-Codinput) — 把聊天输入框换成 CodeMirror 6 的编辑器式输入面板：行号、编辑 + Markdown 预览分屏、悬浮窗与全高侧栏标签，同一时刻只有一个输入入口。草稿走官方输入机；宿主有语音输入按钮时原样渲染官方语音组件，数据行与上下文小圈与官方 dock 同源。
+- [wjf1/dsh-prompt-enhance](https://github.com/wjf1/dsh-prompt-enhance) — 模型选择器左侧的 ✨：把草稿原地改写成可执行的提示词（对标 WorkBuddy），调用在宿主侧完成；多层撤销最多保留 8 版，逐字差异卡标出新增与删除、改动处数与净增字数；增强跟随会话当前模型，草稿为空时自动置灰，调用前做浏览器会话 Cookie 校验。
 - [wjingshan/dsh-dock-launcher#dsh-dock-bridge](https://github.com/wjingshan/dsh-dock-launcher/tree/main/plugins/dsh-dock-bridge) — 为「DeepSeek Harness 开关」程序坞应用写出运行中 dsh Web 服务的 PID、端口与带 token 的地址（运行时文件权限 0600），并在退出时删除。
 - [wjingshan/dsh-sidebar-focus](https://github.com/wjingshan/dsh-sidebar-focus) — 按实际运行状态排序与折叠 DSH 左侧栏：有会话开跑的工作区浮到最前，会话跑完仍留在原位，只有最近活跃的 N 个工作区保持展开；六个开关加一个数量控制各条规则。
 - [WJNCT55555/dsh-web-preview-float](https://github.com/WJNCT55555/dsh-web-preview-float) — Web UI 悬浮预览与代码窗口：Google AI Studio 风格的 iframe 预览（宽幅比/分辨率预设、一键放大），VS Code 风格代码窗支持直接编辑，保存需确认并写入会话日志。
@@ -1400,6 +1401,7 @@ dsh plugin --profile web add dshmarket
 - [igormel81/dsh-chat-cost](https://github.com/igormel81/dsh-chat-cost) — 为 DSH Web UI 的每个对话实时计算 token 费用：本对话、其子代理与整棵会话树，价格来自内置的 models.dev 快照：七家供应商、139 个有价模型，缓存读写费率按供应商实际公布的取值，DeepSeek 则使用其官方峰谷价格表。每个完成的回答都会在对话中显示自身费用，未打开的对话则按日志计价而不是整行消失。费用按区间计价，依据写入项目目录的只追加 JSONL 账本，因此已记录的工作保留当时的费率。此外还提供：按金额预算排布的工作计划、展示值得接入哪些模型的路由方案比较、以英语/中文/俄语生成的计划文档，以及当费用未归入任何计划单元时的提醒。
 - [imlishiyuan/dsh-keep-running](https://github.com/imlishiyuan/dsh-keep-running) — 配额看门狗：遇到 429 或配额错误时建立循环调度，持续重发「继续任务」提示直到某一轮正常结束，长任务不必手动重开；/keep-running list 与 /keep-running cancel <id> 用于查看和取消。需先挂载 @deepseek-ai/dsh-schedule（调度由它注册）。
 - [itchenshi/dsh-model-surplus](https://github.com/itchenshi/dsh-model-surplus) — 在会话标题右侧显示当前模型的用量与余量：OpenCode Go 套餐用量、选中模型所对应的月上限、Command Code 的 5 小时与周窗口用量及剩余额度，以及 DeepSeek 账户余额。
+- [ium9khbep8834-maker/dsh-cache-saver](https://github.com/ium9khbep8834-maker/dsh-cache-saver) — 按 agent 收敛过大的 MCP 工具 JSON Schema（调度不变），并在设置页展示 token 用量、缓存命中与上下文构成。
 - [izz-BLUE/dsh-deepseek-usage-dashboard](https://github.com/izz-BLUE/dsh-deepseek-usage-dashboard) — DSH Web 的 DeepSeek API 用量仪表盘：基于会话日志统计每日缓存命中/未命中输入与输出 Token，并展示分模型费用估算、账户余额、7 日趋势和 composer 用量摘要。
 - [jacujay/dsh-model-balance](https://github.com/jacujay/dsh-model-balance) — 自动识别当前模型厂商（内置 7 家），在输入框内显示余额或配额，未内置厂商可配置自定义接口。
 - [Jadramcool/dsh-workspace-hub](https://github.com/Jadramcool/dsh-workspace-hub) — DSH 工作区中枢：侧边栏将工作区按彩色分组管理（分组/工作区/会话三级拖拽排序、内联编辑、一键展开折叠、标题+消息双通道搜索），基于真实会话日志统计每工作区与每会话的 Token 与花费（任意 deepseek 模型自动按官方峰谷价计费、三种时段口径、悬停明细卡、总览面板），另含 OpenCode Go 额度；分组与结果持久化到本机磁盘，30 秒实时刷新。
@@ -1737,6 +1739,7 @@ dsh plugin --profile web add dshmarket
 - [MrmoLabs/dsh-yorha-ui](https://github.com/MrmoLabs/dsh-yorha-ui) — 一款面向 DeepSeek Harness Web 的 NieR:Automata / YoRHa 风格工业终端主题，提供沙色与炭黑配色、直角几何和全界面样式。
 - [mumuer1024/dsh-ui-liteglass](https://github.com/mumuer1024/dsh-ui-liteglass) — DeepSeek Harness 轻量级外观皮肤：自定义壁纸、玻璃质感面板与重点色；服务端持久化、多设备一致，不接管原生深浅色。
 - [mux9056-bot/dsh-theme](https://github.com/mux9056-bot/dsh-theme) — DSH Web UI 主题包：30 款即插即用的 CSS 主题，每款含浅色与深色变体，集成于「设置 → 通用」，并提供程序化 API。
+- [PRTS · 源石协议](https://github.com/Nefelibater/dsh-theme-prts-originium) — 明日方舟 PRTS 源石协议主题：可交互旋转 3D 源石晶簇、工业指令面板、普瑞赛斯记忆残片与启动序列。
 - [Nektropy/dsh-starry-sky-theme](https://github.com/Nektropy/dsh-starry-sky-theme) — 深色星空主题：浅色与深色外观统一为同一套深空配色，带闪烁星点和四组星座连线；插件启用时外观固定在深色。
 - [nickfast2025/dsh-sky-window#dsh-sky-window](https://github.com/nickfast2025/dsh-sky-window/tree/main/dsh-sky-window) — 为 DSH 网页工作区添加按城市当地时间变化的天空主题，支持太阳移动、日夜配色、浮云、时间预览与沉浸天空。
 - [nightosong/gord-dsh-saber-theme](https://github.com/nightosong/gord-dsh-saber-theme) — 面向 DeepSeek Harness 桌面版和 Web 的 Saber（Fate）主题，提供冰蓝浅色、深色配色、每五分钟随机切换的 30 张按需加载聊天背景，以及右侧对话索引下方的任务关注浮层，兼容 DSH 0.2.0-rc.2 和 0.2.1-rc.2。
