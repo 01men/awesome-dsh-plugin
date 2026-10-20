@@ -1009,6 +1009,7 @@ dsh plugin --profile web add dshmarket
 - [UndeadSheep/dsh-file-preview#dsh-file-preview](https://github.com/UndeadSheep/dsh-file-preview/tree/main/packages/dsh-file-preview) — Web 客户端悬浮文件预览窗：懒加载文件树、CodeMirror 预览与窗内编辑保存、Markdown 与图片预览、Quick Open 搜索，以及点击会话中的路径直接打开。
 - [UnknowCao/dsh-dock](https://github.com/UnknowCao/dsh-dock) — DeepSeek Harness 的 Windows 桌面启动器：一键鲸鱼图标 + 侧栏「更多」菜单（设置 / 重启/刷新 / 优雅完全退出），冷启动卡片支持可滚动的多 DSH 候选选择。
 - [Utmotc/dsh-balance-card](https://github.com/Utmotc/dsh-balance-card) — 在当前会话所用模型的厂商 API 余额，以 dsh Web 侧边栏卡片常驻展示，含每套餐进度条、货币/积分单位区分、设置页，以及订阅与积分额度监测。
+- [VanlxyG/dsh-hover-sidebar](https://github.com/VanlxyG/dsh-hover-sidebar) — Windows 桌面版与 Web 左侧栏悬停展开、移开收起，支持手动固定、自定义延迟和减少动态效果。
 - [var-lin/dsh-plugin-layout-organizer](https://github.com/var-lin/dsh-plugin-layout-organizer) — 对 DSH 投放到侧边栏顶部、侧边栏底部、对话标签、输入框停靠行与设置页导航的插件按钮做拖拽排序、官方/第三方分隔线与按钮收纳。只改变显示位置，不改动插件注册表。
 - [vibeinging/dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) — 对话轮次导航。
 - [victormshan/dsh-web-relay](https://github.com/victormshan/dsh-web-relay) — dsh 三方协作协议插件：Step List 状态机、五级审核链（含本地 Claude Code 混合审）、alternatives 裁决、无介入续跑与能力持久化体系。
@@ -1686,6 +1687,7 @@ dsh plugin --profile web add dshmarket
 - [megatronyy/dsh-skin-background](https://github.com/megatronyy/dsh-skin-background) — 图片背景皮肤：内置四张壁纸，支持用户壁纸目录与自定义图片链接，设置页实时调节压暗与模糊。
 - [mengnanxyyyy/dsh-markdown-xyy](https://github.com/mengnanxyyyy/dsh-markdown-xyy) — 轻量级对话 Markdown 主题插件——增强原生着色，4 套内置主题（浅/深双档）、用户自定义 CSS 主题、系统感知自动切换、内置主题编辑器，提升快速阅读体验。
 - [MicroSharpAnt/dsh-theme-presets](https://github.com/MicroSharpAnt/dsh-theme-presets) — 在 DSH Web GUI 的主题选择中加入 Nord、Dracula、Catppuccin、Tokyo Night、One Dark、Gruvbox、Solarized、GitHub、Everforest、Kanagawa、Rosé Pine 十一套配色预设，与内置的浅色/深色/跟随系统正交叠加。
+- [MilkySnowWay123/dsh-client-ui-skin-tianlight](https://github.com/MilkySnowWay123/dsh-client-ui-skin-tianlight) — DeepSeek Harness 的「遐蝶·天光」皮肤：4K 视频/图片壁纸、本地上传与自动轮播、可选 WebWallGL 场景、液态玻璃与薄荷猫桌宠；Alt+W 打开壁纸面板。
 - [MistyRain-field/dsh-hu-tao-skin](https://github.com/MistyRain-field/dsh-hu-tao-skin) — 原神胡桃（往生堂）主题皮肤：14 个主题令牌的墨黑、绯红与琥珀金配色，飘落梅花瓣与流光蝴蝶，梅花徽记，以及会跟随侧栏收放的浮动开关。
 - [MitterMeierGithub/dsh-darksoft-theme](https://github.com/MitterMeierGithub/dsh-darksoft-theme) — dsh web 暗色主题插件（移植自 Obsidian things-soft-colorful-headings）：通过 --dsw-alias-label-* token 覆盖实现暖灰调暗文本，配合柔和的彩色 h1-h6 标题，零依赖。
 - [more-nico/dsh-nico-theme](https://github.com/more-nico/dsh-nico-theme) — 可切换的 DSH 网页端液态玻璃主题——14 个面板在流体背景上变成磨砂玻璃，材质参数有滑杆，悬停时玻璃与面板内容一起倾斜。
@@ -3873,6 +3875,7 @@ dsh plugin --profile web add dshmarket
 - [Viger1/dsh-pilot](https://github.com/Viger1/dsh-pilot) — 按无障碍 ref 操控浏览器：导航、把页面快照成 ref 树、操作元素、等待条件；域名策略跟随会话审批状态，并由请求拦截层强制执行。
 - [Viger1/dsh-preview](https://github.com/Viger1/dsh-preview) — 无头浏览器验证工具：让 agent 打开自己刚写的页面，读取渲染后的 DOM 与计算样式、检查控制台、截图留档；内置 frontend-verify 技能。
 - [vitas/dsh-web-search-openrouter](https://github.com/vitas/dsh-web-search-openrouter) — 内置 web_search 每次搜索都要在 DeepSeek 自己的端点上消耗一整轮模型调用；本插件改为在 OpenRouter 兼容网关上执行搜索，与对话走同一个账户，模型和价格都由你决定。
+- [wangtheme-coder/dsh-dragon-control](https://github.com/wangtheme-coder/dsh-dragon-control) — 仅支持 Windows x64，0.5.3 预览版：两个受控工具（dragon_browser 与 dragon_desktop），网页走 DOM/CDP、桌面走 Windows UI Automation，按网站来源和可执行文件分 read/control 权限，支持多步 batch、物理 Esc 急停与脱敏动作日志。原生命令改成两个常驻进程，省掉每次动作重新起进程，同机单步按键约 0.7 秒；前台被别的窗口抢走时直接中止这一步，不会把字打到别处。网页侧自带 Edge/Chrome 启动器与 CDP 客户端，不再依赖其他浏览器插件或 Electron 运行时。它不是系统沙箱，登录、管理员窗口和安全桌面仍由用户处理。
 - [whiteS18/dsh-bing-search](https://github.com/whiteS18/dsh-bing-search) — godchen520/dsh-web-search-bing 的维护 fork，适配 DSH 0.1.5-rc.1：为内置 web_search 工具提供 Bing 搜索源，直接解析 cn.bing.com 公开 HTML 结果页，无需 API Key，国内可直连，不消耗模型自带搜索额度。端点与结果数量可配置。
 - [wjj-8283/dsh-web-fetch-fakeip-plugin](https://github.com/wjj-8283/dsh-web-fetch-fakeip-plugin) — 让内置 web_fetch 在 Clash / mihomo 以 TUN + fake-ip 模式运行时正常工作：只放行 fake-ip 地址段（198.18.0.0/15、fdfe:dcba:9876::/64、2001:2::/48）通过公网地址校验，回环、内网与链路本地地址仍照旧拦截。无需设置代理环境变量，也无需改动 Clash。
 - [wqty123/dsh-browser](https://github.com/wqty123/dsh-browser) — 共享真实浏览器：用户可观看并随时接管的原生 Electron 窗口，agent 通过 CDP 驱动，内置 20 个 browser_* 工具（打开/快照/执行/填表/截图/下载/登录态）；任务级会话隔离、登录态持久化、人机验证识别，纯 `dsh web` 无需桌面外壳即可自托管。
@@ -4045,6 +4048,7 @@ dsh plugin --profile web add dshmarket
 - [biliye/dsh-voice-call](https://github.com/biliye/dsh-voice-call) — DSH 桌面端与 Web GUI 通用（同一份插件，只是 profile 名不同）的个人语音通话助手：可拖拽悬浮球通话面板、浏览器端 VAD（停顿自动发送）、语音识别可选本地 SenseVoice（复用官方「语音输入」插件已下载的模型，免装第二份模型）/ FunASR HTTP 或流式 / 云端兼容 API、MiniMax / MiMo-V2.5-TTS（含导演模式与音色克隆）/ OpenAI 兼容 TTS 语音回复、可开关的唤醒词模式（沉默自动休眠），以及把任务分发给独立子会话并跟踪进度、停止与完成播报。
 - [CAOGGL/dsh-ding](https://github.com/CAOGGL/dsh-ding) — 对话完成提醒：Agent 空闲（idle）时播放提示音并弹 Windows 原生通知，可配 ding.mp3、音量与防抖节流。
 - [cccc12138/dsh-read-aloud](https://github.com/cccc12138/dsh-read-aloud) — 在每条已定稿的助手回复里、紧挨点赞按钮右侧加一个小喇叭：点击用浏览器语音引擎朗读这条回复，鼠标悬停可调倍速与音色。
+- [chaoge762/dsh-ears-prosody](https://github.com/chaoge762/dsh-ears-prosody) — 本地离线语气分析：在转写之外，给出语速、音高、停顿与力度的听感描述，让模型听懂「怎么说的」。
 - [duoduoqian708/dsh-voice-talk](https://github.com/duoduoqian708/dsh-voice-talk) — DSH Web 的语音对话模式：点一下麦克风进入全屏通话，边说边听，AI 回复边生成边朗读。界面中英双语，适配明暗主题，支持语速调节与音色切换。
 - [fangqian616/dsh-say](https://github.com/fangqian616/dsh-say) — 让你的 DSH 用你喜欢的声音开口说话、汇报内容，过长的汇报先压缩再念。角色声线不需要自己训练：一段 3-10 秒参考音就能克隆，也能直接用别人训练好的模型；不必为此装一整套 6.4 GB 的 GPT-SoVITS —— 运行时和声线都由插件自己装好。已有 GPT-SoVITS 的话也能直接接上，两者跑的是同一套声线。
 - [february2015/dsh-dingo](https://github.com/february2015/dsh-dingo) — 多对话并行的声音提醒 + 对话直达：当前对话当/当当（crisp 清脆档），其他对话叮/叮叮（soft 柔和档）+ 右上角小卡片，点一下直达对应对话。
