@@ -4143,7 +4143,6 @@ dsh plugin --profile web add dshmarket
 - [huliux/dsh-asr-plugin](https://github.com/huliux/dsh-asr-plugin) — 为 Apple Silicon macOS 上的 DeepSeek Harness 提供本地会议转写、麦克风与系统音频录制、说话人标签及文本导出。
 - [jerryqx/dsh-ximalaya](https://github.com/jerryqx/dsh-ximalaya) — 在 DSH Web 界面收听喜马拉雅播客/有声书：搜索专辑、分页浏览曲目，播放条支持上下集/进度/音量/倍速；扫码登录后「我的」页可看收藏的声音（点击即播）、我的订阅（带最新一集提示）与关注的主播（含其公开专辑）；Host 端音频流代理支持 Range 拖动，并注册 `ximalaya_play` 模型工具让 agent 按需搜索播放。
 - [Jesse-njx/dsh-voice](https://github.com/Jesse-njx/dsh-voice) — 语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。
-- [jianghu-lao-yao/sh-volume-knob](https://github.com/jianghu-lao-yao/sh-volume-knob) — 输入框话筒旁的扬声器按钮——单击翻到「你最新提问的开头」并闪烁光标，从那里读到最新回复结尾（走 dsh-tts，回退浏览器语音）；按住右滑可在页面上挑选任意朗读起点，按住上滑调出竖式混音台，分别控制页内媒体音量与系统输出音量。
 - [jryang1997/dsh-hold-to-dictate](https://github.com/jryang1997/dsh-hold-to-dictate) — 输入框长按听写，不自带识别引擎，复用官方语音输入模块已挂载的语音服务——鼠标或触屏长按输入框，松开把文字写进草稿，上滑取消，不会自动发送。
 - [Jstn-1g/dsh-live-voice](https://github.com/Jstn-1g/dsh-live-voice) — DSH Web 的会话绑定单轮语音预览：提供无需凭证的本地合成演示和可选的 Qwen Audio，保持精确会话隔离，并仅在明确操作后将转写写入草稿，不会自动提交。
 - [jypjypjypjyp/dsh-music-studio](https://github.com/jypjypjypjyp/dsh-music-studio) — 在对话里作曲：模型按内置作曲规范写出乐谱 JSON，play_score 工具校验后渲染成对话内的卡片，含卷帘图、Web Audio 实时播放与 WAV/JSON 导出。
