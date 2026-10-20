@@ -1814,6 +1814,7 @@ dsh plugin --profile web add dshmarket
 
 - [1069137617/dsh-reasoning-tiers](https://github.com/1069137617/dsh-reasoning-tiers) — 在 llm-pi-ai 设置节为第三方模型提供商补齐推理档位（reasoning effort）声明，让 DSH 自带的思考强度选择器对 pi-ai 目录之外的模型真正可用。
 - [11zld22/dsh-model-info-fill](https://github.com/11zld22/dsh-model-info-fill) — 按模型名从 models.dev 补全自定义模型缺失的上下文、输出上限、思考档位和图片能力，并列出未匹配模型供手改。
+- [1373700184/dsh-subagent](https://github.com/1373700184/dsh-subagent) — 把本机 Qoder 与 QoderCN 订阅 CLI 注册为 DSH 子代理后端，支持实时进度、单次额度显示、设置页以及 /qoder、/qodercn 斜杠指令。
 - [1624318455/dsh-plugin-adapter](https://github.com/1624318455/dsh-plugin-adapter) — 将 OpenCode Zen 免费模型接入 DeepSeek Harness，无需 API Key，并跟踪网关兼容性。
 - [2404723600/dsh-router-loomy](https://github.com/2404723600/dsh-router-loomy) — 把讯飞 Loomy 云端通道作为 OpenAI 兼容供应商接入 dsh-router，提供模型列表与流式对话补全。
 - [2861292267/DSH-Official-WorkBuddy-Credit-Proxy](https://github.com/2861292267/DSH-Official-WorkBuddy-Credit-Proxy) — 把本机已登录的 WorkBuddy 账号汇成一个自动故障转移的模型池，同一池子对外提供 OpenAI Chat、OpenAI Responses 与 Anthropic Messages 三种协议，并支持模型别名、用量统计与积分自动化。
