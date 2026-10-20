@@ -947,6 +947,7 @@ dsh plugin --profile web add dshmarket
 - [spidu-lee/dsh-refresh](https://github.com/spidu-lee/dsh-refresh) — 让 F5、Ctrl+F5 和 Ctrl+Shift+R 都能刷新 DeepSeek Harness 页面。
 - [SpookySandwich/dsh-plugin-smooth-stream](https://github.com/SpookySandwich/dsh-plugin-smooth-stream) — 给 DeepSeek Harness 加入更好的流式文字动画。
 - [sqfcyily/dsh-workspace-files](https://github.com/sqfcyily/dsh-workspace-files) — 在DeepSeek Harness Web GUI 中浏览工作区的目录/文件，并结合 Git 显示文件改动。
+- [StarMoon-win/dsh-restart-plugin](https://github.com/StarMoon-win/dsh-restart-plugin) — 在 Windows 上的 DeepSeek Harness 桌面版侧边栏添加「重启」按钮：结束整个应用进程树并重新打开应用。
 - [StarsHarryZhu/dsh-intelligent-UI](https://github.com/StarsHarryZhu/dsh-intelligent-UI) — 渐进式交互：回复里的可交互卡片，由 31 个固定组件搭成（滑块、输入框、可排序表格、图表、函数图像、公式排版、分页、勾选清单、流程图、答题按钮、动画播放器）。调节控件在浏览器内重算，不再调用模型；模型不写任何 HTML 或 JavaScript。内置微积分引擎（定积分、导数、极限、求和、求根、泰勒多项式）和一个教模型何时用卡片的技能。
 - [stephenlzc/dsh-swarm-panel#dsh-swarm-plugin](https://github.com/stephenlzc/dsh-swarm-panel/tree/main/dsh-swarm-plugin) — DeepSeek Harness swarm 的 Conversation Flow 可观测性，支持查看拓扑、检查路由消息、HITL 暂停、Live 跟随和子会话导航。
 - [Storm-Starlight/dsh-mcp-skills-board](https://github.com/Storm-Starlight/dsh-mcp-skills-board) — DeepSeek Harness 的 MCP 服务器与技能管理面板：侧栏面板加插件页配置区，支持搜索、状态灯、逐行开关、详情，以及按 Codex mcp_servers 字段设计的添加服务器表单。
@@ -4427,6 +4428,7 @@ dsh plugin --profile web add dshmarket
 - [zimai233/dsh-adhd-copilot](https://github.com/zimai233/dsh-adhd-copilot) — ADHD 行为辅导技能：任务拆解、事项过载管理、启动仪式与失败重启。
 - [ZiYuan258/dsh-skill-router](https://github.com/ZiYuan258/dsh-skill-router) — DeepSeek Harness 的按需技能工具：注册 skill_search / skill_load / skill_ref 三个工具，让模型先从分层的技能库里检索、再按需加载正文，库里的技能因而不必进入常驻目录、不占每轮上下文；并在对话视图栏加一个「技能」标签页，回读整个会话、列出本次真正加载过哪些技能及其轮次。零依赖，所有技能调用记录只在客户端渲染，不进入模型上下文。
 - [zjsthmjialin/commercial-ui-ux-codex-skill#dsh-commercial-ui-ux](https://github.com/zjsthmjialin/commercial-ui-ux-codex-skill/tree/main/dsh-commercial-ui-ux) — 注册 commercial-ui-ux 技能：以任务为中心的商业界面 UI/UX/GUI 设计、审查、修复与实现（SaaS、仪表盘、后台、表单、表格、设计系统），带参考文档体系与质量门禁。
+- [znlgis/dsh-opengis-skill](https://github.com/znlgis/dsh-opengis-skill) — 把 opengis-skills 的 32 个 gis/ 技能（GDAL、QGIS、GeoServer、PostGIS、PROJ、PDAL、GRASS GIS、JTS、GeoPandas、Shapely、CesiumJS、OpenLayers、Leaflet、deck.gl 等）打包进 DSH 技能目录；目录只列出名称与描述，技能正文与参考文档按需加载。
 - [zuoyunlai/lunheng-article-pipeline-dsh](https://github.com/zuoyunlai/lunheng-article-pipeline-dsh) — DSH bundle 技能包：把深度长文生产（学术论文 / 行业分析 / 商业评论）拆成 9 角色流水线——T1 文献 / T2 数据 / T3 案例三线并行检索、T4 分析、T5 写作、T6 批判伙伴、T7 审计、T8 终检（主控亲执行）、T9 同行评审，跨 6 个阶段，含三角验证、M 门 26 项终检（25 项机检 + 1 项人工）、G0-G16 独立审计（含中文 AI 痕迹闸）、审稿评分与期刊匹配，以及 4 个人在环节点。以 bundle 分发（`package.json#dsh.bundle.patch` + `lib/index.js` 入口注册技能），`dsh plugin add lunheng-article-pipeline` 即装；随包 T1-T9 角色卡、模板与 36 个零依赖校验脚本，README 五语。
 
 ### 🔁 工作流与自动化
