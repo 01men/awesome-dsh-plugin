@@ -2186,7 +2186,7 @@ dsh plugin --profile web add dshmarket
 - [1Lany2a/dsh-domain-role#dsh-domain-bridge](https://github.com/1Lany2a/dsh-domain-role/tree/main/plugins/dsh-domain-bridge) — 长周期 agent 会话的域身份层——声明优先的域寻址、会话工厂、四级暂停与模型分派，用于协调多个顶层会话。
 - [2026heshao/dsh-forget-session](https://github.com/2026heshao/dsh-forget-session) — 在会话行菜单加入「遗忘会话」（菜单内二次点击确认），把会话从侧栏与磁盘彻底移除：先停掉正在运行的工作，经官方通道解除工作区、归档与置顶记录，删除日志目录与投影缓存条目，并由复活守卫在一个窗口内补删迟到写入或句柄残留重建的文件；灵枢记忆、附件与其他会话不受影响。
 - [dsh-undo-plugin](https://github.com/23swccp/dsh-undo/tree/master/packages/bundle-rollback) — 对话与工作区撤销：通过 /undo 节点轴、会话头部按钮或消息下方图标回滚到任意已发送 prompt 之前；插件私有 Shadow Git 快照恢复文件，被回滚回合不会进入模型上下文，误操作还能“撤回回滚”。附带归档会话管理与工具卡片分类配色。
-- [2JumpSinA/dsh-context-guard](https://github.com/2JumpSinA/dsh-context-guard) — DSH 上下文守卫：显示会话占用，在 45% 与 60% 提醒你写交接、换新会话；45% 起自动把交接草稿写进你的工作目录。跨档时点一下「写好交接，我复制」就立刻写一份草稿，并得到可直接粘贴到新会话的开场白。平台压缩上下文时自动留一份「压缩前快照」（水位 / 花费 / 改过的文件）——这些数字压完就查不到了。不注册工具、不注入提示词，因此不消耗上下文。
+- [2JumpSinA/dsh-context-guard](https://github.com/2JumpSinA/dsh-context-guard) — 长会话越跑越贵，平台到点还会把上下文压掉。这个插件做三件事：在会话标题旁显示当前上下文占了多少，鼠标停上去能看到这个数是怎么来的；过 45% 时往工作目录的 HANDOVER.md 写一份交接草稿，记下改过哪些文件、花了多少钱、最近几轮在聊什么；到 60% 提醒你一次该收尾了。平台压缩发生时，它把压缩前的数字记一行，事后还查得到。不调用模型，也不改动对话内容。它不阻止压缩，拿不回已经被压掉的部分。
 - [3403473060/dsh-inline-images](https://github.com/3403473060/dsh-inline-images) — 对话内联图片：LLM 回复中输出的本地图片路径在消息正文直接渲染为图片（9 种格式、点击放大灯箱、可调尺寸）。
 - [439436269-ctrl/dsh-session-path](https://github.com/439436269-ctrl/dsh-session-path) — 复制会话日志路径（或可直接粘贴的接续块），并把多帧 zstd 会话日志转成可读文件，供另一个会话读取接续。
 - [571242/dsh-armor-switch](https://github.com/571242/dsh-armor-switch) — 可逆的交付契约与破甲插件：开启时生效最高指令权威与交付规则，关闭时注册面与官方逐字节一致，支持宿主与 Profile 清洗。
@@ -3037,7 +3037,7 @@ dsh plugin --profile web add dshmarket
 - [duhu2000/dsh-mcp-connector](https://github.com/duhu2000/dsh-mcp-connector) — MCP连接器：DeepSeek Harness 的 MCP 管理面板；通过持续更新的超百个 MCP连接器目录接入 MCP Server，统一连接管理与授权配置、跨连接搜索工具并完成连接排障；可按连接/服务/发现状态筛选，查看易读参数、最后成功缓存时间和诊断，并逐连接重新发现工具；支持 OAuth 2.0 PKCE、API Key、stdio/HTTP 和 mcpServers JSON 导入；由企查查/QCC 团队维护。
 - [duhu2000/qcc-mcp-legal-oauth](https://github.com/duhu2000/qcc-mcp-legal-oauth) — 一键 OAuth（PKCE）授权接入企查查法律产品——法律数据 MCP 服务（法规检索、案例检索）：动态注册客户端、token 自动刷新、动态配置 mcp-client 条目，一次授权覆盖法规与案例服务。
 - [duhu2000/qcc-mcp-oauth](https://github.com/duhu2000/qcc-mcp-oauth) — 一键 OAuth（PKCE）授权接入企查查 MCP 服务：动态注册客户端、token 自动刷新、动态配置 mcp-client 条目，一次授权覆盖全部企查查数据服务。
-- [Duoasa/DSH-to-Figma](https://github.com/Duoasa/DSH-to-Figma) — 通过 DSH 自动生成并配对的本地配套插件读写 Figma 原生图层，获取截图、导出素材，并为工作区中的前端实现提供设计上下文。
+- [Duoasa/DSH-to-Figma](https://github.com/Duoasa/DSH-to-Figma) — 让 DSH 用自然语言创建和修改 Figma 设计，读取已有 UI 画板辅助前端开发，并支持画布截图与素材导出。需在 Figma 中运行配套插件。
 - [dxxCaO/wincu](https://github.com/dxxCaO/wincu) — 给 DeepSeek Harness 用的 Windows 计算机操作插件：常驻 PowerShell UIA 后端，对外只有 16 个合并入口（读取/点击/输入/观测/验证）；带加固的策略层（红线拒绝、显式审批、观测绑定、落点归属与前台焦点守卫）与一轮性能优化（后端预热、缓存、像素哈希稳定探测）。fork 自 dsh-computer-use-win。
 - [DYF-zs/dsh-qboson-ising-solver](https://github.com/DYF-zs/dsh-qboson-ising-solver) — 将 QBoson Kaiwu 的 Ising 矩阵求解能力作为 solve_ising Agent Tool 接入 DeepSeek Harness。
 - [ECNU/EduWork#dsh-literature](https://github.com/ECNU/EduWork/tree/main/packages/dsh-literature) — 检索 DBLP 与 arXiv 文献、获取 BibTeX 和全文，支持归属当前会话的后台任务；由 EduWork 接续维护的 SihanLv/dsh-literature 分支。
