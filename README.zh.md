@@ -1634,7 +1634,7 @@ dsh plugin --profile web add dshmarket
 - [Erbsen16/dsh-client-ui-dracula](https://github.com/Erbsen16/dsh-client-ui-dracula) — DSH Web GUI 的 Dracula（VS Code 吸血鬼）深色主题：把产品自身的配色令牌映射到德古拉调色板，并附更紧的字号阶梯、1080px 正文列宽与不折行的代码块。仅深色模式。
 - [exoticknight/dsh-theme-eink-retro](https://github.com/exoticknight/dsh-theme-eink-retro) — DeepSeek Harness Web UI 纸墨风客户端主题，提供保留语义状态色的平衡模式和黑白沉浸模式。
 - [FAVKTOXIC/dsh-theme-liquid-glass](https://github.com/FAVKTOXIC/dsh-theme-liquid-glass) — 真正的液态玻璃 DSH 主题：SVG 边缘折射效果覆盖输入框、发送按钮、消息气泡、视图标签、队列坞和侧边栏。自带动态色块壁纸，可自定义背景模糊与亮度，重新设计的模型选择弹窗，全界面玻璃质感按钮，以及水滴形状的专属设置图标。
-- [FeatherHunter/dsh-opencode-palette](https://github.com/FeatherHunter/dsh-opencode-palette) — 将 opencode 全部 38 款主题（33 个 TUI + 4 个桌面 2.0 + system）搬进 DeepSeek Harness：数据驱动管线（JSON → 颜色解析 → DSH 覆盖），按浏览器持久化，可选等宽/比例排印、自带五款代码字体，system 回退只保留排印。
+- [FeatherHunter/dsh-opencode-palette](https://github.com/FeatherHunter/dsh-opencode-palette) — 将 opencode 全部 38 款主题（33 个 TUI + 4 个桌面 2.0 + system）搬进 DeepSeek Harness，另带 25 套 IP 预置色板（12 暗 / 13 亮）与 37 槽色板编辑器：数据驱动管线（JSON → 颜色解析 → DSH 覆盖），按浏览器持久化，可选等宽/比例排印、自带五款代码字体，system 回退只保留排印。
 - [feng78-boop/dsh-thirteen-bg](https://github.com/feng78-boop/dsh-thirteen-bg) — DeepSeek Harness Web 界面动态壁纸插件：支持 GIF / 动图 WebP / APNG 与静态 PNG/JPG 图片，以及 MP4 / WebM 视频背景，格式自动识别，自带压暗与亮度调节，可让界面色调跟随背景。
 - [fengb3/dsh-theme-macintosh](https://github.com/fengb3/dsh-theme-macintosh) — 经典麦金塔 System 7 像素风主题：桌面网点画布、Finder 侧栏、黑白按钮与弹窗，深浅色随官方外观切换。
 - [FormalistBlue/dsh-everforest](https://github.com/FormalistBlue/dsh-everforest) — 为 DeepSeek Harness Web/Desktop 提供 Everforest 配色：深色 / 浅色各硬 / 中 / 软共 6 套，以 token 覆盖层生效；Host 半部在 Client 加载前注入 boot 调色板，Web 的 loading 页与首帧即为 Everforest；设置页可选择色板与跟随系统外观。
