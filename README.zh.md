@@ -1779,6 +1779,7 @@ dsh plugin --profile web add dshmarket
 - [yaanlaan/deepseek-colorful](https://github.com/yaanlaan/deepseek-colorful) — 专为 DeepSeek Harness 打造的 UI 个性化配色、毛玻璃拟态与全景壁纸/动态视频外观定制插件。
 - [YE-ZINAN/dsh-skin-im2005](https://github.com/YE-ZINAN/dsh-skin-im2005) — DeepSeek Harness 客户端的 2005 年代即时通讯皮肤：直角 1px 窗框、蓝色渐变标题条、中文界面统一宋体、好友分组式侧栏（含头像档案卡与可编辑签名）、每条消息带名字与时间抬头，皮肤档位三档可实时切换。美术全部为原创 SVG；重绘后的工具条另带跨会话备注框、后台任务面板，以及美式八球、扫雷、Token 农场和德州扑克——插件内置的专注模式会把它们静音。
 - [yefengliu1/dsh-theme-songgrid](https://github.com/yefengliu1/dsh-theme-songgrid) — 宋律 Songgrid —— 宋代美学主题，宣纸（浅）与夜墨（深）双变体；汝窑天青承担交互态、窑铜只用于引用块；另附 4pt 间距阶与 46 个 mask 图标。
+- [yezitotempeace/dsh-chat-background](https://github.com/yezitotempeace/dsh-chat-background) — 聊天壁纸：用本地图片、本地视频或六套预设渐变做聊天背景，可调清晰度、透明度、缩放、位置、暗色遮罩、显示方式、动效与玻璃面板；文件只存在浏览器 IndexedDB，不上传。
 - [yidao2000/dsh-local-background](https://github.com/yidao2000/dsh-local-background) — 用本地文件夹当 DSH Web 壁纸：默认就用当前用户的「图片」库（C:\Users\<用户名>\Pictures），宿主通过同源 HTTP 提供其中的图片，每 N 分钟轮换一张（0-1440，默认 5），洗牌后一轮内不重复；「插件」页的设置界面可用系统原生文件夹对话框换目录，并可调节背景图不透明度（100%）、压暗遮罩（25%）与面板不透明度（15%），改动即时生效。弹窗、对话框与菜单保持默认不透明底色，字更清楚。直接读取 .jpg .jpeg .png .webp .gif .avif .bmp，用户配置写入 $DSH_HOME，升级不会带上你的目录路径。
 - [Yinxe/deepseek-harness-plugins#web-style](https://github.com/Yinxe/deepseek-harness-plugins/tree/main/plugins/web-style) — Web 外观定制套件：7 套主题画廊（每套 122 个 --dsw-* token 全量映射）+ 设置页一键切换并持久化，Material You 壁纸取色一键生成整套动态配色（可导出 MD3 令牌），另带全局圆角三档。主题以官方 overrideTokens 覆盖层叠加在官方亮/暗之上，官方外观行永远合法可用。
 - [ymh0000123/dsh-theme-endfield](https://github.com/ymh0000123/dsh-theme-endfield) — 《明日方舟：终末地》工业编辑风主题：奶油纸底、墨黑文字、全局直角，两套强调色配色（谷地黄信号黄 / 武陵青青碧色）可在设置切换，另有可选的等高线地形背景、ENDFIELD 水印与启动加载屏。
@@ -3026,6 +3027,7 @@ dsh plugin --profile web add dshmarket
 - [curtainsmall/dsh-reckoner](https://github.com/curtainsmall/dsh-reckoner) — 面向 DeepSeek Harness 的确定性计算引擎，附带一个预设：引导 LLM 通过引擎而非文本生成来完成计算。
 - [czcdr/dsh-plugin-rea](https://github.com/czcdr/dsh-plugin-rea) — 第三方适配插件：把上游 REA（逆向一切，github.com/morluto/rea）的 MCP 服务接入 DeepSeek Harness，提供 mcp__rea__* 工具。2.x 自带供给：把 Node、REA CLI、JDK、Ghidra 装到 <DSH_HOME>/plugins/rea-bundle 下，再经 shim 启动 REA —— 干净机器跑一次 setup 即可用；1.x（v1 分支 / npm 1.0.6）是纯配置适配器，需要你自己装好 REA 与 Ghidra。逆向分析能力由 REA 提供，覆盖原生二进制（Hopper/Ghidra/IDA）、JavaScript/Electron 应用、.NET 程序集、网站、Android APK 与 adb 设备、固件与进程捕获。
 - [CZX2244/dsh-bilibili](https://github.com/CZX2244/dsh-bilibili) — B站视频分析工具：提取元数据、字幕文稿（必剪/本地 ASR 兜底）、评论与弹幕，抓取清晰关键帧并可选本地视觉描述。
+- [daimingxing/dsh-codegraph-project](https://github.com/daimingxing/dsh-codegraph-project) — 将本机已安装的 CodeGraph CLI 接入各会话的已索引项目，同项目共享一个 MCP 进程，并在工作目录或索引变化时更新会话级工具。
 - [DamonKoy/dsh-plugins#dsh-mcp-client-v2](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-mcp-client-v2) — MCP 客户端增强：分页工具发现、非阻塞启动、mcp_tool_search 搜索，自研 stdio/streamable-http 传输。
 - [danieldu168/dsh-stash](https://github.com/danieldu168/dsh-stash) — 把外部数据库与文献语料登记成模型可调用的取数工具；每条库声明取数边界，钥匙台账只记引用名不存值，取数台账只留指纹与内容哈希而不留响应体。
 - [Deanyu148/dsh-balance-inquiry](https://github.com/Deanyu148/dsh-balance-inquiry) — 余额看板，可以添加多个按量计费/Token plan，同时查询余额。
@@ -6241,6 +6243,7 @@ dsh plugin --profile web add dshmarket
 - [THEWOLFWALKER/dsh-coyote](https://github.com/THEWOLFWALKER/dsh-coyote) — Agent 与网页 GUI 双面控制的 DG-LAB 郊狼（Coyote）电击/电刺激插件：八个 `coyote_*` 工具 + DSH 网页面板，共用同一安全边界（软上限、非对称升速限流、会话冷却、播放硬上限、断连即停）；v0.2 起可选自动电击层，把 agent 事件（工具调用/报错/回合结束）映射为有界脉冲；官方 V3 socket 协议 + 二维码配对、可编程波形。仅限成年人。
 - [TianJie52009/dsh-kaomoji](https://github.com/TianJie52009/dsh-kaomoji) — 给 dsh 回复按情绪添加日文颜文字，词库精选自颜文字屋（kaomojiya.org），可在「设置 → 通用设置」中调整。
 - [TianJie52009/Tdsh-emoji](https://github.com/TianJie52009/Tdsh-emoji) — 给 dsh 回复在内容最匹配的位置添加标准 emoji，并避免与颜文字出现在同一句。
+- [ting-good/dsh-cook-pet](https://github.com/ting-good/dsh-cook-pet) — 桌面宠物「照照」：透明置顶窗悬浮于所有应用之上，镜像 DeepSeek Harness 状态——待机、颠锅、上菜、托腮等你回话，支持点击回应、拖拽、右键调大小，Electron 运行时自动下载。
 - [Tisitan/dsh-live2d-companion](https://github.com/Tisitan/dsh-live2d-companion) — DSH 的 Live2D 桌宠：8 态 AI 状态灯 + 网页挂件 + 置顶透明 Electron 桌宠窗，表情/动作/气泡齐全，换模型自动适配。
 - [TongY1n/ui-muyu](https://github.com/TongY1n/ui-muyu) — 一个赛博木鱼：可拖拽、点击敲击、累积功德的 Web 悬浮小摆件。
 - [tonyous/DSH-AMP-Radio](https://github.com/tonyous/DSH-AMP-Radio) — 可拖动的收音机胶囊，带实时可视化、电台搜索、收藏与自更新检查，面向 DSH Web。
