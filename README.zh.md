@@ -1047,6 +1047,7 @@ dsh plugin --profile web add dshmarket
 - [wanderer-yk/dsh-xueqiu](https://github.com/wanderer-yk/dsh-xueqiu) — 雪球行情面板：嵌入输入框上方，免登录查看 A股/港美股行情、指数与自选股，K线蜡烛图（成交量/均线/十字光标）、热榜、搜索、7×24 快讯，另有可拖动迷你指数徽章。
 - [wang6077/dsh-ide-vscode](https://github.com/wang6077/dsh-ide-vscode) — DSH 右侧栏里的工作区文件树与代码编辑器：跟随所在会话的工作区，新建 / 重命名 / 删除文件与文件夹（默认进回收站），带行号与语法高亮地编辑、Ctrl+S 保存、Ctrl+D 复制当前行，可预览图片、播放音频视频、查看并解压压缩包或用系统 tar 打包成 zip，能按文件名搜索或粘贴路径跳转，Windows 下图标用系统自己那套（SHGetFileInfo）。
 - [warmwine/dsh-ui-font](https://github.com/warmwine/dsh-ui-font) — 网页界面字体引擎：系统字体枚举、准星点选的全局与逐组件字号微调、设置页。老花眼友好，自定义字体和页面部件字体和字体大小，支持SPY模式扫UI和其他插件。
+- [waterha/dsh-pintop](https://github.com/waterha/dsh-pintop) — 提供 DSH 软件窗口置顶功能，让其不会乱隐藏，仅 Windows；需 PATH 上有 PowerShell 7（pwsh.exe）。
 - [watershow666/dsh-sidebar-icon-row](https://github.com/watershow666/dsh-sidebar-icon-row) — 把 DSH 侧栏的面板入口与底部入口改成只显示图标的并排方块，悬停显示名称；提供四档图标大小、逐项显隐开关与上下排序，并在底部加一个设置入口。
 - [Waverly-W/dsh-scratchpad](https://github.com/Waverly-W/dsh-scratchpad) — DeepSeek Harness Web GUI 临时对话工作区自动化管理插件。
 - [wefio/dsh-cache-miss](https://github.com/wefio/dsh-cache-miss) — 提示缓存未命中（cache miss）时，在重建缓存的 assistant 回复下方显示一条黄色缓存提示，展示未缓存（uncached）重新计费（re-billed）的输入 token、缓存命中 token 与首字延迟（TTFT）。
@@ -4707,6 +4708,7 @@ dsh plugin --profile web add dshmarket
 - [lispking/dsh-auto-evolve](https://github.com/lispking/dsh-auto-evolve) — 一个自我进化的 DeepSeek Harness 插件：观察代理的运行方式，通过 LLM 对其自身资产提出改进方案，在沙箱试运行代理中验证每个方案，只应用通过验证的变更——带版本化账本，出现性能回退时自动回滚。
 - [LittleBlackTong/dsh-plugin-cron](https://github.com/LittleBlackTong/dsh-plugin-cron) — Agent 任务定时调度器：自然语言或侧栏 UI 创建任务，到点向新建/固定会话注入 user 消息触发完整 agent turn，带执行历史、手动触发与 SSE 实时同步。要求 DSH session format v4（官方 DeepSeek Harness 0.1.7+）：注入消息使用 producer-owned source kind plugin:cron。
 - [LittleBlackTong/dsh-plugin-heartbeat](https://github.com/LittleBlackTong/dsh-plugin-heartbeat) — 定时心跳：用 followup 注入唤醒每个根 agent 主动汇报进展、风险与卡点——忙碌时排队不打断、最多保留一条、连续无人回应自动暂停，用户下一条消息即恢复。
+- [liujianqiao701/dsh-test-framework](https://github.com/liujianqiao701/dsh-test-framework) — DSH 测试工作框架：把空文件夹初始化为产品、模块、版本、报告与归档目录树，注册 7 个 test_framework_* 工具与 4 个运行时技能，并提供提示词级闸门——开测前报告需求文档拆分、版本、跨文档关联与环境账密中尚未登记的部分。需先配置 playwright MCP（无替代路径）。
 - [Lixiuxiu559/AgentForge](https://github.com/Lixiuxiu559/AgentForge) — 可安装到 Claude Code 与 DSH 的六个工程技能：调研、架构侦察、实施编排、三轴评审、复杂度审计和突变测试。按需通过宿主通用子 agent 能力委派，无需注册自定义 agent。
 - [ljsysfurryACE/dsh-aura-scheduler](https://github.com/ljsysfurryACE/dsh-aura-scheduler) — 主动调度：自适应心跳 + 价值网络（紧迫度、相关性、打断代价）决定 Agent 何时主动开口。
 - [lkshjd/dsh-debate](https://github.com/lkshjd/dsh-debate) — DeepSeek Harness 多 agent 隔离辩论：不同底色的辩手各自独立联网取证（互不可见防人云亦云）、交叉辩论互相反驳、评审收敛出结论。后台 job 运行，逐 agent 进度可见、token 统计、波次并行、断点续传。
@@ -5958,6 +5960,7 @@ dsh plugin --profile web add dshmarket
 - [iimaguest/phone-tunnel-pool](https://github.com/iimaguest/phone-tunnel-pool) — 为 dsh web GUI 提供自愈式 Cloudflare 快速隧道池：浮窗控件、扫码手机访问、代际轮换、追踪 Service Worker，免提示凭据交接。
 - [ijry/DeepSeek-Harness-Desktop-Ultra#dsh-plugin-mobile-bridge](https://github.com/ijry/DeepSeek-Harness-Desktop-Ultra/tree/main/plugins/dsh-plugin-mobile-bridge) — 带令牌鉴权的 REST 与 SSE 接口，扫码配对后可在手机 App 上看会话、发消息、批准工具调用。
 - [Illuminated2020/dsh-lark-claw](https://github.com/Illuminated2020/dsh-lark-claw) — DeepSeek Harness 的飞书/Lark 网关：按话题持久化会话、实时执行卡片、图片与文件输入、聊天内审批和提问、来源白名单，以及用自然语言创建可持久化的一次性或周期 Agent 任务。
+- [ivanant/dsh-simple-remote](https://github.com/ivanant/dsh-simple-remote) — 只用一个插件就可以手机访问 DSH——需本机与手机都装好并连上 Tailscale，没有额外设置。
 - [januory/deepseek-harness-gateway#dsh-gateway-agent](https://github.com/januory/deepseek-harness-gateway/tree/main/plugins/dsh-gateway-agent) — 客户机接入插件：以单条出站 WebSocket 连接网关，把本机 dsh web 界面经隧道转发给门户，配对接入码 + HMAC 认证；无需入站端口、端口映射或公网 IP。
 - [januory/dsh-remote-workspaces](https://github.com/januory/dsh-remote-workspaces) — 通过 SSH 把远程主机目录作为 Harness 工作区打开：read/write/edit/grep/glob 与 shell 命令经 SFTP、ripgrep、ssh2 exec 直接在远程主机执行，不做本地镜像；多主机注册表加密存储，本地沙箱策略依然生效。
 - [JauLukNgai/dsh-on-phone](https://github.com/JauLukNgai/dsh-on-phone) — 让手机浏览器直接使用电脑上的 DSH 网页界面，远程通道建立在 Tailscale Serve 之上。两边除了 Tailscale 不用再装任何东西：没有专用 App、没有二维码、没有登录页，插件不设账号，也不中转你的内容。电脑端支持 macOS、Windows 与 Linux。
