@@ -483,7 +483,7 @@ dsh plugin --profile web add dshmarket
 - [HEArtattaCK2332/dsh-text-explain](https://github.com/HEArtattaCK2332/dsh-text-explain) — 在 DSH 对话里划词即得大白话解释，浮窗显示，并自动带上这段话所在的那条完整消息作为语境。三档讲解深度（小白 / 通识 / 专业），切换后当场重讲；可选联网搜索与本地文件查找（默认交给模型自己判断，也可一键强制查一次，查完只补充新内容而不复述）；可继续追问；还能把整段问答「待命式」交接给一个新会话——背景放好即止，不唤醒模型、不耗额度。设置保存在宿主侧 settings.json，不点保存不落盘。仓库内另含一个 OpenAI 兼容端点与一个浏览器扩展（源码）。
 - [heiheiha798/dsh-plugin-response-window](https://github.com/heiheiha798/dsh-plugin-response-window) — Web UI 插件：以阶段性文字回复为界分段，把每段的 think 与工具调用收进限高可滚动、高度可配置的 slide 窗口，中间过程始终可见。
 - [hellofuture2068/dsh-simple-view](https://github.com/hellofuture2068/dsh-simple-view) — 简化 DSH 聊天界面：隐藏执行日志、收紧间距与字号、把消息做成气泡，并注入可编辑的“简洁回复”系统指令。
-- [HengryLiang/dsh-plugin-ai-drama](https://github.com/HengryLiang/dsh-plugin-ai-drama) — 面向 DeepSeek Harness 的 AI 短剧工作区：独立的「短剧模式」Agent 预设、34 个 Agent 工具与 9 个随包技能，覆盖立项、总纲、人物、剧本、分镜与导出。
+- [HengryLiang/dsh-plugin-ai-drama](https://github.com/HengryLiang/dsh-plugin-ai-drama) — 面向 DeepSeek Harness 的 AI 短剧工作区：独立的「短剧模式」Agent 预设、34 个 Agent 工具与 10 个随包技能，覆盖立项、总纲、人物、剧本、分镜与导出。
 - [HERO476/dsh-sidecard-ask](https://github.com/HERO476/dsh-sidecard-ask) — 在 DSH Web 界面划词就地追问（浮出按钮，或 Alt+Q 快捷键）：答案由不继承父上下文的独立子代理流式产出到侧边卡片，承载面为原生右侧栏 / dsh-better-sidebar / 内置浮层，也可把问题改为落回主对话。
 - [HeShen-1/dsh-composer-enhance](https://github.com/HeShen-1/dsh-composer-enhance) — DSH Web 输入框提示词增强：✨ 按钮先判断歧义、再原地改写草稿；空草稿时以灰色 ghost 给出下一步建议，Tab 或点击填入草稿且不自动发送。
 - [heshuren371/dsh-music-player](https://github.com/heshuren371/dsh-music-player) — 本地音乐播放器：扫描目录中的音频与视频文件，在「音乐」标签页播放，支持交叉淡化、10 段均衡器与响度归一化，并可按歌手-歌名重命名回写标签、封面与文件名（原子替换）。
@@ -1819,6 +1819,7 @@ dsh plugin --profile web add dshmarket
 - [2404723600/dsh-router-loomy](https://github.com/2404723600/dsh-router-loomy) — 把讯飞 Loomy 云端通道作为 OpenAI 兼容供应商接入 dsh-router，提供模型列表与流式对话补全。
 - [2861292267/DSH-Official-WorkBuddy-Credit-Proxy](https://github.com/2861292267/DSH-Official-WorkBuddy-Credit-Proxy) — 把本机已登录的 WorkBuddy 账号汇成一个自动故障转移的模型池，同一池子对外提供 OpenAI Chat、OpenAI Responses 与 Anthropic Messages 三种协议，并支持模型别名、用量统计与积分自动化。
 - [643048695/dsh-subagent-role-router](https://github.com/643048695/dsh-subagent-role-router) — 为 DSH 子代理派发按角色（探索 / 规划 / 修补）分流到指定模型，支持轮换或随机分配、跨供应商故障转移，并对 fork 种子做活跃窗口切片。
+- [66rapper/dsh-model-auto-enricher](https://github.com/66rapper/dsh-model-auto-enricher) — DSH 模型补齐助手：解决添加新渠道后还要把几十个模型一个个手动点开调百万上下文、调最大输出、勾多模态发图（\[text, image]）、配思考强度档位（{low, high, max}）的繁琐痛点，支持设置页添加模型保存后自动补齐与可视化一键补齐。
 - [a2580vb/dsh-llm-opencode-go](https://github.com/a2580vb/dsh-llm-opencode-go) — 把OpenCode Go接入DSH的模型列表，提供订阅额度显示、模型发现、会话亲和等功能。
 - [a331266223/dsh-multi-model-discussion](https://github.com/a331266223/dsh-multi-model-discussion) — DSH 多模型协作研讨插件：独立提案、互审、证据核验、完整稿修订与新上下文验收。
 - [A42Null/dsh-opencode-zen-plugin](https://github.com/A42Null/dsh-opencode-zen-plugin) — 为 DeepSeek Harness 接入 OpenCode Console (Zen) 模型：在「设置 → 插件」填入 Console API Key 后即可选用 Console 的对话模型，模型目录自动同步，每个模型按官方文档路由到对应端点，免费 *-free 模型默认不列出（它们只能在 OpenCode 客户端内运行）。
