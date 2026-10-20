@@ -207,6 +207,7 @@ dsh plugin --profile web add dshmarket
 - [antnesswcm/dsh-shell-card-plus](https://github.com/antnesswcm/dsh-shell-card-plus) — 用自定义 Shell 命令卡片替换 DSH Web 原版 bash/pwsh 工具行：长命令自动换行带行号不再截断，并提供独立的复制命令/复制输出按钮。
 - [anye-99/dsh-next-step-suggest](https://github.com/anye-99/dsh-next-step-suggest) — 下一步建议：每轮回答结束后，用会话当前模型做一次辅助调用提炼 3 条可点击的后续提问建议，显示在输入框上方，点击任意一条即填入草稿。
 - [anzhaohao/DragView](https://github.com/anzhaohao/DragView) — 拖拽文件以 Codex 风格附件卡片呈现，支持 PDF/文本/音视频应用内预览，其余格式调用系统默认应用打开。
+- [AomiRaku/dsh-accountDisplayName-edit](https://github.com/AomiRaku/dsh-accountDisplayName-edit) — 把左下角账号处的文字（手机号/邮箱/账户名）和头像替换为你自定义的内容，编辑入口在账号菜单里，避免截图泄露隐私。
 - [AppliedYuu/dsh-WallpaperAndCost](https://github.com/AppliedYuu/dsh-WallpaperAndCost) — 合并插件：壁纸定制（原图不压缩、裁剪编辑器、左/中/右分区不透明度、MP4/WebM 动态壁纸）＋ Steam 创意工坊壁纸提取（内置 scripts/extract_scene_pkg.py 解析 scene.pkg/.tex，支持预览/下载）＋ DeepSeek 余额与用量小组件 ＋ OpenCode Go 套餐用量（会话顶部药丸按钮显示滚动/周/月用量百分比，点开展开进度条与重置倒计时）。各 API key 均由 host 从 DSH 凭据库读取，不入源码/浏览器。
 - [appthin/dsh-mcp-manager-plus](https://github.com/appthin/dsh-mcp-manager-plus) — DSH 设置中的 MCP 管理页：列出、启停、重启、删除 MCP 服务器，表单与 JSON 双模式编辑，展开可查看各服务器注册的工具，并支持一次粘贴导入 Claude Code、Cursor、Codex、VS Code 等 14 种工具的 MCP 配置。
 - [AprilCrystal/dsh-client-ui-font-scale](https://github.com/AprilCrystal/dsh-client-ui-font-scale) — Web 界面的对话字号控制：输入区步进器、键盘快捷键与 Ctrl+滚轮缩放，统一走主题服务的 setFontSize。
@@ -1177,6 +1178,7 @@ dsh plugin --profile web add dshmarket
 - [YizhouLouisLu/dsh-select-ask](https://github.com/YizhouLouisLu/dsh-select-ask) — 在对话里划词引用进输入框（显示为「N 条注释」小框），或在侧栏一次性小窗里就这段内容提问（不留任何记录）。
 - [ylw-ux/dsh-pins-fixtool](https://github.com/ylw-ux/dsh-pins-fixtool) — 把对话中划选的段落固定到按对话隔离的右侧栏面板，在正文里留下持久标记并可点击跳回原文；可从划选浮条或输入框 @ 把已固定的段落引用进消息，片段支持标签，面板可搜索、筛选并导出 Markdown 提纲。
 - [Yokira404/dsh-thinking-highlight](https://github.com/Yokira404/dsh-thinking-highlight) — 统计思考行里的关键词并在展开后按词标红；标题行上每个词一个计数徽章，点徽章即单独开关这个词；每个词可设底色、文字颜色、字号（10-22px，与宿主正文尺寸同一区间）、字体、加粗/斜体/下划线与「完整词」匹配；插件有独立的设置分区。
+- [yongfanbeta/dsh-pomodoro](https://github.com/yongfanbeta/dsh-pomodoro) — DSH 番茄钟：经典 25/5/15 计时，可将每次专注关联当前会话任务或手动输入项目名，内置统计面板与全年热力图，配可拖动悬浮计时卡与角落迷你药丸，数据本地持久化并支持导出 CSV。
 - [YooRarely/dsh-open-explorer](https://github.com/YooRarely/dsh-open-explorer) — 在 DSH 会话标题和工作区菜单中添加按钮，用系统文件管理器打开当前 Workspace 根目录。
 - [YQing0123/dsh-artifact-center](https://github.com/YQing0123/dsh-artifact-center) — 产物中心：跨工作区检索、预览并打开对话产出的文件。
 - [ysyyhhh/dsh-pet](https://github.com/ysyyhhh/dsh-pet) — 跟随 agent 状态的 DSH 原生桌宠，兼容 Codex 桌宠包，并可在插件内直接从 Petdex 导入已审核桌宠，无需 Petdex CLI。
@@ -3806,6 +3808,7 @@ dsh plugin --profile web add dshmarket
 - [King20260919/dsh-open-folder-visible](https://github.com/King20260919/dsh-open-folder-visible) — 修正 Windows 上「打开工作目录」：上游启动 explorer.exe 时带了 windowsHide，导致文件资源管理器窗口被创建为不可见，点击看似成功却什么都没出现。
 - [liyu34/dsh-wsl-tray](https://github.com/liyu34/dsh-wsl-tray) — 为运行在 WSL 的 DSH 提供 Windows 桌面快捷方式和系统托盘启动器：完全隐藏启动，托盘菜单支持打开/重启/退出，插件配置页可管理快捷方式。
 - [lucifergzsz414/dsh-windows-native](https://github.com/lucifergzsz414/dsh-windows-native) — 向系统提示注入原生 Windows（非 WSL）环境下 PowerShell、字符编码、文件系统与跨平台构建的常见坑点。
+- [TGWgulugu/dsh-wsl-bridge](https://github.com/TGWgulugu/dsh-wsl-bridge) — 在当前 WSL 发行版里运行持久 bash 以及 Linux 路径的文件与搜索工具。新建对话选中 WSL 后，从该发行版的文件夹里指定工作区，且不会在发行版内安装任何东西。
 - [WilliamShi666/dsh-wsl-workspace-picker](https://github.com/WilliamShi666/dsh-wsl-workspace-picker) — Web UI 增强版工作区目录选择器：WSL 下 /mnt Windows 盘符一键直达、完整面包屑层级与常显路径输入框。
 - [XINY11451/dsh-wsl](https://github.com/XINY11451/dsh-wsl) — 对齐 Linux 原生 DSH 并加以扩展。真实内核之上执行 Linux 命令：退出码、信号、超时。多步任务用一个长期 shell，其余每次全新开始；子任务在输入框上方全程可见。已在使用的终端同样可以协同：命令可见，键盘一键收回。另有路径互转、环境体检、后台作业；危险命令先征得同意。始终以你的身份运行，位于 DSH 沙箱之下（不构成沙箱约束）；「命令可见」的终端仅到 DSH 0.2.0 为止。
 - [yishuiliufang/dsh-wsl-first](https://github.com/yishuiliufang/dsh-wsl-first) — 发布一段带顺序的系统提示词段，指定 wsl 为执行命令时优先选用的执行器，让模型在 Windows 上优先走 WSL 而不是 PowerShell。不注册任何工具，且只宣传模型真实可调用的执行器。
