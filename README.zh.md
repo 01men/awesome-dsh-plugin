@@ -1045,6 +1045,8 @@ dsh plugin --profile web add dshmarket
 - [whiteS18/dsh-terminal-button](https://github.com/whiteS18/dsh-terminal-button) — DeepSeek Harness 内嵌终端插件：在右侧栏（DockKit Tab）或输入框下方以沉底抽屉形式提供界面内嵌的交互式终端，跟随官方主题与工作区目录，支持 PSReadLine 尺寸保护与位置热切换。
 - [wilsonchengassistant/dsh-media-web-preview](https://github.com/wilsonchengassistant/dsh-media-web-preview) — 在右側欄預覽區直接播放影片同音訊，經帶認證的 HTTP Range 路由串流，令遠端瀏覽器可以播放同跳轉大型檔案，唔使喺主機開原生播放器。
 - [wilsonchengassistant/dsh-mobile-sidebar](https://github.com/wilsonchengassistant/dsh-mobile-sidebar) — 視窗闊度細過 1024px 時，側欄完全移出 shell frame，改由頁首按鈕以浮動抽屜方式打開，令對話可以用盡整個螢幕闊度；闊螢幕版面唔受影響。
+- [wilsonchengassistant/dsh-quick-workspace](https://github.com/wilsonchengassistant/dsh-quick-workspace) — 將「新增工作區」流程中喺主機彈出嘅資料夾選擇器，改成輸入名稱嘅對話框，令遠端瀏覽器可以直接建立並開啟工作區。
+- [wilsonchengassistant/dsh-zh-hant](https://github.com/wilsonchengassistant/dsh-zh-hant) — 為網頁介面加入繁體中文（zh-Hant）語言，經語言服務註冊，每個 namespace 各有一份字典，並可在「設定 → 一般 → 語言」揀選。
 - [winditer/dsh-paste-spill](https://github.com/winditer/dsh-paste-spill) — 把 DSH 输入框里每次 4–50 KB 的粘贴折叠成独立的一枚 chip（可单独展开或删除），50 KB 及以上的粘贴转成真附件。声明 DSH >=0.1.7-rc.2 <0.3.0-0，因此在 0.2 版本线上保持可见。
 - [winditer/dsh-prompt-optimizer](https://github.com/winditer/dsh-prompt-optimizer) — 在输入框按 ✨ 或 Alt+O 一键把草稿润色成更清晰、更结构化的 prompt；默认零配置复用当前会话模型（SSE 真流式、推理过程先出），也可自配任意 OpenAI 兼容端点。
 - [winditer/dsh-recent-tasks](https://github.com/winditer/dsh-recent-tasks) — DSH 侧边栏里常驻末位、可折叠的「最近任务」工作区分组：侧边栏入口与 Mod+Alt+N / Mod+Shift+N 快捷键在专用目录里开新对话，对话因此归入这个分组，而不是「未分组」。该分组是真正的工作区记录，而非插件画出来的仿制品，折叠、改名、搜索与拖拽排序都正常可用；目录、分组名、常驻末尾与自动重建都是实时设置。
@@ -1511,7 +1513,6 @@ dsh plugin --profile web add dshmarket
 - [wfengq/dsh#tally-ui](https://github.com/wfengq/dsh/tree/main/packages/tally-ui) — 提供输入框费用条、每轮与会话费用详情、用量看板、日/月预算和设置，并通过 dsh-tally-balance-deepseek 显示 DeepSeek 余额。
 - [WFMinerva/dsh-turn-cost](https://github.com/WFMinerva/dsh-turn-cost) — 在 DSH Web 界面显示每轮与整个会话的预估费用：按 provider 上报的 token 用量（四桶）与内置官方 DeepSeek 人民币峰谷价目计价，高峰为北京时间周一至周五 9:00–12:00、14:00–18:00，周末与中国法定节假日全天按空闲价；可用本机费率表叠加其它或自部署模型的单价，没有单价的模型只显示 token。
 - [WihteCo/dsh-opencode-go-quota](https://github.com/WihteCo/dsh-opencode-go-quota) — 在侧边栏「工作区」列表下方显示 OpenCode Go 的滚动 5 小时 / 每周 / 每月额度百分比与重置倒计时，每档带用量条与时间进度标记，60 秒从 OpenCode 官方用量接口刷新，密钥复用 DSH 凭据库。
-- [wilsonchengassistant/dsh-quick-workspace](https://github.com/wilsonchengassistant/dsh-quick-workspace) — 將「新增工作區」流程中喺主機彈出嘅資料夾選擇器，改成輸入名稱嘅對話框，令遠端瀏覽器可以直接建立並開啟工作區。
 - [wingsky-1/dsh-plugin-hub#packages/dsh-provider-usage](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-provider-usage) — 多 provider 用量统计框架（v2 适配器契约）：常驻胶囊 + 详情面板；内置 DeepSeek 官方（区间记账法推算每日用量 + 峰谷倒计时徽标，官方无用量接口也能算）与 OpenCode Go；其他数据源只需放入一个 mjs 适配器文件即可接入，设置页热插拔，密钥只留在宿主端。
 - [wjingshan/dsh-cost-gauge](https://github.com/wjingshan/dsh-cost-gauge) — 峰谷计费表盘：DSH Web 浮动窗按 DeepSeek 官方峰谷（高峰/空闲）费率对会话花费（token 费用）实时计费，指针配费率切换倒计时，余额环带低余额报警，支持拖拽缩放与最小化状态灯。
 - [wkscc310/dsh-client-ui-cpa-quota](https://github.com/wkscc310/dsh-client-ui-cpa-quota) — 模型选择器旁的 CLIProxyAPI 额度圆环，设置面板仿 CPA 管理页列出全部账号的额度窗口、套餐与刷新时间。
@@ -1764,7 +1765,6 @@ dsh plugin --profile web add dshmarket
 - [Wedomizing/Dsh_genshin_nicole_skin](https://github.com/Wedomizing/Dsh_genshin_nicole_skin) — 原神·尼可 PV 背景皮肤：14 张去字幕画面定时轮播淡入淡出，支持暂停与上一张/下一张切换。
 - [WhatCannotBeSaid/EVA-Inspired-Theme](https://github.com/WhatCannotBeSaid/EVA-Inspired-Theme) — 基于《新世纪福音战士》的 DeepSeek Harness 皮肤：Title Card（亮色）与 Central Dogma（暗色）两套完整模式叠在一层可移除的覆盖层上，55 个实测色值，壁纸绘制层的两个表面 alpha 按 WCAG 对比度预算求解，另有开机遮罩与品牌标记。非官方同人作品、非商业用途：背景图在绘制时从第三方 URL 拉取，不随仓库分发。
 - [Willmylife/dsh-dynamic-wallpaper](https://github.com/Willmylife/dsh-dynamic-wallpaper) — 动态壁纸插件：8 种内置 Canvas 壁纸（粒子、流星雨、星际穿梭、波光、雨幕、气泡、字符雨、极光）加自定义视频背景，支持速度/密度/遮罩/模糊调节，配置持久化。
-- [wilsonchengassistant/dsh-zh-hant](https://github.com/wilsonchengassistant/dsh-zh-hant) — 為網頁介面加入繁體中文（zh-Hant）語言，經語言服務註冊，每個 namespace 各有一份字典，並可在「設定 → 一般 → 語言」揀選。
 - [wsxwj123/dsh-plugins#dsh-appearance-gallery](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-appearance-gallery) — 15 个精选主题家族 + 9 个完整 dsh-web-ui 皮肤复刻合并为单一插件、设置页单一入口，支持 CSS-only 自定义主题 JSON、受控自定义皮肤包导入（可直接选文件夹）、试穿、应用、删除与恢复默认。npm 包名 `dsh-appearance-gallery`。
 - [wxj783428795/dsh-plugins#dsh-theme-black-hole](https://github.com/wxj783428795/dsh-plugins/tree/main/dsh-theme-black-hole) — 适用于 DeepSeek Harness Web UI 的可切换 WebGPU 黑洞主题：沿用内置深色配色，仅在新会话页面显示动态背景。
 - [Xian-JL/dsh-Kinich-theme](https://github.com/Xian-JL/dsh-Kinich-theme) — 面向 DeepSeek Harness Web 的 Kinich 与 Ajaw 主题，提供三种视觉风格、会话状态反馈、伙伴交互和可配置的动态环境效果。
