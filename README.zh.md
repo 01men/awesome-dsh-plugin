@@ -351,6 +351,7 @@ dsh plugin --profile web add dshmarket
 - [day-day-dream/dsh-page-refresh#dsh-page-refresh](https://github.com/day-day-dream/dsh-page-refresh/tree/main/plugins/dsh-page-refresh) — 在 DeepSeek Harness 会话头部加一个刷新按钮，一键原地重载页面且不丢会话数据。桌面端优先、纯客户端、零 token。
 - [dcrzsy/dsh-enhance-tool](https://github.com/dcrzsy/dsh-enhance-tool) — DeepSeek Harness Web 一站式界面增强：提示词库（快选+管理）、两步 AI 润色、预测回复栏（点击直接发送）、MCP 工具管理、定时自动化、智能会话标题、对话宽度可调、AI 回复占满无灰底、超长用户消息自动折叠（带平滑展开/收起动效），以及各面板的场景化入场动效。
 - [DDSG-X/dsh-workspace-dir](https://github.com/DDSG-X/dsh-workspace-dir) — 在可拖动、透明度可调的目录面板中显示当前对话的工作目录与文件列表。
+- [ddy-007/dsh-client-resume-button](https://github.com/ddy-007/dsh-client-resume-button) — 在模型选择器左侧加一个「继续」按钮：上一轮被用户中止、崩溃中断或报错结束后，点一下让模型接着把那一轮做完；开始输入或添加附件时按钮收窄隐藏。
 - [deanzhang2026-max/dsh-lived-pet#dsh-pet-bridge](https://github.com/deanzhang2026-max/dsh-lived-pet/tree/main/packages/dsh-pet-bridge) — 把 harness agent 的实时状态（思考、干活、等待、完成、出错）写入状态文件，配套的 Electron Live2D 桌宠轮询该文件，气泡与表情随 agent 的实际动作变化。
 - [DedsecLemon/dsh-obsidian](https://github.com/DedsecLemon/dsh-obsidian) — 把你真实的 Obsidian 知识库放进 DSH 右侧栏：目录树、全库搜索、按阅读视图排版渲染笔记、双向链接跳转、就地编辑，以及可点击跳转的笔记大纲。
 - [deepseekbluefish/dsh-screenshot-plugin](https://github.com/deepseekbluefish/dsh-screenshot-plugin) — 微信式界面内截屏按钮：拖动框选、8 个手柄微调，Enter 确认截取、Esc 取消；PNG 自动编号保存，\[Shot N HH:mm] 标记自动写入输入框。仅 Windows，已在 DeepSeek Harness Desktop 实测。
