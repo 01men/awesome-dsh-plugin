@@ -363,6 +363,7 @@ dsh plugin --profile web add dshmarket
 - [dgy970516/dsh-status-turbo](https://github.com/dgy970516/dsh-status-turbo) — 在输入框底栏显示当前阶段、阶段已耗时、本步 token 数与无进展告警的状态条（纯日志投影，不轮询宿主），点击可展开详情面板。
 - [dhb861832993-star/pbr-render](https://github.com/dhb861832993-star/pbr-render) — 游戏美术 PBR 3D 模型预览：GLB/GLTF 带贴图纹理、IBL 环境光照、轨道控制，以及材质通道检查器（基础色/法线/粗糙度/金属度/AO/自发光/线框），标量通道按 PBR 规范以灰度显示，通过 pbr3d 围栏与 pbr_render 工具使用。
 - [DIAG5/dsh-better-input](https://github.com/DIAG5/dsh-better-input) — 输入体验增强插件，目前已实现语音输入、AI提示词润色（反覆盖保护、带差异预览的提示词优化）、跟随 DSH 界面语言自动切换中英文界面。
+- [diexianxiang/dsh-custom-splash](https://github.com/diexianxiang/dsh-custom-splash) — 一个为 DSH 打造的自定义视频开屏插件，支持播放你自己的本地视频，完美兼容桌面端。
 - [dingchenhui0618-arch/dsh-market-sidebar](https://github.com/dingchenhui0618-arch/dsh-market-sidebar) — 把 dshmarket 插件市场作为独立面板放进 DSH 侧边栏，排在「插件」之上。点击即通过 dshmarket 对外发布的 host 端 client service 渲染市场本身，因此目录、分类筛选、评论与安装/更新流程都是 dshmarket 自己的，而不是一份副本。无需学习或配置：这个面板就是市场，有自己的侧边栏条目、跟随界面语言的中英文名与图标。dshmarket 未加载时面板会明说，而不是让客户端组装失败；插件卸载时其语言键、插槽与 style 标签一并释放。
 - [dingchenhui0618-arch/dsh-signal-pet](https://github.com/dingchenhui0618-arch/dsh-signal-pet) — 界面角落里的一只小宠物，读的是真实事件流而不是猜：空闲时慢慢飘，agent 思考时动得更快，每个正在运行的工具调用拉一条流动的连线，出错时变红、抖一下并显示错误摘要，跑超过十秒的回合结束时庆祝。它同时就是那个一眼可见的忙碌/出错指示器，不用再盯着转圈。宿主半区把真实 harness 事件折叠成快照，客户端半区只负责画；它不做内容识别，并且会主动避开输入框，不会趴在你正在打字的地方。
 - [dingyi580/dsh-conversation-rail](https://github.com/dingyi580/dsh-conversation-rail) — 对话左缘的导航轨：一根杠一轮对话，杠长按该轮文字体量，悬停出提问与回答预览，点击跳转；杠来自 host 侧读整份会话日志折出的大纲，未加载进窗口的轮次也画得出来，点击时再翻页补历史。
@@ -1579,6 +1580,7 @@ dsh plugin --profile web add dshmarket
 - [WFMinerva/dsh-turn-cost](https://github.com/WFMinerva/dsh-turn-cost) — 在 DSH Web 界面显示每轮与整个会话的预估费用：按 provider 上报的 token 用量（四桶）与内置官方 DeepSeek 人民币峰谷价目计价，高峰为北京时间周一至周五 9:00–12:00、14:00–18:00，周末与中国法定节假日全天按空闲价；可用本机费率表叠加其它或自部署模型的单价，没有单价的模型只显示 token。
 - [WihteCo/dsh-opencode-go-quota](https://github.com/WihteCo/dsh-opencode-go-quota) — 在侧边栏「工作区」列表下方显示 OpenCode Go 的滚动 5 小时 / 每周 / 每月额度百分比与重置倒计时，每档带用量条与时间进度标记，60 秒从 OpenCode 官方用量接口刷新，密钥复用 DSH 凭据库。
 - [wingsky-1/dsh-plugin-hub#packages/dsh-provider-usage](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-provider-usage) — 多 provider 用量统计框架（v2 适配器契约）：常驻胶囊 + 详情面板；内置 DeepSeek 官方（区间记账法推算每日用量 + 峰谷倒计时徽标，官方无用量接口也能算）与 OpenCode Go；其他数据源只需放入一个 mjs 适配器文件即可接入，设置页热插拔，密钥只留在宿主端。
+- [wjf1/dsh-plugin-usage-analytics](https://github.com/wjf1/dsh-plugin-usage-analytics) — 本地优先的 DSH 用量分析：订阅会话事件，把工具调用、回合、错误、耗时与能力使用聚合为日表，在侧栏面板展示（6 个 KPI、14 日趋势、Top 工具、能力分布），并通过受围栏保护的本地 HTTP 接口暴露 18 个 JSON-RPC 方法。运行时零依赖，local 模式零出站，不采集任何消息正文。
 - [wjingshan/dsh-cost-gauge](https://github.com/wjingshan/dsh-cost-gauge) — 峰谷计费表盘：DSH Web 浮动窗按 DeepSeek 官方峰谷（高峰/空闲）费率对会话花费（token 费用）实时计费，指针配费率切换倒计时，余额环带低余额报警，支持拖拽缩放与最小化状态灯。
 - [wkscc310/dsh-client-ui-cpa-quota](https://github.com/wkscc310/dsh-client-ui-cpa-quota) — 模型选择器旁的 CLIProxyAPI 额度圆环，设置面板仿 CPA 管理页列出全部账号的额度窗口、套餐与刷新时间。
 - [wojiao42/dsh-token-cost](https://github.com/wojiao42/dsh-token-cost) — 侧栏里实时显示 token 用量与估算费用：当前任务与全部会话合计、这份账目的截至时刻、逐会话时间明细（运行时长/轮步/首token/模型与工具耗时/解码速度），鼠标悬停某个对话还能看到逐轮用量与每轮费用。
@@ -4945,6 +4947,7 @@ dsh plugin --profile web add dshmarket
 - [virggle/dsh-shutdown-after-task](https://github.com/virggle/dsh-shutdown-after-task) — 任务完成后自动关机：右下角按钮开启模式，任务成功完成后进入可取消的倒计时（取消走 shutdown /a），零运行时依赖。
 - [vitas/dsh-jev-subagent-dispatch](https://github.com/vitas/dsh-jev-subagent-dispatch) — 降低 LLM 成本：Jev（System One）分类器按声明式策略审查每一轮任务并推荐 subagent 模型路由，让常规工作以 flash 价格运行、主模型专注难点；显式 /route 触发、运行时代理能力门控、凭据脱敏，以及基于判定日志的离线策略回放。
 - [vlln/dsh-loop](https://github.com/vlln/dsh-loop) — 定时循环：`/loop` 命令 + loop 工具 + 活动状态条。
+- [WaldInsel/dsh-desktop-agent-bridge](https://github.com/WaldInsel/dsh-desktop-agent-bridge) — 让外部 MCP Agent 将任务交给现有 DSH 桌面端，并提供可见会话、用户接管与可选审批转交。
 - [wangbobo-coder/gitee-ai-employee](https://github.com/wangbobo-coder/gitee-ai-employee) — Gitee/GitHub AI 员工：在 issue 里 @ 机器人并指定目标分支（如"需要修改 release-v1.2 分支"），它自动克隆仓库开发、向指定分支提交 PR，可自动合并并自动关闭 issue。v1.2 新增代码安全扫描：配置扫描仓库后按内置/自定义提示词审计代码，去重后把新发现提交 issue。
 - [weibaohui/dsh-flow](https://github.com/weibaohui/dsh-flow) — 执行流程图：把当前会话的执行过程画成一条纵向节点流（回合/用户/助手/工具/审批/重试/压缩），SSE 实时追加——会话执行到哪，图就画到哪，自动跟随滚动。
 - [weibaohui/dsh-process](https://github.com/weibaohui/dsh-process) — 工艺管理：把 ntd 的「工艺」（多阶段·多环节 agent 工作流模板）接进 dsh web——浏览/编辑/校验/导入导出/AI 生成工艺，内置库只读、我的库可写，文件改动实时同步；agent 可通过 process_* 工具读工艺库、按工艺分阶段推进。
@@ -4976,6 +4979,7 @@ dsh plugin --profile web add dshmarket
 - [yezitotempeace/dsh-agent-team-roster](https://github.com/yezitotempeace/dsh-agent-team-roster) — Agent Teams 名册插件：名册、任务板与子智能体目录倒序显示（最新在最上），并提供批量清理与成员改名/删除。
 - [ygcdsj/dsh-home-migrate](https://github.com/ygcdsj/dsh-home-migrate) — 迁移 DSH 配置：跨机器导出/导入 .dshmig 归档（同 OS、新建 profile、凭据脱敏、校验与回滚）。
 - [Yisan0429/dsh-itranslation#bundle](https://github.com/Yisan0429/dsh-itranslation/tree/main/packages/itranslation/bundle) — DeepSeek Harness 整本书翻译生产线：确定性章节识别与分段、子代理逐章翻译、术语表控制、全书审查、定向修订，以及可审计的 meta.json 证据链。
+- [yixing233/dsh-crabtodo](https://github.com/yixing233/dsh-crabtodo) — DeepSeek Harness 的人机共享待办：你和 AI 通过侧边栏或待办工具管理同一份任务，支持项目级与全局待办，并可一键把任务引用进输入框。
 - [yuqiguang/dsh-nexus](https://github.com/yuqiguang/dsh-nexus) — 个人编码助理：在 DSH 中安排、跟进与验收本机 Codex 或 Claude Code 任务，并提供微信、企业微信与飞书远程渠道。
 - [yx222yx/DSH-Feedback-Bridge](https://github.com/yx222yx/DSH-Feedback-Bridge) — 将 DSH 对话整理为可审阅的社区反馈，并在确认后提交到 DeepSeek Harness 官方 Discussions。
 - [yyyy231209/ai-company-framework](https://github.com/yyyy231209/ai-company-framework) — AI 公司框架：一句话开一家多 Agent 公司——15 个扁平 Skills（老板/流水线/岗位模板/11 个岗位/通用客户记忆）、7 个工作流模板、AgentTeams 运行时与活动面板、带会话隔离的员工侧边栏、飞书机器人桥（老板/任意员工机器人、群聊路由、自主推送、重大决策人工闸门、外部联系人指引）、客户档案 SQLite 数据库与三层记忆（跨群归并）、/company 公司模式开关；不含 RAG。
@@ -5577,6 +5581,7 @@ dsh plugin --profile web add dshmarket
 - [keyiadiannao/dsh-power-button](https://github.com/keyiadiannao/dsh-power-button) — 一个小而自洽的 DSH 电源控制插件：侧边栏电源按钮 + 上拉「重启/关机」菜单 + Windows 关机风格过渡遮罩。自带重启/关机引擎（不依赖其它插件），动态端口适配。
 - [KhaosGx/dsh-stop-service](https://github.com/KhaosGx/dsh-stop-service) — DSH Web 设置页的服务控制面板：实时宿主信息（PID、版本、运行时长、内存/CPU 趋势、活跃会话）、npm 更新提醒，以及带确认的优雅停止——任务运行时发出警告，也可等待任务结束后自动停止。
 - [kira905/dsh-ecosystem-panel](https://github.com/kira905/dsh-ecosystem-panel) — 只读生态面板：汇总实例的插件束、补丁插入、技能、升级健康与解耦健康。
+- [klT45/dsh-config-vault](https://github.com/klT45/dsh-config-vault) — 配置保险箱：为 DSH 配置创建快照、对比差异并安全回滚设置补丁、插件清单、技能与规则、工作区列表，凭据默认排除。
 - [kriskite/dsh-network-proxy](https://github.com/kriskite/dsh-network-proxy) — DeepSeek Harness 网络代理管理器：在设置界面即时切换跟随系统 / 手动 / 直连三种模式，立即生效。
 - [kun2-5code/dsh-plugin-template](https://github.com/kun2-5code/dsh-plugin-template) — dsh 插件开发模板，覆盖配置、工具、事件、服务、钩子、浏览器 UI 插槽与斜杠命令。
 - [kuun993/dsh-loop-engine](https://github.com/kuun993/dsh-loop-engine) — Web 设置页的「循环引擎」开关，在五套引擎间切换驱动每个 dsh 会话的 agent 循环——内置 in-process 加托管的 Claude Code、Codex、Pi、Kimi Code——无需改动 harness；每个托管引擎都把思考与工具调用写入持久会话记录，接管命令、技能与 agent 预设，并经 dsh 子进程接缝沙箱运行。
