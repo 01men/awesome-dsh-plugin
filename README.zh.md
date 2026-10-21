@@ -2508,6 +2508,7 @@ dsh plugin --profile web add dshmarket
 - [liangmianya/dsh-synapse](https://github.com/liangmianya/dsh-synapse) — DeepSeek Harness 的可视化非线性对话工作区：把会话、追问与分支变成可浏览、可拖拽的对话地图。
 - [lifeopsgo/dsh-lark-session-monitor-plugin](https://github.com/lifeopsgo/dsh-lark-session-monitor-plugin) — 以用户本人身份监听飞书会话，把新消息作为 prompt 投递到指定的 DeepSeek Harness 会话：每个监听支持发送者过滤、@机器人提及与关键词黑白名单，可自动创建并固定目标会话，游标式轮询在投递失败后会重读消息。
 - [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) — 消息撤回：在用户消息旁加「撤回」按钮，把对话历史（官方会话 fork）与项目文件（逐消息影子 git 快照）一并回退到该消息发送之前，带差异预览确认面板。
+- [Linusteller/dsh-session-delete](https://github.com/Linusteller/dsh-session-delete) — 在侧栏会话菜单的「归档会话」下方新增「删除会话」项，永久删除该会话——停止进行中的工作、摘除工作区/归档/置顶记账、删除投影缓存与日志目录，然后广播移除事件让该行立即消失，而不是只能归档。
 - [liuyu-f/dsh-plugin-session-cascade-delete](https://github.com/liuyu-f/dsh-plugin-session-cascade-delete) — 从界面删除会话（会话头部按钮或侧栏行菜单），或由 agent 调用 session_delete 工具：先停止并释放运行中的 Agent 与会话，再清理日志目录、投影缓存与工作区记账，级联删除它拥有的子代理会话（分叉分支不受影响）。
 - [liuyuelintop/dsh-conversation-exporter](https://github.com/liuyuelintop/dsh-conversation-exporter) — 将当前 DSH 对话或选定轮次导出为干净、易读的 Markdown。
 - [ljp888/dsh-session-delete-next](https://github.com/ljp888/dsh-session-delete-next) — 在侧栏会话菜单中加入「删除会话」，永久删除该会话的本地记录；正在运行的会话会被拒绝。
