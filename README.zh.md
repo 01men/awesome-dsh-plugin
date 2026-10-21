@@ -1624,6 +1624,7 @@ dsh plugin --profile web add dshmarket
 - [137/dsh-chatgpt-style](https://github.com/137/dsh-chatgpt-style) — 把 DSH Web 的对话排版改成 ChatGPT 风格：768px 居中版心、用户消息右侧中性灰气泡、助手消息全宽 16/28 正文、带独立复制条的圆角代码块；另有行内语义标记（==已确认==、!!风险!!、++重点词++，裸的 4xx/5xx 自动命中）、行首 ✅/⚠️/💡 整行卡片、发送框旁「快速 / 思考」胶囊（经 ctx.modelDirectories 切换推理强度），以及左侧工作区高亮：选中会话带底色与左侧色条、工作区文件夹图标上色。
 - [4444Hao/dsh-codefall](https://github.com/4444Hao/dsh-codefall) — 为 DeepSeek Harness 添加黑客帝国风格的数字雨开屏动画、向两侧展开的矩形光门、可选的窗口恢复重播，以及可调色相的绿色界面主题。
 - [456erddgr/dsh-boo550wt-animation](https://github.com/456erddgr/dsh-boo550wt-animation) — 打开 DeepSeek Harness 时全屏播放一段开机视频，播完才露出界面，按 Esc 可跳过。
+- [AaronKate/dsh-codex-appearance](https://github.com/AaronKate/dsh-codex-appearance) — 为 DeepSeek Harness 增加外观设置页：五套护眼浅色主题，每套主题自带匹配的强调色与链接色；另可调整强调色与背景色、界面与代码的字体和字号、字体样式、内容宽度、对比度与减少动态效果。
 - [acdsh4869/dsh-aqua-theme](https://github.com/acdsh4869/dsh-aqua-theme) — Aqua 玻璃质感主题（适配 DSH v0.2.x 与桌面端 v0.22.3+）：顶栏、侧边栏、输入框、统计行与轨迹视图悬浮在 WebGL 流体板或图片/视频壁纸上的磨砂玻璃片，云母/兼容双布局，模糊、磨砂、色调、亮度可调，海洋装饰（粒子鲸鱼、小鱼、网状交互、鼠标辉光），一键恢复默认，总开关关闭即完全还原原生界面；承 WYH66666666 原作（0.1.x）与 du-u-uck 的 0.1.1-rc.2 适配。
 - [ahian-lee/dsh-bliss-glass](https://github.com/ahian-lee/dsh-bliss-glass) — 让 XP 时代的风景壁纸与现代磨砂玻璃界面同框的主题：DeepSeek Harness Web 界面 之下的固定壁纸底板、经主题 token 应用的面板玻璃样式、支持导入自定义图片的 壁纸选择器与明暗切换按钮——桌面与移动端均可使用。
 - [AIR-pixel/air-pixel-liquid-glass](https://github.com/AIR-pixel/air-pixel-liquid-glass) — 为 DeepSeek Harness 提供可配置的液态玻璃主题，包含半透明界面、壁纸、桌面透出、窗口模糊、自定义光标、点击涟漪和消息辨识选项。
@@ -1853,7 +1854,6 @@ dsh plugin --profile web add dshmarket
 - [zhijun-dai/Catppuccin-dsh-theme](https://github.com/zhijun-dai/Catppuccin-dsh-theme) — 🐱 Catppuccin 主题插件：充满活力、令人放松的柔和彩色主题。遵循官方 26 色粉彩盘，🌻 Latte / 🪴 Frappé / 🌺 Macchiato / 🌿 Mocha 四档一键切换，全界面按色盘上色，鼠标滑过交互变主题色。
 - [zhijun-dai/dsh-Fonts](https://github.com/zhijun-dai/dsh-Fonts) — 字体系统插件：随插件离线分发的 OFL 开源字体预设、自定义 woff2 字体导入，以及供其他插件扩展的 ctx.fonts 注册表。
 - [zhijun-dai/Solarized-dsh-theme](https://github.com/zhijun-dai/Solarized-dsh-theme) — Solarized 主题插件：经典低对比护眼配色双体系——Ethan Schoonover 的 Solarized 与 Selenized（改良版）深浅各一套，专为长时间使用设计，遵循经典语法色。
-- [zhongjiadeng-cmd/dsh-codex-appearance](https://github.com/zhongjiadeng-cmd/dsh-codex-appearance) — 为 DeepSeek Harness 添加蓝灰、浅色和深色主题的外观设置。
 - [zhongyichang1998/dsh-open-meadow](https://github.com/zhongyichang1998/dsh-open-meadow) — 适用于官方 macOS DeepSeek Harness 0.2.0-rc.2 的海边主题，提供动态云层、局部海浪、前景花草摆动和中文设置。
 - [ZHOUcourier/dsh-theme-whalegirl](https://github.com/ZHOUcourier/dsh-theme-whalegirl) — 移植自 DreamSkin 皮肤包的鲸鱼娘亮色主题：在原生主题运行时注册一套完整 --dsw-* 令牌重映射，鲸鱼娘插画作为环境壁纸衬于磨砂玻璃界面之后，并通过主题变更守卫保持主题固定。
 - [zhuifengqug/pixel-skin](https://github.com/zhuifengqug/pixel-skin) — 宝可梦风格 DSH Web 皮肤，含 GBA 双边框、HP 条状态、推理等级面板与可自定义配色。
@@ -6404,7 +6404,7 @@ dsh plugin --profile web add dshmarket
 - [skr311/dsh-codex-pet#dsh-codex-pet](https://github.com/skr311/dsh-codex-pet/tree/main/packages/dsh-codex-pet) — 导入/上传 Codex 风格精灵图序列帧宠物，在 DSH Web GUI 以悬浮浮层渲染，含图库管理、交互与 Agent 状态联动。
 - [skymecode/dsh-bgm](https://github.com/skymecode/dsh-bgm) — 将本地分析的系统音频映射为 DSH Web 的对话律动、音游判定、分数与连击反馈，以及可选的 RGB 频谱柱。
 - [Stellum-Waq/dsh-pet-ronaldo](https://github.com/Stellum-Waq/dsh-pet-ronaldo) — DSH 桌宠：Web 界面右下角的 C 罗精灵，动画随 Agent 状态切换——工具执行中颠球、回合中思考、等待审批、出错假摔——回合完成时跳起 SIU 庆祝并由宿主进程播放提示音；支持拖动、悬停注视光标、连点三次假摔，设置面板可管理多只宠物并导入自定义 spritesheet。同时提供一个无边框、始终置顶的原生 Windows 窗口，关掉浏览器也还在：悬停显示当前工作区与对话名，双击用 Edge 打开 Harness 页面，拖动、滚轮改大小、右键菜单都可用，位置/大小/行为与网页设置面板共用同一份状态。素材单格分辨率不限、等比缩放（atlas.scaling: smooth | pixelated）。v2.2 新增视频路线：喂一段视频（绿幕或普通素材都行），里面的真实动作直接变成宠物动作——自动取幕布色、色度抠像带溢色抑制、按运动量切分动作、并集包围盒对齐落格；也支持直接喂已经抽好的 PNG 帧（不需要装视频解码器），并能把视频原声按动作切成音效。宠物还可按 DPSL-1.0 分享协议发布到宠物社区，并从社区一键安装。 v2.3 适配 DSH 0.2 桌面版——宿主不再提供 shell 服务时，庆祝音效改为直接启动 PowerShell 播放——并让单击播放一段可配置的挑衅动作（`interactions.clickAnim`）。
-- [Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume) — 元气鲸鱼娘桌宠：摸头养成、按工具类型联动的工作状态、494 条台词、30 项成就、成长日记、拖拽惯性、主题适配与无障碍模式。关键词感知与余额关心默认关闭、需手动开启；可选的天气心情只在你填了城市后才会请求 Open-Meteo。无遥测。
+- [Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume) — 鲸鱼娘桌宠：45 项成就、每日任务与周签到、三个小游戏、92 张立绘、620 条台词、成长日记、天气与节日反应、按工具类型切换工作姿态、跨端存档导出/导入（JSON 文件或迁移码）、无障碍模式，以及可选的 MiMo TTS 台词播报。数据只存放在宿主 localStorage，无遥测；已在 DSH 桌面端 0.2.0-rc.2 验收，兼容 0.2.1-rc.1/rc.2 与旧版 0.1.x Web。
 - [swaylq/dsh-digipet](https://github.com/swaylq/dsh-digipet) — 数码宝贝式养成：孵一颗吃真实工作长大的蛋（回合、工具调用、报错都是营养），按你的工作方式走四条进化分支；零 token，模型完全看不见。
 - [swaylq/dsh-wildmon](https://github.com/swaylq/dsh-wildmon) — 宝可梦式捕捉收集：真实工作就是草丛 —— 回合、工具调用、报错刷出野外遭遇；投球捕捉、集 28 格图鉴、带 6 只队伍。零 token，模型完全看不见。
 - [takboo/dsh-coopanion](https://github.com/takboo/dsh-coopanion) — 为 DeepSeek Harness 添加动画桌面伙伴，支持任务提醒、会话聊天、角色包和原生设置。
