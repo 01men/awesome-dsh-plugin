@@ -469,6 +469,7 @@ dsh plugin --profile web add dshmarket
 - [GinoXiang/dsh-task-board](https://github.com/GinoXiang/dsh-task-board) — DSH Web GUI 的个人任务管理面板：双月日历（彩色时间条 + 当天任务）、日常清单、七天周视图（勾选完成、可拖动改期）与可拖拽的 24 小时时间轴，支持有序子任务、长期任务按天完成标记，以及 AI 自然语言提取任务。
 - [gjj-star/dsh-conversation-navigator](https://github.com/gjj-star/dsh-conversation-navigator) — 会话导航面板：按轮折叠的当前会话大纲与步次类型徽标（助手/工具/命令/压缩/出错），悬停气泡显示用户提问全文，可隐藏轮次号的极简徽标视图，仅检索提问与助手回复的关键词过滤，点击跳转与阅读位置跟踪，支持加载更早/加载全部历史分页。宿主 ≥ 0.1.2-rc.1，旧宿主装 @legacy/0.2.5。
 - [GLFzr/dsh-file-upload](https://github.com/GLFzr/dsh-file-upload) — Codex 式拖拽：把任意文件拖入 DSH Web 界面，文件存入 ~/.dsh-dropbox，路径以整块蓝色 chip 插入输入框。
+- [GoldenLoaf24h/dsh-prompt-suggestion](https://github.com/GoldenLoaf24h/dsh-prompt-suggestion) — 每轮结束后预测你的下一句话，以灰色 ghost text 显示在输入框：Tab 整条采纳、Alt+→ 逐词采纳、Enter 采纳并发送、Esc 忽略、Alt+R 换一条且不重复旧的那条；输入几个字时用本会话发过的提示做前缀补全，空输入框按 ↑ 回填上一条；插件页可设置服务商、模型、思考强度、各按键开关与生成参数。
 - [gongstudent/dsh-quote-to-agent](https://github.com/gongstudent/dsh-quote-to-agent) — 在 DSH 网页版会话里划词后，把选中内容引用到当前输入框，或分派到子智能体会话：引用落在输入框正上方的引用条上，或在右侧新开一格打开该子智能体会话。目标还没有子智能体时先挂起这条引用，并在输入框写入派生请求，新子会话一出现就自动接续。纯客户端。
 - [GooDAnDReaDY/dsh-russian-lang](https://github.com/GooDAnDReaDY/dsh-russian-lang) — 给 DeepSeek Harness 的「设置 - 通用 - 语言」加入俄语，覆盖核心界面与生态插件的词条。提供会话 Markdown 导出、消息内嵌翻译、实时排版、斜杠命令别名与 Alt+L 布局更正，以及一张设置卡片，全部通过运行时 locale 快照实现，不修改核心文件。
 - [GooodWei/arcana](https://github.com/GooodWei/arcana) — DeepSeek Harness 的悬浮命令甲板：把所有斜杠命令列成可执行按钮，悬停看介绍，按使用次数排序。
@@ -1299,6 +1300,7 @@ dsh plugin --profile web add dshmarket
 - [ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — OpenPencil 设计预览与编辑插件。
 - [Ztyss/dsh-draft-fold](https://github.com/Ztyss/dsh-draft-fold) — 输入草稿超过阈值后自动折叠为摘要卡，不改变消息提交路径。
 - [zuoguyoupan2023/adhdgofly-dsh-ext](https://github.com/zuoguyoupan2023/adhdgofly-dsh-ext) — 在 DSH Web 已渲染的 Markdown 中做词性高亮：名词绿、动词红、形容/副词紫，支持深/浅色板、词性开关与流式防抖。
+- [zuojinxin/dsh-sidebar-manager](https://github.com/zuojinxin/dsh-sidebar-manager) — 把 DSH 左侧的面板列表折叠成一行分组头；点齿轮进入编辑态，对两组内容分别勾选显示/隐藏、拖动排序——侧栏扩展入口与会话顶部视图标签。
 - [ZZJQ678/dsh-model-picker](https://github.com/ZZJQ678/dsh-model-picker) — 把聊天输入框的模型选择器换成按渠道商分组、可折叠的列表：按渠道商归组，把视觉桥镜像渠道商折叠回上游，并逐模型带上设置里声明的思考强度选项。仅在 DSH 桌面版实测，Web 版未测试。
 - [zzt0818/dsh-task-details](https://github.com/zzt0818/dsh-task-details) — DeepSeek Harness 任务详情侧边栏：每个已结束任务的最下方显示「查看任务详情」，点开后从右侧边栏打开可拖拽调宽的面板，列出该任务的输入文件、中间产物、输出文件、所用工具与 skill、推断出的语言、按步骤组织的流程时间线，以及模型提供方与 Token 用量、缓存命中率。
 - [zzx-dear/dsh-selection-followup](https://github.com/zzx-dear/dsh-selection-followup) — 选中聊天回复中的任意文字，浮出「追问/复制」气泡：一键把选中内容作为引用填入输入框（问题由你输入），或一键复制。另附安装与实现文档。
@@ -4692,6 +4694,7 @@ dsh plugin --profile web add dshmarket
 - [cckyros/goal-acceptance](https://github.com/cckyros/goal-acceptance) — 验收标准驱动的目标完成：锁定可验证的验收标准、跟踪任务依赖，以 reviewer 正式验收作为完成门禁（18 个 MCP 工具）。
 - [Ceelog/dsh-plugins#dsh-plugin-scheduled-tasks](https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-scheduled-tasks) — 按项目调度提示词，在全新的无头 Agent 会话中执行，支持单次、固定间隔和 cron 计划，并持久化运行历史。
 - [changlianxiya-139/dsh-ambiguity-handling](https://github.com/changlianxiya-139/dsh-ambiguity-handling) — 向 dsh system prompt 追加歧义处理规则，让 agent 在猜测前先列出 A/B/C/D 选项请求澄清。
+- [Chlyz621/dsh-unstuck](https://github.com/Chlyz621/dsh-unstuck) — 让 DeepSeek Harness 的回合自己接上：轮次异常结束时补一条继续；工具调用被中转站当成正文吐出、回合却仍记为正常结束时，补一条带指向性的继续，让它重新发起工具调用；模型请求不再出流时掐掉当前轮重来。卡在审批或提问只记录并提醒，不代为回答。
 - [ChongCyrus/Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — 为 DSH 安装四个多代理数学研究预设：v2（概率驱动流水线 + 多验证器辩论）、v3（论文式 Markdown 知识库 + 规划代理 + 可复用方法库）、v4（常驻自组织成员，靠留言与开会决定一切）、v5（研究所：院士拆解并分派任务、有表决权的研究员、临时工、群聊与 CAS 任务板）；四套均支持断点续跑、人工干预，以及可调档的 Lean 形式化验证（off/encourage/require，一旦跑通，表决转为对 Lean 陈述的忠实性核对）。
 - [chumingjun/dsh-harness-one#dsh-ccpg-one](https://github.com/chumingjun/dsh-harness-one/tree/main/dsh-plugins/dsh-ccpg-one) — 面向 DeepSeek Harness 的可视化多智能体 DAG 工作流，支持实时执行、重启恢复和飞书集成。
 - [chuspeeism/dashi-taskboard#deepseek-harness](https://github.com/chuspeeism/dashi-taskboard/tree/main/integrations/deepseek-harness) — 把当前已安装并运行中的 Codex Taskboard 嵌入 DeepSeek Harness 侧边栏，并通过 Launcher 运行时描述文件连接，而不是使用固定端口。
@@ -6112,6 +6115,7 @@ dsh plugin --profile web add dshmarket
 - [kinderao/dsh-pocket-relay](https://github.com/kinderao/dsh-pocket-relay) — 手机与远程访问 DSH Web 界面：局域网扫码即用，或用自建 relay 中继服务端（替代 cloudflared 隧道）随时随地连回电脑；每台设备独立凭据，可配对、查看与单独撤销；多台电脑共用一个中继并自动热备。
 - [KKUCODES/dshm-plugin](https://github.com/KKUCODES/dshm-plugin) — 将 DSHM 安卓客户端连接到电脑上的 DeepSeek Harness 会话，支持远程续聊、模型切换、审批、设备配对与撤销。
 - [KyoMio/dsh-zen-remote](https://github.com/KyoMio/dsh-zen-remote) — 手机优先的移动端界面重排 + 配对码网关：经自建反代或 Cloudflare Tunnel 把 DSH 变成可安装、带推送的 PWA。
+- [Leawind/dsh-rice-on-a-stick](https://github.com/Leawind/dsh-rice-on-a-stick) — 将控制 dsh 的能力暴露为 MCP 和内置工具。
 - [Leon0555/dsh-lan-access](https://github.com/Leon0555/dsh-lan-access) — 局域网访问：Web GUI 绑定 0.0.0.0 + crypto.randomUUID polyfill（修复非安全上下文下 RPC 崩溃）。
 - [liaosiliangCodeLife/harness-mate-dsh](https://github.com/liaosiliangCodeLife/harness-mate-dsh) — 把跑在本机的 DeepSeek Harness 智能体接入 HarnessMate 平台：手机 / 浏览器即可对话、收发文件、审批工具调用。
 - [liguobao/ds-harness-remote](https://github.com/liguobao/ds-harness-remote) — DeepSeek Harness 多端远程访问：从手机、平板、浏览器或另一台电脑继续进行中的会话，端到端加密通道（Noise IK + 自适应 Relay/WebRTC 传输），设备授权管理；远程端仅开放 ApiProxy 能力，支持 dsh-file-viewer 只读文件预览，不提供 Shell、远程桌面或写入权限。
