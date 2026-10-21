@@ -1276,6 +1276,7 @@ dsh plugin --profile web add dshmarket
 - [zmh2000829/DSH-agent-bridge](https://github.com/zmh2000829/DSH-agent-bridge) — 在 Web 输入框中切换原生 DSH Agent 与 Grok Build，并通过 ACP 代理 Grok Build 会话及斜杠命令。
 - [zmm863-commits/dsh-paperclip](https://github.com/zmm863-commits/dsh-paperclip) — 在 DSH Web 输入框添加回形针按钮：点击选择文件（支持拖拽），文件内容自动插入输入框。
 - [zmm863-commits/dsh-sticky-notes](https://github.com/zmm863-commits/dsh-sticky-notes) — 泡泡猫的即时便签 — 支持彩色标签、置顶、定时提醒与密码保护。
+- [zoe1nan/dsh-cockpit](https://github.com/zoe1nan/dsh-cockpit) — DeepSeek Harness 指挥台：会话栏与编队看板、带审批与写操作的任务板、实时流，以及跟随运行中对话的桌面 HUD 胶囊。
 - [zoe1nan/dsh-startup-intro](https://github.com/zoe1nan/dsh-startup-intro) — 启动时播放视频开场，每段素材可独立调节播放片段、速度、亮度、画面适配、影院模糊填充、展示比例与淡出时长，并按应用浅色/深色外观自动选择对应版本。
 - [ZRAZN/dsh-effort-slider-split-seat](https://github.com/ZRAZN/dsh-effort-slider-split-seat) — dsh-effort-slider 的修改版：把输入框的模型座位拆成两个按钮——点模型名打开模型列表，点推理等级打开带 WebGL 火焰的滑块面板。
 - [ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — OpenPencil 设计预览与编辑插件。
@@ -1784,6 +1785,7 @@ dsh plugin --profile web add dshmarket
 - [ruegg114514/dsh-colorlab](https://github.com/ruegg114514/dsh-colorlab) — 对话界面配色引擎：内置 Mariana 配色作为默认预设，提供 18 个颜色槽位与 9 个 Markdown 正文角色色，最多可保存 12 套预设；LaTeX 代码块通过移植 Sublime 自身的语法来上色。
 - [ruijiaang-lab/dsh-wallpaper-engine](https://github.com/ruijiaang-lab/dsh-wallpaper-engine) — DSH Web 聊天背景壁纸。Windows：直接读取你的 Wallpaper Engine（Steam）库，把视频/网页壁纸渲染到聊天界面背后。macOS：自动扫描 WaifuX 下载目录和媒体文件夹——在 WaifuX 里保存的壁纸零配置即可成为 DSH 背景，支持视频与图片。带毛玻璃模糊、压暗、边框调节滑块。
 - [runcat-tommy/dsh-theme-manager](https://github.com/runcat-tommy/dsh-theme-manager) — DSH Web 两级主题管理器：先选文化 / 场景、国旗、开发者配色或强烈对比配色，再选具体风格，内置 58 套浅色 / 深色配色。
+- [S-anZZz/dsh-pink-bow-kitty](https://github.com/S-anZZz/dsh-pink-bow-kitty) — 粉嫩、简洁的 DeepSeek Harness 主题：手绘小猫印花壁纸、浅色与深色配色，以及两只小猫装饰；没有复杂配置和额外面板。
 - [sakuraaa667/dsh-wallpaper-engine](https://github.com/sakuraaa667/dsh-wallpaper-engine) — 将 Wallpaper Engine 中已下载的壁纸用作 DeepSeek Harness 的背景：视频壁纸原位播放，图片壁纸优先使用最高分辨率原图，支持铺满/完整显示适配与 0–100 面板暗化。
 - [SamizuHM/dsh-client-ui-theme-xp](https://github.com/SamizuHM/dsh-client-ui-theme-xp) — Windows XP Luna 桌面化主题：浮动窗口管理器（任务栏、桌面图标）加上还原度很高的 Luna 皮肤。
 - [sayzwx/dsh-xingkong-theme](https://github.com/sayzwx/dsh-xingkong-theme) — 深空观测站主题：浅色与深色两套完整设计，衬在无痕交叉溶解的星云动态壁纸之上；附带模型检验面板，告诉你哪些模型真的可用、真实上下文窗口有多大。
@@ -2453,6 +2455,7 @@ dsh plugin --profile web add dshmarket
 - [joyboy-yy/dsh-archive-purge](https://github.com/joyboy-yy/dsh-archive-purge) — 无论侧栏「归档显示」如何设置都强制隐藏已归档会话，并提供管理面板：取消归档，或彻底删除会话日志目录、归档与置顶登记及投影缓存。
 - [JRJRJPRO/dsh-chat-tree](https://github.com/JRJRJPRO/dsh-chat-tree) — 把一个对话的所有分支画成聊天区旁边的一棵可点击的树，支持收藏、自定义图标与颜色、分支合并与拆分、撤回感知的布局，以及带记忆的 Claude Code 分支。
 - [jujiujiang222-cell/dsh-archive-sessions](https://github.com/jujiujiang222-cell/dsh-archive-sessions) — 归档会话管理：在设置页新增“归档会话”，列出所有已归档会话，支持恢复与二次确认后的永久删除。
+- [Justin-Mai/dsh-role-prompts](https://github.com/Justin-Mai/dsh-role-prompts) — 在 DSH 输入框里用岗位角色约束整个会话：在输入框开头键入 - 选一个角色，它会以引用 chip 的形式落在草稿里，随后作为 system prompt 的一部分在这一会话的每一轮注入，指令持续生效且不会出现在对话记录中。角色在设置页新增和编辑，保存在 ~/.dsh/dsh-role-prompts.md。
 - [kagurazakayashi/dsh-delete-session](https://github.com/kagurazakayashi/dsh-delete-session) — 在侧边栏会话行菜单中加入「删除会话」项，确认方式可配置（再次点击、对话框确认或直接删除），正在执行任务的会话会被拒绝删除。
 - [kaieye/dsh-AIR](https://github.com/kaieye/dsh-AIR) — DSH Web 输入框增强：跨会话召回已发送提示词、用 Ctrl+R 搜索并还原富草稿，以及提供停靠式 /btw 或 /side 旁路会话。
 - [kanchengw/dsh-assembly.resume](https://github.com/kanchengw/dsh-assembly.resume) — 将本地 Codex CLI/Desktop、Claude Code CLI 和 Claude Desktop 会话导入 DSH：按项目分组，保留语义历史和工具活动，可绑定原工作区或新工作区，并由 DSH Agent 继续对话。
