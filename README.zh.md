@@ -1406,7 +1406,7 @@ dsh plugin --profile web add dshmarket
 - [hoyyang/dsh-agent-billing](https://github.com/hoyyang/dsh-agent-billing) — dsh web 的 Agent 计费与用量可观测：会话日志直扫记账（zstd 解压、逐事件时间戳入账、水位+lastSeq 双防双计）、多账号按 provider/模型费率档案、per-window 实时徽标（React fiber 读窗口会话 id，切会话即切账单）、玻璃拟态面板（14 天趋势/预算告警/中转站余额/332 模型官方价库）。
 - [huangyuheng/dsh-token-use](https://github.com/huangyuheng/dsh-token-use) — 设置中的 Token 用量面板：总量（输入/输出/缓存读/缓存写/推理/调用次数），按模型、按天、按月、按项目的明细，以及最近 30 天的按日趋势折线图；历史在 Worker 线程上一次性重建，之后由会话事件实时累加。
 - [huanyuLv/dsh-balance-tide](https://github.com/huanyuLv/dsh-balance-tide) — 输入框下方显示 DeepSeek 账户余额与本会话花费，余额前带峰/谷价格徽章（北京时间）与距切换倒计时，悬停看两档单价明细与使用建议。
-- [huhu23333/dsh-reasoning-distill](https://github.com/huhu23333/dsh-reasoning-distill) — 把过长的模型思考压缩成有用核心，之后每次请求重放压缩版，并给出每个会话的开销与节省报告。默认关闭：必须先装好并选中两个改写后端之一（in-place 需给 DSH 源码打 14 处补丁并重建，message-edit 需装第三方插件）。
+- [huhu23333/dsh-reasoning-distill](https://github.com/huhu23333/dsh-reasoning-distill) — 把过长的模型思考压缩成有用核心，之后每次请求重放压缩版，并给出每个会话的开销与节省报告。默认关闭：必须先选择一个改写后端。derive 无需安装、打包版也能用；in-place 需给 DSH 源码打 14 处补丁并重建（源码构建首选）；message-edit 需装第三方插件，仅实验性，不推荐。
 - [HwFee/HwFee-dsh#usage-stats](https://github.com/HwFee/HwFee-dsh/tree/master/plugins/usage-stats) — 空白会话首页的用量面板：会话数、消息数、总 token、活跃天数、高峰时段、常用模型与热力图，范围可选全部、30 天或 7 天。
 - [iamfromchangsha/dsh-go-balance](https://github.com/iamfromchangsha/dsh-go-balance) — 输入框工具行右侧的 OpenCode Go 余额胶囊：滚动/每周/每月配额剩余百分比（数据直接来自 Zen 用量接口），悬停查看明细，低余额自动变黄/变红。
 - [iasiv5/dsh-quota-watch](https://github.com/iasiv5/dsh-quota-watch) — 在 DSH 中查看 GLM Coding Plan 与 GitHub Copilot 的服务商额度快照：可拖动悬浮胶囊与详情面板展示额度窗口、重置时间、分模型用量与 Copilot 额度，附默认隐藏的可选侧边栏卡片；凭据由 DSH 宿主解析，不保存额度历史。
@@ -1997,6 +1997,7 @@ dsh plugin --profile web add dshmarket
 - [hi-fangj/dsh-models-radar](https://github.com/hi-fangj/dsh-models-radar) — 在设置页展示 CodexRadar 模型能力评测，并在输入框旁显示当前会话所选模型的 DeepSWE 分数。
 - [HiSeax/dsh-better-model-setting](https://github.com/HiSeax/dsh-better-model-setting) — 替代官方「模型」设置页：提供方生命周期管理、每模型思考档位、重试覆盖、拖动排序与上游模型同步。
 - [hmtxj/dsh-model-modality](https://github.com/hmtxj/dsh-model-modality) — 在「模型」设置页面按模型声明输入类型与思考等级——每个渠道卡片上的「输入类型」勾选框，以及渠道「编辑」对话框里的「思考等级」。写入 pi-ai 官方的 input 与 reasoningEfforts 字段。
+- [Hoemr/dsh-llm-cc-switch](https://github.com/Hoemr/dsh-llm-cc-switch) — 把本地 CC Switch 数据库里的账号接进 DeepSeek Harness：Claude Code、Codex、OpenCode、Grok Build 的每个账号在模型选择器里各成一类，列模型与发请求时都会重读 SQLite 数据库，在 CC Switch 里换账号不必重启 DSH。
 - [HOWILLMAKEIT/dsh-model-context-catalog](https://github.com/HOWILLMAKEIT/dsh-model-context-catalog) — 一键匹配 DSH 已配置模型的上下文窗口，展示容量来源，支持勾选批量配置、手动编辑和持续同步。
 - [Howthemeaning/dsh-model-settings](https://github.com/Howthemeaning/dsh-model-settings) — DeepSeek Harness 模型设置面板：设置新会话的默认模型，并为子代理与 goal 回合分别配置 provider、模型和推理强度，保存后热更新。
 - [hoyyang/dsh-glm-mode](https://github.com/hoyyang/dsh-glm-mode) — 为 zhipuai/glm-5.3-flash 调优的「GLM 模式」Agent 预设：PTC 程序化工具调用、思考死循环守卫与工具空转守卫双层防护（源自活体事故复盘）、GLM 专属自动压缩（75%/22%）。
@@ -4331,6 +4332,7 @@ dsh plugin --profile web add dshmarket
 - [void2anything/dsh-qingagent](https://github.com/void2anything/dsh-qingagent) — 青简写作桥：agent 通过 qing_ 前缀工具起草改稿，右侧宣纸面板排版呈现（mermaid、drawio、表格、公式）；每处修改先摆在纸上供审阅，提交才落稿。需本机运行开源的青简桌面客户端。
 - [w4xxx/dsh-xia-plugins#packages/gameassist-knowledge](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-knowledge) — 树状 Markdown 知识库：为 DSH Agent 提供 kb_list/kb_read/kb_write 工具、目录/正文 HTTP 接口，并配套浏览器面板。
 - [Wanyi424/dsh-markdown-notes](https://github.com/Wanyi424/dsh-markdown-notes) — DSH Markdown 笔记：多文档管理、阅读排版主题、大纲刻度条与本地自动保存。
+- [WaterFountain-Jack/dsh-study-note](https://github.com/WaterFountain-Jack/dsh-study-note) — 按对话开启学习笔记，自动整理问答，按分类保存并维护 Markdown 索引。
 - [wct-lab/dsh-docchain](https://github.com/wct-lab/dsh-docchain) — 知识库和文档转换插件：文档文件名、内容与元数据检索，主题查询，文档批量上传，文档转 Markdown，并附带深度研究工作流。除 doc2markdown 外需配置 docchain 服务地址与 API key。
 - [weibaohui/dsh-kb](https://github.com/weibaohui/dsh-kb) — 团队知识库：离线知识共享（FDE 盒子场景），浏览/全文检索/加工入口；raw 入料自动入队、bot 会话串行蒸馏成文（Karpathy LLM Wiki 模式：raw 不可变 / 两步加工 / log 流水 / 月度 lint）。
 - [Whatsmore-nf/dsh-pdf-edit](https://github.com/Whatsmore-nf/dsh-pdf-edit) — 面向 PDF 文档的编辑插件,精确编辑PDF文字
