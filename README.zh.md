@@ -4220,6 +4220,7 @@ dsh plugin --profile web add dshmarket
 - [loyalchiiina/dsh-voice-alert](https://github.com/loyalchiiina/dsh-voice-alert) — 每个 turn 结束自动语音/音效提醒，出错时播失败提示；内置 20 个音效（提醒 10 + 大自然 10）且默认「音效」模式，零配置开箱即用、不需要任何 API Key 与音频文件；进阶可用火山「声音复刻」克隆自己的音色并一键生成三条播报语音；走 winmm/waveOut 原样播放，绝不改动系统音量或静音状态。仅 Windows。
 - [maoyuching/dsh-voice-chat](https://github.com/maoyuching/dsh-voice-chat) — 豆包式语音对话插件：聊天框麦克风按钮（按住说话）语音转文字并自动发送，AI 回复自动朗读。可选 LLM 转述精简（长回复压缩成口语再播，跟随当前对话模型）、朗读前清洗 markdown/emoji/特殊符号、Edge TTS 多种音色、静音自动结束时长可调，设置嵌入 DSH 自带设置弹窗（voice chat 类目）。
 - [MaRi23333/dsh-fish-tts](https://github.com/MaRi23333/dsh-fish-tts) — 朗读助手回复（仅支持 Fish Audio API，需自备 Key）：逐条朗读、自动朗读开关，设置页可配模型、音色 reference_id、加密 API Key 与代理。
+- [mhlywxl/dsh-coding-sound](https://github.com/mhlywxl/dsh-coding-sound) — 模型输出时演奏生成式背景音乐，完成、审批与等待操作各有独立提示音：不盯屏幕也能听出 Agent 在思考、仍在工作还是在等你。
 - [NewDaNew/dsh-voice-input](https://github.com/NewDaNew/dsh-voice-input) — Web UI 语音输入：输入框一键麦克风按钮，基于 Web Speech API 语音转文字填入草稿，可选识别后自动发送。
 - [Nothree-code/voco-input-sh](https://github.com/Nothree-code/voco-input-sh) — Web UI 语音输入：输入框麦克风按钮驱动本地 VocoType 离线识别，识别结果自动插入输入框（自动部署/防重复/持续输入）。
 - [nsswkj/dsh-typewriter-blip](https://github.com/nsswkj/dsh-typewriter-blip) — 把流式输出的助手回复变成短促音效：按可调的最小间隔逐字发声，只对回复正文发声，窗口最小化、被遮挡或切到后台标签页时照常发声。内置两种音色，也可自调波形，或载入音频文件当音色。
@@ -6023,7 +6024,7 @@ dsh plugin --profile web add dshmarket
 - [DamonKoy/dsh-web-ui#dsh-ssh](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-ssh) — dsh web GUI 远程 SSH 操作：主机配置存储、持久化会话。
 - [David060323/dsh-phone-remote](https://github.com/David060323/dsh-phone-remote) — DSH 手机远程访问的开箱即用修复套件：把 PWA manifest 的 start_url 改到 /pair-app，解决 iOS「添加到主屏幕」后打开停在 401 的问题；附常驻/守护脚本、自动登录与电源设置说明、中文排错手册。需安装 @linxin666/dsh-remote-web-ui（/pair-app 由它提供）；守护脚本仅 Windows。
 - [dingchenhui0618-arch/dsh-in-hand](https://github.com/dingchenhui0618-arch/dsh-in-hand) — 掌上 DSH（dsh-in-hand）：DeepSeek Harness 的手机端，不用装 App（PWA）。公网与局域网两个入口可随时切换；在手机上读会话、子代理、目标轮次、工作流、后台任务与待审批，和任意会话实时对话（流式回复、工具调用进度、随时停止、切换会话与模型），消息可排队并「立即发送」，支持上传与交付文件。另含 GUI 侧边栏面板；原名 dsh-taskwatch，npm 包已改为 dsh-in-hand。
-- [dingminhua/dsh-service-portal](https://github.com/dingminhua/dsh-service-portal) — 把一个口令登录的内网地址与公网 cloudflared 快速隧道域名提供给本机任意服务，每条路由的开放/屏蔽闸门在插件设置页里管理。需本机有 Python 3 与 cloudflared；内网与本机访问默认免密，公网隧道需要口令。
+- [dingminhua/dsh-service-portal](https://github.com/dingminhua/dsh-service-portal) — 把一个口令登录的内网地址与公网 cloudflared 快速隧道域名提供给本机任意服务，每条路由的开放/屏蔽闸门在插件设置页里管理。需本机有 Python 3 与 cloudflared，缺失或路径填错会在启动前的设置页里提示；内网与本机访问默认免密，公网隧道需要口令。
 - [donoteatme/dsh-local-link](https://github.com/donoteatme/dsh-local-link) — 以浏览器为核心、仅限局域网访问当前 DeepSeek Harness Web UI，支持一次性二维码配对、设备撤销、事件驱动诊断和保留插槽的移动端布局；无需配套应用、云中继或远程隧道。
 - [dsh-publish/dsh-pair-quick](https://github.com/dsh-publish/dsh-pair-quick) — 在 dsh 设置页直接铸造 remote-web-ui 远程访问配对链接并显示二维码。
 - [dsh-remote/plugin](https://github.com/dsh-remote/plugin) — 在手机上审批工具调用、看流式输出、回答问题；载荷级端到端加密，中继可自托管。
