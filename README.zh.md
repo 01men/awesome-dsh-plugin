@@ -1328,7 +1328,7 @@ dsh plugin --profile web add dshmarket
 - [a1113622001/dsh-session-stats-panel](https://github.com/a1113622001/dsh-session-stats-panel) — 右侧会话统计面板，展示平均缓存命中率、会话成本、运行时长、请求数、累计 token 与账户余额。
 - [aexachao/dsh-balance-tracker](https://github.com/aexachao/dsh-balance-tracker) — 会话头部的真实 DeepSeek 余额与官方消费统计：高峰/空闲标签、按金额提醒与自动停止、一键充值。
 - [ai-v5/LLMDSHPlugin_token-usage](https://github.com/ai-v5/LLMDSHPlugin_token-usage) — 仅本地、只读、不上传的 DSH Token 面板：按 provider 实际 usage 统计，所有后端统一汇总；含历史总量、365 天热力图、输入+输出与缓存读写明细、轮次/步骤、平均 tok/s，归档后仍保留历史。
-- [AK-blank/dsh-codex-bridge](https://github.com/AK-blank/dsh-codex-bridge) — 读取本机 Codex CLI 的 ChatGPT 计划额度（5 小时与每周窗口），默认统一使用 gpt-6.1-sol + high 推理强度，任一窗口剩余不超过 10% 时回退 gpt-5.6-sol，并通过 codex exec 外派任务；昂贵的 gpt-6-astra 需要显式开启。
+- [AK-blank/dsh-codex-bridge](https://github.com/AK-blank/dsh-codex-bridge) — 读取本机 Codex CLI 的 ChatGPT 计划额度（5 小时与每周窗口），默认统一使用 gpt-6.1-sol + high 推理强度，任一窗口剩余不超过 10% 时回退 gpt-5.6-sol，并通过 codex exec 外派任务；昂贵的 gpt-6-astra 需要显式开启。需已登录的 Codex CLI（`codex login`）。
 - [AKS1st/model-usage-plugin](https://github.com/AKS1st/model-usage-plugin) — 按模型统计 token 消耗并估算费用，同时显示 DeepSeek 账户余额，展示于设置面板「模型消耗」页签。
 - [AKUSH99/dsh-balance-chip](https://github.com/AKUSH99/dsh-balance-chip) — 侧边栏底部与右下角常驻胶囊实时显示 DeepSeek API 余额：状态点加金额，每 60 秒自动刷新，密钥从本机凭证库读取。
 - [AlienGene/dsh-llm-balance-siderbar](https://github.com/AlienGene/dsh-llm-balance-siderbar) — DeepSeek Harness 服务提供商用量查询插件：在宿主侧读取 DeepSeek、Moonshot 余额与 Kimi For Coding、OpenCode Go 的配额窗口，在常驻卡片中展示，支持三种视图、边缘磁吸与收起为字母气泡。
