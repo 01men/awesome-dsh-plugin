@@ -1281,6 +1281,7 @@ dsh plugin --profile web add dshmarket
 - [Zian-anson/dsh-prompt-seed](https://github.com/Zian-anson/dsh-prompt-seed) — 输入框有内容时单次调用优化草稿，空白时预测下一句；两类任务独立，支持草稿保护、结果预览和原文恢复。
 - [ZichengGurrr/dsh-window#kit](https://github.com/ZichengGurrr/dsh-window/tree/main/kit) — DSH 三件套全家桶：Windows 原生窗口（WebView2）+ DeepEye 视觉（GLM-4V-Flash）+ 语音输入（麦克风按钮），一条命令装齐。
 - [ZichengGurrr/dsh-window#plugin](https://github.com/ZichengGurrr/dsh-window/tree/main/plugin) — DSH 的 Windows 原生窗口（WebView2）：一键安装，自动从 GitHub Releases 下载应用 zip、创建桌面快捷方式，并提供 desktop_launch 工具在对话中一键启动。
+- [zirscard/dsh-taskboard-epic](https://github.com/zirscard/dsh-taskboard-epic) — DeepSeek Harness 的客户端面板：把 dsh-taskboard 项目里的总任务卡按 epic:children 顺序堆叠展示，标出每个模块在弧线上的位置、代号、名称与版本，并区分起点/中间/终点模块。顺序可拖拽或用按钮调整，新顺序通过 taskboard 自身的公开更新 API 写回，因此会持久化并对该项目的所有查看者共享。需要先安装 dsh-taskboard 插件。
 - [zizhongfeiyang/dsh-settings-drawer](https://github.com/zizhongfeiyang/dsh-settings-drawer) — 让你选择 DeepSeek Harness 设置页左侧导航要显示哪些栏目。
 - [zkl22492-star/Toolfolk-for-DSH](https://github.com/zkl22492-star/Toolfolk-for-DSH) — 把插件与模型的调用过程可视化成 3D 办公室：六个固定工位、思维流气泡与交付纸。
 - [zlqd123/dsh-composer-keys](https://github.com/zlqd123/dsh-composer-keys) — DeepSeek Harness Web 输入框键位自定义：把 Enter、Ctrl/Cmd+Enter、Shift+Enter 或任意组合键分配给发送、换行、打断三个动作，支持跨动作互斥迁移与持久化保存，默认保持 DSH 原生行为。
@@ -1631,6 +1632,8 @@ dsh plugin --profile web add dshmarket
 - [zhuzichen362/dsh-call-shrink](https://github.com/zhuzichen362/dsh-call-shrink) — DeepSeek Harness 的极端 LLM 调用压缩：标题生成短路、飞行中请求去重、24 小时回放缓存，并用 `[[TASK n]]`/`[[ANSWER n]]` 分隔协议把 N 个并行请求批量合并为 1 次上游调用——更少 API 调用、更低开销、相同答案。
 - [ZiOstudio/dsh-budget-handoff](https://github.com/ZiOstudio/dsh-budget-handoff) — 给 DeepSeek Harness 的会话设预算上限：按官方价目表实时算账，80% 预警、100% 拦停任务，并落盘一份交接快照，让下一个会话接着干。
 - [zirscard/dsh-context-extract](https://github.com/zirscard/dsh-context-extract) — 为 DeepSeek Harness 注册一个 `context_extract` 工具：把长篇原始文件（财报底稿、合同、台账）压成高密度结构化 Markdown + JSON——关键指标、表格、条款切分、实体与勾稽 alert，让下游流程用更少 Token 拿到同样的事实。财报 / 合同 / 台账分别走不同解析路径；资产负债表与现金勾稽不平只报 alert，不静默修正。只读，不改原文件。
+- [zirscard/dsh-principles-audit](https://github.com/zirscard/dsh-principles-audit) — 为 DeepSeek Harness 注册一个 `principles_audit` 工具：审查原则库的 ID 冲突与旧版 ID、因果句/适用边界/反例/证据缺失、同名与近重复原则、状态与置信度不一致、长期未复核与维度覆盖缺口。问题按严重度分级，并用硬门禁给出 pass / warn / fail——严重项必须被有效且未过期的豁免覆盖。原则库只读不改。
+- [zirscard/dsh-workpaper-gate](https://github.com/zirscard/dsh-workpaper-gate) — 为 DeepSeek Harness 注册一个 `workpaper_gate` 工具：审核底稿完整性，既审目标（设计层/模板）自身，也审底稿实例与模板的结构一致性；规则清单、模板清单与核心表清单全部配置化在同一个 spec 文件里。结果按 blocker / warning / info 分级，底稿只读不改。
 - [Zoria-Lind/dsh-token-optimizer](https://github.com/Zoria-Lind/dsh-token-optimizer) — token 优化管道：按上下文压力分层压缩（40% 以下无损投影、以上 LLM 摘要）、按 agent 裁剪工具列表、长文本转图片视觉摘要、/token-status 查看压力与节省量。
 - [zouxiaoyang/dsh-commandcode-usage](https://github.com/zouxiaoyang/dsh-commandcode-usage) — DSH 的 CommandCode 用量与余额面板：在侧边栏底部显示 API 用量、信用额度、5小时/每周窗口。
 
@@ -2772,6 +2775,7 @@ dsh plugin --profile web add dshmarket
 - [CDeZT/better-basicfun](https://github.com/CDeZT/better-basicfun) — 原生 DSH 基础插件：注册持久化默认工作区，分页只读查看插件、skills、memory、会话、storage、settings、credentials 与 DSH_HOME 文件，并将 CLIProxyAPI 的模型能力同步到原生 Provider 设置。
 - [CeilCelia/dsh-eli-mode#packages/eli-mode](https://github.com/CeilCelia/dsh-eli-mode/tree/main/packages/eli-mode) — 知识库驱动的 Agent 预设：wiki 长期记忆、网页知识库、管理页、可选界面润色。
 - [Chance722/dsh-inbox](https://github.com/Chance722/dsh-inbox) — dsh 的个人收件箱：输入框的 /inbox 或侧栏面板把链接、图片、文本与账密收进本地仓库，先按本地规则、再由有每日上限的模型分类，可在面板里筛选、搜索与编辑；对话里让助手按需检索取回，账密正文加密落盘，可选 WebDAV 或 S3 远端同步记录与附件字节。目前只在 Windows 实测。
+- [cheeseRatRat/dsh-buwang](https://github.com/cheeseRatRat/dsh-buwang) — 不忘 —— 主动记录的私人记忆库，内置可修改的人格，只在你开口时才写、才读，纯本机 Markdown 不联网。
 - [chenzheshushi-commits/dsh-evolve](https://github.com/chenzheshushi-commits/dsh-evolve) — 跨会话记忆，零 token 确定性召回（bigram-Jaccard 与 FTS5 BM25 经 RRF 融合，中文分词精确）；重复观察会强化已有理解而非堆叠重复；过程性知识结晶为 SKILL.md，就地精炼升级，走 active-stale-archived 生命周期治理，归档可逆、可回滚。摄入与处置各有一档用户可选的自治程度，冲突与高重要写入始终交人工复核，任何档位都不会自动删除。需要 Node 22.5+。
 - [chinwe/dsh-compound-memory](https://github.com/chinwe/dsh-compound-memory) — 通过 uvx 启动本地 compound-memory MCP server，并在每个会话注入一次简短的使用提醒。
 - [ciskonc/dsh-context-imports](https://github.com/ciskonc/dsh-context-imports) — 把 AGENTS.md 里 @路径 引用的文件读出来，在会话启动时注入模型上下文；带字节预算、压缩后重新注入和六语言设置卡片。v0.2.3 适配 DSH 0.1.7+（已加固 0.2.0-rc.2+），DSH 0.1.5 请用 0.1.x。
@@ -6298,6 +6302,7 @@ dsh plugin --profile web add dshmarket
 - [ymck-x/dsh-plugin-index](https://github.com/ymck-x/dsh-plugin-index) — DSH 内的插件索引，收录 1 万余个按 package.json 里的 dsh.bundle 声明校验过的第三方插件（不按星数判定），支持一键安装，另有配套网站。
 - [yyyyukari/dsh-plugin-workshop](https://github.com/yyyyukari/dsh-plugin-workshop) — 创意工坊式插件浏览器：侧栏常驻入口，搜索/最热/最新/近 7-90 天飙升榜、中文关键词映射、描述与 README 机翻、插件特征验证过滤、一键安装/更新。
 - [zhu1090093659/dsh-web#packages/dsh-plugin-manager](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-plugin-manager) — 设置 → 插件 分区里的插件管理 Tab：从 npm/git 安装带进度、下次启动生效的启停开关、安装冲突对账可撤销、失败一键转交修复会话。
+- [zirscard/dsh-wind-finance](https://github.com/zirscard/dsh-wind-finance) — 为 DeepSeek Harness 注册一个 `wind_finance` 工具：把金融问题路由到正确的 Wind 数据域，经 Wind meta-router MCP 端点（或批量模式下的分域 CLI）执行，并用按日回执避免同一份数据在共享日额度下被重复取数。认证、额度与网络失败如实返回错误码，不换数据源兜底。凭据只从环境变量读取，不随插件分发。
 - [zoahdev/dsh-subscribe#plugin](https://github.com/zoahdev/dsh-subscribe/tree/main/plugin) — Steam 风格的插件商店：在 DSH 里浏览插件注册表，一键安装、卸载与更新，另有零依赖 CLI 与可供 agent 调用的市场工具。
 
 ### 🎮 娱乐
