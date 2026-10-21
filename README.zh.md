@@ -2213,7 +2213,6 @@ dsh plugin --profile web add dshmarket
 - [zhangjunjesse/dsh-claude-driver](https://github.com/zhangjunjesse/dsh-claude-driver) — 让会话主模型跑在本机 Claude Code 订阅上：经官方 Claude Agent SDK 接管 claude-code provider 的 llm/stream 路由，支持 token 级流式、会话 resume 续接，并把 DSH 工具经 MCP 桥接进去以保留 DSH 的沙箱与审批。
 - [zhangnan/dsh-chatgpt-oauth](https://github.com/zhangnan/dsh-chatgpt-oauth) — 在 DSH Web 的模型设置中使用浏览器或设备码登录 ChatGPT 账号，并直接查看 Codex 订阅用量。
 - [zhangyqjiaoshou-oss/dsh-model-sync](https://github.com/zhangyqjiaoshou-oss/dsh-model-sync) — 一键同步 / 自动同步供应商模型列表，与 /v1/models 保持一致。
-- [zhiqiangme/dsh-plugins#dsh-autostart-workbuddy](https://github.com/zhiqiangme/dsh-plugins/tree/main/dsh-autostart-workbuddy) — 随 DSH 启动 WorkBuddy Panel 后端（workbuddy2api-panel 的 wb2api.exe，Windows），退出时只停自己拉起的进程；可把后端 /v1/models 同步到 workbuddy 模型提供方，设置卡片可勾选模型、查看积分倍率，并从经校验和验证的 GitHub Release 安装、更新或回滚后端。
 - [zhiqiangme/dsh-plugins#dsh-opencode2api](https://github.com/zhiqiangme/dsh-plugins/tree/main/dsh-opencode2api) — 随 DSH 启动独立的 opencode2api 后端（jasonxu114514/opencode2api，Windows x64/ARM64，无需 Docker 或 OpenCode CLI），退出时只停自己拉起的进程；设置卡片可从经校验和验证的 GitHub Release 安装、更新或回滚后端，复制初始管理密码，并把 /v1/models 连同上下文、视觉与思考档位同步到 opencode2api 模型提供方，运行中每 10 分钟重同步。
 - [zhlcba/dsh-raccoon-connect](https://github.com/zhlcba/dsh-raccoon-connect) — 为商汤小浣熊桌面 App 的模型补上 DSH 0.2.x 内核支持，复用该 App 的登录态，无需填写 API Key。
 - [zhubaohi/dsh-qwen38-compaction-fix](https://github.com/zhubaohi/dsh-qwen38-compaction-fix) — 针对 NInfer 托管的 qwen3.8-27b 网关的压缩修复：在 dsh 上下文压缩与会话标题调用中关闭思考，避免 xhigh 推理耗尽全部输出预算；同一思路适用于其他启动方式，本包仅面向 NInfer。
@@ -6112,6 +6111,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-reach](https://github.com/PerryLink/dsh-reach) — 把 DSH 的审批卡与提问卡推送到 IM 渠道（先支持微信），可在聊天里直接作答，带会话控制台、逐渠道安全与开放推送服务。
 - [polaris-smart/dsh-devices](https://github.com/polaris-smart/dsh-devices) — 去中心化多设备舰队：mDNS 同网发现、密钥配对、SSH 跨网直连指挥。
 - [Raiyan007-gb/dsh-remote-tunnel-easy](https://github.com/Raiyan007-gb/dsh-remote-tunnel-easy) — 在设置中扫描二维码，通过 cloudflared 快速隧道在手机上于当前会话中打开 DeepSeek Harness 网页端。
+- [RestRegular/dsh-pocket](https://github.com/RestRegular/dsh-pocket) — 为 DSH 单独做的窄屏移动端 Web 服务，不是把桌面 GUI 缩放塞进手机：自带会话列表与聊天流，随机访问令牌保护，可走局域网、cloudflared / localtunnel / localhost.run 隧道或自有服务器 SSH 反向转发。手机上流式看助手文本、思考、工具调用与结果，能发提示词、停止当前回合、回答阻塞提问与工具审批（含其它会话里等待的），切换模型 / 思考等级 / 权限预置，发送最多 4 张手机上压缩过的照片，并可一键让电脑常亮。
 - [rice-awa/dsh-lan-gateway](https://github.com/rice-awa/dsh-lan-gateway) — 把 DSH Web GUI 发布到局域网/公网，dsh 仍只绑定回环。除显式开启局域网免密外，所有来源均须登录换取 HMAC 会话 Cookie。提供自签名或自定义 TLS、用于明文 HTTP 代理的 secureCookies 覆盖项，以及让局域网纯 HTTP 来源正常打开工作区的 UUID shim。
 - [RyensX/dsh-remote-gateway](https://github.com/RyensX/dsh-remote-gateway) — 提供安全的反向代理，使DeepSeek Harness可以远程访问，随时随地和AI对话。
 - [SAXEM1997/dsh-cherry-bridge](https://github.com/SAXEM1997/dsh-cherry-bridge) — 把 DeepSeek Harness 会话桥接到局域网内的 Cherry Studio 桌面端——二维码配对、14 个 cherry_* 工具（agent/会话/历史/交互）与设置页（设备管理、按工作区的工具启用范围）。
