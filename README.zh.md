@@ -848,7 +848,7 @@ dsh plugin --profile web add dshmarket
 - [ninepoin4/dsh-rich-cards](https://github.com/ninepoin4/dsh-rich-cards) — 把回答末尾的 card 围栏块渲染成排版卡片，支持 card 与 article 两种布局、十二种块类型和带来源的配图。
 - [ninglovegithub/dsh-workspace-combiner](https://github.com/ninglovegithub/dsh-workspace-combiner) — 多工作区管理器：把文档锚点目录与若干代码项目仓库组合进同一会话，注入绝对路径、递归文件索引、前后端端点落点索引与可选的开发规范，并把可写目录同步进沙盒。
 - [NingTiAn-byte/dsh-intelligent-ui](https://github.com/NingTiAn-byte/dsh-intelligent-ui) — 在 DSH rc.2 Web 对话中生成可离线重放的图表与交互式原理演示，支持可选高德行程、确认式追问和 HTML 导出。
-- [NingTiAn-byte/dsh-linked-workspaces](https://github.com/NingTiAn-byte/dsh-linked-workspaces) — 从项目右键菜单关联本机目录，支持跨目录搜索、源码读取与显式会话快照同步。
+- [NingTiAn-byte/dsh-linked-workspaces](https://github.com/NingTiAn-byte/dsh-linked-workspaces) — 从项目右键菜单关联本机目录，支持跨目录搜索、源码读取与显式会话快照同步；仅支持 DSH 0.2.1-alpha.4 与 0.2.1-rc.2。
 - [NingYuanLee/dsh-image-viewer-pro](https://github.com/NingYuanLee/dsh-image-viewer-pro) — Web UI 的聊天图片查看器：接管内容图片点击（Markdown 图、以 blob: URL 渲染的消息附件图、read_image 结果），打开弹层后支持以指针为中心的滚轮缩放与可编辑百分比、拖动平移、90° 旋转、带进度下载、复制为 PNG、用默认应用打开，以及会话内 ←/→ 图集浏览。
 - [nirvanaslash/dsh-artifact-preview](https://github.com/nirvanaslash/dsh-artifact-preview) — 在对话中新增产出文件卡片行，并提供可拖拽分屏的产物预览面板，支持 Markdown、源码、CSV、JSON、图片、HTML，以及本地端口预览。
 - [Nishikinov/dsh-sidebar-settings-button](https://github.com/Nishikinov/dsh-sidebar-settings-button) — 在侧边栏顶部 Plugins 之前新增「设置」一行，点击即打开原生设置面板。
@@ -5364,7 +5364,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-niao/dsh-niao-message](https://github.com/dsh-niao/dsh-niao-message) — DeepSeek Harness 的 macOS 系统通知插件：任务中止、超限、阻塞、中断、出错、等待提问或批准、完成或子代理结束等事件通过 terminal-notifier 弹系统横幅；点击横幅打开指定应用，回到页面自动清空。
 - [dsh-pulse/dsh-hermes-bridge](https://github.com/dsh-pulse/dsh-hermes-bridge) — DSH 的任务队列执行端点：需要自行部署独立的 Hermes Agent 网关并编写自己的微信入站脚本；仅在单一环境验证过，需要按你的环境适配。
 - [EagleClark/dsh-genshin-lisa-notice](https://github.com/EagleClark/dsh-genshin-lisa-notice) — 回合完成、需要你输入或执行失败时播放语音提醒并发送浏览器通知，还可把同样的摘要以卡片推送到飞书机器人 webhook。
-- [Echo-Cry/dsh-intel-pulse](https://github.com/Echo-Cry/dsh-intel-pulse) — 离席或持续自主资讯推送与 AI 会话完成原生桌面弹窗通知，支持投递至 DSH 会话与 IM 机器人。
+- [Echo-Cry/dsh-intel-pulse](https://github.com/Echo-Cry/dsh-intel-pulse) — 仅 Windows。离席或持续自主资讯推送与 AI 会话完成原生桌面弹窗通知，支持投递至 DSH 会话与 IM 机器人。
 - [falling-ts/dsh-web-ding](https://github.com/falling-ts/dsh-web-ding) — agent 回合结束时在浏览器标签页里播放一声合成的叮,纯前端 Web Audio 发音,不经过后端、不弹系统通知。
 - [FANLS05/dsh-desktop-notifications](https://github.com/FANLS05/dsh-desktop-notifications) — DeepSeek Harness 的 Windows 桌面通知：申请权限、提问、任务完成、出错与登录提醒，每条通知第一行都是会话名称。
 - [faukwaa/dsh-gap-feed](https://github.com/faukwaa/dsh-gap-feed) — agent 思考超时时，直接在对话流中推出一条今日头条热点或提醒消息。
@@ -5938,7 +5938,7 @@ dsh plugin --profile web add dshmarket
 - [wyzh0117/dsh-port-manager](https://github.com/wyzh0117/dsh-port-manager) — dsh 原生右侧栏页签：列出本机监听的端口及占用它的进程，并可对每个端口执行打开、复制地址、定位工作目录或结束进程。
 - [x2802490130-prog/dsh-guard](https://github.com/x2802490130-prog/dsh-guard) — 开发配套守护：滚动快照、插件失败自动回退、启动失败救援、设置页管理面板。
 - [x2802490130-prog/dsh-shield](https://github.com/x2802490130-prog/dsh-shield) — 脱手模式安全网：agent 删除的目录先进回收站、链接绝不跟随，零审批。
-- [x3416067-bit/dsh-plugin-restart-prompt](https://github.com/x3416067-bit/dsh-plugin-restart-prompt) — DSH 插件变动后提示重启，一键静默重启（全程无命令提示符窗口），并可展开本次改动的逐行差异。
+- [x3416067-bit/dsh-plugin-restart-prompt](https://github.com/x3416067-bit/dsh-plugin-restart-prompt) — 仅 Windows。DSH 插件变动后提示重启，一键静默重启（全程无命令提示符窗口），并可展开本次改动的逐行差异。
 - [xiaocxiaohai666/dsh-plugin-selfcheck](https://github.com/xiaocxiaohai666/dsh-plugin-selfcheck) — 启动时打印 DeepSeek Harness 插件树中每一行的状态（失败的附异常内容），并检查依赖版本漂移、配置文件合法性、端口可达性与已注册工具。
 - [xiaolu511/dsh-hot-restart](https://github.com/xiaolu511/dsh-hot-restart) — DSH 窗口里的一个固定按钮，点一下就把 DSH 关掉并自动重开，全程没有控制台窗口；右键它还有内置自检，能生成一份自包含的诊断报告。
 - [xiaoso456/dsh-run-config](https://github.com/xiaoso456/dsh-run-config) — DSH 的 IDE 风格运行配置：把常用 LLM 提示词和 Shell 命令保存为可复用的运行配置（全局或按工作区），在会话头部或新会话页一键运行，大模型可通过 task_run_config 工具管理（写操作走审批）。
