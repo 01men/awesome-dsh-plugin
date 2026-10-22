@@ -483,6 +483,7 @@ dsh plugin --profile web add dshmarket
 - [GinoXiang/dsh-task-board](https://github.com/GinoXiang/dsh-task-board) — DSH Web GUI 的个人任务管理面板：双月日历（彩色时间条 + 当天任务）、日常清单、七天周视图（勾选完成、可拖动改期）与可拖拽的 24 小时时间轴，支持有序子任务、长期任务按天完成标记，以及 AI 自然语言提取任务。
 - [gjj-star/dsh-conversation-navigator](https://github.com/gjj-star/dsh-conversation-navigator) — 会话导航面板：按轮折叠的当前会话大纲与步次类型徽标（助手/工具/命令/压缩/出错），悬停气泡显示用户提问全文，可隐藏轮次号的极简徽标视图，仅检索提问与助手回复的关键词过滤，点击跳转与阅读位置跟踪，支持加载更早/加载全部历史分页。宿主 ≥ 0.1.2-rc.1，旧宿主装 @legacy/0.2.5。
 - [GLFzr/dsh-file-upload](https://github.com/GLFzr/dsh-file-upload) — Codex 式拖拽：把任意文件拖入 DSH Web 界面，文件存入 ~/.dsh-dropbox，路径以整块蓝色 chip 插入输入框。
+- [golddream-y/ratel-dsh-lumina](https://github.com/golddream-y/ratel-dsh-lumina) — 为 DeepSeek Harness 提供可调节的输入框流光、发送转场与流式反馈，支持效果开关并跟随系统减少动态设置。
 - [GoldenLoaf24h/dsh-prompt-suggestion](https://github.com/GoldenLoaf24h/dsh-prompt-suggestion) — 每轮结束后预测你的下一句话，以灰色 ghost text 显示在输入框：Tab 整条采纳、Alt+→ 逐词采纳、Enter 采纳并发送、Esc 忽略、Alt+R 换一条且不重复旧的那条；输入几个字时用本会话发过的提示做前缀补全，空输入框按 ↑ 回填上一条；插件页可设置服务商、模型、思考强度、各按键开关与生成参数。
 - [gongstudent/dsh-quote-to-agent](https://github.com/gongstudent/dsh-quote-to-agent) — 在 DSH 网页版会话里划词后，把选中内容引用到当前输入框，或分派到子智能体会话：引用落在输入框正上方的引用条上，或在右侧新开一格打开该子智能体会话。目标还没有子智能体时先挂起这条引用，并在输入框写入派生请求，新子会话一出现就自动接续。纯客户端。
 - [GooDAnDReaDY/dsh-russian-lang](https://github.com/GooDAnDReaDY/dsh-russian-lang) — 给 DeepSeek Harness 的「设置 - 通用 - 语言」加入俄语，覆盖核心界面与生态插件的词条。提供会话 Markdown 导出、消息内嵌翻译、实时排版、斜杠命令别名与 Alt+L 布局更正，以及一张设置卡片，全部通过运行时 locale 快照实现，不修改核心文件。
@@ -1198,6 +1199,7 @@ dsh plugin --profile web add dshmarket
 - [Xingkong42/dsh-open-workspace](https://github.com/Xingkong42/dsh-open-workspace) — 在工作区侧边栏会话行菜单和会话顶部标题栏提供「打开工作区」入口，用系统文件管理器打开当前会话所属工作区文件夹。
 - [Xingkong42/dsh-zh-labels](https://github.com/Xingkong42/dsh-zh-labels) — 每次启动自动将 DSH 界面英文工具与状态标签修补为中文，升级 DSH 后自动恢复，无需手动改文件。
 - [xingxingbk-git/dsh-deepseek-chat](https://github.com/xingxingbk-git/dsh-deepseek-chat) — 在 DSH 桌面版中提供 DeepSeek 网页聊天与 Harness 工作区之间的切换。
+- [xinming-chenniang/dsh-button](https://github.com/xinming-chenniang/dsh-button) — DSH 输入框旁的可编辑快捷按钮：发送「继续」或自定义文字、重发上一条，并可隐藏/恢复预设。纯文字动作，不执行宿主命令；有草稿时不发送。
 - [xinspark/dsh-better-session-title](https://github.com/xinspark/dsh-better-session-title) — 把会话顶栏标题换成工作区与会话面包屑，可在顶栏下拉里切换工作区、会话与子智能体。
 - [xintingcui/dsh-sidebar-panels-fold](https://github.com/xintingcui/dsh-sidebar-panels-fold) — 把侧边栏的全局面板条目折叠成少量可见行，并提供勾选面板决定留哪几个，条目一多时不再挤压工作区与会话区；只隐藏显示，不注销条目。
 - [Xinyuan-Gao/xy-dsh#xy-dsh-lamp](https://github.com/Xinyuan-Gao/xy-dsh/tree/main/xy-dsh-lamp) — macOS 系统级置顶灯板：每个 Agent 一盏灯、一个会话一行，收起时一个任务一盏灯；有审批或提问等你处理时该灯转蓝闪烁，根 Agent 结束时发系统通知。
