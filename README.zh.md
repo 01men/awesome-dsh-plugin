@@ -536,6 +536,7 @@ dsh plugin --profile web add dshmarket
 - [HsiangNianian/dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) — DSH Web 请求中断自动续跑：网络、超时或宿主崩溃等非人为失败后自动发送「继续」，支持错误分类、自适应退避、模板化继续文本与浏览器通知。
 - [hu669293657/dsh-turn-tools](https://github.com/hu669293657/dsh-turn-tools) — 在每轮对话末尾添加产出文件按钮（用系统默认程序打开），并提供可在轮次间快速跳转的悬浮圆点导航栏。
 - [Hu9956/DSH-model-controls](https://github.com/Hu9956/DSH-model-controls) — 切换供应商、模型与思考强度，每个模型各自记住档位。
+- [huahuazz/DSH_question_map](https://github.com/huahuazz/DSH_question_map) — 在对话里选中文字横向追问（空上下文的浮卡），所有追问连成一张可浏览的网状图，支持导出 PNG。
 - [huang-chunc/dsh-user-message-timeline](https://github.com/huang-chunc/dsh-user-message-timeline) — 对话内悬浮药丸导轨：等距药丸、悬停预览、点击/拖拽跳转、分页自动加载，开关在设置-插件-插件配置。
 - [huangfuren/dsh-conversation](https://github.com/huangfuren/dsh-conversation) — Web 端会话大纲面板：用户提问为根节点（序号、提问时间、该轮工具数与正文量），助手回复的 Markdown 标题按层级挂在其下；带层级滑块、搜索范围、收藏、复制与导出 Markdown、节级跳转、键盘导航、右侧密度刻度条与按会话记忆的阅读位置。纯只读 UI：不接触提示词与工具结果，不向提供方发起请求，只写自己的 localStorage 键。
 - [huanghai-lab/dsh-custom-instructions](https://github.com/huanghai-lab/dsh-custom-instructions) — 在 DSH Web 中管理全局 AGENTS.md，支持 Markdown 预览、可复用模板、版本历史、导入导出、失败导入回滚与修订冲突保护。
@@ -1318,6 +1319,7 @@ dsh plugin --profile web add dshmarket
 - [zoe1nan/dsh-startup-intro](https://github.com/zoe1nan/dsh-startup-intro) — 启动时播放视频开场，每段素材可独立调节播放片段、速度、亮度、画面适配、影院模糊填充、展示比例与淡出时长，并按应用浅色/深色外观自动选择对应版本。
 - [ZRAZN/dsh-effort-slider-split-seat](https://github.com/ZRAZN/dsh-effort-slider-split-seat) — dsh-effort-slider 的修改版：把输入框的模型座位拆成两个按钮——点模型名打开模型列表，点推理等级打开带 WebGL 火焰的滑块面板。
 - [ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — OpenPencil 设计预览与编辑插件。
+- [zszz3/dsh-model-provider-prefix](https://github.com/zszz3/dsh-model-provider-prefix) — 顶替输入框里的模型控件：一个内联的「供应商/模型」钮，点开是两栏卡片，左栏供应商、右栏列出鼠标所指供应商的模型；推理强度单独成一个钮放在旁边。
 - [Ztyss/dsh-draft-fold](https://github.com/Ztyss/dsh-draft-fold) — 输入草稿超过阈值后自动折叠为摘要卡，不改变消息提交路径。
 - [zuoguyoupan2023/adhdgofly-dsh-ext](https://github.com/zuoguyoupan2023/adhdgofly-dsh-ext) — 在 DSH Web 已渲染的 Markdown 中做词性高亮：名词绿、动词红、形容/副词紫，支持深/浅色板、词性开关与流式防抖。
 - [zuojinxin/dsh-sidebar-manager](https://github.com/zuojinxin/dsh-sidebar-manager) — 把 DSH 左侧的面板列表折叠成一行分组头；点齿轮进入编辑态，对两组内容分别勾选显示/隐藏、拖动排序——侧栏扩展入口与会话顶部视图标签。
