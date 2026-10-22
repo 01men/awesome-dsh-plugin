@@ -5650,6 +5650,7 @@ dsh plugin --profile web add dshmarket
 - [goatliamia/dsh-plugin-maker](https://github.com/goatliamia/dsh-plugin-maker) — 面向 DeepSeek Harness 的插件开发工具集，提供骨架生成、契约检查、插件体检、影响面分析与上游兼容性追踪。
 - [GodCC6/dsh-updater](https://github.com/GodCC6/dsh-updater) — DeepSeek Harness 自动更新插件：检查并更新 git checkout 或 npm 全局形态的 dsh 本体与 integrations 仓，仅快进合并、失败自动回滚、可随时取消，可选空闲感知自动应用。
 - [GooDAnDReaDY/dsh-issue-reporter](https://github.com/GooDAnDReaDY/dsh-issue-reporter) — 收集并脱敏 DSH 运行诊断信息，然后向 GitHub 或 Gitea 提交结构化问题报告。
+- [GU143312/dsh-training-lens](https://github.com/GU143312/dsh-training-lens) — Training Lens · 训练视窗通过 DSH 工具打开本地 TensorBoard 标量监控页面，支持指标选择、改善方向、EMA 平滑和中英文界面；需要已有的 Python 与 TensorBoard 环境。
 - [guhanfei-ai/dsh-zterm](https://github.com/guhanfei-ai/dsh-zterm) — SSH 与 JumpServer 终端插件：真实机器读工具、人工发起的读写操作，以及 DSH 内的会话管理。
 - [guo6x/dsh-housekeeper](https://github.com/guo6x/dsh-housekeeper) — agent 的环境管家：工具链台账（node/pnpm/git/gh/ffmpeg/浏览器）、缓存与临时目录扫描 + 白名单安全一键清理、机器规则（AGENTS.md）编辑，全在 Web GUI 设置面板。
 - [guo6x/dsh-shipcheck](https://github.com/guo6x/dsh-shipcheck) — 证据优先的前端交付验收：用真实浏览器检查内容、无障碍、运行时错误、网络失败与结构基线，并保存截图报告。
