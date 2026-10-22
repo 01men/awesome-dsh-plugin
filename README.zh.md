@@ -400,6 +400,7 @@ dsh plugin --profile web add dshmarket
 - [Edge-HH/GrokBot_in_DeepseekHerness](https://github.com/Edge-HH/GrokBot_in_DeepseekHerness) — 将GrokBot带入DSH。
 - [EdwardXiao-bit/dsh-run-button](https://github.com/EdwardXiao-bit/dsh-run-button) — 为回答里的命令行代码框加「运行」按钮，通过宿主 shell 服务执行该命令，输出显示在右下角浮动面板，或每个运行一个底部面板标签页。
 - [el16z3c/dsh-think-ux](https://github.com/el16z3c/dsh-think-ux) — DSH Web 端的丝滑思考盒体验：think 行展开为 24 行限高预览并随流式推理平滑追底，settle 时以短动画收起，主对话视图以读者友好的平滑追逐跟随（无跳变、无拉扯）。
+- [elangan1997-cmyk/canvas-workbench#canvas-workbench](https://github.com/elangan1997-cmyk/canvas-workbench/tree/main/canvas-workbench) — DSH 内的可插拔设计画布——独立 Excalidraw 画布、会话图片工具（修图、擦除、去背景、OCR、转矢量、PSD/文字重建）、项目素材库，以及 Photoshop/Illustrator ⇄ 画布桥接。
 - [Elefseus/dsh-pet-progress](https://github.com/Elefseus/dsh-pet-progress) — 把 dsh 宠物忽略的 todo 与 goal 事件折成宠物气泡上的百分比进度；会话没有任务列表时退化为一行当前活动摘要。需先安装 dsh web pet 插件（@linxin666/dsh-pet >= 0.4.0）。
 - [eloimovo/better-dsh-codex-effort-slider](https://github.com/eloimovo/better-dsh-codex-effort-slider) — 接管 DSH 输入框的官方模型席按钮，点开是自建的两级面板（provider 列表 → 模型列表 + 搜索），核心是一条连续可拖动的推理等级滑条：填充由蓝渐变到紫罗兰，高档位带星云与星尘粒子，一档一色；拖动一档一格，点模型不关面板、滑条立刻落到该模型的中间档。
 - [enteguo/dsh-plugin-quick-chat](https://github.com/enteguo/dsh-plugin-quick-chat) — 在侧边栏加入「快速会话」入口，打开一个小窗对话，可切换模型与思考强度、可选携带当前主会话全文，历史可继续、重命名、删除。
