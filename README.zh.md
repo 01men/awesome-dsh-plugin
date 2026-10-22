@@ -359,6 +359,7 @@ dsh plugin --profile web add dshmarket
 - [demacia1314/dsh-airdrop](https://github.com/demacia1314/dsh-airdrop) — ⭐ 支持拖拽上传：任意文件、整个文件夹，拖到窗口任意位置即可；支持远程上传——字节直传服务器的会话工作区，部署在服务器上的 DSH 也能像本地一样拖了就发。
 - [Dengzi555/dsh-quotalk](https://github.com/Dengzi555/dsh-quotalk) — 选中回答里的文字或代码，在原生侧边栏中结合上下文实时追问。
 - [dennisrongo/dsh-plugins#dsh-weather](https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-weather) — shell 浮层中的可拖动天气条，预报与地理编码来自 Open-Meteo；位置跨会话持久保存。
+- [DeveloperYe/dsh-local-files](https://github.com/DeveloperYe/dsh-local-files) — 由 DSH web server 直接提供的本地文件管理页：整盘浏览，图片/PDF/音视频/文本/Markdown/JSON/CSV/沙箱 HTML/docx/xlsx 预览，Range 下载与目录 ZIP，拖拽上传、复制粘贴、带冲突检测的文本编辑、新建/重命名/删除（进回收目录），以及 xlsx 单元格编辑另存为副本。
 - [Devin-AXIS/deepseek-design#deepseek-idesign](https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-idesign) — 可视化设计工作室，支持网站、App 原型、海报、信息卡、报告和杂志的模板创建、元素编辑、选区级 AI 草稿衔接与导出。
 - [Devin-AXIS/deepseek-design#deepseek-ivideo](https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-ivideo) — 可视化视频工作室，支持可编辑时间线、动画和素材控制、27 个模板、整段与选区级 AI 草稿衔接、校验、预览和导出。
 - [DevinMx520/dsh-selection-translator](https://github.com/DevinMx520/dsh-selection-translator) — 在 Harness Web UI 中为选中文字添加右键翻译菜单，可就地替换为简体中文译文，再次右键还原原文。
@@ -3624,6 +3625,7 @@ dsh plugin --profile web add dshmarket
 - [siruignaw-sys/dsh-tool-bandit-search](https://github.com/siruignaw-sys/dsh-tool-bandit-search) — 使用上下文赌博机算法（Thompson 采样）学习何时使用快速搜索、何时使用深度搜索的 `search` 工具。 
 - [SixId666/dsh-math-plugin#dsh-math](https://github.com/SixId666/dsh-math-plugin/tree/main/plugins/dsh-math) — SymPy 驱动的考研数学一精确计算与独立验证：14 个工具、214 个算子，默认返回精确符号解，并由独立机制复核每个结果（需本机 Python 3.10+ 及 sympy、mpmath）。
 - [sixtysevenlf/dsh-blender-plugin](https://github.com/sixtysevenlf/dsh-blender-plugin) — 让 DSH agent 通过直连 TCP 通道驱动本地 Blender，提供 16 个工具：视口帧、自定义视角渲染、Python 执行、无头与作业卸载、事务回滚，以及 28 个 family / 186 个 op 的规划层。
+- [sjdhdbbf/dsh-drawai-vectorizer](https://github.com/sjdhdbbf/dsh-drawai-vectorizer) — fork 自 fourzkw/dsh-drawai，保留 .drawio 可编辑画布与两个模型工具，并在原版描边之外新增第二套矢量化引擎：分层颜色聚类 + 贝塞尔样条拟合 + 每通道色彩精度，绘制任务可选三档保真度（同一 1920×1080 帧实测约 26 / 38 / 46 dB PSNR），并行度提升为逻辑核心数的一半（不再封顶 4）。原版描边仍是默认引擎，也是整段视频的正确选择——新引擎在视频上产物会大出数百倍。
 - [sjh9714/dsh-retry-guard](https://github.com/sjh9714/dsh-retry-guard) — 监视连续相同的工具失败，可在下一个模型步之前选择暂停；保留原始结果与成功的重复调用，并在 DSH Web 里出一份会话内报告。
 - [Smalldy/godot-bridge](https://github.com/Smalldy/godot-bridge) — DSH↔Godot 引擎运行时控制桥：通过游戏内置 TCP 交互服务器启动并操控运行中的 Godot 4.x——16 个工具（约 130 条运行时命令、场景/UI 检查、GDScript eval、输入模拟、截图、headless 静态操作、项目编辑、导出、脚本编译检查、引擎路径设置），替代 godot-mcp。
 - [Snowball-labbot/Portfolio-OS#dsh-portfolio-os](https://github.com/Snowball-labbot/Portfolio-OS/tree/main/plugins/dsh-portfolio-os) — DSH 内的自包含个人资产与投研工作台：支持本地注册、资产导入与配置视图、市场和新闻跟踪、研究库及用户自行配置的 AI 简报；内置 Windows Runtime，数据保存在本机。
