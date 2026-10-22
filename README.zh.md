@@ -2426,6 +2426,7 @@ dsh plugin --profile web add dshmarket
 - [falling-ts/dsh-force-compact](https://github.com/falling-ts/dsh-force-compact) — llama-cpp qwen3.8-27b 低上下文时，强制上下文压缩插件，提示模型使用效率和使用流畅度，外加完善的压缩提示。
 - [fallow5/dsh-pin-sessions](https://github.com/fallow5/dsh-pin-sessions) — 把会话置顶到 Web 侧边栏顶部：独立置顶面板、归档区、原生三点菜单集成。
 - [feiertu/dsh-input-rewriter](https://github.com/feiertu/dsh-input-rewriter) — 你只管正常打字，停下约两秒，它就把你刚写的话自动改写成更容易得到好答案的样子；贴进来的代码、网址、长文原样不动，一次问几件事也一件不漏、排好顺序。
+- [FenrirCait/dsh-session-leftover-purge](https://github.com/FenrirCait/dsh-session-leftover-purge) — 在 DeepSeek Harness 中删除会话后，清理 billion-context 快照与 cost-meter 账本里遗留的记录。
 - [flandre2233/dsh-recovery-resume](https://github.com/flandre2233/dsh-recovery-resume) — DSH 重启后自动续跑被中断的回合：在会话激活后读取崩溃修复写入的 turn/end，投出要求先核对真实状态（不假定外部操作成功或失败）的续跑消息；永久性失败（认证、配额、上下文超限）直接跳过，并有跨重启次数预算、自适应退避与最小上下文注入。
 - [flow2dream/dsh-msg-rewind](https://github.com/flow2dream/dsh-msg-rewind) — 对话回退：/undo 回退一轮，/rewind 回退到历史消息，悬浮用户气泡可可视化撤回。
 - [fomalhaut1998/dsh-session-find](https://github.com/fomalhaut1998/dsh-session-find) — 会话内 Ctrl+F 全文查找（读会话 store 而非 DOM）：命中按来源分类（你/助手/思考/工具调用/工具输出/系统）、按轮次分组、同文合并，可切「只搜正文 / 搜全部内容」，支持正则/大小写/全词，全量高亮，并能把结果复制或导出为 Markdown。
@@ -4479,6 +4480,7 @@ dsh plugin --profile web add dshmarket
 - [EIGHTfs/dsh-skill-scoreboard](https://github.com/EIGHTfs/dsh-skill-scoreboard) — DSH 的 Skill 使用记分板：同时记录按会话去重与每次加载两种次数，统计 skill 工具调用与直接 read skill 文件两种记分来源，设置页三选项卡（Skill 排行 / 会话榜 / 管理）展示，支持分页与记分 JSON 导入导出。
 - [eryi-lab/dsh-gsap](https://github.com/eryi-lab/dsh-gsap) — 把 GSAP 官方的 8 个 AI 技能注册进 DeepSeek Harness；技能正文随包分发，装完重启即可使用，无需配置、账号或密钥。
 - [eve1329/dsh-shared-handoff](https://github.com/eve1329/dsh-shared-handoff) — 共享交接套件的 dsh 版:handoff 与 task-id-bootstrap 技能 + host 侧自动化——基线状态注入、每轮快照与 Auto Log 轨迹、task=<id> 路由、续接关键词重注入、达阈值报警的压缩守护、子代理只读保护;与 Codex、Claude、pi 版写同一份 .agents/state/,一个仓库多代理共享交接。
+- [fanghedeng/dsh-skill-gogo](https://github.com/fanghedeng/dsh-skill-gogo) — 技能面板：按来源浏览 skill，用彩色分类文件夹归类，预览文件，导出 zip、复制到项目、在磁盘上重命名，并在输入区菜单里插入 /skill 调用。
 - [FantastyQAQ/dsh-doxygen](https://github.com/FantastyQAQ/dsh-doxygen) — 为 C/C++（含 Qt）源码生成与维护 Doxygen 注释的工作流：文件头、函数、模块分组、行尾与简短注释，并扫描出签名指纹已过期、需要更新的注释。运行时需要 Python 3.10+ 并 `pip install tree-sitter tree-sitter-cpp`。
 - [FeatherHunter/dsh-chinese-skill-patch](https://github.com/FeatherHunter/dsh-chinese-skill-patch) — 中文技能名零改造直用：输入 /私 自动补全 私家大厨。为 DSH 打上技能发现、斜杠手势与 skill 工具补丁，Unicode 技能名（私家大厨/卡路里/作息管家…）补全、直达、加载全可用；不改 SKILL.md、零配置；运行时改动随卸载恢复，但写进 DSH 三个依赖包磁盘文件里的正则补丁会保留到下次 DSH 升级覆盖为止。
 - [FeatherHunter/dsh-mattpocock-skills-deck](https://github.com/FeatherHunter/dsh-mattpocock-skills-deck) — 安装即自带mattpocock/skills v1.3.1的27个工程与效率技能，无需手动装技能。400亿token打造本插件，在原始技能之上提供10倍的开发效率，也能帮助新手更快上手该技能套件。全力支持GitHub issue；Markdown为预览版；GitLab暂不支持。感谢您的使用和支持💗
