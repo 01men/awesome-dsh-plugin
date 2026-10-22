@@ -760,6 +760,7 @@ dsh plugin --profile web add dshmarket
 - [mervyn-teo/dsh-plugin-collapsible-steps](https://github.com/mervyn-teo/dsh-plugin-collapsible-steps) — 把消息之间连续的工具调用与思考步骤折叠成单个可展开的括号条目。
 - [MeteorNOX/DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) — 右下角常驻的小鲸鱼挂件：余额、今日已用与每轮对话消耗（含峰谷价），余额预警与今日预算的泡泡内容都可编辑；泡泡点击序列模块化自定义，支持并列加权 A/B、随机台词与随机图片；内置 30+ 厂商模板（OpenAI / OpenRouter / Kimi / 硅基流动 / 方舟 / 智谱 / MiniMax 等），按模型查余额与订阅额度；另有任务结束音效、导入音频、自定义角色与资源管理。数据全在本机，无遥测。
 - [meyaomiao/dsh-files-native](https://github.com/meyaomiao/dsh-files-native) — 接近原生的 DSH 附件：PNG/JPEG/WebP/GIF 走官方缩略图，其它文件经拖入、粘贴或回形针变成 64px 卡片；非图片落到 .dsh-uploads，发送后贴在用户气泡旁。
+- [mhlywxl/dsh-split-workspace](https://github.com/mhlywxl/dsh-split-workspace) — 把 DSH 对话区拆成任意数量的原生窗格：左右、上下、田字 2×2 与自动网格，每个窗格都是独立会话。
 - [mhxy13867806343/dsh-sidebar-account](https://github.com/mhxy13867806343/dsh-sidebar-account) — DSH Desktop 侧栏余额行——在「版本 / 检查更新」下面显示账户余额与「充值」按钮，每 10 分钟或窗口重新聚焦时刷新，未登录与读取失败都有明确状态。
 - [mhxy13867806343/dsh-update-vd](https://github.com/mhxy13867806343/dsh-update-vd) — DSH Desktop 桌面控制中心：更新中心（侧栏版本号 + 进度条弹窗 + 一键装好 + 断点续传），外加「技能 / MCP / 智能体 / 导入」四个设置页——可从 Codex、Claude Code、TRAE、WorkBuddy 导入智能体预设与历史对话，按源地址联网搜索，侧栏笔记可多选插入聊天输入框。
 - [mhxy13867806343/my-dsh-desktop-extra](https://github.com/mhxy13867806343/my-dsh-desktop-extra) — DSH Desktop 桌面增强：一键检查更新、DeepSeek 余额与 API Key、导入其他 AI 工具。
@@ -5405,6 +5406,7 @@ dsh plugin --profile web add dshmarket
 - [YoyuDev/dsh-ping](https://github.com/YoyuDev/dsh-ping) — Agent 需要你时响铃并弹出桌面通知：阶段完成、请求批准、等待输入、任务完成、出错，五种场景各配不同提示音。
 - [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) — 任务完成时弹出 Windows 原生系统通知（通知中心横幅）：目标完成或 Agent 结束一轮。
 - [YUsaltyfish/dsh-notification-sound](https://github.com/YUsaltyfish/dsh-notification-sound) — 弹出选项卡提问时、请求工具权限时、一轮对话结束时，各播放一次提示音；支持自定义音频文件夹；另附 fish_beep 工具，可随时手动响一声。
+- [yxiaoy6/dsh-taskbar-alert](https://github.com/yxiaoy6/dsh-taskbar-alert) — Windows 上审批、提问或方案确认在等你、或一轮回复完成时，让 DeepSeek Harness 的任务栏按钮闪动。
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) — 任务完成或需要确认/输入时发送操作系统原生通知：Windows toast、macOS osascript、Linux notify-send。
 - [zaofan-make/dsh-qqbot](https://github.com/zaofan-make/dsh-qqbot) — 接入 QQ 官方机器人的 DeepSeek Harness 通道(tencent-connect/dsh-qqbot 功能增强 fork): 群/私聊与完整 agent 对话、表情包图库(自动打标+AI 斗图)、群管理(入群审批/禁言)、botplay 互动事件卡与翻页目录、用户扩展注册表(自定义斜杠命令与 QQ 工具)、定时唤醒、QQ 远程审批、悬浮球 dock Web UI。
 - [zepeng-jin/dsh-completion-notifier](https://github.com/zepeng-jin/dsh-completion-notifier) — DeepSeek Harness 原生任务完成通知与审批提醒插件，集成设置面板。
