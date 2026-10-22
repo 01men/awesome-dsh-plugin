@@ -2914,6 +2914,7 @@ dsh plugin --profile web add dshmarket
 - [memorylake-ai/memorylake-harness#dsh-plugin](https://github.com/memorylake-ai/memorylake-harness/tree/main/dsh-plugin) — 将 Memory Lake 作为 dsh 的持久记忆层：基于 memorylake CLI 的 memory_search、memory_remember、memory_forget 三个工具，会话状态行，以及引导安装/诊断 skills，与 Claude Code、Codex 插件共享同一 ~/.memorylake 身份与记忆。
 - [mengxiaoxian/lookover#dsh-expmem](https://github.com/mengxiaoxian/lookover/tree/main/dsh-expmem) — 个人经验记忆：把真实解决过的问题存为带来源、可纠正、有适用条件的案例，新任务中自动召回复用，纠正与删除会级联影响后续召回。
 - [menotbobbybrown/dsh-plugin-memory](https://github.com/menotbobbybrown/dsh-plugin-memory) — DeepSeek Harness 的长期持久记忆：以 JSON 保存事实／偏好／实体／规则／经历等分类条目，注册为 memory_remember 与 memory_recall 两个 agent 工具；召回按关键词重叠、重要度与访问频次排序。
+- [mess1103/dsh-inner-life](https://github.com/mess1103/dsh-inner-life) — 八个零依赖工具，把 agent 的日记写到按日期哈希推导出的路径上，索引里不存文件路径。
 - [meyaomiao/dsh-graphmemory](https://github.com/meyaomiao/dsh-graphmemory) — DSH 知识图谱记忆：better-sidebar「记忆图谱」页签与独立看板 /graph-memory/app；抽取任务/技能/事件节点并跨会话召回，npm 包名为 dsh-graphmemory。
 - [MiHjy12138/dsh-memory-lite](https://github.com/MiHjy12138/dsh-memory-lite) — 给 DeepSeek Harness 的按需记忆库：会话日志提炼成分层 markdown（总览、索引与分主题明细），mem_query 只回命中条目而非整份索引。不每轮注入、零依赖，每条记忆都保留指回原对话的溯源标记。
 - [MineRPi/dsh-trilium](https://github.com/MineRPi/dsh-trilium) — 通过 ETAPI 把 Trilium 笔记库接入 agent，提供 20 个工具：记忆读写（remember/recall + 自动注入索引）、笔记管理（CRUD/克隆/属性/修订）、全文搜索、周报工作流、附件、日历笔记、备份导入，独立设置卡片，配置 0600 落盘。
@@ -4473,7 +4474,7 @@ dsh plugin --profile web add dshmarket
 - [dingchenhui0618-arch/dsh-imagegen-skill](https://github.com/dingchenhui0618-arch/dsh-imagegen-skill) — 把 imagegen skill 注册进 skill 注册表，无需往 $DSH_HOME/skills 手工拷贝文件，每个会话都能生成或编辑图片：agent 调用随包附带的 image_gen.py CLI，对接任意 OpenAI 兼容的 GPT Image 端点，支持文生图、参考图编辑与透明背景抠图。
 - [DIPPER12138/dsh-mathtype](https://github.com/DIPPER12138/dsh-mathtype) — 把 Word 文档中的 LaTeX 占位符转换为真正的 MathType OLE 公式（Equation.DSMT4），保留公式编号、SEQ 域与交叉引用。
 - [Doctor-Pan-code/dsh-useof-skill-panel](https://github.com/Doctor-Pan-code/dsh-useof-skill-panel) — 显示每轮对话实际调用了哪些技能，并可在应用内安装、更新与删除技能。
-- [dotdance/dsh-skill-scope](https://github.com/dotdance/dsh-skill-scope) — Skill 与 MCP 的全局 + 项目粒度一键启停开关。
+- [dotdance/dsh-skill-scope](https://github.com/dotdance/dsh-skill-scope) — 给你的 Agent 减负：Skill 与 MCP 一键启停，让上下文只装这一轮真正要用的能力。关掉的 skill / MCP 不再进入模型上下文，更干净，更省 token。
 - [duyanta123/dsh-preset-scaffold](https://github.com/duyanta123/dsh-preset-scaffold) — DSH 项目初始化脚手架预设：严格 5 阶段初始化流程 + 工程规范 + 六套可运行模板（node-ts / react-vite / python / go / spring-boot / monorepo）。
 - [dylanzhangzx/dknowc-dsh](https://github.com/dylanzhangzx/dknowc-dsh) — 彩智科技深知可信智能出品的可信办公全家桶 dsh 插件：包含深知可信咨询（政策/法规/办事问答，带真实来源角标 + 可点击溯源 HTML）、深知可信搜索（权威政策/标准检索与深度研究，溯源 HTML + 干净 Markdown）、深知公文写作（正式公文起草/改写/Word/红头交付）三个 Skill；接口统一经深知可信工作台 MCP 转接（Bearer 认证），产物写入会话工作区，API Key 一次配置长期免注册；已发布 npm 包 dknowc-dsh。
 - [Edisonzszs/web-clone](https://github.com/Edisonzszs/web-clone) — 网站复刻方法论 skill：以「真源码至上」决策树覆盖静态站、React/Vue/Next 内容站与 WebGL/Canvas 重前端站，强制核对二手 AI 分析里的可执行代码，内置 13 个零依赖 Node 脚本（CDP 浏览器侦察、素材/字体抓取、路由爬取、source map 挖掘、像素 diff 审计）。
