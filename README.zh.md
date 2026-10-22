@@ -1788,6 +1788,7 @@ dsh plugin --profile web add dshmarket
 - [huzhengbang2007/dsh-orca-glass](https://github.com/huzhengbang2007/dsh-orca-glass) — DSH 网页端插件：注入 SVG（feTurbulence + feDisplacementMap）折射滤镜，并用 backdrop-filter 作用到面板、气泡与输入卡上；同时附带 orca-scene 皮肤（主题 token 与明暗两套背景）。
 - [HwFee/HwFee-dsh#cds-theme](https://github.com/HwFee/HwFee-dsh/tree/master/plugins/cds-theme) — DeepSeek Harness 的 Claude 设计系统主题：把宿主令牌重映射到 CDS 暖灰表面与陶土强调色，并细化输入框、侧栏、消息行、代码块与 Markdown 正文。
 - [iasiv5/dsh-skins](https://github.com/iasiv5/dsh-skins) — DSH Web 多品牌皮肤热切换：OpenBMC、UEFI 与《凡人修仙传》非官方同人画作三套皮肤，各带明暗双态配色，附个人壁纸图库、双语标语与通透度调节，随时一键回到官方界面。
+- [inMessionante19/dsh-desktop-glass](https://github.com/inMessionante19/dsh-desktop-glass) — 为 Windows 11 版 DeepSeek Harness 提供可切换的原生毛玻璃与完全透明背景，实时显示 Wallpaper Engine 壁纸；需先手动安装一次桌面原生适配。
 - [Isilsolme/dsh-anthropic-fonts](https://github.com/Isilsolme/dsh-anthropic-fonts) — Anthropic Sans/Serif/Mono 字体：界面 Sans、对话 Serif、代码 Mono，中文回退思源字体。
 - [iStarryDust/dsh-ui-liquid-glass](https://github.com/iStarryDust/dsh-ui-liquid-glass) — DSH 全液态玻璃皮肤：13 个可调折射液态玻璃面、随时段轮换的壁纸、四档主题色、选中项带水滴状高亮飞镜。
 - [jiangwangyang/dsh-theme-blackhole](https://github.com/jiangwangyang/dsh-theme-blackhole) — DeepSeek Harness（dsh）Web UI 的黑洞主题插件。
@@ -6176,6 +6177,7 @@ dsh plugin --profile web add dshmarket
 - [Yazzyk/dsh-file-shield](https://github.com/Yazzyk/dsh-file-shield) — 屏蔽 agent 对指定文件或目录的读取、搜索、写入与编辑，使其内容不进入对话——含敏感词的文件也在其中，避免它们的文字让之后的 provider 请求以 400 失败。规则在插件页面上点选。
 - [ylwl1997/noatmark-dsh-plugin](https://github.com/ylwl1997/noatmark-dsh-plugin) — 文本卫生 dsh 插件：净化不可信文本、扫描隐形字符、清洗 LLM 格式、转义 CSV 公式注入。
 - [Yuuz12/dsh-webui-auth](https://github.com/Yuuz12/dsh-webui-auth) — WebUI 身份认证：HTTP/传输层强制登录（资源、插件 bundle、/api、WebSocket 四层防护），服务端会话 + HttpOnly Cookie。
+- [yyfdfsyyf-source/dsh-hard-gate](https://github.com/yyfdfsyyf-source/dsh-hard-gate) — 内置沙箱之上的独立权限闸门：在 danger-full-access 下依然拦截工作区外与受保护路径的写入，未完整读到文件末尾就整文件覆盖时拒绝，破坏性操作前生成 ZIP 还原点与回收站副本。
 - [yzxxy010/dsh-workspace-write-plus](https://github.com/yzxxy010/dsh-workspace-write-plus) — 增加工作区修改++权限档，文件工具仍锁在工作区，可用通配符放行 Git Bash 等程序以跳过 Windows 进程沙箱。
 - [zhang8019/dsh-permission-matrix](https://github.com/zhang8019/dsh-permission-matrix) — 把 DSH 权限拆成 9 个可选预设（3 种沙箱 × 4 种审批），规则 + LLM 双通道四档风险分级，高风险操作需输入批准密码才放行，附 JSONL 审计日志。
 - [zhangmiao03/cloakpack#dsh-cloak](https://github.com/zhangmiao03/cloakpack/tree/main/packages/dsh-cloak) — DeepSeek Harness 的上下文防火墙：成功的纯文本工具结果中的凭据在进入模型之前先变成不透明的 ⟦cloak:category:n⟧ 占位符，原值只保存在进程内存的 agent 级保险库中。36 类内置签名（与 cloakpack git pre-push 守卫共享同一引擎）、针对未知格式的键名规则、自定义正则、dry-run 模式、审计日志与 /cloak 命令。
