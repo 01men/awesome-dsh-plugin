@@ -1597,6 +1597,7 @@ dsh plugin --profile web add dshmarket
 - [Thedeergod666/dsh-musage](https://github.com/Thedeergod666/dsh-musage) — 在 composer 输入框旁显示 5 家 AI 套餐用量与余额（MiniMax、DeepSeek、Kimi、OpenRouter、智谱），跟随当前模型自动切换，复用 DSH 模型设置里已配的 API Key。
 - [ThinkofRain1213/deepseek-harness-wallet-patched](https://github.com/ThinkofRain1213/deepseek-harness-wallet-patched) — feibi-mochi/deepseek-harness-control-center 的维护分支，上游自 2026-09-09 起未再更新。计价改为跟随官方模型池、而非硬编码模型前缀，因此 DeepSeek V4.1 Flash（`deepseek-flash`）能正常计价并显示峰谷时钟；官方价格页改为结构化解析，模型改名或下架不再中断价格同步。界面在原有中文之外增加英文。其余与原插件一致：余额、本会话花费与 token 拆分、24 小时峰谷时钟、Z.ai 套餐额度与本机用量账本，并跟随宿主明暗主题。
 - [tma1-ai/dsh-otel](https://github.com/tma1-ai/dsh-otel) — 把 agent loop 以 OpenTelemetry traces、metrics、logs 导出到 GreptimeDB，附七个 Grafana dashboard，覆盖 token 用量、成本、会话结果和每轮耗时。
+- [TuDouPn/dsh-grok-xai](https://github.com/TuDouPn/dsh-grok-xai) — DeepSeek Harness 的 SuperGrok / X Premium 订阅插件：设备码登录、xai 提供商、账号可见对话模型与上下文/百万 token 价格、按模型能力读取的推理强度，以及订阅用量。
 - [Tuhuaqing/just-dsh-plugins#dsh-auto-update](https://github.com/Tuhuaqing/just-dsh-plugins/tree/main/plugins/dsh-auto-update) — 一键升级Deepseek Harness, 支持侧边栏显示版本号.
 - [V-dev-388/dsh-usage-meter](https://github.com/V-dev-388/dsh-usage-meter) — 设置页用量仪表盘：按服务商/模型汇总全部会话 token 用量，含今日/近 7 天/近 30 天趋势柱状图与缓存命中率。
 - [v587d/dsh-opencode-go-usage](https://github.com/v587d/dsh-opencode-go-usage) — 在输入框上方 dock 显示 OpenCode Go 订阅用量（5h 滚动/每周/每月窗口与重置倒计时），内置凭据编辑器。
@@ -2860,6 +2861,7 @@ dsh plugin --profile web add dshmarket
 - [EternalNight996/dsh-memory-eternal](https://github.com/EternalNight996/dsh-memory-eternal) — 给 DeepSeek Harness 装上自研「第二大脑」：对话结束自动把值得复用的内容沉淀成本地 Markdown 知识卡（自研去重、CJK 检索、可 git 管理），设置页提供图形化知识库 + 交互式知识图谱（图例过滤、时间维、框选、合并、导入导出）。
 - [EternalNight996/memory-eternal](https://github.com/EternalNight996/memory-eternal) — 自研 DSH 记忆插件：SQLite 持久存储 + 数据库层审核守卫（enforceAudit）+ 审计日志。对话结束自动沉淀知识卡，Agent 经 memory_recall 按需召回，支持 Claude Code/Codex/Cursor 多智能体共享，零外部依赖。
 - [EvoMap/evolver-dsh-plugin](https://github.com/EvoMap/evolver-dsh-plugin) — 越用越聪明的 harness，告别金鱼记忆。每条 prompt 前，Evolver 从本地经验和 EvoMap 网络召回一条验证过的策略；回合结束后，它凭测试结果、改动是否被保留、你的下一句反馈给策略打分，再回报网络按证据加权。每一次成功都变成下一次的捷径，每一次失败都变成下一次的避坑指南。
+- [fangqiing/dsh-knowledge-lite](https://github.com/fangqiing/dsh-knowledge-lite) — 本地知识库：每篇笔记一个 Markdown 文件，支持标签、层级目录、全文检索、附件用系统默认程序打开、Office 零依赖文本抽取，以及引用到对话。
 - [Firefox2100/dsh-agentic-roleplay#state](https://github.com/Firefox2100/dsh-agentic-roleplay/tree/main/packages/dsh-roleplay-state) — 为 DSH 角色扮演插件提供持久化 SQLite 会话状态、故事记忆与回忆、数据仓库以及面向模型的记录工具。
 - [fjzzwxp/dsh-mnemosyne-memory](https://github.com/fjzzwxp/dsh-mnemosyne-memory) — DSH 永久记忆插件，支持向量搜索、LLM 反思和知识页面生成。
 - [FleetingEcho/dsh-handoff](https://github.com/FleetingEcho/dsh-handoff) — 每个工作目录与 git 分支自动维护 handoff.md：记录回合、折叠为简洁 Markdown 并注入后续会话，存储于 ~/.agent/agent-handoff，与 pi-handoff 字节级兼容。
@@ -4514,6 +4516,7 @@ dsh plugin --profile web add dshmarket
 - [dhicoc/dsh-wuyun-liuqi](https://github.com/dhicoc/dsh-wuyun-liuqi) — 完整 wuyun-liuqi（五运六气）中医运气学技能包，封装为 DeepSeek Harness 插件：年度与客气推算、临床辨证、病机推演。
 - [dingchenhui0618-arch/dsh-imagegen-skill](https://github.com/dingchenhui0618-arch/dsh-imagegen-skill) — 把 imagegen skill 注册进 skill 注册表，无需往 $DSH_HOME/skills 手工拷贝文件，每个会话都能生成或编辑图片：agent 调用随包附带的 image_gen.py CLI，对接任意 OpenAI 兼容的 GPT Image 端点，支持文生图、参考图编辑与透明背景抠图。
 - [DIPPER12138/dsh-mathtype](https://github.com/DIPPER12138/dsh-mathtype) — 仅 Windows（需桌面版 Word、完整版 MathType 7 与 Python 3.10+）。把 Word 文档中的 LaTeX 占位符转换为真正的 MathType OLE 公式（Equation.DSMT4），保留公式编号、SEQ 域与交叉引用。
+- [docsor1212/dsh-scholar-suite](https://github.com/docsor1212/dsh-scholar-suite) — 八个学术技能一次装齐——学术图表（按真实数据设计+视觉审核）、去 AI 味改写、论文润色与改写（双栏对照报告）、PubMed 引文核验（DOI/PMID 逐条对账）、中文著作引用核验、公众号医学文章结构化。三项纯本地运行，五项按功能访问外部服务（NCBI、DOI 解析、发布平台）并逐技能如实声明；零遥测、无安装期脚本。技能经本机 Python 3.8+ 运行。
 - [Doctor-Pan-code/dsh-useof-skill-panel](https://github.com/Doctor-Pan-code/dsh-useof-skill-panel) — 显示每轮对话实际调用了哪些技能，并可在应用内安装、更新与删除技能。
 - [dotdance/dsh-skill-scope](https://github.com/dotdance/dsh-skill-scope) — 给你的 Agent 减负：Skill 与 MCP 一键启停，让上下文只装这一轮真正要用的能力。关掉的 skill / MCP 不再进入模型上下文，更干净，更省 token。
 - [duyanta123/dsh-preset-scaffold](https://github.com/duyanta123/dsh-preset-scaffold) — DSH 项目初始化脚手架预设：严格 5 阶段初始化流程 + 工程规范 + 六套可运行模板（node-ts / react-vite / python / go / spring-boot / monorepo）。
