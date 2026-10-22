@@ -1026,6 +1026,7 @@ dsh plugin --profile web add dshmarket
 - [TheGoodMorty/chat-pace](https://github.com/TheGoodMorty/chat-pace) — 可配置的聊天自动滚动——按节定速阅读（停顿时长与篇幅成比例）、平滑跟随、单步与固定模式，支持快捷键与按会话记忆打开位置。
 - [ThinkofRain1213/dsh-smooth-cursor-patched](https://github.com/ThinkofRain1213/dsh-smooth-cursor-patched) — DSH Web 输入框的彗星光标：发光拖尾随文字位置平滑滑动，可配置强调色、粗细、拖尾，并在静止 500ms 后呼吸。覆盖 ask-question 交互卡片的输入框，并修复空输入框或首次聚焦时光标消失、正向拖选不跟随鼠标、软换行按上一行测量、长内容滚动时光标绘制到输入框之外等问题。Lacquervii/smooth-cursor 的维护分支。
 - [thomasvvugt/dsh-wide-stats-footer](https://github.com/thomasvvugt/dsh-wide-stats-footer) — 解除输入框统计行的宽度限制：较长的轮次与 token 统计行横跨输入框全宽居中显示，不再以省略号截断。
+- [Thyxqz/dsh-plugin-quick-invoke](https://github.com/Thyxqz/dsh-plugin-quick-invoke) — 在输入框旁增加已安装插件选择器：把插件名拖到提示词的落点插入，双击入口在右侧边栏打开可拖动插件栏，并可在设置中选择显示哪些插件、填写备注。
 - [tianlaoban/DSH-Chinese-Talk](https://github.com/tianlaoban/DSH-Chinese-Talk) — 让所有会话的思考与回复都说中文：简洁、略沾文言、说人话，专有名词保留英文原形；并附一条「只答所问、不主动跑命令、动手前先提醒」的交互偏好。实现只是一条全局 system-prompt 段落（order 10）：没有界面、没有二进制、不联网。切到极简预设时不生效——那个预设会把整个 prompt 换成它自己的人设。
 - [TianYa-DAO/dsh-wallpaper-engine#plugin](https://github.com/TianYa-DAO/dsh-wallpaper-engine/tree/main/packages/dsh-wallpaper-engine) — 面向 DSH 桌面壳的 Wallpaper Engine 本地库、背景层、原生 Scene 面板与桌面模式控件。
 - [TiChuXiXi/dsh-file-extras](https://github.com/TiChuXiXi/dsh-file-extras) — 增强 DSH Web GUI 的文件树：行内显示大小与修改时间，右键菜单支持下载、上传、复制路径。
