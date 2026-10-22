@@ -2594,6 +2594,7 @@ dsh plugin --profile web add dshmarket
 - [MoonlitDropOfBlood/dsh-archive-manager](https://github.com/MoonlitDropOfBlood/dsh-archive-manager) — DeepSeek Harness 会话归档管理：分组归档面板，支持恢复与删除。
 - [Movingtoleveltwo/dsh-revert](https://github.com/Movingtoleveltwo/dsh-revert) — 现代化对话回退与重试插件：纯 UI 图形化交互、原地 Prompt 微调、支持工作区与外部文件双引擎安全快照同步，完美解决分支重放断代问题。
 - [mrzhangkris/dsh-session-pruner](https://github.com/mrzhangkris/dsh-session-pruner) — 全类型会话生命周期管理：一次性子 agent 完成后归档，闲置的可续聊子 agent 与主会话归档（可恢复），容量上限、投影缓存清理，以及热重载设置面板。
+- [mswinandmc/dsh-session-port](https://github.com/mswinandmc/dsh-session-port) — 把会话连同附件导出为压缩包，或把这样的压缩包导入为当前工作区里的新会话。
 - [MuWinds/dsh-archived-sessions](https://github.com/MuWinds/dsh-archived-sessions) — 归档会话管理：浏览已归档会话，支持恢复（取消归档）与清空。
 - [mzzsfy/dsh-plugin#dsh-session-manager](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-session-manager) — 会话管理：超期会话自动归档（阈值可配），归档面板支持取消归档，删除移入系统回收站可还原。
 - [ne-ilyxa/dsh-session-drafts](https://github.com/ne-ilyxa/dsh-session-drafts) — Cursor 风格的新会话：每次点击都新建一个空白草稿会话（首条消息前即持久化），不再复用工作区唯一的空会话；侧栏新增草稿切换器，可同时保留多个空会话。
@@ -2699,7 +2700,7 @@ dsh plugin --profile web add dshmarket
 - [tuogusa/dsh-session-nav](https://github.com/tuogusa/dsh-session-nav) — 对话旁的悬浮按钮，打开当前会话全部提问的可搜索列表并快速跳转；悬浮弹出/移出平滑关闭。
 - [tuogusa/dsh-session-tags](https://github.com/tuogusa/dsh-session-tags) — 为会话添加标签，并在 Web 设置面板中按标签搜索会话。
 - [txlznbzsdj-collab/dsh-session-delete](https://github.com/txlznbzsdj-collab/dsh-session-delete) — 在侧边栏会话菜单添加「删除」项，经二次确认后硬删除该会话。
-- [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) — 管理已归档与未归档会话，支持搜索、预览、标签备注、工作区归档、ZIP 备份、选择操作、全局回收、回收站恢复、空间与保留策略、来源分支和自动残留会话检查。
+- [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) — 管理已归档与未归档会话，支持搜索、只读预览、标签备注、工作区归档、ZIP 备份、来源分支、手动残留会话检查和自动检查更新；保留旧回收记录恢复，停用自动清理。
 - [uwu9039/dsh-unarchive](https://github.com/uwu9039/dsh-unarchive) — 列出已归档会话、预览内容、恢复到原工作区，并提供可选的归档二次确认。
 - [vagur1689/dsh-conversation-find](https://github.com/vagur1689/dsh-conversation-find) — 当前会话内的关键词搜索：先把会话历史翻回最早一页再匹配，命中处高亮并滚动定位到所选项。
 - [Vast-Unhurried/dsh-toolkit#dsh-session-delete](https://github.com/Vast-Unhurried/dsh-toolkit/tree/main/packages/dsh-session-delete) — 增加删除会话的操作，永久移除会话日志、工作区条目与归档。
