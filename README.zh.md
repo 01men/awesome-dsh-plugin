@@ -2639,6 +2639,7 @@ dsh plugin --profile web add dshmarket
 - [Seetraum/harness-session-delete](https://github.com/Seetraum/harness-session-delete) — DSH 会话回收站：侧边栏删除图标、多选还原与彻底删除、活跃会话保护。
 - [Semidia/dsh-session-manager](https://github.com/Semidia/dsh-session-manager) — 会话行右键菜单与侧边栏会话管理：置顶、重命名、归档、分叉、导出、复制工作目录/会话 ID/深链，在资源管理器或新窗口打开。
 - [sensen-jo/dsh-conversation-search](https://github.com/sensen-jo/dsh-conversation-search) — 仅支持 DSH 0.2.0-rc.2 的会话原文检索：在当前会话或同目录工作区搜索用户与助手原文，查看来源坐标和上下文。
+- [sensen-jo/dsh-plugin-goal-map](https://github.com/sensen-jo/dsh-plugin-goal-map) — 目标进展图以只读流程图展示目标到计划的进展路线、会话思维导图与步骤列表，按已报告计划计算进度，不启动任务或模型调用。仅支持 DSH Web 0.2.0-rc.2、Node.js >=24。
 - [senyayume/dsh-image-once](https://github.com/senyayume/dsh-image-once) — 同一张图片只在它第一次出现的那一次请求里以 base64 内联；之后的每次请求都携带被标记为 offloaded 的同一个块，由 DSH 自带的图片 offload 投影渲染成带本地只读路径的占位文字。记账键是会话 id、消息 id、内容树路径与 attachment id 的组合，且请求产生第一个 chunk 之后才记账，因此重试不会算作已发送。带 purpose 的辅助请求既不改写也不记账；事后再对同一文件调用 read_image 算一次新的 occurrence 并重新内联一次；插件只改写该次请求的副本，不写回会话。
 - [Sev7eEn7/sieve#dsh-sieve](https://github.com/Sev7eEn7/sieve/tree/main/packages/dsh-sieve) — 为 DSH 0.2.1-alpha.1 过滤工具输出、裁剪陈旧上下文并按需披露技能。
 - [sh1robana/dsh-plugin-message-edit](https://github.com/sh1robana/dsh-plugin-message-edit) — 面向 DSH 桌面端的消息与附件编辑，支持原地保存、分支重生成和版本时间线。
