@@ -6459,6 +6459,7 @@ dsh plugin --profile web add dshmarket
 - [Helly0000/dsh-life-game](https://github.com/Helly0000/dsh-life-game) — 给 DeepSeek Harness 的康威生命游戏：侧栏一行面板入口，打开一块可绘制的中央棋盘，含四套规则、七个可盖章的图案与一条种群曲线。
 - [HuanLinOTO/dsh-plugin-d399](https://github.com/HuanLinOTO/dsh-plugin-d399) — 模型生成时弹出小游戏菜单（wordle/消消乐，可扩展）。
 - [huashenglian/dsh-livechat](https://github.com/huashenglian/dsh-livechat) — 给 DSH Web 对话区叠加 B 站风格弹幕：按 agent 事件生成滚动/顶部/底部三轨弹幕，三套预设包、可选 LLM 生成吐槽、可拖动控制球、分会话弹幕池与历史回放，以及完整设置卡。
+- [Hyfwdnmd666/dsh-ai-ball](https://github.com/Hyfwdnmd666/dsh-ai-ball) — 通过 ai-ball 悬浮球给 agent 一张嘴：让球逐字打出你要说的话、按 mood 改变边缘光颜色、显示或收起独白面板、读回你打的字，以及检查接线和启动球。球是独立的 Python 悬浮层，插件只写它监听的那几个文件。
 - [imfuxing/dsh-widget-journey-west](https://github.com/imfuxing/dsh-widget-journey-west) — 西游师徒卡通桌面悬浮窗：无边框、透明、置顶。点击切换唐僧/孙悟空/猪八戒/沙僧/白龙马，静止自动播放追逐动画。
 - [imkingjh999/dsh-deepsea](https://github.com/imkingjh999/dsh-deepsea) — 把会话 context 变成浮窗深海摸鱼：context 越长手沉得越深，摸到鱼后服务端掷骰定胜负，中卡铸造镭射收藏卡，五大洋摸鱼、鱼池养成、GitHub 绑定全球排行榜。
 - [JAdpp/dsh-whale-galgame](https://github.com/JAdpp/dsh-whale-galgame) — 多角色 Galgame 对话界面：角色与回复模型可独立切换，分角色保存好感度、记忆、对话历史与 CG 图鉴，并根据 Harness 跨会话任务事件做出角色回应。
