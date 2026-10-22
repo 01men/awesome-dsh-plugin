@@ -914,6 +914,7 @@ dsh plugin --profile web add dshmarket
 - [qjcnmd/dsh-reasoning-slider](https://github.com/qjcnmd/dsh-reasoning-slider) — Codex 风格推理等级滑块，内嵌于模型选择器，拖动切换推理档位。
 - [Quinn2006/dsh-guise](https://github.com/Quinn2006/dsh-guise) — 给 DSH 的 agent 穿上主人钦定的人设：多套人格随心换，全局或按工作区生效，内置人设库、总开关、余额预警与没电模式（80 句随机话术）。文件即配置、保存即生效、零依赖。
 - [Qulierm/dsh-macos-settings-shortcut](https://github.com/Qulierm/dsh-macos-settings-shortcut) — 为 macOS 上的 DeepSeek Harness 恢复 Cmd+, 设置快捷键。
+- [qwe3120695033/prompt-enhancer#dsh-prompt-enhance-cn](https://github.com/qwe3120695033/prompt-enhancer/tree/main/dsh-plugin) — 输入框四档提示词增强——按钮或全局热键把草稿改写为轻量润色、单段提示词、五段任务书或八段系统提示词，支持前后对比、回填与撤销；不改变原意、不凭空编造需求。
 - [qwert702/dsh-auto-translate](https://github.com/qwert702/dsh-auto-translate) — dsh 网页端全链路中文翻译：思考过程实时翻译、英文回复就地中文、工具输出中文摘要与工具调用注释；翻译为独立提供方请求，不进入会话上下文。
 - [qwerty-k-de/dsh-attach-picker](https://github.com/qwerty-k-de/dsh-attach-picker) — DSH Web 输入框工具栏图片按钮：点击调用系统文件选择器直接多选取图，进入与拖拽/粘贴相同的草稿图片栏，并内联校验宿主的图片格式、单条张数与单张大小限制。
 - [qwq1999/dsh-panellist](https://github.com/qwq1999/dsh-panellist) — 面板列表管理器：在设置页里调整左侧轨道上的页签顺序、改名、换图标、隐藏，并把若干页签收进带飞出菜单的分组。
@@ -3624,6 +3625,7 @@ dsh plugin --profile web add dshmarket
 - [QWE13-ART/dsh-tool-folder](https://github.com/QWE13-ART/dsh-tool-folder) — 装了大量 MCP 时折叠工具定义提示面：KV 缓存稳定的静态目录 + BM25/bge-m3 混合 tools_search + tools_schema 批量展开，几百个工具仍可检索，但不必每轮都付完整 schema 的 token。
 - [qwert702/dsh-commander](https://github.com/qwert702/dsh-commander) — dsh 网页端指挥官模式：会话标题栏一键注入协议简报，解析模型回复中的任务块并自动执行，让策略层与执行层分离；通过徽章按钮激活/停用。
 - [qyjqio/dsh-cursor-toolkit#cursor-cli](https://github.com/qyjqio/dsh-cursor-toolkit/tree/main/packages/dsh-cursor-cli) — 把编码任务交给本机 Cursor CLI 代理在工作目录中执行，并可按 chat id 续跑。
+- [QZyme/dsh-besson-tools](https://github.com/QZyme/dsh-besson-tools) — 北山 Besson Minecraft 模组开发教程检索与规划工具包：7 个工具检索 194 篇教程文章、规划学习路线、对比版本环境差异并抓取文章正文。
 - [R-roker315/dsh-Alist-](https://github.com/R-roker315/dsh-Alist-) — AList v3 文件管理插件：浏览、搜索、上传（本地文件流式与 multipart）、离线下载、压缩包查看、任务轮询与控制，以及存储、用户、角色、元数据、站点设置、搜索索引、分享、标签等管理端操作，共 75 个工具；全部写操作强制走审批，密码与 Token 只写不读。
 - [rakibulrocky14/miran-fann-dsh](https://github.com/rakibulrocky14/miran-fann-dsh) — 通过 MCP 调用 Miran Fann 引擎，在 dsh 会话里做动态图形，附带 Miran 设置页与动效设计技能。需单独安装 Miran Fann 引擎（npx miran-fann setup）并登录。
 - [RaulLazaro/dsh-jev-plugin](https://github.com/RaulLazaro/dsh-jev-plugin) — 为 DSH 增加 `jev` 工具：就同一段文本向 Jev（TypeSafe System One）提出是/否、选择和评分问题，返回概率与置信度；provider 与 API key 在设置中按用户配置，并带判定账本、花费统计以及每日调用与 token 上限。
