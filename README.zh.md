@@ -878,6 +878,7 @@ dsh plugin --profile web add dshmarket
 - [NOirBRight/dsh-llm-providers-ui](https://github.com/NOirBRight/dsh-llm-providers-ui) — LLM Providers 设置页的挂载 owner：provider 卡片、拖拽排序与 picker 排序。
 - [NormanFxxkingRockwell/dsh-keyboard-history](https://github.com/NormanFxxkingRockwell/dsh-keyboard-history) — DSH 会话输入框的极简输入历史：按 ↑/↓ 翻阅发过的消息。只有方向键，别无其他。
 - [Nothree-code/folder-tree-sh](https://github.com/Nothree-code/folder-tree-sh) — 工作区文件树插件：多标签预览（文本/DOCX/PDF/Markdown/CSV/图片）、Markdown 内联编辑、Git 变更面板与右键文件操作（重命名/删除/复制/移动/新建）。
+- [null-dat/dsh-whale-tail](https://github.com/null-dat/dsh-whale-tail) — 针对 DSH 思考模式鲸鱼尾巴的动画，丰富成 4 种动画。
 - [Num86/dsh-functions](https://github.com/Num86/dsh-functions) — 给 DSH 顶端加一个可扩展的「功能」栏：插件注册的一键动作都在这里，支持分级确认与二级菜单。0.4.0 起自带了「重启 DSH」功能，不再需要单独安装重启插件。
 - [objectivex666/dsh-settings-search](https://github.com/objectivex666/dsh-settings-search) — 通过关键词、拼音、意图或 AI 一键搜索 DSH 设置面板，并直达目标设置页、标签或选项。
 - [Odefined/dsh-mobile-webui](https://github.com/Odefined/dsh-mobile-webui) — 修复 dsh web GUI 的手机视口体验：抽屉式侧栏与滑动手势、纯图标 composer 与「权限·模型·思考深度」状态行、浮窗居中、横向溢出与滚动条挤压居中修复。
@@ -3242,6 +3243,7 @@ dsh plugin --profile web add dshmarket
 - [AngLi1997/dsh-plugin-sync](https://github.com/AngLi1997/dsh-plugin-sync) — 将已安装的 DeepSeek Harness 插件清单同步到 GitHub Gist（OAuth 登录、一键导出/导入并自动安装依赖）。
 - [Anionex/dsh-computer-use](https://github.com/Anionex/dsh-computer-use) — macOS 电脑控制：Accessibility 观测、过期状态拒绝、作用域权限与安全输入。
 - [annexwu/dsh-cos](https://github.com/annexwu/dsh-cos) — 提供 COS 云存储浏览与传输、工作区产物上传、临时链接，以及同时保留本地副本和云端对象身份的会话附件，并提供腾讯云 COS、数据万象和 MetaInsight 的 Agent 工具。
+- [anonamerjaxon-dev/dsh-preset-inspector](https://github.com/anonamerjaxon-dev/dsh-preset-inspector) — 面向 Web GUI 的 agent 预设只读清单：以矩阵展示每个预设包含哪些工具、MCP 服务器与技能，并提供在预设间迁移插件的命令行工具。
 - [Ansonfishing/dsh-ca-ref](https://github.com/Ansonfishing/dsh-ca-ref) — DSH 的 Clean Architecture 参考库:8 个钉版参考仓(Go / Java / C# / Python)索引进本地 FTS5,提供断言规则、审查台账与只读观察窗面板。
 - [AntonyLang/dsh-roam-planner](https://github.com/AntonyLang/dsh-roam-planner) — 面向 DeepSeek Harness 的行程工作台：地图页按天展示站点，roam_* 工具负责起草、审阅与采用行程，可选接入火车票和小红书笔记的 MCP 数据源。
 - [anysearch-team/anysearch-dsh](https://github.com/anysearch-team/anysearch-dsh) — 基于 AnySearch 的实时网页与垂直搜索插件，为 DeepSeek Harness 提供搜索工具。
