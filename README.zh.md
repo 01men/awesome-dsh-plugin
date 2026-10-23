@@ -1403,6 +1403,7 @@ dsh plugin --profile web add dshmarket
 - [3289192-bot/dsh-cache-bricks](https://github.com/3289192-bot/dsh-cache-bricks) — 在 DSH Web 中可视化提示词缓存命中率与模型请求活动，支持请求详情、请求对比和对话定位。
 - [3361805598-gif/dsh-usage-analytics](https://github.com/3361805598-gif/dsh-usage-analytics) — 在设置页提供本机个人用量分析：1/7/30 天 Token 热力图与 30 天日历视图、Token 构成、模型分布和技能调用状态。
 - [345420242/dsh-commandcode-usage-inline](https://github.com/345420242/dsh-commandcode-usage-inline) — 在 DSH 输入栏（模型选择器旁）内联显示 Command Code 套餐用量：5 小时与周窗口已用百分比及剩余 credits，点击徽章弹出向上的详情浮层并含重置倒计时；复用 @mars-sea/dsh-commandcode-provider 的 commandcode/report 远端数据。
+- [361533652/dsh-token-bi](https://github.com/361533652/dsh-token-bi) — 跨会话 token 消耗看板：每日堆叠柱状、按小时节奏、模型与工作区分布、调用树，以及包含联网搜索与辅助调用的逐轮时间线。
 - [439436269-ctrl/dsh-peak-runner](https://github.com/439436269-ctrl/dsh-peak-runner) — DeepSeek 峰谷价感知的任务执行器：平价时段把一批 prompt 直接交给 deepseek-flash；临近峰价时排队并用自持定时器在下一个平价时段开始执行。提供 peak_run / peak_schedule / peak_cancel 三个工具，峰谷时段与提前量可配置。
 - [534119219/chicheng-stats](https://github.com/534119219/chicheng-stats) — 高度可配置的 DSH 用量统计插件：侧边栏文字/卡片组件加统计弹窗，提供按提供方与按模型的请求/Token 统计、缓存命中率、趋势图与首字节/总耗时明细。
 - [940842546/dsh-usage-billing](https://github.com/940842546/dsh-usage-billing) — 用量与消费统计：8/17 调价前后峰谷计费，主界面汇总面板、按会话明细与日/周/月/年/累计用量热力图。
