@@ -1337,6 +1337,7 @@ dsh plugin --profile web add dshmarket
 - [Zian-anson/dsh-prompt-seed](https://github.com/Zian-anson/dsh-prompt-seed) — 输入框有内容时单次调用优化草稿，空白时预测下一句；两类任务独立，支持草稿保护、结果预览和原文恢复。
 - [ZichengGurrr/dsh-window#kit](https://github.com/ZichengGurrr/dsh-window/tree/main/kit) — DSH 三件套全家桶：Windows 原生窗口（WebView2）+ DeepEye 视觉（GLM-4V-Flash）+ 语音输入（麦克风按钮），一条命令装齐。
 - [ZichengGurrr/dsh-window#plugin](https://github.com/ZichengGurrr/dsh-window/tree/main/plugin) — DSH 的 Windows 原生窗口（WebView2）：一键安装，自动从 GitHub Releases 下载应用 zip、创建桌面快捷方式，并提供 desktop_launch 工具在对话中一键启动。
+- [Zimeng-Luo/dsh-source-fold](https://github.com/Zimeng-Luo/dsh-source-fold) — 将输入框的模型选择器替换为紧凑面板，支持来源到模型的逐级选择和自适应思考强度滑块，保留 Default 档位，不支持调节的模型隐藏滑块。
 - [zirscard/dsh-taskboard-epic](https://github.com/zirscard/dsh-taskboard-epic) — DeepSeek Harness 的客户端面板：把 dsh-taskboard 项目里的总任务卡按 epic:children 顺序堆叠展示，标出每个模块在弧线上的位置、代号、名称与版本，并区分起点/中间/终点模块。顺序可拖拽或用按钮调整，新顺序通过 taskboard 自身的公开更新 API 写回，因此会持久化并对该项目的所有查看者共享。需要先安装 cloader/dsh-taskboard 插件。
 - [zizhongfeiyang/dsh-settings-drawer](https://github.com/zizhongfeiyang/dsh-settings-drawer) — 让你选择 DeepSeek Harness 设置页左侧导航要显示哪些栏目。
 - [zkl22492-star/Toolfolk-for-DSH](https://github.com/zkl22492-star/Toolfolk-for-DSH) — 把插件与模型的调用过程可视化成 3D 办公室：六个固定工位、思维流气泡与交付纸。
