@@ -162,6 +162,7 @@ dsh plugin --profile web add dshmarket
 - [aa2246740/dsh-better-display](https://github.com/aa2246740/dsh-better-display) — 更安静的 DeepSeek Harness 阅读视图：原生过程细节、实时推理，以及干净的最终回答。
 - [aa2246740/dsh-dragndrop-attachments](https://github.com/aa2246740/dsh-dragndrop-attachments) — 支持拖放本地文件、文件夹、ZIP 压缩包和 Office 文档作为附件。
 - [aa2246740/dsh-watcher](https://github.com/aa2246740/dsh-watcher) — 只读会话工作路径观察器：收起轮次看阶段数、执行数、耗时与 tok/s，展开看并行分支、工具结果与供应商可见推理。
+- [aadmin61-design/dsh-selection-chat](https://github.com/aadmin61-design/dsh-selection-chat) — 在输入框上方添加划词引用卡片，并提供临时原生侧边聊天，可通过保存按钮将会话保留到来源工作区。
 - [Aafff623/dsh-callout](https://github.com/Aafff623/dsh-callout) — 把 DSH 助手 Markdown 里合格的 `> [!NOTE]`、TIP、IMPORTANT、WARNING、CAUTION 块引用渲染成跟随主题的 GitHub 风格提示卡片，不改会话存档。
 - [Aafff623/dsh-keyboard-manager](https://github.com/Aafff623/dsh-keyboard-manager) — 为 DSH Web UI 提供快捷键：Ctrl+Q 切换左侧栏，Ctrl+E 切换右侧栏，Ctrl+S 打开设置。物理键码可在 profile 补丁中覆盖。
 - [abbccdd/dsh-panel-tint](https://github.com/abbccdd/dsh-panel-tint) — 为 dsh web 的侧边栏、正文框和输入框提供独立的不透明度控制。
