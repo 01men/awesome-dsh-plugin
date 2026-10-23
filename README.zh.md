@@ -5934,6 +5934,7 @@ dsh plugin --profile web add dshmarket
 - [MrGnUm/dsh-image-webp-to-png](https://github.com/MrGnUm/dsh-image-webp-to-png) — 把 WebP 附件图片转码成 PNG，让带 alpha 通道的图能在无法解码 WebP 的 LLM 后端上加载（例如 llama.cpp）。
 - [MrYangyt/dsh-k8s](https://github.com/MrYangyt/dsh-k8s) — 基于本地 kubectl 的 Kubernetes 多集群管理面板：资源筛选、YAML 编辑、Pod 实时日志、交互式容器终端、工作负载重启与扩缩容，并同步 DSH 主题；支持侧栏入口和会话视图。需要 DSH 0.2.0-rc.2。
 - [multica-ai/dsh-multica-runtime](https://github.com/multica-ai/dsh-multica-runtime) — 让 dsh 运行时跑在 Multica 上。
+- [murenyu1/dsh-auto-proxy](https://github.com/murenyu1/dsh-auto-proxy) — DSH 自动代理：自动识别本机代理端口，固定本地入口无感热切换，免 TUN、免改环境变量、无需重启 DSH。支持侧栏、底栏工作台与输入框胶囊一键启停，内嵌链路拓扑图。
 - [MutaLucem/dsh-plugin-integration](https://github.com/MutaLucem/dsh-plugin-integration) — 动态发现已装插件并打标分类，检测功能重叠与兼容冲突，一键启停切换、失效诊断与更新检测。
 - [muyuanjin/dsh-ptc-plus](https://github.com/muyuanjin/dsh-ptc-plus) — 把 DSH PTC 模式的顶层 run_code 变成会话绑定的持久 TypeScript REPL：变量与导入在多次 run_code 调用间保持可用，edit_run_code 只替换一行而无需重发整段，import/export 模块语法经 AST 改写适配，持久绑定在冷重启后由会话日志恢复。
 - [myd74108520/cadence-skill](https://github.com/myd74108520/cadence-skill) — 面向 Cadence Virtuoso 版图工程师的 SKILL 脚本助手：官方文档锚定的 API 检索（5 本 IC6.1.8 手册 3557 条，签名带置信度，查不到绝不臆造）＋不执行代码的深度静态检查——词法深度坐标系可精确判定跨行循环体与同行闭合，覆盖迭代中删除（copy 位置敏感）、printf 占位符与实参对账、循环内 nth O(N^2)、废弃 API（带页码引用），另有危险需求拦截与 CIW 错误日志定位修复。宿主半区零第三方依赖。
