@@ -3878,6 +3878,7 @@ dsh plugin --profile web add dshmarket
 - [wxkingstar/SpecFusion](https://github.com/wxkingstar/SpecFusion) — 通过五个只读工具和一个运行时 Skill，搜索 20 个中国开放平台的 65,600+ 篇 API 文档。
 - [x2802490130-prog/dsh-tool-writing](https://github.com/x2802490130-prog/dsh-tool-writing) — 写文引擎：用独立 DeepSeek key 分流并发生成草稿/细纲/点子，设定与伏笔管理、语义向量检索、书库（饲料区）、用量总账、机械校对与本地连载计划。
 - [x2802490130-prog/dsh-writing-remote](https://github.com/x2802490130-prog/dsh-writing-remote) — 写文引擎的 host 侧数据通道：把项目分卷、章节状态、书库、全文检索、演化条目与线索图谱以 Typert remote 暴露给客户端写作面板。
+- [Xantares330/dsh-codex-consult](https://github.com/Xantares330/dsh-codex-consult) — 为 DeepSeek Harness 增加三个按需咨询 OpenAI Codex CLI 的工具：codex_consult 在只读沙箱中运行 Codex、自动内联证据文件、从 Codex rollout 记录校验实际模型与推理档位、断流自动重试，并记录调用前后的额度；codex_quota 查询当前 5 小时与每周额度；codex_calls 列出最近调用。
 - [xchannel1987/dsh-power-xc](https://github.com/xchannel1987/dsh-power-xc) — DSH 电源管理插件 - 侧边栏电源按钮、重启/关机菜单、自包含重启引擎（无需外部依赖）、优雅会话刷新。
 - [xfy2412/dsh-time-reminder](https://github.com/xfy2412/dsh-time-reminder) — 为 agent 提供它自己的时钟：按会话注入时间读数且精度可由 agent 运行时调整，并附带累计计时器与跨宿主重启可靠的一次性倒计时。
 - [xiajiajun516/dsh-config-manager](https://github.com/xiajiajun516/dsh-config-manager) — 一键备份、导出、导入与迁移整套 DSH 配置：设置、插件、MCP、技能与工作区。密钥默认不导出；若选择包含，则以 AES-256-GCM 加密而非明文写出。导入先预览、自动备份并可回滚，profile 可保存多套配置，远程同步经私有 Git 仓库推送可移植配置且不含密钥。
