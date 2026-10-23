@@ -6206,6 +6206,7 @@ dsh plugin --profile web add dshmarket
 - [slywalker2006/dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — 让 DeepSeek Harness 变成服务器级多租户平台：远程访问 + 自动 HTTPS、子用户权限与配额、沙盒强制、加密认证与审计日志。
 - [SodaZheng/dsh-totp](https://github.com/SodaZheng/dsh-totp) — 面向个人 DeepSeek Harness Web 实例的纯 TOTP 访问验证，支持设置内扫码绑定、一次性恢复码、动态启停保护和撤销所有页面授权。
 - [STARDUSTLC666/dsh-code-security](https://github.com/STARDUSTLC666/dsh-code-security) — 确定性代码安全审查：40+ 规则、密钥熵检测、staged diff 审查、SARIF 导出、基线接受、SBOM-lite 依赖清单与健康自检。面板内置 4 步首次使用引导，看一次后不再出现。
+- [SteelUnion/dsh-confirm-gate](https://github.com/SteelUnion/dsh-confirm-gate) — 按轮统计持久化操作，按总数逐级升级：先提醒，再给明确的停止指令，最后请求确认。每次调用都现读会话的沙箱模式，在 read-only 与 workspace-write 下保持沉默。
 - [sujingkpo/dsh-auto-pass](https://github.com/sujingkpo/dsh-auto-pass) — 延续 simon300000/dsh-auto 的 DSH WebUI 自动审批权限档位：每次审批只走一次单轮模型审查、不再起审查子代理，只自动放行审查通过的动作、其余全部转回人工审批；并会把用户确认过的决定记成项目级与全局级的允许/拒绝名单，右侧栏另有审批时间线。
 - [SummerSec/dsh-web-auth](https://github.com/SummerSec/dsh-web-auth) — DeepSeek Harness Web GUI 的传输层认证门禁，提供服务端会话、HttpOnly Cookie、基于 IP 的登录限流及 scrypt 口令 CLI。
 - [tancheng33/dsh-code-runtime-container](https://github.com/tancheng33/dsh-code-runtime-container) — `ctx.codeRuntime` seam 的容器隔离后端：每个 Code Mode 程序跑在全新容器里，无网络、根文件系统只读、丢弃全部 capability，内存/CPU/进程数上限由内核强制。
