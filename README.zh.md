@@ -1278,6 +1278,7 @@ dsh plugin --profile web add dshmarket
 - [yanglingrise/dsh-erii-boot-splash](https://github.com/yanglingrise/dsh-erii-boot-splash) — 绘梨衣（Sakura）主题启动加载动画——樱花瓣飘落、头戴樱花的小怪兽、粉色进度条，约 3 秒自动淡出且不阻挡操作。
 - [YangShen-SWE/dsh-plugin-chat-zoom](https://github.com/YangShen-SWE/dsh-plugin-chat-zoom) — 仅缩放 DSH 聊天消息和输入区（80%–200%），支持 Ctrl 快捷键、设置调节与本地记忆，不缩放侧栏。
 - [yangshen830-eng/dsh-editor](https://github.com/yangshen830-eng/dsh-editor) — VS Code 风格代码编辑器：侧边栏文件树浏览工作区，Monaco 编辑，文件读写，Git 状态与差异，搜索与 Markdown 预览。
+- [yangzhenyu0817/dsh-session-color](https://github.com/yangzhenyu0817/dsh-session-color) — 给 DeepSeek Harness 侧栏会话行加右键标色：默认红色、十色色板与自定义取色，颜色本地持久化。
 - [yannicksong0106/dsh-550c-boot](https://github.com/yannicksong0106/dsh-550c-boot) — 给 DSH 加一段 550C 全屏开机片头：简易档 4 秒、完整档 16 秒覆写流程，点击或按 Esc 跳过，四套磷光配色。首帧由宿主半边在文档解析阶段注入，DSH 自带的 Loading 卡片不会露脸；桌面窗口右上角那条原生按钮条带在片头期间透明化，按钮像浮在动画上。
 - [YannZhou/dsh-about](https://github.com/YannZhou/dsh-about) — 在 DeepSeek Harness 设置中心增加「关于」分区：版本信息、npm 检查更新与一键安装（自动重启）、GitHub 版本更新记录。
 - [yaoshuo530/dsh-prompt-enhancer](https://github.com/yaoshuo530/dsh-prompt-enhancer) — 输入框提示词增强：✨ 增强按钮用第一性原理、结合会话上下文/记忆/最近对话，把草稿扩写为更清晰、更结构化的提示词；关键信息缺失时以提问卡片澄清，预览确认后再应用到输入框。
@@ -5529,6 +5530,7 @@ dsh plugin --profile web add dshmarket
 - [JMOKSZ/dsh-lark-bridge](https://github.com/JMOKSZ/dsh-lark-bridge) — 飞书入口插件：一条命令安装，流式进度卡片带工具面板、提问/审批按钮卡片、附件处理与 feishu_send 主动推送。
 - [john-walks-slow/dsh-hybrid-notify](https://github.com/john-walks-slow/dsh-hybrid-notify) — DeepSeek Harness 多通道通知插件：前台弹页面内 toast，后台按可用性切换 PWA 系统通知（Service Worker）或浏览器通知兜底；任务完成、审批请求、提问、计划评审、出错等事件可逐项开关，重要通知驻留不消失，并用 Web Audio 实时合成提示音效、零音频文件零网络上报。
 - [john-walks-slow/dsh-im-humanize](https://github.com/john-walks-slow/dsh-im-humanize) — @xmanrui/dsh-im 的拟人化分支（基于上游 4.21.2）：人化消息发送（发送延迟 + 输入中两阶段）、message_break 与 streaming 共存、状态表情、回复引用、per-bot 全量拟人化覆盖、no_reply 回收工具，覆盖微信/飞书/钉钉/企业微信/QQ/Telegram/Slack/WhatsApp 全通道。
+- [Jxxxxx729/dsh-win-notify](https://github.com/Jxxxxx729/dsh-win-notify) — 等待授权、等待选择、对话完成或出错、需要登录时在 Windows 通知栏弹出提醒；点击通知直接跳回发出它的对话，通知以 DeepSeek Harness 应用身份显示。
 - [kaixinbaba/dsh-complete-notify](https://github.com/kaixinbaba/dsh-complete-notify) — 任务完成时播放提示音并弹出小通知：Web Audio 合成音效、页面内 toast、页面在后台时系统通知，纯浏览器方案、零系统依赖、跨平台。
 - [king-shao/dsh-turn-notifier](https://github.com/king-shao/dsh-turn-notifier) — 每轮对话正常结束时弹出系统通知，标题是会话名，正文是本轮回答的摘要。
 - [knownothing114/dsh-notify](https://github.com/knownothing114/dsh-notify) — 当 dsh 需要你注意时发出桌面通知——权限确认、提问、计划审批、回合完成、目标、出错、工作流——并提供设置页「通知」选项卡，改动即时生效。
