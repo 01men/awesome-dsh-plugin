@@ -4756,6 +4756,7 @@ dsh plugin --profile web add dshmarket
 - [RrcoVer0/dsh-webnovel-writer](https://github.com/RrcoVer0/dsh-webnovel-writer) — 为现有 Agent 添加基于文件记忆的中文网文策划、逐章写作、一致性审校、回滚与文风画像技能。
 - [ruiyukirin/dsh-douyin-oem-touliu-report](https://github.com/ruiyukirin/dsh-douyin-oem-touliu-report) — 抖音本地推 OEM 广告日报/周报自动生成（作者：Kirin）：一次 Edge 登录后自动采集三大数据源（来客客资、计划级投放明细、视频分析），计算指标并生成 A4 排版 docx 报告，支持自由选择定时运行时间和邮件通知。
 - [ryasrk/dsh-awesome-skills](https://github.com/ryasrk/dsh-awesome-skills) — 安装一个 skill 路由技能：按需对本地技能库做语义检索，让庞大的技能库不占每轮的模型目录。
+- [sagirimo/BioDSH#dsh-biodsh](https://github.com/sagirimo/BioDSH/tree/main/packages/dsh-biodsh) — 生信智能体预设，含 17 个 BioDSH 分析技能（单细胞、bulk RNA-seq、生存分析、回归、方差分析）、可用 skill_library 工具检索的 2000+ 技能库、按消息自动选技能和按时间/步数的收敛护栏。
 - [sandbaseai/sandbase-skills](https://github.com/sandbaseai/sandbase-skills) — 通过文件系统 Skill provider 将 88 个研究、社交情报、营销与商业 Agent Skills 挂载到 dsh。
 - [SAXEM1997/dsh-ppt-master-wrapper](https://github.com/SAXEM1997/dsh-ppt-master-wrapper) — 把上游 ppt-master 演示文稿技能集封装为可安装的 DeepSeek Harness 插件：逐字节 vendor 技能树，提供 ppt_master_info / ppt_master_check_env / ppt_master_setup_deps 三个生命周期工具、可选的 venv 解释器隔离与插件页配置卡片，需 python3 ≥ 3.10 + `ppt_master_setup_deps` 安装的 pip 依赖。
 - [SAXEM1997/specpowers](https://github.com/SAXEM1997/specpowers) — 为 DeepSeek Harness 注册 6 个 SDD+TDD 工作流技能：把 OpenSpec 规格编写与 Superpowers 测试驱动纪律衔接为带审查 Gate 的 Phase 0-4 流水线，零运行时依赖。
@@ -5977,6 +5978,7 @@ dsh plugin --profile web add dshmarket
 - [Tang-mm95/dsh-single-instance-guard](https://github.com/Tang-mm95/dsh-single-instance-guard) — 检测到其他存活的 dsh 实例占用同一 DSH_HOME 数据目录时中止启动，防止并发写会话日志导致的历史损坏。
 - [taptap/instant-games-open-mcp#packages/dsh-maker](https://github.com/taptap/instant-games-open-mcp/tree/main/packages/dsh-maker) — DeepSeek Harness 的 TapTap Maker 集成：提供内置 MCP 工具、Maker 工作流与功能技能，以及用于项目初始化和诊断的随包 CLI 路径。
 - [taxueseek/dsh-healthcheck](https://github.com/taxueseek/dsh-healthcheck) — DSH 环境只读体检：磁盘/内存/延迟/缓存膨胀/插件版本落后检测，分级报告并对比历史基线趋势。只读，不删任何东西。
+- [tengyinan1994/dsh-project-runner](https://github.com/tengyinan1994/dsh-project-runner) — 分组运行面板：在真 PTY 里一键启动项目服务，实时彩色输出，每次运行的日志落盘，代理可直接读取。
 - [TGYD-helige/dsh-plugins#dsh-langfuse](https://github.com/TGYD-helige/dsh-plugins/tree/main/packages/dsh-langfuse) — 将 dsh 的会话轮次、LLM 调用、工具调用及子 agent 活动记录到 Langfuse。
 - [Tianbuyu-wwx/dsh-hermes-link#dsh-hermes-link](https://github.com/Tianbuyu-wwx/dsh-hermes-link/tree/main/packages/dsh-hermes-link) — Hermes 与 DSH 的双向桥接插件：将 Hermes 会话导入 DSH、咨询 Hermes，并以单一 Cordis 插件接收 Hermes 下发的任务。
 - [tianyaZTY/dsh-hot-plugin-host](https://github.com/tianyaZTY/dsh-hot-plugin-host) — Web UI 运行时插件加载：监视热目录，运行中安装/更新客户端插件 bundle，所有页面即时生效，免重启。附子智能体看板示例。
