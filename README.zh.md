@@ -843,6 +843,7 @@ dsh plugin --profile web add dshmarket
 - [nailing10086-zx/dsh-custom-ui](https://github.com/nailing10086-zx/dsh-custom-ui) — 右侧文件树侧栏，可打开工作区文件；并在输入框状态行显示 DeepSeek 账户余额。
 - [nanshang328/dsh-power](https://github.com/nanshang328/dsh-power) — 仅支持 Windows：注入 DSH 页面的电源卡片，图案左右各带一块命中区（左关机、右重启），第一次点击只把卡片变成一句是否确认，第二次点击才执行；重启引擎只停本实例的进程树，等待端口释放后在宿主 Job Object 之外重新拉起，并用插件自己的状态路由确认新实例已经应答。
 - [NativeDog1/dsh-boot-animation](https://github.com/NativeDog1/dsh-boot-animation) — 打开新对话、或每次打开你钉住的那个会话时，铺满窗口播放一段片头动画。插件自带四段片头，直接内嵌在代码里（不带独立的视频文件）；界面里的片库可切换、可预览，也能随时换成你自己的片子；设置旁一键钉住会话。
+- [Natsubrei/dsh-comfyui-panel](https://github.com/Natsubrei/dsh-comfyui-panel) — 把真正的 ComfyUI 编辑器作为侧栏标签嵌进 DeepSeek Harness，每会话的工具直接读写屏幕上那张工作流，面板可启停 ComfyUI，且不向 ComfyUI 安装任何东西。
 - [Natsubrei/dsh-mermaid-panel](https://github.com/Natsubrei/dsh-mermaid-panel) — 把当前对话里的 Mermaid 图表渲染成右侧栏的一个页面，一图一卡片；点击卡片可全屏查看并缩放、拖动，对话里的原始代码块保持不动，因此复制或引用源码照常可用。
 - [NattoCB/dsh-plugin-pin-session](https://github.com/NattoCB/dsh-plugin-pin-session) — 在会话行菜单加入 Pin/Unpin，并在侧边栏列表上方提供可折叠的 Pinned Sessions 分组：主机端持久化、悬停快速取消置顶、折叠状态记忆与实时运行状态点。
 - [NattoCB/dsh-plugin-sidebar-views](https://github.com/NattoCB/dsh-plugin-sidebar-views) — 在侧栏列表上方加「工作区 / 最新会话」切换条，含固定会话分组、行级菜单（固定/取消固定、复制 Session ID）、标题过滤；pin 存于浏览器 localStorage，并对 dsh-plugin-pin-session 做一次性迁移与过渡双写。
@@ -2098,7 +2099,8 @@ dsh plugin --profile web add dshmarket
 - [ffyuuu/dsh-llm-longcat](https://github.com/ffyuuu/dsh-llm-longcat) — LongCat-2.0 模型适配器：100 万上下文、二元思考模式、工具调用，基于 OpenAI 兼容接口的流式输出。
 - [fieldnote-ops/keyringseam](https://github.com/fieldnote-ops/keyringseam) — macOS Keychain 凭据提供器：替换本地文件提供器，并使用已签名、公证的通用二进制辅助程序。
 - [Firefox2100/dsh-ai-providers#anthropic](https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-anthropic) — 使用原生 Messages API 为 DSH 提供语言模型能力的 Anthropic 提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。
-- [Firefox2100/dsh-ai-providers#jina-cohere](https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-jina-cohere) — 为 DSH 提供 Jina、Cohere 及兼容重排序 API 支持的重排序提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。
+- [Firefox2100/dsh-ai-providers#cohere](https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-cohere) — 通过 Cohere 原生 API 为 DSH 提供语言模型、嵌入和重排序能力的 Cohere 提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。
+- [Firefox2100/dsh-ai-providers#jina](https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-jina) — 为 DSH 提供嵌入和重排序能力的 Jina 提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。
 - [Firefox2100/dsh-ai-providers#localai](https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-localai) — 为 DSH 提供语言模型、嵌入、重排序、语音和图像生成能力及 LocalAI 专用控制项的 LocalAI 提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。
 - [Firefox2100/dsh-ai-providers#openai](https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-openai) — 为 DSH 提供语言模型、嵌入、文本转语音、语音转文本和图像生成能力的 OpenAI 提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。
 - [Firefox2100/dsh-ai-providers#runtime](https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-providers) — 为 DSH 提供共享凭据以及嵌入、重排序、语音和图像生成服务的 AI 提供商运行时与配置界面。
