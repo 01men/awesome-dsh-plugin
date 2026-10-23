@@ -5795,6 +5795,7 @@ dsh plugin --profile web add dshmarket
 - [hjj345/dsh-sm-version-display](https://github.com/hjj345/dsh-sm-version-display) — 在侧边栏显示已安装的 DeepSeek Harness 版本，检查 npm 与 GitHub Releases 更新，并提供手动或确认后执行的更新命令。
 - [hollowfyh/dsh-plugin-doctor](https://github.com/hollowfyh/dsh-plugin-doctor) — 自愈插件医生：检测加载失败的 DSH 插件行，自动备份 profile patch 后禁用失败行，并通过 /doctor 汇报诊断。
 - [hoyyang/dsh-code-graph](https://github.com/hoyyang/dsh-code-graph) — DSH 原生分支感知代码知识图谱：调用链/影响面/路径/架构覆盖 158+ 语言，保鲜门控，切分支索引自动跟随，单工具分发零 MCP 会话。
+- [huangfuren/dsh-sync](https://github.com/huangfuren/dsh-sync) — 把整台机器的 dsh 搬到另一台并逐条核对。三层一起走：声明层（设置、凭据、插件声明与 link: 插件源码）、状态层（会话、storages、skills、附件），以及可选的工作区项目代码。会话只改写 zstd 首帧，工作区路径按显式映射改写，最后核对 14 项检查（I1–I13，另含 I6b）并给出 PASS / FAIL / WARN。另可局域网配对直传；merge 模式把 bundle 与「已经在用的机器」逐项比对，分歧未决议就停在写盘之前。
 - [huasheng33991/dsh-power-button](https://github.com/huasheng33991/dsh-power-button) — 固定在窗口右下角的一键启停按钮：通过脱离终端的辅助进程按原始启动命令重启 DeepSeek Harness（仅本机同源可调），附「仅停止」小按钮。
 - [huaweicloud/huaweicloud-devkit](https://github.com/huaweicloud/huaweicloud-devkit) — 让 AI 智能体掌握华为云全流程操作——构建、部署、运维全程受控，助您轻松安全上云。
 - [HuiHuitie-zhu/dsh-check-update](https://github.com/HuiHuitie-zhu/dsh-check-update) — 更新检查器（npm 版）：设置页对比 @deepseek-ai/dsh 与已装插件的本地/最新版本，有更新时导航红点提醒，并直接给出更新命令。
