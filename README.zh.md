@@ -3253,6 +3253,7 @@ dsh plugin --profile web add dshmarket
 - [AngLi1997/dsh-plugin-sync](https://github.com/AngLi1997/dsh-plugin-sync) — 将已安装的 DeepSeek Harness 插件清单同步到 GitHub Gist（OAuth 登录、一键导出/导入并自动安装依赖）。
 - [Anionex/dsh-computer-use](https://github.com/Anionex/dsh-computer-use) — macOS 电脑控制：Accessibility 观测、过期状态拒绝、作用域权限与安全输入。
 - [annexwu/dsh-cos](https://github.com/annexwu/dsh-cos) — 提供 COS 云存储浏览与传输、工作区产物上传、临时链接，以及同时保留本地副本和云端对象身份的会话附件，并提供腾讯云 COS、数据万象和 MetaInsight 的 Agent 工具。
+- [anonamerjaxon-dev/dsh-preset-categorizer](https://github.com/anonamerjaxon-dev/dsh-preset-categorizer) — 读取已安装的插件、MCP 服务器与技能，按能力分组，报告每项能力应属于哪个预设；可按需为每个类别注册一个预设。
 - [anonamerjaxon-dev/dsh-preset-inspector](https://github.com/anonamerjaxon-dev/dsh-preset-inspector) — 面向 Web GUI 的 agent 预设只读清单：以矩阵展示每个预设包含哪些工具、MCP 服务器与技能，并提供在预设间迁移插件的命令行工具。
 - [Ansonfishing/dsh-ca-ref](https://github.com/Ansonfishing/dsh-ca-ref) — DSH 的 Clean Architecture 参考库:8 个钉版参考仓(Go / Java / C# / Python)索引进本地 FTS5,提供断言规则、审查台账与只读观察窗面板。
 - [AntonyLang/dsh-roam-planner](https://github.com/AntonyLang/dsh-roam-planner) — 面向 DeepSeek Harness 的行程工作台：地图页按天展示站点，roam_* 工具负责起草、审阅与采用行程，可选接入火车票和小红书笔记的 MCP 数据源。
