@@ -6288,6 +6288,7 @@ dsh plugin --profile web add dshmarket
 - [feng-yifan/dsh-plugins#dsh-enhancement](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enhancement) — DSH 增强套件：为 Web GUI 提供独立的密码访问网关（可选 HTTPS，适合局域网/远程访问），整合 PWA 安装与图标、桌面通知与 Web Push，并在设置页统一配置。
 - [flyhigao/dsh-produced-file-paths](https://github.com/flyhigao/dsh-produced-file-paths) — 在远程 Web 中显示并复制 DSH 每轮产出文件的绝对路径。
 - [framecy/dsh-ssh-shell](https://github.com/framecy/dsh-ssh-shell) — 用密码直连远程主机的 SSH 终端：ssh_remote 工具提供 connect/exec/close/status 四个动作，底层是 ControlMaster 常驻会话；另带浏览器浮动终端面板，跑真实 PTY。
+- [Gaudi-XIX/dsh-pocket-glide](https://github.com/Gaudi-XIX/dsh-pocket-glide) — 把桌面 DSH 的电话面做成克制遥控器：白名单透传会话读写、发消息与权限审批，页面由宿主直接产出、无构建链，扫码配对，隧道地址变了自动推回手机。
 - [godchen520/dsh-web-remote](https://github.com/godchen520/dsh-web-remote) — 手机/外网远程访问 DSH：Cloudflare Quick Tunnel 公网链接、局域网 HTTP/HTTPS 直连（自动生成自签名证书）、token 鉴权、gzip 压缩、常驻手机图标面板（一键复制/二维码）、可配置公网链接与局域网端口，以及微信 / 飞书 / Telegram 机器人通道，支持分通道健康监测与会话完成推送。适配 DSH 0.2.x（0.1.2-rc.1+ 亦可用）。
 - [Golden-Pigeon/dsh-remote#packages/local-plugin](https://github.com/Golden-Pigeon/dsh-remote/tree/main/packages/local-plugin) — 把 SSH 主机上的工作区接入 DSH：远程工作区、镜像会话、终端与文件访问、审批和原生 DSH 界面。需 DSH Desktop 0.2.1-rc.2，远端主机为 Linux 或 macOS。
 - [GooDAnDReaDY/dsh-lanmode](https://github.com/GooDAnDReaDY/dsh-lanmode) — 为 DeepSeek Harness 网页 UI 提供局域网与反向代理访问：在非 localhost 页面返回设置服务，补齐浏览器在纯 HTTP 下限制的 Web API，并可自行开启监听端口。
