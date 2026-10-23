@@ -4439,6 +4439,7 @@ dsh plugin --profile web add dshmarket
 - [ldchaowin/dsh-plugin-notify-sound](https://github.com/ldchaowin/dsh-plugin-notify-sound) — 按工作区定制的任务完成铃声，以及审批、提问、计划评审、目标受阻、任务失败等需要人介入事件的注意提示音，支持内置合成音、语音播报与自定义音频。
 - [lengmodkx/dsh-mimo-tts](https://github.com/lengmodkx/dsh-mimo-tts) — 给 DeepSeek Harness 的小米 MiMo 语音插件：把每段回答念出来、把输入框里的口述变成文字，带 9 个内置音色和一个克隆音色槽位。
 - [lgquan/dsh-voco](https://github.com/lgquan/dsh-voco) — 为 DSH 提供持续语音对话，支持免提监听、按住说话、语音识别、TTS 语音回复和后台 Agent 任务委派。
+- [lihua12345670-jpg/dsh-bili-audio](https://github.com/lihua12345670-jpg/dsh-bili-audio) — 在 DSH Web 界面挂一个悬浮播放条，粘贴 BV 号或链接就能听 B 站视频的声音，带队列、进度与倍速，并由宿主反向代理绕开 CDN 的 Referer 校验。
 - [loyalchiiina/dsh-voice-alert](https://github.com/loyalchiiina/dsh-voice-alert) — 每个 turn 结束自动播报完成、出错时播失败提示（用户中断默认不播，子代理会话默认跳过，均可配置）。三种提醒方式：语音、音效、关闭。默认「音效」内置 20 个音效（提醒 10 + 大自然 10），每个音效可指定给完成/失败/审批事件并单独试听，零配置、不需要任何 API Key 与音频文件；语音走火山 TTS，支持克隆音色与预设音色、批量导入音色 ID，并按文案/音色/语速/音调/音量指纹复用已生成的 mp3，未变则不重复合成。第三个「审批」槽位没有自动触发源，只能手动播放。走 winmm/waveOut 原样播放，绝不改动系统音量或静音状态，播放进程独立拉起、DSH 会话销毁也杀不到声音。仅 Windows。
 - [maoyuching/dsh-voice-chat](https://github.com/maoyuching/dsh-voice-chat) — 豆包式语音对话插件：聊天框麦克风按钮（按住说话）语音转文字并自动发送，AI 回复自动朗读。可选 LLM 转述精简（长回复压缩成口语再播，跟随当前对话模型）、朗读前清洗 markdown/emoji/特殊符号、Edge TTS 多种音色、静音自动结束时长可调，设置嵌入 DSH 自带设置弹窗（voice chat 类目）。
 - [MaRi23333/dsh-fish-tts](https://github.com/MaRi23333/dsh-fish-tts) — 朗读助手回复（仅支持 Fish Audio API，需自备 Key）：逐条朗读、自动朗读开关，设置页可配模型、音色 reference_id、加密 API Key 与代理。
