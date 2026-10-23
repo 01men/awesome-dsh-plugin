@@ -2406,6 +2406,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Sessions & Messages
 
+- [111222cjyq/dsh-curate](https://github.com/111222cjyq/dsh-curate) - A human-in-the-loop curation workbench inside a DSH session: mark whole turns or single messages to keep verbatim or to summarize, rewrite user, assistant, tool-result and injected-context messages in place without a model call, then compress the marked ranges with model-written summaries or the official /compact. A local JSON backup is written before every write to the session.
 - [123dbl/dsh-side-session](https://github.com/123dbl/dsh-side-session) - Launches a fresh, continuable parallel session from the composer command menu (/side-chat) while the main session keeps running.
 - [1420079678-ctrl/agent-body#dsh-zero-residence](https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-zero-residence) - Zero-residence context engine: large tool payloads are evicted out of the live context into a queryable store and only deterministic pointers are left behind, so per-turn prompt tokens stop growing with the transcript. Any masked content is reconstructed verbatim from the session log on demand, by tool-call id or session seq.
 - [1Lany2a/dsh-domain-role#dsh-domain-bridge](https://github.com/1Lany2a/dsh-domain-role/tree/main/plugins/dsh-domain-bridge) - Domain-identity layer for long-running agent sessions — declaration-first domain addressing, a session factory, four-level pause, and model dispatch for coordinating multiple top-level sessions.
