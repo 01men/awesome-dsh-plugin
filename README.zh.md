@@ -6562,6 +6562,7 @@ dsh plugin --profile web add dshmarket
 - [tuogusa/dsh-plugin-toggle](https://github.com/tuogusa/dsh-plugin-toggle) — 在 Web 设置面板中启用、停用、删除/撤回插件，并支持版本检测与 npm 插件更新；运行时开关持久化到 profile。
 - [Ultmebius/universal-plugin-hub](https://github.com/Ultmebius/universal-plugin-hub) — DSH 的可视化插件市场：多源浏览、一键安装，技能、子代理、MCP 连接器、LSP 服务器与 hooks 自动接入。
 - [VibeDev-Si/dsh-ecosystem](https://github.com/VibeDev-Si/dsh-ecosystem) — VibeDev 插件中心：介绍 VibeDev 官方插件，并通过官方插件管理器一键安装（先检查、先不启用地安装、再启用，并带上前置依赖）。另提供套装安装、旧包名迁移，以及一键安装插件市场 dshmarket。
+- [Vikrant-Aleph/dshmarket-update-helper](https://github.com/Vikrant-Aleph/dshmarket-update-helper) — 提供独立设置页，通过 DSH 插件管理器更新 npm 稳定版 dshmarket，支持版本核对及安装失败时尝试恢复旧版。
 - [vlln/plugin-registry#console](https://github.com/vlln/plugin-registry/tree/main/packages/plugin/console) — 插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。
 - [weibaohui/experts-management](https://github.com/weibaohui/experts-management) — 专家管理：管理 ntd 格式的专家与专家团队（plugin.json + Agent MD + 技能集），内置 50+ 专家市场，`/expert-名称` 以专家身份执行任务，不占模型目录 token。
 - [WhatCannotBeSaid/dsh-disable-unofficial-plugins](https://github.com/WhatCannotBeSaid/dsh-disable-unofficial-plugins) — 在 DSH 插件页的「已安装」分组标题右端加一个勾选式开关：点开是当前方向下非官方插件的清单，默认全选，只切换你保留勾选的那些；全部停用后按钮翻转成启用侧。只做启用/停用，从不卸载插件、也不删除插件文件与配置，界面文案跟随应用语言。
