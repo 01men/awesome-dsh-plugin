@@ -2113,6 +2113,7 @@ dsh plugin --profile web add dshmarket
 - [GooDAnDReaDY/dsh-subscriptions](https://github.com/GooDAnDReaDY/dsh-subscriptions) — 通过 OAuth 将 ChatGPT Codex、Claude、Grok 与 Antigravity 订阅注册为 DeepSeek Harness 的 LLM 提供方，无需为其配置 API Key。
 - [GrannyProgramming/dsh-dario-sidecar](https://github.com/GrannyProgramming/dsh-dario-sidecar) — 随 DSH 启动并管理 dario 代理（把 Claude/ChatGPT 订阅当 API 用），就绪门控、随停随止，订阅模型路由开箱即用。
 - [greatyao/dsh-connect-cursor](https://github.com/greatyao/dsh-connect-cursor) — 把本机已登录的 Cursor 桌面应用接入 dsh，原生 LlmAdapter 直连：从 state.vscdb 或 auth.json 读登录态，驱动 agent.v1.AgentService/Run 的 HTTP/2 双向流，把 InteractionUpdate 增量翻成 dsh StreamChunk，不走 loopback 代理。支持 macOS / Windows / Linux。
+- [guhanfei-ai/dsh-model-http-proxy](https://github.com/guhanfei-ai/dsh-model-http-proxy) — 把 globalThis.fetch 包一层：选中的域名走一个或多个命名 HTTP/SOCKS 代理（精确域名或 *.后缀 规则、按卡启停），全局直连规则优先于所有代理；未命中的请求照旧走本机默认网络，设置保存后下一次请求即生效，无需重启。
 - [HAN102300/dsh-opencode-zen-free](https://github.com/HAN102300/dsh-opencode-zen-free) — 为 DeepSeek Harness 接入 OpenCode Zen 免费模型：默认免 key 走公共额度，内置回环 OpenAI 兼容 shim，并把网关要求的 bash/read 注册为真实可执行工具。
 - [HaoyueQin/dsh-better-reasoning-effort](https://github.com/HaoyueQin/dsh-better-reasoning-effort) — 为第三方供应商模型按模型配置思考强度与输入模态：知识库与原始 /models 端点取证融合建议并标注置信度，在官方「模型」页卡片内直接编辑。
 - [HaydenSmith1121/dsh-opencode-go-plus](https://github.com/HaydenSmith1121/dsh-opencode-go-plus) — 把 OpenCode Go 订阅模型接入 DeepSeek Harness：每隔几分钟重新解析网关实时目录，内置表里没有的模型按同族自动适配，支持流式输出、工具调用、图片输入与订阅额度显示。这是 dsh-opencode-go 的维护分支：与上游包争用 llm-opencode-go 设置命名空间时安静退场，而不是让整棵插件树加载失败；opencode-go 路由已被占用时改用 opencode-go-plus 路由继续服务。
@@ -5158,6 +5159,7 @@ dsh plugin --profile web add dshmarket
 - [ttmouse/dsh-taskboard](https://github.com/ttmouse/dsh-taskboard) — 内嵌于 DSH Web GUI 的完整本地优先任务看板：看板/列表/Gantt/工作流/仪表盘视图、任务 AI 对话、附件与标签、dsh-routines 驱动的待办自动认领——数据存本地 SQLite（dsh plugin add @ttmouse/dsh-taskboard）。
 - [upJiang/dsh-cron-job](https://github.com/upJiang/dsh-cron-job) — DeepSeek Harness Agent 定时任务：创建前强制完成端到端测试，提供运行历史，并通过九种通讯渠道双向收发消息。
 - [usersx/dsh-automation-center](https://github.com/usersx/dsh-automation-center) — 面向 Workspace 调度 Agent 任务，每次运行创建全新 Result Session 并持久保留审计历史；原版 DSH 使用会话标签，存在对应 Slot 时使用全局 Shell 页面。
+- [vicTop-cw/FIST-Mbt](https://github.com/vicTop-cw/FIST-Mbt) — 把 FIST 指挥官任务编排做成 MCP 服务：七态任务生命周期、层级拆解、DAG 排程、自驱闭环与 Omega 强验证，账本落在一个 SQLite 里；自带预构建 CLI，安装无需构建。
 - [victorzhong0110/dsh-code-reference](https://github.com/victorzhong0110/dsh-code-reference) — 在开发前检索本地代码与 GitHub/npm 的可复用实现，评估复用与重写成本，并检查架构耦合。
 - [victorzhong0110/dsh-outcome-loop](https://github.com/victorzhong0110/dsh-outcome-loop) — 为 DSH 保存本地任务结果账本，依据确定性证据验证验收标准，记录用户处置与 token 用量，并支持摘要绑定导出。
 - [virggle/dsh-shutdown-after-task](https://github.com/virggle/dsh-shutdown-after-task) — 任务完成后自动关机：右下角按钮开启模式，任务成功完成后进入可取消的倒计时（取消走 shutdown /a），零运行时依赖。
