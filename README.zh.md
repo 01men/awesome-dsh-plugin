@@ -1180,6 +1180,7 @@ dsh plugin --profile web add dshmarket
 - [wuuuuu123-32/dsh-open-artifacts](https://github.com/wuuuuu123-32/dsh-open-artifacts) — 在会话列表菜单和会话标题栏加一个动作：直接打开这个对话的产物文件夹。它读会话日志算出该对话往哪些目录写过文件，再用资源管理器打开，不必自己翻工作区根目录。
 - [wuwaka/dsh-clipboard-menu](https://github.com/wuwaka/dsh-clipboard-menu) — 在没有自带右键菜单的桌面外壳中为 DeepSeek Harness 补上右键菜单：输入框内的剪切、复制、粘贴、全选，别处选中文字的复制与复制为纯文本，以及用可配置引擎在默认浏览器中搜索。
 - [wwumit/dsh-phone#client](https://github.com/wwumit/dsh-phone/tree/main/client) — 苹果风格智能体手机：双面板电话/短信、RCS 群聊（信任门禁）、跨设备智能体消息（registry 收件箱桥）、L0–L4 信任徽章与证据审计。实验性：信任摘要非安全保证，短信/信令经运营方收件箱中继（运营方可见）；E2E 加密为演进方向。
+- [www02310/dsh-go](https://github.com/www02310/dsh-go) — DSH 启动画面：亮白跑马灯点亮后一笔写出 DeepSeek Harness，主窗口就绪后淡出。以运行时注入的插件形态安装；仓库另附可选的原生补丁版。
 - [wwwangzilin/dsh-role-cards](https://github.com/wwwangzilin/dsh-role-cards) — 把新建会话界面的选择器换成组合面板：角色预设卡与工作区卡各自成排，折叠时是胶囊按钮，展开后是两行可滚动的紧凑卡片。
 - [wx-yss/dsh-message-rail](https://github.com/wx-yss/dsh-message-rail) — Codex 风格左侧消息导航轨道：每条用户消息一个刻度，悬停预览、点击跳转，全历史一次索引。
 - [wydddddcool/dsh-hover-approve](https://github.com/wydddddcool/dsh-hover-approve) — DSH Web 侧边栏锚定气泡：会话待授权、提问、计划确认、目标阻断时在会话行旁自动弹出并一键处理，无需点进会话。
@@ -5974,6 +5975,7 @@ dsh plugin --profile web add dshmarket
 - [WODE25500/dsh-terraform](https://github.com/WODE25500/dsh-terraform) — 基础设施即代码：plan/apply 门控、state/output 检查与配置校验。
 - [WODE25500/dsh-winget](https://github.com/WODE25500/dsh-winget) — Windows 包管理器：搜索、安装、升级、卸载、导入导出与版本固定。
 - [WODE25500/dsh-wsl](https://github.com/WODE25500/dsh-wsl) — DeepSeek Harness 的 WSL(Windows Subsystem for Linux)桥接：跑 Linux 命令、管理发行版、路径转换与跨系统复制。
+- [Wonderow666/dsh-auto-update](https://github.com/Wonderow666/dsh-auto-update) — 在 Web 设置页检查、安装、回滚 DeepSeek Harness CLI 更新：新版本装上后先过配置树检查与健康重启，通过才切换启动指针，起不来就自动退回旧版本。
 - [worksAssistant/dsh-quickref](https://github.com/worksAssistant/dsh-quickref) — 开发者速查工具箱：12 个主题 195 条速查 + 6 个零依赖工具（正则实时测试、JSON 格式化、时间戳转换、Base64/URL 编解码、Cron 生成、行 diff），设置页可搜索查阅。
 - [wpeng77/dsh-llm-trace](https://github.com/wpeng77/dsh-llm-trace) — 线路层 LLM 检查器：抓取模型调用的原始 HTTP 请求与响应报文，经 llm/stream 瀑布把每次抓取归属到发起它的会话。请求面板把报文渲染成带每节点大小的可折叠树——实测一次请求有 98.6% 是单个 973 项的数组——响应面板则把 OpenAI 风格的 SSE chunk 流重新组装成推理、正文、工具调用与用量。在对话栏标签页与本地查看页展示。
 - [wweir/dsh-advisor](https://github.com/wweir/dsh-advisor) — 自动二审：受限子会话用只读工具复核 agent 最近的工作，最多投递一条有证据支撑的提醒，没有问题则保持沉默。
