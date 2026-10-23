@@ -2240,6 +2240,7 @@ dsh plugin --profile web add dshmarket
 - [robbywang25/dsh-llm-mlx](https://github.com/robbywang25/dsh-llm-mlx) — 通过回环 OpenAI-compatible 提供方在 DeepSeek Harness 中使用本机 MLX-LM 或 MLX-VLM 模型，并可选由 DSH 托管模型服务进程。
 - [roclee2692/dsh-model-groups](https://github.com/roclee2692/dsh-model-groups) — DeepSeek Harness 的平台与厂家折叠模型选择器，保留 provider/model 路由与思考等级。
 - [Sakana07X/dsh-plugin-team-subagent-control](https://github.com/Sakana07X/dsh-plugin-team-subagent-control) — 为 DeepSeek Desktop 的 Agent Teams 提供成员级模型与思考强度路由，并允许主理人释放（删除）团队成员的子智能体运行实例。
+- [sanser9/dsh-opencode-connect](https://github.com/sanser9/dsh-opencode-connect) — 把本机已安装的 OpenCode CLI 免费模型接入 DSH：自动拉起或复用本地 opencode serve，读取实时模型目录并每五分钟刷新，再通过仅绑定回环、校验 Host 与 Origin 的 shim 把会话事件流转换为 OpenAI 兼容 SSE。
 - [Saretheya/dsh-lantern](https://github.com/Saretheya/dsh-lantern) — 把本机 DeepSeek Harness 已配置的全部模型，以 OpenAI / Anthropic 兼容接口开放给同一局域网；自带 API Key、按 Key 限流、熔断、模型过滤与用量报告。
 - [Scorp1o117/dsh-reasoning-options](https://github.com/Scorp1o117/dsh-reasoning-options) — 通过 DSH 设置为自定义 pi-ai 模型补充缺失的推理强度声明，启用原生强度选择器，并自动处理后续添加的模型。
 - [Seller-1990/dsh-model-smart-config](https://github.com/Seller-1990/dsh-model-smart-config) — 在 DeepSeek Harness 的模型目录里识别模型 ID，用内置的离线规则表（覆盖 33 家厂商）把该行的上下文窗口、输入模态与思考等级填成可修改的建议。
