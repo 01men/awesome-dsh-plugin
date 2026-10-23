@@ -1759,6 +1759,7 @@ dsh plugin --profile web add dshmarket
 - [cherrchen/dsh-theme-studio](https://github.com/cherrchen/dsh-theme-studio) — 在「设置 → 通用」的官方「外观」与「字号」之间注入「主题」行：8 套内置配色 + 默认项，悬停预览不写盘、点击应用并由 Host 持久化；支持导入/导出自定义 dsh-theme.json 主题文件，另有可选的 Theme Creator skill（/dsh-theme-creator）。
 - [chouxiaohuai/dsh-uiskin-theme](https://github.com/chouxiaohuai/dsh-uiskin-theme) — DeepSeek Harness Web 的海洋幻想玻璃皮肤：清澈海洋背景、玻璃气泡、海洋侧边栏（金色渐变「HARNESS」字标 + 底部卡通角色）、鲸鱼设置按钮、渐变模型文字。
 - [Cicero010/dsh-whale-atelier](https://github.com/Cicero010/dsh-whale-atelier) — DSH Web 界面全屏鲸鱼皮肤包：多层壁纸、金/银描边、蕾丝蝴蝶结、随 Agent 状态反应的角落立绘与环境粒子，并支持可安装的第三方皮肤包格式。
+- [CloudSen/dsh-umbrella-theme](https://github.com/CloudSen/dsh-umbrella-theme) — 生化危机保护伞公司主题，提供明暗双外观、自转保护伞水印与 HUD 装饰。
 - [codeMonkey-Pine/dsh-wallpaper](https://github.com/codeMonkey-Pine/dsh-wallpaper) — Wallpaper Engine 壁纸联动：把本机下载的 WE 壁纸（创意工坊 431960 + 本地 projects）设为 DSH Web GUI 页面背景（图片/视频/网页原样渲染，场景壁纸柔化为静态预览），侧边栏「壁纸设计」面板可调不透明度、作用范围、填充、模糊、暗角、帧率、视差、轮播与主题联动，附 wallpaper_scan/list/set/config 四个 agent 工具。
 - [CoolTea001/dsh-cool-theme](https://github.com/CoolTea001/dsh-cool-theme) — 主题插件 —— 支持深色/浅色外观切换，提供 34 款预设主题，支持创建/分享/导入自定义主题。
 - [CosmerHomura/dsh-yoimiya-theme](https://github.com/CosmerHomura/dsh-yoimiya-theme) — 《原神》宵宫主题：严格核算过对比度的明暗双色板、程序化生成的烟花粒子层，以及一个读取你自己本地文件的播放器——歌曲与封面不上传到任何地方。语法高亮为暖色，标识为自绘金鱼；除壁纸外所有画面都由 CSS 渐变与手写 SVG 生成。
@@ -3884,6 +3885,7 @@ dsh plugin --profile web add dshmarket
 - [wilianyichen/dsh-deepseek-web](https://github.com/wilianyichen/dsh-deepseek-web) — DSH 内只读访问 DeepSeek 网页版会话归档：列会话/下载全文/搜索索引/分享列表，以及把 100 段会话压缩成一页高密度摘要（含活跃度直方图与主题聚类）的 digest 工具。刻意不暴露写操作（网页版有限流）。需另外安装第三方 deepseek-ops Python 客户端（github.com/Panniantong/deepseek-ops，另一位作者）并扫码登录，在插件配置里把 scriptDir 指向它。
 - [windrover/dsh-plugin-update-checker](https://github.com/windrover/dsh-plugin-update-checker) — 在内置插件设置里新增「检查更新」标签页：每个已安装插件一行，显示 npm 最新版本并提供更新按钮。每行还会报告 DSH 运行时兼容性。注册表按 .npmrc 逐级读取（环境变量 → profile → 用户级，取第一个命中），未配置时并发探测镜像与公共源，内部源不会与公共源竞速。版本从哪个注册表读到，就由它安装。
 - [WindyPro-rourou/dsh-logcat](https://github.com/WindyPro-rourou/dsh-logcat) — DSH Web GUI 安卓实机调试工作台：自动附加 logcat 流（级别/关键词过滤、崩溃自动快照），真机屏幕实时投屏与远程点击/滑动/文字操控，内存/进程/frida 逆向工具链，30 个 agent 工具。
+- [wing-tn/astro-ph-researcher](https://github.com/wing-tn/astro-ph-researcher) — 面向天文的 DSH/Codex 研究工作台：NADC 术语、参考文献库、写作、评分、作者确认、推荐书籍、FITS/XML 格式与分析引导。
 - [wingsky-1/dsh-plugin-hub#packages/dsh-mcp-manager](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-mcp-manager) — MCP 服务器管理器（stdio / streamable-http）：按工作目录分项目级/全局两级配置；项目级 MCP 默认经中间层收敛为 4 个原子工具（`middleware: all` 连同全局服务器一并收敛，设置页热切换）；工作空间隔离防串台；配置只存 `${ENV}` 引用、不落盘明文密钥；提供运行时注册接口供其他插件注入 MCP。
 - [wjf1/dsh-portable](https://github.com/wjf1/dsh-portable) — 把整套可用的 DSH 主目录——profile、带 node_modules 的已装插件、技能、hooks 与任务板——打包成单个 .dshpkg，在另一台机器上免联网、免 pnpm 还原；也支持 HTTP 上传与一次性局域网链接。
 - [wjt0321/dsh-git-proxy](https://github.com/wjt0321/dsh-git-proxy) — Web UI 按需 GitHub 代理：一键开关 git/SSH 代理并测试连通性。
