@@ -5260,6 +5260,7 @@ dsh plugin --profile web add dshmarket
 - [cherrchen/dsh-plugin-git](https://github.com/cherrchen/dsh-plugin-git) — Git 服务 + 右侧边栏 UI：Changes 页（暂存/取消暂存、逐文件 diff、提交/修补、推送与 rebase 同步、二次确认的丢弃）、分页 canvas 提交图谱页、Worktrees 页（列出/进入/新建工作树）、输入框旁分支选择器，以及可选的 LLM 提交信息生成。
 - [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) — 会话修改审查插件：追踪会话内 write/edit 工具调用并展示 diff 对比；会话隔离、子代理聚合、SSE 实时推送、角标与颜色自定义。
 - [CoolTea001/dsh-cool-git](https://github.com/CoolTea001/dsh-cool-git) — Git 插件 —— 会话 Tab 栏添加 Git 管理功能，支持 commit | pull | push | branch | diff 等基础功能。
+- [crystal-hang/dsh-branch-flow](https://github.com/crystal-hang/dsh-branch-flow) — 输入框内的分支面板：按规范从 production6 切分支，按 type(scope) 约定校验提交信息，一键提交、推送并合并到 stage。
 - [DamonKoy/dsh-web-ui#dsh-git-graph](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-git-graph) — dsh web GUI 会话头部栏的 Git 分支选择器与提交图。
 - [Dayi-Z/dsh-git-manager](https://github.com/Dayi-Z/dsh-git-manager) — 为 DeepSeek Harness 提供 GitHub 联动的可视化 Git 管理：引导式 GitHub Flow 步骤、带 PR/CI 徽章的提交图谱、一键 GitHub 登录、PR 与 issue 管理，以及面向 Agent 的结构化 Git 工具。2.0.0 起由 gitcompass 改名而来。
 - [dd2673/dsh-wending-git-workbench](https://github.com/dd2673/dsh-wending-git-workbench) — Codex 风格 Git 工作台：工作区级更改、diff、暂存、提交、受守卫的分支操作、提交图谱、fetch、pull --ff-only 与经官方插件 API 的上游推送。
@@ -6645,6 +6646,7 @@ dsh plugin --profile web add dshmarket
 - [gongstudent/dsh-moyu](https://github.com/gongstudent/dsh-moyu) — 在 DeepSeek Harness 界面里悬停刷抖音推荐流：鼠标移入热点开始播放，移出暂停在原处，滚轮切换视频；滚轮做了累加与冷却，一次手势只切一条，播放器隐藏时保持挂载，移回从原处继续。宿主侧完成请求签名与视频流反代，不需要登录任何账号。
 - [good-saltfish/dsh-novel-shelf](https://github.com/good-saltfish/dsh-novel-shelf) — 办公摸鱼专用：在 DSH 右侧栏里放着本地 TXT 小说，边看小说边做项目。自带《十日终焉》《我在精神病院学斩神》《我不是戏神》三本书，全新安装打开即有书架，也可继续添加自己的 TXT。书架面板读取 %APPDATA%\novel-reader 里的书目，按章切分并逐章渲染，可调字号与行距；批注与阅读进度写回与 novel-reader 桌面版相同的文件，两边数据互通。内置五套阅读主题（白天、护眼、米黄、深灰、纯黑），与设置文件同步，界面提供中英双语。读取 novel-reader 的数据目录（Windows 下为 %APPDATA%\novel-reader）；macOS 与 Linux 同样支持。
 - [guihui2538/Every-token-you-spend-comes-back-as-a-waifu.](https://github.com/guihui2538/Every-token-you-spend-comes-back-as-a-waifu.) — 把 DSH 的 token 消耗变成抽卡小游戏：喂代码怪、攒代币、抽 14 位 AI 娘（Kimi娘/GLM娘/Gemini娘/Claude娘…），圣遗物强化、双件合成与每日签到弹窗，组建小丑牌式战斗阵容，十连出金自动生成分享卡。
+- [Hamster1214/dsh-pet-lan](https://github.com/Hamster1214/dsh-pet-lan) — 给 dsh-pet 桌宠加局域网联机：同一网络下能看到同事的桌宠，可以打招呼、自由拖拽桌面窗口；可选补丁同步实时动作、气泡和表情包。需要 dsh-pet 0.3.7。
 - [HarcoChen/dsh-ArkStronghold](https://github.com/HarcoChen/dsh-ArkStronghold) — 通过游戏站原生 WebSocket 连接进行 Stronghold Protocol 单人对局的 DSH 工具，支持紧凑局面查看、明确动作执行和公开卡牌查询。
 - [hasan-aghayev/dsh-pet-companion](https://github.com/hasan-aghayev/dsh-pet-companion) — 兼容 WSLg 的 DSH 桌面宠物会根据代理活动切换动画，支持向当前会话发送消息，并可加载 Hatch-Pet v2 图集或透明肖像。
 - [hellodigua/dsh-emoji](https://github.com/hellodigua/dsh-emoji) — 为 AI 回复自动添加表情。
