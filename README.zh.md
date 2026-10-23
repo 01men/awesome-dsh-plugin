@@ -2477,6 +2477,7 @@ dsh plugin --profile web add dshmarket
 - [CaiBai-Fish/dsh-continuechat](https://github.com/CaiBai-Fish/dsh-continuechat) — 从断点继续对话：/continue 命令与消息操作行按钮让模型接着被打断的回答往下写，覆盖手动停止、模型请求失败、输出 token 上限截断与崩溃恢复四种情形，续写提示在被回答后从对话框中回收。
 - [caoqinnan-web/organize-workspace-sessions](https://github.com/caoqinnan-web/organize-workspace-sessions) — 整理 DeepSeek Harness 工作区会话，按 类别｜主题 重命名并给出归档、改名与待判断建议。
 - [Castor6/dsh-auto-workspace](https://github.com/Castor6/dsh-auto-workspace) — 为 dsh 提供无项目聊天：不选工作区创建的会话会获得自己的目录（~/Documents/DSH/<日期>/chat-NN），重新打开会话时复用，并留在「未分组」而不会变成侧栏项目；新建会话的 Hero 上新增悬浮清除徽标与「不在工作区中工作」一行，另有一个仅存在于浏览器端的哨兵工作区，让该 Hero 及其输入框保持可用。
+- [cckbc/dsh-session-recycle-bin](https://github.com/cckbc/dsh-session-recycle-bin) — DeepSeek Harness 会话回收站：从会话行菜单删除（或从侧栏标题栏批量移入）后，会话进入回收站，默认保留 15 天（设置里可选 7 / 15 / 30 天），到期条目自动清除；回收站表格显示每条还剩几天，可还原回原工作区，也可单条彻底删除或清空。
 - [Cerbur/clutch-dsh#clutch-dsh-title](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-title) — 基于语义 prompt 字段与自定义模板的 DeepSeek Harness 确定性会话标题生成插件。
 - [CH4ACKO3/bites-the-dsh](https://github.com/CH4ACKO3/bites-the-dsh) — 为 DSH 原生会话加入完全只读、可脚本控制的历史回放，支持模拟用户输入、正放与倒放、逐事件移动、变速、空闲间隔压缩，以及按事件、轮次或记录时间直接跳转。
 - [Chael-Chael/dsh-reference-anything](https://github.com/Chael-Chael/dsh-reference-anything) — 从 DSH 统一的 @ 菜单中引用工作区文件、DSH 会话，以及 ChatGPT、Claude、Gemini、DeepSeek、Grok 和 Kimi 的历史对话。
@@ -5623,7 +5624,7 @@ dsh plugin --profile web add dshmarket
 - [yeruizhi/dsh-lark-meeting-notifier](https://github.com/yeruizhi/dsh-lark-meeting-notifier) — 飞书会议提醒：一个只有副作用的 dsh-plugin，在你跟 AI 聊得神魂颠倒时提醒你「不得不去跟碳基生命开会了」。
 - [YiMlT/dsh-notify-yimit](https://github.com/YiMlT/dsh-notify-yimit) — DeepSeek Harness事件的Windows系统和自定义桌面通知：任务已完成、失败、正在运行、等待批准和等待答复。单击以跳转到会话。
 - [yjrqz777/dsh-qqbot-lite](https://github.com/yjrqz777/dsh-qqbot-lite) — 将 QQ 私聊和群聊接入 DeepSeek Harness Desktop，支持按会话切换人格、交互式提问和可选图片理解。
-- [YOYOLnFu/dsh-bili-pond](https://github.com/YOYOLnFu/dsh-bili-pond) — 按排班搜 B站，读每一条的字幕原文（没有字幕就本地转写），按时长过滤，写一份 markdown 日报，并对值得的几条发一条评论 @ 你。五级闸门排班（每轮/每天配额、每日转写熔断、可选的谷时窗口），模型线路在设置页里选。评论与私信默认关；私信只能发给设置里指定的那一个 UID。需 Node.js 22+、DSH >=0.1.7-rc.1、B 站登录态、在设置里配置模型线路，首次转写会创建 Python 环境。
+- [YOYOLnFu/dsh-bili-pond](https://github.com/YOYOLnFu/dsh-bili-pond) — 让蓝色大肥鱼替你刷 B 站：帮你评论，把发现的有趣内容私信给你，还会写下日记；它也有记忆，能长期总结。视频按你的口味筛选并生成 Markdown 日报，也能守着评论区替你回话。开启「圈地自萌」后，它只回视频 UP 主本人主动邀请的楼中楼，普通观众喊话不算，绝不自己起新楼；评论、私信、自动运行和守护默认关闭。
 - [YoyuDev/dsh-ping](https://github.com/YoyuDev/dsh-ping) — Agent 需要你时响铃并弹出桌面通知：阶段完成、请求批准、等待输入、任务完成、出错，五种场景各配不同提示音。
 - [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) — 任务完成时弹出 Windows 原生系统通知（通知中心横幅）：目标完成或 Agent 结束一轮。
 - [YUsaltyfish/dsh-notification-sound](https://github.com/YUsaltyfish/dsh-notification-sound) — 弹出选项卡提问时、请求工具权限时、一轮对话结束时，各播放一次提示音；支持自定义音频文件夹；另附 fish_beep 工具，可随时手动响一声。
