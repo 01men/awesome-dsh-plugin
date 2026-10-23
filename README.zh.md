@@ -2028,6 +2028,7 @@ dsh plugin --profile web add dshmarket
 - [antonio-mastropaolo/dsh-anthropic-membership](https://github.com/antonio-mastropaolo/dsh-anthropic-membership) — 用 Claude Pro/Max 会员登录 DeepSeek Harness（无需 API key），将 Anthropic 请求图片长边压到 2000px，精简 /compact 摘要请求，并显示 5 小时/每周套餐用量百分比与 DSH 消息数。
 - [anye-99/dsh-codearts-auth](https://github.com/anye-99/dsh-codearts-auth) — 华为云 CodeArts 浏览器登录，并把 CodeBuddy、WorkBuddy、LobsterAI、Qoder（国际版与中国版）、TRAE、Cline、Loomy、Raccoon Work、MiniMax Code、TeleAgent、ZCode、Step Code、Antigravity 注册为 LLM 提供商；各 provider 独立账号池，其中多家在同一面板内提供额度余额与每日签到。
 - [anze225-max/dsh-mimo-connect](https://github.com/anze225-max/dsh-mimo-connect) — 将 mimo桌面端包含的模型（内测有免费额度）自动接入 DeepSeek Harness，在 DSH 对话窗口里零配置使用。
+- [apolenkov/dsh-provider-proxy](https://github.com/apolenkov/dsh-provider-proxy) — 按提供商主机或模型 ID 将模型出站流量分流到指定代理、直连或继承进程策略，可在 Plugins 设置页配置。
 - [ArcaneOrion/dsh-model-channel-manager](https://github.com/ArcaneOrion/dsh-model-channel-manager) — 模型渠道管理：多个供应商/模型候选共享一条虚拟路由（roundrobin/组），带失败转移、重试、超时与冷却；设置页签可编辑供应商与轮询组、跑测速与单模型真实请求测试，健康面板聚合七天延迟、失败与上游 token 用量（输入、输出、缓存、推理）。
 - [architect-xyz/liquid-dsh-plugin](https://github.com/architect-xyz/liquid-dsh-plugin) — 将 Liquid Inference 拍卖式推理交易所接入为模型路由，提供 liquid.auto 及其排序变体，并附带四个工具，用于读取报价、市场、路由器与任务收据。需 Liquid Inference API Key（LIQUID_API_KEY，spend 权限）。
 - [Asheblog/dsh-ollama-cloud](https://github.com/Asheblog/dsh-ollama-cloud) — Ollama Cloud 供应商：安装即配好路由，按 Ollama 模型自身元数据公布每个模型的思维链档位（供 composer 的推理强度选择），并在 Models 页与侧栏显示账号用量、提供 API Key 输入。
@@ -6560,6 +6561,7 @@ dsh plugin --profile web add dshmarket
 - [MS666666/dsh-archive-manager](https://github.com/MS666666/dsh-archive-manager) — 归档管理：在设置页列出已归档会话，并可真正删除，连同会话日志、归档标记与投影缓存一并清理。
 - [nanshan1995/DSH-Plugin-Market](https://github.com/nanshan1995/DSH-Plugin-Market) — 另一款 DSH 插件市场：精选目录 + GitHub 实时浏览、中英互通搜索、安装前 fail-closed 静态安全审计（拦截安装钩子），每个插件可直接查看 README 且乱码自动修复。
 - [nonentity303/dsh-plugin-manager](https://github.com/nonentity303/dsh-plugin-manager) — 插件管理器与救砖中心：按必要程度分组启停、多更新源（npm / 插件超市 / GitHub）、浏览器下载优先与目录自动安装、P2P 兜底、启动前自检与坏包隔离。
+- [nuolingmo/dsh-market-notes](https://github.com/nuolingmo/dsh-market-notes) — 给 dshmarket 里还没有备注的插件自动写一句中文说明，显示在市场卡片上；已有备注不会动，使用时需要先装好 dshmarket。
 - [open-dshai/dsh-employee](https://github.com/open-dshai/dsh-employee) — 数字员工，整合专家、技能、连接器三大目录，支持浏览、收藏、召唤与发布，且无需改动宿主代码。
 - [Oscar-Williams/dsh-deepatlas](https://github.com/Oscar-Williams/dsh-deepatlas) — 任务感知的 DSH 插件导航：聚合 GitHub topic 与社区清单建立本地索引，按 28 类中英能力检索；提供 commit 级静态风险审计、用户确认后的锁定版本安装、组合验证与恢复流程。
 - [oxlyn/dsh-plugin-mgr](https://github.com/oxlyn/dsh-plugin-mgr) — 设置页卡片式插件管理：经 profile 补丁层启停插件（跨重启保留）、安装来源详情、npm 更新检查与一键更新、卸载、搜索与加载失败标识。
