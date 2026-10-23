@@ -915,6 +915,7 @@ dsh plugin --profile web add dshmarket
 - [pure-craft/dsh-actions](https://github.com/pure-craft/dsh-actions) — 人与 Agent 共用的确定性项目任务：一份 actions.json，右侧栏运行面板与 Agent 工具双入口。
 - [pure-craft/dsh-capability-panel](https://github.com/pure-craft/dsh-capability-panel) — 一站式管理 MCP 服务器、技能与工具——真实的在上下文状态(已加载/已截断/已挤出),并按会话开关。
 - [pyf2818/dsh-bili-widget](https://github.com/pyf2818/dsh-bili-widget) — DSH 里的 B站悬浮看片小窗：置顶窗口，含推荐/热门/排行/精选/关注/AI 频道与搜索，自动连播、迷你专注模式、历史持久化与最小化悬浮球。
+- [python3603/dsh-weather-panel](https://github.com/python3603/dsh-weather-panel) — 侧边栏天气面板：按网络自动定位，提供当前天气、5 天与 24 小时预报、逐小时降水、中央气象台预警与台风路径。
 - [qcsjjjjj/dsh-hero-rightbar](https://github.com/qcsjjjjj/dsh-hero-rightbar) — 在没有对话的页面上补回右侧栏的展开入口，位置与外观对齐产品自带控件。
 - [qcsjjjjj/dsh-planner](https://github.com/qcsjjjjj/dsh-planner) — 在中间栏加一个“计划”标签（对话、轨迹的右侧）：周一起始的月历用于选日期，下方是当天的计划卡片，含标题、备注、起止时间、三档重要度与完成勾选框。计划可按每天、每周或工作日重复并带可选截止日期；编辑与删除会询问“仅此一次”还是“整个系列”；完成状态按天独立；一键躺平只跳过重复系列的当天。五个模型工具让 Agent 能在对话里读取、写入、删除、清空与撤销计划。
 - [qgd1850890306-rgb/dsh-todo-checklist](https://github.com/qgd1850890306-rgb/dsh-todo-checklist) — 为 DeepSeek Harness 提供待办清单：把划选的文字存成待办、从对话里捕获待办、在左侧栏面板里查看与处理、到期用应用内弹窗或机器人推送提醒，还能把全部记录导出成 HTML、Markdown、Excel、CSV 或 JSON。
