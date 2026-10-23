@@ -2221,7 +2221,6 @@ dsh plugin --profile web add dshmarket
 - [Mu-scorpio/dsh-reasoning-effort](https://github.com/Mu-scorpio/dsh-reasoning-effort) — 为 DeepSeek Harness 配置 Provider 与模型的推理强度映射，并提供按 Provider 分组的模型选择器和输入框滑块。
 - [Mutx163/dsh-model-memory](https://github.com/Mutx163/dsh-model-memory) — 为自定义 API 模型提供推理强度分级管理与跨会话偏好记忆：在「设置 → 模型」中内联切换 low/medium/high/max，配置写入为原子操作。
 - [mzzsfy/dsh-plugin#dsh-llm-pi-gateway](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-llm-pi-gateway) — LLM 网关会话粘性路由：把会话 sessionId 注入发往 NewApi 类网关的每个请求，供网关做请求亲和以提升 prompt cache 命中，装上即接管官方 pi-ai 路由，卸载即还原。
-- [mzzsfy/dsh-plugin#dsh-model-capability-editor](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-model-capability-editor) — 模型能力编辑器：在官方模型页行内可视化编辑各模型的思考档位与图片输入（多模态）声明，整组写回 settings.yaml，锚点失效时浮动入口兜底。
 - [Neptune810/dsh-model-router](https://github.com/Neptune810/dsh-model-router) — 维护一个模型池，把每个 agent 步骤路由到池内模型并设置其思考等级——全部在输入栏点选配置，不需要写 JSON。路由面板接管输入栏的模型位置，同一个控件里既有本会话的模型与思考等级，也有路由自身的设置。三种授权范围（模型 / 思考 / 全部）：手动选择只在所属范围内生效；「思考」范围下路由只作用于你选定的那一个模型。另有按任务类型给模型加权的预设、带图任务的视觉分流、会话信号（当前 todo / 上下文压力 / token 预算 / 子 agent 深度），以及可选的语义任务分类。思考等级保持常开，因为 DeepSeek 会拒绝思考关闭时产生的工具调用。
 - [nickhelion/dsh-plugins#qwen-token-plan-cn-responses](https://github.com/nickhelion/dsh-plugins/tree/main/packages/qwen-token-plan-cn-responses) — 面向 DeepSeek Harness 的千问 Token Plan 个人版 Responses API 提供方，保留 Qwen 服务端内置工具与 DSH 本地函数工具，多轮文本/推理/工具调用历史与图片附件均被支持，官方模型目录按 npm 版本冻结快照发布。
 - [NingYuanLee/dsh-grok-byapi](https://github.com/NingYuanLee/dsh-grok-byapi) — 在 DeepSeek Harness 中接入 Grok：模型发现、图片与视频生成、文字转语音工具，以及可重启恢复的本地媒体任务。
@@ -2765,7 +2764,7 @@ dsh plugin --profile web add dshmarket
 - [seeingrain/dsh-session-todos](https://github.com/seeingrain/dsh-session-todos) — 会话内悬浮待办面板，支持服务器端跨设备持久化及会话列表未完成任务图标。
 - [Seetraum/harness-session-delete](https://github.com/Seetraum/harness-session-delete) — DSH 会话回收站：侧边栏删除图标、多选还原与彻底删除、活跃会话保护。
 - [Semidia/dsh-session-manager](https://github.com/Semidia/dsh-session-manager) — 会话行右键菜单与侧边栏会话管理：置顶、重命名、归档、分叉、导出、复制工作目录/会话 ID/深链，在资源管理器或新窗口打开。
-- [sensen-jo/dsh-conversation-search](https://github.com/sensen-jo/dsh-conversation-search) — 仅支持 DSH 0.2.0-rc.2 的会话原文检索：在当前会话或同目录工作区搜索用户与助手原文，查看来源坐标和上下文。
+- [sensen-jo/dsh-conversation-search](https://github.com/sensen-jo/dsh-conversation-search) — 0.2.0-beta.2 仅支持 DSH 0.2.1-rc.2，面向宿主所有者使用。在当前会话或同目录工作区搜索用户与助手原文，查看来源坐标和上下文；不支持非所有者身份的会话级授权。
 - [sensen-jo/dsh-plugin-goal-map](https://github.com/sensen-jo/dsh-plugin-goal-map) — 目标进展图以只读流程图展示目标到计划的进展路线、会话思维导图与步骤列表，按已报告计划计算进度，不启动任务或模型调用。仅支持 DSH Web 0.2.0-rc.2、Node.js >=24。
 - [senyayume/dsh-image-once](https://github.com/senyayume/dsh-image-once) — 同一张图片只在它第一次出现的那一次请求里以 base64 内联；之后的每次请求都携带被标记为 offloaded 的同一个块，由 DSH 自带的图片 offload 投影渲染成带本地只读路径的占位文字。记账键是会话 id、消息 id、内容树路径与 attachment id 的组合，且请求产生第一个 chunk 之后才记账，因此重试不会算作已发送。带 purpose 的辅助请求既不改写也不记账；事后再对同一文件调用 read_image 算一次新的 occurrence 并重新内联一次；插件只改写该次请求的副本，不写回会话。
 - [Sev7eEn7/sieve#dsh-sieve](https://github.com/Sev7eEn7/sieve/tree/main/packages/dsh-sieve) — 为 DSH 0.2.1-alpha.1 过滤工具输出、裁剪陈旧上下文并按需披露技能。
