@@ -180,6 +180,7 @@ dsh plugin --profile web add dshmarket
 - [afawfawffaf/dsh-plugin-lx-music](https://github.com/afawfawffaf/dsh-plugin-lx-music) — 把落雪音乐（LX Music）正在播放的歌词贴在 DSH 对话页右侧，配上上一首 / 播放暂停 / 下一首。可滚动歌词窗看前后几句、双击某句从那里开始唱；播放器没开时点播放会自动把它从系统托盘拉起来。仅 Windows，需要本机装好落雪并打开它的开放 API。
 - [afoxsss/dsh-conversation-map](https://github.com/afoxsss/dsh-conversation-map) — 停靠在 dsh Web 对话区右缘的会话代码地图：色块/缩略图双模式、拖动调宽（10–320px）、悬停放大镜预览、点击跳转与拖动滚动（带实时视口指示条）、可收起为 4px 细条。
 - [ags-neto/dsh-status-telemetry](https://github.com/ags-neto/dsh-status-telemetry) — 在输入框停靠区加一个会话状态胶囊，点开是一块面板，显示回合、token、性能与上下文读数。
+- [AhaCrazy/dsh-nav-history](https://github.com/AhaCrazy/dsh-nav-history) — 为 DeepSeek Harness Web UI 提供全局后退/前进：记录访问过的会话与整页面板，底部历史条可配置显示 1-7 个位置并可直接点击跳转，支持浏览器式快捷键与鼠标侧键。
 - [AhaCrazy/dsh-stock-quotes](https://github.com/AhaCrazy/dsh-stock-quotes) — A 股 / 港股 / 美股与板块自选面板，带分时迷你走势图，并向 agent 提供 stock_quote 工具。
 - [ai-eks/dsh-docking-layout](https://github.com/ai-eks/dsh-docking-layout) — 可停靠的 DSH Web UI 布局插件，将对话组织为标签页，并支持拖拽拆分对话分组。
 - [Aicksion/dsh-clean-desktop-shell-pro](https://github.com/Aicksion/dsh-clean-desktop-shell-pro) — DSH 桌面壳增强版：启动即自动拉起后端（不弹浏览器）、退出时询问是否关闭后端、后端与窗口并行启动加速冷启动。基于 dsh-clean-desktop-shell 的 fork。
@@ -939,7 +940,7 @@ dsh plugin --profile web add dshmarket
 - [qgynisc/dsh-inline-pastes](https://github.com/qgynisc/dsh-inline-pastes) — 在 DeepSeek Harness 输入框里粘贴图片，即在文字中插入 image-1.png 编号胶囊；图片仍走官方附件管线随消息发出。鼠标悬浮名字弹出缩略图预览卡，dock 与已发送气泡的缩略图带序号角标，发送前还会自检「文字里的名字」与「本条消息的图片」是否对得上。
 - [QianLuo-Ly/dsh-weather](https://github.com/QianLuo-Ly/dsh-weather) — DSH Web 顶部居中的天气栏：定位 + 当前天气 + 未来 12 小时/7 天预报与恶劣天气提醒，数据来自 Open-Meteo（免费、无需 API key）。
 - [qinpeizhan77/deepseek-harness-novel-studio](https://github.com/qinpeizhan77/deepseek-harness-novel-studio) — 本地优先的小说创作工作台，将大纲、章节、人物、时间线、写作规则与一致性检查联动到对话。
-- [QIRSHENG/dsh-tray-restart](https://github.com/QIRSHENG/dsh-tray-restart) — 给官方桌面端的 Windows 系统托盘加「重启应用与 Host」和「刷新页面」两项（原位修改 app.asar），并在桌面端每次更新覆盖后自动重打补丁。仅 Windows 官方桌面端 0.2.x。
+- [QIRSHENG/dsh-tray-restart](https://github.com/QIRSHENG/dsh-tray-restart) — 给官方桌面端的 Windows 系统托盘加「重启应用与 Host」「刷新页面」和「彻底退出 Harness」三项（原位修改 app.asar），并在桌面端每次更新覆盖后自动重打补丁。
 - [qiweiii/dsh-brand-studio](https://github.com/qiweiii/dsh-brand-studio) — DSH 共享网页界面的自定义品牌：在「设置 → 品牌」中修改名称、徽章，选择本地 logo 和字标图片并调整大小与圆角、实时预览、可选自定义页面标题、一键恢复官方外观。
 - [qjcnmd/dsh-reasoning-slider](https://github.com/qjcnmd/dsh-reasoning-slider) — Codex 风格推理等级滑块，内嵌于模型选择器，拖动切换推理档位。
 - [Quinn2006/dsh-guise](https://github.com/Quinn2006/dsh-guise) — 给 DSH 的 agent 穿上主人钦定的人设：多套人格随心换，全局或按工作区生效，内置人设库、总开关、余额预警与没电模式（80 句随机话术）。文件即配置、保存即生效、零依赖。
