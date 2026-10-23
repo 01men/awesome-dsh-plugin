@@ -1,5 +1,5 @@
-url: https://github.com/lphehe-bot/dsh-composer-assist
-name: lphehe-bot/dsh-composer-assist
+url: https://github.com/Lphehe/dsh-composer-assist
+name: Lphehe/dsh-composer-assist
 category: ui
 description:
   en: "Predicts your next message in the DSH composer, completes a draft as you type, and rewrites a prompt for clarity on demand. Suggestions stay with their conversation across session switches, exactly one request is made per finished turn, and nothing is written to the session log."
