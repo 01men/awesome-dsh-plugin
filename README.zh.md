@@ -2308,6 +2308,7 @@ dsh plugin --profile web add dshmarket
 - [xiamubumu/dsh-aux-degrade](https://github.com/xiamubumu/dsh-aux-degrade) — 辅助调用降级：压缩摘要与会话标题不再被高思考档烧光输出预算，主循环完全不受影响。
 - [XiangSu-ce/dsh-plugin-freecodego#bundle-latest](https://github.com/XiangSu-ce/dsh-plugin-freecodego/tree/main/plugin/packages/freecodego/bundle-latest) — 面向 DeepSeek Harness 的 FreeCodeGo：DeepSeek、Codex、Claude 三套引擎共用同一条会话与工具链，并为以下模型提供 0 token 免费使用渠道：deepseek-v4.1-flash、deepseek-v4-pro、deepseek-v4-flash-free、glm-5.3-flash、grok-4.6、kimi-k3、nemotron-3-ultra-free、muse-spark-1.3、Qwen 3.8 Flash、mimo-v2.6-flash-free，另有零注册的私钥网关。
 - [xiaobbl/dsh-opencode-go-model-list](https://github.com/xiaobbl/dsh-opencode-go-model-list) — 让 DSH 自带的 opencode-go 供应商跟随 opencode Go 套餐的实时模型列表，opencode 上架新模型后无需改配置即可使用。
+- [xiaohai-78/dsh-request-params](https://github.com/xiaohai-78/dsh-request-params) — 给 dsh 发出的模型请求加上自己的参数：OpenRouter 供应商路由和备用模型、思考强度、采样参数与自定义请求体字段、请求头，OpenRouter 和其他网关都能用。参数按 dsh 已配置的渠道管理；实时预览显示每个请求会多出什么，请求记录显示实际发出了什么、网关回了什么。
 - [xiaomao49/dsh-model-probe](https://github.com/xiaomao49/dsh-model-probe) — 直接实测 llm-pi-ai 端点真正接受的能力——从它自己的模型列表取上下文窗口，从它自己的报错反推输出上限与推理档位，用生成的测试图验证图像支持——再报告与证据不符的声明值，确认后才改写。
 - [xiaozhe7772222/dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) — 0元接入6个免费大模型，免注册免充值，内置6个免费模型，多Key轮换与限流退避。
 - [xiean676/dsh-freemodels-opencode](https://github.com/xiean676/dsh-freemodels-opencode) — 接入 OpenCode Zen 匿名免费车道：可刷新上游模型清单、勾选由 provider opencode 暴露的模型、逐个发真实请求得出七档结论，并用人工 S/A/B/C 评级让设置卡片与模型选择器按能力同序。
