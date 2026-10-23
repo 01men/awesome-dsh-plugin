@@ -214,6 +214,7 @@ dsh plugin --profile web add dshmarket
 - [an-an-618/dsh-hook-followup](https://github.com/an-an-618/dsh-hook-followup) — 在每条 DSH 回答下方加一行轻量 follow：一句锚定正文的追问 + 1–3 条用户口吻快捷回复，让下一轮对话一键继续；支持 always / balanced / conservative 策略，并可跳过拒绝回答与情绪场景。
 - [an-an-618/dsh-intelligent-ui](https://github.com/an-an-618/dsh-intelligent-ui) — DSH 的声明式交互卡片：模型写 spec，Host 编译成 JSON program，客户端渲染表单、表格、图表和列表，本地交互、显式提交。
 - [Andor-Z/dsh-turn-outline](https://github.com/Andor-Z/dsh-turn-outline) — 在侧边栏按用户轮次折叠会话（输入、工具步骤、输出），一键跳回对话原位。
+- [androidly/dsh-restart-control](https://github.com/androidly/dsh-restart-control) — 在 DSH Web 侧边栏底部添加重启控件：宿主经自身的优雅退出通道退出，由检测到的进程守护（systemd、Kubernetes 或 Docker）拉起新进程，没有守护时插件自行拉起；右下角提示条轮询宿主 pid，直到新进程应答。
 - [anitman/dsh-plugin-video-player](https://github.com/anitman/dsh-plugin-video-player) — 侧栏浮动窗口里的抖音式刷视频：本地/SMB NAS 文件夹上下滑动，或粘贴在线视频地址（yt-dlp 解析，支持 bilibili/YouTube 与 cookies.txt 登录态）；窗口随视频宽高比自适应，支持全屏、拖动缩放、Range 流式播放，并提供 agent 视频推送队列端点。
 - [ankesu/dsh-live2d-pet](https://github.com/ankesu/dsh-live2d-pet) — DSH 的 Live2D 桌宠：悬浮的 Cubism 模型，表情随状态变化并跟随鼠标；尺寸与位置由插件配置驱动；内置官方 Haru 示例模型（© Live2D Inc.）。
 - [Anna-la/dsh-simplify](https://github.com/Anna-la/dsh-simplify) — Web 界面清理：清理模式下悬浮元素右键即可移除，刷新后依然生效，设置页中可原样恢复。
@@ -6518,6 +6519,7 @@ dsh plugin --profile web add dshmarket
 - [zhu1090093659/dsh-web#packages/dsh-plugin-manager](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-plugin-manager) — 设置 → 插件 分区里的插件管理 Tab：从 npm/git 安装带进度、下次启动生效的启停开关、安装冲突对账可撤销、失败一键转交修复会话。
 - [zirscard/dsh-wind-finance](https://github.com/zirscard/dsh-wind-finance) — 为 DeepSeek Harness 注册一个 `wind_finance` 工具：把金融问题路由到正确的 Wind 数据域，经 Wind meta-router MCP 端点（或批量模式下的分域 CLI）执行，并用按日回执避免同一份数据在共享日额度下被重复取数。认证、额度与网络失败如实返回错误码，不换数据源兜底。凭据只从环境变量读取，不随插件分发。
 - [zoahdev/dsh-subscribe#plugin](https://github.com/zoahdev/dsh-subscribe/tree/main/plugin) — Steam 风格的插件商店：在 DSH 里浏览插件注册表，一键安装、卸载与更新，另有零依赖 CLI 与可供 agent 调用的市场工具。
+- [zuwenyin/dsh-plugin-upgrader](https://github.com/zuwenyin/dsh-plugin-upgrader) — 在「插件」页新增版本页：一键升级全部可升级插件或勾选的子集，查看历史版本并回滚到任意已发布版本，并为每个插件和每个版本提供 GitHub 链接。
 
 ### 🎮 娱乐
 
