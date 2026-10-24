@@ -2007,6 +2007,7 @@ dsh plugin --profile web add dshmarket
 - [ymh0000123/dsh-theme-endfield](https://github.com/ymh0000123/dsh-theme-endfield) — 《明日方舟：终末地》工业编辑风主题：奶油纸底、墨黑文字、全局直角，两套强调色配色（谷地黄信号黄 / 武陵青青碧色）可在设置切换，另有可选的等高线地形背景、ENDFIELD 水印与启动加载屏。
 - [yq1930/dsh-skin-asuka-p01](https://github.com/yq1930/dsh-skin-asuka-p01) — 非官方明日香主题皮肤：双人物精绘立绘、城市穹顶日夜背景，含表现方式、穹顶背景开关、立绘位置、背景强度和人物大小五项设置。
 - [YRN-playmaker/dsh-wallpaper_share](https://github.com/YRN-playmaker/dsh-wallpaper_share) — 把 Wallpaper Engine 当前应用的壁纸经本地桥接同步为 DSH Web 界面背景：预览/捕获/完整三档渲染、显示器锁定、本地与市场壁纸库面板、专注透镜与眼动追踪、沉浸模式，以及支持直链与网盘分享链接安装、一键启动的 Windows 应用启动器。
+- [yrsxy/dsh-warm-theme](https://github.com/yrsxy/dsh-warm-theme) — 五套低蓝光暖色配色，整体重着色 DSH 界面（含侧栏、浮层与阴影），零布局改动，卸载即还原。
 - [yryd/dafy-whale-theme](https://github.com/yryd/dafy-whale-theme) — 海洋蓝主题：游动鱼群、上升气泡、输入框上方的「每日鱼语」，以及左上角品牌区替换；「设置 → 海洋主题」提供 7 组 32 项可调（品牌文字与字号、徽章、主色、水印、鱼群、语录、整体缩放），改动即时生效无需刷新，并带二次确认的一键恢复默认。
 - [YSDLNGF/dsh-acrylic-light](https://github.com/YSDLNGF/dsh-acrylic-light) — 为 DeepSeek Harness 桌面版提供 Windows 亚克力窗口材质与分层雾面面板，输入栏为液态玻璃，不透明度可在全透明到全不透明之间连续调节。
 - [yu502950715yang/dsh-use-wallpaper](https://github.com/yu502950715yang/dsh-use-wallpaper) — 把本机 Wallpaper Engine 壁纸放到 dsh Web 界面背后：scene 壁纸在浏览器内实时渲染（three.js 播放器 + Rust/WASM CPU 粒子模拟），视频与 web 壁纸原样播放，其余回退 preview 图，不需要安装 Wallpaper Engine 运行时。壁纸库从 Steam 创意工坊目录（431960）自动探测或手动指定，设置面板可选壁纸、配壁纸库与引擎目录、调光晕与暂停/画质。
@@ -2380,7 +2381,6 @@ dsh plugin --profile web add dshmarket
 - [Yunado/dsh-qwen38-local-qol](https://github.com/Yunado/dsh-qwen38-local-qol) — 本地 Qwen3.8 线（llama.cpp 或 NInfer）的逐请求 thinking 预算、压缩后端与设置 tab。
 - [YV919/dmxapi-dsh](https://github.com/YV919/dmxapi-dsh) — 配置 DMXAPI Chat、Responses、Anthropic 和自定义服务商，并直接编辑已有预设服务商的模型。
 - [ZChenW/dsh-codex-switch](https://github.com/ZChenW/dsh-codex-switch) — 通过 OAuth 连接 ChatGPT 账号，支持手动或自动切换，并为 DeepSeek Harness 添加带用量限额信息的 Codex 模型。
-- [ZekaiShi/evo-subagent](https://github.com/ZekaiShi/evo-subagent) — 智能子代理路由与进化：按角色绑定 DSH 已注册的 provider/model；配合 Codex、Claude Code 等 provider 插件，可路由任意已注册模型，并保存工作区经验。
 - [zeng6125-rgb/dsh-llm-retry-settings](https://github.com/zeng6125-rgb/dsh-llm-retry-settings) — LLM 自动重试设置卡片：在设置页实时调整重试次数、退避与抖动，并可勾选额外可重试错误码（retryableCodes）—— 默认补入 INVALID_REQUEST，OpenAI thinking 模式 HTTP 400 reasoning_text 报错开箱即自动重试。
 - [zgrajdnhj7806-svg/dsh-deepseek-web](https://github.com/zgrajdnhj7806-svg/dsh-deepseek-web) — 把你自己的 chat.deepseek.com 账号当作第二个模型接入 DSH：提问、按文件行区间分析、查看登录状态，附带运行时技能与设置页登录面板。
 - [zhang-tod/dsh-codebuddy](https://github.com/zhang-tod/dsh-codebuddy) — 非官方 provider 插件：把腾讯 CodeBuddy 开放平台的模型接入 DeepSeek Harness，支持自动探测模型，并在设置页填写 API 密钥。
@@ -2453,6 +2453,7 @@ dsh plugin --profile web add dshmarket
 - [YUAN-OVO66/dsh-plugin-persona](https://github.com/YUAN-OVO66/dsh-plugin-persona) — DSH 人格管理器：人格库存于一份 JSON，可按会话绑定人设、可为未绑定的会话指定默认人格，切换可选立即生效或下个会话生效；Web 端提供「模型人格」设置页与输入框旁的人格切换条，模型侧另有 persona_list / persona_switch / persona_create 三个工具可自行列出、切换与创建人格。
 - [yupaoa/dsh-persona-switcher](https://github.com/yupaoa/dsh-persona-switcher) — 用 `/role <id>` 就地切换当前会话的人设与说话风格，以独立的 prompt section 追加在部署人设之后（不替换宿主身份行），不动工具与技能；角色是角色库里的 `ROLE.md` 纯文本文件，切换后会在会话里声明一次。
 - [Yuuyuko-uu/dsh-feiyu-mood](https://github.com/Yuuyuko-uu/dsh-feiyu-mood) — 给 AI 伙伴一个每轮判定、以一小段上下文提示的心情，面板里能看心情值、情绪维度与时间线。
+- [ZekaiShi/dsh-evo-subagent](https://github.com/ZekaiShi/dsh-evo-subagent) — 为工作区与对话配置独立人格，支持自适应风格、经确认的通用交流偏好和子代理模型路由；可配合其他 provider 插件使用 Codex、Claude Code 等已注册模型。
 - [ztl0001/dsh-custom-instructions](https://github.com/ztl0001/dsh-custom-instructions) — 所有工作区共用的长期系统提示词：在 DSH 自己的设置面板里新增「自定义指令」页，文本会加入每个会话（含子代理）的系统提示词，并保存在 profile 而不是任何项目里。
 
 ### 💬 会话与消息
