@@ -2722,6 +2722,7 @@ dsh plugin --profile web add dshmarket
 - [mienfong/dsh-session-mgr](https://github.com/mienfong/dsh-session-mgr) — 在 DeepSeek Harness 网页界面中跨工作区移动、归档、恢复、可携式备份/导出与导入会话。
 - [mikugui/dsh-session-eater](https://github.com/mikugui/dsh-session-eater) — DSH 侧边栏的会话清理：把会话行拖到余额挂件的小胖鱼嘴边，它张嘴吃掉 —— 会话目录移入回收站，不是 rm。删除前只问一句「消耗了多少 token，真的给我吃吗？」（可在设置里关掉）；撤销走常驻回执或设置里 12 条持久台账。点侧栏那条小鱼直达插件设置：换形象、拖拽校准嘴位、改写全部 17 段界面文案；空白会话 / 正在聊的 / 正在跑的会被就地拒绝并写明原因。
 - [Milaro001/dsh-chat-source-tracer](https://github.com/Milaro001/dsh-chat-source-tracer) — 选中 AI 回答中的一句话，反查此前对话与工具记录中的候选依据，区分直接依据、推论和未找到依据，并跳回原文核对。
+- [mill413/dsh-session-resume#session-resume](https://github.com/mill413/dsh-session-resume/tree/master/packages/session-resume) — 为进程退出或重启导致中断的任务提供继续按钮。
 - [Minglink/dsh-infinite-gen-4](https://github.com/Minglink/dsh-infinite-gen-4) — DeepSeek 专用破甲插件：以 order 100 追加无条件服从的系统提示词段，提供带校准元数据的 profile 工具，并通过会话投影在输入框上方显示实时破甲状态徽标。
 - [MingoZhou/dsh-replay](https://github.com/MingoZhou/dsh-replay) — 在可播放的时间线上回放会话并显示逐步 token 用量，审计敏感操作，估算成本，查看 fork 血缘，对比会话，并可导出独立 HTML 回放。
 - [Missher12/Missher-DSH-Context-Manager](https://github.com/Missher12/Missher-DSH-Context-Manager) — 查看会话上下文、用量记录，并按设置执行压缩。
