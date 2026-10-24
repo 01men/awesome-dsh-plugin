@@ -2052,7 +2052,7 @@ dsh plugin --profile web add dshmarket
 - [apolenkov/dsh-provider-proxy](https://github.com/apolenkov/dsh-provider-proxy) — 按提供商主机或模型 ID 将模型出站流量分流到指定代理、直连或继承进程策略，可在 Plugins 设置页配置。
 - [ArcaneOrion/dsh-model-channel-manager](https://github.com/ArcaneOrion/dsh-model-channel-manager) — 模型渠道管理：多个供应商/模型候选共享一条虚拟路由（roundrobin/组），带失败转移、重试、超时与冷却；设置页签可编辑供应商与轮询组、跑测速与单模型真实请求测试，健康面板聚合七天延迟、失败与上游 token 用量（输入、输出、缓存、推理）。
 - [architect-xyz/liquid-dsh-plugin](https://github.com/architect-xyz/liquid-dsh-plugin) — 将 Liquid Inference 拍卖式推理交易所接入为模型路由，提供 liquid.auto 及其排序变体，并附带四个工具，用于读取报价、市场、路由器与任务收据。需 Liquid Inference API Key（LIQUID_API_KEY，spend 权限）。
-- [Asheblog/dsh-ollama-cloud](https://github.com/Asheblog/dsh-ollama-cloud) — Ollama Cloud 供应商：安装即配好路由，按 Ollama 模型自身元数据公布每个模型的思维链档位（供 composer 的推理强度选择），并在 Models 页与侧栏显示账号用量、提供 API Key 输入。
+- [Asheblog/dsh-ollama-cloud](https://github.com/Asheblog/dsh-ollama-cloud) — Ollama Cloud 供应商：安装即配好聊天路由，按 Ollama 模型自身元数据公布每个模型的思维链档位（供 composer 的推理强度选择），模型清单可由端点自动刷新（/api/tags 与 /api/show，并带离线缓存），在 Models 页与侧栏显示账号额度并提供 API Key 输入，还把 Ollama 的 web_search / web_fetch 作为可选的 DSH 网页能力提供方。
 - [Ayelsh/reasoning-setup](https://github.com/Ayelsh/reasoning-setup) — 为未声明思考档位的模型编辑推理强度档位与思考格式。
 - [Ayowait/dsh-reasoning-effort-new](https://github.com/Ayowait/dsh-reasoning-effort-new) — dsh-reasoning-effort 的分支：输入框里的两级模型选择器（Provider 列表 + 右侧滑出的模型栏）、搜索与紧凑行，并保留推理强度滑块与最高档特效。
 - [Ayowait/dsh-send-photos](https://github.com/Ayowait/dsh-send-photos) — 为端点不返回模态元数据的中转路由补上图片输入声明，让本来就能看图的模型不再被当成纯文本拒收；声明为纯文本的路由同样会被覆盖。
