@@ -6565,6 +6565,7 @@ dsh plugin --profile web add dshmarket
 - [Zoragyx/dsh-phone-pair#dsh-phone-pair-kit](https://github.com/Zoragyx/dsh-phone-pair/tree/main/plugin/dsh-phone-pair-kit) — 需要先装手机端 App，光装这个插件没用：手机那一半是单独的 APK，必须先安装——下载地址 https://github.com/Zoragyx/dsh-phone-pair/releases ——否则电脑端装好了也没得配。本包是电脑那一半：开启上游远程访问插件、Cloudflare 快速隧道与固定中继域名，扫一次码之后在外面也能连回来。
 - [ZSeven-W/dsh-android](https://github.com/ZSeven-W/dsh-android) — 在对话里直接操作 Android 设备——模拟器或 USB 手机，完全通过 adb 驱动：20 个 Agent 工具用于流式投屏、Gradle 构建运行、UI 树或 OCR 交互、logcat、进程与内存检查，并附带三键导航面板。
 - [ZSeven-W/dsh-ios](https://github.com/ZSeven-W/dsh-ios) — 在对话里直接操作 iOS 模拟器或 USB 连接的 iPhone：22 个 Agent 工具用于启动、构建、按无障碍标识或 OCR 文本驱动 UI、列表行操作与 SwiftUI 预览热重载，并附带可点击拖拽的流式侧边栏面板。
+- [zshqzcn/dsh-plugin-agent-bridge](https://github.com/zshqzcn/dsh-plugin-agent-bridge) — 两台 DeepSeek Harness 主机之间的双向 agent 桥：任一侧可向对端 agent 提问并运行有界多轮对话，链路经 PSK 认证；两侧提供聊天页，默认只读工具姿态。
 - [zyfgood/dsh-a2a](https://github.com/zyfgood/dsh-a2a) — Agent2Agent（A2A）协议桥：内置 A2A 服务端（agent card、message/send、message/stream SSE、任务 get/cancel/resubscribe、input-required 续答）；a2a_discover/a2a_send 等 4 个工具呼叫远端 agent；附 Web 运维面板：实时任务板、一键取消、远端 agent 目录。
 - [zyfgood/dsh-feishu-bot](https://github.com/zyfgood/dsh-feishu-bot) — 通过 WebSocket 长连接把飞书机器人绑到 DeepSeek Harness：收到的消息跑在 agent 会话里并流式回传，/attach 等聊天命令管理活动会话，模型可调用 feishu_* 工具推送消息。
 - [zyfgood/dsh-mobile](https://github.com/zyfgood/dsh-mobile) — DSH 手机端 Web UI：带令牌认证的局域网服务，手机可浏览全部会话、通过 SSE 实时查看回复并继续对话；桌面 GUI 提供二维码入口，配合 dsh-whale-girl 0.3.0+ 现在还可以点桌宠鳍里的小手机打开面板。
