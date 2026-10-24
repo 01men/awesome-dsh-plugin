@@ -2759,6 +2759,7 @@ dsh plugin --profile web add dshmarket
 - [PolitaryMonicy/dsh-agent-clean](https://github.com/PolitaryMonicy/dsh-agent-clean) — 在 DSH 完全退出后清理会话日志里的子代理条目与孤儿投影缓存，默认先试演并整份备份。
 - [popu2do/dsh-call-session](https://github.com/popu2do/dsh-call-session) — 并排运行多个 DeepSeek Harness 会话，让它们互相交接任务，并在同一张只读看板上看清整场协作。
 - [praystring/dsh-send-debounce](https://github.com/praystring/dsh-send-debounce) — 把聊天框里连发的几条短消息缓冲合并成一轮再唤醒模型：停手若干秒后才回复一次；长消息和附件不延迟。
+- [ptrel1/dsh-interrupted-resume](https://github.com/ptrel1/dsh-interrupted-resume) — 轻量级的 dsh 崩溃恢复：重启后识别上一轮被强杀中断的会话，注入一条「先核实现状再动手」的续跑指令，避免盲目重做已有副作用的操作。只认真正的崩溃信号（turn/end 的 reason 为 interrupted，由 session repair 冷读时合成），因此不会把用户主动取消、限流或模型报错误判为可续，也就不需要错误分类、退避策略或图形界面。与通用自动续跑插件相比，它还覆盖「子代理执行中被中断」的盲区：此时父代理的轮次已正常结束（正在等待子代理），常规判定看不到任何可续对象，整棵子代理树会静默死掉；本插件会识别出被中断的子代理并唤醒父代理。单文件、零外部依赖、六个配置常量。
 - [PwnKY/dsh-session-link](https://github.com/PwnKY/dsh-session-link) — 复制、打开 `dsh://` 会话深链，或将其粘贴到另一对话中，注入被引用会话的受限只读快照。
 - [qiangweiliu/dsh-context#agent-embodiment](https://github.com/qiangweiliu/dsh-context/tree/main/agent-embodiment) — 为 DeepSeek Harness 提供上下文可观测性与控制：跨会话 token 分析、会话级预算/提示词/工具控制，以及可选的 Agent 脚手架。复用官方 tokenMeter、compaction、systemPrompt、tools.restrict seam；监控只读。
 - [qingmomo233/dsh-thinking-language](https://github.com/qingmomo233/dsh-thinking-language) — 切换智能体思考过程（推理/链式思考）的语言：支持简体中文、英文、俄语、法语、德语、西班牙语、日语、韩语等，或跟随系统界面语言（自动）。新增「设置 → 通用」中的思考语言选择行、系统提示词注入（每次组装提示词时求值，新会话生效）与 /thinking-language 命令。
