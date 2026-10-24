@@ -1634,6 +1634,7 @@ dsh plugin --profile web add dshmarket
 - [oldzhang82/dsh-tps-ttft](https://github.com/oldzhang82/dsh-tps-ttft) — 为 DeepSeek Harness 提供每轮 TPS/TTFT 统计：模型耗时、工具耗时、首 token 延迟、输出速度。
 - [olimc2016/dsh-token-meter-panel](https://github.com/olimc2016/dsh-token-meter-panel) — 在 DeepSeek Harness 侧栏加入 Token 用量与花费面板：直接采用 DeepSeek 官方用量接口（今日消费、7/30 天趋势、今日分时、历史表、成本构成、峰谷分档计价），并用本机会话日志给出按会话明细。凭据零配置——自动读取浏览器登录态取官方数据，取不到时退回本地日志并标明来源。
 - [OwlNjust/deepseek-balance-dsh](https://github.com/OwlNjust/deepseek-balance-dsh) — DeepSeek Harness 的余额与用量监控：右下角悬浮组件，显示充值余额、按模型的周期消耗、Token 明细，以及北京时间高峰/低谷价格提醒；需先在设置里填入 DeepSeek API key。
+- [oxygenforce/dsh-token-usage-badge](https://github.com/oxygenforce/dsh-token-usage-badge) — 在每条回答下方显示本轮 Token 用量、回答耗时与会话累计 Token。
 - [pan17/dsh-minimax-usage](https://github.com/pan17/dsh-minimax-usage) — 在 DSH Web UI 模型选择器旁显示 MiniMax Token Plan 用量，以紧凑的 5h/7d 进度条展示，支持点击刷新、空闲与心跳自动刷新及接口回退；复用「设置 → 模型」中的订阅 Key，且仅在 MiniMax Token Plan provider 下显示。
 - [ParticleLight/dsh-all-usage](https://github.com/ParticleLight/dsh-all-usage) — 支持跨多个模型、供应商、工作区与时间范围进行统一分析，并可在全部保留历史中自定义起止日期；实时呈现缓存命中率，并可分别查看模型和供应商的分类数据；单日趋势按小时、跨日趋势按日，提供 53 周 GitHub 风格热力图、连续使用、模型与工作区 Token 占比环图及 Token、成本、占比明细，以及可独立自由组合的筛选；支持查询 DeepSeek 账户余额、管理工作区别名及导出 CSV 数据；独立账本在会话删除前持久化用量，工作区被删除时同样保留并把用量汇总为一行「已删除」，增量重建只处理新增事件；重启时未变化会话不回读日志、直接复用账本（以每会话日志 revision 为变更信号）；工作区注册表通过 DSH 的 domain/changed 事件自动探针同步——只对新增/删除的工作区增量重扫，未变化的已有工作区直接复用已计算账本、零全量重扫，统计严格限定已注册工作区（未登记目录一律忽略），扫描完成后通过轻量 revision 状态判断，只有 Host/统计状态变化才获取完整历史，并显示 revision 复用、实际读取、账本恢复和失败等非敏感同步健康信息；全 0 用量的重放不会覆盖已记录的真实用量，Token 口径显式声明（输入不含缓存命中，缓存读写与推理独立成桶）。中文使用本地时区，英文统一使用 UTC；API 仅限本机访问。
 - [PerryLink/dsh-budget](https://github.com/PerryLink/dsh-budget) — 在 llm/stream 瀑布上做按插件粒度的用量预算与费用上限：按模型用量记账、会话与月度预算的预警/阻断、延迟窗口与碳足迹估算。
@@ -3077,6 +3078,7 @@ dsh plugin --profile web add dshmarket
 - [liuyuhao1122/dsh-hermes-memory](https://github.com/liuyuhao1122/dsh-hermes-memory) — 为 DeepSeek Harness 提供分层长期记忆，支持自动模型提炼、可追溯的加密会话日志和带校验的记忆压缩。
 - [ljsysfurryACE/dsh-compaction](https://github.com/ljsysfurryACE/dsh-compaction) — 压缩后端：用确定性语义提取器替换 LLM 摘要（保留代码/路径/命令，剔除闲聊），附带 28.4x KV 压缩记账。
 - [ljsysfurryACE/dsh-memory-director](https://github.com/ljsysfurryACE/dsh-memory-director) — LLM 驱动的记忆记/忘插件：每轮对话后由模型决定记住什么/忘记什么（MemoryDirector），请求前注入相关记忆，自动去重，跨会话持久化。
+- [LornBerry/dsh-memory-center](https://github.com/LornBerry/dsh-memory-center) — DSH 的本地长期记忆库：面板里浏览、检索（BM25 + 同义词）、编辑；文件夹、归档、回收站；逐会话决定注入哪些；模型写入的记忆需你确认；可导入导出备份；可选同步到自己的 Git 或 WebDAV 实现多设备。
 - [LoserFox/distill](https://github.com/LoserFox/distill) — 自动对话蒸馏：后台 subagent 反省 + 技能 create/update。
 - [LoveDoLove/Veyra](https://github.com/LoveDoLove/Veyra) — 面向编程代理的工程智能——为 DeepSeek Harness 提供持久化、证据感知、项目隔离的工程记忆，以及统一的混合搜索（记忆 + RAG 文档）。
 - [lovezi0/dsh-memory-palace](https://github.com/lovezi0/dsh-memory-palace) — 人类可读的 Markdown 记忆插件：用户级（~/.deepseek-harness/MEMORY.md）+ 工作区级双层记忆，每轮自动注入提示词，回合结束自动写日志并按期蒸馏沉淀；可桥接已有 WorkBuddy/CodeBuddy 记忆目录；内置 memory_note / memory_note_user / memory_read 三个工具（自动去重）与中英双语设置页。纯文件存储、无数据库，记事本即可编辑。
