@@ -1037,6 +1037,7 @@ dsh plugin --profile web add dshmarket
 - [Saretheya/dsh-settings-nav-order](https://github.com/Saretheya/dsh-settings-nav-order) — 长按拖动即可重排设置面板左侧大项：被拖项半透明并跟随指针，顺序保存在插件自己的目录而非 settings.yaml，卸载后自动恢复官方原序。
 - [sbVAN/dsh-latex](https://github.com/sbVAN/dsh-latex) — 把对话里的 `latex` / `tex` 代码块渲染成 KaTeX 公式，并向系统提示词注入「用 `$...$` / `$$...$$` 写公式」的规范。
 - [scottzx/feature-blueprint](https://github.com/scottzx/feature-blueprint) — 在 DSH 侧栏提供思维导图和 Excalidraw 自由画布，支持本地思维导图文件编辑、Excalidraw 文件预览与独立 CLI。
+- [secyborg/dsh-find-bar](https://github.com/secyborg/dsh-find-bar) — 浏览器式页内查找条（Cmd/Ctrl+F），全文高亮、匹配计数，左中右滑块分区搜索对话与两侧面板。
 - [seeingrain/dsh-media-inline-preview](https://github.com/seeingrain/dsh-media-inline-preview) — 全能内联媒体预览插件，支持 mip-img/mip-video/mip-audio 围栏的流式播放、ffmpeg 转码回退、灯箱浏览及信任围栏局域网/移动端访问。
 - [seeingrain/dsh-upload-file](https://github.com/seeingrain/dsh-upload-file) — 允许将任意文件上传给 DSH，按工作区与会话隔离。输入框内置文件库，服务端生成缩略图，右键菜单可打开、复制、重新下载或删除。
 - [Semidia/dsh-sampling-sliders](https://github.com/Semidia/dsh-sampling-sliders) — 对话输入区的模型采样滑杆（temperature / maxTokens）：通过 agent/request 钩子对所有供应商的每次请求生效，支持热调/持久化两种模式。
