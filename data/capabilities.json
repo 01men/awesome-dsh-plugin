@@ -45712,20 +45712,6 @@
   "scannedAt": "2026-09-24T17:41:52.360Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/ZekaiShi/evo-subagent": {
-  "version": "0.6.1",
-  "spec": "npm:evo-subagent@0.6.1",
-  "capabilities": [
-   "fs-write",
-   "fs-read",
-   "env",
-   "subagent",
-   "llm"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:41:52.360Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/ZelinW1/dsh-cosplay": {
   "version": "0.4.0",
   "spec": "github:ZelinW1/dsh-cosplay",
