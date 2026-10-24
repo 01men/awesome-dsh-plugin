@@ -1177,6 +1177,8 @@ dsh plugin --profile web add dshmarket
 - [WhitePlusMS/dsh-input-plus](https://github.com/WhitePlusMS/dsh-input-plus) — 在组合框中使用 `@` 搜索并插入工作区文件和目录路径，并通过 `/h` 菜单复用当前会话的问题。
 - [whiteS18/dsh-mcp-servers-panel](https://github.com/whiteS18/dsh-mcp-servers-panel) — 在设置中提供 MCP Servers 管理面板：新增、编辑、启停、删除服务器，支持用户/项目作用域与表单/JSON 双模式编辑，并自动把发现的 MCP 工具注册为对话原生工具。
 - [whiteS18/dsh-terminal-button](https://github.com/whiteS18/dsh-terminal-button) — DeepSeek Harness 内嵌终端插件：在右侧栏（DockKit Tab）或输入框下方以沉底抽屉形式提供界面内嵌的交互式终端，跟随官方主题与工作区目录，支持 PSReadLine 尺寸保护与位置热切换。
+- [whybebabo/dsh-better-workspace](https://github.com/whybebabo/dsh-better-workspace) — 在原生工作区列表之上叠加主题分组：emoji 分组文件夹、筛选与搜索、批量归档，以及带安全边界的永久删除。
+- [whybebabo/dsh-code-nav](https://github.com/whybebabo/dsh-code-nav) — 为 dsh-better-sidebar 提供代码预览：按文件类型语法高亮、符号大纲、文件内查找，选中代码可直接加入对话。
 - [wilsonchengassistant/dsh-media-web-preview](https://github.com/wilsonchengassistant/dsh-media-web-preview) — 在右側欄預覽區直接播放影片同音訊，經帶認證的 HTTP Range 路由串流，令遠端瀏覽器可以播放同跳轉大型檔案，唔使喺主機開原生播放器。
 - [wilsonchengassistant/dsh-mobile-sidebar](https://github.com/wilsonchengassistant/dsh-mobile-sidebar) — 視窗闊度細過 1024px 時，側欄完全移出 shell frame，改由頁首按鈕以浮動抽屜方式打開，令對話可以用盡整個螢幕闊度；闊螢幕版面唔受影響。
 - [wilsonchengassistant/dsh-quick-workspace](https://github.com/wilsonchengassistant/dsh-quick-workspace) — 將「新增工作區」流程中喺主機彈出嘅資料夾選擇器，改成輸入名稱嘅對話框，令遠端瀏覽器可以直接建立並開啟工作區。
