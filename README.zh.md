@@ -515,7 +515,7 @@ dsh plugin --profile web add dshmarket
 - [guchang/draw2code](https://github.com/guchang/draw2code) — 运行在 dsh-better-sidebar 中的 Excalidraw 协作原型插件：结构化澄清产品需求、保护用户手工修改的人机画板更新，以及基于原型的前端生成。
 - [guhanfei-ai/dsh-mindmap](https://github.com/guhanfei-ai/dsh-mindmap) — 对话式 Markdown 思维脑图工作台：逐步编辑完整文档，实时同步右侧可视化，并在工作目录中打开、管理和导出脑图。
 - [GuihaiHU/dsh-temp-note](https://github.com/GuihaiHU/dsh-temp-note) — DSH 右侧边栏的临时笔记，支持会话级、工作区级与全局三种范围、自动保存、一键复制，以及用默认模型一键优化为 Markdown。
-- [gulagala001/dsh-deepseek-workbench](https://github.com/gulagala001/dsh-deepseek-workbench) — 仅 Desktop。DeepSeek 网页聊天、临时侧栏聊天、API 开放平台与 DSH 会话迁移。
+- [gulagala001/dsh-deepseek-workbench](https://github.com/gulagala001/dsh-deepseek-workbench) — 在 DSH 中使用 DeepSeek 网页聊天、临时侧栏对话、API 平台与会话迁移。
 - [gulagala001/dsh-intelligent-ui](https://github.com/gulagala001/dsh-intelligent-ui) — DSH 原生交互式回答、可编辑卡片与按需界面技能。
 - [guo-ziao/dsh-interrupt-button](https://github.com/guo-ziao/dsh-interrupt-button) — 发送按钮旁的绿色打断按钮：运行时一键静默中断 AI，AI 停止后总结进展并向你征求新要求，支持自定义打断提示词。
 - [guoliyuan97-png/dsh-game-hud](https://github.com/guoliyuan97-png/dsh-game-hud) — 游戏风格悬浮 HUD：余额血条、上下文蓝条、官方峰谷定价与切换倒计时、上下文不足5%自动压缩、携带记忆开启新对话。
@@ -4649,6 +4649,7 @@ dsh plugin --profile web add dshmarket
 - [klarkxy/dsh-plugins#dsh-dev-index](https://github.com/klarkxy/dsh-plugins/tree/main/plugins/dsh-dev-index) — 在 DSH 插件页阅读官方文档；创造模式用原生工具检索文档、查询插件 npm 元数据。
 - [kp-z/dsh-mermaid-comm](https://github.com/kp-z/dsh-mermaid-comm) — 让 AI 在开发交流中默认用 Mermaid 图表达——系统提示引导、mermaid_validate 真解析语法校验工具，以及自动修复或摘除坏图的输出闸。渲染交给 dsh-mermaid。
 - [kw78/dsh-office-tools](https://github.com/kw78/dsh-office-tools) — 面向 agent 的工作区安全 Office 工具集：创建/读取 Word、创建/读取/更新 Excel、创建/读取 PowerPoint，并支持 PNG/JPG/GIF 图片排版。
+- [Lee-Hilex/dsh-mineru](https://github.com/Lee-Hilex/dsh-mineru) — 用 MinerU 把 PDF 与文档解析为结构化 Markdown。
 - [LeslieWylie/dsh-md-preview](https://github.com/LeslieWylie/dsh-md-preview) — 把 Markdown 渲染为自包含的独立 HTML 页面：提供在 headless 配置下同样可用的 `md_html_render` 工具，以及在网页端浏览、预览、编辑并导出本地 `.md` 文件的抽屉；两个入口共用同一个渲染器，无运行时依赖。
 - [liaojianjin/dsh-large-jsonl-viewer#large-jsonl-viewer](https://github.com/liaojianjin/dsh-large-jsonl-viewer/tree/main/packages/plugins/large-jsonl-viewer) — 使用字节索引逐条浏览 JSONL 与 NDJSON，支持物理行跳转和超长记录流式预览的只读查看器。面向宿主 DSH 0.2.1-rc.2，其他版本未声明兼容。
 - [Limbo-137/dsh-typst-preview](https://github.com/Limbo-137/dsh-typst-preview) — 原生右侧边栏里的 Typst 实时预览：点开 .typ 文件即得一个 tab，工具栏在 tinymist 渲染的页面与高亮源码之间切换；预览页面与其 WebSocket 都经应用自身 origin 提供。
