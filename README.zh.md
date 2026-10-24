@@ -420,6 +420,7 @@ dsh plugin --profile web add dshmarket
 - [dygin/dsh-recover-context](https://github.com/dygin/dsh-recover-context) — 回退到任意一条提问之前，或编辑上一条问题重新提交；被丢弃轮次产生的工作区文件会一并还原。
 - [e2mcc/dsh-popout-sidebar](https://github.com/e2mcc/dsh-popout-sidebar) — 可弹出式侧边栏：侧边栏展示产物与文件树，支持多种文件预览形式；并可弹出为独立浏览器标签页（可拖至另一显示器）；兼容其他sidebar插件，可以同时显示。
 - [EastMG/dsh-gacha-calendar](https://github.com/EastMG/dsh-gacha-calendar) — 二游卡池/活动排期速查：侧边栏按钮展示 11 款二游的当期卡池与活动起止（含倒计时），支持自动刷新与各游戏独立来源切换。
+- [ecbob/dsh-window-size-keeper](https://github.com/ecbob/dsh-window-size-keeper) — 让 DSH 桌面端窗口保持你离开时的大小：记录主窗口最后一次的外框尺寸（物理像素），下次启动恢复并居中到工作区，而且赶在窗口露面之前改完，启动动画不会播在错误的分辨率上。设置页有 12 个常用分辨率（1024×768 到 3840×2160）、任意自定义宽高、「恢复时居中」开关与「立即应用」，选中即生效并持久化。改尺寸走一个在使用者本机现编的小助手 exe：C# 源码随插件一起发布，首次运行用 Windows 自带的 csc.exe 编一次（实测约 110 毫秒），产物与同名 .cs 缓存到状态文件同目录，之后起进程约 90 毫秒；编不出来时退回临时 powershell.exe 进程。包里不含二进制、package.json 不声明任何依赖、不发任何外部网络请求。
 - [Edge-HH/GrokBot_in_DeepseekHerness](https://github.com/Edge-HH/GrokBot_in_DeepseekHerness) — 将GrokBot带入DSH。
 - [EdwardXiao-bit/dsh-run-button](https://github.com/EdwardXiao-bit/dsh-run-button) — 为回答里的命令行代码框加「运行」按钮，通过宿主 shell 服务执行该命令，输出显示在右下角浮动面板，或每个运行一个底部面板标签页。
 - [el16z3c/dsh-think-ux](https://github.com/el16z3c/dsh-think-ux) — DSH Web 端的丝滑思考盒体验：think 行展开为 24 行限高预览并随流式推理平滑追底，settle 时以短动画收起，主对话视图以读者友好的平滑追逐跟随（无跳变、无拉扯）。
@@ -3145,6 +3146,7 @@ dsh plugin --profile web add dshmarket
 - [tinqiao-oss/engramory#plugin](https://github.com/tinqiao-oss/engramory/tree/master/adapters/dsh/plugin) — 给 DeepSeek Harness 的长期记忆，以纯 markdown 保存：一条事实一个文件，任何编辑器都能打开。索引 `MEMORY.md` 有 200 行 / 25KB 的硬上限，由 `ctx.tools.guard()` 强制执行——让已超限的索引继续变大的写入会被拒绝，而缩小它的重写一律放行，于是过大的索引可以一步步压缩下来。插件不会自行写入记忆，记什么由你和模型决定。同一个记忆库也被 Claude Code、Codex、Kiro、OpenClaw 使用。
 - [TodayJin/dsh-trilogy](https://github.com/TodayJin/dsh-trilogy) — DeepSeek Harness 的项目记忆插件。每个工作区三份 Markdown 文件（PROJECT.md / DECISIONS.md / SESSIONS.md）：会话首个步骤自动创建、内容变了才重新注入（被上下文压缩挤掉也会重注入），并按分类经 memory_checkpoint 工具写回，在「干了实事却没记录」时给一次收尾提醒。memory_read 与 memory_search 可读活日志与归档，后者走零依赖 BM25 索引。会话日志上限 200 条，溢出搬进 SESSIONS-archive.md —— 不自动注入，但可见、可读、可搜，并能逐条恢复。设置界面：带路径筛选的工作区列表 / 三份记忆文件与归档的只读页签 / 重新读取 / 单个工作区记忆包的导出导入（JSON）/ 两步确认的清除 / AGENTS.md 指令段的重写或移除面板 / PROJECT.md 陈旧提醒。输入框状态图标显示该工作区的同步状态，无记忆时可点击创建。零依赖——不含向量库、embedding 或模型调用。
 - [Tommy00748/dsh-self-evolution](https://github.com/Tommy00748/dsh-self-evolution) — 有界自管的长期记忆（Hermes 式 MEMORY.md / USER.md，硬字符上限 + 写入前安全扫描）；每轮结束后自动复盘，用大白话写笔记、或把新知识合并进已有技能而不堆出雷同技能；curator 找出会被加载器静默丢弃的技能并外科式修复；跨会话搜索历史消息；输入框上方的学习卡片只在有新闻时出现，删改记忆前必须先问你。
+- [topkie/dsh-lattice](https://github.com/topkie/dsh-lattice) — DeepSeek Harness 的本地记忆插件：写下的内容按主题归档、与相关条目连边，召回按向量相似度排序（没装模型时退回词面匹配），数据存在本地 SQLite 库里。
 - [tr1v3r/dsh-ltm](https://github.com/tr1v3r/dsh-ltm) — 基于本地 SQLite 的长期记忆，支持 CJK 分词检索、BM25 与字符 n-gram 余弦重排、去重和生命周期管理。
 - [truelove-dreamer/dsh-plugin-recall](https://github.com/truelove-dreamer/dsh-plugin-recall) — 跨会话记忆：全文检索所有历史会话（复用 ctx.sessionQuery 的 SQLite FTS5 索引），把最强匹配片段带回当前上下文。
 - [TuringCorp-net/mosaic-memory-compress](https://github.com/TuringCorp-net/mosaic-memory-compress) — 为 DeepSeek Harness 提供基于自然遗忘曲线的就地对话压缩：近期对话逐字保留、中期结构化脱水（零 LLM 成本）、久远对话折叠为有界摘要对——有限记忆预算上的无限对话。
