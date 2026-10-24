@@ -2,5 +2,5 @@ url: https://github.com/secyborg/dsh-find-bar
 name: secyborg/dsh-find-bar
 category: ui
 description:
-  en: Browser-style in-page find bar (Cmd/Ctrl+F) with highlight-all, match count, and a left/centre/right scope picker for the three app columns.
-  zh: 浏览器式页内查找条（Cmd/Ctrl+F），全文高亮、匹配计数，左中右滑块分区搜索对话与两侧面板。
+  en: Browser-style in-page find bar (Cmd/Ctrl+F) for the desktop app, with highlight-all, a match counter, and a scope picker for the conversation or the right panel.
+  zh: 桌面端浏览器式页内查找条（Cmd/Ctrl+F）：全文高亮、匹配计数，可在对话区与右侧面板间切换搜索范围。
