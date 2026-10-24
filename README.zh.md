@@ -2913,7 +2913,7 @@ dsh plugin --profile web add dshmarket
 - [xianshu-virtuous/dsh-whale-companion](https://github.com/xianshu-virtuous/dsh-whale-companion) — 接近上下文上限时自动创建新 Web 会话并只转移最后一个完整回合，同时提供可编辑的追加式鲸鱼娘人格与按需重读工具。
 - [XiaoMa-PM/dsh-cross-session-agent-pre](https://github.com/XiaoMa-PM/dsh-cross-session-agent-pre) — 支持 DSH 跨工作区消息与发送方导航、同工作区受限上下文，以及可选的本机 Claude Code 双向通信。
 - [xiaoshenming/dsh-session-surgeon](https://github.com/xiaoshenming/dsh-session-surgeon) — 修好打不开的 DeepSeek Harness 会话，侧栏「会话医生」可查看对话并默认 dry-run 修复。
-- [xiguazhiPrince/dsh-session-map](https://github.com/xiguazhiPrince/dsh-session-map) — 会话图谱：把 DSH 会话画成一张 fork 树画布——节点是会话，节点下面那串珠子是该会话的用户输入——以对话标签页、会话头部开关和右侧栏两个标签页三个入口打开。默认只铺开当前会话所在的那棵树、自上而下生长，支持滚轮平移与 Ctrl/⌘ 滚轮缩放、一键铺开全部用户输入、隐藏子代理会话，另有一个会话概览页列出轮次、步骤、模型耗时、工具耗时、输出 token 与运行状态。
+- [xiguazhiPrince/dsh-session-map](https://github.com/xiguazhiPrince/dsh-session-map) — 会话图谱：把 DSH 会话画成一张 fork 树画布，另在设置里加了一个「从 Git 克隆」页——填仓库地址、选存放目录（会记住上次选择、带原生目录选择器），按需打开浅克隆，克隆完自动添加为工作区。画布可从会话头部开关和右侧栏两个标签页打开，对话标签页默认关闭；默认只铺开当前会话所在的那棵树、自上而下生长，支持滚轮平移与 Ctrl/⌘ 滚轮缩放、隐藏子代理会话，另有一个会话概览页列出轮次、步骤、模型耗时、工具耗时、输出 token 与运行状态。
 - [xine2009cn/dsh-branch-inbox-guard](https://github.com/xine2009cn/dsh-branch-inbox-guard) — 清除 DSH 分支会话从 fork 父会话继承来的排队提问，让分支的第一轮执行你在分支里输入的问题，而不是父会话的下一句。
 - [xing666173/dsh-vision-hub#bridge-preview](https://github.com/xing666173/dsh-vision-hub/tree/main/bridge-preview) — 图片桥接内联预览:对话中 \[图片: 路径] 标记渲染后自动显示图片,长指令不留在对话里。
 - [xingyingyuzhui/dsh-session-actions](https://github.com/xingyingyuzhui/dsh-session-actions) — 会话行菜单增强：置顶会话、复制会话 ID、导出结构化 Markdown、弹窗确认后永久删除会话。
