@@ -2519,6 +2519,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Sessions & Messages
 
+- [1010231693/dsh-first-prompt-bar](https://github.com/1010231693/dsh-first-prompt-bar) - Pins the first prompt you sent in the current session in a scroll-proof bar above the conversation, with one-click copy, a collapsible panel listing every prompt you sent, and eight switchable looks you can pick from inside the panel.
 - [111222cjyq/dsh-curate](https://github.com/111222cjyq/dsh-curate) - A human-in-the-loop curation workbench inside a DSH session: mark whole turns or single messages to keep verbatim or to summarize, rewrite user, assistant, tool-result and injected-context messages in place without a model call, then compress the marked ranges with model-written summaries or the official /compact. A local JSON backup is written before every write to the session.
 - [123dbl/dsh-side-session](https://github.com/123dbl/dsh-side-session) - Launches a fresh, continuable parallel session from the composer command menu (/side-chat) while the main session keeps running.
 - [1420079678-ctrl/agent-body#dsh-zero-residence](https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-zero-residence) - Zero-residence context engine: large tool payloads are evicted out of the live context into a queryable store and only deterministic pointers are left behind, so per-turn prompt tokens stop growing with the transcript. Any masked content is reconstructed verbatim from the session log on demand, by tool-call id or session seq.
