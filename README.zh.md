@@ -3923,6 +3923,7 @@ dsh plugin --profile web add dshmarket
 - [TencentCloudBase/CloudBase-AI-Toolkit#dsh-plugin](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit/tree/main/dsh-plugin) — 把腾讯云 CloudBase 后端接入 DeepSeek Harness——在对话里搭好并部署全栈应用，查询结果渲染为表格卡片（分页、排序、导出 CSV），部署后可预览真实域名，并提供 CloudBase MCP 工具集（`mcp__cloudbase__*`），登录走 device-code 流程。
 - [theBigGavin/marketingdashboard](https://github.com/theBigGavin/marketingdashboard) — 零密钥行情数据 MCP server（dsh bundle）：5 个 MCP 工具覆盖 A股/港股/美股行情、板块排行、期货、资金流与 7×24 快讯，三层上游降级兜底。
 - [theinfluencecompany/dsh-realtimeavatar](https://github.com/theinfluencecompany/dsh-realtimeavatar) — Realtime Avatar（realtimeavatar.ai）实时数字人工具：开发者 API key 由 harness 凭据存储保管，公开文档打包为五个按需加载的技能，rta_* 工具封装公开 REST API（余额、数字人、动作片段、会话、用量），消耗额度的操作需审批，/rta 命令引导开发者从零到一次真实的数字人通话。
+- [ThePuristImpurity/dsh-tuanjie-plugin](https://github.com/ThePuristImpurity/dsh-tuanjie-plugin) — 从 DeepSeek Harness 驱动团结引擎编辑器：连接已运行编辑器的 Codely 桥，创建与修改 GameObject、改组件属性、执行编辑器命令，并在编辑器进程里跑 C#。
 - [THU-MAIC/dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — OpenMAIC 教学：课堂、幻灯片、交互组件与苏格拉底式教学。
 - [thyeff/dsh-unity-mcp](https://github.com/thyeff/dsh-unity-mcp) — DeepSeek Harness 一键接入 mcp-unity：内置 MCP 服务端，零配置让 Agent 直接操控 Unity 编辑器——场景、GameObject、变换、材质、Prefab、菜单、播放模式、测试与控制台日志等 34 个工具，支持自动重连。完整中文文档。
 - [Tianbuyu-wwx/DSH-FormatForge#dsh-formatforge](https://github.com/Tianbuyu-wwx/DSH-FormatForge/tree/main/packages/dsh-formatforge) — FormatForge：把 30+ 种文件格式（PDF、DOCX、PPTX、XLSX、EML、EPUB、TOML、压缩包）锻造成 AI 可读文本——网页拖拽入箱自动转换，提供 ff_translate/ff_formats/ff_result 工具与 CLI；扫描件回退本地 OCR 或交给会话模型增强。
