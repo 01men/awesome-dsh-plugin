@@ -3086,7 +3086,7 @@ dsh plugin --profile web add dshmarket
 - [memorylake-ai/memorylake-harness#dsh-plugin](https://github.com/memorylake-ai/memorylake-harness/tree/main/dsh-plugin) — 将 Memory Lake 作为 dsh 的持久记忆层：基于 memorylake CLI 的 memory_search、memory_remember、memory_forget 三个工具，会话状态行，以及引导安装/诊断 skills，与 Claude Code、Codex 插件共享同一 ~/.memorylake 身份与记忆。
 - [mengxiaoxian/lookover#dsh-expmem](https://github.com/mengxiaoxian/lookover/tree/main/dsh-expmem) — 个人经验记忆：把真实解决过的问题存为带来源、可纠正、有适用条件的案例，新任务中自动召回复用，纠正与删除会级联影响后续召回。
 - [menotbobbybrown/dsh-plugin-memory](https://github.com/menotbobbybrown/dsh-plugin-memory) — DeepSeek Harness 的长期持久记忆：以 JSON 保存事实／偏好／实体／规则／经历等分类条目，注册为 memory_remember 与 memory_recall 两个 agent 工具；召回按关键词重叠、重要度与访问频次排序。
-- [mess1103/dsh-inner-life](https://github.com/mess1103/dsh-inner-life) — 八个零依赖工具，把 agent 的日记写到按日期哈希推导出的路径上，索引里不存文件路径。
+- [mess1103/dsh-inner-life](https://github.com/mess1103/dsh-inner-life) — 给 agent 的私人日记本：八个零依赖工具负责写、改、翻、导出，正文按日期哈希散落在看似随机的目录里，索引不记路径——「今天的日记在哪」只有它自己答得上来。
 - [meyaomiao/dsh-graphmemory](https://github.com/meyaomiao/dsh-graphmemory) — DSH 知识图谱记忆：better-sidebar「记忆图谱」页签与独立看板 /graph-memory/app；抽取任务/技能/事件节点并跨会话召回，npm 包名为 dsh-graphmemory。
 - [MiHjy12138/dsh-memory-lite](https://github.com/MiHjy12138/dsh-memory-lite) — 给 DeepSeek Harness 的按需记忆库：会话日志提炼成分层 markdown（总览、索引与分主题明细），mem_query 只回命中条目而非整份索引。不每轮注入、零依赖，每条记忆都保留指回原对话的溯源标记。
 - [MineRPi/dsh-trilium](https://github.com/MineRPi/dsh-trilium) — 通过 ETAPI 把 Trilium 笔记库接入 agent，提供 20 个工具：记忆读写（remember/recall + 自动注入索引）、笔记管理（CRUD/克隆/属性/修订）、全文搜索、周报工作流、附件、日历笔记、备份导入，独立设置卡片，配置 0600 落盘。
@@ -3881,6 +3881,7 @@ dsh plugin --profile web add dshmarket
 - [THU-MAIC/dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) — OpenMAIC 教学：课堂、幻灯片、交互组件与苏格拉底式教学。
 - [thyeff/dsh-unity-mcp](https://github.com/thyeff/dsh-unity-mcp) — DeepSeek Harness 一键接入 mcp-unity：内置 MCP 服务端，零配置让 Agent 直接操控 Unity 编辑器——场景、GameObject、变换、材质、Prefab、菜单、播放模式、测试与控制台日志等 34 个工具，支持自动重连。完整中文文档。
 - [Tianbuyu-wwx/DSH-FormatForge#dsh-formatforge](https://github.com/Tianbuyu-wwx/DSH-FormatForge/tree/main/packages/dsh-formatforge) — FormatForge：把 30+ 种文件格式（PDF、DOCX、PPTX、XLSX、EML、EPUB、TOML、压缩包）锻造成 AI 可读文本——网页拖拽入箱自动转换，提供 ff_translate/ff_formats/ff_result 工具与 CLI；扫描件回退本地 OCR 或交给会话模型增强。
+- [tianfangliu98-cpu/dsh-image-hub](https://github.com/tianfangliu98-cpu/dsh-image-hub) — 多 API 生图：Labnana、OpenAI、Gemini、Seedream、DashScope、xAI、智谱、ComfyUI 八种接口，支持多套配置、对话画廊与 Labnana 积分计量。
 - [tiantianlaolao/dsh-astock-research](https://github.com/tiantianlaolao/dsh-astock-research) — A股个股研究：搜股票、查任意区间公告、财报卡、估值画像与交易信号科普（约 5000 只、2011 年至今，公共只读数据服务），另有一个跳转外部交易推演产品的链接工具。
 - [tianyao2003/dsh-find-ideas](https://github.com/tianyao2003/dsh-find-ideas) — GitHub 项目检索与解析工具：一句话输入开发想法，agent 在 GitHub 搜索相关项目，按相关性与 star 加权排序后返回一张结构化的卡片（包括各项目的更新时间、相关性分数、star数、加权后得分、使用的开发语言、一句话简介）。选择几个仓库后，它还能直接读取这些项目的 README、依赖清单、目录树和关键文件等，梳理它们的架构。让你在动手开发前，先“站在巨人的肩膀上”。
 - [TindalosKorone/dsh-cheatengine](https://github.com/TindalosKorone/dsh-cheatengine) — 让 DSH Agent 通过 Cheat Engine 进行动态内存调试：扫描、指针分析、断点与游戏内存修改。
