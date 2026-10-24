@@ -1076,6 +1076,7 @@ dsh plugin --profile web add dshmarket
 - [sujalmandal/dsh-tab-plan-toggle](https://github.com/sujalmandal/dsh-tab-plan-toggle) — 在 DSH Web 输入框中按 Tab 键开/关 plan 模式。
 - [sujingkpo/dsh-change-review-live](https://github.com/sujingkpo/dsh-change-review-live) — 实时审查插件：追踪会话内 write/edit 工具调用，改动列表常驻输入框上方，点开即在插件自注册的右侧栏标签页里查看行级 diff，支持「会话记录 / 初始版本 / Git 版本」三种对比、单项与整文件撤回、子代理聚合与 SSE 实时刷新，配色可自定义；fork 自 cirelir/dsh-change-review，审查界面整体重构到右侧栏。
 - [sumomok/dsh-plugins#quote-message](https://github.com/sumomok/dsh-plugins/tree/main/packages/quote-message) — 把本会话里更早的内容引用进输入框：在任意消息里划选文字出现"引用"按钮，或输入 @ 选择整条消息；引用以原生 chip 形式存在，发送时序列化为引用块进入 prompt。纯客户端，无宿主路由，无自定义会话事件。
+- [sun04222/dsh-prompt-enhance](https://github.com/sun04222/dsh-prompt-enhance) — 在 DSH 输入框旁加一个「✦ 增强」按钮：把当前草稿改写成更清晰、更具体的提示词（保持输入语言），一键恢复原文，并为 agent 提供 enhance_prompt 工具；改写结果只替换草稿，不会自动发送。
 - [sunnystarye-ui/dsh-plugin-text-quote](https://github.com/sunnystarye-ui/dsh-plugin-text-quote) — Codex 风格对话文字批注：选中原文加注释、引用进对话、发送后以「N 条注释」胶囊展开。
 - [sunshaobei/dsh-file-mention](https://github.com/sunshaobei/dsh-file-mention) — Codex 式 @文件/@文件夹提及插件：输入框弹出工作区文件与文件夹选择菜单，通过平台词法扫描插入纯文本着色提及 token，内置嵌套 git 感知的文件索引。
 - [sunshaobei/dsh-input-history](https://github.com/sunshaobei/dsh-input-history) — DSH 输入框历史记录切换器：本地保存每条已提交的提示词（含附件，最多 50 条），空输入框时用上下方向键召回，并自动恢复文件引用与图片预览。
@@ -2211,7 +2212,7 @@ dsh plugin --profile web add dshmarket
 - [koliy82/dsh-rustvy](https://github.com/koliy82/dsh-rustvy) — 在模型选择器中显示厂商标志，并让模型列表与提供方保持同步：把公开目录与标志镜像到本地回环地址，再依据路由自身的接口重新生成 pi-ai 路由的模型列表，写入之前先显示差异。
 - [KouzakiUmi/dsh-antigravity-acp](https://github.com/KouzakiUmi/dsh-antigravity-acp) — 把 Google 官方 Antigravity ACP agent 接入 DeepSeek Harness 作为模型提供商，工具执行与审批仍由 DSH 负责，附按模型切换的额度药丸和设置页；需 Node 22.19+ 并登录 Antigravity 账号。
 - [kyle123740/dsh-zcode-cli-proxy](https://github.com/kyle123740/dsh-zcode-cli-proxy) — 把 ZCode CLI（客户端自带 agent）接入 DeepSeek Harness 的模型反代：常驻 app-server 会话 + Start Plan 账户注入 + 每请求 OAuth 鉴权，直接消耗 ZCode Start Plan / Coding Plan 额度，真流式、图片输入、会话续接，无需 API Key。
-- [lcestou/dsh-oh-my-claude](https://github.com/lcestou/dsh-oh-my-claude) — 把已登录的 Claude Code CLI 作为 dsh 的模型提供商：实时模型列表、按会话恢复、审批中转、图片、记忆/回退/变更面板，以及远程 SSH 主机上的工作区。
+- [lcestou/dsh-oh-my-claude](https://github.com/lcestou/dsh-oh-my-claude) — 把已登录的 Claude Code CLI 作为 dsh 的模型提供方：实时模型列表、按会话恢复、审批中转、回退、记忆面板，以及远程 SSH 主机上的工作区。
 - [Leafyezi233/dsh-model-gateway](https://github.com/Leafyezi233/dsh-model-gateway) — 把 DeepSeek Harness 里已配置好的模型通过 OpenAI 兼容网关中转出去，其他本地项目 用标准 OpenAI 客户端即可调用。多个供应商候选共享一个具名分组，支持顺序、均衡、 随机三种调度；上游在产出任何内容前失败时自动切换下一候选，客户端无感，被限流的 请求按供应商指示的退避时间自动重试。每条候选的调用统计（尝试、应答、失败、 token/TTFT 累计）以徽章形式显示在设置页，按天聚合的数据落盘为本地文件，附 30 天 热力图与趋势视图。在界面创建密钥之前，接口对任何能访问到它的人开放；创建密钥 （仅存 SHA-256 哈希）后开启校验，且删掉最后一个密钥仍保持锁定，需显式关闭鉴权 才会重新开放。若启用可选的局域网监听而未配密钥，该端口对整个局域网开放。支持 DSH 0.1.2-rc.1 至 0.1.7-alpha.1 及以后。
 - [Lequait/dsh-glm-web](https://github.com/Lequait/dsh-glm-web) — 非官方的智谱清言（chatglm.cn）网页版 provider——用网页版登录态与积分驱动 DSH，支持流式输出与提示词桥工具调用。
 - [liaoyuqing/dsh-llm-error-retry](https://github.com/liaoyuqing/dsh-llm-error-retry) — 大模型请求重试插件：命中配置的 HTTP 状态码、机器码或 provider 返回字段=值时，按该条规则独立配置的时长休眠后自动重新请求，让订阅套餐的限额、限流报错（429 / insufficient_quota）不打断运行。
