@@ -132,6 +132,7 @@ dsh plugin --profile web add dshmarket
 - [13520rygvv/dsh-restart-button](https://github.com/13520rygvv/dsh-restart-button) — 从三处重启 DeepSeek Harness 桌面端：设置里的按钮、账号菜单「退出登录」上方的一项、以及可自定义的快捷键；有运行中的任务时会先确认。仅支持 Windows 桌面版。
 - [1420079678-ctrl/agent-body#dsh-anatomy-panel](https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-anatomy-panel) — Agent-Body 器官的解剖面板：在 harness 内部的 /anatomy 提供实时体征看板——器官、心跳、自愈账本、自训练计数与真实脉冲流，数据直接读自运行时文件而非誊写。仅 host 端，无客户端 bundle、无构建步骤。
 - [1497105876/dsh-text-inject](https://github.com/1497105876/dsh-text-inject) — 在 DSH 设置页左侧栏新增「文字注入」分区：独立 Markdown 文件中的文字块可注入系统提示词（每轮生效）或会话上下文（关键词门控、去重），支持热加载与自动历史备份。
+- [1700563146/dsh-plugin-ui-zoom](https://github.com/1700563146/dsh-plugin-ui-zoom) — DSH Web 界面整体缩放（70%–160%），可用 Ctrl+滚轮、DSH 快捷键中心或输入框旁的胶囊操作，带正文栏宽度补偿，缩小后是一行更多字而不是一条更窄的栏。
 - [18569663yz-web/dsh-plugin-crypto-ticker](https://github.com/18569663yz-web/dsh-plugin-crypto-ticker) — DSH 侧边栏左下角的实时加密货币行情卡片，位于余额与设置上方，显示 BTC、ETH、SOL、JUP 的价格、24 小时涨跌幅与 24 点迷你走势图，价格跳动时有脉冲反馈，零依赖、免密钥。
 - [1985899182/dsh-harness-chat-control](https://github.com/1985899182/dsh-harness-chat-control) — 为 DeepSeek Harness Desktop 增加接近 ChatGPT 的停止、编辑重发、原生引用注释，以及支持模型和图片输入的独立侧边栏追问对话。
 - [2002XiaoYu/dsh-session-diff](https://github.com/2002XiaoYu/dsh-session-diff) — 为 DSH Web 右侧栏提供按会话的 diff 视图：打开当前对话改动过的文件时原位渲染，按 git 风格显示新增/删除行底色、+/− 行标记、新旧双行号与语法高亮，头部带 +新增 −删除 计数、「仅看改动 / 整个文件」切换和「重新读取」按钮；另有一个配套标签页列出本次会话改动过的所有文件，点开即进入同一视图。当前对话没有改动过的文件仍使用自带文本查看器。
