@@ -4636,7 +4636,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-consistency-guard](https://github.com/bycall/dsh-consistency-guard) — 长文创作一致性守卫：扫描会话正文，发现人物年龄、等级、境界、年份等设定跨章节矛盾，点击直接跳转到冲突原文位置。
 - [caihua8669/dsh-doc-review](https://github.com/caihua8669/dsh-doc-review) — 文档批注台：在 Markdown 文档上划词写批注，批注按 MRSF 侧车文件存在文档旁，Agent 用 doc_review_* 工具读取并登记改动提案，你在批注页逐条接受或拒绝。
 - [carlclouder/dsh-image-serve](https://github.com/carlclouder/dsh-image-serve) — 让会话 markdown 直接渲染本地任意位置的图片与文件：/ws/<本地绝对路径> 同源路由，跨盘符、中文路径、深层嵌套与 UNC 均可，无需先复制到特定目录。
-- [chengzhao-dev/dsh-quarto-book](https://github.com/chengzhao-dev/dsh-quarto-book) — 为 Quarto Book 写章节、校验结构并维护可复用主题。两个技能只在 type: book 的仓库里加载。需 Quarto CLI 与 Python 3。
+- [chengzhao-dev/dsh-quarto-book](https://github.com/chengzhao-dev/dsh-quarto-book) — 把一份 Quarto Book 写成可读、可查、可发布的中文技术书：九步章节写作、结构/链接/图表检查、统一主题与渲染验收。仅在 type: book 仓库加载；需 Quarto CLI 与 Python 3。
 - [ciceroyang/dsh-report-studio](https://github.com/ciceroyang/dsh-report-studio) — 把 DeepSeek Harness 会话整理成日报、周报、交接与文章稿件，支持可核验的 HTML 导出与复核收据。
 - [ColdMagicchess/PTT-Studio](https://github.com/ColdMagicchess/PTT-Studio) — 设计型 PPT 生成：六个 pptx_* 工具把逐页设计稿（deck.json）组装成可编辑 .pptx，配合 AI 背景、去底插画与装饰件，做版式与对比度检查、渲染页面预览，并可用可配置的视觉模型逐页评审；Web 端提供聊天卡片与设置页。需 DSH Desktop 0.2.1-rc.2+（pptx_render 使用其内置 LibreOffice Kit），AI 背景需 Agnes 或 ModelScope API Key。
 - [copylee711/dsh-office](https://github.com/copylee711/dsh-office) — 仅 Windows：Agent 通过办公软件的自动化接口，直接在你打开的 Word、Excel、PowerPoint（微软 Office 或 WPS Office）窗口里改文档，改动实时出现，你可以同时编辑；可读取结构、批量修改、把页面渲染成图片核对排版、保存或导出 PDF。
