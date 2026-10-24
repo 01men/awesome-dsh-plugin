@@ -1087,6 +1087,7 @@ dsh plugin --profile web add dshmarket
 - [syx2bzd/dsh-ricewhale](https://github.com/syx2bzd/dsh-ricewhale) — DSH Web 界面的「鲸鱼女仆」物理挂件：拖拽投掷、吃 token 币计分、每满 500 个 token 冒一碗白饭。
 - [syzke/dsh-translate-on-select](https://github.com/syzke/dsh-translate-on-select) — 在 DSH 里用鼠标选中外文，选区正下方就地浮出简体中文译文卡片。
 - [tangu2023/dsh-menu](https://github.com/tangu2023/dsh-menu) — 为侧边栏「工作区文件」树添加自定义右键菜单：新建文件夹、重命名、在文件管理器中显示、浏览器打开、VS Code 打开、复制路径、流式 ZIP 下载、删除。
+- [Tansukii/dsh-screenshot](https://github.com/Tansukii/dsh-screenshot) — 区域截图工具，支持标注、放大器取色与剪贴板输出，并跟随 DSH 界面语言。
 - [taxueseek/dsh-files](https://github.com/taxueseek/dsh-files) — 文件上传（彩色附件卡片、会话隔离存储、sha256 去重、TTL 清扫）+ 内容嗅探的 read_document 文档读取（PDF/DOCX/XLSX/TXT）。
 - [tcgbp/dock-flash](https://github.com/tcgbp/dock-flash) — DSH 快捷控制面板的 dock-base 工作台适配器。面板本体（开关注册表、皮肤系统、i18n、告警面、host 路由）由 `dsh-flash` 核心单独提供；本包只负责把它挂进 dock-base：侧栏/浮动面板、活动栏 ⚡、编辑器视图与 dock-flash:openQuickControl 命令。需安装 dock-base；装错时会明确报错而不是静默失效。
 - [tcgbp/dsh-flash](https://github.com/tcgbp/dsh-flash) — DSH Web 快捷控制面板核心：可独立浮动的快捷面板，开关项由其它插件通过 quickControl 服务注册，内置皮肤系统与中英文 i18n；dock-base 工作台集成由 dock-flash 适配器单独提供。
@@ -3351,6 +3352,7 @@ dsh plugin --profile web add dshmarket
 - [ClaireXi99/dsh-data-insight](https://github.com/ClaireXi99/dsh-data-insight) — 数据分析工具包：CSV/TSV/JSON 数据画像、IQR 与 z-score 异常检测、带质量问题提示的结构化摘要、以及无需写代码的筛选/分组/聚合查询。
 - [cndn/dsh-d1](https://github.com/cndn/dsh-d1) — Cloudflare D1 数据库工具：d1_list/query/exec/schema/stats/health，通过 D1 HTTP API 访问，默认只读（SQLite 语义的词法级只读保护）、LIMIT 行数上限、CSV/JSON 查询输出与写审批门。
 - [cny919191/dsh-123pan](https://github.com/cny919191/dsh-123pan) — 123 云盘客户端：支持手机号或邮箱密码登录，也支持粘贴 token；侧栏面板可浏览、拖拽上传与下载，并能对工作区做保留目录结构的增量备份；同时提供 15 个工具供 agent 列目录、上传、下载、重命名、移动和删除文件。网络请求、MD5、16MB 分片上传与 token 加密都由随包的静态链接 C++ 核心完成，不需要 Python 或其他运行时。仅 Windows 10/11 x64。
+- [CodeIntegrity/dsh-semble](https://github.com/CodeIntegrity/dsh-semble) — 面向 DeepSeek Harness 的语义代码搜索：注册 semble_search（按行为描述检索代码，返回按相关度排序的 file:line 命中）与 semble_find_related（查找已知位置的相邻代码）两个原生工具，检索由 uvx 启动的 Semble CLI 完成，并附一个随包分发的路由技能。需要 PATH 中有 uv；对某个仓库的首次查询会建立索引。
 - [codingayice/dsh-interview](https://github.com/codingayice/dsh-interview) — 面向 DeepSeek Harness Web 的 AI 面试陪练：支持背八股、模拟面试、场景题与力扣热题 100 四种模式，自动评分、点评并讲解知识点。
 - [coolbreezecoin/dsh-wechat-mp](https://github.com/coolbreezecoin/dsh-wechat-mp) — 把 markdown 变成排好版的微信公众号草稿：样式逐条内联到元素上（编辑器会丢弃 `<style>` 块和 class 名），每张本地图片走微信自己的上传接口以免被过滤，然后创建草稿；不做群发。
 - [CoolTea001/dsh-cool-terminal](https://github.com/CoolTea001/dsh-cool-terminal) — 终端插件 — 真 shell、工作区同步、状态常驻、常用命令管理、命令补全。
