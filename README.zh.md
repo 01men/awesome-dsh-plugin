@@ -1056,6 +1056,7 @@ dsh plugin --profile web add dshmarket
 - [SouthernSibyl/dsh-quick-prompt](https://github.com/SouthernSibyl/dsh-quick-prompt) — 在输入框加一个按钮，点一下就把草稿原地改写成精确提示词，可一键恢复原文。
 - [southsnowL/dsh-bulletin#dsh-bulletin-panel](https://github.com/southsnowL/dsh-bulletin/tree/main/plugins/dsh-bulletin-panel) — 侧边栏面板：把公告和投递状态表放进 DSH 界面 —— 列出公告以及每条有几个会话见过，并让用户发布、编辑、删除条目。需要第三方插件 dsh-better-sidebar。
 - [SOVLOOKUP/dsh-cloud-download](https://github.com/SOVLOOKUP/dsh-cloud-download) — 在交付卡片、变更审查和文档预览上增加下载按钮，并隐藏 Host 远程或无桌面时无法生效的原生打开控件。需 DSH Web；原生打开控件默认隐藏，可在浏览器里恢复。
+- [SOVLOOKUP/dsh-settings-footer](https://github.com/SOVLOOKUP/dsh-settings-footer) — 把侧边栏「设置」从底部账号菜单移成顶部独立一行，隐藏「新会话」按钮，并隐藏侧边栏底部：账号菜单、底部设置单元与插件运行时条。Cmd/Ctrl+N 仍可新建会话，设置仍可打开。
 - [spidu-lee/dsh-refresh](https://github.com/spidu-lee/dsh-refresh) — 让 F5、Ctrl+F5 和 Ctrl+Shift+R 都能刷新 DeepSeek Harness 页面。
 - [SpookySandwich/dsh-plugin-smooth-stream](https://github.com/SpookySandwich/dsh-plugin-smooth-stream) — 给 DeepSeek Harness 加入更好的流式文字动画。
 - [sqfcyily/dsh-workspace-files](https://github.com/sqfcyily/dsh-workspace-files) — 在DeepSeek Harness Web GUI 中浏览工作区的目录/文件，并结合 Git 显示文件改动。
