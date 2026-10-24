@@ -2520,6 +2520,7 @@ dsh plugin --profile web add dshmarket
 - [alchemistwu/dsh-tool-call-guard](https://github.com/alchemistwu/dsh-tool-call-guard) — 在 wire 层中性化 arguments 为非法 JSON 的 tool call，避免一次模型畸形输出让 session 在严格 OpenAI 兼容服务端上永久 400。
 - [aLIZELI/belief-merge#belief-merge](https://github.com/aLIZELI/belief-merge/tree/main/belief-merge) — 把其他会话的上下文合并进当前回合：按证据裁决冲突、前提被撤回时同步撤回结论、用信任格抵抗跨会话提示注入，并在 token 预算内打包。附带评测基准。
 - [Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — 对话回退：基于持久 Change Ledger 回滚会话与工作区状态。
+- [Anlerway/dsh-session-navigator](https://github.com/Anlerway/dsh-session-navigator) — 像 Windows 资源管理器那样管理 DSH 的会话：目录树、标签、备注、回收站，不改动实际会话文件布局。
 - [anweat/dsh-context-console](https://github.com/anweat/dsh-context-console) — 上下文控制台：通过轨迹墙与库存视图检查并模拟 DSH 上下文消费，并由内置消息锻造台创建、注入、导入或安全修复会话消息。
 - [anzhaohao/dsh-side-chat-plus-plus](https://github.com/anzhaohao/dsh-side-chat-plus-plus) — DeepSeek Harness 多标签侧聊增强：可引用整条消息，也可在回复生成中选中文本追问（无需等待回复完成）；右侧停靠面板随 better-sidebar 开关在覆盖与让位间自动切换。
 - [apex-mochen/dsh-reasoning-only-guard](https://github.com/apex-mochen/dsh-reasoning-only-guard) — 防止「只有推理、没有正文」的一轮把整个会话变成不可用。某一轮没有可见文本也没有 tool-call 时，assistant 消息会以空内容落盘，此后该会话的每一次请求都会被网关以 "content or tool_calls must be set" 拒绝，会话彻底死亡且无法再从对话里找回。本插件只注册一个 llm/stream waterfall 监听器，且仅当这一轮没有任何可见产出时，在终止 finish 之前注入一小段文本，使落盘消息永远不为空。附带 DSH 自带 mock 造不出的夹具（严格只有推理的 SSE 服务，因为 llm-mock-server 不允许空 successText，且 reasoning_success 总会再补一段正文），以及把真实落盘会话经 DSH 自己的 serializeMessages 重放的端到端复现。属预防而非修复。零依赖、单文件、不访问进程与文件系统。
@@ -3219,6 +3220,7 @@ dsh plugin --profile web add dshmarket
 - [weibaohui/hermes-loop](https://github.com/weibaohui/hermes-loop) — 自动复盘：对话收尾后自动把有价值的经验蒸馏成可复用的技能（skill）存入技能库，支持信号加速触发、手动立即复盘、审批模式与技能库治理（归档/恢复，永不直接删除）。
 - [weirwei/dsh-logseq](https://github.com/weirwei/dsh-logseq) — 通过无头运行的 Logseq CLI，把 Logseq 2.0 DB 图谱（含 E2EE 加密图谱）与同步服务器保持同步，提供 11 个 logseq_* 工具用于搜索、查询和编辑，并在设置页里登录和配置同步。
 - [whding110/dsh-dev-progress-memory](https://github.com/whding110/dsh-dev-progress-memory) — 逐轮开发进度记忆：每轮完成后分类写入 doc/progress/ 下按日期索引的 Markdown 文件并维护 INDEX.md，系统级问题记入跨项目 SYSTEM_MEMORY.md 并在出现报错关键词时重新注入，progress_read 工具可按需读取完整文档。
+- [Windsander/Mebular#packages/dsh-plugin](https://github.com/Windsander/Mebular/tree/main/packages/dsh-plugin) — 去中心化、离线优先的 DSH 图式记忆与任务图：签名事实、多设备同步，并在侧边栏复用 Mebular 共享控制台。
 - [wojiao42/dsh-memory-file](https://github.com/wojiao42/dsh-memory-file) — 文件型长期记忆：每个会话开始注入你自己的 Markdown 记忆文件，提供带备份与撤销的读写工具，并能查出 DSH_HOME 漂移。默认不读对话；可选开启 autoScan 后，才从本机会话日志里提取你自己的发言交给 agent 归档。不联网。
 - [woshishadowhunter/dsh-seed-society](https://github.com/woshishadowhunter/dsh-seed-society) — 面向 dsh-mneme 的记忆巩固调优（开启 autoDream、放大输出预算、deepseek-chat 路由）与 llm-deepseek 推理力度修复，附带可审计智能体运行时 seed-society 的 MCP 工具桥与六个唯识种子技能。
 - [WsTe47/mylife](https://github.com/WsTe47/mylife) — 本地优先的个人状态档案与决策引擎：逐字保留你的原始输入并精确到行地溯源，给出结论前先生成"证伪项"反驳自己，为每个事实单独设置有效期，并指出这个决定正建立在哪些空白之上。
