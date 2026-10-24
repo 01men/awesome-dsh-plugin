@@ -6178,6 +6178,7 @@ dsh plugin --profile web add dshmarket
 - [YZz-S/dsh-update-checker](https://github.com/YZz-S/dsh-update-checker) — 会话顶栏徽章：显示 DeepSeek Harness 当前版本，自动检查 npm 最新版本，有新版时提示升级。
 - [zampie/request-frame-preview](https://github.com/zampie/request-frame-preview) — 会话头部按钮：预览并下载 DeepSeek Harness 真正发给模型的请求帧——完整 system prompt、声明的工具数组 tools 与 wire 消息数组（system/user/assistant/tool-result），按 agent loop 读取所用的同一会话折叠重建。
 - [zebbkira/dsh-skills-mcp-manager](https://github.com/zebbkira/dsh-skills-mcp-manager) — DSH Web 设置内的技能与 MCP 管理器：在项目级与用户级技能目录间浏览/启用/导入/删除技能，并管理 stdio/streamable-http 的 MCP 服务器（真实连接，工具注册为 mcp__<server>__<tool>，配置存 ~/.dsh/mcp.json）。
+- [zehuan-huang/dsh-codex-runs](https://github.com/zehuan-huang/dsh-codex-runs) — 只读面板：直接解析本地 ~/.codex/sessions 的 rollout 文件，把最近 Codex CLI 运行的状态、耗时、token 用量和最后一条回复列在右上角，不需要桥接或额外守护进程。
 - [Zenjibad/dsh-plugin-toggle](https://github.com/Zenjibad/dsh-plugin-toggle) — 在 DSH 设置 → 插件页直接启用或停用插件：切换开关即时停止或启动插件（无需重启），并持久化，重启后依旧生效。
 - [zhangj1164/dsh-mega-plugins#dsh-github-issue](https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/github-issue/dsh-github-issue) — 面向 DSH 的 GitHub issue 服务：把遥测失败分析整理成统一格式的 issue 报告，构造预填的新建 issue 链接并在超出配置长度时裁剪正文，再用部署配置的模型把一段自然语言描述改写为结构化 issue。
 - [zhangj1164/dsh-mega-plugins#dsh-telemetry](https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/telemetry/dsh-telemetry) — 面向 DSH 插件的本地遥测服务：把操作轨迹与错误事件写入 storage-domain KV 表，在写入前按可配置的规则集脱敏，并在分析读回早于规则存在的旧记录时再次按同一规则集脱敏，然后按功能码锚点聚合单个插件的失败事件，同时报告读取的时间窗口、每个失败组的模型路由，以及按写入顺序统计的最近一次失败之后的尝试次数。
