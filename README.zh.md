@@ -3274,6 +3274,7 @@ dsh plugin --profile web add dshmarket
 - [xbzbing/dsh-openviking-manager](https://github.com/xbzbing/dsh-openviking-manager) — 官方 OpenViking 记忆插件的配置管理界面：连接与用户 Key 配置、本机连接诊断、输入栏会话级记忆开关、按主题隔离的召回范围，以及分数阈值、注入条数、查询扩写与排除 URI 的召回调优。
 - [XieZongChen/dsh-md-notes](https://github.com/XieZongChen/dsh-md-notes) — DSH 的 MD 笔记管理插件：提供完整的 **MD 笔记管理器** 和 **MD 笔记编辑器**，对话内容可快速记入笔记。笔记可 **同步 Git 仓库** 维护。对话时可将笔记 **加入上下文**。
 - [xinchen03/minta#dsh-plugin](https://github.com/xinchen03/minta/tree/main/dsh-plugin) — Minta 记忆引擎的 DSH 原生接入层:合成官方 dsh-mcp-client 行、注册 minta-memory-governance 技能与 session-start 记忆预热,并提供 Minta agent 预设;19 个 MCP 工具由需单独部署的 Minta 引擎(Python/Docker)提供,未部署引擎则无法使用。
+- [xingyueDanYang/dsh-puppet-memory](https://github.com/xingyueDanYang/dsh-puppet-memory) — 面向 DeepSeek Harness 的跨会话记忆：三层存储（行为笔记／深层细节／会话阵列）打底，加一张每步注入的 600 字核心卡、工作·陪伴·学习三线状态、多人多群记录与可见性分区、会话级记忆片段屏蔽与删除、可路由到独立模型的摘要与事实候选，以及备份与自检工具；数据全部是家目录下的纯文本文件，条目可附带按内容哈希落盘的图片与音频。
 - [XinzeQing/dsh-user-memory](https://github.com/XinzeQing/dsh-user-memory) — 白箱两段记忆：四层用户自写的长期记忆（必须遵守／行为设定／用户画像／可选遵守）注入为系统提示词的一节；另有「临时记忆」（跨对话交接／阶段目标／等待项）独立成节、独立预算（默认 1200 字），条目完结即停止注入。长期记忆是记忆目录里可读可改的 Markdown 文件，AI 只能提议，用户在中文面板点「采纳」才写入；临时记忆只在用户明确要求时写入，存放在 <DSH_HOME>/temp-memory.json（首次写入才创建），不在记忆目录里。不自动采集、不后台回写、不联网。
 - [xiyunSacire/dsh-skill-manager](https://github.com/xiyunSacire/dsh-skill-manager) — 在 DSH 侧边栏中查看与删除持久化的技能记忆。
 - [Xplore-LAB/dsh-plugin-asmemory](https://github.com/Xplore-LAB/dsh-plugin-asmemory) — 动作-状态时序记忆：记录类型化的状态与动作，做趋势、异常与因果关联分析。
