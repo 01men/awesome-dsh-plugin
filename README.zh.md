@@ -1369,6 +1369,7 @@ dsh plugin --profile web add dshmarket
 - [Zai-G/dsh-preset-workshop](https://github.com/Zai-G/dsh-preset-workshop) — 预设工作台：逐方案编辑人设、系统提示词段和工具描述，选择工具与技能，预览请求组成，并通过 JSON / YAML 导入导出配置。
 - [zclDragon/dsh-side-chat](https://github.com/zclDragon/dsh-side-chat) — Codex 风格 /side 侧边对话插件：在当前对话旁开一个浮动分叉面板，继承上下文、不打断主任务。
 - [zealot00/dsh-pet](https://github.com/zealot00/dsh-pet) — DSH Web UI 桌面宠物：精灵图动画、agent 状态联动、拖拽、闹钟（每天/一次）与番茄钟，皮肤下拉选择 + 预览。
+- [zengxiaolou/dsh-annotation](https://github.com/zengxiaolou/dsh-annotation) — 划选回答文字就地加注释：保留原文引用加自己写的备注，每条在草稿里变成一枚胶囊，多条一起随消息发出；两条以上时输入框上方会多一个胶囊用来跳回原文或全部清除。
 - [zengxiaolou/dsh-effort-dial](https://github.com/zengxiaolou/dsh-effort-dial) — DeepSeek Harness 输入框里的推理强度滑杆：按当前模型声明的思考档位拖动，松手把档位写入本会话；可选「自动区间」在工具报错后逐档上调，另有可选模型路由按任务类型挑 provider/model。
 - [Zenjibad/dsh-any-attachment](https://github.com/Zenjibad/dsh-any-attachment) — 让 DSH 网页以无路径 @提及 附加任意类型文件：可从 @ 菜单挑选工作区文件，或拖入输入区，Agent 直接读取。
 - [Zenjibad/dsh-drop-any-file](https://github.com/Zenjibad/dsh-drop-any-file) — 让 DSH 网页聊天支持拖拽任意类型文件：非图片文件保存到当前会话工作区，供 Agent 读取使用。
