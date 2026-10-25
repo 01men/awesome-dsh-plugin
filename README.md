@@ -79,6 +79,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 <!-- BEGIN PLUGINS -->
 ### AGI Architecture Exploration
 
+- [Anmulzhao/DSH-AGINT](https://github.com/Anmulzhao/DSH-AGINT) - Self-evolving agent framework on DeepSeek Harness (dsh): 40 Cordis plugins and 4 presets covering memory, reflection, gates, metrics and an auditable evolution loop.
 - [AnonyJcy/dsh-j-space](https://github.com/AnonyJcy/dsh-j-space) - J-Space Cognition Suite SV1 native agent preset and standalone Cordis plugin: 13 modules, persistent controller and decoupled workspace.
 - [benrong2048-boop/dsh-prompt-polish](https://github.com/benrong2048-boop/dsh-prompt-polish) - Turns a one-line DSH draft into a complete task brief (role / goal / constraints / output format). The engine is a byte-verified port of linshenkx/prompt-optimizer (three modes, 10 templates identical to upstream); history is consent-gated with version chains and structural comparison; every run reports its token usage. Nothing is written back or sent without a click.
 - [burning-frappuccino/dsh-turbo](https://github.com/burning-frappuccino/dsh-turbo) - Per-session execution gears for the DSH composer: an OVERDRIVE toggle turns Turbo on for the current session only, the Fast and Max gears swap the agent's planning and verification policy and may lower the request's reasoning effort, and the Host keeps the authoritative mode plus per-turn latency, step count, tool calls and whether a verification command ran.
