@@ -1584,6 +1584,7 @@ dsh plugin --profile web add dshmarket
 - [huanyuLv/dsh-balance-tide](https://github.com/huanyuLv/dsh-balance-tide) — 输入框下方显示 DeepSeek 账户余额与本会话花费，余额前带峰/谷价格徽章（北京时间）与距切换倒计时，悬停看两档单价明细与使用建议。
 - [huhu23333/dsh-reasoning-distill](https://github.com/huhu23333/dsh-reasoning-distill) — 把过长的模型思考压缩成有用核心，之后每次请求重放压缩版，并给出每个会话的开销与节省报告。默认关闭：必须先选择一个改写后端。derive 无需安装、打包版也能用；in-place 需给 DSH 源码打 14 处补丁并重建（源码构建首选）；message-edit 需装第三方插件，仅实验性，不推荐。
 - [HwFee/HwFee-dsh#usage-stats](https://github.com/HwFee/HwFee-dsh/tree/master/plugins/usage-stats) — 空白会话首页的用量面板：会话数、消息数、总 token、活跃天数、高峰时段、常用模型与热力图，范围可选全部、30 天或 7 天。
+- [hzh5021/dsh-daily-read](https://github.com/hzh5021/dsh-daily-read) — 日报一键读：敲 /daily 就把「去读最新那篇刷B站日报」塞进当前会话——只给路径不给正文，让它自己读原文；侧栏面板发的是同一条命令。
 - [iamfromchangsha/dsh-go-balance](https://github.com/iamfromchangsha/dsh-go-balance) — 输入框工具行右侧的 OpenCode Go 余额胶囊：滚动/每周/每月配额剩余百分比（数据直接来自 Zen 用量接口），悬停查看明细，低余额自动变黄/变红。
 - [iasiv5/dsh-quota-watch](https://github.com/iasiv5/dsh-quota-watch) — 在 DSH 中查看 GLM Coding Plan 与 GitHub Copilot 的服务商额度快照：可拖动悬浮胶囊与详情面板展示额度窗口、重置时间、分模型用量与 Copilot 额度，附默认隐藏的可选侧边栏卡片；凭据由 DSH 宿主解析，不保存额度历史。
 - [ibka512/dsh-ibka-balance](https://github.com/ibka512/dsh-ibka-balance) — 输入框下方常驻余额卡片：实时显示 DeepSeek API 账户余额，每 5 分钟自动刷新，支持手动刷新，余额过低自动变色提醒。
@@ -2702,6 +2703,7 @@ dsh plugin --profile web add dshmarket
 - [hunyu-feng/dsh-context-handoff](https://github.com/hunyu-feng/dsh-context-handoff) — 输入框下方实时显示上下文占用；接近上限时让当前模型写一份交接摘要，开新会话继续干活并自动切过去，长任务不用怕撞上窗口上限。
 - [hwangjunjie/dsh-session-move](https://github.com/hwangjunjie/dsh-session-move) — 在 Web UI 中把会话移动到其他文件夹、永久删除，或进行 AI 重命名——支持把会话行拖到文件夹标题上，也可从会话菜单操作。移动会重写会话头的 cwd、迁移持久化日志并更新工作区账目，历史随会话一起走；删除会先停止运行中的 agent，再移除日志、投影缓存行与工作区账目。同样提供三个 agent tools：workbench_session_move、workbench_session_delete、workbench_session_rename_ai。
 - [hyzyn/dsh-plugin-kit#search](https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/search) — DSH Web GUI 的全局搜索插件：侧边栏全局搜索框全文搜索历史会话（走 sessionQuery 全文索引，未启用时降级为逐会话扫描）与设置面板，关键词高亮，点击直达会话或对应设置卡片。
+- [hzh5021/dsh-qq-voice](https://github.com/hzh5021/dsh-qq-voice) — 给 QQ 那一条线单独装一张嘴：把口径文件挂成那段会话的系统提示段，只挂 QQ，别的线一个字不动；改 md 就生效，不必重装插件。
 - [i1j/context-assembler-DSH](https://github.com/i1j/context-assembler-DSH) — DeepSeek Harness 上下文汇编插件：话题块上下文汇编、水位压力话题切割、工具轮压缩/改写、reality 召回注入与 handoff 规划。
 - [icanfinish11/dsh-context-mode](https://github.com/icanfinish11/dsh-context-mode) — 为 DeepSeek Harness 适配 Context Mode：进程内 ctx_* 工具（沙箱代码执行与 FTS5 知识库），并注入上下文窗口路由指引。
 - [Icstick/dsh-context-maid](https://github.com/Icstick/dsh-context-maid) — 自动上下文策展：tool 输出内容感知瘦身、无效日志清理、用户要求与进行中工作钉扎保护、先归档后压缩，全程审计留痕。
@@ -2795,6 +2797,7 @@ dsh plugin --profile web add dshmarket
 - [Max-Null/dsh-chinese-thinking](https://github.com/Max-Null/dsh-chinese-thinking) — 注入一条固定 system-prompt 段落，让 Agent 无论用户使用什么语言都始终用中文思考和回复。
 - [mayf3/dsh-session-doctor](https://github.com/mayf3/dsh-session-doctor) — 会话医生：列出会话（含 agent 运行状态）、读取会话记录、诊断卡死的 agent、解卡（cancel + keepInbox 保留排队消息）、向其他会话发送消息。
 - [mcf171/dsh-session-delete](https://github.com/mcf171/dsh-session-delete) — 在会话行菜单中永久删除会话：先归档、再删除日志目录并立即移除该行，带 Delete 快捷键；只使用官方扩展点，仅打开过、未在运行的会话依然可以删除。
+- [meng-lx/dsh-auto-restart](https://github.com/meng-lx/dsh-auto-restart) — 等所有 agent 与后台任务都空闲后再重启 DSH，并回到原会话：可取消倒计时、到点再判占用、与随包 PowerShell 重启脚本之间用交接文件通信。
 - [mengwEX/dsh-block-ptc](https://github.com/mengwEX/dsh-block-ptc) — 为 PTC 模式提供模型自主收口的动态上下文压缩，将程序执行归入区块，并用模型撰写的摘要替换已完成区块的消息。
 - [MichengAI/dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) — 在设置里增加已归档会话页，可按工作区搜索、恢复和删除已归档会话。
 - [MichengAI/dsh-btw](https://github.com/MichengAI/dsh-btw) — 提供 /btw 一次性上下文旁问，不执行工具；回答显示在可复制、折叠或关闭的独立气泡中，不写入主对话。
@@ -4879,6 +4882,7 @@ dsh plugin --profile web add dshmarket
 - [hoshino114/dsh-skill-hub](https://github.com/hoshino114/dsh-skill-hub) — 技能中心：浏览与管理本地 Agent Skills，并在同一视图中搜索、预览、安装 ClawHub、ModelScope、QwenPaw 三个市场的技能，支持来源与分类筛选；同时提供 skill_hub 工具，让 agent 也能自助安装技能。
 - [hoyyang/dsh-best-ponytail](https://github.com/hoyyang/dsh-best-ponytail) — 把「最懒资深工程师」规则集 ponytail 装进 DeepSeek Harness：7 级最小代码阶梯（YAGNI、复用、标准库、平台原生、已装依赖、一行、最小实现），六个技能（主规则、过度工程 review、全仓 audit、debt 欠账台账、gain 计分板、help 速查），/ponytail 会话级调档命令（lite/full/ultra/off），以及可选的每轮常驻规则注入。上游内容 MIT 原样打包，零工具注册，卸载零残留。
 - [hyhmrright/brooks-lint](https://github.com/hyhmrright/brooks-lint) — 提供六个代码质量技能，涵盖代码审查、架构审计、技术债、测试质量、健康看板与修复。
+- [hzh5021/dsh-research-commands](https://github.com/hzh5021/dsh-research-commands) — 把装好的研究技能变成斜杠命令：/idea、/novelty、/review、/poster……一共十五条，敲一下就把对应的 SKILL.md 塞进对话，照着跑那个技能。
 - [icanfinish11/dsh_superpowers](https://github.com/icanfinish11/dsh_superpowers) — 把 obra/superpowers 的 14 个技能按已记录的上游 tag（v6.3.0）打包进 dsh，并可用带差异报告的命令重新同步；任务匹配时自动触发。
 - [IcyCreamDAS/shidi-skill](https://github.com/IcyCreamDAS/shidi-skill) — AI4S 科研工作流技能包，面向 AI for Science 与研究生/科研 Agent 用户：多角度文献调研（每角度落盘）、实验方案（含漏洞清单）、作图与精读；每单交付文件，附交叉验证任务书。零依赖，MIT。
 - [iflytek/skillhub#dsh](https://github.com/iflytek/skillhub/tree/main/plugins/dsh) — 在 DeepSeek Harness 内浏览、搜索 SkillHub 技能，并管理本地技能的安装、更新和卸载。适配 DSH 0.2.0-rc.2 与 0.2.1-rc.2，暂不兼容 0.2.1-rc.3。
