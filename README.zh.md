@@ -1702,6 +1702,7 @@ dsh plugin --profile web add dshmarket
 - [nomxy/dsh-balance](https://github.com/nomxy/dsh-balance) — 侧栏名字行里的 DeepSeek 余额胶囊，显示余额、当前峰谷时段与下次切换倒计时，点一下刷新。
 - [nonewind/dsh-spend](https://github.com/nonewind/dsh-spend) — DSH Web 用量与费用统计插件：右下角悬浮窗，按模型/按天/按会话多维聚合与预计花费。
 - [novaschai7/dsh-plugin-balance-ui](https://github.com/novaschai7/dsh-plugin-balance-ui) — 在侧边栏底部显示 DeepSeek 账户余额与今日 token 用量，并把本地估算的花费与账户余额实际减少量按采样覆盖的时长对账。
+- [nrenvo/dsh-turn-trace](https://github.com/nrenvo/dsh-turn-trace) — DeepSeek Harness 的逐轮、逐步成本账本：在 Chat 与 Trajectory 旁新增 Turns 页签，显示 token、估算费用、缓存节省，以及工具参数、原始返回与来源检查器。纯客户端，价格按已记录的模型用量估算。
 - [null5069/dsh-better-stats](https://github.com/null5069/dsh-better-stats) — DSH Web 输入框下方的增强统计条：官方人民币计价（峰谷分时、价目自动同步）、多模型分账、实时计时、子代理树合并、余额直连、预算预警与流式成本估算。
 - [OK-wx/dsh-ocgo-lite](https://github.com/OK-wx/dsh-ocgo-lite) — 输入框下方常驻 OpenCode Go 用量条：5 小时/每周/每月配额圆环，DSH 会话 token 与花费统计（官方实时定价），支持按模型与按「本次会话」范围联动明细（本次会话实时更新），一键复制 API Key。
 - [oldzhang82/dsh-tps-ttft](https://github.com/oldzhang82/dsh-tps-ttft) — 为 DeepSeek Harness 提供每轮 TPS/TTFT 统计：模型耗时、工具耗时、首 token 延迟、输出速度。
