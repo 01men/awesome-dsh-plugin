@@ -2854,6 +2854,7 @@ dsh plugin --profile web add dshmarket
 - [JasonQQ/dsh-btw-plugin](https://github.com/JasonQQ/dsh-btw-plugin) — Codex 风格 /btw 指令：在继承主会话上下文的子代理中回答附带问题，答案展示在界面里、不写入主会话历史。
 - [jasonrale/dsh-archive-manager](https://github.com/jasonrale/dsh-archive-manager) — DSH Web UI 的归档会话管理器：重新打开已归档会话并继续对话、取消归档恢复原位、彻底删除会话，支持分组浏览、消息搜索与原生视图同步。
 - [Jaylor-Wang/dsh-tool-result-trimmer](https://github.com/Jaylor-Wang/dsh-tool-result-trimmer) — 即时、尾部加权、行吸附的工具输出修剪插件：挂载于执行流水线即时截断超大命令输出，内置语义提纯器与 ANSI 剥离。
+- [Jaylor-Wang/dsh-tool-session-delete](https://github.com/Jaylor-Wang/dsh-tool-session-delete) — 在侧栏上下文菜单中添加删除会话操作，删除前通过模态框实时展示日志大小与活跃状态，并完整清理日志文件、投影缓存与内存注册表杜绝复活。
 - [JayYuen666/dsh-session-rescue](https://github.com/JayYuen666/dsh-session-rescue) — 回合异常收尾时的自动补救：瞬时失败后续跑、输出截断后继续、待办未完成时重跑，另有一层请求级 429 兜底，以及带「改后重发 / 手动重试 / 停止并重问」的客户端停靠栏。
 - [jermaine123123/agent-context-editor#deepseek-harness](https://github.com/jermaine123123/agent-context-editor/tree/main/adapters/deepseek-harness) — Agent Context Editor 是一个可以手动排除、编辑和选择性压缩 AI 对话上下文的跨 Agent 插件，同时支持搜索、筛选、选择、隐藏、恢复和撤销对话内容，并保留原始 Session。
 - [Jesse-njx/dsh-crosstalk](https://github.com/Jesse-njx/dsh-crosstalk) — 跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。
@@ -7172,6 +7173,7 @@ dsh plugin --profile web add dshmarket
 - [Gastronomicluna/Matrix-code](https://github.com/Gastronomicluna/Matrix-code) — 矩阵风格 CLI 对话页：Agent 思考过程化作绿色代码雨倾泻而下，回复照常流式显示。
 - [Gin-7/dsh-pet-remielle](https://github.com/Gin-7/dsh-pet-remielle) — 蕾米埃尔(绝区零)桌宠：随 DSH 工作状态切换动画表情。
 - [Gjs9178U/dsh-pet-indesktop](https://github.com/Gjs9178U/dsh-pet-indesktop) — 给 DSH 网页界面加一只可以拖动的桌宠：一只叫「大肥鱼」（昵称「鲸鲸」）的鲸鱼娘，八种配色皮肤可切换，并且有性格——只吃米饭、聪明但懒、嘴硬心软；连点几次会躺平不干了，被叫「大肥鱼」会生气并坚持自己不胖，叫「鲸鲸」才高兴。她还会记事：今天被叫胖三次就来时冷淡，被叫昵称三次就亲近，离开半小时再回来说「才不是等你」，头几次见面怕生；这些计数每天零点清零，存在插件自己的状态文件里。十分钟没人理会游到角落，那只改视觉、不会动你放她的位置。八张皮肤图随插件分发、由插件自己提供，因此没有任何第三方请求。注意：画面带有 OleapCrow 标记、由仓库所有者提供，八种皮肤是同一张画的重新配色；本插件尚未在真实的 DSH 宿主上安装验证过。
+- [gongfpp/dsh-novel-fish](https://github.com/gongfpp/dsh-novel-fish) — 小说摸鱼：主动展开选中的原生聊天区域时，在保留真实思考和工具输出的下方阅读本地 EPUB、TXT、Markdown 小说，小说不发送给模型。
 - [gongstudent/dsh-moyu](https://github.com/gongstudent/dsh-moyu) — 在 DeepSeek Harness 界面里悬停刷抖音推荐流：鼠标移入热点开始播放，移出暂停在原处，滚轮切换视频；滚轮做了累加与冷却，一次手势只切一条，播放器隐藏时保持挂载，移回从原处继续。宿主侧完成请求签名与视频流反代，不需要登录任何账号。
 - [good-saltfish/dsh-novel-shelf](https://github.com/good-saltfish/dsh-novel-shelf) — 办公摸鱼专用：在 DSH 右侧栏里放着本地 TXT 小说，边看小说边做项目。自带三本小说，全新安装打开即有书架，也可继续添加自己的 TXT。书架面板读取 %APPDATA%\novel-reader 里的书目，按章切分并逐章渲染，可调字号与行距；批注与阅读进度写回与 novel-reader 桌面版相同的文件，两边数据互通。内置五套阅读主题（白天、护眼、米黄、深灰、纯黑），与设置文件同步，界面提供中英双语。v0.2.0 新增 AI 陪读：定时就着刚读到的内容吐槽，也能随时点「现在就说」，四种风格可选，右下角常驻一个陪读人物；模型可以在 DSH 已注册的 provider 里挑，也能自填 OpenAI 兼容端点与 API key，出问题时直接说明是哪个路由、什么原因。读取 novel-reader 的数据目录（Windows 下为 %APPDATA%\novel-reader）；macOS 与 Linux 同样支持。
 - [Gorkaseto/dsh-whale-pet](https://github.com/Gorkaseto/dsh-whale-pet) — 在新会话中，一只蓝白相间的像素风小鲸鱼趴在输入框上方游动。
