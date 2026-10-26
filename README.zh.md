@@ -4081,6 +4081,7 @@ dsh plugin --profile web add dshmarket
 - [Sur-Cai/macos-computer-use-kit#dsh](https://github.com/Sur-Cai/macos-computer-use-kit/tree/main/packages/dsh) — DeepSeek Harness 的 macOS computer use：基于无障碍树的稳定 ref 定位、后台输入、Unicode 输入、菜单与应用、set-of-mark 截图、本地 OCR 与动作校验——11 个工具桥接 macos-cu CLI。
 - [svgop/dsh-rich-questions](https://github.com/svgop/dsh-rich-questions) — 网页端分支问卷：ask_survey 工具，按选项路由后续问题，悬停洞察、Mermaid 流程图、一键快速模板，答案可暂存续答。
 - [svgop/dsh-rich-tracking](https://github.com/svgop/dsh-rich-tracking) — todo 胶囊下方的进度记分板：百分比行必须带工件证据，检查点由宿主抓取 git 状态，pursue/align/dismiss 直接送达 agent 下一步。
+- [SwordX-Lu/dsh-agent-settings](https://github.com/SwordX-Lu/dsh-agent-settings) — 智能体设置：在侧边栏管理可复用的子智能体档案，为每个档案写明适用场景与所用提供方/模型，任务中由智能体按场景自动拉起对应的子智能体。
 - [T-Auto/dsh-ops](https://github.com/T-Auto/dsh-ops) — 为 Windows 的 DSH 提供 bash、PowerShell 7 及 Rust 高性能工具，减少 token 消耗。
 - [Taler97/dsh-rollback](https://github.com/Taler97/dsh-rollback) — 文件变更回滚：捕获 write/edit 工具调用的改前映像（git blob 或快照），通过面向模型的 rollback_files 工具或 /rollback 命令还原。
 - [TaurenMountain/dsh-llm-as-a-verifier](https://github.com/TaurenMountain/dsh-llm-as-a-verifier) — 面向 DSH 智能体的细粒度 LLM 验证：基于评分 token logprob 期望的成对打分、概率枢纽锦标赛 N 选一与逐步进度追踪。
@@ -4537,6 +4538,7 @@ dsh plugin --profile web add dshmarket
 - [xiaobai2017666/dsh-chrome-cdp](https://github.com/xiaobai2017666/dsh-chrome-cdp) — Chrome DevTools Protocol 插件 for DeepSeek Harness。通过 chromremote-interface 以 CDP 连接并操控 Chrome。连接带有图形界面。
 - [xingzhen199186/dsh-jev-ultrafast](https://github.com/xingzhen199186/dsh-jev-ultrafast) — 给 DeepSeek Harness 一句话目标：决策服务从带编号的元素表里挑出下一步操作与目标元素，驱动真实浏览器把事办完，一趟多步任务只花一次工具调用。
 - [yangyunsong023/dsh-sxs-anti-bot-http](https://github.com/yangyunsong023/dsh-sxs-anti-bot-http) — 反爬 HTTP 工具：UA 池轮换、指数退避重试、反爬墙检测（验证码/安全验证）与自适应限流，提炼自 SXS 生产采集体系（每日数百万请求）——工具：`sxs_fetch` / `sxs_fetch_json` / `sxs_rate_status`。
+- [Yingmoon0715/yingmoon-plugins#plugins/rightbar-driver](https://github.com/Yingmoon0715/yingmoon-plugins/tree/main/plugins/rightbar-driver) — 用 38 个工具从 agent 侧驱动 DSH 右推栏内置浏览器：打开、导航、读取页面正文与可交互元素、无障碍树、点击、填字、选下拉框、勾选、按键、滚动、拖动网页框边角改变大小，框内网页随之响应式重排，框宽收窄即呈现手机版布局、截图、整页截图、导出 PDF、导出 markdown、按选择器提取 JSON、下载文件、存取 Cookie，以及带序号的操作记录、重放与动作白名单。同时把内置 web_search 接到自建 SearXNG（经 SSH 隧道，Tavily 与真实浏览器作兜底），并注册抓取提供者：被墙的 GitHub 地址按实测可用的镜像顺序重试，并从响应头嗅探字符集，使 GBK 与 GB2312 页面正确解码。
 - [yinnho/aginxbrowser#dsh-aginxbrowser](https://github.com/yinnho/aginxbrowser/tree/main/dsh-aginxbrowser) — 给 DSH agent 的网页访问层：把 JS 渲染或受保护的页面抓成干净 markdown，聚合搜索 14 个引擎，并提供有状态交互会话（点击、输入、滚动、eval、截图），引擎可托管可自部署（Rust 单二进制）。每个会话带直播页 URL，人能实时围观 agent 浏览并用鼠标接管。
 - [Yokhong/dsh_academic_web_proxy](https://github.com/Yokhong/dsh_academic_web_proxy) — 按机构代理规则打开学术网站，可依据匹配的论文元数据重命名符合条件的新 PDF，并提供简体中文、繁体中文及美式英语设置界面。
 - [youbaiyun/dsh-browser-crossplatform#bridge](https://github.com/youbaiyun/dsh-browser-crossplatform/tree/main/packages/bridge) — dsh 浏览器扩展的桌面端一半：在 dsh 自带的 webserver 上挂一个带令牌校验的 WebSocket 桥，向模型暴露 browser_* 工具，让它读取并操作用户当前标签页，图片识别默认关闭、需用户自行开启。
