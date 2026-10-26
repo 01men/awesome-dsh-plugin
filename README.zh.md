@@ -642,6 +642,7 @@ dsh plugin --profile web add dshmarket
 - [JanEickholt/dsh-inline-diff](https://github.com/JanEickholt/dsh-inline-diff) — 将编辑与写入工具调用渲染为常开的双栏 diff，样式类似 git diff，可选语法配色与词级高亮。
 - [jasondu/dsh-ui-mobile](https://github.com/jasondu/dsh-ui-mobile) — 面向手机的 DeepSeek Harness 界面，提供可安装 PWA、响应式导航，以及 Agent 成功完成时的 Web Push 通知。
 - [JasperPengC/dsh-mcp-skills-board](https://github.com/JasperPengC/dsh-mcp-skills-board) — DeepSeek Harness 的 MCP 服务器与技能管理面板：侧栏面板加插件页配置区，支持搜索、状态灯、逐行开关、详情，以及按 Codex mcp_servers 字段设计的添加服务器表单。
+- [JayYuen666/dsh-dir-prep-organize](https://github.com/JayYuen666/dsh-dir-prep-organize) — 对话输入框旁的两个按钮：一个结合当前目录改写草稿，另一个插入角色模板——默认 85 条精选模板由随包携带的 `agents/` 角色库生成，设置卡可用自己的 `.md` 角色文件扩充。
 - [jcx3915-pixel/dsh-subtopic](https://github.com/jcx3915-pixel/dsh-subtopic) — 在 DSH 会话里选中一段文字按 Ctrl，就地开出子话题卡片：流式解答、追问树，还能把树行拖成引用卡片。
 - [jeffreyren1/dsh-custom-js](https://github.com/jeffreyren1/dsh-custom-js) — 在 DeepSeek Harness 中加载、编辑、管理和热重载可信的 JavaScript / TypeScript 用户脚本。
 - [jhuanxx44/dsh-paste-path](https://github.com/jhuanxx44/dsh-paste-path) — macOS Finder 剪贴板粘贴：在 Finder 里 Cmd+C 复制文件或文件夹，回到 DSH 按 Ctrl+V 把绝对路径插入输入框；普通文本粘贴的 Cmd+V 不受影响。
@@ -1728,6 +1729,7 @@ dsh plugin --profile web add dshmarket
 - [rayadesune/DeepSeek-Harness-chat-billing](https://github.com/rayadesune/DeepSeek-Harness-chat-billing) — 会话头部徽标显示 DeepSeek 账户余额、本轮对话花费与今日全部会话总花费；每轮消息操作行前置本轮花费，详情面板含按模型计价与今日会话消费排行。官方峰谷定价，余额取自 /user/balance API。
 - [rayzhu1109/dsh-balance](https://github.com/rayzhu1109/dsh-balance) — 在侧边栏底部实时显示 DeepSeek 账户余额，点击展开最近 5 天消费柱状图。
 - [RevxZxCx/dsh-where-did-my-tokens-go](https://github.com/RevxZxCx/dsh-where-did-my-tokens-go) — 在聊天页“深度思考”指示旁实时显示 token 计数，支持输入/输出合并或分列展示、逐步骤操作计数与 K/M/G/T 自适应单位。
+- [rongyishuaige7/dsh-stats](https://github.com/rongyishuaige7/dsh-stats) — 按项目审计 DSH 会话的 Token、开发时间与费用，含项目泳道时间线、半小时成本柱图、26 周热力图与账户余额；无法确认计价的部分会标注而非估算。
 - [Rycbartbad/dsh-key-manager](https://github.com/Rycbartbad/dsh-key-manager) — 在设置 → API 密钥中为每个提供商管理多个 API 密钥：密钥池加备注、一键切换当前使用密钥，切换后下一次模型调用立即生效。
 - [sakanamaru/dsh-minato](https://github.com/sakanamaru/dsh-minato) — 可选的只读桥接插件：把 dsh 的会话与 token 实时统计写成一份 JSON 快照，供独立的 dsh-minato 工具箱读取.
 - [SenmuuuuW/dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report) — 深迹 DeepTrace — 从会话日志生成日报/周报/月报/年报/自定义区间报告：成本与 Token 拆解、8 条确定性洞察、协作复盘、实时模型余额、PDF/PNG/HTML 导出；只读，绝不改写历史。
@@ -3079,6 +3081,7 @@ dsh plugin --profile web add dshmarket
 - [863683348/dsh-memory-setup](https://github.com/863683348/dsh-memory-setup) — 解决 AI 金鱼脑：本地可审计的个人记忆层——偏好、项目约定、工作流与纠错教训，以带变更日志与完整性校验的 JSON 持久化在工作区，支持一次性设置、项目约定自动提取、证据化教训与快照恢复。
 - [863683348/dsh-plugin-focus](https://github.com/863683348/dsh-plugin-focus) — 为 DeepSeek Harness agent 提供持久化专注板：在会话工作区维护目标、约束与决策笔记，跨压缩与会话存活，支持自动注入上下文、清空归档与可选 Web 面板。
 - [988hj7tczd-oss/harness-desktop#plugins/harness-memory](https://github.com/988hj7tczd-oss/harness-desktop/tree/main/plugins/harness-memory) — 跨会话记忆插件：用官方 ctx.storage 存储域持久化记忆，注册 system-prompt section（memory:recall）把记忆注入模型上下文，提供 memory_save / memory_forget 工具让 agent 自行存取记忆（maxMemories 可配置）。
+- [a1141171521/dsh-plugin-memfuse](https://github.com/a1141171521/dsh-plugin-memfuse) — DSH 的长期记忆，全部存成纯文本 Markdown。真实的用户/助手对话会零模型调用地落进按天切分的会话文件，再由一轮 LLM 抽取沉淀成记忆，每轮注入系统提示。检索在本地完成（中文二元组 + BM25），分索引、摘要、全文三级，模型只为它真正要看的细节付费。记忆带优先级；P0 与用户手写的条目永不被自动改动，遗忘是把条目标记为 stale 而不是删除，整条链路都能在 status.md 里审计。六个工具覆盖检索、写入、状态、抽取、反馈与技能库；当一组记忆够格变成技能时，回合尾部会出现一张卡片，点一下当场写出 SKILL.md，经你确认后才装进技能库。学习默认开启并跟随对话模型；关掉总开关即完全不用 LLM，而原始问答照样落盘。失败会写进提示与 status.md，不会被吞掉。纯 JavaScript，除 harness 自带包外无第三方运行时依赖。
 - [adithyanraj03/dsh-memory-recall](https://github.com/adithyanraj03/dsh-memory-recall) — Hermes Agent 风格的 dsh 持久记忆：一个 memory 工具维护用户档案与模型自己的笔记，并在每段对话的开头、记忆变更后、压缩之后各投递一条带记录的消息；session_search 工具只在用户同意后才会读取更早的会话；另有 Memory 面板可查看和编辑已保存的内容。
 - [adoresever/graph-memory](https://github.com/adoresever/graph-memory) — DeepSeek Harness 的可追溯、可检索跨会话记忆：把对话知识沉淀为带类型的图节点（任务/技能/事件）与关系边。
 - [aerince/dsh-active-context-pruning](https://github.com/aerince/dsh-active-context-pruning) — 面向 DeepSeek Harness 的模型驱动上下文裁剪插件，通过官方 compaction API 释放上下文空间。
@@ -4419,6 +4422,7 @@ dsh plugin --profile web add dshmarket
 - [jaibhasin/dsh-browser-agent#dsh-plugin](https://github.com/jaibhasin/dsh-browser-agent/tree/main/dsh-plugin) — DeepSeek Harness 的 Chrome 侧边栏浏览代理，通过本地桥接提供页面读取、导航、点击、输入、滚动和截图工具。
 - [Jakcet/dsh-dschat](https://github.com/Jakcet/dsh-dschat) — 在 DSH 桌面版主面板里通过 Electron webview 嵌入 DeepSeek 网页版聊天（chat.deepseek.com），带后退/前进/刷新工具栏，并把登录相关的 localStorage 快照存在本地、下次打开时回填。
 - [jaychang1989/dsh-webchat](https://github.com/jaychang1989/dsh-webchat) — 在 DeepSeek Harness 内打开 chat.deepseek.com 官方网页版：点侧边栏入口，真实页面通过桌面端的原生浏览器访客渲染在中栏，并且重启后保持登录。模型选择、深度思考、智能搜索、历史记录、附件上传仍是官方那一套；宿主没有该访客桥接时降级为打开窗口。
+- [JayYuen666/dsh-scrapling](https://github.com/JayYuen666/dsh-scrapling) — 把 Scrapling Python 库包成最多十三个模型工具，按探测到的能力注册：为纯 JavaScript 页面上真实浏览器渲染、用 CSS/XPath 取出结构化数据而不是 Markdown、选择器自愈、可复用的登录态会话、XHR 抓取，以及在官方作业后端上跑的限定域爬虫。需要 Python 3.14+ 且装好 Scrapling；浏览器相关工具还需要为 patchright 安装 Chromium 引擎。
 - [jiaererw/dsh-plugin-chrome](https://github.com/jiaererw/dsh-plugin-chrome) — 每个 DSH 会话一个可见的 Chrome 窗口：16 个 chrome_* 工具（打开/状态/关闭/导航/标签/快照/截图/点击/坐标点击/填写/输入/按键/悬停/滚动/执行脚本/等待），Web GUI 的 Chrome 标签页提供实时画面流（静止页截图心跳兜底）、标签页管理、窗口控制与截图历史。
 - [jiewaigongxing/dsh-jiey-browser](https://github.com/jiewaigongxing/dsh-jiey-browser) — 通过 MCP 在 DeepSeek Harness 中驱动 Jiey 浏览器：导航、快照、操作、读取、截图与标签页管理，使用真实 Chromium 环境。
 - [JohnXu22786/browser-automation](https://github.com/JohnXu22786/browser-automation) — dsh 的真实浏览器自动化:基于 Playwright 的 MCP 服务,提供导航、点击、填写、输入、截图与带编号引用的无障碍快照操作,22 个 web_* 工具经 stdio 接入 Agent。
