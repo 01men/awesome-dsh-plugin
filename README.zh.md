@@ -900,6 +900,7 @@ dsh plugin --profile web add dshmarket
 - [Moolight/dsh-shader-workbench](https://github.com/Moolight/dsh-shader-workbench) — 节点式 GLSL 工作台：在画布上连节点图并实时预览，编译成 Shadertoy 兼容的 GLSL（支持 BufferA–D 多 Pass 反馈与热重载），可跨编译导出 HLSL / MSL / SPIR-V，并在本地工作区管理项目、材质、快照与资源（图片 / 音频 / 歌词）。内置 57 个节点、8 个自带示例与 11 个 agent 工具，无运行时依赖。
 - [Mooling0602/dsh-web-file-uploader](https://github.com/Mooling0602/dsh-web-file-uploader) — 为 DeepSeek Harness 设计的文件上传插件。
 - [MoonlitDropOfBlood/DSH-Desktop#whaleharbor-promo](https://github.com/MoonlitDropOfBlood/DSH-Desktop/tree/master/plugins/whaleharbor-promo) — 把浏览器里的 DSH 会话变成鲸港简版客户端：独立 --app 窗口、客户端顶栏与任务通知；后台多源下载完整桌面安装包（SHA-256 校验），完成后提示安装。
+- [MoonSand/dsh-desktop-restart](https://github.com/MoonSand/dsh-desktop-restart) — 在侧栏底部添加两个按钮：一个只重新加载界面与客户端插件，另一个连同 Host 重启整个桌面应用；插件安装期间拒绝重启。
 - [Moonshile/moonshile-dsh-plugins#dsh-workspace-sort](https://github.com/Moonshile/moonshile-dsh-plugins/tree/main/plugins/dsh-workspace-sort) — 侧边栏工作区每日按最近活动排序一次，当天顺序稳定。
 - [moophone/dsh-sidebar-fold](https://github.com/moophone/dsh-sidebar-fold) — 把侧边栏里所有面板行（slot 注册与插件直接注入两类）折叠成单独一行「插件大全」，把被挤掉的工作区高度还给会话列表。
 - [MorGogh/widget-dock](https://github.com/MorGogh/widget-dock) — 对话两侧空白区的可拖动卡片工作台，28 个小组件（余额、Token 用量、成本、上下文压力、待办、目标、用量热力图、GitHub 仓库、图片中转等），支持 S/M/L/XL 四档尺寸。
@@ -4297,6 +4298,7 @@ dsh plugin --profile web add dshmarket
 - [yuehancn/dsh-tool-qrcode](https://github.com/yuehancn/dsh-tool-qrcode) — 内置从零实现的 ISO/IEC 18004 编码器，无需任何外部程序即可出码；出图前先算清楚版本与纠错余量，也能把已有二维码读回文本。
 - [yuehancn/dsh-tool-subtitle](https://github.com/yuehancn/dsh-tool-subtitle) — 读写互转 SRT/WebVTT/ASS 三种字幕并校正时间轴，出片前体检过长或读不过来的 cue，还能用已配置的识别引擎把音视频转成字幕。
 - [yuezhiye/dsh-closet](https://github.com/yuezhiye/dsh-closet) — 按工作区管理临时脚本与其运行日志的收纳间，数据放在每个项目内的 .dsh-fix 目录。可登记脚本（语言与用途）、扫描项目中遗留的临时脚本/备份/日志、带超时执行已登记脚本并把每次运行写进带时间戳的日志、把选中的文件清运进可整批还原的回收站。扫描只列清单永不删除；清运只做移动不做删除；已被 git 跟踪的文件默认拒收，确需处理要显式加 force。含 7 个 Agent 工具与一个设置面板。
+- [yugejixian/vm-blackbox](https://github.com/yugejixian/vm-blackbox) — 面向 DeepSeek Harness 的黑盒 GUI 测试：AI 测试员只靠截图与键鼠操作真实 Windows 虚拟机，判定必须由像素支撑，而不是读日志或源码。包含 dsh-vm-tester 插件的八个 vm_* 工具（状态、截图、点击、输入、凭据注入、按键、普通键、等待）、Windows 虚拟机内的反向隧道代理，以及运行体检与围观脚本。
 - [yuioi666/dsh-conversation-nav-dots](https://github.com/yuioi666/dsh-conversation-nav-dots) — DSH 网页端对话导航点 — 快速跳转用户消息。
 - [yuloong07-star/dsh-prompt-system](https://github.com/yuloong07-star/dsh-prompt-system) — 输入框内的提示词优化器：结合对话历史、工作区文件与会话选定模型，把草稿改写为十一节分析式提示词，支持一键撤销。
 - [yunxiyang/dsh-web-search-litellm](https://github.com/yunxiyang/dsh-web-search-litellm) — ctx.web 搜索提供方：通过 LiteLLM 代理走 OpenAI Responses API 调用 DeepSeek 原生服务端 web_search，复用 LITELLM_API_KEY，无需新密钥。
@@ -5141,6 +5143,7 @@ dsh plugin --profile web add dshmarket
 - [TheFold060629/dsh-task-assist](https://github.com/TheFold060629/dsh-task-assist) — 在对话框发送键旁添加一个「辅助」按钮：扫描本会话可用的技能与 MCP 工具，按输入框里的当前草稿排序，并可把选中的技能作为 steering 消息注入正在运行的对话。
 - [tiger0012/dsh-we-wallpaper-sync](https://github.com/tiger0012/dsh-we-wallpaper-sync) — 可复用技能：批量浏览、搜索、下载 Wallpaper Engine（小红车，Steam 431960）创意工坊壁纸并接入 DSH 皮肤中心；含绕过 Steam HTTP 封锁与异地登录拦截（经出口 IP 与账号一致的 SOCKS 代理）。
 - [tuoLuoSuan/dsh-skill-center](https://github.com/tuoLuoSuan/dsh-skill-center) — 在 DSH Web GUI 里浏览、预览并安装公开的 Agent Skills，聚合五个来源（claudeskills.info、skillsmp.com、awesome-claude-skills 仓库坐标表、Anthropic 官方仓库、已装 DSH 插件自带的技能包）。安装按 commit 而不是分支名钉住，预览到的就是落地的；面板给出每个技能的来路、按整棵树比对的更新检查，删除是移进回收站而不是抹掉。落地之前先按 harness 实际执行的规则体检技能名与 frontmatter（名字不合法会被 harness 静默跳过），列出 SKILL.md 引用但没取回的文件，标出只取到一部分的情况，同名时给出覆盖、改名、跳过三个选项。
+- [ugg-ki/dsh-skill-manager](https://github.com/ugg-ki/dsh-skill-manager) — dsh 技能管理页：列出全部技能，按全局、本项目、本会话三级开关，取消勾选的技能不进模型目录，并可按自建分类整理。
 - [Ushio155/dsh-verify-cheap](https://github.com/Ushio155/dsh-verify-cheap) — 携带一份技能：用仍然能给出确定结论的最便宜手段验证改动——L0–L3 成本阶梯（静态检查到单个测试套件）、用条件轮询加超时替代固定延时、断言必须能失败、耗时必须实测而不是凭印象。包里还带着这份技能调用的两个零依赖 Node 工具：wait-until.mjs（轮询命令 / 文件 / 端口直到就绪）与 measure-runtime.mjs（测任意命令的墙钟耗时，库模式下提供分段计时）。
 - [VanadisGithub/dsh-skill-evolution](https://github.com/VanadisGithub/dsh-skill-evolution) — 观察 agent 执行轨迹，在每个成功回合结束时按信号触发 LLM 评审，把值得复用的工作流结晶为已注册技能，并随后续运行持续改进。
 - [VAST-AI-Research/Tripo3D-Plugin-dsh#plugin](https://github.com/VAST-AI-Research/Tripo3D-Plugin-dsh/tree/master/plugin) — 通过 shell 驱动 tripo-cli 的 Tripo 3D 生成 Skill：文生 3D、图生 3D、绑骨与走跑动画、减面与 LOD 链，导出 GLB/FBX/OBJ/STL/USDZ/3MF，支持国内站与海外站账号的无头设备码登录；npm 包名 `tripo-dsh`。
@@ -6440,6 +6443,7 @@ dsh plugin --profile web add dshmarket
 - [xxiaoxiong/dsh-prometheus](https://github.com/xxiaoxiong/dsh-prometheus) — 导出有界的 DSH Session、Agent、LLM、Tool、Approval、Subagent 与 Job Prometheus 指标，附带 Grafana 仪表盘，Endpoint 默认仅监听回环地址。
 - [xyrrrrr-r/dsh-eval-control](https://github.com/xyrrrrr-r/dsh-eval-control) — 宿主侧 DSH 评测控制插件：把单次评测试次的变量、预算上限、会话根目录与 fork 血统一次性注入 agent 进程，模型调用经宿主 broker 走网关租约，并写出 schema 版本化的 bundle descriptor 做证据归属。
 - [yanzhaohui1999/dsh-perf-hud](https://github.com/yanzhaohui1999/dsh-perf-hud) — 纯客户端性能 HUD 与默认常开的记录器：帧率与最差帧、Long Task 四条腿归因（React fiber / 子树 / DOM 写入 / 调度点）、每插件回调速率与同步耗时、DOM 增长与写入者、JS 堆、宿主 event-loop 与链路 RTT；守夜层自动留存最差几次卡顿，可逐帧回放并导出事故包。
+- [yishuiliufang/dsh-relaunch](https://github.com/yishuiliufang/dsh-relaunch) — DSH 桌面应用重启按钮：侧栏一个入口，关闭全部 Harness 进程后重新启动应用；启动过程无控制台窗口、无关闭确认框。仅支持 Windows。
 - [yizhixiaokong/dsh-compose-panel](https://github.com/yizhixiaokong/dsh-compose-panel) — 在右侧栏列出各 DSH 工作区中的 Docker Compose 项目，按项目目录分组，显示容器状态，支持项目级与服务级 up/stop/restart 以及单服务日志流。
 - [yizhixiaokong/dsh-simple-restart](https://github.com/yizhixiaokong/dsh-simple-restart) — 在「设置 → 通用」增加一行重启按钮：用相同启动参数、经分离的 helper 重新拉起 dsh web；检测到 systemd 监管时默认拒绝（除非 allowRestart 为 true）；判断端口是否空闲用连接探测而非绑定。
 - [yjh051108/dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) — 一个仓库三件套：DSH 插件包的运行时注入器（注入、热重载、卸载、开发侧挂区一键转正、路由自愈，外带设置页插件管理：列出、卸载、拖入文件夹内化）、任务感知的思维模式路由 agent 预设（router-standard / router-spec / router-react）、以及分级两级任务协议（commit_star / lock_stage / revise_do / edit_plan / mark_task / redteam_verdict 六个工具，任务状态落盘）。注入器实现直接在库内，安装的是它自己的行为而不是一份依赖清单。
