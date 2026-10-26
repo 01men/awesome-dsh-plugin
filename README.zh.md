@@ -4790,7 +4790,7 @@ dsh plugin --profile web add dshmarket
 - [poiuyjie/dsh-vision-opencode](https://github.com/poiuyjie/dsh-vision-opencode) — 给纯文本主模型加可配置识图模型：vision_read_image 工具、输入框识图模型选择器，以及纯文本路由的图片自动转文字。
 - [q253595422/dsh-imagegen-video](https://github.com/q253595422/dsh-imagegen-video) — 面向 DSH Web GUI 的 AI 生图与生视频插件：文生图/图生图按渠道配置模型目录，并按模型族适配请求协议（gpt-image、Grok Imagine、Nano Banana、Seedream、GLM-Image、Qwen-Image、MiniMax image-01、DALL-E 3），提供侧边栏生图工作台、带节点工作流的无限画布、文件预览与画布技能，以及提示词模板库；生视频侧含文生视频、图生视频、首尾帧与多参考图模式，走异步提交/轮询/下载链路，另有宿主侧视频工具、画布视频节点，并可用本机 ffmpeg 把两个以上视频节点拼接成一个 MP4。
 - [QXingYShu/dsh-comfyui-image](https://github.com/QXingYShu/dsh-comfyui-image) — 通过本地 ComfyUI 的 HTTP 接口把工作流排到用户自己的 GPU 上，由 Agent 直接生图：Z-Image-Turbo 适合快速草稿，Qwen-Image-2.1 适合成图与图中文字排版。 注册 comfyui_generate、comfyui_status 两个工具和一个涵盖模型选择与提示词 写法的 skill，无运行时依赖；没有 ComfyUI 在跑时会自动 headless 启动一个。
-- [Rainnnnnnny/lumina-dsh](https://github.com/Rainnnnnnny/lumina-dsh) — 驱动本机 Adobe Photoshop 处理游戏截图与照片：分层 HDR、多区域颜色/人物蒙版、SUPIR/Real-ESRGAN 超分与原生 1:1 视觉检查。
+- [Rainnnnnnny/lumina-dsh](https://github.com/Rainnnnnnny/lumina-dsh) — 驱动本机 Adobe Photoshop 处理游戏截图与照片：分层 HDR、多区域颜色/人物蒙版、SUPIR/Real-ESRGAN 超分与原生 1:1 视觉检查。需要 Windows 10/11 与 Adobe Photoshop 2025；macOS 与更早的 Photoshop 版本无法运行调色工具。
 - [Renji004/dsh-omni-vision](https://github.com/Renji004/dsh-omni-vision) — 为纯文本模型装上本地眼睛：eyes_render 在 Web 界面画布上绘制文字/图形/Mermaid，eyes_paste 接收用户粘贴的图片，eyes_ocr 用 Windows 自带 OCR 离线读文字，eyes_analyze 把像素解析成结构化数据，全程无需视觉模型。
 - [ruby1304/dsh-vision-subagent](https://github.com/ruby1304/dsh-vision-subagent) — 为任意 DSH 路由装上眼睛：Web 输入框贴图按意图自动聚焦分析，视觉子代理代读工作区图片，原图可随时物化编辑。
 - [s3yf1337/dsh-easyvision](https://github.com/s3yf1337/dsh-easyvision) — 让纯文本模型拥有视觉：describe_image 工具调用 dsh 模型列表中的视觉模型描述图片，走 harness 自身的 LLM 运行时。
@@ -7275,7 +7275,7 @@ dsh plugin --profile web add dshmarket
 - [PM25000/dsh-ths-holdings](https://github.com/PM25000/dsh-ths-holdings) — 悬浮卡片，自动同步同花顺投资账本的真实持仓盈亏，显示今日盈亏、上证指数和当日走势图，无需手动添加股票。
 - [PocketSWPU/dsh-serendipity](https://github.com/PocketSWPU/dsh-serendipity) — 把用户本人当作 RPG 主角：每轮对话结束后有几率触发随机「奇遇」，事件库 700+，覆盖科幻/玄幻/远古/动漫/小说/武侠/都市七大主题，增减力量/智力/敏捷/魅力/幸运/体魄六维属性，积累经验升级并随等级解锁更宏大的事件，含属性加权分支与设置页可视化配置。
 - [potoior/dsh-bull-bear](https://github.com/potoior/dsh-bull-bear) — DSH 的实时行情牛熊桌宠：由自选组合平均涨跌驱动，收益越接近 20% 跑得越猛；带自选面板可搜索添加股票，还有展示每只标的涨跌的实时赛跑。
-- [proletari/shenshen-dsh-companion](https://github.com/proletari/shenshen-dsh-companion) — DSH 桌宠「深深」：跟随任务状态切换待机/敲键盘/思考/庆祝/失败，支持点击挥手、拖动左右奔跑，并保留 API 余额、本机用量记账、角色、气泡与音效设置。
+- [proletari/shenshen-dsh-companion](https://github.com/proletari/shenshen-dsh-companion) — DSH 桌宠「深深」：跟随任务状态切换待机/敲键盘/思考/庆祝/失败，支持点击挥手、拖动左右奔跑，并保留 API 余额、本机用量记账、角色、气泡与音效设置。二创自 MeteorNOX/DeepSeek-Balance-Whale-Widget（dsh-whale-widget 0.4.2）；请勿与上游同时安装，否则会出现双角色与重复请求。
 - [pwping/moyu_games](https://github.com/pwping/moyu_games) — 任务开始时自动弹出的 5 个休闲小游戏（数字华容道、数独、贪吃蛇、舒尔特方格、数字记忆），支持跨会话自动保存进度。
 - [单机游戏内 AI 同伴「小汤圆」](https://github.com/qimidandapigu/dsh-xiaotangyuan-game/tree/main/apps/harness-plugin) — 单机游戏内 AI 同伴「小汤圆」：理解游戏画面，支持文字或按住说话交流并语音回复；现已支持《星露谷物语》，《饥荒联机版》和《缺氧》正在迁移接入。
 - [qiqibabyy/dsh-pet-desktop](https://github.com/qiqibabyy/dsh-pet-desktop) — 独立置顶窗口的桌面宠物：直接导入 ~/.codex/pets 的 Codex 宠物，含亲密度段位、会话活动气泡、贴边吸附拖拽、右键可达的智能鼠标穿透；已装 dsh-usage 时自动对齐其当日 token 台账。
