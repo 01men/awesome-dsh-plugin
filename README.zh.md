@@ -1681,6 +1681,7 @@ dsh plugin --profile web add dshmarket
 - [NIRVANA-APOC/dsh-api-cost](https://github.com/NIRVANA-APOC/dsh-api-cost) — 注册 apiCost 会话投影，按官方公布的峰谷价目表把上报的 token 用量折算成 ¥/$ 花费，覆盖本会话、委派树与经校验的团队三种范围：输入框下方的胶囊与其详情面板、/cost 命令、session_cost 工具，以及读取视图与当前价目表的 GET 路由。面板上的开关可在高峰时段把模型请求停在 llm/stream 上，待谷时窗口开启后原样派发，于是按谷时价计费，且会话中不会出现任何失败。
 - [Nixz0824/dsh-usage-stats-plus](https://github.com/Nixz0824/dsh-usage-stats-plus) — DSH 用量与余额面板：官方余额实时拉取、逐事件官方峰谷计价、基于余额快照的全渠道消耗估算、Codex 风格 12 个月 Token 活动时间轴。Fork 自 Ychris12138/dsh-usage-stats。
 - [NOirBRight/dsh-usage-monitor](https://github.com/NOirBRight/dsh-usage-monitor) — 设置页用量仪表盘：从会话日志汇总 token、请求、输出 token 与缓存命中率，含堆叠图，并按供应商、模型或工作区分组列表。
+- [nomxy/dsh-balance](https://github.com/nomxy/dsh-balance) — 侧栏名字行里的 DeepSeek 余额胶囊，显示余额、当前峰谷时段与下次切换倒计时，点一下刷新。
 - [nonewind/dsh-spend](https://github.com/nonewind/dsh-spend) — DSH Web 用量与费用统计插件：右下角悬浮窗，按模型/按天/按会话多维聚合与预计花费。
 - [novaschai7/dsh-plugin-balance-ui](https://github.com/novaschai7/dsh-plugin-balance-ui) — 在侧边栏底部显示 DeepSeek 账户余额与今日 token 用量，并把本地估算的花费与账户余额实际减少量按采样覆盖的时长对账。
 - [null5069/dsh-better-stats](https://github.com/null5069/dsh-better-stats) — DSH Web 输入框下方的增强统计条：官方人民币计价（峰谷分时、价目自动同步）、多模型分账、实时计时、子代理树合并、余额直连、预算预警与流式成本估算。
@@ -2629,7 +2630,7 @@ dsh plugin --profile web add dshmarket
 - [Domaki-co/dsh-message-forward](https://github.com/Domaki-co/dsh-message-forward) — DSH 会话间消息转发：把单条模型回复、用户消息或多选合并的消息与图片从上游会话提取出来投递到另一个会话，支持静默发送、填入草稿、发送并跳转三种投递方式，并可套用提示词模板。
 - [domitor-syh/dsh-rollback](https://github.com/domitor-syh/dsh-rollback) — TRAE 式「回退到本轮对话发起前」插件：按轮次建立检查点（10 轮滑动窗口），同时回滚工作区文件与原位截断模型上下文，保持同一 session id。回退只能由人发起：/rollback 命令或每轮的 Web 回退按钮（被中断的轮次也可用），弹窗逐条列出受影响文件及其动作（恢复/找回/删除/跳过）。
 - [dongasai/dsh_compact_queue](https://github.com/dongasai/dsh_compact_queue) — 注册 /compact_queue：会话忙时也不丢弃请求的压缩命令——空闲就立刻压缩，忙时把请求排进本会话队列，等这个会话下一次空闲自动补跑；agent 状态事件之外再挂一条 2 秒兜底 tick，避免漏触发，排队最长等 30 分钟，排队中或执行中都可以用 /compact_queue cancel 撤销。命令只注册一次，每个会话各自一份排队状态，完成与失败以折叠 notice 注入、不唤醒模型；ManualCompactionError 除 busy 外一律视为终态、不再重试。只有 Host 半边，核心 /compact 不改。
-- [dongasai/running-sessions-float#running-sessions-float](https://github.com/dongasai/running-sessions-float/tree/main/running-sessions-float) — 把需要你处理的会话收进网页端侧栏底部的一块坞：正在跑的、卡在等你审批 / 计划待审 / 等待回答的，以及跑完但结果还没打开过的。按最近更新时间排序，点一行就把主视图切过去；复用官方 useSessions 与 useSessionStatus 两个 Hook，不新增数据源、不轮询、不落盘、不改任何会话。头部状态点在有会话运行或等待时脉冲，只剩「已完成」提醒时收成静止圆点；没有这类会话时收成一行细字，侧栏折叠成 56px 时换成 36px 计数圆片而不是摊开列表。坞注册在侧栏底部动作区，是布局里的真实一块、不盖住对话列表，原有底部入口照旧排在它下面。
+- [dongasai/running-sessions-float](https://github.com/dongasai/running-sessions-float) — 把需要你处理的会话收进网页端侧栏底部的一块坞：正在跑的、卡在等你审批 / 计划待审 / 等待回答的，以及跑完但结果还没打开过的。按最近更新时间排序，点一行就把主视图切过去；复用官方 useSessions 与 useSessionStatus 两个 Hook，不新增数据源、不轮询、不落盘、不改任何会话。头部状态点在有会话运行或等待时脉冲，只剩「已完成」提醒时收成静止圆点；没有这类会话时收成一行细字，侧栏折叠成 56px 时换成 36px 计数圆片而不是摊开列表。坞注册在侧栏底部动作区，是布局里的真实一块、不盖住对话列表，原有底部入口照旧排在它下面。
 - [donghangxunlang-cmd/dsh-attention-health](https://github.com/donghangxunlang-cmd/dsh-attention-health) — 内容退化检测（思考打转、输出复读）+ 继续/交接成本裁决 + 零模型交接文档。
 - [dongsheng123132/task-passport](https://github.com/dongsheng123132/task-passport) — 通过机器可读检查点与乐观锁，在 DeepSeek Harness、WorkBuddy、Claude Code 和 Codex 之间交接持久任务状态。
 - [dpskk2/dsh-chatsync](https://github.com/dpskk2/dsh-chatsync) — 通过你自己的 GitHub 私有仓库,在多台电脑间双向同步 DSH 会话、工作区对应关系、设置与托管补丁(API 密钥留在本机)。
@@ -2657,6 +2658,7 @@ dsh plugin --profile web add dshmarket
 - [EvilIrving/dsh-context-proxy](https://github.com/EvilIrving/dsh-context-proxy) — 按需取回薄层：context_query / context_slice / context_grep 三个工具读取已持久化的历史，引用可回放。
 - [extremity2740938284-create/dsh-agent-sync](https://github.com/extremity2740938284-create/dsh-agent-sync) — 把本机其他 AI 编程助手的会话实时镜像成 DeepSeek Harness 的任务，每个应用一个工作区。
 - [falling-ts/dsh-force-compact](https://github.com/falling-ts/dsh-force-compact) — llama-cpp qwen3.8-27b 低上下文时，强制上下文压缩插件，提示模型使用效率和使用流畅度，外加完善的压缩提示。
+- [FallnStrelitzia/dsh-chat-settings](https://github.com/FallnStrelitzia/dsh-chat-settings) — 为单个对话设置系统提示词、按轮数折叠上下文、采样参数，并提供低 token 的纯聊天模式。
 - [fallow5/dsh-pin-sessions](https://github.com/fallow5/dsh-pin-sessions) — 把会话置顶到 Web 侧边栏顶部：独立置顶面板、归档区、原生三点菜单集成。
 - [feiertu/dsh-input-rewriter](https://github.com/feiertu/dsh-input-rewriter) — 你只管正常打字，停下约两秒，它就把你刚写的话自动改写成更容易得到好答案的样子；贴进来的代码、网址、长文原样不动，一次问几件事也一件不漏、排好顺序。
 - [feigo313/dsh-structured](https://github.com/feigo313/dsh-structured) — 让 DSH 每条实质回复默认结构化：无标签标题卡 + 表格/清单/步骤；按会话开关，style.md 可覆盖。
