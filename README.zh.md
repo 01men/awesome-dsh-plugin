@@ -5783,6 +5783,7 @@ dsh plugin --profile web add dshmarket
 - [Laplace-bit/dsh-bell-notify](https://github.com/Laplace-bit/dsh-bell-notify) — DeepSeek Harness 生命周期提示音：10 个可配置事件，默认只开启三项低打扰提示，可为每个事件更换自定义声音，内置音效不带音频资源。
 - [LapStdy/dsh-dingtalk-notify](https://github.com/LapStdy/dsh-dingtalk-notify) — 钉钉提醒：AI 需要你选择、审批或干完活时推送到钉钉群；有人正看着 DSH 页面就不发，没人看才提醒。
 - [lediemquynh/dsh-ai-question-chime](https://github.com/lediemquynh/dsh-ai-question-chime) — 当 AI 询问澄清性问题时（带问号或调用 ask_user_question）播放提示音。Web Audio API 合成，零音频文件，跨 Windows/macOS/Linux。
+- [LeeeWM/dsh-session-notifier](https://github.com/LeeeWM/dsh-session-notifier) — DSH 会话每轮结束时在 Windows 11 弹出通知，DSH 在前台时自动不打扰。
 - [Leo-Cjw/dsh-pharos](https://github.com/Leo-Cjw/dsh-pharos) — DSH 桌面消息提醒：模型需要你操作（审批、方案确认、提问）或后台回复完成时，弹系统通知、提示音并标记标签页标题；出错、中断、用量上限与多 agent 工作流进展同样提醒。宿主半提供 SSE 投递、Webhook 推送（企业微信 / 飞书 / 钉钉 / 通用）与当轮统计（token / 缓存 / TPS），以及三档消息格式（简洁 / 详细 / 自定义）与自动保存。
 - [liangl1985/work-personal-secretary#work-personal-secretary](https://github.com/liangl1985/work-personal-secretary/tree/main/modules/work-personal-secretary) — DSH 工作秘书集成体的本体：做安装引导（Python / WPS / 工作区环境探针、安装同仓库分发的子插件）与配置底座（生成指令层、记忆种子、技能、设置），并在界面里提供独立的「工作秘书」设置分区，自带宿主侧安装与检查逻辑。
 - [lijiawei255/dsh-status-chime](https://github.com/lijiawei255/dsh-status-chime) — DSH 状态变化时读出一句简短提示——本轮完成、本轮出错、后台任务结束、后台任务失败、目标完成、目标受阻、等待批准、等待你回答——中文（默认）与英文各八条预录语音。音频由宿主进程播放（ffplay，或系统自带的 Windows PowerShell 播放器），不依赖浏览器 Web Audio。仅支持 Windows。
