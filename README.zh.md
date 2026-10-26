@@ -5582,6 +5582,7 @@ dsh plugin --profile web add dshmarket
 - [Rainier-Z/dsh-workspace-monitor](https://github.com/Rainier-Z/dsh-workspace-monitor) — 一个适配 DeepSeek Harness 的工作区监测插件，按周期检测并报告文件的新增、修改和删除。
 - [randomix777/dsh-image-gen](https://github.com/randomix777/dsh-image-gen) — dsh-image-gen 优化版：支持批量生图（count 参数）、画廊分页懒加载、请求超时/重试，兼容 7 个提供商：Gemini/OpenAI/Seedream/通义万相/Agnes/智谱 GLM/Stability AI。
 - [recoluan/recowork#recowork-dsh](https://github.com/recoluan/recowork/tree/main/packages/recowork-dsh) — 通过两个受限的 DSH 工具和网页工作区卡片，创建并检查 RecoWork local-agent-project 工作区。
+- [ReWebaiyu/dsh-novel-assist#dsh-novel-assist](https://github.com/ReWebaiyu/dsh-novel-assist/tree/main/dsh-novel-assist) — DSH 侧边栏的小说创作面板：绑定本地书稿目录，把导入的 Agent 技能当作分析视角，并扫描平台榜单归纳故事架构。
 - [RexYoung000/rex-harness#ui-workflow](https://github.com/RexYoung000/rex-harness/tree/main/packages/ui-workflow) — 把产品或界面需求编排成可落地的设计规格，提供 /ui-workflow 与 /ui-rerun。分析师通过只读 ui_analyst 运行，主控把报告写入 docs/ui-workflow。
 - [rinDBeans/dsh-miraculous-standard](https://github.com/rinDBeans/dsh-miraculous-standard) — DeepSeek V4 Pro/Flash 统一锚定 agent 预设（官方 API 与 opencode-go）：首请求 Minimal 精确两工具锚定、按模型分流 Pro/Flash 路径、epoch 感知目录管理保证长对话稳定。
 - [rocker2018-droid/dsh-longtask-orchestrator](https://github.com/rocker2018-droid/dsh-longtask-orchestrator) — 长任务编排闭环：Codex 规划/打分/审核，DeepSeek 执行，Kimi 补充（视觉验收/摘要/交叉验证）。
