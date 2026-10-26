@@ -1004,6 +1004,7 @@ dsh plugin --profile web add dshmarket
 - [penguin-oo/dsh-pathlink](https://github.com/penguin-oo/dsh-pathlink) — 在对话中 Ctrl+点击文件路径与链接：路径在文件管理器中定位所在文件夹，链接在新标签页打开。
 - [pengyue-polaron/deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui) — Code-first React + TypeScript 任务应用，支持 Inline、Canvas、全屏与 localhost；交互状态可供 Agent 后续轮次读取，MCP 和 API 访问在用户授权后执行。
 - [perdakovich/dsh-prompt-edit](https://github.com/perdakovich/dsh-prompt-edit) — DSH Web 聊天就地编辑历史提示词：在目标轮次干净分叉会话历史，原样保留图片与附件，并自动归档旧会话。
+- [PerryLink/dsh-community-bench](https://github.com/PerryLink/dsh-community-bench) — 增加社区基准标签页，读取公开的、按任务条件计算的 registry，展示所有人看到的同一分数；不在本地计算分数。
 - [PerryLink/dsh-composer-history](https://github.com/PerryLink/dsh-composer-history) — Web 作曲器终端风格输入历史：边缘优先的方向键召回并精确还原草稿与光标、浏览器本地持久化历史、Ctrl+R 反向搜索，以及滑动上下文感知；0.5.0 再加智能输入层——跨会话片段库（/save、/load）、带变量的提示词模板、复用洞察与压缩摘要高亮。
 - [ph4310822/dsh-edex-jarvis-ui#bundle](https://github.com/ph4310822/dsh-edex-jarvis-ui/tree/main/packages/bundle) — 在 DSH Web 界面上叠加 JARVIS 风格科幻 HUD 外壳：电光青色 VITAL SIGNS 生命体征 / RT-MONITOR 实时监控 / RT-LOG 事件日志左栏，右侧 POWER CORE 能源核心仪表、旋转扫描的 RADAR 雷达盘与上下行流量图，左下文件系统浏览器（带文件预览），以及带 JARVIS 头部横幅、跟随当前工作区的终端风格输入框。
 - [ph4310822/dsh-edex-ui#bundle](https://github.com/ph4310822/dsh-edex-ui/tree/main/packages/bundle) — 在 DSH Web 界面上叠加 eDEX-UI 风格外壳：左侧系统遥测栏（含每核 CPU 迷你趋势图）、右侧 encom-globe 世界地图与上下行流量图、左下文件系统浏览器（带文件预览），以及跟随当前工作区的终端风格输入框。
@@ -2964,6 +2965,7 @@ dsh plugin --profile web add dshmarket
 - [p2coder/dsh-task-control](https://github.com/p2coder/dsh-task-control) — 在输入区暂停/恢复/取消正在运行的对话任务：强制暂停立即中断并记住被中断的工具，安全暂停等工具/推理完成后再落地，恢复时需确认；默认暂停粒度可在设置中配置（出厂 safe wait）。
 - [penguin-oo/dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) — 收藏 AI 回复（备注/标签），跨会话收藏中心（搜索/筛选/跳回会话），一键导出 Markdown。
 - [PerryLink/dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) — 四合一迁移向导：把 Claude Code、Codex、OpenCode、Hermes 的会话、记忆、技能、指令与斜杠命令迁入 DSH（/move 向导，审批门 + 幂等 move.json，会话可续聊）。
+- [PerryLink/dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) — 列出当前会话通过微信桥实际收到的附件，并按需将其中一个采纳到工作区。
 - [PerryLink/dsh-session-pin](https://github.com/PerryLink/dsh-session-pin) — 把会话与工作区置顶到 Web 侧边栏顶部：行级图钉与换色、会话头开关、已置顶面板；0.4.0 再加导航组织器——Pin 分组（boards）、标签与保存视图、会话健康摘要与 /goto。
 - [PerryLink/dsh-session-sync](https://github.com/PerryLink/dsh-session-sync) — DeepSeek Harness 的跨设备会话同步：经 git 在多机之间同步会话与设置。
 - [PianoPrince/dsh-workspace-mover](https://github.com/PianoPrince/dsh-workspace-mover) — 拖拽跨工作区真迁移会话，找回失联与未记账会话，文件夹改名后一键原地重定向工作区；ID 与历史原样保留，步步备份回滚。
@@ -4062,6 +4064,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-medrec-qc](https://github.com/PerryLink/dsh-medrec-qc) — 依据国卫办医发〔2016〕24号等公开文件，核对病案首页各字段的齐备性与字段间的逻辑矛盾。列出缺失或不一致之处供人复核，不评价临床正确性。
 - [PerryLink/dsh-nurse-record-check](https://github.com/PerryLink/dsh-nurse-record-check) — 依据《病历书写基本规范》等公开文件，核对护理记录的书写时限、签名，以及评估表的完整性。列出缺失或次序不符之处供人复核。
 - [PerryLink/dsh-payroll-audit](https://github.com/PerryLink/dsh-payroll-audit) — 按公开的社保、公积金与个人所得税参数核对工资表，结果分为 pass、pass_with_gaps、review、fail 四档；参数本身带复核日期。
+- [PerryLink/dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) — 本地非生成式决策层：phocinae_ask 与 phocinae_gate 由小型决策模型返回带校准置信度的类型化裁决，并对无法回答的情况 fail-closed 升级。
 - [PerryLink/dsh-power-ticket-check](https://github.com/PerryLink/dsh-power-ticket-check) — 依据现行电力安全工作规程，核对电力工作票应载明的要素，以及签发与许可的先后顺序。只报告发现的差异，不判定作业是否安全、许可是否有效。
 - [PerryLink/dsh-safety-ledger-check](https://github.com/PerryLink/dsh-safety-ledger-check) — 核对施工安全资格台账的培训学时、四个记录要素，以及特种作业证书有效期与作业时间的匹配。
 - [PerryLink/dsh-site-log-check](https://github.com/PerryLink/dsh-site-log-check) — 依据 GB/T 50319-2013 等公开文件，核对监理日志的跨日连续性，以及旁站监理的覆盖情况。列出缺漏与覆盖差异供人复核。
