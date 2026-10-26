@@ -346,6 +346,7 @@ dsh plugin --profile web add dshmarket
 - [choco9527/dsh-add-to-chat](https://github.com/choco9527/dsh-add-to-chat) — 为 DSH 助手回复添加轻量选中文本引用：选区以可删除的草稿上下文独立于编辑器保存，在原文旁保留标记，并在发送后显示为可悬浮查看的注释。
 - [choco9527/dsh-product-preview](https://github.com/choco9527/dsh-product-preview) — 以访达式分栏浏览对话节点中的本地图片、视频与 SVGA 产物。
 - [Choi-Peng/dsh-footer-order](https://github.com/Choi-Peng/dsh-footer-order) — DSH 侧边栏页脚排序：将 sidebar.footer.action 槽位改为上下堆叠，并允许用户配置各条目自上而下的排列顺序。
+- [cholot-Zhou/dsh-ui-overrides](https://github.com/cholot-Zhou/dsh-ui-overrides) — 基于本地 CSS 文件的界面覆盖——编辑 ~/.dsh/ui-overrides.css 并刷新，即可改任意插件元素的外观，例如让引用浮层完全不透明。
 - [chongfengdy-dev/dsh-message-outline](https://github.com/chongfengdy-dev/dsh-message-outline) — 当前会话消息大纲（左缘横杠）——你的消息在对话区左缘显示一列细横杠，hover 展开完整大纲（行号+文本），点击瞬间定位到对话里那条消息。纯前端、零外部服务依赖、sessions 快照驱动零轮询。
 - [ChuanTianML/dsh-chat-tidy](https://github.com/ChuanTianML/dsh-chat-tidy) — 一张样式表，按实测的 Codex 版式重排 DSH 对话页：14/22 px 正文，收紧标题、列表与块级节奏，使用圆角引用条，并把表格补成带主题化表头、行列分隔、短表铺满和宽表容器内滚动的 Tidy Tables；无设置项、不改写 DOM，仓库内附真实前后对比图。
 - [ChuanTianML/dsh-open-with](https://github.com/ChuanTianML/dsh-open-with) — 从 Session 页头或 Workspace 菜单用检测到或配置的编辑器打开当前已登记 Workspace，支持热重新检测和浏览器首选项记忆。
@@ -494,6 +495,7 @@ dsh plugin --profile web add dshmarket
 - [Findly-qwb/dsh-model-picker](https://github.com/Findly-qwb/dsh-model-picker) — 双栏模型选择器，替换输入框的模型菜单：左栏可搜索并按供应商分组，右栏详情卡显示所选模型的上下文窗口、输出上限、能力标签与推理档位，全部取自该模型自己的供应商。npm 上的 dsh-model-picker 属于另一位作者，请按本仓库的 GitHub 源安装。
 - [Firefly-TheHerta/dsh-boot-video-manager](https://github.com/Firefly-TheHerta/dsh-boot-video-manager) — 给开屏动画插件 dsh-boot-animation 配的播放入口面板：不用离开 app 就能加入视频、排好先后，并在「顺序播放 / 随机播放 / 单次播放」之间切换。顺序播放不修改上游插件也能做到确定性——除该播的那支外，参与播放的素材都停在同一个素材目录下的 disabled/ 里排队，每次启动自动轮换。还支持回收而不是删除、固定每次播同一支、逐条取消参与，以及 .mp4/.webm/.m4v/.mov（含非 ASCII 文件名）。
 - [fishcg/dsh-input-prediction](https://github.com/fishcg/dsh-input-prediction) — 输入预测：在输入框里用灰字续写你草稿最可能的后续，按 Tab 接受后落进输入框、可继续编辑；每轮回答结束后在输入框上方给出 1–3 条你可能会发的下一条，点一下就发送。灰字补全、回复后推荐与推荐条数都能在「设置 → 内置插件 → 输入预测」里开关。
+- [flowers-59f/dsh-petpal](https://github.com/flowers-59f/dsh-petpal) — 从 petdex.dev 下载宠物并常驻桌面，跟随 DSH 会话状态显示；外观可调，Agent 需要确认或一轮结束时可通过企业微信机器人推送通知。
 - [flycucu/dsh-icon-changer](https://github.com/flycucu/dsh-icon-changer) — 更换 DeepSeek Harness 桌面端应用图标（exe、托盘、开始菜单），支持上传任意 .ico，并可随时还原官方默认图标。
 - [flyhigao/dsh-file-transfer](https://github.com/flyhigao/dsh-file-transfer) — 在文档预览工具栏与 Files 文件树添加下载按钮（文件夹下载打包为流式 ZIP），并在文件树增加上传按钮：逐个文件流式写入 Host，单文件上限 1 GiB，重名自动改为 (n) 后缀而不覆盖。
 - [flyhigao/dsh-sticky-notes](https://github.com/flyhigao/dsh-sticky-notes) — DSH 工作区极简便签：在各个工作区保存多张 Markdown 便签，记录你的想法和项目进程。
@@ -1965,6 +1967,7 @@ dsh plugin --profile web add dshmarket
 - [iStarryDust/dsh-ui-liquid-glass](https://github.com/iStarryDust/dsh-ui-liquid-glass) — DSH 全液态玻璃皮肤：13 个可调折射液态玻璃面、随时段轮换的壁纸、四档主题色、选中项带水滴状高亮飞镜。
 - [jiangwangyang/dsh-theme-blackhole](https://github.com/jiangwangyang/dsh-theme-blackhole) — DeepSeek Harness（dsh）Web UI 的黑洞主题插件。
 - [Jimmyzwang-cloud/dsh-inkscreen-theme](https://github.com/Jimmyzwang-cloud/dsh-inkscreen-theme) — 墨水纸质感的苹果风 DSH 网页主题，侧栏使用手写 jimmy 字标与小狗头像。
+- [Jimxinfang/dsh-theme-neo-brutalist](https://github.com/Jimxinfang/dsh-theme-neo-brutalist) — DeepSeek Harness Web GUI 的新粗野主义主题：白纸 / 黑板双配色，4px 硬边、8px 偏移硬阴影、零圆角、警示斜纹，设置页内置主题行，可一键切回出厂外观。
 - [Jimxinfang/dsh-theme-stripe-style](https://github.com/Jimxinfang/dsh-theme-stripe-style) — DeepSeek Harness Web 的 Stripe 风格主题：40px 紫色网格、多级柔和阴影、12px 卡片与 8px 控件圆角，设置页内可直接切换「白昼紫 / 午夜蓝」双版本，并可一键恢复出厂外观。
 - [jinxlux/xiao-theme-dsh-ui-plugin](https://github.com/jinxlux/xiao-theme-dsh-ui-plugin) — 为 DSH UI 提供完全自定义的主题框架，默认主题为原神魈。
 - [jizenghui81/dsh-huashu-pixel](https://github.com/jizenghui81/dsh-huashu-pixel) — DSH Web 界面的暖调像素主题：亮色暖米白纸面、暗色街机磷光；方角硬描边与偏移投影的像素控件、随包发布的像素字体，流式输出与状态变化带方块光标、扫描线与硬切闪帧；强度（轻/标准/浓）、动效、扫描线、像素字体四组档位在「设置 → 通用」里切换，输出时输入框上沿有一条像素加载条。
@@ -3285,6 +3288,7 @@ dsh plugin --profile web add dshmarket
 - [plastic-labs/dsh-honcho](https://github.com/plastic-labs/dsh-honcho) — 由 Plastic Labs 维护的 Honcho 记忆插件：会话启动时注入用户画像、会话摘要与相关结论，后台脱敏后逐轮上传对话到 Honcho，提供 honcho_search / honcho_chat / honcho_remember 工具及 /honcho 状态命令；通过与其他 Honcho 集成共用的 ~/.honcho/config.json 配置，支持托管的 honcho.dev 或自建实例。
 - [plur-ai/dsh-plugin](https://github.com/plur-ai/dsh-plugin) — PLUR 记忆在每次组装时渲染进系统提示词，而非以工具调用形式暴露，因此记忆块是被替换而不是追加，整段会话的上下文长度保持不变。全本地混合检索（BM25 + BGE，RRF 融合）、可直接编辑的纯 YAML 存储、按工作区划分 scope，并提供 /plur-memory 浏览器界面。
 - [pokiimon/dsh-memory-eternal-fork](https://github.com/pokiimon/dsh-memory-eternal-fork) — dsh-memory-eternal 的维护版 fork：对话结束自动沉淀知识卡到本地 Markdown 记忆库并按需召回，修复 DSH 0.2.0-rc.x 兼容性。原项目由 EternalNight996 创建并维护（https://github.com/EternalNight996/dsh-memory-eternal），MIT。
+- [propzhang/dsh-memory-unlocked](https://github.com/propzhang/dsh-memory-unlocked) — 发送“大记忆恢复术”来让 AI 回想起忘记的对话。
 - [QIANLING-0831/dsh-memory-plus#dsh-memory-bundle](https://github.com/QIANLING-0831/dsh-memory-plus/tree/main/packages/dsh-memory-bundle) — 记忆 profile 组合：中文会话检索、混合召回、workspace 持久事实、用户固定规则与可复用原生技能。通过单条 dsh plugin add 命令安装版本化 Release 独立包。需 Node.js 24 与 PATH 上的 pnpm。
 - [qibo30/dsh-worklog](https://github.com/qibo30/dsh-worklog) — 给 agent 的跨会话开发日志：worklog_add 往当天文件追加一行（可带 tag），worklog_list 按天回读或列出有记录的日期。条目是 $DSH_HOME/worklog 下的纯 JSON，下一次会话能接上上一次停在哪。
 - [Qinling-Melon-Farmers/dsh-memoir](https://github.com/Qinling-Melon-Farmers/dsh-memoir) — 仅本地运行、零捆绑运行时依赖（仅使用 DSH 宿主 peer）且不调用外部服务的项目记忆：以 JSON 为单一事实源并自动生成 PROJECT_MEMORY.md、按 token 有界且按会话冻结的 Hot Memory 以保持 prompt-prefix cache 稳定、带查询缓存的跨项目 BM25 召回、可信 session/turn 溯源、可解释的写前重复/冲突治理、可编辑的重要度/置顶/标签/supersede/归档生命周期、可配置的顶层回合自动蒸馏，以及支持搜索、检查、诊断和实时设置的中英双语 Web GUI。
@@ -5911,6 +5915,7 @@ dsh plugin --profile web add dshmarket
 - [STARDUSTLC666/dsh-dingtalk](https://github.com/STARDUSTLC666/dsh-dingtalk) — 钉钉群机器人通知：dingtalk_notify/text/health 三工具，webhook + HMAC 加签，零运行时依赖。
 - [STARDUSTLC666/dsh-email](https://github.com/STARDUSTLC666/dsh-email) — 邮件工具插件：含 email_watch 增量新邮件检查、email_mark（已读/未读/星标/移动文件夹）与 email_reply（回复/回复全部/转发，自动线程头+引文）的十工具，Web 设置页与鲸鱼娘递信新邮件弹窗，since/until 日期范围过滤，内置 QQ/163/126/新浪/阿里/Gmail/Outlook/iCloud 预设，多账号、连接复用与发信审批门；Outlook OAuth2 设备码登录开箱即用（内置社区客户端，账号仍可填自己的 clientId 覆盖）。面板内置 4 步首次使用引导，看一次后不再出现。
 - [STARDUSTLC666/dsh-slack](https://github.com/STARDUSTLC666/dsh-slack) — Slack 双向通信（notify/channels/inbox/reply/health 五工具），Socket Mode 免公网回调。
+- [SteelUnion/dsh-softsensor-hub](https://github.com/SteelUnion/dsh-softsensor-hub) — 消息中枢：采集系统健康、天气、邮件与行情事件，按可配置的轻重规则过滤（critical 立刻叫、warn 攒批、info 只留档），再把事件交给 agent。采集器跑在插件进程里，不会死在一个没人看的守护进程里。
 - [stuarthu/dsh-update-notifier](https://github.com/stuarthu/dsh-update-notifier) — 每小时检查 npm 上已安装插件的新版本，并询问升级其中哪些。
 - [suuuuuu-1/dsh-discord](https://github.com/suuuuuu-1/dsh-discord) — DeepSeek Harness 的 Discord 原生远程控制器：通过私信、需提及机器人的服务器频道及 Thread 操作持久化的编程 Agent Session，并支持斜杠命令、进度更新、工具审批、结构化问题、图片和文本附件。
 - [sviktor75/dsh-sound-notification](https://github.com/sviktor75/dsh-sound-notification) — 当任意会话的回复完成（上升音调）或提出问题/请求（下降音调）时播放提示音，带点击静音徽章。
