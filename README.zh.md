@@ -1478,6 +1478,7 @@ dsh plugin --profile web add dshmarket
 - [439436269-ctrl/dsh-peak-runner](https://github.com/439436269-ctrl/dsh-peak-runner) — DeepSeek 峰谷价感知的任务执行器：平价时段把一批 prompt 直接交给 deepseek-flash；临近峰价时排队并用自持定时器在下一个平价时段开始执行。提供 peak_run / peak_schedule / peak_cancel 三个工具，峰谷时段与提前量可配置。
 - [534119219/chicheng-stats](https://github.com/534119219/chicheng-stats) — 高度可配置的 DSH 用量统计插件：侧边栏文字/卡片组件加统计弹窗，提供按提供方与按模型的请求/Token 统计、缓存命中率、趋势图与首字节/总耗时明细。
 - [54nanmiao/dsh-peak-reminder](https://github.com/54nanmiao/dsh-peak-reminder) — 峰时提醒：DeepSeek 走高峰计价时，每隔 N 分钟（默认 5，可设 1–120）在 DSH Web 界面顶部提醒一次「现在是峰时」，峰↔谷切换各提醒一条，谷时完全不打扰；侧边栏底部常驻一行显示当前峰/谷状态与下次切换倒计时。峰谷规则（北京时间工作日 09:00–12:00、14:00–18:00；周末、法定节假日与调休周末全天谷价）由宿主判定，经 /plugins/dsh-peak-reminder/state 与 /config 两个免鉴权路由供界面读取；开关与间隔在设置页一节里改，存到 ~/.dsh/peak-reminder.json。
+- [dsh-frame](https://github.com/7gzgn/dsh-frame) — 看清一场对话到底烧了多少：模型请求次数、system prompt 与工具表各占多少、累计 token、估算花费、离上下文自动压缩还有多远。只读本地会话日志，不调模型，不往 system prompt 加一个字。
 - [940842546/dsh-usage-billing](https://github.com/940842546/dsh-usage-billing) — 用量与消费统计：8/17 调价前后峰谷计费，主界面汇总面板、按会话明细与日/周/月/年/累计用量热力图。
 - [a1113622001/dsh-session-stats-panel](https://github.com/a1113622001/dsh-session-stats-panel) — 右侧会话统计面板，展示平均缓存命中率、会话成本、运行时长、请求数、累计 token 与账户余额。
 - [aexachao/dsh-balance-tracker](https://github.com/aexachao/dsh-balance-tracker) — 会话头部的真实 DeepSeek 余额与官方消费统计：高峰/空闲标签、按金额提醒与自动停止、一键充值。
@@ -2408,7 +2409,7 @@ dsh plugin --profile web add dshmarket
 - [tangyixiao/dsh-workbuddy-connect-community](https://github.com/tangyixiao/dsh-workbuddy-connect-community) — 复用本机桌面登录的 WorkBuddy 与 WorkBuddy AI 模型提供器社区分叉，提供模型发现和额度显示。面向 DSH 0.2.1-rc.2，CN 兼容层与 functy23 的分叉不同。
 - [tangyixiao/dsh-zcode-plan-bridge](https://github.com/tangyixiao/dsh-zcode-plan-bridge) — 需已安装并登录 ZCode CLI。把 ZCode CLI agent 接入 DeepSeek Harness 作为模型提供方。常驻 app-server 会话逐回合流式转发，模型清单从 CLI 实时读取，因此上下文窗口、图片支持与 provider 路由都跟随已安装的 CLI 和账号。工具权限请求默认拒绝；未知的 approval/permission 方法始终拒绝，全自动需显式启用。DSH 自带的审批界面不会介入这个独立 spawn 的 app-server 进程，该策略也不构成操作系统沙箱。
 - [tearslee/dsh-workbuddy2api](https://github.com/tearslee/dsh-workbuddy2api) — 托管本地 workbuddy2api 网关进程，把它的模型注册为 dsh 的模型提供方，上下文窗口与思考档位均从网关自身的模型接口读取。
-- [Tests4gptplay/dsh-codex-native](https://github.com/Tests4gptplay/dsh-codex-native) — 通过 OpenAI 官方 Codex app-server 将 GPT 接入 DSH 主模型，使用 ChatGPT 订阅登录，支持工具调用、原生设置、额度查询与手动 Token 历史用量统计。
+- [Tests4gptplay/dsh-codex-native](https://github.com/Tests4gptplay/dsh-codex-native) — 通过 ChatGPT 登录将 OpenAI Codex app-server 接入 DSH 主模型，支持 HTTP 连接、原生工具与设置、选项问答与自动聊天回执、本地及连接器技能按需检索、上下文管理、额度查询与 Token 历史用量统计。
 - [thibautrey/multivibe#dsh-multivibe](https://github.com/thibautrey/multivibe/tree/main/plugins/dsh-multivibe) — 把 DSH 接到 MultiVibe 网关，并可查看可用模型与连接状态。
 - [TikaFlow/dsh-model-fix](https://github.com/TikaFlow/dsh-model-fix) — 提供更好的模型使用体验，包括但不限于：多种方式填充模型参数、提升模型兼容性、记住推理级别、子智能体实时跟随模型和推理级别、AI 自主调节档位等。
 - [TinyBOOOOM/dsh-cliproxyapi-pro](https://github.com/TinyBOOOOM/dsh-cliproxyapi-pro) — 把 CLIProxyAPI（CPA）服务接入 DeepSeek Harness：按原生协议同步模型、查看各凭证额度，并可选生成图片和视频。支持一个或多个账号，发现各服务的模型并把勾选的对话模型同步到模型选择器，按 Anthropic Messages、OpenAI Responses 或 OpenAI Chat 请求，并支持单模型参数覆盖；填写 CPA 管理密钥后，可在设置页的额度标签和模型选择器旁查看各凭证的上游额度；打开默认关闭的生成开关后，可用 CPA 的生图、生视频模型执行 /cpa-image、/cpa-video 以及视频编辑和延长，并可选让 agent 调用；还能检查插件自身更新，装有 dshmarket 时通过它安装。
@@ -3086,7 +3087,7 @@ dsh plugin --profile web add dshmarket
 - [cheeseRatRat/dsh-buwang](https://github.com/cheeseRatRat/dsh-buwang) — 不忘 —— 主动记录的私人记忆库，内置可修改的人格，只在你开口时才写；读取时每轮自动注入人格与记忆，纯本机 Markdown 不联网。
 - [chenzheshushi-commits/dsh-evolve](https://github.com/chenzheshushi-commits/dsh-evolve) — 跨会话记忆，零 token 确定性召回（bigram-Jaccard 与 FTS5 BM25 经 RRF 融合，中文分词精确）；重复观察会强化已有理解而非堆叠重复；过程性知识结晶为 SKILL.md，就地精炼升级，走 active-stale-archived 生命周期治理，归档可逆、可回滚。摄入与处置各有一档用户可选的自治程度，冲突与高重要写入始终交人工复核，任何档位都不会自动删除。需要 Node 22.5+。
 - [chinwe/dsh-compound-memory](https://github.com/chinwe/dsh-compound-memory) — 通过 uvx 启动本地 compound-memory MCP server，并在每个会话注入一次简短的使用提醒。
-- [ciskonc/dsh-context-imports](https://github.com/ciskonc/dsh-context-imports) — 把 AGENTS.md 里 @路径 引用的文件读出来，在会话启动时注入模型上下文；带字节预算、压缩后重新注入和六语言设置卡片。v0.2.3 适配 DSH 0.1.7+（已加固 0.2.0-rc.2+），DSH 0.1.5 请用 0.1.x。
+- [ciskonc/dsh-context-imports](https://github.com/ciskonc/dsh-context-imports) — 把 AGENTS.md 里 @路径 引用的文件读出来，在会话启动时注入模型上下文；带字节预算、压缩后重新注入和六语言设置卡片。v0.3.x 会展开 DSH 已加载的所有指令文件里的引用，包括会话中途自动带进来的项目 AGENTS.md（需 DSH 0.2.0+）；DSH 0.1.7 请用 0.2.x。
 - [Co-Engram/Co-Engram#dsh-plugin](https://github.com/Co-Engram/Co-Engram/tree/main/packages/dsh-plugin) — 自进化团队记忆，以纯 Markdown 存于 Git：原生 Cordis 插件注册 38 个裸名记忆工具，并按每次组装动态注入 prompt-signals 段；含 RPE 强化、衰减与睡眠巩固；与 Claude Code（MCP）、OpenClaw 宿主共享同一数据仓；已对 DSH 0.1.0-rc.6 实测。
 - [crease123/dsh-journal-calendar](https://github.com/crease123/dsh-journal-calendar) — 助手替你维护的每日日志：journal_record 工具把带时间的待办与记事（可选详情与标签）追加到 DSH home 下一天一个的 JSON 文件；右侧栏把这些文件画成月历，单元格按「有待办未完成 / 待办已完成 / 只有记事」标记，下方是可勾选的待办与所选日期的条目；它加入系统提示词的那句职责文案，可以直接在日历上编辑。
 - [csyangwen/dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) — 为 DeepSeek Harness 带来「跨会话长期记忆 + 后台自我进化」能力的纯插件实现：五轨记忆 · git 分支感知 · 回合内自我审查 · 技能自我进化与技能管理器 · 四轨待办 · COI 调度 · 会话广播 · 会话搜索 · 提示词管理器 · 临时信息便签——零核心修改、零运行时依赖，随装随用、卸载即净。
@@ -3363,6 +3364,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-lighthouse](https://github.com/7gzgn/dsh-lighthouse) — 一屏看清每个作品的现状：本地版本与文件数、GitHub star 与最后推送、市场是否已收录及下载量、收录 PR 等待时长对比上游中位数；全部只读、数字都来自 API，不经模型生成。
 - [dsh-restart-planner](https://github.com/7gzgn/dsh-restart-planner) — 让 agent 自己安排宿主重启：工具立刻返回，等这一轮回复送达、会话日志落盘安静后再停+拉，并留下报告；自带 dry-run、体检与「什么时候可以眨一下眼」的确认。
 - [dsh-slipway](https://github.com/7gzgn/dsh-slipway) — 一条命令把本地 DSH 插件工程发到 GitHub 并开市场收录 PR：逐文件上传带字节校验、市场条目 PR，最后把线上文件逐个拉回来比 sha256。
+- [dsh-tool-gate](https://github.com/7gzgn/dsh-tool-gate) — 把整包工具从会话的工具面上摘掉，要用时一条命令挂回来。工具表从 99,789 字符降到 48,082（51.8%），不用卸载插件、不用重启，按组可逆、按 agent 独立。
 - [863683348/dsh-plugin-academic-writing](https://github.com/863683348/dsh-plugin-academic-writing) — 为 DSH agent 提供学术写作工具包：论文大纲、标题与摘要骨架、GB/T 7714 / APA / MLA 引文格式化、措辞质检与投稿前清单。
 - [863683348/dsh-plugin-education](https://github.com/863683348/dsh-plugin-education) — 为 DSH agent 提供教育工具包：按学段的教案骨架、测验题与答案校验、分析式评分量规、Anki/markdown 闪卡与可读性分级。
 - [863683348/dsh-plugin-finance-data](https://github.com/863683348/dsh-plugin-finance-data) — 为 DSH agent 提供金融数据工具包：数字与货币格式化（含中文万/亿单位）、收益与年化计算、估值与盈利比率、现值/终值、风险指标与数据质量清单。
