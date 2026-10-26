@@ -5942,6 +5942,7 @@ dsh plugin --profile web add dshmarket
 - [isheng-eqi/dsh-niulai-sound](https://github.com/isheng-eqi/dsh-niulai-sound) — 牛来确认音：请求用户确认时播放「妈妈」，批准瞬间掐断并播放「牛来！」；梗源电影《牛来》，Windows 原生播放，零外部依赖。
 - [IT-lu/dsh-imbot](https://github.com/IT-lu/dsh-imbot) — 飞书 / 钉钉群双向桥接：在 IM 群里直接与 DeepSeek Harness agent 对话（飞书长连接 / 钉钉 Stream 模式，无需公网端口）。支持工作区选择/创建、会话切换、归档（与 DSH GUI 同步）、设置页图形化配置。飞书交互卡片、钉钉文本命令。
 - [itr-del/dsh-feishu](https://github.com/itr-del/dsh-feishu) — DeepSeek Harness 的飞书/Lark 私聊桥接插件，支持 `dsh plugin add` 一键安装，配套完整调试文档。
+- [ityyq777/dsh-progress-tick](https://github.com/ityyq777/dsh-progress-tick) — 主 agent 长时间执行时按可配置间隔提醒它播报进度，支持指数退避、卡住检测、会话「进度」标签页与手动「立即催一次」。
 - [IvanWu2015/dsh-connect#connect](https://github.com/IvanWu2015/dsh-connect/tree/main/packages/connect) — 把 DeepSeek Harness 会话接入飞书/Lark、Telegram 与钉钉：每个聊天绑定一个可续接的 DSH 会话，回复以卡片流式回传，任务结束时用一张结果卡汇报模型、token 用量、步数与耗时。提问与权限审批可直接在聊天里作答，各渠道凭据在 Web 设置面板中配置。
 - [jackControls/dsh-telegram-control](https://github.com/jackControls/dsh-telegram-control) — Telegram 远程控制插件：会话列表（标题+工作目录）、按需恢复暂停的持久化会话（重挂 preset）、按回合精准回传回复、💭 思考摘要、✅/❌ 内联按钮审批（结果回写原消息）、bot 命令菜单。
 - [JamesYasR/dsh-email-push-master](https://github.com/JamesYasR/dsh-email-push-master) — 你不在电脑前时由 agent 邮件提醒你：稳定 SMTP（不重试 535）、连接与空闲超时，并带 --check 自检。
