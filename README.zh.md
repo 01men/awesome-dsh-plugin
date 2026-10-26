@@ -5769,6 +5769,7 @@ dsh plugin --profile web add dshmarket
 - [Palaiologos1453/dsh-worktree-studio](https://github.com/Palaiologos1453/dsh-worktree-studio) — 面向 DeepSeek Harness 的人工 Git worktree 任务工作台，将验证结果绑定到合并交付。
 - [PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — 官方级 GitHub CI 集成：composite action.yml、轮询 PR 评审机器人（幂等行内评论 + status-check 门禁）以及 PR/issue 工具，所有写入走人工审批门。
 - [pinzza/dsh-git-statusline](https://github.com/pinzza/dsh-git-statusline) — DSH Web 的紧凑 Git 状态行：显示当前分支、已暂存与未暂存的行数改动、相对 upstream 的领先/落后提交数以及工作区干净标记；可放在侧边栏底部、会话标题栏或输入框上方/下方，位置在设置页切换。
+- [Qcsj777/dsh-worktree-branch](https://github.com/Qcsj777/dsh-worktree-branch) — 在 DSH 新建会话页提供 Codex 风格的工作位置、worktree 与分支切换器，git 操作全部由 Host 半执行。
 - [qingyou002/dsh-git-commit](https://github.com/qingyou002/dsh-git-commit) — DSH 斜杠命令 /commit：暂存全部更改，用会话当前模型总结暂存区 diff 后提交；不依赖浏览器界面，模型调用失败时回退到本地规则生成提交信息。
 - [RaditPasya/dsh-web-git-sidebar](https://github.com/RaditPasya/dsh-web-git-sidebar) — DSH Web 左侧栏的源代码管理面板：搜索、切换与创建分支并显示领先/落后提交数，拓扑序提交图，点击任意提交可展开查看其文件（A/M/D）、增删行数、提交信息、作者与时间。设置上方常驻一个底部停靠区，包含分支下拉与最近提交并跟随当前会话；fetch 与快进 pull 合并为一个按钮；另有 git_worktree 工具供智能体创建、列出与移除 worktree。
 - [ramwin/dsh-branch-cleaner](https://github.com/ramwin/dsh-branch-cleaner) — 冗余分支清理：找出已经落地到主线的分支（普通合并 / squash 合并 / rebase 或 cherry-pick 落地 / 上游已删除 / PR 已合并），确认后再删除。默认只报告，不切换分支、不 rebase，删除前把每个本地分支备份到 refs/backup/branch-cleaner/（删除远端分支不备份）。
