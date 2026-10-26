@@ -1508,6 +1508,7 @@ dsh plugin --profile web add dshmarket
 - [boooooooer/dsh-balance-and-cost](https://github.com/boooooooer/dsh-balance-and-cost) — DeepSeek 账户余额与模型消耗：官方价格表分高峰/空闲时段计价，三档计费口径（缓存未命中/命中/输出），按模型与会话统计，主页摘要条悬停明细，支持导出 CSV 与重置记录。
 - [bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) — DSH 上下文洞察面板：Context 仪表盘 + /context命令 + Context 浏览器，查看 Context的分类组成、内容详情、演进趋势、压缩/注入事件、统计等一站式 Context 全生命周期管理。
 - [Cassius0924/dsh-usage-dashboard](https://github.com/Cassius0924/dsh-usage-dashboard) — DSH Web 的 DeepSeek 用量仪表盘：按近期日均消耗估算可用天数，今日/本月/累计花费环比对照，分模型成本排行、缓存节省、峰谷定价影响，以及可拖动的悬浮余额窗。
+- [ccl4-56-23-5/DSH-Plugins#usage-statistics-fish](https://github.com/ccl4-56-23-5/DSH-Plugins/tree/main/Token用量插件/1.0.0) — 基于 usage-statistics-panel 定制统计看板，提供 52 周方块热力图、纯柱状 Token 趋势与已结束轮次标签，沿用上游采集与历史数据。
 - [Ch0uHuaZ1/DeepSeek-Harness-Desktop#desktop-launcher-plugin](https://github.com/Ch0uHuaZ1/DeepSeek-Harness-Desktop/tree/main/packages/desktop-launcher-plugin) — 在设置页加入「桌面端」卡片，检测 DeepSeek Harness 桌面应用并一键唤起。
 - [changan0617/dsh-deepseek-balance](https://github.com/changan0617/dsh-deepseek-balance) — dsh Web 界面的 DeepSeek 账户余额浮窗：按币种显示总余额、赠送余额与充值余额，每 60 秒刷新一次。可拖动、可折叠；API Key 按「卡片手动输入 → 凭据服务 → 环境变量 DEEPSEEK_API_KEY」顺序解析。
 - [Cheeserackery/deepseek-time#dsh](https://github.com/Cheeserackery/deepseek-time/tree/master/adapters/dsh) — 在 DSH 会话界面显示 DeepSeek 当前高峰/空闲收费时段图标与下一时段倒计时，悬停图标可查询 API 余额。
@@ -1917,6 +1918,7 @@ dsh plugin --profile web add dshmarket
 - [iStarryDust/dsh-ui-liquid-glass](https://github.com/iStarryDust/dsh-ui-liquid-glass) — DSH 全液态玻璃皮肤：13 个可调折射液态玻璃面、随时段轮换的壁纸、四档主题色、选中项带水滴状高亮飞镜。
 - [jiangwangyang/dsh-theme-blackhole](https://github.com/jiangwangyang/dsh-theme-blackhole) — DeepSeek Harness（dsh）Web UI 的黑洞主题插件。
 - [Jimmyzwang-cloud/dsh-inkscreen-theme](https://github.com/Jimmyzwang-cloud/dsh-inkscreen-theme) — 墨水纸质感的苹果风 DSH 网页主题，侧栏使用手写 jimmy 字标与小狗头像。
+- [Jimxinfang/dsh-theme-stripe-style](https://github.com/Jimxinfang/dsh-theme-stripe-style) — DeepSeek Harness Web 的 Stripe 风格主题：40px 紫色网格、多级柔和阴影、12px 卡片与 8px 控件圆角，设置页内可直接切换「白昼紫 / 午夜蓝」双版本，并可一键恢复出厂外观。
 - [jinxlux/xiao-theme-dsh-ui-plugin](https://github.com/jinxlux/xiao-theme-dsh-ui-plugin) — 为 DSH UI 提供完全自定义的主题框架，默认主题为原神魈。
 - [jizenghui81/dsh-huashu-pixel](https://github.com/jizenghui81/dsh-huashu-pixel) — DSH Web 界面的暖调像素主题：亮色暖米白纸面、暗色街机磷光；方角硬描边与偏移投影的像素控件、随包发布的像素字体，流式输出与状态变化带方块光标、扫描线与硬切闪帧；强度（轻/标准/浓）、动效、扫描线、像素字体四组档位在「设置 → 通用」里切换，输出时输入框上沿有一条像素加载条。
 - [JohnnyTing/dsh-official-homepage-theme](https://github.com/JohnnyTing/dsh-official-homepage-theme) — 复刻 DeepSeek Harness 首页视觉的 Web 主题，提供流体背景、鼠标弹性网格、动态小鱼与可调节效果。
@@ -3026,6 +3028,7 @@ dsh plugin --profile web add dshmarket
 ### 🧠 记忆
 
 - [00080000/dsh-project-memory](https://github.com/00080000/dsh-project-memory) — 为 DeepSeek Harness提供持久化的项目级记忆。专门针对项目开发，原生融合 dsh 任务系统，会话内任务清单与读过的文件自动沉淀为跨会话任务记录，任务↔文件自动关联——开发工作流可切换、可续接，无需重复梳理整个项目。文档与代码符号在读取时索引，无需全量预扫；针对不同语言的项目，支持可选功能增强。经验笔记自动去重，避免重复记录。所有数据召回附带出处可溯源。纯 JS、单依赖、静默运行、零操作成本。
+- [0Junze0/dsh-mem0](https://github.com/0Junze0/dsh-mem0) — 基于 mem0 与本地 Chroma 的长期记忆：画像和相关事实经系统提示注入；会话结束自动捕获；夜间执行去重、近义归纳与矛盾处理；主题图持久化为 Markdown 主题卡；定期导出到 git 仓库；自带全屏记忆页，支持搜索、批量合并、快照与撤销。
 - [0x7A7A6572/dsh-forge-studio#plugin-memory](https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-memory) — dsh 跨会话记忆：agent 保存、检索并更新用户偏好、事实与项目决策，重要条目自动注入后续会话，设置面板可浏览、编辑、归档与删除。
 - [1014029855/dsh-codevault](https://github.com/1014029855/dsh-codevault) — 读开源代码后记一笔的档案：快记或深读笔记按 仓库/文件/符号 归并成一张卡，追加式落盘为可放进 Obsidian 的 Markdown 笔记；可检索历史、回看最近阅读，也能搜你自己 Obsidian 里的笔记、把相关笔记挂到阅读记录上。共 9 个工具、/codevault 命令与 code-reading 技能。
 - [1015677515/dsh-prompt-ErrorNotes-desk](https://github.com/1015677515/dsh-prompt-ErrorNotes-desk) — 把 agent 自报的错误收进分类经验库，并每轮回注系统提示词（每条草稿都先经用户确认或修改）；同时在对话标题栏提供两个面板，用于编辑跨对话全局提示词与本次对话提示词。
@@ -4655,6 +4658,7 @@ dsh plugin --profile web add dshmarket
 - [NewDaNew/dsh-voice-input](https://github.com/NewDaNew/dsh-voice-input) — Web UI 语音输入：输入框一键麦克风按钮，基于 Web Speech API 语音转文字填入草稿，可选识别后自动发送。
 - [Nothree-code/voco-input-sh](https://github.com/Nothree-code/voco-input-sh) — Web UI 语音输入：输入框麦克风按钮驱动本地 VocoType 离线识别，识别结果自动插入输入框（自动部署/防重复/持续输入）。
 - [nsswkj/dsh-typewriter-blip](https://github.com/nsswkj/dsh-typewriter-blip) — 把流式输出的助手回复变成短促音效：按可调的最小间隔逐字发声，只对回复正文发声，窗口最小化、被遮挡或切到后台标签页时照常发声。内置两种音色，也可自调波形，或载入音频文件当音色。
+- [Nuoyi207/dsh-gptsovits-tts](https://github.com/Nuoyi207/dsh-gptsovits-tts) — 基于 GPT-SoVITS 的本地语音合成：朗读 DSH 回复、在右侧边栏换音色，拖一段声音就能训练新音色。
 - [OMSociety/dsh-xiaoai-bridge](https://github.com/OMSociety/dsh-xiaoai-bridge) — 把小爱音箱（小爱同学 / 小米智能音箱）接成语音助手的插件：托管本地桥接器进程，听到唤醒词就收音、做语音识别（ASR / STT），把对话交给 DSH 会话，再用语音合成（TTS）把答案念回音箱播报。
 - [PandaPolo/dsh-voice-call](https://github.com/PandaPolo/dsh-voice-call) — agent 主动打来的语音电话：`offer_call` 向人类振铃（接听/拒接/稍后再说），接听后由本地 CrispASR + Qwen3-TTS 合成并播放（9 个音色，含 2 个中文方言）；拒接则把决定返回给 agent。
 - [PensiveFei/dsh-voice-scribe](https://github.com/PensiveFei/dsh-voice-scribe) — 面向 Web UI 的语音输入插件：点按 Alt（或 Alt+空格）开始/停止听写，支持浏览器内置 Web Speech（零配置）或 OpenAI 兼容云端 ASR，可选经 DSH 已配置模型润色，带设置页。
@@ -6513,6 +6517,7 @@ dsh plugin --profile web add dshmarket
 - [452926826/dsh-ssh-logs](https://github.com/452926826/dsh-ssh-logs) — 从白名单 SSH 服务器和日志根目录读取或搜索有界日志内容，不开放任意远程命令。
 - [534119219/chicheng-gate](https://github.com/534119219/chicheng-gate) — DSH Web 插件：局域网/远程访问控制、frpc 内网穿透、面板密码门禁与手机端 UI 适配。
 - [6mt/dsh-plugin-loopback-trust](https://github.com/6mt/dsh-plugin-loopback-trust) — 反向代理域名访问 dsh web 时恢复设置页的 Host 持久化：将页面连接标记为宿主可信，设置与模型页正常加载，不再报 "settings are unavailable in this browser"。适用于 dsh 0.1.7 – 0.2.x。
+- [abbaababa/dsh-mobile-access](https://github.com/abbaababa/dsh-mobile-access) — 用 iPhone 或 iPad 的 Safari 打开 Mac 或 Windows 上的 DeepSeek Harness Web：8 位配对码、回环监听的局域网网关、可选 Tailscale Serve，以及仅 iOS 生效的 Safari 输入与触摸补丁。可用 dsh plugin add 安装。
 - [AcidGr/dsh-web-lan-access](https://github.com/AcidGr/dsh-web-lan-access) — Web UI 局域网/远程访问：为纯 HTTP 非安全上下文注入 crypto.randomUUID polyfill，局域网/Tailscale IP 直连时前端不再崩溃。
 - [ahian-lee/dsh-ssh-workspace](https://github.com/ahian-lee/dsh-ssh-workspace) — 为 Windows DeepSeek Harness Desktop 0.2 提供 SSH 工作区：发现 OpenSSH 主机、添加或浏览远端项目目录，按工作区路由文件、搜索与 Bash 操作，DSH 运行时仍在本地。基于 Yan-Zero/dsh-remote-ssh 的 Desktop 兼容分支，保留本地默认权限。
 - [ai-eks/dsh-auth-tunnel](https://github.com/ai-eks/dsh-auth-tunnel) — 通过快速或命名 Cloudflare Tunnel 为 DSH Web GUI 提供密码保护的公网访问，并代理 HTTP/WebSocket 流量、改用应用内目录选择器。
