@@ -110,6 +110,8 @@ dsh plugin --profile web add dshmarket
 - [NEINC1/muche-dsh-plugin](https://github.com/NEINC1/muche-dsh-plugin) — 连接小沐的 dsh 插件：和有持续状态的小沐聊天，小沐可调用本机 dsh 执行任务。
 - [panando/dsh-pua](https://github.com/panando/dsh-pua) — 基于 @michengai/dsh-pua 的修订版：解除上游「全局总闸」，让入口恒常显示、功能默认关闭并可按会话开关；入口改为下拉菜单（打开 / 关闭 / 选项），选项面板更紧凑。
 - [pk14742952-AD/dsh-host-rsi](https://github.com/pk14742952-AD/dsh-host-rsi) — 面向本地 Qwen3.8 27B/3.8 Flash 及线上 API 的反思进化插件：编码循环收敛器针对 Qwen3.8 27B/Flash 的重复验证大思考加速收敛、减少思考时间；五态交付护栏检测并纠正卡住/死循环；model-agnostic 宿主逻辑，线上 API 多数可通用；每次使用持续自进化，带反问式自检、批评升级、倒排索引记忆检索、编码循环收敛提示与五态交付护栏。
+- [qian-dsh/dsh-as-mcp-server](https://github.com/qian-dsh/dsh-as-mcp-server) — 把 DSH 变成一个 MCP server：让另一个 agent 实时看见它的思维、工具调用和文件改动，共享意图，持地板锁期间拒绝 DSH 的 write/edit/git 工具，插入中途提醒，并委托审查。
+- [qian-dsh/dsh-outer-brain](https://github.com/qian-dsh/dsh-outer-brain) — 把哲学家的思考方式变成可执行的东西：用辩证法和实践检验治理幻觉与长会话漂移，让「做完了」是可核事实而不是一句自述。
 - [Qulierm/orbital-agents](https://github.com/Qulierm/orbital-agents) — 为 DeepSeek Harness 提供常驻的 Endeavour 与 Challenger 对等会话：负责规划、按序执行任务，并核验汇报的结果。
 - [regrevia/dsh-fast-mode](https://github.com/regrevia/dsh-fast-mode) — 整任务快四分之一：只把互不依赖的读并成一批，模型、思考强度和请求体一动不动。
 - [rootsbymenda/dsh-second-angle](https://github.com/rootsbymenda/dsh-second-angle) — Checks each claim in a finished answer against the tool output that same turn read: a contradiction whose quote is found in that output steers one correction in the same turn, and claims the output does not back are flagged in the session log and on stderr. A free scan for absolute words and unmatched numbers runs first, and a turn that ran no tool never reaches the model.
@@ -4052,7 +4054,6 @@ dsh plugin --profile web add dshmarket
 - [poplarity/dsh-science-workbench](https://github.com/poplarity/dsh-science-workbench) — 可复现科学分析工作台：agent 驱动的 cell、内联图形与反馈重画、manifest 溯源、环境快照与出版级出图技能（9 个 bio_* 工具 + 工作台界面）。
 - [project-hy/dsh-claude-delegate](https://github.com/project-hy/dsh-claude-delegate) — 把自包含的编码子任务委派给本机 Claude Code（官方 Agent SDK 驱动），结果回传主会话：19 个参数可按次控制模型、思考强度、权限模式、允许工具、轮次与预算上限；后台作业立即返回 jobId 并支持增量读取；结果附会话句柄，传回 resume 即可在同一会话续跑；预计超过 20 秒的命令经内置 mcp__dsh__shell 通道逐行实时输出，不占用模型上下文；会话内附 Claude Code 监控面板（任务列表、结构化过程视图、实时输出块、一键取消）；委派规程以运行时技能注册，安装插件即安装技能。
 - [Q1hangL/dsh-ask-guard](https://github.com/Q1hangL/dsh-ask-guard) — 为 ask_user_question 提供协作式超时守卫：提问卡片丢失或用户未答复时以结构化 ASK_TIMEOUT 结束调用，避免回合无限挂起。
-- [qian-dsh/dsh-outer-brain](https://github.com/qian-dsh/dsh-outer-brain) — 把哲学家的思考方式变成可执行的东西：用辩证法和实践检验治理幻觉与长会话漂移，让「做完了」是可核事实而不是一句自述。
 - [qianyuan-ltd/dsh-qianyuan](https://github.com/qianyuan-ltd/dsh-qianyuan) — 把 DeepSeek Harness 接入乾元 MCP 服务器——其中存着其他 Agent 已经踩过的坑与已经跑出的结果，并提供能力检索。共暴露 13 个工具，名为 mcp__qianyuan__*。读取开放，无需密钥。
 - [qixin-ai-data/dsh-qixin-insight-mcp-oauth](https://github.com/qixin-ai-data/dsh-qixin-insight-mcp-oauth) — 通过 OAuth 2.1 + PKCE 授权接入启信慧眼 MCP 服务，以单条插件条目把它的工具挂载为 mcp__qixin_insight__*，token 到期前自动刷新，断开时吊销。
 - [qphotoai/dsh-computer-use-windows](https://github.com/qphotoai/dsh-computer-use-windows) — 适用于 Windows 的 DeepSeek Harness Computer Use 插件，支持 UIA、cua-driver 和可选 GLM 视觉。
@@ -5801,6 +5802,7 @@ dsh plugin --profile web add dshmarket
 - [yutingzhao1991/dsh-review](https://github.com/yutingzhao1991/dsh-review) — 把同一个 diff 同时交给多个评审者——已安装的 CLI 编程智能体（codex、claude 等）或 DSH 子智能体——各自成节，合并为一份报告；评审者与命名评审模式在设置界面里配置。
 - [zengweicheng666/dsh-svn-tools](https://github.com/zengweicheng666/dsh-svn-tools) — SVN（Subversion）工具集：33 个 agent 工具（status/diff/log/blame/commit/merge/props/lock/changelist 等），以及带 BASE/工作副本左右对比、冲突解决与 AI 提交日志的侧边栏面板。
 - [zengxiaolou/dsh-github-link](https://github.com/zengxiaolou/dsh-github-link) — 把对话里的 GitHub / GitLab / Gitee 链接变成带缓存元数据的悬停卡片，点击在 DSH 右侧栏浏览器中打开；裸 URL 与 GenUI 块都覆盖，且不修改 GenUI 本体。
+- [zengxiaolou/dsh-pr-panel](https://github.com/zengxiaolou/dsh-pr-panel) — fork 自 ItQianChen/dsh-github-flow 并裁剪：本会话 PR 的浮窗与右列审阅面板，显示 CI 状态、评审意见与合并状态；同时注册 github_* 工具（含合并/评审 PR、密钥、原始 API），勿与原版同装。
 - [Zeppeli777/idea-git](https://github.com/Zeppeli777/idea-git) — IDEA 风格的 Git 工作台：提交图（泳道与引用标签）、日志筛选、提交详情、并排与统一差异、按 hunk 暂存、零上下文的细粒度模式、本地更改（含修补与 sign-off）、跟随重命名的文件历史、逐行注解、Stash、分支操作、比较、标签、交互式变基与冲突解决。按活跃会话盖上 Assisted-by trailer 记录提交由哪个模型产生，并把已有的 trailer 渲染成标签，让 AI 参与的历史可追溯。
 - [zhitiaojun/dsh-auto-git](https://github.com/zhitiaojun/dsh-auto-git) — 在 DSH 每次注册新工作区时自动 git init 并补一个空提交；已在工作树内的目录会被跳过。
 - [zhu1090093659/dsh-web#packages/dsh-git-graph](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-git-graph) — 输入框上方提供 Git 分支选择器，并把分支泳道与提交历史画成图谱，沿着时间线找到任意变更。
@@ -5874,6 +5876,7 @@ dsh plugin --profile web add dshmarket
 - [Funny1Potato/dsh-onebot-hub](https://github.com/Funny1Potato/dsh-onebot-hub) — OneBot v11 枢纽：夹在上游 OneBot 实现（LLOneBot 等）与下游 bot 实现之间，逐字转发事件与动作；给 agent 一条按会话的时间线、动作账本、分层记忆（进行中的话题与任务、长期事件、人物与群档案）以及一组 onebot_* 工具（回复、媒体、成员、原始 API 调用）。
 - [good-boy4069/dsh-mobile-remote](https://github.com/good-boy4069/dsh-mobile-remote) — 微信遥控 DeepSeek Harness：iLink 双向加密文件收发（入站自动解密落盘 + /send 出站）、weixin_send 主动通知、完成通知、多会话切换、健康面板与文件日志。
 - [GooDAnDReaDY/dsh-messenger-gateway](https://github.com/GooDAnDReaDY/dsh-messenger-gateway) — DeepSeek Harness 的 Telegram 桥接：双向会话、对话引导、主频道路由，以及以 Telegram 语音消息发送的 TTS 语音笔记。
+- [GRmaid/dsh-LimBusCompany-dancinglyrics-toast](https://github.com/GRmaid/dsh-LimBusCompany-dancinglyrics-toast) — 会话事件（权限请求、回合开始/结束）以 Limbus Company 桌面歌词风格的逐字动画浮在所有窗口之上：波纹/跌落入退场、抖动或波动律动、分事件光晕配色、屏幕两侧随机落位、{tool}/{outcome}/{title} 文案模板，全部参数在 DSH 设置页实时编辑；透明悬浮伴侣窗由宿主自动拉起、消失即守护重生。仅 Windows；需在包内 companion/ 目录执行一次 npm install 以安装悬浮窗依赖的 Electron ^33。
 - [grunmin/dsh-acp-enhanced](https://github.com/grunmin/dsh-acp-enhanced) — 增强版 ACP 服务器：块级与推理流式、用量遥测、模型/推理强度切换、权限预设、会话恢复/归档、每会话 MCP servers、Zed 文件/终端转发。
 - [GuoFengyu110429/dsh-high-fee-alert](https://github.com/GuoFengyu110429/dsh-high-fee-alert) — 自动获取分时电价数据（按北京时间），在高峰时段提醒用户，以降低用电成本。
 - [gusu45/dsh-wechat-persistent](https://github.com/gusu45/dsh-wechat-persistent) — DSH 的持久微信桥：一个微信用户对应一个持久智能体会话，走官方 iLink 通道，上下文与用户→会话映射在重启后保留。没有发送者白名单——任何能给所配对微信号发消息的人都能发起对话并获得拥有工具权限的会话，工作目录默认是用户主目录；请使用专用账号并设置 WECHAT_PERSISTENT_CWD。
