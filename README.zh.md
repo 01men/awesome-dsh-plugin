@@ -1704,7 +1704,7 @@ dsh plugin --profile web add dshmarket
 - [Phant0Meow/dsh-meow-cachebilling](https://github.com/Phant0Meow/dsh-meow-cachebilling) — 点开输入框旁的上下文圆环即见本轮账单：缓存命中/未命中/输出各花多少钱（¥），官方峰谷价与模型分价自动判定；非 DeepSeek 官方路由不显示。
 - [phungthien269/dsh-token-stats](https://github.com/phungthien269/dsh-token-stats) — DSH Web GUI 的 Token 用量仪表盘 — 今日/本周/本月/累计汇总、按模型明细和堆叠柱状图，界面支持中/英/越/日。
 - [Pingze-github/dsh-cost-audit](https://github.com/Pingze-github/dsh-cost-audit) — 以 harness 自己的统计形态显示每轮与会话的 token 与人民币花费，提供 1/7/30 天窗口的全账号账单与「单位工作量花费」趋势，并给出会在你采纳后重新测量效果的建议。
-- [PlusQi/dsh-tokstats](https://github.com/PlusQi/dsh-tokstats) — DSH 的 token 工具集：下一轮 token 预告、基于宿主会话投影单元的跨会话用量分析面板，以及采纳才写回的提示词结构化重排。
+- [PlusQi/dsh-tokstats](https://github.com/PlusQi/dsh-tokstats) — token 花在哪一目了然：跨会话用量统计、模型与工作区排行，附发送前预告与草稿整理。
 - [PolinniZhong/dsh-personal-center](https://github.com/PolinniZhong/dsh-personal-center) — DeepSeek Harness 个人中心：跨会话用量统计、按模型成本估算、全局自定义指令、外观全局字号、数据驱动的桌面宠物（位图/矢量皮肤）与会话状态概览，纯本地离线运行。
 - [qiyuexue-xiyu/dsh-tool-cost-hint](https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint) — 每轮对话结束后在回复底部追加一行可折叠提示：列出这一轮调用了哪些工具、各几次、每个工具往上下文注入了多少 token（输入加输出），点开可看逐工具明细。
 - [qwert702/dsh-token-viewer](https://github.com/qwert702/dsh-token-viewer) — dsh 网页端 CC Switch 风格 Token 消耗统计：按请求的用量日志、真实消耗 Hero、按请求提交时间分桶的趋势图、按模型峰谷牌价计费、项目/模型统计与账户余额。
@@ -2814,7 +2814,7 @@ dsh plugin --profile web add dshmarket
 - [Max-Null/dsh-chinese-thinking](https://github.com/Max-Null/dsh-chinese-thinking) — 注入一条固定 system-prompt 段落，让 Agent 无论用户使用什么语言都始终用中文思考和回复。
 - [mayf3/dsh-session-doctor](https://github.com/mayf3/dsh-session-doctor) — 会话医生：列出会话（含 agent 运行状态）、读取会话记录、诊断卡死的 agent、解卡（cancel + keepInbox 保留排队消息）、向其他会话发送消息。
 - [mcf171/dsh-session-delete](https://github.com/mcf171/dsh-session-delete) — 在会话行菜单中永久删除会话：先归档、再删除日志目录并立即移除该行，带 Delete 快捷键；只使用官方扩展点，仅打开过、未在运行的会话依然可以删除。
-- [meng-lx/dsh-auto-restart](https://github.com/meng-lx/dsh-auto-restart) — 等所有 agent 与后台任务都空闲后再重启 DSH，并回到原会话：可取消倒计时、到点再判占用、与随包 PowerShell 重启脚本之间用交接文件通信。仅限 Windows；桌面端已实测，网页端尚未验证。
+- [meng-lx/dsh-auto-restart](https://github.com/meng-lx/dsh-auto-restart) — 由 agent 自己发起的重启，不是按钮。agent 调一个工具，之后由插件接管：等这台机器上所有 agent 与后台任务都空闲，走完十秒可见倒计时（点一下鼠标、滚一下滚轮、按任意键都会取消），再重启 DSH，并唤醒原会话让 agent 接着说下去。没有按钮、没有手动入口——工具是唯一入口。官方桌面端与官方网页端均已适配，第三方壳不在默认支持范围内。
 - [mengwEX/dsh-block-ptc](https://github.com/mengwEX/dsh-block-ptc) — 为 PTC 模式提供模型自主收口的动态上下文压缩，将程序执行归入区块，并用模型撰写的摘要替换已完成区块的消息。
 - [MichengAI/dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) — 在设置里增加已归档会话页，可按工作区搜索、恢复和删除已归档会话。
 - [MichengAI/dsh-btw](https://github.com/MichengAI/dsh-btw) — 提供 /btw 一次性上下文旁问，不执行工具；回答显示在可复制、折叠或关闭的独立气泡中，不写入主对话。
@@ -3540,7 +3540,7 @@ dsh plugin --profile web add dshmarket
 - [F1star/dsh-research](https://github.com/F1star/dsh-research) — 提供本地 PDF 阅读、持久论文库、可追溯证据记录，以及跨论文比较与综合工具。
 - [fan56/dsh-dcp](https://github.com/fan56/dsh-dcp) — dsh 的确定性上下文压缩后端：零 LLM 摘要调用，基于规则剪枝，逐字保留路径/命令/报错原文/未完成 todo，约 8 万 token 压到几百。
 - [fan56/dsh-subagent-registry](https://github.com/fan56/dsh-subagent-registry) — 把本地定义的自定义 agent 注册成 dsh 可调用的 subagent：主模型通过 use_agent 工具按名字派活，每个 agent 以独立人格运行，支持断点续跑。
-- [fangchenghao/dsh-web-search](https://github.com/fangchenghao/dsh-web-search) — 免密钥的网页搜索：融合八个引擎、经代理梯队抓取正文，另有八个覆盖包、论文与问答的垂直来源。
+- [fangchenghao/dsh-web-search](https://github.com/fangchenghao/dsh-web-search) — 免密钥网页搜索：一个 web_tools 入口、八个 action，覆盖多查询、日期窗口、包、论文、仓库、平台、正文读取、引用研究、缓存检索与引擎健康；融合八个引擎，并提供给其他 Agent 使用的 stdio MCP server。
 - [Fantasality/dsh-origin-plugin](https://github.com/Fantasality/dsh-origin-plugin) — 通过 MCP 在 AI 对话里驱动 OriginLab Origin 科学绘图与分析：62 个工具。模态对话框看门狗、LabTalk 破坏命令门禁、释放/重连、拟合初值/固定参数/加权、细粒度图与工作表编辑、矩阵工具、FigureSpec 声明式 YAML（可 diff 可重放）、MCP Resources 只读会话快照、matplotlib 图桥接、PowerPoint 组图、Graph Gallery 模板搜索、EPS 导出、文件访问白名单、视觉基准回归，以及带确定性反读验证的可编辑 OPJU 交付。
 - [fashionmascherine-svg/dsh-polymarket-knowhow](https://github.com/fashionmascherine-svg/dsh-polymarket-knowhow) — 面向 DeepSeek Harness 与 Claude Code 的 Polymarket 工具包：Gamma/CLOB/Data-API 行情工具（DSH 内 31 个模型工具，MCP 只暴露只读子集）、需显式开启的带鉴权交易工具、WebSocket 推流服务，以及内置的 Polymarket 知识技能。
 - [fire-disposal/dsh-mojibake-interceptor](https://github.com/fire-disposal/dsh-mojibake-interceptor) — DSH 乱码拦截器 bundle：写入前特征值/编码回环检测乱码并复查放行（原样重试即通过），pwsh 写入编码执行前审计（ANSI/GBK/UTF-16/默认编码），Windows 与中文场景优先。
