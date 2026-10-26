@@ -2811,6 +2811,7 @@ dsh plugin --profile web add dshmarket
 - [imrascal/dsh-archive](https://github.com/imrascal/dsh-archive) — DeepSeek Harness 存档会话管理插件：在设置面板管理归档会话（恢复/删除）与回收站。
 - [imshz6669/dsh-split-chat](https://github.com/imshz6669/dsh-split-chat) — 把任意会话作为第二个完整对话开在右侧栏（独立记录与输入框），主区对话保持不动；右栏分栏后最多可同时对话 3 个会话。
 - [imtwa/dsh-recall-sessions](https://github.com/imtwa/dsh-recall-sessions) — 轻量级解压并读取历史会话，让新会话读取之前会话的内容，单次操作毫秒级。`/recall` 列出当前项目的历史会话（标题、最后活动时间、轮次、首问）；`/recall <序号>` 读回该会话的轮次内容；`/recall all` 覆盖所有项目；也可用自然语言让模型调用 `recall_sessions` 工具查询。
+- [Imzl-zl/dsh-redo](https://github.com/Imzl-zl/dsh-redo) — 给你发出的每条消息加上「重新生成」和「编辑重发」：重新生成一键用同样的文字重新回答，不经过输入框；编辑重发就地撤回这条消息及其之后的内容——从时间线和模型上下文里一起消失，不新建会话也不开新分支——再把文字和图片放回输入框，改完发送就从那一条重写对话。带文件（非图片）的消息两个操作置灰。
 - [ishuowang/dsh-rolehub-bridge](https://github.com/ishuowang/dsh-rolehub-bridge) — 发现并校验可移植的 RoleHub 角色，固定其精确 bundle，再将提示词和随角色打包的 Skills 加载到独立、可续聊的 DSH Session，以 Host 批准的工具绑定限制能力，并可选接入 Agent Team Room。
 - [ishuowang/dsh-sideband](https://github.com/ishuowang/dsh-sideband) — 无需等待或打断正在工作的 Agent：即时冻结有界 Session 快照，由隔离且无工具的 LLM 异步总结，再将带来源信息的上下文胶囊投递到另一 Session 或已授权 Room；对 Session 默认 quiet，也可显式 wakeup。
 - [iStarryDust/dsh-edit-regen](https://github.com/iStarryDust/dsh-edit-regen) — 编辑重发：在用户消息气泡上多一个「编辑」，改完从那条消息重新生成，图片与文件随行重传，模型继承原会话。
