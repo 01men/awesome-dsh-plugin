@@ -1355,7 +1355,7 @@ dsh plugin --profile web add dshmarket
 - [Xingkong42/dsh-zh-labels](https://github.com/Xingkong42/dsh-zh-labels) — 每次启动自动将 DSH 界面英文工具与状态标签修补为中文，升级 DSH 后自动恢复，无需手动改文件。
 - [xingxingbk-git/dsh-deepseek-chat](https://github.com/xingxingbk-git/dsh-deepseek-chat) — 在 DSH 桌面版中提供 DeepSeek 网页聊天与 Harness 工作区之间的切换。
 - [xinming-chenniang/dsh-button](https://github.com/xinming-chenniang/dsh-button) — DSH 输入框旁的可编辑快捷按钮：发送预设文字，或只填入草稿；可排序、换位置、调大小。纯文字动作，不执行宿主命令；有草稿时不覆盖。
-- [xinspark/dsh-better-session-title](https://github.com/xinspark/dsh-better-session-title) — 把会话顶栏标题换成工作区与会话面包屑，可在顶栏下拉里切换工作区、会话与子智能体。
+- [xinspark/dsh-better-session-title](https://github.com/xinspark/dsh-better-session-title) — 把会话顶栏标题换成工作区与会话面包屑，可在顶栏下拉里切换工作区、会话与子智能体；添加工作区使用与原生同度量的对话框，并可交给系统文件夹选择器。
 - [xintingcui/dsh-sidebar-panels-fold](https://github.com/xintingcui/dsh-sidebar-panels-fold) — 把侧边栏的全局面板条目折叠成少量可见行，并提供勾选面板决定留哪几个，条目一多时不再挤压工作区与会话区；只隐藏显示，不注销条目。
 - [Xinyuan-Gao/xy-dsh#xy-dsh-lamp](https://github.com/Xinyuan-Gao/xy-dsh/tree/main/xy-dsh-lamp) — macOS 系统级置顶灯板：每个 Agent 一盏灯、一个会话一行，收起时一个任务一盏灯；有审批或提问等你处理时该灯转蓝闪烁，根 Agent 结束时发系统通知。
 - [Xinyuan-Gao/xy-dsh#xy-dsh-question-nav](https://github.com/Xinyuan-Gao/xy-dsh/tree/main/xy-dsh-question-nav) — 在输入框上方常驻当前提问，另有按时间排列的历次提问下拉，点任意一条把对话视图回退到那一轮；被折进「过程」分组的提问会先自动展开，Esc、滚动或点击面板外即收起。
@@ -3014,6 +3014,7 @@ dsh plugin --profile web add dshmarket
 - [sh1robana/dsh-plugin-message-edit](https://github.com/sh1robana/dsh-plugin-message-edit) — 面向 DSH 桌面端的消息与附件编辑，支持原地保存、分支重生成和版本时间线。
 - [shendeguize/AgentSideCar#plugin](https://github.com/shendeguize/AgentSideCar/tree/main/plugin) — 跨 agent 看板监控本机 AI agent 会话（cursor-ide、claude、codex、copilot、kimi 及 dsh 自身），提供会话时间线，并可经默认关闭的两阶段确认门注入消息。
 - [shenhuanageshei/dsh-team-link](https://github.com/shenhuanageshei/dsh-team-link) — 会话深链、全量会话导出（markdown/JSON）、带配对的跨会话消息投递，以及团队 roster / 换届 / 恢复工具。
+- [ShiTan-677/dsh-plugins#dsh-plugin-mark-unread](https://github.com/ShiTan-677/dsh-plugins/tree/main/packages/dsh-plugin-mark-unread) — 给工作区会话行补一个手动「标记为未读」；官方支持同能力后自动退休。
 - [shrekcg/dsh-turn-rail](https://github.com/shrekcg/dsh-turn-rail) — 对话区左缘的轮次刻度滑轨：每条真实提问一根短横线，悬停预览、点击跳转（目标未加载时自动翻页），带当前位置高亮与滚动进度条。
 - [shuanzhe/dsh-turn-hard-delete](https://github.com/shuanzhe/dsh-turn-hard-delete) — 删除 DeepSeek Harness 会话中的一整轮对话（提问 + 回答 + 工具调用），不影响会话本身。
 - [shuiqian520/dsh-session-delete](https://github.com/shuiqian520/dsh-session-delete) — 在侧栏会话行的「…」菜单里永久删除单个会话;也可从侧栏标题旁的「⋯」菜单进入批量删除:在列表里勾选会话(运行中的不能删),再在确认弹窗里一次删掉 —— 会话日志、工作区归属、宿主内存实例、客户端列表行一并清理。同一个「⋯」菜单还收着会话搜索与视图选项;另可清理日志已不存在的残留行,用户消息与 AI 回复的复制按钮右侧各有「重试」。
@@ -4891,6 +4892,7 @@ dsh plugin --profile web add dshmarket
 - [1741505640/capmap-skills#dsh-capmap-viz](https://github.com/1741505640/capmap-skills/tree/main/dsh-capmap-viz) — CapMap 文档体系可视化：Obsidian 风格语义图谱与能力面板。
 - [3361805598-gif/dsh-md-annotator](https://github.com/3361805598-gif/dsh-md-annotator) — 面向 dsh-better-sidebar 扩展的 Markdown 侧边栏预览与源码编辑器，支持块级和文本选区批注，并可将批注作为结构化修改请求发送到对话框。
 - [addie-ace/dsh-fullwidth-punctuation](https://github.com/addie-ace/dsh-fullwidth-punctuation) — 将 AI 回答中的半角标点转换为中文全角标点，让复制的回答可直接用于公文材料。
+- [adithyanraj03/dsh-cite-lens](https://github.com/adithyanraj03/dsh-cite-lens) — dsh 的 PDF 阅读：在文件选项卡里选中 PDF 中的文字，就能引用到当前对话或就它提问；把模型的引用变成链接，点开 PDF 并高亮被引用的那几句话；/cite-links 让一段对话为每条论断都附上引用。
 - [aduo-111/second-brain#dsh-client-ui-second-brain](https://github.com/aduo-111/second-brain/tree/main/dsh-client-ui-second-brain) — 把每天和各种 AI 的对话提炼成结构化 Markdown 笔记，写入你的 Obsidian 库。
 - [AKS1st/dsh-mermaid](https://github.com/AKS1st/dsh-mermaid) — 把 DSH Web 会话消息中的 Mermaid 代码围栏渲染为惰性加载的 SVG 图表，严格消毒并跟随明暗主题。
 - [Alex-yuanli/babeldoc-on-dsh](https://github.com/Alex-yuanli/babeldoc-on-dsh) — 通过 OpenAI 兼容接口调用 BabelDOC 翻译 PDF，保留原排版，输出双语对照版与纯译文版。需先运行一次运行时安装脚本，并配置 OpenAI 兼容接口的 API Key。
@@ -5631,6 +5633,7 @@ dsh plugin --profile web add dshmarket
 - [xiagaogaozi/dsh-subagent-pool](https://github.com/xiagaogaozi/dsh-subagent-pool) — 为 DeepSeek Harness 维护可复用的命名子代理配置，并按配置的模型、推理强度和 Agent 预设运行子代理。
 - [xiaohai-78/dsh-modes](https://github.com/xiaohai-78/dsh-modes) — Agent 模式（预设）设置页：按模式开关最多 15 项能力（运行命令、读写或只读文件、网页、子代理等），也能逐个开关插件；编辑每个模式的系统提示词，带变量校验、完整预览和历史版本，可选让正在运行的会话即时生效，并提供每次保存都需审批的对话内修改工具 mode_prompt；用四个起步模板或复制现有模式新建模式；dsh 升级后合并内置更新并保留你的修改，一键关闭加载失败的插件。
 - [XiaoOu2024/dsh-root-planner-preset](https://github.com/XiaoOu2024/dsh-root-planner-preset) — dsh agent 树的递归委派：用预设与 Host 限制划定每个子 agent 的能力边界，子 agent 在各自 _agents/ 工作区独立工作，成果由父 agent 决定是否合并、如何合并。
+- [Xiaxin1235/WhaleMaid#host](https://github.com/Xiaxin1235/WhaleMaid/tree/master/packages/host) — 支持范围授权、独立验收、可编辑记忆和伙伴聊天的项目自动推进插件，自动安装配套桌宠 fork。
 - [XMoon/dsh-subagent-router](https://github.com/XMoon/dsh-subagent-router) — 新增 subagent_route 与 subagent_fork_route 委托工具：由模型自主为子代理挑选 provider/model 路由，部署方仅配置 spawn/fork 后端、调度策略与 allowedProviders 白名单；续聊子代理与后台任务复用官方 send_message / job_output 工具。
 - [xt765/dsh-context-window](https://github.com/xt765/dsh-context-window) — 在底部聊天输入框的模型选择弹窗中扩展第三行【上下文窗口】，支持 64K~2M 档位切换、自定义容量输入、提供商批量同步与自适应压缩防失败守卫。
 - [xt765/dsh-doubao-image](https://github.com/xt765/dsh-doubao-image) — 豆包网页生图 Agent 原生工具插件：向 Agent 注册 doubao_generate_image 与 doubao_image_status 工具，通过 Tabbit 操控 doubao.com 提交生图提示词、选择比例与风格，自动优选 2.7K wm0 无水印超清原图落盘并注入对话附件。
@@ -6876,6 +6879,7 @@ dsh plugin --profile web add dshmarket
 - [mexiaosqwq/dsh-web-mobile](https://github.com/mexiaosqwq/dsh-web-mobile) — DSH Web UI 移动端适配：窄屏好用，宽屏适用。
 - [meyaomiao/dsh-server-deck](https://github.com/meyaomiao/dsh-server-deck) — DSH 服务器卡片仪表盘：每台主机展示在线状态、CPU、内存、磁盘与延迟，点卡片进入 xterm.js SSH 终端；支持导入 ~/.ssh/config，挂载为 better-sidebar 页签或独立右侧抽屉。
 - [Mlte0907/dsh-remote-x](https://github.com/Mlte0907/dsh-remote-x) — DeepSeek Harness 的远程控制与移动端覆盖层：局域网与公网（cloudflared）隧道 + 二维码接入、768px 以下的手机端界面，附局域网反向代理 CLI。
+- [MoonlitDropOfBlood/dsh-remote-control#plugin](https://github.com/MoonlitDropOfBlood/dsh-remote-control/tree/main/plugin) — 用 HarmonyOS 手机遥控 DeepSeek Harness：浏览/切换/新建会话；发送提示词（手机跟随宿主的繁忙行为，排队或插话）；流式接收正文、思考与工具步骤；应答审批请求与提问；查看会话图片（缩略图内联 + 大图按需拉取）；切换模型与思考强度；取消运行中的任务；接收推送通知。流量端到端加密（HKDF-SHA256 派生密钥 + AES-256-GCM），经只转发密文的哑管道中继；v1.1.3 增加会话纪元抗重放握手与中继原生 TLS。中继可跑在本机（由插件托管）或 VPS 上；手机 App 与插件同仓库发布。5 个 Remote 方法。
 - [MoRanYue/dsh-winrm](https://github.com/MoRanYue/dsh-winrm) — andyfan1094/dsh-winrm 的 Node.js 分支：同样的 WinRM 主机面板与七个 agent 工具，后端从 Python/pywinrm 移植到原生 Node WinRM 客户端，运行 dsh 的机器不再需要 Python。
 - [moyu-good/dsh-lark-bridge](https://github.com/moyu-good/dsh-lark-bridge) — 飞书/Lark 深度通道：原生思考过程消息、审批卡片、goal/todo 实时卡片、workflow 展开行、会话全文检索、后台任务与子代理结算通知。其设计以飞书应用自身的可见性范围为访问边界——凡是应用允许触达的人都能驱动 agent 并回答它的审批请求，除非填写可选的发送者/群组/审批人白名单收窄。
 - [mrRisega/dsh-remote#dsh-remote-web](https://github.com/mrRisega/dsh-remote/tree/main/packages/dsh-remote-web) — 手机浏览器远程控制 dsh web，人在哪都能用（免公网 IP）：官方托管中继 4G 即用，也可自建 relay；一条命令安装电脑端 bridge 与设置页「远程控制」面板（云端/自建切换、账号登录、bridge 启停、反馈）；隧道数据面端到端加密（E2EE：手机↔电脑端正文与 WS 内容加密，中继只见路由元数据；支持扫码/一次性链接桌面授权，免重复输密码）；HTTP/WebSocket 全量透传，访问密钥认证、实时设备列表、可选流量配额。
