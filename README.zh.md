@@ -5227,7 +5227,7 @@ dsh plugin --profile web add dshmarket
 - [jerryxff26-alt/dsh-delivery-board](https://github.com/jerryxff26-alt/dsh-delivery-board) — 面向客户项目交付团队的交付看板：阶段流水线（default 或 governance 模板，也可自定义阶段），卡片含负责人、截止日、验收标准与 DoD，卡片跨阶段时自动记录交接审计日志，进展/风险/阻塞/决策日志，Markdown 客户周报，仅绑定 127.0.0.1 的可拖拽本地看板与只读 HTML 导出；状态保存在工作区的 delivery.json（11 个 delivery_* 工具与 /delivery 命令）。
 - [Jesse-njx/dsh-routines](https://github.com/Jesse-njx/dsh-routines) — 定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。
 - [JessenReinhart/dsh-poke-todo](https://github.com/JessenReinhart/dsh-poke-todo) — 把 jcode 的自动催办搬了过来：会话里还有未完成待办时，空闲的 agent 会被推着继续做。
-- [JialaoLiu/dsh-baton#dsh-baton](https://github.com/JialaoLiu/dsh-baton/tree/main/host) — 通过本机仅限当前用户的 socket，接收 Claude Code、Codex 或任意 MCP 客户端（经 dsh-baton-mcp）交来的任务：新建或继续指定的 Harness 会话，在界面里实时运行并标注发送方，回合结束后把结果交回。12 个 MCP 工具覆盖工作区、会话和运行。
+- [JialaoLiu/dsh-baton#dsh-baton](https://github.com/JialaoLiu/dsh-baton/tree/main/host) — 让 Claude Code 或 Codex 负责动脑：理解需求，写好 prompt 交给 DeepSeek Harness 去干活，最后把关。dsh-baton 会自己跑测试、列出改了哪些文件，再派一个子代理逐条核对需求，你的主力模型只看结果拍板。大任务能省下大半订阅额度。
 - [jiang12345-code/dsh-multi-role-debate#dsh-multi-role-debate](https://github.com/jiang12345-code/dsh-multi-role-debate/tree/main/dsh-multi-role-debate) — 多角色并行论证：并行调用真实 Codex 与 Claude，由 DSH 主会话模型（Judge）生成第三方汇总并回对话；另含单 Agent 直接对话与各角色模型自由配置。
 - [jiazz197-cmyk/omd-dsh#packages/omd-dsh](https://github.com/jiazz197-cmyk/omd-dsh/tree/main/packages/omd-dsh) — 为 DeepSeek Harness 提供 7 个 Agent 预设模式：每个模式固定工具边界、按模式路由模型，并以 fast/deep 档位委派 omd_task 子代理；含规划到执行闭环（/mode、/start-work、基于 goal 的 /ulw）与逐模式、逐档位重配模型的设置页。
 - [jidekaixin2dian/dsh-team-flow](https://github.com/jidekaixin2dian/dsh-team-flow) — 适用于 DSH 0.2.0-rc.2 起版本的 Agent Teams 预览插件，让同会话用户 Steer 结束主代理当前的 wait_agent 等待，队友继续工作，并保留原生消息领取与 Node PTC 后续执行。
@@ -5299,7 +5299,7 @@ dsh plugin --profile web add dshmarket
 - [maximehu97/dsh-meeting](https://github.com/maximehu97/dsh-meeting) — 局域网多智能体会议协商：每人一个助理，助理通过 mDNS 互相发现，用 A2A 报文协商排会、周末团建和奶茶投票。对外只给忙闲不说原因，占用本人保护的时段前先问本人。DSH 侧栏自带手机样式页面和 13 人示例公司。无鉴权，仅限可信局域网。
 - [Meltllsy/dsh-todo-reminder](https://github.com/Meltllsy/dsh-todo-reminder) — 全局个人待办（与任何会话无关）：侧边栏面板 + 贴边待办条（悬停探出、快到点自动弹开），到期桌面通知与自定义音效。
 - [Miaotofu01/Study-Mate](https://github.com/Miaotofu01/Study-Mate) — 你的AI学习搭档：定计划、讲知识、做项目，学透一门科目。
-- [micellince/dsh-long-novel-workbench](https://github.com/micellince/dsh-long-novel-workbench) — 长篇中文小说工作台：章节、时间线、事实账本、伏笔、冲突、人物、高光、审稿、提案、计划对齐、11 个 Agent 分工、名家风格预设，并内置 AI 生成与审稿。
+- [micellince/dsh-long-novel-workbench](https://github.com/micellince/dsh-long-novel-workbench) — 长篇中文小说工作台（DSH 插件），围绕「读—批注—审—改」：正文页优先的连续阅读与页内编辑、读者批注、四路审阅（逻辑·注意力·AI 味·读者）、段落级提案，以及全文动作 run；配合注意力设计、账本与世界地图。
 - [MichaelShii/dsh-plugin-teamflow](https://github.com/MichaelShii/dsh-plugin-teamflow) — 把一句话需求变成可验收的交付。TeamFlow 跑一条多阶段流水线——分诊、PRD、设计、技术方案、并行开发、带打回重修的 QA、验收——并给模型 12 个 `teamflow_*` 工具，以及带实时流水线图与 backlog 看板的工作台。每个需求一个专属目录，收着 PRD、设计、技术方案、QA 报告与验收记录。
 - [MichengAI/dsh-automation](https://github.com/MichengAI/dsh-automation) — 在独立会话里按计划执行编码任务，可在设置页或对话里管理。
 - [Missher12/dsh-missher-evolution](https://github.com/Missher12/dsh-missher-evolution) — 根据有界证据记录限定范围的工作流规则与纠错提醒，提供本地设置并支持可选 Brain Hub 集成。
