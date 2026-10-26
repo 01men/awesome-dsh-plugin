@@ -2411,7 +2411,7 @@ dsh plugin --profile web add dshmarket
 - [Tests4gptplay/dsh-codex-native](https://github.com/Tests4gptplay/dsh-codex-native) — 通过 OpenAI 官方 Codex app-server 将 GPT 接入 DSH 主模型，使用 ChatGPT 订阅登录，支持工具调用、原生设置、额度查询与手动 Token 历史用量统计。
 - [thibautrey/multivibe#dsh-multivibe](https://github.com/thibautrey/multivibe/tree/main/plugins/dsh-multivibe) — 把 DSH 接到 MultiVibe 网关，并可查看可用模型与连接状态。
 - [TikaFlow/dsh-model-fix](https://github.com/TikaFlow/dsh-model-fix) — 提供更好的模型使用体验，包括但不限于：多种方式填充模型参数、提升模型兼容性、记住推理级别、子智能体实时跟随模型和推理级别、AI 自主调节档位等。
-- [TinyBOOOOM/dsh-cliproxyapi-pro](https://github.com/TinyBOOOOM/dsh-cliproxyapi-pro) — 把一个或多个 CLIProxyAPI（CPA）服务接入 DeepSeek Harness，发现各服务的模型并把勾选的模型同步到模型选择器，每个模型按原生协议（Anthropic Messages、OpenAI Responses 或 OpenAI Chat）请求，并支持单模型参数覆盖；填写 CPA 管理密钥后，可在设置页的额度标签和模型选择器旁的徽标查看各凭证的上游额度；还能检查插件自身更新，装有 dshmarket 时通过它安装。
+- [TinyBOOOOM/dsh-cliproxyapi-pro](https://github.com/TinyBOOOOM/dsh-cliproxyapi-pro) — 把 CLIProxyAPI（CPA）服务接入 DeepSeek Harness：按原生协议同步模型、查看各凭证额度，并可选生成图片和视频。支持一个或多个账号，发现各服务的模型并把勾选的对话模型同步到模型选择器，按 Anthropic Messages、OpenAI Responses 或 OpenAI Chat 请求，并支持单模型参数覆盖；填写 CPA 管理密钥后，可在设置页的额度标签和模型选择器旁查看各凭证的上游额度；打开默认关闭的生成开关后，可用 CPA 的生图、生视频模型执行 /cpa-image、/cpa-video 以及视频编辑和延长，并可选让 agent 调用；还能检查插件自身更新，装有 dshmarket 时通过它安装。
 - [tonylee2022/dsh-xai-oauth](https://github.com/tonylee2022/dsh-xai-oauth) — 用设备码 OAuth 登录 xAI Grok 订阅，自动刷新访问令牌，并作为 xai 路由凭据使用，无需 API key。
 - [troytse/dsh-plugin-subagent-roles](https://github.com/troytse/dsh-plugin-subagent-roles) — 用文件定义子代理角色：角色放在项目级与全局级 .dsh/roles 目录，委派方每个角色只看到一行目录，子代理可见的工具由角色自己的工具策略决定。
 - [uio-o/dsh-model-control](https://github.com/uio-o/dsh-model-control) — 接管输入框的模型座位并新增模型管理页：增改删 llm-pi-ai 渠道、挑选端点里的哪些模型进入本软件、按模型声明思考档位与能力。
@@ -4401,7 +4401,7 @@ dsh plugin --profile web add dshmarket
 - [lemoncat7/dsh-web-search](https://github.com/lemoncat7/dsh-web-search) — 为 DeepSeek Harness 提供可配置联网搜索，支持 SearXNG、Wikipedia、Tavily、Brave 与 Gemini，并支持客户端引擎选择和受控重试。
 - [lirui1024k/dsh-browser-ops](https://github.com/lirui1024k/dsh-browser-ops) — DeepSeek Harness 真实浏览器自动化：agent 可直接驱动真实 Chrome（独立托管档案，或附加日常 Chrome/CDP），提供页面快照、点击、填表、读表与控制台/网络诊断工具；可将手动操作录制成流程并把输入标记为变量槽，按参数自动重放来批量造测试数据；附带 27 个 browser_* 工具与设置页控制面板。
 - [liustack/modsearch](https://github.com/liustack/modsearch) — 纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。
-- [LockyBee/dsh-douyin-agent](https://github.com/LockyBee/dsh-douyin-agent) — 通过专用 Edge 浏览器限时浏览抖音，提供共享本地人格与兴趣记忆、原生设置和 Markdown 观看日报。私信、分享、问候与公开评论分别需要开启许可。
+- [LockyBee/dsh-douyin-agent](https://github.com/LockyBee/dsh-douyin-agent) — 在专用浏览器中按每日时段和额度观看抖音，共享本地人格与兴趣，提供原生设置、自检、用量和观看日报。回复与分享限定所选好友和群聊，群聊仅在被 @ 或叫到设定昵称时回复；公开评论需单独开启。
 - [longmiaoo/dsh-native-browser](https://github.com/longmiaoo/dsh-native-browser) — 通过本地原生消息 Broker，让 DeepSeek Harness 操作用户明确授权的 Chrome 标签页，支持语义化页面读取、交互、截图与显式交接。
 - [Luca4Don3/dsh-web-search](https://github.com/Luca4Don3/dsh-web-search) — 同时兼容 DSH 与 Pi 的搜索与抓取提供方：Exa、Tavily、Parallel、Firecrawl、TinyFish 匿名优先路由，计费需显式授权，带额度预检与有界取消。
 - [LWJ007/dsh-browser-tabs](https://github.com/LWJ007/dsh-browser-tabs) — 输入 /tabs 弹出浏览器标签页选择器，点选后链接自动填入输入框。
@@ -5751,7 +5751,7 @@ dsh plugin --profile web add dshmarket
 - [lw-storm/dsh-plugin-noticeme](https://github.com/lw-storm/dsh-plugin-noticeme) — 后台通知插件：页面处于后台时出现审批提示或提问卡片，即发送桌面通知（通知权限不可用时回退为标签页标题 ⚠ 前缀），点击通知聚焦页面；宿主将事件存入同源队列供前端每 3 秒轮询，页面恢复可见后标题自动还原。
 - [lxp731/agents-plugins#task-complete-notify-for-dsh](https://github.com/lxp731/agents-plugins/tree/main/task-complete-notify-for-dsh) — DSH 桌面通知插件：运行完成、出错或等待审批时发送桌面通知并播放提示音，支持可配置的时长阈值。
 - [ly6170/dsh-messager](https://github.com/ly6170/dsh-messager) — 在 DSH Web 端监控会话状态，为需要交互、任务完成、任务出错发送桌面 / 浏览器 / 第三方通知。
-- [Machine-126/dsh-alert-sound](https://github.com/Machine-126/dsh-alert-sound) — 为 dsh 网页界面提供声音/语音提醒：审批、提问、完成、错误各有独立音色，可选语音朗读。
+- [Machine-126/dsh-alert-sound](https://github.com/Machine-126/dsh-alert-sound) — DSH 提醒音：审批、提问、完成、错误、卡住各有音色；选「语音」会念出工具名、原因或问题原文；未处理会重复提醒，全程不联网。
 - [Maple-Yoli/dsh-notice-card](https://github.com/Maple-Yoli/dsh-notice-card) — 任务跑完、等你审批或等你回答时，在屏幕角落弹出一张不抢焦点的通知卡。
 - [MaRi23333/dsh-serverchan-watchdog](https://github.com/MaRi23333/dsh-serverchan-watchdog) — DeepSeek Harness 的第三方 Server酱通知插件：在主机端监控审批、计划评审和问答，超过设定时间仍未处理时通过微信（Server酱 Turbo）或 Server酱³ App 发送手机提醒，无需保持浏览器打开。
 - [mario841859784/dsh-onebot](https://github.com/mario841859784/dsh-onebot) — 给 dsh 加上 QQ 通道（OneBot 11，兼容 NapCat）：反向/正向 WS、私聊群聊、图片与语音转写、t2i 文字图卡片、合并转发、设置页可视化配置。
