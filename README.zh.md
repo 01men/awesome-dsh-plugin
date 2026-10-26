@@ -1167,6 +1167,7 @@ dsh plugin --profile web add dshmarket
 - [Stijnus/dsh-composer-predictions](https://github.com/Stijnus/dsh-composer-predictions) — 为 DeepSeek Harness 桌面端与 Web 界面的输入框提供 Tab 自动补全：下一条消息的灰色幽灵文本、草稿行内续写，以及 Alt+Up/Alt+Down 切换候选。
 - [Stijnus/dsh-moodboard](https://github.com/Stijnus/dsh-moodboard) — DeepSeek Harness 的可视化参考情绪板：拖入图片并打标签、写备注，固定风格指南，智能体在生成或改版界面之前先读取这些参考。
 - [Stijnus/dsh-prompt-optimizer](https://github.com/Stijnus/dsh-prompt-optimizer) — 在输入框发送按钮旁加上「优化提示词」控件，用当前会话模型把草稿流式改写为结构化提示词（plain、sections、role-task-goal 三种风格），并提供使用、撤销、复制与关闭。
+- [Stijnus/dsh-workspace-status](https://github.com/Stijnus/dsh-workspace-status) — 在 DeepSeek Harness 侧边栏的工作区行上显示彩色状态标记（等待你处理、运行中、刚刚完成，按工作区聚合），并在列表上方提供已置顶会话区与仅针对置顶会话的通知，持久保存。
 - [stoner-byte/dsh-annotations](https://github.com/stoner-byte/dsh-annotations) — 在助手回复中选中文字，添加可选评论，并将注释随下一条消息一起发送。
 - [studyzy/dsh-suggest-prompt](https://github.com/studyzy/dsh-suggest-prompt) — 每次完成的 agent 回合后，一次有界的辅助 LLM 调用把一条建议的下一句 prompt 写入会话日志；Web 输入框将其渲染为幽灵占位文字，按 Tab 采纳。
 - [Stylelinzzz/dsh-chat-history](https://github.com/Stylelinzzz/dsh-chat-history) — 在会话头部新增「目录」tab：把当前会话的用户消息整理成可点击的目录，自动翻页加载全部历史，点击即跳回对话并定位。
@@ -6823,6 +6824,7 @@ dsh plugin --profile web add dshmarket
 - [ANetResearch/ANet#dsh-anet](https://github.com/ANetResearch/ANet/tree/main/deploy/plugins/dist/dsh) — 通过 stdio MCP 客户端将 DSH 连接到本地 anet 节点，提供三项技能和 14 个工具，用于发现 AgentNetwork 上的智能体，发送、跟踪和答复端到端加密的 A2A 任务，在运营者的支出限额内支付或拒绝收费技能，读取本地证据链并报告节点状态。仅 Linux/macOS；需本机运行 anet 0.3.0+ 节点。
 - [AprilCrystal/dsh-remote](https://github.com/AprilCrystal/dsh-remote) — 为 DSH 会话提供 OpenAI 兼容的 HTTP 接口与手机面板：读会话、浏览文件、发送或排队消息，并在手机上处理审批与提问。
 - [ArimaKana-Akane/dsh-sakurafrp](https://github.com/ArimaKana-Akane/dsh-sakurafrp) — 在 DSH 界面里管理 SakuraFrp 手机与电脑互通的插件：链路状态、移动网关开关、一次性配对二维码、设备撤销与网关自愈。
+- [dsh-qq-bot](https://github.com/arrow1031-dev/dsh-qq-bot) — 把 DeepSeek Harness 接到 QQ。支持 OneBot 11/12、Satori、Milky 与 QQ 官方机器人接口，群聊和私聊各有一条独立会话；内置九个工具：群管理、聊天记录与图片理解、联网搜索、网页抓取、图片反搜、生图等，另有按间隔自主接话的主动发言（判断与发言可分用两个模型）。模型、代理、白名单等全部在 DSH 设置页里配置，不需要改代码。
 - [Artenx/dsh-honeybee#dshb](https://github.com/Artenx/dsh-honeybee/tree/main/packages/dshb) — 为 DSH 提供多节点执行路由，将文件系统、Shell、子进程和 PTY 操作分发到本地、SSH 与 Docker 执行节点，并包含节点注册表、认证门禁、移动端管理 UI，以及可注入新对话的工作区自定义项目指令。
 - [Aztech-Lab/dsh-3301](https://github.com/Aztech-Lab/dsh-3301) — 将DSH Web GUI代理到3301端口供局域网访问。口令可选，无明文保存，初始3080端口保存回环不暴露。
 - [azure5100/huahua-dsh-chatroom](https://github.com/azure5100/huahua-dsh-chatroom) — 跨机 DSH 群聊适配修复包：安装期自动对 dsh-weave rc.14 打四合一补丁（注入崩溃、随机端口、4KB ack 帧上限），并附带 dsh-chat x dsh-weave x dsh-bridge 聊天室的部署、机制与运维文档。
