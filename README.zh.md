@@ -220,6 +220,7 @@ dsh plugin --profile web add dshmarket
 - [alccs/dsh-visual-intelligence-engine#package](https://github.com/alccs/dsh-visual-intelligence-engine/tree/main/package) — 在 DeepSeek Harness 中结合正文呈现交互图形、图表与分阶段学习演示。
 - [AlexPeng07/dsh-custom-plugin](https://github.com/AlexPeng07/dsh-custom-plugin) — DSH Web GUI 便利套件，提供外观控制、时间线导航、项目文件夹、提示词、会话导出、Mermaid 渲染、引用回复，以及 DeepSeek 余额和每日 token 用量。
 - [AlexYin-Tongji/dsh-ui-enhancer](https://github.com/AlexYin-Tongji/dsh-ui-enhancer) — 面向 DSH Web 客户端的桌面化 UI 增强：自适应对比度壁纸、带活动流与投喂玩法的桌面宠物、@file 工作区文件引用，以及可缩放的文件/预览右侧面板。
+- [Aliboder/dsh-prompt-forge](https://github.com/Aliboder/dsh-prompt-forge) — 输入框一键提示词增强：通过宿主模型改写草稿，预览后再替换或发送；支持风格预设、按模型自适应思考档位、费用估算与设置页。
 - [AliceLJY/dsh-thumb](https://github.com/AliceLJY/dsh-thumb) — 网页版界面的手机外壳：侧栏改为覆盖式抽屉、点会话自动收起，设置面板改全屏单列，正文排版按手机阅读距离重调。
 - [alingalingling/ui-status-label](https://github.com/alingalingling/ui-status-label) — 把鲸鱼娘思考时的 "deep diving" 状态文案自定义成任意你想要的样子。
 - [Aliuyanfeng/dsh-soul](https://github.com/Aliuyanfeng/dsh-soul) — 为 Agent 提供个性化设置：Web 设置栏目（关于你、回复风格和语调、标题与列表 / 表情符号特质、输出语言、自定义指令）与 `/soul` 命令；昵称 / 职业 / 介绍 / 风格 / 特质 / 语言编译进提示词并推送给所有活动会话。向其他插件暴露 `soulConfig` 服务，并注册 Agent 可调用的 `set_persona` 工具。
@@ -873,6 +874,7 @@ dsh plugin --profile web add dshmarket
 - [miaomiao636/dsh-message-navigator](https://github.com/miaomiao636/dsh-message-navigator) — 为 DeepSeek Harness Web UI 提供 Codex 风格的消息导航器：对话边缘为每条用户消息生成刻度，悬停或点击即可预览并平滑跳转到对应消息，自动加载完整历史记录。
 - [MichengAI/dsh-codex-ui](https://github.com/MichengAI/dsh-codex-ui) — 为 DeepSeek Harness 网页端重构 Codex 风格侧栏、工作区会话树、全局搜索和轮次导航。
 - [Microqian2th/dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider) — 把官方「推理等级」那一行改成一条可拖动的连续轨道：填充从蓝渐变到紫罗兰，较高档位带星尘粒子，官方数值文字跟着档位变色。Off 档保持官方灰，不改写官方任何文字。
+- [Midnight-1991/dsh-term-explainer](https://github.com/Midnight-1991/dsh-term-explainer) — 在每条已完成回答的操作条增加「术语」入口，用内置离线词典给出回答中计算机术语的中文释义、提及次数、高亮上下文，并支持点击释义中的术语展开次级解释，不调用模型。
 - [miisaka19800/dsh-restart-fab](https://github.com/miisaka19800/dsh-restart-fab) — DSH 网页界面右下角的一键重启按钮：全屏遮罩原地重启 dsh 进程并自动刷新页面；无需启动脚本，跨 Windows/macOS/Linux。
 - [miiy/dsh-terminal-keybar](https://github.com/miiy/dsh-terminal-keybar) — 在触屏设备上补齐手机软键盘缺少的按键（Esc、Tab、回车、Ctrl-C、方向键），以半透明按键列浮在活动终端旁。
 - [milu7/dsh-directory-plugin](https://github.com/milu7/dsh-directory-plugin) — 让 DSH 桌面端「新建工作区」的文件夹选择框从你设定的目录开始（仅 Windows），并在设置里提供配置入口；目录不存在时静默回退到原生选择框。
@@ -4941,6 +4943,7 @@ dsh plugin --profile web add dshmarket
 - [aawef/dsh-skill-manager-tags](https://github.com/aawef/dsh-skill-manager-tags) — 按标签筛选技能：给 DSH 技能打标签，再用布尔表达式为每个工作区或对话选出下发给模型的子集（例如 `pdf + docx` 或 `aegis * plugin`）。命中以外的技能会被 deny-shadow 真正从模型目录里移走，而不只是在设置页隐藏；表达式之外的技能可手动添加或强制禁用，另附带 `tagging-skills` 教 agent 从本机技能清单自建标签体系。
 - [addie-ace/dsh-mattpocock-skills](https://github.com/addie-ace/dsh-mattpocock-skills) — 技能包插件：把 mattpocock/skills 的 25 个 promoted 技能（工程与效率）全文汉化，注册为 DSH 捆绑技能 provider，经技能系统发现与调用。
 - [AhaCrazy/dsh-action-hub](https://github.com/AhaCrazy/dsh-action-hub) — 面向 DSH 的标准 Agent Skill 库。同一份 SKILL.md 可作为模型调用的 Skill 或仅由用户调用的 Command；通过分组与项目范围控制可用性，面板负责插入或展开内容，导入导出保持标准目录格式。
+- [Aliboder/dsh-expert-hub](https://github.com/Aliboder/dsh-expert-hub) — 专家中心：浏览并导入 WorkBuddy 专家，用 AI 创建专家、编辑 role.md 与技能，并按会话切换专家。
 - [AmethystLuna/embedded-workbench](https://github.com/AmethystLuna/embedded-workbench) — 嵌入式 C/C++ 固件开发工具箱：代理与技能覆盖 FreeRTOS、中断、NVM 存储、Keil MDK、ARMCLANG、HardFault 分析、状态机、架构原则与 LVGL 陷阱。
 - [AmethystLuna/logicprobe](https://github.com/AmethystLuna/logicprobe) — 声称核查技能：将设计文档与计划中的每条声称对照代码库事实核验，行为类声称升级为状态机/数据模型逻辑原语验证，支持前后回归、领域约束与并发风险挖掘。
 - [Andiii208/dsh-ultramath](https://github.com/Andiii208/dsh-ultramath) — 数学建模竞赛多 Agent 求解工作流：「UltraMath」主控预设一个预设跑通 读题→框架→推导→编码→验算→论文→审稿 全流程，另有 数学家/工程师/作家/审稿人 4 个单阶段角色预设与 33 篇模型库技能文档。
