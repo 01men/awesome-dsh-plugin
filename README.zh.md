@@ -4764,6 +4764,7 @@ dsh plugin --profile web add dshmarket
 - [ciceroyang/dsh-report-studio](https://github.com/ciceroyang/dsh-report-studio) — 把 DeepSeek Harness 会话整理成日报、周报、交接与文章稿件，支持可核验的 HTML 导出与复核收据。
 - [ColdMagicchess/PTT-Studio](https://github.com/ColdMagicchess/PTT-Studio) — 设计型 PPT 生成：六个 pptx_* 工具把逐页设计稿（deck.json）组装成可编辑 .pptx，配合 AI 背景、去底插画与装饰件，做版式与对比度检查、渲染页面预览，并可用可配置的视觉模型逐页评审；Web 端提供聊天卡片与设置页。需 DSH Desktop 0.2.1-rc.2+（pptx_render 使用其内置 LibreOffice Kit），AI 背景需 Agnes 或 ModelScope API Key。
 - [copylee711/dsh-office](https://github.com/copylee711/dsh-office) — 仅 Windows：Agent 通过办公软件的自动化接口，直接在你打开的 Word、Excel、PowerPoint（微软 Office 或 WPS Office）窗口里改文档，改动实时出现，你可以同时编辑；可读取结构、批量修改、把页面渲染成图片核对排版、保存或导出 PDF。
+- [csukingzq/dsh-pdf-translator](https://github.com/csukingzq/dsh-pdf-translator) — DeepSeek Harness 的 Windows PDF 翻译插件：由视觉模型识别并翻译正文、表格、图表和公式，输出中文 PDF 与 LaTeX 源码压缩包。需要自备支持图片输入的 OpenAI 兼容 API。
 - [D2Moqi/dsh-openwiki](https://github.com/D2Moqi/dsh-openwiki) — 把 langchain-ai/openwiki 的代码库知识库能力搬进 dsh —— 一键生成 / 阅读 / 更新仓库 Wiki 与 Grounded Claims（溯源知识卡片）与项目知识库（上传本地文件），直接复用 DSH 已配置的模型，无需二次填 Key。
 - [didclawapp-ai/DSH-Office](https://github.com/didclawapp-ai/DSH-Office) — 通过本机 zagens-office CLI 读写编辑 PPTX / DOCX / XLSX / PDF，注册为 office_schema / office_write / office_edit / office_read。
 - [dingchenhui0618-arch/dsh-launch-card](https://github.com/dingchenhui0618-arch/dsh-launch-card) — 从本地仓库真实支持的产物生成发布素材：hero 图、特性网格与中英双语文案，由 `README.md`、`package.json` 和可选截图渲染成 SVG 与 HTML。事实全部从这些文件引用——项目名、版本、license、一句话简介、特性列表、安装片段——缺失的字段直接不渲染，不补占位文案。每条特性带 `README.md#L42` 这样的来源标注；无法被本仓库证实的说法在写出之前就被 lint 掉，理由留在 `lint-report.json`。`manifest.json` 记录每个输入与输出文件的 sha256，`--now` 或 `SOURCE_DATE_EPOCH` 可让整次输出字节一致。另含一个可以在会话里重新生成的 GUI 面板。
@@ -5655,6 +5656,7 @@ dsh plugin --profile web add dshmarket
 - [yutingzhao1991/dsh-review](https://github.com/yutingzhao1991/dsh-review) — 把同一个 diff 同时交给多个评审者——已安装的 CLI 编程智能体（codex、claude 等）或 DSH 子智能体——各自成节，合并为一份报告；评审者与命名评审模式在设置界面里配置。
 - [zengweicheng666/dsh-svn-tools](https://github.com/zengweicheng666/dsh-svn-tools) — SVN（Subversion）工具集：33 个 agent 工具（status/diff/log/blame/commit/merge/props/lock/changelist 等），以及带 BASE/工作副本左右对比、冲突解决与 AI 提交日志的侧边栏面板。
 - [zengxiaolou/dsh-github-link](https://github.com/zengxiaolou/dsh-github-link) — 把对话里的 GitHub / GitLab / Gitee 链接变成带缓存元数据的悬停卡片，点击在 DSH 右侧栏浏览器中打开；裸 URL 与 GenUI 块都覆盖，且不修改 GenUI 本体。
+- [Zeppeli777/idea-git](https://github.com/Zeppeli777/idea-git) — IDEA 风格的 Git 工作台：提交图（泳道与引用标签）、日志筛选、提交详情、并排与统一差异、按 hunk 暂存、零上下文的细粒度模式、本地更改（含修补与 sign-off）、跟随重命名的文件历史、逐行注解、Stash、分支操作、比较、标签、交互式变基与冲突解决。按活跃会话盖上 Assisted-by trailer 记录提交由哪个模型产生，并把已有的 trailer 渲染成标签，让 AI 参与的历史可追溯。
 - [zhitiaojun/dsh-auto-git](https://github.com/zhitiaojun/dsh-auto-git) — 在 DSH 每次注册新工作区时自动 git init 并补一个空提交；已在工作树内的目录会被跳过。
 - [zhu1090093659/dsh-web#packages/dsh-git-graph](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-git-graph) — 输入框上方提供 Git 分支选择器，并把分支泳道与提交历史画成图谱，沿着时间线找到任意变更。
 - [Zhucy123/dsh-update](https://github.com/Zhucy123/dsh-update) — 一键更新本地 DeepSeek Harness：侧边栏按钮对比版本、拉取重建并自动重启，还可选择回退到任一历史版本，全程实时进度。
