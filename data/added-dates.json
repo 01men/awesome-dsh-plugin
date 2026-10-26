@@ -551,5 +551,8 @@
  "https://github.com/angelky7/dsh-origin-bridge": "2026-10-20",
  "https://github.com/angelky7/dsh-browser-control": "2026-08-24",
  "https://github.com/PlusQi/dsh-tokstats": "2026-10-23",
- "https://github.com/tuoLuoSuan/dsh-peak": "2026-10-17"
+ "https://github.com/tuoLuoSuan/dsh-peak": "2026-10-17",
+ "https://github.com/maimaiqwe/prompt-enhancer/tree/main/dsh-plugin": "2026-10-23",
+ "https://github.com/FanXi1230/fanxi/tree/main/plugins/dsh-nova": "2026-10-25",
+ "https://github.com/drscrewdriver/dsh-manage-session": "2026-10-22"
 }

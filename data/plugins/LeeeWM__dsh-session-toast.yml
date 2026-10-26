@@ -1,5 +1,5 @@
-url: https://github.com/LeeeWM/dsh-session-notifier
-name: LeeeWM/dsh-session-notifier
+url: https://github.com/LeeeWM/dsh-session-toast
+name: LeeeWM/dsh-session-toast
 category: notify
 description:
   en: "Windows 11 toast notification when a DSH session turn finishes, with focus-aware suppression."

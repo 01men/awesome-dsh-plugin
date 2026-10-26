@@ -1,6 +1,6 @@
 # 提交路径：awesome-dsh-plugin/data/plugins/iQingke__dsh-quick-restart.yml
-url: https://github.com/iQingke/dsh-quick-restart
-name: iQingke/dsh-quick-restart
+url: https://github.com/GraptK/dsh-quick-restart
+name: GraptK/dsh-quick-restart
 category: ui
 description:
   en: "Adds a Restart item to the DeepSeek Harness desktop account menu, with confirmation, progress and failure reporting."

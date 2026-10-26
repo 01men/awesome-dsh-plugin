@@ -1,6 +1,6 @@
 url: https://github.com/LeeRolling/dsh-boot-suite
 name: LeeRolling/dsh-boot-suite
-category: ui
+category: theme
 tarball: https://github.com/LeeRolling/dsh-boot-suite/releases/latest/download/dsh-boot-suite.tgz
 description:
   en: 'Startup animation and chat wallpaper plugin for DeepSeek Harness: a two-act boot animation with custom animation import and three configurable transitions (first-act entry, act join, second-act exit), plus static-image and muted loop-video chat backgrounds (Wallpaper Engine project folders, custom video directories, random rotation, per-video delete).'
