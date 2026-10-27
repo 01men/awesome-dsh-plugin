@@ -884,6 +884,7 @@ dsh plugin --profile web add dshmarket
 - [meihaoyidian/life-workbench](https://github.com/meihaoyidian/life-workbench) — 个人工作台面板：总览仪表盘、自定义看板、随手记与资料库，数据由 Host 持久化到本地 JSON。
 - [melt502/DSH-Session-Reference-UX-Patch](https://github.com/melt502/DSH-Session-Reference-UX-Patch) — 可回滚的 DSH Desktop 会话引用体验补丁安装器——@ 菜单当前工作区优先、标题优先展示、两行布局，以及侧边栏拖拽会话到输入区形成引用。
 - [MEMZ-JZY/DSH-Claude-Style-Reasoning-Slider](https://github.com/MEMZ-JZY/DSH-Claude-Style-Reasoning-Slider) — Claude 风格动画推理等级滑块与模型选择器，替换原生模型选择器。
+- [mengqinlol/dsh-mobile-shell](https://github.com/mengqinlol/dsh-mobile-shell) — 为 DSH Web 界面提供移动端适配，并增加支持预览和下载的工作区文件浏览器。
 - [mengyun233/dsh-codex-pet](https://github.com/mengyun233/dsh-codex-pet) — 把 Codex 桌宠皮肤自动迁移到 DSH：右下角动画桌宠随 agent 状态实时变化（思考/工具/等待批准/出错/完成），多会话毛玻璃对话框 + 完整设置面板。
 - [mercy719/dsh-client-ui-weather](https://github.com/mercy719/dsh-client-ui-weather) — DeepSeek Harness Web GUI 天气看板，支持城市切换、当前天气、八小时趋势图和五日预报。
 - [Meredith2328/dsh-sticky-note](https://github.com/Meredith2328/dsh-sticky-note) — 编辑框工具栏便签，随手记点子和 TODO，自动保存为 Markdown，一键发送到对话。
