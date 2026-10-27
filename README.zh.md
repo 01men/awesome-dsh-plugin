@@ -995,6 +995,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/ex-setting](https://github.com/omdsh-dev/ex-setting) — DSH 的设置扩展。
 - [omdsh-dev/web-components](https://github.com/omdsh-dev/web-components) — Web Components 支持。
 - [OnTheWay111/dsh-plugin-path-completion](https://github.com/OnTheWay111/dsh-plugin-path-completion) — 在 Web 输入框补全 @ 路径引用：输入 @（可继续输入 ./src/ma）即列出匹配的文件与目录，用上下键选择后草稿得到 @./相对路径引用（路径含空格时自动加引号）。
+- [OolongBlackCoffee/dsh-wuwa-pet](https://github.com/OolongBlackCoffee/dsh-wuwa-pet) — 把 WuwaTappo 桌宠头顶的气泡用起来：显示 DeepSeek 余额、今日已用与每轮消耗，Agent 等待回答或授权时挂一个琥珀色常驻提醒气泡。通过 CDP 与桌宠通信，首次使用会给 WuwaTappo.exe 打一个可还原的等长字节补丁来开启调试端口。
 - [openAGFS/dsh-agfs](https://github.com/openAGFS/dsh-agfs) — 文件浏览器 Web 应用：React 前端与 REST API 由宿主 webserver 托管，/dsh-agfs 命令自动定位当前工作区，附 browse_files 模型工具。
 - [opencues/opencues#integrations-dsh](https://github.com/opencues/opencues/tree/master/integrations/dsh) — 在输入框内提供同义词替换与以下划线触发的补全：一行以 _ 结尾即自动补全，拼写错误在输入时即时标出。它走 dsh 已配置好的模型，因此无需额外的 API key。
 - [openma-ai/Martty#npm](https://github.com/openma-ai/Martty/tree/main/npm) — 面向 DeepSeek Harness 的 Rust/ratatui Agent TUI，支持流式工具调用、子代理、持久会话和可扩展的 Cordis 客户端界面。
@@ -1458,6 +1459,7 @@ dsh plugin --profile web add dshmarket
 - [YizhouLouisLu/dsh-select-ask](https://github.com/YizhouLouisLu/dsh-select-ask) — 在对话里划词引用进输入框（显示为「N 条注释」小框），或在侧栏一次性小窗里就这段内容提问（不留任何记录）。
 - [ylw-ux/dsh-pins-fixtool](https://github.com/ylw-ux/dsh-pins-fixtool) — 把对话中划选的段落固定到按对话隔离的右侧栏面板，在正文里留下持久标记并可点击跳回原文；可从划选浮条或输入框 @ 把已固定的段落引用进消息，片段支持标签，面板可搜索、筛选并导出 Markdown 提纲。
 - [Yokira404/dsh-thinking-highlight](https://github.com/Yokira404/dsh-thinking-highlight) — 统计思考行里的关键词并在展开后按词标红；标题行上每个词一个计数徽章，点徽章即单独开关这个词；每个词可设底色、文字颜色、字号（10-22px，与宿主正文尺寸同一区间）、字体、加粗/斜体/下划线与「完整词」匹配；插件有独立的设置分区。
+- [YokosWY/dsh-calibration-tier](https://github.com/YokosWY/dsh-calibration-tier) — 在 DSH 输入框里加一条档位条：思考三档（常规 / 严格 / 极致）、互斥的循环模式三档（3 / 5 / 8 轮）、可叠加的对抗审查开关；模型通过 clarify_tier 与 forge_level 两个工具读取当前档位。
 - [yongfanbeta/dsh-pomodoro](https://github.com/yongfanbeta/dsh-pomodoro) — DSH 番茄钟：经典 25/5/15 计时，可将每次专注关联当前会话任务或手动输入项目名，内置统计面板与全年热力图，配可拖动悬浮计时卡与角落迷你药丸，数据本地持久化并支持导出 CSV。
 - [YooRarely/dsh-open-explorer](https://github.com/YooRarely/dsh-open-explorer) — 在 DSH 会话标题和工作区菜单中添加按钮，用系统文件管理器打开当前 Workspace 根目录。
 - [youqisibun/dsh-claude-effort-slider](https://github.com/youqisibun/dsh-claude-effort-slider) — 给 DeepSeek Harness 用的六档推理强度滑条，第六档 Ultracode 会在轨道上铺开一层向左流动的像素纹理，浮层与纹理跟随界面明暗自动切换。
@@ -4254,6 +4256,7 @@ dsh plugin --profile web add dshmarket
 - [sojo-negai/dsh-prompt-refine](https://github.com/sojo-negai/dsh-prompt-refine) — 发送按钮左侧的 ✨ 按钮：读取草稿与最近若干轮对话，向已配置的模型要三条建议（每条都是「问题 + 改法」），可逐条勾选并实时预览合并后的提示词，结果写回输入框但不发送。
 - [somnusovis/dsh-multi-workspace](https://github.com/somnusovis/dsh-multi-workspace) — 多工作区沙箱：自动赋予所有已注册工作区的文件写入权限——添加工作区后即可直接写入，无需配置或提权。
 - [songer522/dsh-launcher](https://github.com/songer522/dsh-launcher) — DSH Web 服务的 macOS 菜单栏应用，以及它所读取的 Host 插件：插件把运行中服务的端口、PID 与带 token 的 URL 写入 ~/.config/dsh-launcher/runtime.json，并在停止时删除，因此即使服务器是从终端启动的，也能在状态栏完成启动、打开、重启与停止。
+- [SpaceRelay/dsh-subagent-control](https://github.com/SpaceRelay/dsh-subagent-control) — 三个工具，让任意智能体（包括团队成员）能列出、追问并中止自己派出的子代理。
 - [SpookyWaste/dsh-bash-native](https://github.com/SpookyWaste/dsh-bash-native) — Rust 实现的 Windows 平台 POSIX bash 执行器：为 DSH 提供原生 bash（不依赖 WSL 或 MSYS兼容层），服从 DSH 的三档权限策略、提供持久化终端工具。
 - [springbrand-lab/dsh-oauth-mcp-client](https://github.com/springbrand-lab/dsh-oauth-mcp-client) — 面向 Streamable HTTP 服务的 OAuth 2.1 MCP 客户端：在设置页添加连接，通过浏览器登录（PKCE + 动态客户端注册），其工具随即注册进 DSH；令牌存于凭据服务，连接写入 profile。
 - [SPYQWER1/dsh-codex-tools](https://github.com/SPYQWER1/dsh-codex-tools) — 基于 Codex 的 `web_search`、`image_gen` 与 `image_vision` 工具，复用 ChatGPT OAuth 登录态为 DeepSeek Harness 提供网页搜索、生图与识图能力。
@@ -6592,6 +6595,8 @@ dsh plugin --profile web add dshmarket
 - [songrui111/dsh-agent-bench](https://github.com/songrui111/dsh-agent-bench) — 在隔离沙箱里跑一组固定的 Agent 用例，用确定性断言判分，并对比两次运行，指出换模型、改提示词或升级 DSH 之后哪条用例退化了。
 - [songshuhuoban/dsh-environment-tray](https://github.com/songshuhuoban/dsh-environment-tray) — 在 DeepSeek Harness 中管理环境变量、.env 文件和凭据，支持 Windows 用户级与系统级环境变量。
 - [SOVLOOKUP/dsh-mise](https://github.com/SOVLOOKUP/dsh-mise) — 需本机先安装 mise。用 mise 管理本机工具链 —— 设置页列出生效 / 已装 / 可用版本，按 .mise.toml 安装、切换、卸载与清理，加载时把 mise 的 shims 放进 Host PATH 最前，并给 agent 九个工具（状态、版本、PATH 扫描、安装、切换、清理、卸载、激活、进度）。
+- [SpaceRelay/dsh-subagent-control#human-wait](https://github.com/SpaceRelay/dsh-subagent-control/tree/main/human-wait) — 把 PTC 模式 run_code 的执行预算在人机等待期间暂停，提问、计划审议或审批可以超过出厂的 120 秒而不被中断。
+- [SpaceRelay/dsh-subagent-control#team-limits](https://github.com/SpaceRelay/dsh-subagent-control/tree/main/team-limits) — 调整 Agent Team 的人数、任务数、单条消息大小与清理超时。
 - [STARDUSTLC666/dsh-flakefinder](https://github.com/STARDUSTLC666/dsh-flakefinder) — 测试稳定性工具：重复运行 vitest/jest/pytest/node:test，识别 flaky 用例，历史留档、隔离清单与健康自检。
 - [Starfie1d1272/dsh-builtin-toggles](https://github.com/Starfie1d1272/dsh-builtin-toggles) — DSH Web 内置 capability 的 evidence-backed 检查器：展示运行/配置溯源、兼容性与漂移诊断，并仅为 9 个经过审阅的 UI leaf 提供 fail-closed 控制。
 - [stayhpjinng/dsh-provider-proxy](https://github.com/stayhpjinng/dsh-provider-proxy) — DeepSeek Harness 的按 Provider HTTP/HTTPS 代理：为每个 LLM Provider 独立配置代理地址和启停开关，支持通过环境变量引用代理凭据，并让模型发现请求使用对应 Provider 的代理。
@@ -6923,7 +6928,7 @@ dsh plugin --profile web add dshmarket
 - [ai-eks/dsh-auth-tunnel](https://github.com/ai-eks/dsh-auth-tunnel) — 通过快速或命名 Cloudflare Tunnel 为 DSH Web GUI 提供密码保护的公网访问，并代理 HTTP/WebSocket 流量、改用应用内目录选择器。
 - [AIcivilization/dsh-vps](https://github.com/AIcivilization/dsh-vps) — 一条命令把 DeepSeek Harness 部署到自有 VPS：零依赖登录网关加自动 HTTPS，反向代理原生 Web 界面，令牌保护的初始化向导，DSH 一键升级且失败自动回滚；作为插件在设置中新增「VPS 部署」页，可填表经 SSH 把 DSH 装到或卸出 VPS，并显示版本、升级、网关状态，以及扫码把 DSH 添加到手机桌面。
 - [AIcivilization/dsh-vps-manager](https://github.com/AIcivilization/dsh-vps-manager) — 通过 SSH 密钥登录管理 VPS：22 条不走模型的 /vps- 命令（查看状态、按菜谱安装并先出计划再用 /vps-yes 确认、重启并等机器回来），对话里的终端（xterm.js + ssh -tt，可运行菜单脚本等交互程序），5 个按风险分级确认的 agent 工具，改文件自动备份与还原、改防火墙和 SSH 前设自动恢复，29 条内置菜谱，以及添加机器的设置页。
-- [aleksvega/dsh-tg-bridge](https://github.com/aleksvega/dsh-tg-bridge) — 通过 Telegram 驱动 dsh Agent：每个项目目录一个话题、语音与图片输入、按话题顺序执行的任务队列、每个话题的目标与任务清单、实时进度消息、中英俄三语命令菜单，以及模型、插件、会话和日志的管理命令。需要 Telegram bot token，并把数字用户 id 填进 allowedUserIds。
+- [aleksvega/dsh-tg-bridge](https://github.com/aleksvega/dsh-tg-bridge) — 通过 Telegram 驱动 dsh Agent：每个项目目录一个话题、语音与图片输入、按话题顺序执行的任务队列、每个话题的目标与任务清单、会话分支与切换、实时进度消息、中英俄三语命令菜单，以及模型、插件、会话与日志的管理命令。可搜索插件市场、安装前查看插件卡片、一键更新全部插件。需要 Telegram bot token，并把数字用户 id 填进 allowedUserIds。
 - [alextangson/dsh-dispatch#plugin](https://github.com/alextangson/dsh-dispatch/tree/main/packages/plugin) — 面向手机的指挥台而非 Web UI 镜像：从 PWA 把任务派发进隔离的 git worktree，工具审批推送通知支持手机/桌面「谁先答谁算」（绝不自动批准），多机会话看板，以及可自建的端到端加密零知识中继。
 - [andyfan1094/dsh-winrm](https://github.com/andyfan1094/dsh-winrm) — 通过 WinRM 管理 Windows 主机，提供 PowerShell 执行、服务与进程管理、SMB/分块文件传输（SHA-256 校验）、集群并发，以及 GUI 面板和七个 agent 工具。
 - [ANetResearch/ANet#dsh-anet](https://github.com/ANetResearch/ANet/tree/main/deploy/plugins/dist/dsh) — 通过 stdio MCP 客户端将 DSH 连接到本地 anet 节点，提供三项技能和 14 个工具，用于发现 AgentNetwork 上的智能体，发送、跟踪和答复端到端加密的 A2A 任务，在运营者的支出限额内支付或拒绝收费技能，读取本地证据链并报告节点状态。仅 Linux/macOS；需本机运行 anet 0.3.0+ 节点。
