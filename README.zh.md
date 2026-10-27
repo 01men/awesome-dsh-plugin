@@ -4599,6 +4599,7 @@ dsh plugin --profile web add dshmarket
 - [CREAIT-nl/dsh-plugins#web-fetch](https://github.com/CREAIT-nl/dsh-plugins/tree/main/web-fetch) — ctx.web 接口的本地受控抓取提供方——dsh 自带完整的 web_fetch 工具，却没有随附后端。每一跳重定向都会重新解析并对照非公网地址段校验，另有流式大小上限与内容类型白名单。
 - [CREAIT-nl/dsh-plugins#web-search-searxng](https://github.com/CREAIT-nl/dsh-plugins/tree/main/web-search-searxng) — 把 web_search 指向自建的 SearXNG 实例而非原生搜索路由：自动翻页直到满足 maxResults，并在引擎失败时报告覆盖不全，避免把稀少的结果误读成网上本就没有内容。
 - [cslkkl/dsh-web-annotator](https://github.com/cslkkl/dsh-web-annotator) — 在 Harness 原有 Browser 内批注网页：点选或框选后就地评论、提问，可把标记截图或 DOM 定位资料发给当前会话；启用期间替换官方 Browser、Chat 与 Layout 提供方，精确支持 Harness 0.2.1-alpha.2。
+- [d342784178/dsh-opencli](https://github.com/d342784178/dsh-opencli) — 把本机 OpenCLI daemon 当常驻服务直连的 DSH 浏览器工具，替代「每条命令起一次 opencli CLI」的冷启动：oc_status、oc_exec、oc_navigate、oc_snapshot、oc_tabs 五个工具，每个 session 一个常驻自动化标签页。
 - [DDDMUC/dsh-free-search](https://github.com/DDDMUC/dsh-free-search) — DSH 免费搜索插件：7 个引擎（DuckDuckGo/Bing/SearXNG 免费 + Exa/Perplexity/DeepSeek 付费）、自动回退、设置页 UI（API key 输入 + 官网链接）、web_fetch、引擎测试工具。
 - [Decodo/dsh-web-fetch](https://github.com/Decodo/dsh-web-fetch) — 把内置 web_fetch 工具的抓取后端换成 Decodo Web Data API：默认返回 Markdown，并把 fetchProvider 固定为 decodo，可配置单进程抓取上限；需要 Decodo API Key，web_search 不受影响。
 - [delef/dsh-free-web-search](https://github.com/delef/dsh-free-web-search) — 免费网页搜索，支持 10 个引擎（Bing/DuckDuckGo/SearXNG/AnySearch 免费，Exa/Tavily/Keenable/Perplexity/DeepSeek 付费）、自动回退、按时间筛选的高级搜索、平台搜索（GitHub/Reddit）、网页内容抓取、LRU 缓存和设置界面。基本使用无需 API 密钥。
@@ -6701,7 +6702,7 @@ dsh plugin --profile web add dshmarket
 - [DNAlec/dsh-auto-approve](https://github.com/DNAlec/dsh-auto-approve) — 自动审批 / 自动审核需要审批的工具调用：先用关键词分桶做零上下文红线匹配，再交由审核模型判类别与风险等级， 按命中行与等级那一格决定自动允许、自动拒绝或转人工；判定没跑成固定转人工，自动拒绝会把原因回传给模型。
 - [drscrewdriver/dsh-perm-gate](https://github.com/drscrewdriver/dsh-perm-gate) — P0–P4 确定性优先权限门控，含 Permissive 档位、学习沉淀与审批历史 UI；凭据/受保护路径硬拒绝，内部只读工具自动放行。
 - [DWJZ/dsh-allow](https://github.com/DWJZ/dsh-allow) — 按路径与能力（read / write / create / delete / execute）授予 shell 调用的文件权限，而不是按命令名判断。命令行的文件效果由解析得出，缺哪个能力就出审批卡片而不是一律拒绝，同一套规则还会编译成进程、它的子进程、以及命令行根本没露出来的代码共同运行其下的 macOS Seatbelt profile。会话里的「审批」标签页把审计日志读回来，显示每次判定是规则、自动复核还是人拍的板。
-- [elegant01/dsh-honey-guard](https://github.com/elegant01/dsh-honey-guard) — 在密钥离开本机前，将其确定性地替换为结构合法的蜜罐假值（OpenAI、AWS、GitHub、PEM、Bearer 模式）；支持手动标记检测器认不出的值、用户可见的显式还原，以及蜜罐跨会话出现时的金丝雀告警。
+- [elegant01/dsh-honey-guard](https://github.com/elegant01/dsh-honey-guard) — 在密钥离开本机前，将其确定性地替换为结构合法的蜜罐假值（OpenAI、AWS、GitHub、PEM、Bearer 模式）；支持手动标记检测器认不出的值、用户可见的显式还原、蜜罐跨会话出现时的金丝雀告警，以及可选的 JSONL 替换计数日志（只记来源与类别计数，绝不记录真实值）。
 - [Eligahyu/dsh-sentinel-scanner](https://github.com/Eligahyu/dsh-sentinel-scanner) — DSH 插件安全扫描器：只读静态审计（执行、凭据、外传、混淆、安装脚本、bundle 清单），输出 0-100 风险分。
 - [ethanrise/dsh-privacy-gateway](https://github.com/ethanrise/dsh-privacy-gateway) — 在对话消息发给模型前，把个人信息替换为占位符（按上下文识别的中文姓名、大陆手机号与身份证号、邮箱、银行卡号，以及用户词库中的词），原文只在本机界面还原显示；并可生成 CSV/XLSX 的脱敏副本。
 - [fb0sh/dsh-pentester](https://github.com/fb0sh/dsh-pentester) — 基于 PTES 的渗透测试插件，采用 Root-Orchestrator 架构，用于 DeepSeek Harness。
