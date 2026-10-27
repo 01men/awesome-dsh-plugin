@@ -4008,6 +4008,7 @@ dsh plugin --profile web add dshmarket
 - [maddogfinance/dsh-trading](https://github.com/maddogfinance/dsh-trading) — 只读交易研究工作台 bundle：带类型的行情数据接缝（含 CSV 参考数据源）、多周期指标 regime 快照与 OHLCV 工具、dsh web 交互式 K 线卡（模型标注需溯源并经价格区间校验）、以及在 tools/pre-execute 拦截下单形工具调用的 risk-guard。
 - [mafeis/dsh-net-proxy](https://github.com/mafeis/dsh-net-proxy) — 让 agent 的网络请求走本机 HTTP/CONNECT/SOCKS5 代理。
 - [MagicTangOps/dsh-insurance-advisor](https://github.com/MagicTangOps/dsh-insurance-advisor) — 个险代理人的展业工作流：P1-P5 产品分级与客户风险等级匹配、按回执签收日推算犹豫期的保单台账、双录五环节校验，含 10 个工具与 5 个技能。
+- [Making-acid/dsh-plugin-comfyui](https://github.com/Making-acid/dsh-plugin-comfyui) — 让 DeepSeek Harness 用本机 ComfyUI 真正生图——自动查找或启动本地服务，在对话里完成文生图并附图。
 - [margbug01/dsh-ma-plugins#dsh-oracle](https://github.com/margbug01/dsh-ma-plugins/tree/main/dsh-oracle) — 强制只读、会脱敏的第二意见子代理。
 - [mario03690/dsh-netcafe](https://github.com/mario03690/dsh-netcafe) — 托管工具服务器（MCP）：发票与银行流水提取并做代码内算术校验、按整数分对账、PDF 与表格转换、SQL 方言转写，以及从中国移动骨干网实测大陆可达性。
 - [master1Sun/dsh-file-workbench-lib](https://github.com/master1Sun/dsh-file-workbench-lib) — DSH 文件工作台库插件，提供文件处理相关能力。
