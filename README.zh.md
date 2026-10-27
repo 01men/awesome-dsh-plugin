@@ -2024,7 +2024,7 @@ dsh plugin --profile web add dshmarket
 - [InkStain258/dsh-glass-skin](https://github.com/InkStain258/dsh-glass-skin) — 把 DeepSeek Harness 窗口换成磨砂亚克力玻璃，可透视桌面；叠加在当前主题之上而非替换主题。Windows 11 上透出桌面还需另跑仓库自带安装器（npx github:InkStain258/dsh-glass-skin，会带备份地修改 DSH Desktop 的 app.asar）。
 - [inMessionante19/dsh-desktop-glass](https://github.com/inMessionante19/dsh-desktop-glass) — 为 Windows 11 版 DeepSeek Harness 提供可切换的原生毛玻璃与完全透明背景，实时显示 Wallpaper Engine 壁纸；需先手动安装一次桌面原生适配；需 Node 20+。
 - [Isilsolme/dsh-anthropic-fonts](https://github.com/Isilsolme/dsh-anthropic-fonts) — Anthropic Sans/Serif/Mono 字体：界面 Sans、对话 Serif、代码 Mono，中文回退思源字体。
-- [iStarryDust/dsh-ui-liquid-glass](https://github.com/iStarryDust/dsh-ui-liquid-glass) — DSH 全液态玻璃皮肤：13 个可调折射液态玻璃面、随时段轮换的壁纸、四档主题色、选中项带水滴状高亮飞镜。
+- [iStarryDust/dsh-ui-liquid-glass](https://github.com/iStarryDust/dsh-ui-liquid-glass) — 可折射的液态玻璃皮肤 UI：可自定义壁纸、多个可调折射液态玻璃面、随时段轮换的壁纸、四档主题色、选中项带水滴状高亮飞镜、右下可自定义每个控件参数。
 - [jiangwangyang/dsh-theme-blackhole](https://github.com/jiangwangyang/dsh-theme-blackhole) — DeepSeek Harness（dsh）Web UI 的黑洞主题插件。
 - [Jimmyzwang-cloud/dsh-inkscreen-theme](https://github.com/Jimmyzwang-cloud/dsh-inkscreen-theme) — 墨水纸质感的苹果风 DSH 网页主题，侧栏使用手写 jimmy 字标与小狗头像。
 - [Jimxinfang/dsh-theme-neo-brutalist](https://github.com/Jimxinfang/dsh-theme-neo-brutalist) — DeepSeek Harness Web GUI 的新粗野主义主题：白纸 / 黑板双配色，4px 硬边、8px 偏移硬阴影、零圆角、警示斜纹，设置页内置主题行，可一键切回出厂外观。
