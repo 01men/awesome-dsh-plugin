@@ -5577,6 +5577,8 @@ dsh plugin --profile web add dshmarket
 - [onesmash/dsh-reflex](https://github.com/onesmash/dsh-reflex) — 给 DS Bot 的反射弧：作为兄弟插件运行、不改 ds-bot，用低成本层持续采集事实并在本地决策模型上打分，只有越过阈值时才唤醒 Bot 的推理层。
 - [orziz/odai#odai-dsh-plugin](https://github.com/orziz/odai/tree/main/dsh/plugin) — 面向整个 DSH profile 的治理与路由 bundle，提供用于职责与证据检查的 Web Control Center，以及压缩、本地作用域语义记忆、安全连续性与真实验收；兼容 DSH 0.1.5-rc.1。
 - [OTTTTTO/dsh-scheduled-send](https://github.com/OTTTTTO/dsh-scheduled-send) — 定时发送：到点将拟好的消息以正常用户气泡发送到绑定的会话。调度在服务端执行，关闭浏览器不影响发送；会话隔离、重启自动补发。
+- [oxmumu3/ai-twin-starter](https://github.com/oxmumu3/ai-twin-starter) — 原生分身工作台：选择项目资料、蒸馏并试跑能力候选、配置有范围的 Slack 访问，查看审批与持久任务。
+- [oxmumu3/dsh-project-companion](https://github.com/oxmumu3/dsh-project-companion) — 个人项目助手：管理有界项目上下文和记忆，通过既有微信桥接明确交办任务、安排提醒并查看带来源的摘要。
 - [oxmumu3/dsh-workproof#dsh-delivery-receipts](https://github.com/oxmumu3/dsh-workproof/tree/main/packages/dsh-delivery-receipts) — 为本地成果生成会话级交付回执：对比当前文件哈希与记录基线，将 Agent 自述与用户明确验收分开，标记已变化或无法核验的文件，并通过工具、斜杠命令和会话面板导出 Markdown 回执。
 - [oxmumu3/dsh-workproof#dsh-evidence-ledger](https://github.com/oxmumu3/dsh-workproof/tree/main/packages/dsh-evidence-ledger) — 会话级研究证据账本，整理来源、关联论点、待解问题与用户明确复核；提供工具、斜杠命令和会话面板，可按论点选择导出 Markdown，默认省略摘录、复核备注与本地路径；不抓取来源或判断内容真伪。
 - [OZONGO/dsh-agents-inits](https://github.com/OZONGO/dsh-agents-inits) — /agentinit 命令：在子代理里生成、修订或审计仓库的 AGENTS.md。方法文档由子代理自己读取，写下的每条命令与路径都用随包的只读检查器核验，主对话不进入任何指令正文。随包的检查器是 Python 脚本，需要 Python 3 在 PATH 中。
