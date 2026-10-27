@@ -4409,6 +4409,7 @@ dsh plugin --profile web add dshmarket
 - [Xantares330/dsh-codex-consult](https://github.com/Xantares330/dsh-codex-consult) — 需先安装 Codex CLI 并完成 `codex login`。为 DeepSeek Harness 增加三个按需咨询 OpenAI Codex CLI 的工具：codex_consult 在只读沙箱中运行 Codex、自动内联证据文件、从 Codex rollout 记录校验实际模型与推理档位、断流自动重试，并记录调用前后的额度；codex_quota 查询当前 5 小时与每周额度；codex_calls 列出最近调用。
 - [xchannel1987/dsh-power-xc](https://github.com/xchannel1987/dsh-power-xc) — DSH 电源管理插件 - 侧边栏电源按钮、重启/关机菜单、自包含重启引擎（无需外部依赖）、优雅会话刷新。
 - [xfy2412/dsh-time-reminder](https://github.com/xfy2412/dsh-time-reminder) — 为 agent 提供它自己的时钟：按会话注入时间读数且精度可由 agent 运行时调整，并附带累计计时器与跨宿主重启可靠的一次性倒计时。
+- [XGL2019/dsh-wenan](https://github.com/XGL2019/dsh-wenan) — 提取抖音、B站、快手与 YouTube 短视频的文案与字幕，并带标题、作者、话题与互动数据；抽取器以 Python 随包提供。
 - [xiajiajun516/dsh-config-manager](https://github.com/xiajiajun516/dsh-config-manager) — 一键备份、导出、导入与迁移整套 DSH 配置：设置、插件、MCP、技能与工作区。密钥默认不导出；若选择包含，则以 AES-256-GCM 加密而非明文写出。导入先预览、自动备份并可回滚，profile 可保存多套配置，远程同步经私有 Git 仓库推送可移植配置且不含密钥。
 - [Xiamu-ssr/dsh-wind-aifin](https://github.com/Xiamu-ssr/dsh-wind-aifin) — 将 Wind 七个金融 MCP 域和 Wind Alice 接入 DSH，并仅在宿主凭证边界内解析 WIND_API_KEY。
 - [xiamubumu/dsh-capability-composer](https://github.com/xiamubumu/dsh-capability-composer) — 能力组合：把工具、技能与 MCP 编成可切换的组合，按需缩小常驻工具面与系统提示。
@@ -5158,6 +5159,7 @@ dsh plugin --profile web add dshmarket
 - [988hj7tczd-oss/dsh-math-olympiad](https://github.com/988hj7tczd-oss/dsh-math-olympiad) — 竞赛数学解题（IMO/Putnam/USAMO/AIME）：纯推理求解 + 新鲜上下文 subagent 对抗验证 + 校准信心输出（high / medium / 诚实「无把握解」）；可选 LaTeX 编译 PDF。
 - [988hj7tczd-oss/dsh-modernize-code](https://github.com/988hj7tczd-oss/dsh-modernize-code) — 遗留代码现代化工作流（preflight → assess → map → transform），含 Cordis 挂载插件、离线 Python 脚本与冒烟测试。
 - [988hj7tczd-oss/dsh-skill-creator](https://github.com/988hj7tczd-oss/dsh-skill-creator) — 一键生成 DSH 技能（SKILL.md）的 Cordis 插件：在会话内捕获意图、起草、校验、打包分发并优化技能描述（skill_new / skill_validate / skill_package / skill_improve_description）。
+- [a1249070611/dsh-hoi4-modding](https://github.com/a1249070611/dsh-hoi4-modding) — 面向《钢铁雄心 IV》1.19.3 模组开发的 DSH 技能包：搭模组骨架、国策树、事件、决议、理念、人物、科技、MIO、特殊项目、界面、本地化、DDS、静态校验、安装器与 error.log 排查。随包提供 Python 工具，不含游戏素材。
 - [aa2246740/dsh-skillhub](https://github.com/aa2246740/dsh-skillhub) — 浏览和管理 DSH 及受支持 Agent 主目录中已有的用户技能。
 - [AAAlenwow/dsh-spring-admin-kit](https://github.com/AAAlenwow/dsh-spring-admin-kit) — Spring Boot 后台开发套件：EasyExcel 批量导入导出代码生成与 Thymeleaf + LayUI 模板安全守卫。
 - [aawef/dsh-skill-manager-tags](https://github.com/aawef/dsh-skill-manager-tags) — 按标签筛选技能：给 DSH 技能打标签，再用布尔表达式为每个工作区或对话选出下发给模型的子集（例如 `pdf + docx` 或 `aegis * plugin`）。命中以外的技能会被 deny-shadow 真正从模型目录里移走，而不只是在设置页隐藏；表达式之外的技能可手动添加或强制禁用，另附带 `tagging-skills` 教 agent 从本机技能清单自建标签体系。
@@ -6785,6 +6787,7 @@ dsh plugin --profile web add dshmarket
 - [heyuanliu3-byte/dsh-auto-preset](https://github.com/heyuanliu3-byte/dsh-auto-preset) — 重新打开会话时恢复该会话上次设置的权限预设；首次打开不干预。需排在 dsh-experimental-auto-review 之后加载才能恢复 auto 预设。
 - [hhl123hhl/dsh-privacy-shield](https://github.com/hhl123hhl/dsh-privacy-shield) — 请求离开本机前，把 system/developer/user/assistant/tool 五类消息的模型可见副本改写为稳定 HMAC 占位符；本地会话日志、对话记录与还原后的工具调用仍保留真值。
 - [howmp/dsh-pentest](https://github.com/howmp/dsh-pentest) — 面向 DeepSeek Harness 的授权渗透模式：以探索链路记录目标、线索、资产与漏洞，并在 Web 中可视化展示。
+- [huanlin-labs/dsh-isolation-gate](https://github.com/huanlin-labs/dsh-isolation-gate) — DSH 的按目录访问门禁：对名字与路径给出 deny / read / full 三级权限、名册分组、按会话覆盖与审计日志，另有七个面向模型的 `gate_*` 工具，放宽权限必须由拥有者在面板里批准。用 `dsh plugin --profile desktop add dsh-isolation-gate` 安装；MIT、不联网、状态只落本地磁盘。
 - [hxy91819/dsh-auth](https://github.com/hxy91819/dsh-auth) — 通过 Caddy forward_auth 为 DeepSeek Harness Web 提供管理员登录，含 Argon2id 口令、可撤销会话、中英界面和侧栏原生退出。
 - [IamNewHands/dsh-approval-gate](https://github.com/IamNewHands/dsh-approval-gate) — dsh-approval-gate 的维护中 fork。判定器不可用时，确认次数已达阈值的中立操作直接自动放行，不再重复弹人工审批；审批说明由真实的沙箱模式、命令与路径生成中文。另含凭据外泄与系统路径销毁的确定性硬拒、判定输入脱敏、判定模型候选链、带操作指纹的放行规则，以及可查看 unified diff 与一键撤销的审批视图。
 - [iasiv5/dsh-skip-browser-auth](https://github.com/iasiv5/dsh-skip-browser-auth) — 替换 DSH Web 的连接提供方以整体跳过 BrowserAuth，打开 Web 地址即可直接使用、无需抄写启动 URL 中的随机 token；按九个已验证的 DSH 版本对严格成对门控，遇到未知或混用版本自动休眠，卸载即完全恢复官方行为，仅限 Web profile。
