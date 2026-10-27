@@ -5578,6 +5578,7 @@ dsh plugin --profile web add dshmarket
 - [orziz/odai#odai-dsh-plugin](https://github.com/orziz/odai/tree/main/dsh/plugin) — 面向整个 DSH profile 的治理与路由 bundle，提供用于职责与证据检查的 Web Control Center，以及压缩、本地作用域语义记忆、安全连续性与真实验收；兼容 DSH 0.1.5-rc.1。
 - [OTTTTTO/dsh-scheduled-send](https://github.com/OTTTTTO/dsh-scheduled-send) — 定时发送：到点将拟好的消息以正常用户气泡发送到绑定的会话。调度在服务端执行，关闭浏览器不影响发送；会话隔离、重启自动补发。
 - [oxmumu3/ai-twin-starter](https://github.com/oxmumu3/ai-twin-starter) — 原生分身工作台：选择项目资料、蒸馏并试跑能力候选、配置有范围的 Slack 访问，查看审批与持久任务。
+- [oxmumu3/dsh-family-assistant](https://github.com/oxmumu3/dsh-family-assistant) — 通过 Owner 工作台管理家人各自连接的微信助手、按人授予项目和工具权限、安排服务并查看投递状态；接口接受不代表手机实收。
 - [oxmumu3/dsh-project-companion](https://github.com/oxmumu3/dsh-project-companion) — 个人项目助手：管理有界项目上下文和记忆，通过既有微信桥接明确交办任务、安排提醒并查看带来源的摘要。
 - [oxmumu3/dsh-workproof#dsh-delivery-receipts](https://github.com/oxmumu3/dsh-workproof/tree/main/packages/dsh-delivery-receipts) — 为本地成果生成会话级交付回执：对比当前文件哈希与记录基线，将 Agent 自述与用户明确验收分开，标记已变化或无法核验的文件，并通过工具、斜杠命令和会话面板导出 Markdown 回执。
 - [oxmumu3/dsh-workproof#dsh-evidence-ledger](https://github.com/oxmumu3/dsh-workproof/tree/main/packages/dsh-evidence-ledger) — 会话级研究证据账本，整理来源、关联论点、待解问题与用户明确复核；提供工具、斜杠命令和会话面板，可按论点选择导出 Markdown，默认省略摘录、复核备注与本地路径；不抓取来源或判断内容真伪。
@@ -6953,6 +6954,7 @@ dsh plugin --profile web add dshmarket
 - [onesmash/dsh-remote-bot-bridge](https://github.com/onesmash/dsh-remote-bot-bridge) — 基于 ds-harness-remote 的跨机器 Bot 传话：五个工具让本地 Bot 列出对端 Bot、固定目标设备并给它发消息，不用切换本地窗口。
 - [ook826092-cloud/dsh-mobile-css](https://github.com/ook826092-cloud/dsh-mobile-css) — DSH Web UI 移动端适配：紧凑排版、全宽输入卡（含光标修复）、抽屉式侧边栏（点击遮罩关闭）、两页式设置流程、响应式表格与统计、安全触控目标。
 - [OrderG-X/dsh-mobile](https://github.com/OrderG-X/dsh-mobile) — 在手机浏览器里用 DSH。点会话顶栏的手机按钮（或插件设置卡）打开手机访问、扫二维码，手机就打开电脑上 DSH 进程提供的官方网页界面，会话相同、实时同步，人不在电脑前也能跟进正在跑的任务、回消息、点批准。DSH 里内置一个网关（端口 18765）转发网页界面，并替手机处理桌面端登录。一个二维码在 Wi-Fi 和流量下都能扫：打开手机访问时顺带开 Cloudflare 免费快速隧道（没有 cloudflared 会从 Cloudflare 官方 GitHub 发布页下载），DSH 重启后地址不变，手机不用重扫。配对码一次性、10 分钟过期，每台手机一张凭证、可随时移除，顶栏按钮显示手机是否已连接，空闲连接自动保活。可选推送到手机：任务跑完（30 秒以上）、出错停下、等批准或等回答时，发到 Bark、ntfy、Server酱、飞书 / 企业微信 / 钉钉群机器人、Telegram 或任意 Webhook；通知只带会话标题和状态，批准仍在 DSH 里点。手机上网页界面的左右两栏改成盖在页面上，可以带图标添加到主屏幕。
+- [oxmumu3/dot-dsh-connector#dot-dsh-management](https://github.com/oxmumu3/dot-dsh-connector/tree/main/management-plugin) — 通过原生 Harness 工作台和本机网关，让 Dot 读取已保存项目与会话、派发原生任务、查看进度、继续或取消任务，并管理连接授权。
 - [pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) — 以进程内 Cordis 插件的形式，通过腾讯 iLink bot 协议把微信私聊桥接到 DeepSeek Harness——双向收发文本、图片、文件与语音，微信内 slash 命令经原生命令注册中心解析（DSH 新增命令零改动可用），支持在微信端处理审批与提问，并提供 send_wechat 工具主动推送。
 - [peng456/dsh-plugin-mesh](https://github.com/peng456/dsh-plugin-mesh) — 通过 UDP 组播或端口扫描发现局域网内的其他 DSH 实例，在侧栏面板中列出它们以及各自上报的能力，并可经局域网或自动下载的用户态 Tailscale 节点在两台机器之间双向派发任务。
 - [PerryLink/dsh-reach](https://github.com/PerryLink/dsh-reach) — 把 DSH 的审批卡与提问卡推送到 IM 渠道（先支持微信），可在聊天里直接作答，带会话控制台、逐渠道安全与开放推送服务。
