@@ -6533,6 +6533,7 @@ dsh plugin --profile web add dshmarket
 - [sleetdrop/dsh-plugin-topology](https://github.com/sleetdrop/dsh-plugin-topology) — DeepSeek Harness 插件依赖图检查器：把运行中的 Cordis 插件/服务拓扑快照为可缩放的浏览器面板图，附带图论指标，以及面向模型的 graph.render 工具。
 - [Small-tailqwq/dsh-tps](https://github.com/Small-tailqwq/dsh-tps) — TPS 指标插件。
 - [SOH4C4759/dsh-plugin-cicd](https://github.com/SOH4C4759/dsh-plugin-cicd) — 把 DSH 插件仓库的持续构建与发布搬进应用：侧边栏面板逐仓库显示最近一次工作流运行、已发布与草稿 Release，以及本地检出相对上次发布的领先与未提交情况，并提供触发构建、发布、公开草稿、重跑、取消、查失败日志等按钮。通过本机已登录的 gh CLI 驱动工作流，插件自身不保存任何凭据，被监视的仓库列表放在配置文件里、不打进包。
+- [songrui111/dsh-agent-bench](https://github.com/songrui111/dsh-agent-bench) — 在隔离沙箱里跑一组固定的 Agent 用例，用确定性断言判分，并对比两次运行，指出换模型、改提示词或升级 DSH 之后哪条用例退化了。
 - [songshuhuoban/dsh-environment-tray](https://github.com/songshuhuoban/dsh-environment-tray) — 在 DeepSeek Harness 中管理环境变量、.env 文件和凭据，支持 Windows 用户级与系统级环境变量。
 - [SOVLOOKUP/dsh-mise](https://github.com/SOVLOOKUP/dsh-mise) — 需本机先安装 mise。用 mise 管理本机工具链 —— 设置页列出生效 / 已装 / 可用版本，按 .mise.toml 安装、切换、卸载与清理，加载时把 mise 的 shims 放进 Host PATH 最前，并给 agent 九个工具（状态、版本、PATH 扫描、安装、切换、清理、卸载、激活、进度）。
 - [STARDUSTLC666/dsh-flakefinder](https://github.com/STARDUSTLC666/dsh-flakefinder) — 测试稳定性工具：重复运行 vitest/jest/pytest/node:test，识别 flaky 用例，历史留档、隔离清单与健康自检。
