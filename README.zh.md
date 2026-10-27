@@ -1051,6 +1051,7 @@ dsh plugin --profile web add dshmarket
 - [QiaoSchoco/dsh-lit-shot](https://github.com/QiaoSchoco/dsh-lit-shot) — 给 DSH 打字框加一个截图键：点剪刀、拖框选中屏幕区域，图片作为普通附件直接进草稿；另带全局热键与可自定义的快捷键，仅 Windows。
 - [qinpeizhan77/deepseek-harness-novel-studio](https://github.com/qinpeizhan77/deepseek-harness-novel-studio) — 本地优先的小说创作工作台，将大纲、章节、人物、时间线、写作规则与一致性检查联动到对话。
 - [qipengxiang/dsh-enter-combination](https://github.com/qipengxiang/dsh-enter-combination) — 自定义 DeepSeek Harness 输入框里哪个键发送消息、哪个键换行；默认 Enter 发送、Cmd/Ctrl+Enter 换行，两个组合键都可以在设置页里重新录制。
+- [qipengxiang/dsh-message-quote](https://github.com/qipengxiang/dsh-message-quote) — 把本对话里的任意一条消息引用进输入框：@ 菜单选择，或点用户消息、AI 回复上的引用按钮，也可以选中文字后右键「引用」。引用在输入框里是带序号的芯片，上方浮出摘要气泡；发送后每条引用展开成独立块，模型能分清引用内容与新写内容。
 - [QIRSHENG/dsh-tray-restart](https://github.com/QIRSHENG/dsh-tray-restart) — 给官方桌面端的 Windows 系统托盘加「重启应用与 Host」「刷新页面」和「彻底退出 Harness」三项（原位修改 app.asar），并在桌面端每次更新覆盖后自动重打补丁。
 - [qiweiii/dsh-brand-studio](https://github.com/qiweiii/dsh-brand-studio) — DSH 共享网页界面的自定义品牌：在「设置 → 品牌」中修改名称、徽章，选择本地 logo 和字标图片并调整大小与圆角、实时预览、可选自定义页面标题、一键恢复官方外观。
 - [qjcnmd/dsh-reasoning-slider](https://github.com/qjcnmd/dsh-reasoning-slider) — Codex 风格推理等级滑块，内嵌于模型选择器，拖动切换推理档位。
@@ -1880,6 +1881,7 @@ dsh plugin --profile web add dshmarket
 - [woodfood111/dsh-token-live](https://github.com/woodfood111/dsh-token-live) — DeepSeek Harness 输入框下方的实时草稿 token 数、按官方高峰/空闲费率计算的会话花费、上下文占用，以及同样的用量在最贵的另一个模型上会花多少；纯客户端，没有 host 半，不接触凭据。
 - [woosh2010/dsh-usage-dashboard](https://github.com/woosh2010/dsh-usage-dashboard) — DSH 用量分析坞：输入框峰谷计费坞（周末全天谷时）、实时余额、跨会话历史、按日期下钻与图表。
 - [wssfk12138/dsh-damage-pulse](https://github.com/wssfk12138/dsh-damage-pulse) — 在 DSH Web 界面追踪 DeepSeek Token 用量、单次与会话费用及账户余额，并显示缓存感知的扣费动画。
+- [wwu328763-netizen/dsh-billing-compass](https://github.com/wwu328763-netizen/dsh-billing-compass) — 输入框下方的计费面板：DeepSeek 账户余额、官网各模型用量与消费（含每亿 token 单价）、本次运行与整段对话的费用估算。点击弹出面板，面板与输入框同宽同位；余额走官方 /user/balance，用量与消费走 platform 的 usage 接口，整段用量由本地会话日志只读汇总。零依赖（node:https + node:zlib），不写任何文件。
 - [X-Xyy/dsh-api-balance](https://github.com/X-Xyy/dsh-api-balance) — 在对话标题栏实时显示 DeepSeek API 余额与本会话 token 用量，详情面板展开余额拆分（充值／赠送）、请求次数、输入／输出／缓存命中 tokens 与上下文占用；API Key 每次查询现取，不缓存、不落盘、不返回浏览器。
 - [x2802490130-prog/dsh-balance-float](https://github.com/x2802490130-prog/dsh-balance-float) — Web UI 右上角悬浮窗：实时显示 DeepSeek 余额，支持手动刷新与一键优雅退出（Y/N 快捷键确认）。
 - [xchannel1987/dsh-token-usage-xc](https://github.com/xchannel1987/dsh-token-usage-xc) — DSH Token 用量统计插件 - 今日 Token 用量按模型分桶、缓存命中率、7 日趋势图、可选顶栏徽标、持久化存储自动清理。
