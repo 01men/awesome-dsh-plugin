@@ -1932,7 +1932,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ZiOstudio/dsh-budget-handoff](https://github.com/ZiOstudio/dsh-budget-handoff) - Session budget gate for DeepSeek Harness: prices every turn against the official price table, warns at 80%, stops the task at 100%, and writes a handoff snapshot so the next session can continue the work.
 - [Zoria-Lind/dsh-token-optimizer](https://github.com/Zoria-Lind/dsh-token-optimizer) - Token-cost pipeline for DeepSeek Harness: pressure-aware layered compaction (lossless projection below 40% context pressure, LLM summarization above), per-agent tool allowlisting, long-text-to-image with vision summarization, and a /token-status command tracking pressure, tiers, and saved tokens.
 - [zouxiaoyang/dsh-commandcode-usage](https://github.com/zouxiaoyang/dsh-commandcode-usage) - CommandCode usage & balance panel for DeepSeek Harness: API usage, credit balance, 5-hour/weekly windows from the sidebar footer.
-- [zy12342/usage-widget](https://github.com/zy12342/usage-widget) - Sidebar account-balance quick view for DeepSeek Harness: shows balance, bonus credit and current model, with ruby/amber/jade/gold tiers and a low-balance warning.
+- [zy12342/usage-widget](https://github.com/zy12342/usage-widget) - Sidebar account-balance quick view for DeepSeek Harness: balance, bonus credit, current model and the official peak/off-peak pricing period, with ruby/amber/jade/gold tiers and a low-balance warning.
 
 ### Themes & Appearance
 
