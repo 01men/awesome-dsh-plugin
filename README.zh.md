@@ -121,6 +121,7 @@ dsh plugin --profile web add dshmarket
 - [starkingcn/dsh-story#story-mode](https://github.com/starkingcn/dsh-story/tree/main/story-mode) — 面向 DeepSeek Harness 的故事模式预设：叙事 GM 人格、三条走向、.md 角色卡与世界书记忆、上下文提纯与前后置提示词。
 - [syyr1987/dsh-linghun](https://github.com/syyr1987/dsh-linghun) — DeepSeek Harness 的判断内核：认知循环让判断有来处、反馈有归因、规划收口；海马体把运行经历沉淀为可复用知识（序时账留痕、情景归档、低置信降权遗忘）；判分身份职责入架构（口径一致、判据绑定来源）；联动 dsh-linghun-assembler 的 A2A 记忆管理团队。需要 DSH ^0.1.0-rc.7（支持 rc.2）。
 - [syyr1987/dsh-linghun-assembler](https://github.com/syyr1987/dsh-linghun-assembler) — 灵魂的记忆提取侧·认知循环团队版：判断→捞取→组装→被判定→校准五步闭环，判官/捞手/史官/辩手/编辑/书记角色化子智能体承载，BM25 检索 + 时序素材 + LLM 组装「有用素材包」注入 linghun。与 dsh-linghun 组合使用。
+- [Tests4gptplay/deepseek-servant](https://github.com/Tests4gptplay/deepseek-servant) — 自主 AI 助理，提供前台交流、Planner 与 Worker 分工、持久任务、重启接续、按需工作记忆及可选的私有 Git 协作。
 - [Tisitan/dsh-my-go](https://github.com/Tisitan/dsh-my-go) — 多智能体编排预设：主编（Sisyphus）调度 + 内置工种名册 + 报告落板；读/写双泳道池化编排、按工种绑定模型，含 go_work/continue/need_help/forward 通信，以及 Web UI 树状图面板与设置页。
 - [WDahah/portable-dsh-multi-agent-plugin](https://github.com/WDahah/portable-dsh-multi-agent-plugin) — 把任务派给一个模型、把评审交给另一个模型，并带有资格证据、故障转移与持久日志。
 - [ws1234567891011/dsh-interim-narration](https://github.com/ws1234567891011/dsh-interim-narration) — 让 agent 边做边说：每轮先用一两句说明怎么理解消息、准备怎么做、第一步是什么，并在工具调用批次之间写过程叙述；插件页可直接调整详略、句数上限与开关。
@@ -6917,6 +6918,7 @@ dsh plugin --profile web add dshmarket
 - [feng-yifan/dsh-plugins#dsh-enhancement](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enhancement) — DSH 增强套件：为 Web GUI 提供独立的密码访问网关（可选 HTTPS，适合局域网/远程访问），整合 PWA 安装与图标、桌面通知与 Web Push，并在设置页统一配置。
 - [flyhigao/dsh-produced-file-paths](https://github.com/flyhigao/dsh-produced-file-paths) — 在远程 Web 中显示并复制 DSH 每轮产出文件的绝对路径。
 - [framecy/dsh-ssh-shell](https://github.com/framecy/dsh-ssh-shell) — 用密码直连远程主机的 SSH 终端：ssh_remote 工具提供 connect/exec/close/status 四个动作，底层是 ControlMaster 常驻会话；另带浏览器浮动终端面板，跑真实 PTY。
+- [gaolin89898/remote-session-plugin](https://github.com/gaolin89898/remote-session-plugin) — 在本机与远程 DSH 工作区和会话间切换，并支持插件同步；需要自备中继服务器。
 - [Gaudi-XIX/dsh-pocket-glide](https://github.com/Gaudi-XIX/dsh-pocket-glide) — 把桌面 DSH 的电话面做成克制遥控器：白名单透传会话读写、发消息与权限审批，页面由宿主直接产出、无构建链，扫码配对，隧道地址变了自动推回手机。
 - [godchen520/dsh-web-remote](https://github.com/godchen520/dsh-web-remote) — 手机/外网远程访问 DSH：Cloudflare Quick Tunnel 公网链接、局域网 HTTP/HTTPS 直连（自动生成自签名证书）、token 鉴权、gzip 压缩、常驻手机图标面板（一键复制/二维码）、可配置公网链接与局域网端口，以及微信 / 飞书 / Telegram 机器人通道，支持分通道健康监测与会话完成推送。适配 DSH 0.2.x（0.1.2-rc.1+ 亦可用）。
 - [Golden-Pigeon/dsh-remote#packages/local-plugin](https://github.com/Golden-Pigeon/dsh-remote/tree/main/packages/local-plugin) — 把 SSH 主机上的工作区接入 DSH：远程工作区、镜像会话、终端与文件访问、审批和原生 DSH 界面。需 DSH Desktop 0.2.1-rc.2，远端主机为 Linux 或 macOS。
