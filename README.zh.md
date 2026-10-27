@@ -2691,6 +2691,7 @@ dsh plugin --profile web add dshmarket
 - [lw-storm/dsh-plugin-masterprompt](https://github.com/lw-storm/dsh-plugin-masterprompt) — 每对话独立的人设 / 主提示词插件：在输入框工具栏创建、编辑、切换和删除人设模板，最高优先级系统提示注入，附带固定交互护栏、子代理继承、新对话默认继承与本地 JSON 持久化。
 - [m-rui001/dsh-mate-companion](https://github.com/m-rui001/dsh-mate-companion) — 有生物钟、会真实睡觉、有自己的记忆和情绪的 AI 伴侣，主动冲动以独立 turn 投递。
 - [MacilyDots/dsh-prompt-inject](https://github.com/MacilyDots/dsh-prompt-inject) — 注册一个可配置的 prompt 变量，让使用 complete: true 人格的 agent 预设也能收到一段注入文本；插件本身不含内容，文本由配置提供。
+- [menghuanshiguang/dsh-frontline](https://github.com/menghuanshiguang/dsh-frontline) — 一条提示词行装两半，各自可单独关闭。身份层：开头、末尾（一切其它分区之后）与运行时快照三处固定同一段自述，并要求把与之冲突的说法当作过时缓存。纪律层：十条规则，每条附一句评审用来判断是否违反的判据——收工前拿出外部证据、改动面等于评审面、正确性来自命名调用点而非时序、一个事实一个家、通过注册的接缝扩展、只在真实边界做运行时校验、失败要响而不是静默跳过、正交的结果分开报告、测试走已交付的入口、答复先给结论且篇幅跟改动走。
 - [menghuanshiguang/dsh-sunder](https://github.com/menghuanshiguang/dsh-sunder) — 用自带的提示词包替换宿主身份块：identity、rules、footer 三个系统提示词分区，full/concise/dev 三档预设，每轮把一张规则卡片作为真实用户消息追加，公告源离线时回退到内置副本，检查 GitHub Releases 并可用命令应用更新，五个 `sunder_*` 工具，设置页里一个只读状态分区。
 - [MengYuil/dsh-ponytail](https://github.com/MengYuil/dsh-ponytail) — ponytail 移植：常驻的「懒惰资深开发者」编码人设，带强度档位与 review、audit、debt、gain、help 技能，适用于 DeepSeek Harness。
 - [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
@@ -3620,6 +3621,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-computer-use-en](https://github.com/ALAMBICCO/dsh-computer-use-en) — Windows 电脑控制插件（英文版）：提供 10 个桌面控制工具（截图、鼠标、键盘、UIA 界面元素读取、剪贴板、窗口管理、应用技能与按应用授权），全英文设置面板与右下角迷你进度卡片浮层，支持按 Esc 暂停或继续，并适配 DSH 0.2.1 的 koffi.node 自动发现。Fork 自 copylee711/dsh-computer-use，沿用同一插件 id 与工具名，两者不能同时安装。
 - [aldveylor/dsh-intellisense](https://github.com/aldveylor/dsh-intellisense) — 一个用于管理工具集的命名空间管理工具，支持自动发现与集成，用于节省token的消耗还会在受限 Node 运行时执行 TypeScript 与 JavaScript，按需通过命名空间调用工具。
 - [alexltr/dsh-vba-bridge](https://github.com/alexltr/dsh-vba-bridge) — 通过真实 Excel COM 读写、导出并校验 Excel VBA 工程：模块、窗体代码、过程清单与 .frm/.frx 导出。仅 Windows：需安装桌面版 Excel、Python 3.10+（含 pywin32），并设置 AccessVBOM=1。
+- [Algorandius/dsh-disk-janitor](https://github.com/Algorandius/dsh-disk-janitor) — DSH 磁盘清理插件：统计磁盘占用，一键清理可再生的缓存（Bash 运行时副本、预览缓存、界面缓存等），支持设置面板与 Agent 工具。
 - [ALittleLov/dsh-clock-tools](https://github.com/ALittleLov/dsh-clock-tools) — 给 DSH Agent 的任务计时工具：task_clock 用宿主单调时钟测实际耗时，DSH 或系统重启后可续算并标注空档为估算，桥接不了时返回 unknown 而不是编造数字；不覆盖任何 preset。
 - [alone-tree/dsh-skill-mcp-manager](https://github.com/alone-tree/dsh-skill-mcp-manager) — 一站式可视化管理 DSH 的 SKILL 与 MCP：MCP按需加载、会话内热重载、SKILL与MCP描述可在插件内直接查看
 - [Altermoe/dsh-onedev](https://github.com/Altermoe/dsh-onedev) — OneDev 集成插件：MCP 服务器将 OneDev REST API 暴露为 61 个工具——57 个管理工具（用户、组、角色、项目、授权、构建代理与令牌、构建及流式构建日志、全局设置、访问令牌）、3 个独立的官方文档查询工具（docs.onedev.io）以及带按调用多环境路由的环境发现；另提供 dsh Web 设置页，在本地管理各环境凭据，保存后下一次工具调用即生效，无需重启。
