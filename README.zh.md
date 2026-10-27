@@ -4306,6 +4306,7 @@ dsh plugin --profile web add dshmarket
 - [weisofns/dsh-print3d](https://github.com/weisofns/dsh-print3d) — DeepSeek Harness 的 3D 打印与增材制造插件：参数化 STL 生成、校准 G-code、STL/G-code 分析、刀路可视化、PrusaSlicer 桥接，含 5 个技能与面向本地小模型的精简 persona。
 - [weixshaw/dsh-rss](https://github.com/weixshaw/dsh-rss) — RSS/Atom 阅读器——分组订阅与未读/总数双计数、FreshRSS 账号同步（Google Reader API，已读/收藏双向写回）、图片本地代理、自带 Key 的 AI 摘要/翻译/单篇问答、播客音频与全文抓取。
 - [welsione/dsh-mmx-bridge](https://github.com/welsione/dsh-mmx-bridge) — MiniMax 多模态桥接：一个 `mmx_bridge` 工具覆盖图片理解/生成、视频、语音合成、音乐、翻唱、联网搜索与用量查询；可选接管 `web_search`/`read_image`；对话流直接内嵌播放器与图片预览（npm: `dsh-mmx-bridge`）。
+- [Where227-arch/dsh-booth-search](https://github.com/Where227-arch/dsh-booth-search) — 在会话旁的 BOOTH 独立页或两个只读工具里搜 VRChat 素材（衣服、着色器、素体、配饰、贴图、动画、小物）；中文关键词在宿主侧转日文再检索，界面不出现日文词。
 - [whitefirer/dsh-browser-fs](https://github.com/whitefirer/dsh-browser-fs) — 让 agent 读写浏览器所在电脑上的文件：浏览器授权本地目录（File System Access），工具调用经插件自建 WebSocket 中继；移动端/非安全上下文自动降级只读兼容模式。
 - [whyzsm/dsh-clipfile](https://github.com/whyzsm/dsh-clipfile) — 在输入框附加文件和文件夹：剪贴板粘贴、原生文件/文件夹选择器、@-mention 路径搜索；文件夹转分页 Markdown 供智能体逐页读取。仅支持 macOS（剪贴板读取与选择器依赖 osascript）。
 - [wilianyichen/dsh-deepseek-web](https://github.com/wilianyichen/dsh-deepseek-web) — DSH 内只读访问 DeepSeek 网页版会话归档：列会话/下载全文/搜索索引/分享列表，以及把 100 段会话压缩成一页高密度摘要（含活跃度直方图与主题聚类）的 digest 工具。刻意不暴露写操作（网页版有限流）。需另外安装第三方 deepseek-ops Python 客户端（github.com/Panniantong/deepseek-ops，另一位作者）并扫码登录，在插件配置里把 scriptDir 指向它。
