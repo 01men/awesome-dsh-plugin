@@ -1,5 +1,5 @@
 url: https://github.com/zeroed-07/dsh-memory-guard
-name: dsh-memory-guard
+name: zeroed-07/dsh-memory-guard
 category: dev
 description:
   en: "Local-only memory guard for the DeepSeek Harness: host heap and session-log monitoring, oversized tool-argument interception, and dry-run by default session vacuum."
