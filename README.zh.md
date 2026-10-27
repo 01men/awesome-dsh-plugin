@@ -3287,6 +3287,7 @@ dsh plugin --profile web add dshmarket
 - [Hua1Q1nG/dsh-prompt-self](https://github.com/Hua1Q1nG/dsh-prompt-self) — 按学习到的 Prompt 画像改写每个请求，并自动更新习惯清单、防幻觉规则与学习记录。
 - [hzh5021/dsh-memory-watch](https://github.com/hzh5021/dsh-memory-watch) — 压缩之前先落盘：会话压力到线时先递一句话；另给长期账本做确定性滚动——最旧的几节搬进档案、原处留标题加至多三行要点，不调模型、不猜内容。账本滚动须配置 home 才启用。
 - [hzh5021/dsh-wakeup](https://github.com/hzh5021/dsh-wakeup) — 起床包：每开一段新对话，赶在人开口之前把家读一遍注入会话——身份、规矩、错题、日记和账；家还是可写的，对话里认下的东西当场写回去，人设由它自己改。家目录不存在时什么都不做（默认为用户主目录下的 dsh-home，或在配置里填 home）。
+- [i11ustriouS/dsh-mnemosyne](https://github.com/i11ustriouS/dsh-mnemosyne) — 给 DeepSeek Harness 的分层长期记忆：每轮只注入「人设框架 + 相关记忆索引」，原文留在磁盘按需展开，不把整个库塞进上下文。事实层按槽位做冲突消解，改口后旧值自动失效；人设框架由模型从记忆里自行归纳，带三道防污染闸门（拒收开发流水、拦截自身注入的回流、同一件事按共享实词归并）。记忆周期性固化——合并近似重复、把大话题压成摘要、归档低价值旧条目，全程只打标签不删原文；追加式存储也会就地压缩（实测 4.7 MB → 355 KB）。零第三方依赖，无构建步骤。⚠️ 注意：每轮注入会不可避免地降低缓存命中率，请勿在工作场景使用。
 - [IAMLieutenant/dsh-tool-user-memory](https://github.com/IAMLieutenant/dsh-tool-user-memory) — 面向 DSH 的本地 Markdown 用户与项目记忆：置顶偏好、关键词检索、软失效、历史归档，以及带预览、备份与回滚的 JSON 迁移。
 - [ICCuse/dsh-file-memory](https://github.com/ICCuse/dsh-file-memory) — 文件型工作记忆：memorize/recall 把关键前提逐字保存在会话笔记文件，无损挺过上下文压缩。
 - [ICCuse/dsh-knowledge](https://github.com/ICCuse/dsh-knowledge) — 全局知识库桥：kb_add/kb_search/kb_show/kb_timeline 读写与 Codex 共享的 D:\knowledge（格式逐字节兼容）。
