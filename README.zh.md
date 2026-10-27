@@ -1972,7 +1972,7 @@ dsh plugin --profile web add dshmarket
 - [Angel2518975237/deepseek-harness-hello-kitty-suite](https://github.com/Angel2518975237/deepseek-harness-hello-kitty-suite) — DSH Web 的 Hello Kitty 风格任务完成与待回答提醒插件，附带可选的粉色明暗双主题 Skin Center v2 皮肤及本地安装脚本。
 - [ArimaKana-Akane/dsh-wallpaper-position](https://github.com/ArimaKana-Akane/dsh-wallpaper-position) — dsh-dream-skin 的壁纸位移插件：在设置里按像素微调当前壁纸的 X 与 Y 偏移，图片、URL、渐变三类壁纸各自记忆。
 - [ash-qw/dsh-theme-prts](https://github.com/ash-qw/dsh-theme-prts) — 面向 DSH Web 的非官方明日方舟 P.R.T.S. 风格界面主题，提供外观预设、辅助功能与会话导航。
-- [AssassinVIX/fairy-zzz-plugin](https://github.com/AssassinVIX/fairy-zzz-plugin) — DSH Web 界面的 H.D.D 皮肤：整屏开机动画、带待机/思考/完成状态的眼徽、按时段问候，以及可选的本地 GPT-SoVITS 朗读。
+- [AssassinVIX/fairy-zzz-plugin](https://github.com/AssassinVIX/fairy-zzz-plugin) — DSH Web 界面的 H.D.D 皮肤：带音效的整屏开机动画、可拖到屏幕任意位置的动态眼徽（待机/思考/完成）、按时段问候、Fairy 模式预设，以及可选的本地 GPT-SoVITS 朗读。
 - [Au1314/dsh-style-hub](https://github.com/Au1314/dsh-style-hub) — DSH Web GUI 主题工坊：可切换预设风格、强调色与面板透明度微调、宿主壁纸首帧绘制；wallpaper-engine 玻璃色把浅色主题洗灰时一键改为白色玻璃。
 - [AvalonskyAfar/MahoutsukaiNoYoru-DSH-Skin#skin](https://github.com/AvalonskyAfar/MahoutsukaiNoYoru-DSH-Skin/tree/master/skin) — 《魔法使之夜》(Witch on the Holy Night) 风格的 DeepSeek Harness Web UI 整屏皮肤：原作式菜单、三角色与人格 skill、昼夜两套曲单、片尾演出。仓库自身不含素材——驱动它需要 380 个文件、263 MiB（立绘 136、UI 构件 208、背景 13、音频 23），须从你自己拥有的原著副本中还原，在此之前界面基本是空的。其中 23 个音频文件切掉 64 字节头就是合法 OGG；357 张图像是私有 .mzp/.cbg 格式，仓库附逐文件映射指南，给出两条路线，其中一条要你自备解码器。
 - [Ayelsh/dsh-glass-theme](https://github.com/Ayelsh/dsh-glass-theme) — Apple Liquid Glass 皮肤：重写 Harness 的整套设计 token，并自带设置页面、带峰谷时段标记的分组模型选择器和合并后的用量面板。
@@ -6764,7 +6764,7 @@ dsh plugin --profile web add dshmarket
 - [dingchenhui0618-arch/dsh-warden](https://github.com/dingchenhui0618-arch/dsh-warden) — 工具调用的对抗式审查门。它挂在 `tools/pre-execute` 上：先用本地正则零延迟筛破坏性命令（`rm -rf`、`git push --force`、`git reset --hard`、`DROP TABLE`、`format`、写盘）和敏感路径（`.env`、`id_rsa`、`.ssh`、`.git/`、`$DSH_HOME`），只有命中才升级给一次审查模型调用，返回 allow / deny。普通读取与普通写入完全不进这条路径，日常工作没有额外延迟；每次判定都在 Web GUI 里实时显示。
 - [DingZhiQi5596/dsh-plugin-guard](https://github.com/DingZhiQi5596/dsh-plugin-guard) — DSH Desktop 插件安全防护：崩溃后自我修复 + 8 项核心安全检查（另有 2 项可选：深度组合校验、业务冒烟），写完插件自动提示。非商业源可用。
 - [DNAlec/dsh-auto-approve](https://github.com/DNAlec/dsh-auto-approve) — 自动审批 / 自动审核需要审批的工具调用：先用关键词分桶做零上下文红线匹配，再交由审核模型判类别与风险等级， 按命中行与等级那一格决定自动允许、自动拒绝或转人工；判定没跑成固定转人工，自动拒绝会把原因回传给模型。
-- [drscrewdriver/dsh-perm-gate](https://github.com/drscrewdriver/dsh-perm-gate) — P0–P4 确定性优先权限门控，含 Permissive 档位、学习沉淀与审批历史 UI；凭据/受保护路径硬拒绝，内部只读工具自动放行。
+- [drscrewdriver/dsh-perm-gate](https://github.com/drscrewdriver/dsh-perm-gate) — 已追加 cc-safety-net 风格的机械安全网规则，同时支持无模型、有模型辅助方式的安全审查，模式为自动审查、机械直通等。P0–P4 确定性优先权限门控，含 Permissive 档位、学习沉淀与审批历史 UI；凭据/受保护路径硬拒绝，内部只读工具自动放行。
 - [DWJZ/dsh-allow](https://github.com/DWJZ/dsh-allow) — 按路径与能力（read / write / create / delete / execute）授予 shell 调用的文件权限，而不是按命令名判断。命令行的文件效果由解析得出，缺哪个能力就出审批卡片而不是一律拒绝，同一套规则还会编译成进程、它的子进程、以及命令行根本没露出来的代码共同运行其下的 macOS Seatbelt profile。会话里的「审批」标签页把审计日志读回来，显示每次判定是规则、自动复核还是人拍的板。
 - [elegant01/dsh-honey-guard](https://github.com/elegant01/dsh-honey-guard) — 在密钥离开本机前，将其确定性地替换为结构合法的蜜罐假值（OpenAI、AWS、GitHub、PEM、Bearer 模式）；支持手动标记检测器认不出的值、用户可见的显式还原、蜜罐跨会话出现时的金丝雀告警，以及可选的 JSONL 替换计数日志（只记来源与类别计数，绝不记录真实值）。
 - [Eligahyu/dsh-sentinel-scanner](https://github.com/Eligahyu/dsh-sentinel-scanner) — DSH 插件安全扫描器：只读静态审计（执行、凭据、外传、混淆、安装脚本、bundle 清单），输出 0-100 风险分。
