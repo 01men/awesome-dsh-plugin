@@ -6945,6 +6945,7 @@ dsh plugin --profile web add dshmarket
 - [GooDAnDReaDY/dsh-lanmode](https://github.com/GooDAnDReaDY/dsh-lanmode) — 为 DeepSeek Harness 网页 UI 提供局域网与反向代理访问：在非 localhost 页面返回设置服务，补齐浏览器在纯 HTTP 下限制的 Web API，并可自行开启监听端口。
 - [GooDAnDReaDY/dsh-remote-workspace](https://github.com/GooDAnDReaDY/dsh-remote-workspace) — 支持冲突感知镜像同步、端口转发和原生 Web UI 的 SSH/SFTP 远程工作区。
 - [guzhou079-arch/dsh-plugin-android-vscreen](https://github.com/guzhou079-arch/dsh-plugin-android-vscreen) — 在虚拟显示器上启动安卓应用，用读屏、点击与滑动驱动它们，主屏不受影响。
+- [heavenJiang/dsh-switchboard](https://github.com/heavenJiang/dsh-switchboard) — 在 Telegram 和飞书中指挥 DeepSeek Harness：每轮一条实时进度消息，按钮审批与提问，收发文件和语音，断线和重启不丢消息，飞书扫码接入，按人设置权限。
 - [Hongjun1-RGB/dsh-phone-access](https://github.com/Hongjun1-RGB/dsh-phone-access) — 在 DSH 界面里加一个开关，经由内嵌的 loopback 反向代理与 Cloudflare 快速隧道把当前会话开放给手机浏览器，并把每次的新隧道地址推送到微信。
 - [hoshino114/dsh-server-box](https://github.com/hoshino114/dsh-server-box) — DSH 服务器面板：每台主机展示在线状态、CPU/内存/磁盘/网速与趋势图，点卡片进入 xterm.js 终端并支持 SFTP 上传下载；提供 server_box_hosts、server_box_exec、server_box_upload、server_box_download 对话工具，可导入 ~/.ssh/config，挂载为右侧栏页签或独立抽屉。
 - [huanlanmie/dsh-mobile-access](https://github.com/huanlanmie/dsh-mobile-access) — 受 PIN 保护的 DeepSeek Harness 移动端对话界面，在独立端口上通过局域网或自备隧道访问。
