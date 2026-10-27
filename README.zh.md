@@ -5542,7 +5542,7 @@ dsh plugin --profile web add dshmarket
 - [maximehu97/dsh-meeting](https://github.com/maximehu97/dsh-meeting) — 局域网多智能体会议协商：每人一个助理，助理通过 mDNS 互相发现，用 A2A 报文协商排会、周末团建和奶茶投票。对外只给忙闲不说原因，占用本人保护的时段前先问本人。DSH 侧栏自带手机样式页面和 13 人示例公司。无鉴权，仅限可信局域网。
 - [Meltllsy/dsh-todo-reminder](https://github.com/Meltllsy/dsh-todo-reminder) — 全局个人待办（与任何会话无关）：侧边栏面板 + 贴边待办条（悬停探出、快到点自动弹开），到期桌面通知与自定义音效。
 - [Miaotofu01/Study-Mate](https://github.com/Miaotofu01/Study-Mate) — 你的AI学习搭档：定计划、讲知识、做项目，学透一门科目。
-- [micellince/dsh-long-novel-workbench](https://github.com/micellince/dsh-long-novel-workbench) — 长篇中文小说工作台（DSH 插件），围绕「读—批注—审—改」：正文页优先的连续阅读与页内编辑、读者批注、四路审阅（逻辑·注意力·AI 味·读者）、段落级提案，以及全文动作 run；配合注意力设计、账本与世界地图。
+- [micellince/dsh-long-novel-workbench](https://github.com/micellince/dsh-long-novel-workbench) — 装在 DeepSeek Harness 里的长篇中文小说工作台：正文页直接阅读、编辑和批注；AI 找问题并写好修改稿，你采纳后正文才会变。人物、事实、伏笔的账本加世界地图，让长篇不前后打架；还能让 AI 续写、扩写或改写整章。
 - [MichaelShii/dsh-plugin-teamflow](https://github.com/MichaelShii/dsh-plugin-teamflow) — 把一句话需求变成可验收的交付。TeamFlow 跑一条多阶段流水线——分诊、PRD、设计、技术方案、并行开发、带打回重修的 QA、验收——并给模型 12 个 `teamflow_*` 工具，以及带实时流水线图与 backlog 看板的工作台。每个需求一个专属目录，收着 PRD、设计、技术方案、QA 报告与验收记录。
 - [MichengAI/dsh-automation](https://github.com/MichengAI/dsh-automation) — 在独立会话里按计划执行编码任务，可在设置页或对话里管理。
 - [Midnight-1991/dsh-project-supervisor](https://github.com/Midnight-1991/dsh-project-supervisor) — 测试中：DSH 项目主管——常驻规则 + 「主管」面板（三开关、派发模式），把目标拆成并行对话框，做工程底线自检、新项目需求追问与零基础保护。常驻规则由仓库的 kit 安装器另行写入工作区，是独立的可选步骤。
