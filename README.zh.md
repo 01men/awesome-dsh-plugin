@@ -496,8 +496,8 @@ dsh plugin --profile web add dshmarket
 - [faxble/dsh-model-picker](https://github.com/faxble/dsh-model-picker) — 模型速选器：在模型下拉框左侧添加按钮，弹出全量模型选择窗口（提供商分组、实时搜索、提供商筛选、读取用户配置的真实能力标签、推理徽章、最近使用与推理档位选择器），选中后立即回写原生下拉框并生效。
 - [Fayelin12/dsh-office](https://github.com/Fayelin12/dsh-office) — 办公室工作区/会话仪表盘：悬浮 6 列精灵面板，可视化工作区、会话、token 用量与子代理，并提供 Agent Mail 与办公日志页签。飞书相关视图（消息流、会议日程、妙记逐字稿）另需自行安装并授权 `@larksuite/cli`。
 - [FeatherHunter/dsh-im-companion](https://github.com/FeatherHunter/dsh-im-companion) — dsh-im辅助插件：创造助理/家的概念，把飞书/微信/QQ等机器人收进DSH工作区，并提供更多强大的扩展功能。增强DSH原生会话状态:哪些在执行任务、哪些在等你回复、哪些有异常。感谢使用🌹。
-- [FeatherHunter/dsh-prompt](https://github.com/FeatherHunter/dsh-prompt) — 将一切重复、烦躁的模板化提示词保存下来，只需要鼠标点击就注入对话框，节省您的精力损耗🌹
-- [FeatherHunter/ilife#dsh-life-pack](https://github.com/FeatherHunter/ilife/tree/master/packages/plugin-manager) — 爱生活-覆盖你居家生活的方方面面。
+- [FeatherHunter/dsh-prompt](https://github.com/FeatherHunter/dsh-prompt) — 🌹将一切重复、烦躁的模板化提示词保存下来，只需要鼠标点击就注入对话框，节省您的精力损耗
+- [FeatherHunter/ilife#dsh-life-pack](https://github.com/FeatherHunter/ilife/tree/master/packages/plugin-manager) — ⚠️内测中勿下载⚠️爱生活-覆盖你居家生活的方方面面。
 - [feiyaochang123-sys/dsh-starred-turns](https://github.com/feiyaochang123-sys/dsh-starred-turns) — 在对话右侧轮次导航条上右键收藏某一轮：该短横线变为导航条满宽并换成强调色，便于之后一眼找到，再次右键取消。收藏按对话隔离（取当前选中会话 id）并持久保存，刷新后仍在；不引起布局跳动，导航条保持固定间距。
 - [Feizhaiqianqian/dsh-email-board](https://github.com/Feizhaiqianqian/dsh-email-board) — 只读的 DSH 未读邮件看板——把 dsh-email 里配置的各账号未读邮件按账号列成右侧栏卡片（发件人、主题、时间），按需手动刷新。
 - [FeiZhuNiU-INFJA/dsh-stock-ticker](https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker) — 一个悬浮的半透明行情小窗，实时显示上证指数、创业板指、科创50 与恒生科技的当前点位与涨跌幅。
@@ -1217,6 +1217,7 @@ dsh plugin --profile web add dshmarket
 - [TheGoodMorty/chat-pace](https://github.com/TheGoodMorty/chat-pace) — 可配置的聊天自动滚动——按节定速阅读（停顿时长与篇幅成比例）、平滑跟随、单步与固定模式，支持快捷键与按会话记忆打开位置。
 - [ThinkofRain1213/dsh-smooth-cursor-patched](https://github.com/ThinkofRain1213/dsh-smooth-cursor-patched) — DSH Web 输入框的彗星光标：发光拖尾随文字位置平滑滑动，可配置强调色、粗细、拖尾，并在静止 500ms 后呼吸。覆盖 ask-question 交互卡片的输入框，并修复空输入框或首次聚焦时光标消失、正向拖选不跟随鼠标、软换行按上一行测量、长内容滚动时光标绘制到输入框之外等问题。Lacquervii/smooth-cursor 的维护分支。
 - [thomasvvugt/dsh-wide-stats-footer](https://github.com/thomasvvugt/dsh-wide-stats-footer) — 解除输入框统计行的宽度限制：较长的轮次与 token 统计行横跨输入框全宽居中显示，不再以省略号截断。
+- [Thunderunruly/session-kanban](https://github.com/Thunderunruly/session-kanban) — 在左侧栏提供会话看板：集中展示每个会话的当前工作、待办与进度，附带可搜索的概览热力图，点击卡片即可跳回会话。
 - [Thyxqz/dsh-plugin-quick-invoke](https://github.com/Thyxqz/dsh-plugin-quick-invoke) — 在输入框旁增加已安装插件选择器：把插件名拖到提示词的落点插入，双击入口在右侧边栏打开可拖动插件栏，并可在设置中选择显示哪些插件、填写备注。
 - [tianlaoban/DSH-Chinese-Talk](https://github.com/tianlaoban/DSH-Chinese-Talk) — 让所有会话的思考与回复都说中文：简洁、略沾文言、说人话，专有名词保留英文原形；并附一条「只答所问、不主动跑命令、动手前先提醒」的交互偏好。实现只是一条全局 system-prompt 段落（order 10）：没有界面、没有二进制、不联网。切到极简预设时不生效——那个预设会把整个 prompt 换成它自己的人设。
 - [TianYa-DAO/dsh-wallpaper-engine#plugin](https://github.com/TianYa-DAO/dsh-wallpaper-engine/tree/main/packages/dsh-wallpaper-engine) — 面向 DSH 桌面壳的 Wallpaper Engine 本地库、背景层、原生 Scene 面板与桌面模式控件。
@@ -2014,7 +2015,7 @@ dsh plugin --profile web add dshmarket
 - [ethanchen669/dsh-plugin-fly-skins](https://github.com/ethanchen669/dsh-plugin-fly-skins) — DeepSeek Harness Web UI 的四套配色：实心 / 玻璃 / 体积 / 霓虹，各含明暗两半。霓虹版在整窗场景光场上叠 46px 电路网格，并在模型运行时让一条激光扫描线扫过对话列（停止即消失）；侧栏工作区名为青色 HUD 标牌，界面拉丁字体内置 MiSans，侧栏字号固定 125% 且不随对话区缩放。
 - [exoticknight/dsh-theme-eink-retro](https://github.com/exoticknight/dsh-theme-eink-retro) — DeepSeek Harness Web UI 纸墨风客户端主题，提供保留语义状态色的平衡模式和黑白沉浸模式。
 - [FAVKTOXIC/dsh-theme-liquid-glass](https://github.com/FAVKTOXIC/dsh-theme-liquid-glass) — 适用于 DeepSeek Harness 的液态玻璃主题：输入卡片、气泡、队列坞、菜单与侧边栏带 SVG 边缘折射；半透明 token 覆盖，色调、不透明度、模糊与折射强度都有实时滑块；壁纸可自定义或使用内置动态壁纸；桌面版另把会话顶栏并入系统标题栏，并补了全屏按钮。
-- [FeatherHunter/dsh-opencode-palette](https://github.com/FeatherHunter/dsh-opencode-palette) — 将opencode的38款主题搬进DSH，明暗兼收：东京之夜沉静、卡布奇诺轻柔、禅燃护眼；另备25款主题胶囊，原神、原神·夜航、库洛米、哆啦A梦、HelloKitty、哈利波特、赛博朋克2077、龙珠、火影忍者、火影忍者·暗部、海贼王、宝可梦、美少女战士、星球大战、变形金刚、奥特曼、塞尔达传说、超级马里奥、超级马里奥·夜行、新世纪福音战士、新世纪福音战士·晴空、乐高、漫威、DC、迪士尼，各有其魂；每款主题都可逐色细改，打造属于您的专属主题。
+- [FeatherHunter/dsh-opencode-palette](https://github.com/FeatherHunter/dsh-opencode-palette) — 🌹将opencode的38款主题搬进DSH，明暗兼收：东京之夜沉静、卡布奇诺轻柔、禅燃护眼；另备25款主题胶囊，原神、原神·夜航、库洛米、哆啦A梦、HelloKitty、哈利波特、赛博朋克2077、龙珠、火影忍者、火影忍者·暗部、海贼王、宝可梦、美少女战士、星球大战、变形金刚、奥特曼、塞尔达传说、超级马里奥、超级马里奥·夜行、新世纪福音战士、新世纪福音战士·晴空、乐高、漫威、DC、迪士尼，各有其魂；每款主题都可逐色细改，打造属于您的专属主题。
 - [FelixJiashengFu/dsh-preview-theme](https://github.com/FelixJiashengFu/dsh-preview-theme) — 为 DSH 内置侧边栏的 PDF、转为 PDF 的 Office 文档及表格预览提供配色预设与自定义纸张底色，支持深色模式亮度调节和本地保存偏好；只改变显示，不修改文件。
 - [feng78-boop/dsh-thirteen-bg](https://github.com/feng78-boop/dsh-thirteen-bg) — DeepSeek Harness Web 界面动态壁纸插件：支持 GIF / 动图 WebP / APNG 与静态 PNG/JPG 图片，以及 MP4 / WebM 视频背景，格式自动识别，自带压暗与亮度调节，可让界面色调跟随背景。
 - [fengb3/dsh-theme-macintosh](https://github.com/fengb3/dsh-theme-macintosh) — 经典麦金塔 System 7 像素风主题：桌面网点画布、Finder 侧栏、黑白按钮与弹窗，深浅色随官方外观切换。
@@ -3328,6 +3329,7 @@ dsh plugin --profile web add dshmarket
 - [Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet) — 失败恢复记忆库：从真实工程会话中搜索和记录失败恢复教训，支持 BM25 + 语义 RAG 检索和知识库管理。
 - [imaused/dsh-kb-lite](https://github.com/imaused/dsh-kb-lite) — 本地知识库：五个工具，导入 Markdown、文本与 PDF，用 BM25 或 BM25 + 本地向量的混合检索查找，回答时带原文引用。离线运行，不需要数据库服务。需 Node.js 18+ 与 Python 3.9+；导入 PDF 需 pymupdf。
 - [isheng-eqi/dsh-hermes-memory](https://github.com/isheng-eqi/dsh-hermes-memory) — DSH 上 hermes-agent 记忆机制的忠实移植（MEMORY.md / USER.md）：有界双记忆库（2200/1375 字符）、单个 memory 工具（add/replace/remove/batch 全有或全无）、每会话冻结快照注入与 nudge 提醒、DSH 原生 JSON 存储——零外部依赖、零 LLM 成本。
+- [IStarFoxI/dsh-memory-calendar](https://github.com/IStarFoxI/dsh-memory-calendar) — 本地优先的 DSH 长期记忆插件：文本包、按需检索、可回原始事件、多大脑与工作区边界。
 - [itr-del/dsh-cue-bank](https://github.com/itr-del/dsh-cue-bank) — 跨会话「触点记忆库」插件：自动从每轮对话提取任务/会话级触点与用户惯用词，存入全局持久记忆库；检测到话题切换时重新注入相关历史记忆（关键词或向量匹配）。
 - [iwtown/dsh-llm-wiki](https://github.com/iwtown/dsh-llm-wiki) — Karpathy LLM Wiki 模式的 DSH 知识库系统：wiki-write/wiki-search 技能引导模型写读 Obsidian wiki，零依赖管线（lint/索引/mnemon 记忆体同步/质量闭环），极简生命周期插件注入守则与知识预览，Ollama 兼容代理接 SiliconFlow 语义召回。
 - [Jackbessaliuz/dsh-memory-semantic](https://github.com/Jackbessaliuz/dsh-memory-semantic) — meow-memory 的只读语义检索增强层：为本机记忆条目与对话轮次建 bge-m3 向量索引，提供记忆图谱与逐字原文召回，绝不回写记忆库；需与 meow-memory 搭配使用。
@@ -4233,7 +4235,7 @@ dsh plugin --profile web add dshmarket
 - [SiriLee/dsh-edit-approval](https://github.com/SiriLee/dsh-edit-approval) — 每次 edit 与 bash 调用前都会询问：编辑前展示红绿行级 diff，命令前展示描述与命令面板——同意一次或拒绝，两个 gate 各带独立总开关（Settings → General）。
 - [siruignaw-sys/dsh-tool-bandit-search](https://github.com/siruignaw-sys/dsh-tool-bandit-search) — 使用上下文赌博机算法（Thompson 采样）学习何时使用快速搜索、何时使用深度搜索的 `search` 工具。 
 - [SixId666/dsh-math-plugin#dsh-math](https://github.com/SixId666/dsh-math-plugin/tree/main/plugins/dsh-math) — SymPy 驱动的考研数学一精确计算与独立验证：14 个工具、214 个算子，默认返回精确符号解，并由独立机制复核每个结果（需本机 Python 3.10+ 及 sympy、mpmath）。
-- [sixtysevenlf/dsh-blender-plugin](https://github.com/sixtysevenlf/dsh-blender-plugin) — 让 DSH agent 通过直连 TCP 通道驱动本地 Blender，提供 16 个工具：视口帧、自定义视角渲染、Python 执行、无头与作业卸载、事务回滚，以及 28 个 family / 186 个 op 的规划层。
+- [sixtysevenlf/dsh-blender-plugin](https://github.com/sixtysevenlf/dsh-blender-plugin) — 让 DSH agent 通过直连 TCP 通道驱动本地 Blender，提供 15 个工具：视口帧、自定义视角渲染、Python 执行、无头与作业卸载、事务回滚，以及 34 个 family / 228 个 op 的规划层。
 - [sjdhdbbf/dsh-drawai-vectorizer](https://github.com/sjdhdbbf/dsh-drawai-vectorizer) — fork 自 fourzkw/dsh-drawai，保留 .drawio 可编辑画布与两个模型工具，并在原版描边之外新增第二套矢量化引擎：分层颜色聚类 + 贝塞尔样条拟合 + 每通道色彩精度，绘制任务可选三档保真度（同一 1920×1080 帧实测约 18 / 38 / 46 dB PSNR（上游引擎同帧约 26 dB）），并行度提升为逻辑核心数的一半（不再封顶 4）。原版描边仍是默认引擎，也是整段视频的正确选择——新引擎在视频上产物会大出数百倍。
 - [sjh9714/dsh-retry-guard](https://github.com/sjh9714/dsh-retry-guard) — 监视连续相同的工具失败，可在下一个模型步之前选择暂停；保留原始结果与成功的重复调用，并在 DSH Web 里出一份会话内报告。
 - [Smalldy/godot-bridge](https://github.com/Smalldy/godot-bridge) — DSH↔Godot 引擎运行时控制桥：通过游戏内置 TCP 交互服务器启动并操控运行中的 Godot 4.x——16 个工具（约 130 条运行时命令、场景/UI 检查、GDScript eval、输入模拟、截图、headless 静态操作、项目编辑、导出、脚本编译检查、引擎路径设置），替代 godot-mcp。
@@ -5175,7 +5177,7 @@ dsh plugin --profile web add dshmarket
 - [fanghedeng/dsh-skill-gogo](https://github.com/fanghedeng/dsh-skill-gogo) — 技能面板：按来源浏览 skill，用彩色分类文件夹归类，预览文件，导出 zip、复制到项目、在磁盘上重命名，并在输入区菜单里插入 /skill 调用。
 - [FantastyQAQ/dsh-doxygen](https://github.com/FantastyQAQ/dsh-doxygen) — 为 C/C++（含 Qt）源码生成与维护 Doxygen 注释的工作流：文件头、函数、模块分组、行尾与简短注释，并扫描出签名指纹已过期、需要更新的注释。运行时需要 Python 3.10+ 并 `pip install tree-sitter tree-sitter-cpp`。
 - [FeatherHunter/dsh-chinese-skill-patch](https://github.com/FeatherHunter/dsh-chinese-skill-patch) — 中文技能名零改造直用：输入 /私 自动补全 私家大厨。为 DSH 打上技能发现、斜杠手势与 skill 工具补丁，Unicode 技能名（私家大厨/卡路里/作息管家…）补全、直达、加载全可用；不改 SKILL.md、零配置；运行时改动随卸载恢复，但写进 DSH 三个依赖包磁盘文件里的正则补丁会保留到下次 DSH 升级覆盖为止。
-- [FeatherHunter/dsh-mattpocock-skills-deck](https://github.com/FeatherHunter/dsh-mattpocock-skills-deck) — 安装即自带mattpocock/skills v1.3.1的27个工程与效率技能，无需手动装技能。400亿token打造本插件，在原始技能之上提供10倍的开发效率，也能帮助新手更快上手该技能套件。全力支持GitHub issue；Markdown为预览版；GitLab暂不支持。感谢您的使用和支持💗
+- [FeatherHunter/dsh-mattpocock-skills-deck](https://github.com/FeatherHunter/dsh-mattpocock-skills-deck) — 🌹安装即自带mattpocock/skills v1.3.1的27个工程与效率技能，无需手动装技能。400亿token打造本插件，在原始技能之上提供10倍的开发效率，也能帮助新手更快上手该技能套件。全力支持GitHub issue；Markdown为预览版；GitLab暂不支持。感谢您的使用和支持💗
 - [ffseika0304/code-ownership-audit](https://github.com/ffseika0304/code-ownership-audit) — 判定 Python 代码是原创还是演绎作品：给出与上游最长相同表达片段、逐条豁免依据和风险清单。纯标准库 `ast` 分析——离线运行，不调用模型。
 - [Finderchangchang/brewreel#deepseek-harness](https://github.com/Finderchangchang/brewreel/tree/main/integrations/deepseek-harness) — 从分镜 JSON 生成 1080×1920 竖版宣传片，含 7 个工具（doctor、setup、catalog、guide、validate、render、verify），用 Remotion 本地渲染。
 - [fishzjp/qa-skills](https://github.com/fishzjp/qa-skills) — 软件测试全流程技能包：10 个技能覆盖需求分析、测试策略、用例编写与审查、E2E（Playwright）与 API 自动化、探索式测试、回归范围与 Bug 分析，共享知识库提供格式规范、风险模型与 Schema 校验脚本。
