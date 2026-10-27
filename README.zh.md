@@ -4175,6 +4175,7 @@ dsh plugin --profile web add dshmarket
 - [ShadowMiner/hermes-dsh-bridge#dsh-hermes-link](https://github.com/ShadowMiner/hermes-dsh-bridge/tree/main/packages/dsh-hermes-link) — Hermes Agent 与 DeepSeek Harness 的双向桥：派单任务以 UI 可见会话出现在 DSH 侧边栏，支持会话镜像与 10 个 DSH→Hermes 工具。
 - [Shang-ZZ/dsh-computer-use](https://github.com/Shang-ZZ/dsh-computer-use) — 为 DeepSeek Harness 提供 computer use：js 与 js_reset 工具通过本机安装的 ChatGPT 应用读取窗口、点击、输入与截屏（macOS）。仅 Apple Silicon macOS，需已装 ChatGPT 桌面版。
 - [Shang-ZZ/dsh-diagram-design](https://github.com/Shang-ZZ/dsh-diagram-design) — 将 diagram-design 图表导出为 SVG/PNG，提取 draw.io/Mermaid/Excalidraw 结构，校验输出，并浏览 45 种图表类型。基于 cathrynlavery/diagram-design（MIT），需 python3，导出 PNG 还需 Playwright。
+- [shangshuo/dsh-sync](https://github.com/shangshuo/dsh-sync) — 把 DSH 配置档案（插件、设置、技能、界面偏好与可选的 MCP 连接器或 API Key）加密定时备份到 S3 兼容存储、WebDAV 或本地目录，恢复时自动重装缺失的插件。
 - [shanhai-city-states/kaipu-dsh-plugin-release#plugin-wisdom](https://github.com/shanhai-city-states/kaipu-dsh-plugin-release/tree/main/packages/plugin-wisdom) — 山海·开铺 智囊团插件：配套侧边面板，展示内置谋士团队与席位状态。需与 kaipu-platform 一起安装——灯位数据由开铺插件经网关提供，单独安装会如实显示「通道未就绪」。可摘除：卸掉它，开铺仍完整可用。
 - [sheilacraig/dsh-rea-mcp](https://github.com/sheilacraig/dsh-rea-mcp) — 纯配置型 DeepSeek Harness 插件，用本体自带的 MCP 客户端桥，经 stdio 连接 morluto/rea，让 agent 从应用行为一路逆向到底层原生二进制。
 - [sheilacraig/dsh-windows-mcp-lite](https://github.com/sheilacraig/dsh-windows-mcp-lite) — 纯配置型 DeepSeek Harness 插件，用本体自带的 MCP 客户端桥接 CursorTouch/Windows-MCP，默认排除 PowerShell、FileSystem、Registry、Process、Scrape（上游 0.8.8 共 21 个工具，保留 16 个）。需要 uv 在 PATH 上。
