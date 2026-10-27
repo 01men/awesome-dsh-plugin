@@ -2484,6 +2484,7 @@ dsh plugin --profile web add dshmarket
 - [randomix777/dsh-opencode-zen](https://github.com/randomix777/dsh-opencode-zen) — 把 OpenCode Zen 免费模型接入 DSH：8 个实时发现的免费模型，零配置无需 API key；内置持久化额度检测器，自动追踪 429 限流并显示重置倒计时。
 - [randomix777/dsh-plugin-subs](https://github.com/randomix777/dsh-plugin-subs) — 支持 Claude、Codex、Grok、Antigravity、OpenRouter、Agnes AI、Qwen、星火、文心一言共 9 个订阅账号的 OAuth 登录，零配置直连，内置用量看板。
 - [Rczlin/dsh-better-reasoning](https://github.com/Rczlin/dsh-better-reasoning) — 让 pi-ai 路由的模型无需手写 settings 即可调节思考等级：按 已声明 → models.dev → 7 档兜底 的顺序回退，并把 composer 模型按钮换成 Codex 式竖向选择器。
+- [recyvan/dsh-model-proxy](https://github.com/recyvan/dsh-model-proxy) — 把 DeepSeek Harness 的模型 API 请求送进系统代理、自定义代理或 SOCKS 代理，清单之外的请求一律直连。
 - [dsh-zed-provider](https://github.com/RGarrido03/dsh-zed-provider) — 在 DSH 中使用 Zed AI 托管模型。
 - [ringoage/dsh-subagent-model-picker](https://github.com/ringoage/dsh-subagent-model-picker) — 主模型选择器旁的子代理模型选择器：按会话选择模型与思考程度，应用到所有进程内子代理。
 - [robbywang25/dsh-llm-mlx](https://github.com/robbywang25/dsh-llm-mlx) — 通过回环 OpenAI-compatible 提供方在 DeepSeek Harness 中使用本机 MLX-LM 或 MLX-VLM 模型，并可选由 DSH 托管模型服务进程。
