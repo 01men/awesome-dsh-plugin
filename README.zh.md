@@ -276,6 +276,7 @@ dsh plugin --profile web add dshmarket
 - [Asza-other/dsh-narrator](https://github.com/Asza-other/dsh-narrator) — 盯着回合里的长时间沉默：超过阈值就注入一条用户消息，让模型先用正文说清正在做什么、做到哪了再接着干，回合不中断。这段原文同步显示在输入框上方的左下角浮窗。静默阈值与两次汇报的最小间隔都在设置卡里按分钟调，提示词可整段替换，零运行时依赖。需 DSH 0.2.1+ 与 Node.js 18+。
 - [Audrey-cn/dsh-bot-codex-ui](https://github.com/Audrey-cn/dsh-bot-codex-ui) — DS Bot 与 Codex 风格侧栏的合一安装：一个包同时挂载两者并修复共存时的布局冲突（输入框对齐、侧栏底部、账户入口、对话宽度）。
 - [AumiSatori/dsh-ui-beautify](https://github.com/AumiSatori/dsh-ui-beautify) — 为 DSH 提供独立界面材质、覆盖侧栏、任务与 Artifact 卡片、自定义用户气泡、本机媒体与粒子背景、开屏动效和专注模式。
+- [awaYFawa/dsh-plugins-folders](https://github.com/awaYFawa/dsh-plugins-folders) — 给 DSH 插件页加文件夹：把已装插件分组、整组开关、批量移动并可撤销、跨分组搜索、长按拖动排序，卸载后按记录一键装回，还能一键重启 Harness。
 - [AWL-MC2/DSH-Plugin_awl](https://github.com/AWL-MC2/DSH-Plugin_awl) — 面向 DSH Web 的「壁纸感知」可读性修复：用 color-mix 把三个低对比次级文字 token 向主文字靠拢，并叠加可调强度的文字光晕；提供仅作用于会话 Markdown 的内容规则（链接加粗 / 常驻下划线 / 变色、标题与正文变色）、可调的彩虹描边与渐变填充标题特效、从插件目录或 DSH_HOME 加载的自定义字体，以及带 WCAG 对比度徽标的可拖动 WYSIWYG 预览窗。
 - [Awu12277/dsh-sleep-send](https://github.com/Awu12277/dsh-sleep-send) — 在输入框右侧提供「定时发送」按钮与配置面板，支持智能时段、自定义日期时间、多个定时任务并行，任务经 localStorage 持久化，刷新页面后自动恢复。
 - [ayahunter/dsh-trail#bundle](https://github.com/ayahunter/dsh-trail/tree/main/packages/bundle) — 把 Web GUI 的轨迹页签替换为新手友好的回合故事线：工具名通俗中文化，支持类别筛选与模糊搜索。
@@ -2221,6 +2222,7 @@ dsh plugin --profile web add dshmarket
 - [yzke/dsh-icon-theme](https://github.com/yzke/dsh-icon-theme) — 为 DSH 设置和侧边栏自动分配并支持自定义的 Fluent 风格图标，离线内置 SVG，默认保留插件原图标。
 - [zampie/sakura-afternoon-skin](https://github.com/zampie/sakura-afternoon-skin) — 樱色午后主题皮肤：浅色/深色各配一套柔和的樱色令牌配色，全屏飘落樱瓣与柔光晕（点击穿透），会话头部的樱瓣开关与「通用设置」里的皮肤总开关。
 - [ZaVang/dsh-diorama](https://github.com/ZaVang/dsh-diorama) — 角色皮肤舞台：雪乃·暖阳日常与隐秘年代志双主题，各带双角色立绘与表情贴纸；可视化装饰看板支持拖动/缩放/旋转/坐标精调/锚定切换/上传素材，装饰包（素材+布局）可导出分享、导入后自动打开看板继续调整。
+- [zdjmrq/dsh-shadertoy-skin](https://github.com/zdjmrq/dsh-shadertoy-skin) — 把 ShaderToy 作品作为 DeepSeek Harness 背景：WebGL2 播放器 + 背景库（含 5 个预设），可调界面不透明度、亮度、分辨率与帧率，支持画面循环与音乐播放设置，并能在设置页直接编辑当前着色器代码。
 - [zdt3476/dsh-simplify-theme](https://github.com/zdt3476/dsh-simplify-theme) — 给 DeepSeek Harness 的极简主题：去投影去毛玻璃、收紧圆角、中性化气泡与交互态；并附带一组界面增强——侧栏归档分页与实时筛选、与输入卡片对齐的模型/思考等级控件、按回合绘制的子代理委派图、按数值着色的缓存命中与上下文占用、以及每轮回答的耗时。
 - [Zeppeli777/dsh-stardew-skin](https://github.com/Zeppeli777/dsh-stardew-skin) — 星露谷物语主题·组件替换版：走 dsh 官方客户端主题机制，在完整保留的官方 React UI 上叠加奶油纸面 alias token 层、缝合像素字体与山谷壁纸。npm 包名 dsh-theme-stardew-valley。
 - [Zeppeli777/dsh-theme-stardew-fullskin](https://github.com/Zeppeli777/dsh-theme-stardew-fullskin) — 星露谷物语主题·整皮版：把 Web 前端整体换成自包含的像素农场界面——祝尼魔对话、农场选预设、任务日志 HUD、会话即游戏日的山谷日历（四季与天气粒子）、8-bit 音效与桌宠。npm 包名 dsh-theme-stardew-fullskin。
