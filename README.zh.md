@@ -4226,6 +4226,7 @@ dsh plugin --profile web add dshmarket
 - [Tianbuyu-wwx/DSH-FormatForge#dsh-formatforge](https://github.com/Tianbuyu-wwx/DSH-FormatForge/tree/main/packages/dsh-formatforge) — FormatForge：把 30+ 种文件格式（PDF、DOCX、PPTX、XLSX、EML、EPUB、TOML、压缩包）锻造成 AI 可读文本——网页拖拽入箱自动转换，提供 ff_translate/ff_formats/ff_result 工具与 CLI；扫描件回退本地 OCR 或交给会话模型增强。
 - [tianfangliu98-cpu/dsh-image-hub](https://github.com/tianfangliu98-cpu/dsh-image-hub) — 多 API 生图：Labnana、OpenAI、Gemini、Seedream、DashScope、xAI、智谱、ComfyUI 八种接口，支持多套配置、对话画廊与 Labnana 积分计量。
 - [tiantianlaolao/dsh-astock-research](https://github.com/tiantianlaolao/dsh-astock-research) — A股个股研究：搜股票、查任意区间公告、财报卡、估值画像与交易信号科普（约 5000 只、2011 年至今，公共只读数据服务），另有一个跳转外部交易推演产品的链接工具。
+- [tianxingdao/dsh-shell-switch](https://github.com/tianxingdao/dsh-shell-switch) — 让 bash 工具在本机设置里选定的 shell（Niubash、Git Bash、MSYS2、Cygwin 或 PATH 上的 bash.exe）中执行命令，不再改写为 PowerShell，并在 Windows 下隐藏 pwsh 工具。
 - [tianyao2003/dsh-find-ideas](https://github.com/tianyao2003/dsh-find-ideas) — GitHub 项目检索与解析工具：一句话输入开发想法，agent 在 GitHub 搜索相关项目，按相关性与 star 加权排序后返回一张结构化的卡片（包括各项目的更新时间、相关性分数、star数、加权后得分、使用的开发语言、一句话简介）。选择几个仓库后，它还能直接读取这些项目的 README、依赖清单、目录树和关键文件等，梳理它们的架构。让你在动手开发前，先“站在巨人的肩膀上”。
 - [TindalosKorone/dsh-cheatengine](https://github.com/TindalosKorone/dsh-cheatengine) — 让 DSH Agent 通过 Cheat Engine 进行动态内存调试：扫描、指针分析、断点与游戏内存修改。
 - [TINGOD2006/dsh-scratch-vault](https://github.com/TINGOD2006/dsh-scratch-vault) — 把操作腳本的寫入導出工作區、改放各 session 的暫存根，並把每一支收進工作區外的可檢視收納庫，讓工作區只留下真正的交付物。
