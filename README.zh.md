@@ -1937,6 +1937,7 @@ dsh plugin --profile web add dshmarket
 - [yoiizesdev-crypto/DSH-Balance-display](https://github.com/yoiizesdev-crypto/DSH-Balance-display) — 侧边栏底部实时显示 DeepSeek 账户余额徽章：数字滚轮动画、多币种支持、余额趋势图、按 Key 用量统计（含安装前历史回填），并支持 GitHub 版本自动检查。
 - [yokesky/dsh-usage-lens](https://github.com/yokesky/dsh-usage-lens) — DSH Web UI 用量统计面板：信息卡、280 天活跃热力图、按天 Token 趋势与模型用量双环饼图。
 - [Young4ever33/dsh-token-attention](https://github.com/Young4ever33/dsh-token-attention) — Token 注意力管理面板：按任务/日/周/月记录 token 消耗与费用（命中/未命中/输出/推理四桶），支持 DeepSeek 峰谷计价与任务类型识别，并给出换对话、写 hand-off、压缩上下文的建议。
+- [YQzhangsan/dsh-sidebar-usage](https://github.com/YQzhangsan/dsh-sidebar-usage) — 在窗口底部常驻显示 DeepSeek 用量与账号余额。
 - [yyb16yyb-hub/dsh-deepseek-usage](https://github.com/yyb16yyb-hub/dsh-deepseek-usage) — 实时 DeepSeek API 用量：账户余额与低余额告警（跨阈值浏览器通知）、请求/token 统计（全部/今日/近 60s，按模型与会话下钻）、估算花费——输入框下方统计条 + 设置页用量面板。
 - [YZz-S/dsh-billing-balance](https://github.com/YZz-S/dsh-billing-balance) — 在设置页、输入框下方读数条与可拖动悬浮按钮三处显示 DeepSeek 官方 API 余额与火山方舟 Coding/Agent Plan 套餐额度（5小时/周/月窗口及重置倒计时）。
 - [YZz-S/dsh-token-cost-meter](https://github.com/YZz-S/dsh-token-cost-meter) — 在输入框下方统计行实时显示当前会话累计 token 消耗与估算费用（人民币），价格从 DeepSeek 官方价格页动态获取。
@@ -4259,6 +4260,7 @@ dsh plugin --profile web add dshmarket
 - [shuxidemosheng/dsh-plan-mode-plus](https://github.com/shuxidemosheng/dsh-plan-mode-plus) — dsh 计划模式的 ZCode 式增强：模型可主动调用 enter_plan_mode 进入计划模式，计划期间写类工具在分发前被硬拦截，并注入「探索 → 设计 → 评审 → 退出」四阶段工作流提示词；复用官方 plan/mode 状态机与退出评审流，只做增量。
 - [shuxidemosheng/dsh-skill-compat-plus](https://github.com/shuxidemosheng/dsh-skill-compat-plus) — 技能兼容层：把 Claude Code / Codex / ZCode 的技能目录挂载为 dsh 的只读技能提供方——支持 frontmatter 字段映射、名称 slug 规范化与热重载。
 - [shuxidemosheng/dsh-tool-todo-plus](https://github.com/shuxidemosheng/dsh-tool-todo-plus) — 官方 todo_write 的增强 fork：任务项支持优先级标签、会话内完整清单渲染，并提供可拖动的会话内浮动任务面板（位置记忆 / 双击复位 / 当前动作显示）。
+- [Sieuno/dsh-native-collab](https://github.com/Sieuno/dsh-native-collab) — 为 DeepSeek Harness 增加 Team 与子代理协作工具：持久命名的 Team 成员与共享任务板，可按范围列出与等待子代理，并支持按对话快照、当前设置或全部可用模型选择子代理模型。
 - [SIMON-WORLD/dsh-eco-indicator](https://github.com/SIMON-WORLD/dsh-eco-indicator) — 世界银行开放数据经济指标查询：GDP、通胀、贸易、人口等，无需 API 密钥。
 - [SIMON-WORLD/dsh-journal-monitor](https://github.com/SIMON-WORLD/dsh-journal-monitor) — 经济学优先的期刊/工作论文监控插件：NBER RSS + arXiv 经济学（4 类目）+ 中文经管期刊（世界经济-玛格泰克平台，中国农村观察/财贸经济/中国人口科学/经济管理-ajcass 平台）抓取、关键词过滤、dry-run/Webhook 推送、去重持久化、定时简报（schedule_create 兼容）。
 - [SIMON-WORLD/dsh-toolkit#dsh-at-file](https://github.com/SIMON-WORLD/dsh-toolkit/tree/main/packages/dsh-at-file) — DSH 的 @ 文件引用工具：注册 at_file_read 工具，把工作区内文件内容注入会话，含目录穿越防护与 50KB 截断（MIT）。
