@@ -4475,6 +4475,7 @@ dsh plugin --profile web add dshmarket
 - [yxy050208/multisim-mcp#deepseek-harness](https://github.com/yxy050208/multisim-mcp/tree/main/integrations/deepseek-harness) — 将 DeepSeek Harness 连接到 Multisim MCP，用于生成电路、运行仿真、诊断与优化设计，并导出实验报告。
 - [yybukn/dsh-table-attach](https://github.com/yybukn/dsh-table-attach) — 把表格与文档（xlsx、csv、pdf、zip…）粘贴或拖拽进 DSH 输入框即可附加：文件会保存到会话工作区并插入 @引用。
 - [yyfabab1/dsh-gpt-image](https://github.com/yyfabab1/dsh-gpt-image) — 游戏素材生产流水线：出图、生视频与音频，把一段视频变成连贯的精灵动画，派生配色变体，适配引擎配置，装进项目并核对代码是否真的引用了。视频转精灵动画需 ffmpeg；出图/生视频需自备图像/视频 API Key（Agnes AI / OpenAI / fal）。
+- [YYK0402/dsh-siyuan-archive](https://github.com/YYK0402/dsh-siyuan-archive) — 把 DSH 对话产出归档到思源笔记：一次 siyuan_archive 调用按「<归档路径>/<年-月>/<类型>/<日期>_<时间>_<主题>_<内容>」写入并附元数据表，自动维护笔记本根的「索引与规范」索引文档；6 个 siyuan_* 宿主工具（列笔记本、全文检索、读文档、归档、删块、删文档）与 Web 设置页配置地址（含测试连接）、存宿主凭据库的 API token、归档目标与标题模板，以及按笔记本/文档的读写删权限（默认全拒、子级只能收紧）。
 - [YZz-S/dsh-bili-summary](https://github.com/YZz-S/dsh-bili-summary) — 提供 bili_summary 工具：B 站视频元数据、字幕时间轴与 sharp 切帧配图，内置错误处理与优雅降级。
 - [zdd3143/dsh-vision-click](https://github.com/zdd3143/dsh-vision-click) — 让 Agent 看着屏幕操作 Windows：用 Windows OCR 把界面文字变成可点目标，再执行点击、拖动、滚轮、键入与按键，每步都用逐像素差分和文字增删复核；F6+F7 由独立进程急停。
 - [zdkcomeon/dsh-mcp-link](https://github.com/zdkcomeon/dsh-mcp-link) — 扫描本机 AI 客户端和项目工作区的 MCP 配置，将选中服务接入当前 DSH profile，并支持 JSON 导入及图形化新增、编辑和移除。
