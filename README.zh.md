@@ -374,6 +374,7 @@ dsh plugin --profile web add dshmarket
 - [Choi-Peng/dsh-footer-order](https://github.com/Choi-Peng/dsh-footer-order) — DSH 侧边栏页脚排序：将 sidebar.footer.action 槽位改为上下堆叠，并允许用户配置各条目自上而下的排列顺序。
 - [cholot-Zhou/dsh-ui-overrides](https://github.com/cholot-Zhou/dsh-ui-overrides) — 基于本地 CSS 文件的界面覆盖——编辑 ~/.dsh/ui-overrides.css 并刷新，即可改任意插件元素的外观，例如让引用浮层完全不透明。
 - [chongfengdy-dev/dsh-message-outline](https://github.com/chongfengdy-dev/dsh-message-outline) — 当前会话消息大纲（左缘横杠）——你的消息在对话区左缘显示一列细横杠，hover 展开完整大纲（行号+文本），点击瞬间定位到对话里那条消息。纯前端、零外部服务依赖、sessions 快照驱动零轮询。
+- [chriswang/dsh-conversation-tree](https://github.com/chriswang/dsh-conversation-tree) — 会话列旁的可折叠栏：把对话按工作区与主题组织成树，就地打开真实会话，并通过 9 个模型工具让助手读写这棵树。
 - [ChuanTianML/dsh-chat-tidy](https://github.com/ChuanTianML/dsh-chat-tidy) — 一张样式表，按实测的 Codex 版式重排 DSH 对话页：14/22 px 正文，收紧标题、列表与块级节奏，使用圆角引用条，并把表格补成带主题化表头、行列分隔、短表铺满和宽表容器内滚动的 Tidy Tables；无设置项、不改写 DOM，仓库内附真实前后对比图。
 - [ChuanTianML/dsh-open-with](https://github.com/ChuanTianML/dsh-open-with) — 从 Session 页头或 Workspace 菜单用检测到或配置的编辑器打开当前已登记 Workspace，支持热重新检测和浏览器首选项记忆。
 - [ChuanTianML/prompt-for-me](https://github.com/ChuanTianML/prompt-for-me) — DSH 输入框的上下文感知下一句建议：重复 Trigger 可持续换一条，发送前始终由用户确认。
@@ -5296,7 +5297,7 @@ dsh plugin --profile web add dshmarket
 - [AAAlenwow/dsh-spring-admin-kit](https://github.com/AAAlenwow/dsh-spring-admin-kit) — Spring Boot 后台开发套件：EasyExcel 批量导入导出代码生成与 Thymeleaf + LayUI 模板安全守卫。
 - [aawef/dsh-skill-manager-tags](https://github.com/aawef/dsh-skill-manager-tags) — 按标签筛选技能：给 DSH 技能打标签，再用布尔表达式为每个工作区或对话选出下发给模型的子集（例如 `pdf + docx` 或 `aegis * plugin`）。命中以外的技能会被 deny-shadow 真正从模型目录里移走，而不只是在设置页隐藏；表达式之外的技能可手动添加或强制禁用，另附带 `tagging-skills` 教 agent 从本机技能清单自建标签体系。
 - [addie-ace/dsh-mattpocock-skills](https://github.com/addie-ace/dsh-mattpocock-skills) — 技能包插件：把 mattpocock/skills 的 25 个 promoted 技能（工程与效率）全文汉化，注册为 DSH 捆绑技能 provider，经技能系统发现与调用。
-- [AhaCrazy/dsh-action-hub](https://github.com/AhaCrazy/dsh-action-hub) — 面向 DSH 的标准 Agent Skill 库。同一份 SKILL.md 可作为模型调用的 Skill 或仅由用户调用的 Command；通过分组与项目范围控制可用性，面板负责插入或展开内容，导入导出保持标准目录格式。
+- [AhaCrazy/action-hub#dsh-action-hub](https://github.com/AhaCrazy/action-hub/tree/main/packages/dsh) — 面向 DSH 的标准 Agent Skill 库：同一份 SKILL.md 可作为模型可见的 Skill 或仅由用户调用的 Command，支持分组、项目范围、导入导出和原生 Alt+A 面板。
 - [Aliboder/dsh-expert-hub](https://github.com/Aliboder/dsh-expert-hub) — 专家中心：浏览并导入 WorkBuddy 专家，用 AI 创建专家、编辑 role.md 与技能，并按会话切换专家。
 - [AmethystLuna/embedded-workbench](https://github.com/AmethystLuna/embedded-workbench) — 嵌入式 C/C++ 固件开发工具箱：代理与技能覆盖 FreeRTOS、中断、NVM 存储、Keil MDK、ARMCLANG、HardFault 分析、状态机、架构原则与 LVGL 陷阱。
 - [AmethystLuna/logicprobe](https://github.com/AmethystLuna/logicprobe) — 声称核查技能：将设计文档与计划中的每条声称对照代码库事实核验，行为类声称升级为状态机/数据模型逻辑原语验证，支持前后回归、领域约束与并发风险挖掘。
@@ -6835,7 +6836,7 @@ dsh plugin --profile web add dshmarket
 - [xiaxingtianxia2-glitch/dsh-auto-exit](https://github.com/xiaxingtianxia2-glitch/dsh-auto-exit) — 关闭 DSH Web UI 后自动退出 CLI 进程（等效 Ctrl+C），支持可配置宽限期与试运行模式。
 - [xingyingyuzhui/dsh-updater-ui](https://github.com/xingyingyuzhui/dsh-updater-ui) — 设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。
 - [xingzhen199186/dsh-insight-tree](https://github.com/xingzhen199186/dsh-insight-tree) — DeepSeek Harness 的运行可观测与插件运维面板：展示 Profile 插件树、Loader 真实 fiber 状态、能力/依赖/兼容性、本轮会话插件活动与上游来源/版本核验，支持一键关闭/启用/更新/卸载，并提供 DSH 未运行时也能打开的独立启动失败诊断页。
-- [xinspark/dsh-win-pwsh7](https://github.com/xinspark/dsh-win-pwsh7) — 报告 DSH 的 pwsh 执行器实际运行的 PowerShell（只认启用中的行，带版本号的商店路径不会被推荐为 pin），并通过脚本点击商店页面或手动商店路径安装由商店管理的 PowerShell 7。只有实际执行器解析到 PowerShell 7+ 时才放行 pwsh 工具；宿主侧两个工具加提示词区段，Web 界面是原生状态卡片与 overridePath 配置；仅 Windows，零运行时依赖。
+- [xinspark/dsh-win-pwsh7](https://github.com/xinspark/dsh-win-pwsh7) — 报告 DSH 的 pwsh 执行器实际运行的 PowerShell（只认启用中的行，带版本号的商店路径不会被推荐为 pin），并通过脚本点击商店页面或手动商店路径安装由商店管理的 PowerShell 7。只有实际执行器解析到 PowerShell 7+ 时才放行 pwsh 工具；检测到 dsh-ops 时启用其 Compatibility 模式，保留原生 pwsh 与 ops_bash 并存，并隐藏重复的官方工具。Web 界面提供原生状态卡片和配置开关；仅 Windows，零运行时依赖。
 - [xswt442-cmd/dsh-ballast](https://github.com/xswt442-cmd/dsh-ballast) — DSH Web 的上下文窗口归因插件：Mini Utility Dock 面板按各自占用的 token 给会话内的用户消息、助手回复、推理块和工具结果排序，一眼看出窗口被哪些条目占住。面板还显示各条目类型的占比、本机各 live session 里最重的条目，并在宿主提供时显示 provider usage 与 system/tools/messages 的估算构成。面板只读：不估算费用、不修改会话、不触发 compaction。
 - [xswt442-cmd/dsh-instance-manager](https://github.com/xswt442-cmd/dsh-instance-manager) — DSH Web 实例管理器：Mini Utility Dock 面板列出本机可见的全部 dsh web 实例（端口、PID、运行时长、会话数、常驻内存、版本），可在 3080–3129 自动选一个空闲端口或按指定端口启动新实例、把某一行在新标签页打开，并通过目标实例自身的优雅退出停掉单个或全部实例。行内还显示每个实例在跑什么，只读的实例日志与会话概要一点即达。配置了 peer 时，同一个面板会通过带 bearer 鉴权的链路列出并查询其他机器上的实例。所有路由都做回环校验，面向浏览器的操作还要额外通过宿主自身的鉴权。
 - [xswt442-cmd/dsh-treekeeper](https://github.com/xswt442-cmd/dsh-treekeeper) — DSH 宿主的 Windows 进程树对账插件：采样宿主进程树与任务账本，把每个进程归属到创建它的任务，并按置信度标出未归属与孤儿进程，同时提供受保护的整树终止。终止必须满足：目标归属于 DSH 宿主树、在动手前重新采样复核（含创建时间）、目标树内不含受保护后代，因此白名单 PID 不会扩大可杀范围。
