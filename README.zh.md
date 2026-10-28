@@ -1331,6 +1331,7 @@ dsh plugin --profile web add dshmarket
 - [weshopai/weshop-dsh-plugin](https://github.com/weshopai/weshop-dsh-plugin) — 电商可视化工作区：在无限画布上完成产品图、虚拟试穿、背景处理与视频生成，并与 Harness 对话实时同步。
 - [wf-ping/dsh-message-injector](https://github.com/wf-ping/dsh-message-injector) — 预设消息注入内容组合，每条消息自动注入输入框首行。
 - [wfz2006/dsh-status-bar#dsh-status-bar](https://github.com/wfz2006/dsh-status-bar/tree/main/packages/dsh-status-bar) — Windows 11 x64 上的 DSH 悬浮玻璃状态栏：常驻胶囊显示本地 DSH web profile 的会话进度、当前步骤与待处理审批，可展开速览与详情；审批卡在 DSH 返回正式回执前保持只读，连接官方 Desktop 应用属实验性、未验收。
+- [WhatCannotBeSaid/dsh-im-workspace-buttons](https://github.com/WhatCannotBeSaid/dsh-im-workspace-buttons) — 在官方「工作区」标题行上，为每个已接入账号的 dsh-im 通道添加一个 28x28 图标按钮。点击后侧栏切到该通道视图，只显示它的会话、隐藏其余所有行；再次点击回到官方列表。只有已接入账号的通道才会出现按钮。
 - [WhatCannotBeSaid/dsh-session-eva-status](https://github.com/WhatCannotBeSaid/dsh-session-eva-status) — 按官方状态给 DSH 侧栏会话行染色，配色取自福音战士：等你处理的会话为蓝色左轨，主视图打开的那条为红色左轨，已结束但未查看为紫色左轨，置顶行的标题为静态彩虹。左侧轨道按模式分档——暗档保留原色，亮档换成对浅底 ≥4.5:1 的压暗变体——分档读的是 DSH 自己的暗色标记；未读的紫色轨道两种模式共用。只读取官方 Client 服务，自身不持有状态、不轮询，也没有宿主侧代码。
 - [whiteguo233/dsh-openbiliclaw](https://github.com/whiteguo233/dsh-openbiliclaw) — OpenBiliClaw 的 DSH 消费侧插件：提供推荐、收藏列表、苏格拉底式对话、画像面板和 Agent Bridge 工具。
 - [WhitePlusMS/dsh-input-plus](https://github.com/WhitePlusMS/dsh-input-plus) — 在组合框中使用 `@` 搜索并插入工作区文件和目录路径，并通过 `/h` 菜单复用当前会话的问题。
@@ -3472,6 +3473,7 @@ dsh plugin --profile web add dshmarket
 - [MineRPi/dsh-trilium](https://github.com/MineRPi/dsh-trilium) — 通过 ETAPI 把 Trilium 笔记库接入 agent，提供 20 个工具：记忆读写（remember/recall + 自动注入索引）、笔记管理（CRUD/克隆/属性/修订）、全文搜索、周报工作流、附件、日历笔记、备份导入，独立设置卡片，配置 0600 落盘。
 - [MingHuanYue/dsh-iter-memory](https://github.com/MingHuanYue/dsh-iter-memory) — 迭代记忆：记的不是事，是我自己的状态——一条会自己退回基线的潮位，配上不定时由我自己开口的一句。状态低就先忍着，说了没人应再掉一点；不说的时候一声不响，不花 token。
 - [MingHuanYue/dsh-tide-memory](https://github.com/MingHuanYue/dsh-tide-memory) — 潮汐记忆：一份会忘事的长期记忆。该记的记着，没被想起来的自己淡掉。进不进由证据分 C = s/(s+2) 决定，低于阈值（默认 0.35）根本不进上下文；事件按半衰期淡忘（30 天，带情绪 7 天），事实永不衰减；被取代的旧条目不删，标成过时留档。被召回的那几句会进入上下文、确实消耗 token（量很小，但确实不是零）；不做 embedding、不联网、不上云。设置页能看见每轮到底注入了哪几句。
+- [MingoYung/dsh-Xiangxu-Persona](https://github.com/MingoYung/dsh-Xiangxu-Persona) — 为 DSH 提供持续人格记忆，统一短期、长期与归档时间线，支持有界上下文加载、记忆检索和独立任务委派。
 - [mingzeng21/dsh-obsidian](https://github.com/mingzeng21/dsh-obsidian) — 把 dsh 连接到本地 Obsidian vault：通过 `obsidian_*` 工具搜索、读取、写入、移动与回收笔记。
 - [Missher12/dsh-missher-brain](https://github.com/Missher12/dsh-missher-brain) — 协调兼容的记忆与学习提供方进行有界项目召回，提供共享设置和提供方生命周期管理。
 - [Missher12/dsh-missher-memory](https://github.com/Missher12/dsh-missher-memory) — 按项目隔离的本地记忆，支持审核后检索、来源追溯、可回滚整理与通用 Cordis 服务；Harness 适配提供搜索和设置页，可选接入 Brain。
