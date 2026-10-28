@@ -3073,6 +3073,7 @@ dsh plugin --profile web add dshmarket
 - [Max-Null/dsh-chinese-thinking](https://github.com/Max-Null/dsh-chinese-thinking) — 注入一条固定 system-prompt 段落，让 Agent 无论用户使用什么语言都始终用中文思考和回复。
 - [mayf3/dsh-session-doctor](https://github.com/mayf3/dsh-session-doctor) — 会话医生：列出会话（含 agent 运行状态）、读取会话记录、诊断卡死的 agent、解卡（cancel + keepInbox 保留排队消息）、向其他会话发送消息。
 - [mcf171/dsh-session-delete](https://github.com/mcf171/dsh-session-delete) — 在会话行菜单中永久删除会话：先归档、再删除日志目录并立即移除该行，带 Delete 快捷键；只使用官方扩展点，仅打开过、未在运行的会话依然可以删除。
+- [memoryovo/dsh-codex-session-deletetool](https://github.com/memoryovo/dsh-codex-session-deletetool) — 为 Codex UI 侧边栏补回可用的「删除会话」：提供 @michengai/dsh-codex-ui 所检查的 remote.workspaceRegistry.deleteSession 服务，放出被其样式隐藏的会话行「...」按钮，永久删除会话日志、工程记录与投影缓存，子智能体与派生对话可在家族树对话框里逐项勾选一并删除。
 - [meng-lx/dsh-autonomous-restart](https://github.com/meng-lx/dsh-autonomous-restart) — 由 agent 自己发起的重启，不是按钮。agent 调一个工具，之后由插件接管：等这台机器上所有 agent 与后台任务都空闲，走完十秒可见倒计时（点一下鼠标、滚一下滚轮、按任意键都会取消），再重启 DSH，并唤醒原会话让 agent 接着说下去。没有按钮、没有手动入口——工具是唯一入口。官方桌面端与官方网页端均已适配，第三方壳不在默认支持范围内。仅限 Windows。
 - [mengwEX/dsh-block-ptc](https://github.com/mengwEX/dsh-block-ptc) — 为 PTC 模式提供模型自主收口的动态上下文压缩，将程序执行归入区块，并用模型撰写的摘要替换已完成区块的消息。
 - [MichengAI/dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) — 在设置里增加已归档会话页，可按工作区搜索、恢复和删除已归档会话。
@@ -6510,6 +6511,7 @@ dsh plugin --profile web add dshmarket
 - [cq-guojia/rulemux#dsh-plugin](https://github.com/cq-guojia/rulemux/tree/master/dsh-plugin) — rulemux 的 DeepSeek Harness 插件：通过 rulemux inject --agent dsh 取当前工作区渲染出的规则，在每次会话的首条用户消息时把输出注入一次。规则不往工作区写任何文件；只有技能会落盘。
 - [cyrusgogogo/dsh-codeeek](https://github.com/cyrusgogogo/dsh-codeeek) — 只读代码阅读工作台，支持多仓库项目、源码关联笔记、代码地图与 Mermaid 图表。
 - [CZ-ZL/duo#dsh-plugin](https://github.com/CZ-ZL/duo/tree/main/dsh-plugin) — DSH 有界智能体评测插件：针对提示词或受支持的配置改动，用用户提供的检查比较原版与候选，记录证据和成本，由用户决定是否采用。
+- [daimingxing/dsh-reload](https://github.com/daimingxing/dsh-reload) — 面向 DSH 插件开发的热重载与一键重启。重载用 DSH 自带的重载，而不是另造一套，所以行为和宿主一致：只刷新有改动的插件，其余继续运行。重启是安全的那个：跑在客户端之外，所以即使要换掉的正是客户端本身也能重新拉起；有会话或后台任务在跑时直接拒绝；并确认客户端真的重新打开了。轻量：只多一个工具、不带参数、不向模型上下文注入内容，按钮默认不出现。
 - [DaJiang07/dsh-plugin-backup](https://github.com/DaJiang07/dsh-plugin-backup) — 换机迁移 DSH profile，连插件本身一起：把插件包选择与整个配置层打包成一个 JSON 文件，恢复时写回配置、还原本地插件源码与插件数据，并安装备份里记录、新机器缺失的插件包（优先插件管理器，失败回退 pnpm）。
 - [DamonKoy/dsh-plugin-toggle](https://github.com/DamonKoy/dsh-plugin-toggle) — 设置→插件开关面板：每个已加载插件的卡片显示简述与运行阶段，支持模糊搜索与运行时启动/关闭（不改写配置文件）。
 - [DamonKoy/dsh-plugins#dsh-system-proxy](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-system-proxy) — 系统代理检测（scutil/env/PAC）：状态工具 + proxy_export 导出 bash 代理片段。
