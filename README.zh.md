@@ -554,6 +554,7 @@ dsh plugin --profile web add dshmarket
 - [fyisgod/dsh-selection-tools](https://github.com/fyisgod/dsh-selection-tools) — 在任意 Windows 应用里划词，用 Harness 自己的 agent 解释或翻译（自动带上选区所在的上下文段落），结果落在可拖动、可缩放的原生置顶浮窗里。
 - [g-yixuan/dsh-sidenote](https://github.com/g-yixuan/dsh-sidenote) — 为 DeepSeek Harness 提供侧边追问与划选注释，保留完整对话历史，将结论带回主线。
 - [G57651/dsh-diy-layout](https://github.com/G57651/dsh-diy-layout) — 无需改动 Harness 源码即可自定义主页侧边栏的插件入口：上方面板列表支持单栏/双栏与仅图标（悬浮 500ms 显示名称），底部插件行支持默认横向/单列/双列，两个区域均可逐条目排序、显示或隐藏，并提供设置页。
+- [gaoyinxin/dsh-mode-switcher](https://github.com/gaoyinxin/dsh-mode-switcher) — 在输入框中提供 Plan/Build 模式切换：按 Tab 键或点击工具栏按钮即可切换，并按模式分别记住右侧原生模型选择器中所选的模型。
 - [garrisonz/dsh-sidebar-width](https://github.com/garrisonz/dsh-sidebar-width) — 调整 Web UI 左侧会话列表栏宽度：调低 264px 拖动下限，可选调整拖动上限与展开默认宽度，启动时自动修补 ui-layout bundle。
 - [gbeta/dsh-token-speed](https://github.com/gbeta/dsh-token-speed) — 可拖拽环形表盘，实时显示模型输出速度（tok/s），点击展开每步详情（精确速度、TTFT、缓存命中率、缓存读写、推理/输入 token、模型、累计 token）。
 - [GeekRicardo/dsh-balance](https://github.com/GeekRicardo/dsh-balance) — 输入框下方按 provider 展示 DeepSeek、Kimi Coding、OpenCode Go、智谱、MiniMax、OpenRouter、OpenAI Codex 的余额/用量，2 秒轮询、5 分钟缓存。
@@ -948,6 +949,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-cuigengji-plugin](https://github.com/mistnest/dsh-cuigengji-plugin) — 催更姬：DSH 小说写作工作台，支持章节编辑、共享剧情画布、人物与世界设定分组、写作预设和按范围导入导出，供作者与 AI 一起讨论和推进故事。
 - [MitsukiJoe/dsh-better-ux](https://github.com/MitsukiJoe/dsh-better-ux) — DeepSeek Harness 网页交互增强，提供会话重命名与分叉快捷操作、带搜索和供应商筛选的模型选择器、移动端布局、全局字体缩放、上下文用量提醒、DeepSeek 余额与峰谷价格、已发消息导航和对话情况总结。
 - [miuzel/dsh-subagent-ui](https://github.com/miuzel/dsh-subagent-ui) — 搜索、监控、打断与批量归档工作区子代理，支持实时活动/思考流式展示与活跃浮窗。
+- [MjxUpUp/dsh-visual](https://github.com/MjxUpUp/dsh-visual) — 在对话里发可交互的 HTML 或流程图卡片；工具阻塞到用户提交，再把点击、字段、评论和卡片状态作为结果交还。
 - [MKInori/dsh-oneclick-desktop](https://github.com/MKInori/dsh-oneclick-desktop) — Windows 桌面集成：一键启动器 + 托盘控制器，另加侧边栏按钮把 DSH 和 chat.deepseek.com 并排放置并共用一个任务栏按钮。安装会写入桌面快捷方式并注册 dshsplit: 协议，两者都可用 lib/desktop.ps1 -Mode remove 清除。
 - [ml020/dsh-workbuddy](https://github.com/ml020/dsh-workbuddy) — 为 DSH 会话首屏的品牌标识与工作区选择器换上 Wordless 风格的着陆视图。原生输入框保持不变；选择器仍可在弹窗内添加新工作区（本条目像原生选择器一样自带 directory-flow 子槽位）。
 - [MM998LI/dsh-dock-vitals](https://github.com/MM998LI/dsh-dock-vitals) — 在输入框下方的状态栏里实时显示 CPU、内存与 GPU 读数：可点击的徽章、详情面板、逐项开关与三档刷新速度。
@@ -1017,6 +1019,7 @@ dsh plugin --profile web add dshmarket
 - [NOirBRight/dsh-codex-sidebar](https://github.com/NOirBRight/dsh-codex-sidebar) — DSH 的 Codex 风格详情侧栏：提供 Files、Review、Browser 与 Terminal 面板、对话文件链接和 diff 统计、批注，以及 Host 管理的浏览器控制。
 - [NOirBRight/dsh-llm-assistant](https://github.com/NOirBRight/dsh-llm-assistant) — 常驻 Web 席位，背后是独立助理会话：对话、图片、提醒、值班心跳，以及按需只读引用当前任务。
 - [NOirBRight/dsh-llm-providers-ui](https://github.com/NOirBRight/dsh-llm-providers-ui) — LLM Providers 设置页的挂载 owner：provider 卡片、拖拽排序与 picker 排序。
+- [NONEMIN/dsh-sidebar-panels](https://github.com/NONEMIN/dsh-sidebar-panels) — 在 设置 → 通用 里集中管理左侧全局面板图标：显示或隐藏、拖动排序；自带侧栏开关的插件，其开关与本插件保持同步。
 - [NormanFxxkingRockwell/dsh-keyboard-history](https://github.com/NormanFxxkingRockwell/dsh-keyboard-history) — DSH 会话输入框的极简输入历史：按 ↑/↓ 翻阅发过的消息。只有方向键，别无其他。
 - [Nothree-code/folder-tree-sh](https://github.com/Nothree-code/folder-tree-sh) — 工作区文件树插件：多标签预览（文本/DOCX/PDF/Markdown/CSV/图片）、Markdown 内联编辑、Git 变更面板与右键文件操作（重命名/删除/复制/移动/新建）。
 - [null-dat/dsh-whale-tail](https://github.com/null-dat/dsh-whale-tail) — 针对 DSH 思考模式鲸鱼尾巴的动画，丰富成 4 种动画。
@@ -1143,6 +1146,7 @@ dsh plugin --profile web add dshmarket
 - [rivenshanghai/dsh-toomuch-plugins](https://github.com/rivenshanghai/dsh-toomuch-plugins) — 把 DSH Web 侧栏里工作区上方的全局面板入口收成侧栏底部的一个开关。
 - [rsbsnv/dsh-mobile-adapt](https://github.com/rsbsnv/dsh-mobile-adapt) — 手机上的 DSH 界面优化：侧边栏变可滑动抽屉、手势开关侧栏、宽度可调、返回键逐层退出、按钮放大、回车换行而不是直接发送、键盘不挡输入框、字号不小于 15px。
 - [ruaibeite/dsh-files-to-chat](https://github.com/ruaibeite/dsh-files-to-chat) — 在右侧栏文件树里右键，可把文件或文件夹作为 @ 引用加进输入框（⌘/Ctrl 与 Shift 多选可整批插入）、用默认应用打开，或在系统文件管理器中显示。打开与显示走宿主内置的 open-in-app 能力，只有宿主明确回答不支持时才隐藏这两项。
+- [ruaibeite/dsh-input-polish](https://github.com/ruaibeite/dsh-input-polish) — 输入框右下工具区里的 ✨ 按钮，把草稿原地改写成更清楚的请求。上下文按话题挑而不按时间取：从草稿里抽锚点（文件路径、标识符、引号文字、中文二字词），在最近消息里挑同一话题的几条，所以一个会话里夹着多个任务时不会把别的任务的目标或文件带进改写结果；提示词也明确允许模型在上下文不像时完全忽略它。改写走与人工编辑同一条可撤销路径，⌘Z 即可还原。草稿里有引用 chip（@文件、文件夹、会话）或已认领的 /命令、以及正在提交时，按钮禁用 —— 宁可不动，也不悄悄丢掉引用。
 - [ruanimal/dsh-sidebar-panel-buttons](https://github.com/ruanimal/dsh-sidebar-panel-buttons) — 把 dsh Web 侧边栏的全局面板菜单（插件、扩展管理、定时任务、IM）从竖排文字列表收起为一行 36×36 图标按钮，悬停显示名称；可在「设置 → 通用」里切回列表，选择按浏览器记忆。
 - [Rudyy898/dsh-drag-path](https://github.com/Rudyy898/dsh-drag-path) — 像 Codex/Claude 一样：拖入任意格式文件或文件夹，真实绝对路径立即插入输入框，不用一个个打字。工作区优先智能定位、大小校验、同名弹候选选择器，支持批量拖入与粘贴，兼容 Windows/macOS。
 - [Ruiming-cn/dsh-ask-in-sidebar](https://github.com/Ruiming-cn/dsh-ask-in-sidebar) — 选中助手回答中的文本，在临时右侧面板向侧边栏助手提问：基于主对话 LLM 历史快照回答，支持流式 Markdown、可折叠思考与多轮追问，不打扰主对话。
@@ -4775,6 +4779,7 @@ dsh plugin --profile web add dshmarket
 - [Decodo/dsh-web-fetch](https://github.com/Decodo/dsh-web-fetch) — 把内置 web_fetch 工具的抓取后端换成 Decodo Web Data API：默认返回 Markdown，并把 fetchProvider 固定为 decodo，可配置单进程抓取上限；需要 Decodo API Key，web_search 不受影响。
 - [delef/dsh-free-web-search](https://github.com/delef/dsh-free-web-search) — 免费网页搜索，支持 10 个引擎（Bing/DuckDuckGo/SearXNG/AnySearch 免费，Exa/Tavily/Keenable/Perplexity/DeepSeek 付费）、自动回退、按时间筛选的高级搜索、平台搜索（GitHub/Reddit）、网页内容抓取、LRU 缓存和设置界面。基本使用无需 API 密钥。
 - [dengpeihua/dsh-browser-use](https://github.com/dengpeihua/dsh-browser-use) — 为 DeepSeek Harness 提供真实浏览器操作能力：网页浏览与信息提取、表单填写、多标签页协作和多步骤任务执行；支持增量 DOM、会话隔离、截图、操作结果检查与证据归档回读。
+- [deqingLv/dsh-chrome-attach](https://github.com/deqingLv/dsh-chrome-attach) — 把当前 Chrome 标签页附到 DSH 草稿：一次点击截图（失败时降级为 macOS 窗口截图），同时把页面标题与地址写成一行放进输入框。
 - [DightEndless/dsh-browser#packages/browser/bridge-browser](https://github.com/DightEndless/dsh-browser/tree/main/packages/browser/bridge-browser) — 打开浏览器扩展侧边栏，就能原地接管你当前正在浏览的网页。在上游基础上补齐了：悬停、坐标点击、拖拽、批量动作链、整页截图、本地文件上传、图片地址列举，并可在多个已连接的浏览器之间切换。页面以带编号的结构化文本交给模型；动作默认需要你批准，敏感字段以掩码呈现。发布的是桥接插件，配套扩展在同一 Release 里。本项目是 omdsh-dev/dsh-browser 的 fork，原仓库：https://github.com/omdsh-dev/dsh-browser
 - [dougen/dsh-cdp](https://github.com/dougen/dsh-cdp) — 通过一条常驻 CDP 连接驱动本机已在运行的 Chromium 内核浏览器——Chrome、Edge、Brave、Vivaldi、Opera、Chromium、Arc、Thorium，远程调试授权只需点一次，而不是每条命令都点。标签页、导航、执行 JS、DOM 快照、点击、输入、截图以及 CSS/DOM/像素断言都走本机回环 HTTP 路由，agent 用已有的 shell 工具发命令，因此不注册新工具；插件自带使用说明 skill，零运行时依赖。
 - [drscrewdriver/dsh-browser-cdp](https://github.com/drscrewdriver/dsh-browser-cdp) — 看得见的 Agent 浏览器（CDP 接入）：30+ bcdp_* 工具，实时观察窗支持直接点击/滚动/中文输入，点选元素以 @"picks/*.json" 引用投进输入框，人机验证提醒；DSH 0.1.5/0.1.7/0.2.0 宿主各有一条对应版本线。
