@@ -1701,7 +1701,6 @@ dsh plugin --profile web add dshmarket
 - [divineeagleblackhand/dsh-cost-receipt](https://github.com/divineeagleblackhand/dsh-cost-receipt) — 在每条助手回复下面显示本次问答的花费、账户余额与礼金余额，按该轮 token 用量乘官方峰谷单价计算；算不出价时写明原因，不猜测。
 - [dk33333333/dsh-deepseek-quota-left](https://github.com/dk33333333/dsh-deepseek-quota-left) — DeepSeek API 额度面板折叠为左侧边框把手：点击展开查看余额、官方精确今日已消费（配置平台 token 后）与实时对话费用；dsh-deepseek-quota 的修改版。
 - [dougen/dsh-deepseek-usage](https://github.com/dougen/dsh-deepseek-usage) — 在侧边栏底部显示一张卡片：DeepSeek 账号余额（用 DSH 已保存的 API Key 调官方 /user/balance 接口获取），以及当前模型的档单价——输入、缓存读取、输出——取自内置的官方价格表快照。一个圆点标出当前计费时段，旁边是距离切换的倒计时：高峰为北京时间周一至周五 9:00–12:00、14:00–18:00（不含中国法定节假日），其余为空闲时段。档单价与圆点只对 DeepSeek 官方模型显示，其他模型只显示余额。卡片每 30 秒刷新一次，点击或切换模型时立即刷新，并跟随应用主题与 DSH 语言。
-- [dragonestdwolf/dsh-token-workbench](https://github.com/dragonestdwolf/dsh-token-workbench) — 给 token plan 用户的 Token 用量工作台：把会话日志里的 assistant/message usage 折成按天分片的调用级明细（按跨会话 responseId 去重，fork/resume 复制的历史只算一次），并按你填写的套餐口径把本机用量换算成积分（默认 1M token = 0.2 积分，日 600 / 周 2500 / 月 6000，可只统计指定通道），在输入框下方给常驻读数、在设置页给分通道成本表、7/30 天柱状与折线趋势、近半年热力图。不读取任何凭据：厂商藏在控制面接口里的剩余百分比，用明确标注「本机换算」的本地口径替代；参考金额来自公开的 DeepSeek 定价页。
 - [eatone9254/dsh-balance-badge](https://github.com/eatone9254/dsh-balance-badge) — 在 DeepSeek Harness 主界面右下角常驻账户余额，60 秒自动刷新，点击即可立即查询。
 - [Enc-hanted/dsh-pulse](https://github.com/Enc-hanted/dsh-pulse) — 跨会话用量与费用观测台——分时走势与 90 天/1 年热力图、逐模型峰谷计价并与官方余额对账、GLM/Kimi/MiniMax 订阅额度与燃速预估、缓存命中环、项目排行、CSV 导出，另有 dsh-tui 终端面。
 - [ericw0315/dsh-usage-lite](https://github.com/ericw0315/dsh-usage-lite) — 侧边栏面板展示账户余额与本地 Token 用量，包含供应商/模型明细和 27 周每日热力图。
@@ -7207,6 +7206,7 @@ dsh plugin --profile web add dshmarket
 - [loveXbanshee/dsh-fleet](https://github.com/loveXbanshee/dsh-fleet) — DeepSeek Harness 多机指挥台：用一个本地 dsh 页面管理多台远程 dsh——实时查看远程忙闲、免切标签页原地切换与使用、远程页面保活秒开、跨设备读取历史会话、一键刷新/重启，并支持控制端/被控端角色。
 - [lunaship/dsh-links](https://github.com/lunaship/dsh-links) — Android 配套桥接：局域网扫码配对（可吊销的设备 Token 与 TLS 指纹）、手机连接与设备管理面板，以及向配对原生 App 提供会话、实时事件与审批的 HTTPS 接入代理。
 - [Lunatic029/dsh-clash-proxy](https://github.com/Lunatic029/dsh-clash-proxy) — 让 DeepSeek Harness 的出网流量走本地 Clash 代理，代理关闭时自动回落直连。
+- [mcdottok/dsh-vscode-connect](https://github.com/mcdottok/dsh-vscode-connect) — 把 DSH 和 VS Code 连接起来，提供类似 Claude Code for VS Code 的使用体验，直接在 VS Code 中接续同一工作区与同一会话：下载 VS Code 扩展 DSH Coding Agent，插件在 Windows 同机会自动发现并连接，其他平台可复制连接地址后手动连接。
 - [MDR-EX1000/dsh-rw](https://github.com/MDR-EX1000/dsh-rw) — Remote-SSH 风格工作区：把 SSH 主机上的远程目录变成原生 DSH 工作区，agent 通过 12 个 rw_* 工具（SFTP/exec）直接操作远程文件，路径限定在工作区内并校验 known_hosts。
 - [menghuanshiguang/devctl-dsh](https://github.com/menghuanshiguang/devctl-dsh) — 从另一台设备驱动 DSH：Host 插件开一个 token 鉴权的 TCP 端口，单文件 Python CLI 负责列会话、建会话、发带图消息、看流式回复，以及切模型、权限与工作区。
 - [mervyn-teo/dsh-plugin-qr-connect](https://github.com/mervyn-teo/dsh-plugin-qr-connect) — 「设置」按钮上方的一键二维码，让手机通过带鉴权的反向代理连接 Web 界面。
