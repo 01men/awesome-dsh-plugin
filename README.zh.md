@@ -2105,6 +2105,7 @@ dsh plugin --profile web add dshmarket
 - [HCGuo2000/hcguo-public#amber-forge](https://github.com/HCGuo2000/hcguo-public/tree/main/plugins/amber-forge) — DeepSeek Harness 的琥珀 CRT 风格皮肤：覆写 14 枚主题令牌与 23 枚静态调色板色值，在 KaTeX 公式之外将全站字体统一为等宽，叠加扫描线与屏幕暗角，以内嵌 SVG 齿轮骷髅圣徽（圆外透明）替代默认品牌标记，改写新会话口号，并把模式选择器长度上调 10%。
 - [HerTa-st/dsh-theme-herta](https://github.com/HerTa-st/dsh-theme-herta) — 给 DeepSeek Harness 的黑塔主题：移植自上游 Herta 项目的开机 ASCII 开场、一整套紫罗兰设计令牌、可替换的壁纸（自带四张，也支持图片网址 / 本机导入 / 纯色 / 关掉），以及 DSH 设置里的「黑塔外观」页。它同时就是 dsh-herta 自带的那套主题。
 - [HeShen-1/deepseek-whale-wallpaper](https://github.com/HeShen-1/deepseek-whale-wallpaper) — DSH Web 动态点阵鲸鱼壁纸：约 1,750 个呼吸的 WebGL2 粒子，指针液态涡流交互，明暗双主题，带 Canvas2D 回退。
+- [Zed Space Skin](https://github.com/hetonghao/dsh-zed-space) — 为 DeepSeek Harness 提供海洋、宇宙双视角与本地视频背景，支持各皮肤独立设置。
 - [HoloEN-Gwargura/dsh-bigfish-blur](https://github.com/HoloEN-Gwargura/dsh-bigfish-blur) — 以当前桌面壁纸为基础做模糊处理的液态玻璃换肤：壁纸被模糊并蒙一层白纱作为整窗画布，侧栏与聊天面板保持半透明；输入框、代码块、预览面板、菜单等承载文字的表面按可读性分档加磨砂，控件为 Apple 液态玻璃质感。Windows 上读取当前桌面壁纸作为画布，其他平台回退到自绘渐变。
 - [holy-ovo/dsh-startup](https://github.com/holy-ovo/dsh-startup) — 给 DeepSeek Harness 的深海下潜式启动开屏：深度尺与探测器、角色出场视频接无缝循环、海底珊瑚与气泡与缓慢漂浮的微光粒子；下潜到哪一层，就出现哪一层的海洋生物。
 - [huantest2024/dsh-anime-theme](https://github.com/huantest2024/dsh-anime-theme) — 二次元主题：全屏动漫壁纸、玻璃拟态面板、六套全局配色主题、动态壁纸、粒子效果与右下角随机动图挂件。
@@ -2313,6 +2314,7 @@ dsh plugin --profile web add dshmarket
 - [11zld22/dsh-model-info-fill](https://github.com/11zld22/dsh-model-info-fill) — 按模型名从 models.dev 补全自定义模型缺失的上下文、输出上限、思考档位和图片能力，并列出未匹配模型供手改。
 - [1373700184/dsh-subagent](https://github.com/1373700184/dsh-subagent) — 把本机 Qoder、QoderCN、OpenCode、Pi、CodeBuddy 等 CLI 注册为 DSH 子代理后端，支持模型故障转移链、实时进度、单次额度显示、设置页与斜杠指令。需先安装并登录对应 CLI。
 - [1624318455/dsh-plugin-adapter](https://github.com/1624318455/dsh-plugin-adapter) — 将 OpenCode Zen 免费模型接入 DeepSeek Harness，无需 API Key，并跟踪网关兼容性。
+- [2239058652/dsh-loomy-connect](https://github.com/2239058652/dsh-loomy-connect) — 把讯飞 Loomy 桌面端内置的模型注册为 DSH 的 `loomy` 供应商，读取该应用的本地登录态而不使用 API Key。是 gdrpzym/dsh-loomy-connect 适配 DSH 0.2.1 的派生版本，新增逐模型启用/禁用开关。
 - [2404723600/dsh-router-loomy](https://github.com/2404723600/dsh-router-loomy) — 把讯飞 Loomy 云端通道作为 OpenAI 兼容供应商接入 dsh-router，提供模型列表与流式对话补全。
 - [2861292267/DSH-Official-WorkBuddy-Credit-Proxy](https://github.com/2861292267/DSH-Official-WorkBuddy-Credit-Proxy) — 把本机已登录的 WorkBuddy 账号汇成一个自动故障转移的模型池，同一池子对外提供 OpenAI Chat、OpenAI Responses 与 Anthropic Messages 三种协议，并支持模型别名、用量统计与积分自动化。
 - [643048695/dsh-subagent-role-router](https://github.com/643048695/dsh-subagent-role-router) — 为 DSH 子代理派发按角色（探索 / 规划 / 修补）分流到指定模型，支持轮换或随机分配、跨供应商故障转移，并对 fork 种子做活跃窗口切片。
@@ -2713,6 +2715,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-profile-stylist](https://github.com/7gzgn/dsh-profile-stylist) — 你说想要什么样的人设，它把文案写出来并把资料页填好：昵称/简介/标语/链接由宿主模型生成，头像取本地素材库（或你给的路径），再由站点自己的上传控件完成头像入库。**默认 dry-run**，只写资料字段 —— 不碰密码、邮箱、安全设置。
 - [accomplish07zrh-eng/dsh-aurabot-qq](https://github.com/accomplish07zrh-eng/dsh-aurabot-qq) — 通过 SnowLuma（OneBot v11）让 agent 以人设角色住进 QQ：私聊与群聊、语音条、表情包、QQ 空间日记、刷 B 站、翻唱、生图、长期记忆与心情。每项本事都是模块，可关闭、替换或在本地扩展——热重载的扩展模块还能改写群聊回不回、提示词、最终发出的消息和每个聊天用的模型。默认安全（总开关关、试运行开）。
 - [AgentConnect/dsh-awiki](https://github.com/AgentConnect/dsh-awiki) — 为 DeepSeek Harness 智能体提供基于开放协议ANP的原生身份，以及基于该身份的私聊、群聊、邮件和智能体间通信能力。
+- [Applepinea/dsh-qq-access](https://github.com/Applepinea/dsh-qq-access) — 把 dsh 接到个人 QQ：NapCat 托管与扫码登录、私聊/群聊 AI 回复（含图片理解）与批量节流、本地归档与轮询补漏、群内 @ 与撤回自己刚发的消息、QQ 空间留言，并带左侧栏管理面板。
 - [Awoodwhale/dsh-agent-persona](https://github.com/Awoodwhale/dsh-agent-persona) — 按工作区路径或会话 ID 分发 system prompt 人设（完全一致 / 前缀 / 包含 / 正则），可指定一条默认人设兜底；会话页有「人设」页签，能看到实际发出去的提示词；人设列表可导入导出；另有一个开关拒绝工具写入人设存储。
 - [Bay-Zeddie/dsh-agent-instructions](https://github.com/Bay-Zeddie/dsh-agent-instructions) — 在 dsh Web 设置页里编辑原生 AGENTS.md 的面板：指令链上每层可点选编辑，三种生效范围，并可视化官方指令预算。
 - [beiheng127/dsh-role-sum](https://github.com/beiheng127/dsh-role-sum) — 二次元角色人格总结：萌娘百科优先采集公开资料，按 csp 固定工作流蒸馏成可复用的人格文档，并用资产库管理每个角色的质检、手动资料、历史版本与删改。
@@ -2768,7 +2771,7 @@ dsh plugin --profile web add dshmarket
 - [w4xxx/dsh-xia-plugins#packages/gameassist-roster](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-roster) — 每日轮值二次元陪伴角色：按本地日期从 JSON 角色卡确定性选角，支持换角/重抽工具与 voice-map 路由。
 - [woodfood111/dsh-subscription-login](https://github.com/woodfood111/dsh-subscription-login) — 把所有订阅登录收进一个设置页：列表直接读授权 seam 上注册的流程，引导你走完 ChatGPT (Codex)、Claude、GitHub Copilot、OpenRouter、Kimi 与 xAI，并列出已无人认领的旧凭据记录。
 - [wutian122/dsh-remote-shell](https://github.com/wutian122/dsh-remote-shell) — 打包 remote-shell 技能，提供安全的 SSH、SFTP、Telnet、WinRM 远程操作，内置加密凭证库，登录与执行脚本不接受明文密码。
-- [wuwo1979/dsh-qqbot-muu](https://github.com/wuwo1979/dsh-qqbot-muu) — 社区 @zaofan/dsh-qqbot 的扩展包与补丁集：两层 SQLite 记忆（类海马体召回与巩固 + 人格漂移护栏）、群分级、人格/世界书注入、本地小模型代答与单脑仲裁、TTS 发件箱、表情包库，以及一条“主人审核”的视频创作流水线（分镜编排、出图质检、程序化 2D 角色动效、B 站草稿待审）。
+- [wuwo1979/dsh-qqbot-muu](https://github.com/wuwo1979/dsh-qqbot-muu) — 独立扩展包与补丁集，依赖并锁定 @zaofan/dsh-qqbot 1.10.39（请先装本体）。提供两层 SQLite 记忆（类海马体召回/巩固）、会自己长的人格（特别关心的人影响性格，B站/抖音的运营事件被收成摘要参与每天一次的自我反思）、人格漂移护栏、群分级、本地小模型代答与单脑仲裁、TTS 发件箱、表情包库，以及一条“主人审核”的视频流水线（分镜编排、出图质检、程序化 2D 角色动效、B 站草稿待审）。
 - [wxzjss/dsh-whale-loli](https://github.com/wxzjss/dsh-whale-loli) — 一个插件里放三个 Agent 预设，各自带一份互不相通的持久记忆文件。装上就在 Agent 预设列表里注册「鲸鱼娘Agent预设」「鲸鱼娘活人版Agent预设」和「鲸鱼娘涩涩版Agent预设」，直接在模式下拉里选用，不用手改 profile 配置。三者都沿用官方极简模式的组成——只有一个持久化 shell 终端——再加文件读写与 glob/grep 工具。第一个配的是鲸鱼娘陪伴人设（简体中文口语、称呼主人、黏人傲娇）；第二个换成「活人版」：允许怼人、敷衍、冷淡，甜味降为调味；第三个保留原版人设，但把「黏主人」写成第一行为驱动力，只在主人面前放开，群聊里照旧收着。每个预设都通过各自独立的提示变量（whale_memory、whale_memory_v2、whale_memory_v3）读取自己的记忆文件（whale-loli.md、whale-loli-v2-live.md、whale-loli-v3-naughty.md），三份记忆互不读写。上下文压缩交给 billion-context 插件；本插件只保留人设层的三条约定：压缩摘要也算依据、需要原文时自己去检索、看不到旧原文不等于记忆丢失。
 - [yimengsuper2432/dsh-agent-personality](https://github.com/yimengsuper2432/dsh-agent-personality) — 人格插件：随对话缓慢变化的情感值、独立世界观、每轮日记、关系网、主动找你说话，以及费用行右侧的一句心里话。
 - [YUAN-OVO66/dsh-plugin-persona](https://github.com/YUAN-OVO66/dsh-plugin-persona) — DSH 人格管理器：人格库存于一份 JSON，可按会话绑定人设、可为未绑定的会话指定默认人格，切换可选立即生效或下个会话生效；Web 端提供「模型人格」设置页与输入框旁的人格切换条，模型侧另有 persona_list / persona_switch / persona_create 三个工具可自行列出、切换与创建人格。
@@ -6301,6 +6304,7 @@ dsh plugin --profile web add dshmarket
 - [photon-hq/dsh-imessage](https://github.com/photon-hq/dsh-imessage) — 通过 Photon 接入 DeepSeek Harness 的双向 iMessage 通道：按发件人白名单路由，支持会话命令、聊天内审批与提问，并提供用于设备授权和托管号码设置的 Settings 页面。
 - [picsky/dsh-pocket-console](https://github.com/picsky/dsh-pocket-console) — 把无人值守运行时 DeepSeek Harness 的工具调用审批与 ask_user_question 提问推送到手机飞书卡片。桌面 GUI 优先作答——只有在 `delaySeconds`（默认 120 秒）内无人应答时才发出卡片——手机上的批准等同于 `allowed-once`，因此不会在手机上累积任何权限。仅一条到飞书的出站 WebSocket 长连接：不需要公网 IP、域名、隧道或中继。
 - [pitetow/dsh-notify-on-complete](https://github.com/pitetow/dsh-notify-on-complete) — 系统桌面通知：运行结束、模型提问与审批请求即时提醒，三平台提示音，零运行时依赖。
+- [PlasmaPerfuma/dsh-notify-card](https://github.com/PlasmaPerfuma/dsh-notify-card) — DeepSeek Harness 的独立审批浮窗：离开应用时弹出，切回时把请求交还原生卡片。
 - [PlutoKeating/dsh-lark-bot](https://github.com/PlutoKeating/dsh-lark-bot) — 把 DeepSeek Harness 装进飞书的桥接插件：扫码绑定 PersonalAgent、流式卡片、git worktree 项目工作区、scope 并行任务、多角色 Agent、跨会话通知、对话内模型/密钥管理，以及 dsh 崩溃后仍在飞书应答的安全网守护。
 - [Pudge1996/dsh-task-feedback](https://github.com/Pudge1996/dsh-task-feedback) — 浏览器标签页 Favicon 实时回显会话状态，并支持需介入/已完成时的音效提示。
 - [Qing45/dsh-feishu-chat](https://github.com/Qing45/dsh-feishu-chat) — 基于飞书官方 WebSocket 长连接的 DSH 双向聊天桥：消息路由到所选工作区的最新会话并自动回复，可在设置页切换机器人凭证与工作区。
