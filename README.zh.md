@@ -4390,7 +4390,6 @@ dsh plugin --profile web add dshmarket
 - [w4xxx/dsh-xia-plugins#packages/global-proxy](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/global-proxy) — 把 Host 进程的 undici 请求统一路由到本地 HTTP(S) 代理，同时保持 localhost 与国内可达 API 直连。
 - [wackyju2-beep/dsh-better](https://github.com/wackyju2-beep/dsh-better) — 归档会话管理、任务完成桌面通知、更新检查、模型路由（关键词规则 + 白名单门控 model_route）、多任务定时触发（心跳与定点任务），以及 DeepSeek 风格的消息滚动导航。
 - [wade20250715/dsh-pubmed](https://github.com/wade20250715/dsh-pubmed) — PubMed 深度科研工具集：文献检索、作者调查、同名消歧、机构统计与师承匹配。
-- [walkzzz/dsh-plugin-blender-3d](https://github.com/walkzzz/dsh-plugin-blender-3d) — 在 DeepSeek Harness 中驱动 Blender 3D 建模——创建基本体、布尔运算、变换、赋予材质与修改器、查询场景，并通过 JSON 桥接导出 STL/OBJ/PLY/GLTF。内置无头 trimesh+manifold3d 运行时，以及同协议的 Blender bpy 插件。内置自动环境检测/安装/配置/验证（blender_setup 工具）。
 - [Walvez/dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) — Codex 与 DSH 双向桥接：挂载 ~/.codex/skills、带工作区绑定的会话导入、mcp_servers 实时镜像，以及 Codex 端反向 MCP 安装器。
 - [Walvez/dsh-search-failover](https://github.com/Walvez/dsh-search-failover) — 原生 web_search 的搜索池：8 个免费/付费后端自动故障转移与额度感知熔断，设置页管理 API Key、自定义 SearXNG 实例、failover/rotate 策略切换与 SerpApi 实时额度查询。
 - [WanchunLian/dsh-draft-polish](https://github.com/WanchunLian/dsh-draft-polish) — DSH 输入框一键润色草稿：把口语化表达改写成专业措辞；只发送草稿快照、绝不夹带会话上下文；LLM 不可用时优雅降级，不阻塞发送。
