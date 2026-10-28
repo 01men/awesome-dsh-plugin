@@ -1960,6 +1960,7 @@ dsh plugin --profile web add dshmarket
 - [zer0zio-stack/dsh-opencode-go-quota](https://github.com/zer0zio-stack/dsh-opencode-go-quota) — DSH Web 右下角「余额」徽标：展开时读取当前所选提供方，显示 OpenCode Go 计划限额或 DeepSeek 预充值余额，并附本机 token 用量与按定价表估算的消费金额。
 - [zh667/TokenLedger](https://github.com/zh667/TokenLedger) — 侧边栏用量面板：把 Token 归属到实际服务该请求的中转站，站点从已有的 provider 配置中读出，无需额外配置；含今日/本月/累计三窗口、按站点与模型下钻、一年活跃度热力图，以及 New API / Sub2API / DeepSeek 余额。
 - [zhang-jiazhi/dsh-stats-panel](https://github.com/zhang-jiazhi/dsh-stats-panel) — DeepSeek Harness Token 用量统计。按渠道区分统计，官方渠道自动显示余额，套餐渠道显示 5 小时/7 天/30 天用量余量，人民币计费估算，含每日图表与模型分布，集成在设置页侧边菜单。
+- [ZhaoZiyangShaanxi/dsh-codex-plus](https://github.com/ZhaoZiyangShaanxi/dsh-codex-plus) — 在 DSH 里查看 ChatGPT / Codex 订阅的真实额度。读账号后端 /wham/usage：短周期（5h）与每周窗口、重置倒计时、额外用量余额、独立额度分组与代码审查额度；列出并使用服务端发放的额度重置卡（幂等键由 credit id 稳定派生，重试只结算一次）；支持多账号切换；读 /codex/models 显示账号真实可用模型，拿不到就显示为空而不是内置列表。设置页内一键登录（浏览器授权或设备码，回调被拦截时可粘贴地址），凭据只存 DSH 凭据服务。模型调用复用 DSH 自带的 llm-pi-ai Codex 路由，不抢占其他插件的 provider 路由——被占用时自动退化为纯额度控制台。输入框右侧常驻剩余额度徽标。
 - [zhifeiNi/dsh-usage-orb](https://github.com/zhifeiNi/dsh-usage-orb) — DeepSeek Harness 跨会话用量面板：常驻用量圆环 + 可拖动面板，从本地会话日志聚合 token 用量、缓存命中率、成本与余额，支持工具级成本归因、iOS 式磁贴布局编辑与可选表情伴侣；数据只在本机读取，不联网。
 - [zhongyichang1998/dsh-mini-usage](https://github.com/zhongyichang1998/dsh-mini-usage) — 在中文侧栏面板中展示本地 Token 总量、模型用量与 12 周热力图。
 - [zhouchengke2046/dsh-sidebar-balance](https://github.com/zhouchengke2046/dsh-sidebar-balance) — DSH Web 插件:在侧边栏底部显示 DeepSeek API 余额与 OpenCode Go 套餐用量(消耗圆环、悬浮详情),自适应轮询,支持中英文。
@@ -4026,9 +4027,15 @@ dsh plugin --profile web add dshmarket
 - [LittleBeaverStudio/agnes-media](https://github.com/LittleBeaverStudio/agnes-media) — Agnes AI 生图生视频插件。
 - [littleblakew/msds-chain-mcp#dsh](https://github.com/littleblakew/msds-chain-mcp/tree/main/plugins/dsh) — 通过托管的 MSDS Chain MCP 端点接入化学品安全数据：23 个工具覆盖相容性与投料顺序、GHS 危害、PPE、储存、废弃处置、职业接触限值、运输分类、多法域合规、SDS 查询与版本比对、签名审计报告；每条回答都标注其依据的供应商 SDS 与版本日期。
 - [liudejua27-blip/fitmeet-dsh-plugin](https://github.com/liudejua27-blip/fitmeet-dsh-plugin) — 通过每位用户独立的 OAuth 授权将 DeepSeek Harness 接入 FitMeet，提供找人、组局查询、提醒、个人事项、连接反馈、大厅发布与私聊的 17 个工具，写入操作保留预览与确认步骤。
+- [liuhange789/data-asset-inspector#ai-dataset-inspector](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/ai-dataset-inspector) — AI数据集质量巡检工具，自动检测数据集中的标注一致性、类别分布偏差与数据泄露风险。
+- [liuhange789/data-asset-inspector#data-asset-orchestration](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-orchestration) — 数据资产编排引擎，把套件内工具串成预置流水线（脱敏→清洗→盘点→封装、鉴证、AI数据集体检、政务巡检、可流通性评估），支持增量与定时处理
 - [liuhange789/data-asset-inspector#data-asset-quality-score](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-quality-score) — 依据 GB/T 36344-2018 国家标准，从规范性、完整性等六个维度对数据质量进行量化评分，为企业数据资产入表提供可审计的底稿。
+- [liuhange789/data-asset-inspector#data-cleaning](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-cleaning) — 数据清洗插件 — 去重+格式标准化+异常值检测
 - [liuhange789/data-asset-inspector#data-lineage](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-lineage) — 数据血缘追踪工具，梳理数据从产生到流转的全链路，满足数据产权登记中的来源合法性审查要求。
 - [liuhange789/data-asset-inspector#data-masking](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-masking) — 基于国家标准的自动化数据脱敏工具，自动识别身份证、手机号等敏感字段，支持完全匿名化与假名化分级策略，生成合规审计日志。
+- [liuhange789/data-asset-inspector#data-sensitivity-classification](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-sensitivity-classification) — 数据敏感度分类插件 — 自动识别敏感字段+分级（高/中/低/公开）
+- [liuhange789/data-asset-inspector#data-visualization](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-visualization) — 数据可视化插件 — 生成自包含HTML报告，支持五种图表(bar/comparison/pie/radar/flowchart)与两列布局
+- [liuhange789/data-asset-inspector#gov-data-inspector](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/gov-data-inspector) — 政务数据巡检工具，覆盖数据完整率、准确率、时效率等核心指标。
 - [LiuJiaCheng11/dsh-postman](https://github.com/LiuJiaCheng11/dsh-postman) — 用 9 个工具在 dsh 里管理 Postman 云端集合——列出、浏览、新增（单个或批量）、修改、删除接口，导出或整体覆盖集合。
 - [liwei9745/dsh-genbox-plugin](https://github.com/liwei9745/dsh-genbox-plugin) — 通过本地 GenBox 服务生图、改图、生视频，并用 ffmpeg 本地剪辑；自带零成本测试台。
 - [liwuzhan/agent-native-trade#dsh-plugin](https://github.com/liwuzhan/agent-native-trade/tree/main/packages/dsh-plugin) — 为模型原生交易提供目录检索、交易方联络、合同签名、结算协调、人工任务交接和签名评价回执工具。
@@ -7545,7 +7552,7 @@ dsh plugin --profile web add dshmarket
 - [zhdzh-good/multi-role-groupchat#multi-role-groupchat](https://github.com/zhdzh-good/multi-role-groupchat/tree/main/multi-role-groupchat) — DeepSeek Harness 多角色群聊面板：你以一个角色加入，和 2–3 个 AI 成员对话；支持按对话对象智能路由、其他人按概率接话、显式 @ 接话，以及全局角色库、失败诊断、多标签同步、私有记忆与私人关系、模型目录下拉和角色/群配置 JSON 导入导出。
 - [zhu1090093659/dsh-pet](https://github.com/zhu1090093659/dsh-pet) — 常驻界面的鲸鱼娘：随智能体状态切换动画，可摸头互动、喂小鱼干养亲密度，从幼鲸一路养成。
 - [zmm863-commits/dsh-dice-game](https://github.com/zmm863-commits/dsh-dice-game) — 🎲 骰子大作战 — 六种经典骰子玩法（吹牛、猜红点、猜红蓝、猜大小、猜单双、猜顺子），单人 vs AI + PeerJS 联机，全量中英双语，侧边栏入口打开游戏面板。
-- [zuoyunlai/dsh-pet-plugin](https://github.com/zuoyunlai/dsh-pet-plugin) — DSH 窗口里的超写实桌宠：四个形象各有五张表情立绘，跳舞、撩发、走路三套动作以 24fps VP9 alpha 视频片段播放；按活跃时段主动说话（可选 edge-tts 神经音色），带泼墨、撒花、乌云、起雾、炸弹特效、右键菜单与 /dsh-pet 斜杠命令，旁边的小输入框通过一次性宿主模型调用回话、不写进你的会话。界面文案内置中、英、西、葡、印五语。
+- [zuoyunlai/dsh-pet-plugin](https://github.com/zuoyunlai/dsh-pet-plugin) — DSH 窗口里的超写实桌宠：五个形象各有五张表情立绘，跳舞、撩发、走路三套动作以 24fps VP9 alpha 视频片段播放，另有一条「走到中间跳完再走回」的 10 秒单镜头片段、全程不切镜；按活跃时段主动说话（可选 edge-tts 神经音色），带泼墨、撒花、乌云、起雾、炸弹特效、右键菜单与 /dsh-pet 斜杠命令，旁边的小输入框通过一次性宿主模型调用回话、不写进你的会话。界面文案内置中、英、西、葡、印五语。
 - [ZutoMayoo/totoTheCat](https://github.com/ZutoMayoo/totoTheCat) — DSH Web 界面的桌宠插件：可拖拽的像素猫，带番茄闹钟、经验等级与 30 条可解锁的托托事实。
 - [zyfgood/dsh-whale-girl](https://github.com/zyfgood/dsh-whale-girl) — DSH Web 界面的鲸鱼女孩桌宠，手写 SVG + CSS 动画（无图片/音频素材，零运行时依赖）：任务运行中游泳，调工具时吐带标签的泡泡，等待审批时贴屏幕敲玻璃并伴随琥珀色脉冲，完成时跳一下并汇报本轮耗时与工具数，失败时下沉，闲置或深夜戴睡帽打盹。单击戳一戳，双击摸头涨好感，拖拽后记住位置，右键菜单可喂食/静音/回默认位置/隐藏，悬停显示等级、称号、经验条与本轮统计。`whale_say` 工具让 Agent 借她说话或做动作，作为轻量可见通知。只读会话与工作区，仅写入 ~/.dsh/whale-girl/state.json。
 - [Zyr147258/dsh-leike-pet](https://github.com/Zyr147258/dsh-leike-pet) — 会话窗口里的像素桌宠「小红帽蕾克」：透明无边框、始终置顶，在输入框上沿来回走动，会眨眼、张望、蹦跳，鼠标靠近会转头看你，双击原地睡觉，右键面板可调 2×~7× 大小。
