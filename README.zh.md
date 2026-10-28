@@ -3771,6 +3771,7 @@ dsh plugin --profile web add dshmarket
 - [curtainsmall/dsh-electro-lab](https://github.com/curtainsmall/dsh-electro-lab) — DSH 电气电子计算插件：所有计算都通过专用工具完成，基于 SI 基本单位的自描述复数值对象；附带隔离的计算智能体预设与记录面板，每次求解落盘存档。
 - [curtainsmall/dsh-reckoner](https://github.com/curtainsmall/dsh-reckoner) — 面向 DeepSeek Harness 的确定性计算引擎，附带一个预设：引导 LLM 通过引擎而非文本生成来完成计算。
 - [czcdr/dsh-plugin-rea](https://github.com/czcdr/dsh-plugin-rea) — 第三方适配插件：把上游 REA（逆向一切，github.com/morluto/rea）的 MCP 服务接入 DeepSeek Harness，提供 mcp__rea__* 工具。2.x 自带供给：把 Node、REA CLI、JDK、Ghidra 装到 <DSH_HOME>/plugins/rea-bundle 下，再经 shim 启动 REA —— 干净机器跑一次 setup 即可用；1.x（v1 分支 / npm 1.0.6）是纯配置适配器，需要你自己装好 REA 与 Ghidra。逆向分析能力由 REA 提供，覆盖原生二进制（Hopper/Ghidra/IDA）、JavaScript/Electron 应用、.NET 程序集、网站、Android APK 与 adb 设备、固件与进程捕获。
+- [czdcm/dsh-plugin-corpus#plugin](https://github.com/czdcm/dsh-plugin-corpus/tree/main/plugin) — DeepSeek Harness 的本地知识库与文档检索插件：全文搜索、PDF/Word/PPT/Excel/Markdown 导入与按行读取、扫描件 OCR、ACL 和 Web 面板。
 - [CZX2244/dsh-bilibili](https://github.com/CZX2244/dsh-bilibili) — B站视频分析工具：提取元数据、字幕文稿（必剪/本地 ASR 兜底）、评论与弹幕，抓取清晰关键帧并可选本地视觉描述。
 - [daimingxing/dsh-codegraph-project](https://github.com/daimingxing/dsh-codegraph-project) — 将本机已安装的 CodeGraph CLI 接入各会话的已索引项目，同项目共享一个 MCP 进程，并在工作目录或索引变化时更新会话级工具。
 - [DamonKoy/dsh-plugins#dsh-mcp-client-v2](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-mcp-client-v2) — MCP 客户端增强：分页工具发现、非阻塞启动、mcp_tool_search 搜索，自研 stdio/streamable-http 传输。
@@ -5536,6 +5537,7 @@ dsh plugin --profile web add dshmarket
 - [aa2246740/dsh-orca-agents](https://github.com/aa2246740/dsh-orca-agents) — 将编程任务派给本地 Orca 管理的 Agent 并将完成状态带回 DSH，现有文档面向 DSH 0.1.5-rc.2。
 - [aa2246740/pstack-dsh](https://github.com/aa2246740/pstack-dsh) — 将 poteto 的 pstack 工程工作流移植到 DSH，涵盖规划、审查、验证与发布。
 - [aadmin61-design/dsh-codex-dots](https://github.com/aadmin61-design/dsh-codex-dots) — 由 DeepSeek 主导后台调度 Codex 和 DSH 子对话，支持已有对话接管、Markdown 历史、额度暂停和有限决策重试。
+- [achenjins/dsh-runninghub-plugin](https://github.com/achenjins/dsh-runninghub-plugin) — 在 DSH 中调用你的 RunningHub ComfyUI 工作流生成图片、视频和音频，提供工作流配置面板、后台任务和多 Key 管理。
 - [adithyanraj03/dsh-schedule-later](https://github.com/adithyanraj03/dsh-schedule-later) — 把消息排进 dsh 会话稍后再发：消息框里带日期与时间选择器的「定时」按钮、跨会话列出待发消息的侧栏面板、浏览器关着也由宿主按时投递成一条普通用户消息，以及 schedule_message / list_scheduled_messages / cancel_scheduled_message 三个工具，模型因而能自己回到某个会话。
 - [advance-lion/dsh-history-plugin](https://github.com/advance-lion/dsh-history-plugin) — 按设备记录 DSH 插件成功安装历史，通过用户授权的百度网盘账号跨设备合并账本，并支持预检后的批量重装。
 - [AK-blank/dsh-plugin-auto-answer](https://github.com/AK-blank/dsh-plugin-auto-answer) — 无人值守时没人回答 ask_user_question，也让会话继续走：站在问题 waterfall 前面，有人回答就原样放行；超过可配置窗口（默认 120 秒）后提交标了（推荐）/(Recommended) 的选项，或按 first/last 兜底；计划审批默认仍交给人，需显式开启。
