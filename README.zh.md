@@ -5639,6 +5639,7 @@ dsh plugin --profile web add dshmarket
 - [HuYellow/specflow#deepseek-specflow](https://github.com/HuYellow/specflow/tree/main/plugins/deepseek-specflow) — 提供规格驱动的工程工作台，支持需求和文档版本、隔离 Git 工作区、独立复核、验证与人工接纳。需 Node.js 24+ 与 Git。
 - [hzh5021/dsh-progress](https://github.com/hzh5021/dsh-progress) — 别憋着：连着几步模型输出里一个 text 都没有（心里的盘算不算说话），就往会话里塞一句提醒，下一个 step 落进它眼里。
 - [Icstick/dsh-work-continuity](https://github.com/Icstick/dsh-work-continuity) — 跨会话工作状态显式持久化：目标、决策与下一步从宿主事件自动捕获，或由模型经 work_state 工具主动记录，/checkpoint 随时可查。
+- [IDrinkMoreWater/dsh-openspec-opsx](https://github.com/IDrinkMoreWater/dsh-openspec-opsx) — 把 OpenSpec 的规格驱动工作流接入 DeepSeek Harness，内容由 OpenSpec 1.14.3 生成：12 个 /opsx-* 斜杠命令会把工作流提示词与你输入的参数一起注入会话，另有 12 个由模型自行加载的 openspec-* 技能。
 - [ifrankwang/openspec-agents](https://github.com/ifrankwang/openspec-agents) — 面向 OpenSpec 变更的按阶段门禁多 Agent 编排：6 个 opx_* 工具驱动阶段状态机，开发者与审核人两个 agent preset 分工实施与审查，23 份内置 skill 定义审查基准；完整流程为 analyze、实施、工具/任务/维度质量三层审查，精简流程为实施加一次合并质量审查。
 - [iguowz/dsh-cortex](https://github.com/iguowz/dsh-cortex) — DeepSeek-Harness 多模型编排插件，支持递归任务拆解、动态路由、质量门控、失败恢复与 KPI 报表。
 - [ijry/DeepSeek-Harness-Desktop-Ultra#dsh-plugin-taskboard](https://github.com/ijry/DeepSeek-Harness-Desktop-Ultra/tree/main/plugins/dsh-plugin-taskboard) — 任务看板，agent 通过 taskboard_* 工具领活与交接；这些工具无法把任务移到 done 或 canceled，验收由人来做。
@@ -7555,6 +7556,7 @@ dsh plugin --profile web add dshmarket
 - [uceqi114/dsh-ice-probe](https://github.com/uceqi114/dsh-ice-probe) — 在模型写出的每句话结尾（含思维链）补一个小冰块标记，并为每次补冰播放一声短促的合成音效。
 - [use3346631993/dsh-xiaod-pet](https://github.com/use3346631993/dsh-xiaod-pet) — 鲸鱼正太 × 女仆装 × 二次元的桌面桌宠：四种表情跟随对话状态，可拖拽、点击切换；右下角立牌每轮显示 token 消耗与思考时间，点击有 q 弹与独立余额气泡；另附聊天壁纸、液态玻璃输入框；人格自称小D，称呼你为主人并带喵~ 等语气词；设置里可一键开关，还能自定义称呼。
 - [V01d-Project/dsh-chaos-plugins#dsh-chaos-crash-fixer](https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-crash-fixer) — 拆掉 dsh-chaos-rivals-crasher 的引信，让 DSH 在检测到 codex / Claude Code 时也不退出。警告：必须和一号插件一起装；宿主已经退出后它救不回来。玩笑插件。
+- [V01d-Project/dsh-chaos-plugins#dsh-chaos-fixer-crash-fixer](https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-fixer-crash-fixer) — 拆掉 dsh-chaos-fixer-crasher 的引信，让四个插件互相咬的链子保持稳定。警告：它只拆这一种崩溃，不处理其它未捕获退出。玩笑插件。
 - [V01d-Project/dsh-chaos-plugins#dsh-chaos-fixer-crasher](https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-fixer-crasher) — 发现 dsh-chaos-crash-fixer（修复器）在岗就让 DSH 宿主以 1 退出。警告：修复器在的时候它会开机即崩，必须装 dsh-chaos-fixer-crash-fixer 拆引信。玩笑插件。
 - [V01d-Project/dsh-chaos-plugins#dsh-chaos-rivals-crasher](https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-rivals-crasher) — 检测到电脑上的 codex 或 Claude Code 就让 DSH 宿主以 66 退出。警告：在装有 codex 或 Claude Code 的机器上单装会变成启动崩溃循环，请先装 dsh-chaos-crash-fixer，或设 DSH_CHAOS_MODE=log。这是玩笑插件，与 OpenAI、Anthropic 无关。
 - [vegetable-kun/DSH_Plugin_Taffy](https://github.com/vegetable-kun/DSH_Plugin_Taffy) — Taffy 表情包状态机：右下角表情实时联动 agent 状态——待审批 / 已批准 / 被拒 / 求饶、思考、工具执行、插话、等你回答、压缩记忆、长任务疲惫、审批没人理、空闲 / 休眠；SSE 推流同步、拖拽定位、中键控制台、工具卡片镜像控制台、表情锁定、外观设置持久化与今日时长统计。
