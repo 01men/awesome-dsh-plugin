@@ -1857,12 +1857,13 @@ dsh plugin --profile web add dshmarket
 - [rayadesune/DeepSeek-Harness-chat-billing](https://github.com/rayadesune/DeepSeek-Harness-chat-billing) — 会话头部徽标显示 DeepSeek 账户余额、本轮对话花费与今日全部会话总花费；每轮消息操作行前置本轮花费，详情面板含按模型计价与今日会话消费排行。官方峰谷定价，余额取自 /user/balance API。
 - [rayzhu1109/dsh-balance](https://github.com/rayzhu1109/dsh-balance) — 在侧边栏底部实时显示 DeepSeek 账户余额，点击展开最近 5 天消费柱状图。
 - [reg4916/dsh-plugin-balance-badge](https://github.com/reg4916/dsh-plugin-balance-badge) — 在侧边栏顶部常驻显示账户充值余额，自动刷新，数字与「设置 → 账户」一致。
-- [regrevia/dsh-fast-mode](https://github.com/regrevia/dsh-fast-mode) — 单会话开关的快速模式，合并可并行的工具调用并减少冗余步骤。9 块 132 对有效配对的合池结果是 整任务总墙钟约快 18%（0.825×，逐格中位 0.813×，95% 自助区间 0.747–0.914），适合的形状快 15–25%（codeimpl 中位 0.709×、15 对里 13 对更快；shellpipeline 中位 0.844×），隐藏测试仍 全绿。短改修与数据整形收不回提醒成本（debugfix 均值 1.287×、输出反而长 1.29×； perfrefactor 均值 1.140×），所以按任务形状先试一次再定。此前「约快 26%」的说法已撤回。
+- [regrevia/dsh-fast-mode](https://github.com/regrevia/dsh-fast-mode) — DeepSeek Harness 自己的快速模式：用几项配置控制任务的运行速度——限制思考在哪一步收敛、限制中间汇报的输出、限制最多几步，在不改变模型与思考强度的前提下把任务做快。实测 10 类任务 30 个完整单元：默认配置总耗时 0.72×、输出 token 0.74×、步数 0.71×；把「省着写」提醒从第 4 步提前到第 2 步，debugfix 0.535×、ledger 0.506×、migrate 0.751×，13 对合并 0.625×、输出 token 0.614×（第 3 步时 migrate 单族 0.509×、输出 0.528×）。每一对里两臂隐藏断言逐格相同、全绿。1–5 步的小改修与数据整形收不回提醒成本，按任务形状先试一次再定。
 - [RevxZxCx/dsh-where-did-my-tokens-go](https://github.com/RevxZxCx/dsh-where-did-my-tokens-go) — 在聊天页“深度思考”指示旁实时显示 token 计数，支持输入/输出合并或分列展示、逐步骤操作计数与 K/M/G/T 自适应单位。
 - [Robortshen/dsh-token-radar](https://github.com/Robortshen/dsh-token-radar) — 输入框下方的彩色 token 胶囊与上方展开面板：逐次调用的双图（总消耗 / 可计费）、子代理开销、工具归因与缓存拆分，只读本机会话日志。
 - [rongyishuaige7/dsh-stats](https://github.com/rongyishuaige7/dsh-stats) — DSH 项目级全局用量中心：按项目统计 Token、工时与费用，支持半小时节奏泳道、26 周全局热力图与多 Provider 余额预警；无法确认计价的部分会标注而非估算。
 - [Rycbartbad/dsh-key-manager](https://github.com/Rycbartbad/dsh-key-manager) — 在设置 → API 密钥中为每个提供商管理多个 API 密钥：密钥池加备注、一键切换当前使用密钥，切换后下一次模型调用立即生效。
 - [sakanamaru/dsh-minato](https://github.com/sakanamaru/dsh-minato) — 可选的只读桥接插件：把 dsh 的会话与 token 实时统计写成一份 JSON 快照，供独立的 dsh-minato 工具箱读取.
+- [scientificmaniac/dsh-faremeter](https://github.com/scientificmaniac/dsh-faremeter) — 按 DeepSeek 官方价目显示每轮、每会话与每工作区的对话费用人民币金额，支持峰谷分时与 Search/Fetch 按次计费。
 - [SenmuuuuW/dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report) — 深迹 DeepTrace — 从会话日志生成日报/周报/月报/年报/自定义区间报告：成本与 Token 拆解、8 条确定性洞察、协作复盘、实时模型余额、PDF/PNG/HTML 导出；只读，绝不改写历史。
 - [SereneJi/dsh-abacus](https://github.com/SereneJi/dsh-abacus) — 把每次模型调用按本地日期、供应商与模型记账，在侧栏卡片、输入框下方的单会话胶囊和设置页里展示用量合计，并同列展示各供应商的账户余额与套餐窗口。
 - [Sev7een/ds-api-usage](https://github.com/Sev7een/ds-api-usage) — 在设置页展示 DeepSeek API 余额与最近 24 小时用量，包括估算消费、Token、请求次数和按小时时间线。
