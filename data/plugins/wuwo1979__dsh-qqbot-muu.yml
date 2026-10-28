@@ -1,7 +1,7 @@
 url: https://github.com/wuwo1979/dsh-qqbot-muu
 name: wuwo1979/dsh-qqbot-muu
 category: identity
-tarball: https://github.com/wuwo1979/dsh-qqbot-muu/releases/download/v0.1.0/dsh-qqbot-muu-0.1.0.tgz
+tarball: https://github.com/wuwo1979/dsh-qqbot-muu/releases/download/v0.1.2/dsh-qqbot-muu-0.1.2.tgz
 icon: https://raw.githubusercontent.com/wuwo1979/dsh-qqbot-muu/main/assets/icon.png
 description:
   en: 'Independent extension pack and patch set for @zaofan/dsh-qqbot — install that plugin first (pinned to 1.10.39). Adds two-layer SQLite memory with hippocampal recall/consolidation, a persona that keeps learning (influence from close people plus Bilibili/Douyin activity distilled into a daily self-reflection), persona drift guard, group tiers, local-model quick replies with a single-brain arbiter, TTS outbox, sticker library, and an approval-gated video studio that plans storyboards, quality-gates frames and drafts Bilibili posts for review.'
