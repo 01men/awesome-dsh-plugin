@@ -2975,7 +2975,7 @@ dsh plugin --profile web add dshmarket
 - [dzwalker/dsh-session-keepwarm](https://github.com/dzwalker/dsh-session-keepwarm) — 让浏览器最近用过的会话保持常驻：切走再切回来直接复用已加载的历史、不再重新读取；常驻数量可配置，并可整体关闭。
 - [Earnest02522/dsh-archive-manager](https://github.com/Earnest02522/dsh-archive-manager) — 归档会话管理器：按工作区分组查看已归档的会话，支持恢复（取消归档）与打开会话转录目录。
 - [EarthPretender/dsh-session-delete](https://github.com/EarthPretender/dsh-session-delete) — 在侧栏会话“…”菜单的“归档会话”下方新增红色“删除会话”行，永久删除该会话的日志与工作区账目（走 workspace registry 自己的持久化写）。第二次点击确认后该行立即从列表消失；当次启动使用过的会话会先从内存停用再删（不会复活）；正在跑任务的会话会再显示一次警告，点下去先停止任务再删除。
-- [Eason-22/dsh-autorestart](https://github.com/Eason-22/dsh-autorestart) — DeepSeek Harness 插件：重启不丢工作——等所有对话空闲后优雅重启，重启后自动接续被打断的会话。内置重启仅支持 Windows 桌面版，其他环境需自配 restartCommand。
+- [Eason-22/dsh-autorestart](https://github.com/Eason-22/dsh-autorestart) — DeepSeek Harness 插件：重启不丢工作——等所有对话空闲后自动重启，重启后接着干活，不中断。每次重启前自动备份配置和已装插件；宿主起不来时，由一次性看门狗自动还原这份备份、再拉起一次，并把结果记录下来。已有守护的机器交给守护重启，绝不双开。所有工作完成后倒数关机，晚上无需人值守。桌面客户端与 dsh web 托管端（Windows / WSL / Linux）都通用。
 - [Edge-Echo/dsh-driftwatch](https://github.com/Edge-Echo/dsh-driftwatch) — DSH 会话的行为漂移报告：对比两份 session log，输出工具序列对齐、工具构成、推理量、耗时、重试与文件目标的差异，并支持可选的 CI 阈值门禁。零依赖。
 - [EIGHTfs/dsh-session-conductor](https://github.com/EIGHTfs/dsh-session-conductor) — DSH 会话管理增强：归档/恢复、批量与条件删除、AI 自动重命名、中断自动续跑、按工作区分组、撤回最后一条消息、三类损坏日志修复（seq-gap/EIO/双格式）、价值分析与全文搜索——另含方案/收尾模板注入（系统提示词 + 上下文）。
 - [EIGHTfs/dsh-session-migrate](https://github.com/EIGHTfs/dsh-session-migrate) — DSH 会话跨版本迁移：扫描旧版会话目录（v0 明文、.zstd 与 .zip 导出包），改写 header cwd 绑定目标工作区并落盘，打开会话时由持久化层自动完成版本升级；设置侧边栏（环境 / 导入 / 列表 / 转换）加 CLI（check / fix / import）。
