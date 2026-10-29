@@ -375,6 +375,7 @@ dsh plugin --profile web add dshmarket
 - [Choi-Peng/dsh-footer-order](https://github.com/Choi-Peng/dsh-footer-order) — DSH 侧边栏页脚排序：将 sidebar.footer.action 槽位改为上下堆叠，并允许用户配置各条目自上而下的排列顺序。
 - [cholot-Zhou/dsh-ui-overrides](https://github.com/cholot-Zhou/dsh-ui-overrides) — 基于本地 CSS 文件的界面覆盖——编辑 ~/.dsh/ui-overrides.css 并刷新，即可改任意插件元素的外观，例如让引用浮层完全不透明。
 - [chongfengdy-dev/dsh-message-outline](https://github.com/chongfengdy-dev/dsh-message-outline) — 当前会话消息大纲（左缘横杠）——你的消息在对话区左缘显示一列细横杠，hover 展开完整大纲（行号+文本），点击瞬间定位到对话里那条消息。纯前端、零外部服务依赖、sessions 快照驱动零轮询。
+- [chopperH0824/dsh-annotate-sync](https://github.com/chopperH0824/dsh-annotate-sync) — HTML 文档预览就地批注插件：点选元素写批注，按文件保存批注，可整批发送到当前对话，由 Agent 直接修改源文件。
 - [chriswang/dsh-conversation-tree](https://github.com/chriswang/dsh-conversation-tree) — 会话列旁的可折叠栏：把对话按工作区与主题组织成树，就地打开真实会话，并通过 9 个模型工具让助手读写这棵树。
 - [ChuanTianML/dsh-chat-tidy](https://github.com/ChuanTianML/dsh-chat-tidy) — 一张样式表，按实测的 Codex 版式重排 DSH 对话页：14/22 px 正文，收紧标题、列表与块级节奏，使用圆角引用条，并把表格补成带主题化表头、行列分隔、短表铺满和宽表容器内滚动的 Tidy Tables；无设置项、不改写 DOM，仓库内附真实前后对比图。
 - [ChuanTianML/dsh-open-with](https://github.com/ChuanTianML/dsh-open-with) — 从 Session 页头或 Workspace 菜单用检测到或配置的编辑器打开当前已登记 Workspace，支持热重新检测和浏览器首选项记忆。
@@ -2645,6 +2646,7 @@ dsh plugin --profile web add dshmarket
 - [tafcear/kimi-tide#dsh-kimi-tide](https://github.com/tafcear/kimi-tide/tree/main/packages/dsh-kimi-tide) — 逐步模型路由器：以命名预设与带图/关键词组有序规则为每一步在全部已挂载模型间选路，附图像转述协作流、图像护栏、多 plan 配额面板与逐步决策可观测。
 - [taikaikaikai-pixel/dsh-tap](https://github.com/taikaikaikai-pixel/dsh-tap) — DeepSeek Harness 的非官方上游插件包：CodeBuddy 网关（模型目录动态同步、逐模型思考强度、联网搜索/抓取、生图、流式凭据桥），TraeWork CN 与 Qoder CN 两条订阅额度通道（本地 OpenAI 翻译网关），以及 key 型 OpenAI 兼容上游注册表，全部收在四区块手风琴设置卡里。
 - [tako-dev/dsh-tako](https://github.com/tako-dev/dsh-tako) — 从 Tako 公开模型目录把聊天模型接入官方 llm-pi-ai，实时刷新并按尺寸标签写入上下文窗口，支持浏览器一键登录，把 cr_ 密钥存入 DSH 凭据。
+- [tang-bugu/dsh-connect-qwenwork](https://github.com/tang-bugu/dsh-connect-qwenwork) — 注册千问办公（QwenWork）模型提供器，复用桌面客户端的本机登录态，在 127.0.0.1 起一个 OpenAI 兼容回环桥，把 DSH 的模型请求翻译成上游真正使用的 ACP 控制信封对话协议。
 - [tangyixiao/dsh-workbuddy-connect-community](https://github.com/tangyixiao/dsh-workbuddy-connect-community) — 复用本机桌面登录的 WorkBuddy 与 WorkBuddy AI 模型提供器社区分叉，提供模型发现和额度显示。声明兼容 DSH 0.2.1-rc.2 和 rc.3，CN 兼容层与 functy23 的分叉不同。
 - [tangyixiao/dsh-zcode-plan-bridge](https://github.com/tangyixiao/dsh-zcode-plan-bridge) — 需已安装并登录 ZCode CLI。把 ZCode CLI agent 接入 DeepSeek Harness 作为模型提供方。常驻 app-server 会话逐回合流式转发，模型清单从 CLI 实时读取，因此上下文窗口、图片支持与 provider 路由都跟随已安装的 CLI 和账号。稳定版 0.5.1 通过 engines.dsh 声明 DSH 兼容范围，文档参考内核为 ZCode CLI 3.16.3。工具权限请求默认拒绝；未知的 approval/permission 方法始终拒绝，全自动需显式启用。DSH 自带的审批界面不会介入这个独立 spawn 的 app-server 进程，该策略也不构成操作系统沙箱。
 - [tearslee/dsh-workbuddy2api](https://github.com/tearslee/dsh-workbuddy2api) — 托管本地 workbuddy2api 网关进程，把它的模型注册为 dsh 的模型提供方，上下文窗口与思考档位均从网关自身的模型接口读取。
@@ -3225,6 +3227,7 @@ dsh plugin --profile web add dshmarket
 - [tuogusa/dsh-session-tags](https://github.com/tuogusa/dsh-session-tags) — 为会话添加标签，并在 Web 设置面板中按标签搜索会话。
 - [txlznbzsdj-collab/dsh-session-delete](https://github.com/txlznbzsdj-collab/dsh-session-delete) — 在侧边栏会话菜单添加「删除」项，经二次确认后硬删除该会话。
 - [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) — 管理已归档与未归档会话，支持搜索、只读预览、标签备注、工作区归档、ZIP 备份、来源分支、手动残留会话检查和自动检查更新；保留旧回收记录恢复，停用自动清理。
+- [uugvkbvkdjbsdbvwxxl/dsh-archived-chats](https://github.com/uugvkbvkdjbsdbvwxxl/dsh-archived-chats) — 在设置里按工作区分组浏览已归档会话，可筛选、搜索、一键恢复，或把会话日志从磁盘彻底删除。
 - [uwu9039/dsh-unarchive](https://github.com/uwu9039/dsh-unarchive) — 列出已归档会话、预览内容、恢复到原工作区，并提供可选的归档二次确认。
 - [vagur1689/dsh-conversation-find](https://github.com/vagur1689/dsh-conversation-find) — 当前会话内的关键词搜索：先把会话历史翻回最早一页再匹配，命中处高亮并滚动定位到所选项。
 - [Vast-Unhurried/dsh-toolkit#dsh-session-delete](https://github.com/Vast-Unhurried/dsh-toolkit/tree/main/packages/dsh-session-delete) — 增加删除会话的操作，永久移除会话日志、工作区条目与归档。
