@@ -173,6 +173,7 @@ dsh plugin --profile web add dshmarket
 - [535408248-oss/dsh-douyin-webview](https://github.com/535408248-oss/dsh-douyin-webview) — DSH 侧栏底部的内嵌抖音窗口：用 Electron webview 租约绕过 douyin.com 的 X-Frame-Options: DENY。仅桌面版。
 - [654970/dsh-typing-studio](https://github.com/654970/dsh-typing-studio) — 中英双语打字练习，提供计时短文、输入法友好评分、逐字反馈和本地记录。
 - [6pofx/dsh-tool-explorer](https://github.com/6pofx/dsh-tool-explorer) — 设置面板里的技能与 MCP 管理控制台：跨全部来源合并的技能目录（按来源分级浏览、在线新建与编辑、模型 / 用户调用独立开关、可恢复回收站）、GitHub 安装（多选批量安装、检查更新）、通过 profile patch 层增删改与启停 MCP 服务器、从 Claude Code / Cursor / Codex / Cline / Roo Code / Continue / Windsurf 一键导入，以及独立的 SDK 连通性探测。
+- [6shenhonghong9/dsh-startup-screen](https://github.com/6shenhonghong9/dsh-startup-screen) — 莱茵生命风格的 DeepSeek Harness 启动动画：黑幕标识 → 过曝洗白 → 暖白档案底板 → 五步交互式访问授权 → 色散揭幕，全程真声台词；附带液态玻璃主题，可调透明度、磨砂与背景模糊，设置页支持分类跳转与底部固定保存条。
 - [764475881/dsh-chat-width](https://github.com/764475881/dsh-chat-width) — 为 DeepSeek Harness 网页界面提供可拖拽的聊天内容宽度：文字列右缘的把手覆盖内置的 748px 宽度（默认 1040px、范围 520~2400、按浏览器记忆，双击恢复默认）。
 - [778672151/dsh-session-turn-eta](https://github.com/778672151/dsh-session-turn-eta) — 在输入框下方显示当前这一轮 DeepSeek Harness 任务的实时进度条、百分比与预计剩余时间；估计随轮次实时重锚，任务失败或中断时进度条变红。
 - [7AAAAAH/dsh-restart-app](https://github.com/7AAAAAH/dsh-restart-app) — 窗口标题栏左上角、收起侧边栏按钮右侧的重启按钮：一次点击停掉这个桌面应用的全部进程（窗口外壳、宿主、渲染进程与工具子进程），再重新拉起可执行文件，新实例就绪后自动刷新页面。仅支持 Windows 桌面版，其它宿主里按钮自动隐藏。
@@ -1817,6 +1818,8 @@ dsh plugin --profile web add dshmarket
 - [kai-GitHubaccount/dsh-usage-panel](https://github.com/kai-GitHubaccount/dsh-usage-panel) — 会话头部显示 DeepSeek 余额与本会话 Token 用量：三级余额预警、自定义阈值、一键充值入口、分段 Token 条与缓存命中率，并采用可见时才轮询的省流策略。
 - [kelearns/dsh-token-usage](https://github.com/kelearns/dsh-token-usage) — Token 用量热力图：日/周/累计视图，12 个月窗口，支持深浅色主题。
 - [kenz1117/dsh-ui-usage-billing](https://github.com/kenz1117/dsh-ui-usage-billing) — 侧边栏计费仪表盘：从会话日志聚合真实用量（按模型/按日统计调用、Token、缓存），按最新多厂商官方价格估算人民币费用，订阅套餐（coding/token/agent）通道豁免计费，并带各厂商健康状态圆点。
+- [kialajin-l/DSH_Plus#dsh-balance-badge](https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-balance-badge) — 标题栏余额徽章：余额、今日花费、本会话 tokens 一目了然，官方按峰谷时段计价展示，TokenBom 等自定义服务商按平价展示。
+- [kialajin-l/DSH_Plus#dsh-usage-panel](https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-usage-panel) — 用量统计设置页：全部基于本地会话日志计算（近 30 天条形图 / 模型表 / 会话表），按服务商感知计价（官方峰谷、内置 TokenBom 平价表），并跳过子代理会话继承的历史事件避免重复计费。
 - [KIDLi1412/dsh-session-cost](https://github.com/KIDLi1412/dsh-session-cost) — 对话底部的会话费用状态栏：按模型逐条计价估算 Token 费用（CNY），并实时显示 DeepSeek 账户余额（官方余额接口）。
 - [KIDLi1412/dsh-token-heatmap](https://github.com/KIDLi1412/dsh-token-heatmap) — 新建会话页的 GitHub 风格每日 Token 用量热力图：可选日历年度视图、绿/蓝配色与显示开关，并附今日/本月/累计总量。
 - [kikomaotu/ccs-balance](https://github.com/kikomaotu/ccs-balance) — 同步 cc-switch 各 provider 余额，按日/月/总量统计 token 用量与花费，支持中转站币种与汇率设置。
@@ -3188,6 +3191,7 @@ dsh plugin --profile web add dshmarket
 - [qiangweiliu/dsh-context#agent-embodiment](https://github.com/qiangweiliu/dsh-context/tree/main/agent-embodiment) — 为 DeepSeek Harness 提供上下文可观测性与控制：跨会话 token 分析、会话级预算/提示词/工具控制，以及可选的 Agent 脚手架。复用官方 tokenMeter、compaction、systemPrompt、tools.restrict seam；监控只读。
 - [qingmomo233/dsh-thinking-language](https://github.com/qingmomo233/dsh-thinking-language) — 切换智能体思考过程（推理/链式思考）的语言：支持简体中文、英文、俄语、法语、德语、西班牙语、日语、韩语等，或跟随系统界面语言（自动）。新增「设置 → 通用」中的思考语言选择行、系统提示词注入（每次组装提示词时求值，新会话生效）与 /thinking-language 命令。
 - [qingyou002/dsh-auto-handoff](https://github.com/qingyou002/dsh-auto-handoff) — DSH 插件：通过 /handoff 或会话累计 Token 阈值把长会话交接给同工作区的新会话，并继承 preset、模型、权限与 Plan 模式；交接简报由会话自身的模型撰写，切换在 Step 边界发生，不中断正在执行的步骤。
+- [qinu321/dsh-archive-viewer](https://github.com/qinu321/dsh-archive-viewer) — 已归档 DSH 会话的只读查看器：按工作区筛选、按标题/ID 搜索，不取消归档即可阅读从完整日志折出的对话——包括上下文压缩前的原文与工具调用。
 - [qinu321/dsh-session-rename](https://github.com/qinu321/dsh-session-rename) — 新增 session_rename 工具，让 AI 能重命名自己所在的 DSH 会话。
 - [qiyu166/dsh-client-ui-session-mention](https://github.com/qiyu166/dsh-client-ui-session-mention) — 输入 @ 引用另一个对话：选择历史会话，将其压缩总结注入当前提示词。
 - [que3sui/dsh-darwin#sentinel](https://github.com/que3sui/dsh-darwin/tree/main/packages/sentinel) — 会话体检：基于官方 session-query 接缝，机械挖掘会话日志为结构化问题工单（重试环/工具错误簇/中断回合/Token 浪费）；可独立安装使用。
@@ -6735,6 +6739,7 @@ dsh plugin --profile web add dshmarket
 - [kanneiren/dsh-network-settings](https://github.com/kanneiren/dsh-network-settings) — 可视化 DSH 进程在 Windows 或 WSL 上的网络链路（DNS/TCP/TLS/HTTP 分层探测），检测失效的代理配置，并提供带快照回滚的安全修复。
 - [keyiadiannao/dsh-power-button](https://github.com/keyiadiannao/dsh-power-button) — 一个小而自洽的 DSH 电源控制插件：侧边栏电源按钮 + 上拉「重启/关机」菜单 + Windows 关机风格过渡遮罩。自带重启/关机引擎（不依赖其它插件），动态端口适配。
 - [KhaosGx/dsh-stop-service](https://github.com/KhaosGx/dsh-stop-service) — DSH Web 设置页的服务控制面板：实时宿主信息（PID、版本、运行时长、内存/CPU 趋势、活跃会话）、npm 更新提醒，以及带确认的优雅停止——任务运行时发出警告，也可等待任务结束后自动停止。
+- [kialajin-l/DSH_Plus#dsh-agent-checkup](https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-agent-checkup) — Agent 体检：对近期本地会话日志跑重复率/错误可见性/工具失败率/上下文膨胀四个只读探针，输出 HTML 报告。
 - [kira905/dsh-ecosystem-panel](https://github.com/kira905/dsh-ecosystem-panel) — 只读生态面板：汇总实例的插件束、补丁插入、技能、升级健康与解耦健康。
 - [klT45/dsh-config-vault](https://github.com/klT45/dsh-config-vault) — 配置保险箱：为 DSH 配置创建快照、对比差异并安全回滚设置补丁、插件清单、技能与规则、工作区列表，凭据默认排除。
 - [kriskite/dsh-network-proxy](https://github.com/kriskite/dsh-network-proxy) — DeepSeek Harness 网络代理管理器：在设置界面即时切换跟随系统 / 手动 / 直连三种模式，立即生效。
@@ -7720,6 +7725,7 @@ dsh plugin --profile web add dshmarket
 - [pwping/moyu_games](https://github.com/pwping/moyu_games) — 任务开始时自动弹出的 5 个休闲小游戏（数字华容道、数独、贪吃蛇、舒尔特方格、数字记忆），支持跨会话自动保存进度。
 - [pyyxzi/dsh-deepmoyu](https://github.com/pyyxzi/dsh-deepmoyu) — 让桌宠鲸鱼娘自主刷 B站：自己搜片、读字幕原文，经你允许后发评论、发动态，并写日报、做视频。c1overzz/dsh-bili-scroll（MIT）的维护分支，新增逐项授权、记忆、表情与本地视频制作；与上游注册同名的 bili_* 工具，不能与 dsh-bili-scroll 同装。视频制作需要 Python 3.11–3.13（或 uv），首次使用时自动安装媒体依赖。
 - [单机游戏内 AI 同伴「小汤圆」](https://github.com/qimidandapigu/dsh-xiaotangyuan-game/tree/main/apps/harness-plugin) — 单机游戏内 AI 同伴「小汤圆」：理解游戏画面，支持文字或按住说话交流并语音回复；现已支持《星露谷物语》，《饥荒联机版》和《缺氧》正在迁移接入。
+- [qinu321/dsh-werewolf-dealer](https://github.com/qinu321/dsh-werewolf-dealer) — 在 DSH 里组织《新版一夜狼人杀》：确定性发牌、夜序、换卡、投票与结算，自带房间界面与夜间私聊提示。
 - [qiqibabyy/dsh-pet-desktop](https://github.com/qiqibabyy/dsh-pet-desktop) — 独立置顶窗口的桌面宠物：直接导入 ~/.codex/pets 的 Codex 宠物，含亲密度段位、会话活动气泡、贴边吸附拖拽、右键可达的智能鼠标穿透；已装 dsh-usage 时自动对齐其当日 token 台账。
 - [Rain-Shuoyu/dsh-client-deep-sneak](https://github.com/Rain-Shuoyu/dsh-client-deep-sneak) — 摸鱼伴侣：右下角小窗播放 B站视频（原生播放器/弹幕/评论/搜索），agent 需要你时自动暂停提醒，处理完从原位置精确续播。
 - [raymondkm2025/dsh-go-game](https://github.com/raymondkm2025/dsh-go-game) — 圍棋插件：完整規則引擎、三檔內建 AI、死子估算、可選 LLM 覆盤、SGF 匯入匯出，以及可選的 KataGo GTP 引擎橋接。
