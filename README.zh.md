@@ -2811,7 +2811,7 @@ dsh plugin --profile web add dshmarket
 - [gulagala001/dsh-persona-plugin](https://github.com/gulagala001/dsh-persona-plugin) — 创建、导入和管理人格预设，支持全局与单会话选择。
 - [HerTa-st/Herta-dsh](https://github.com/HerTa-st/Herta-dsh) — 把 Herta（黑塔）作为 DeepSeek Harness 智能体装入：携带人格与记忆提示词段的 preset、六个记忆与语音工具、区分内心与发言的叙述层、80 条随包语音、本地与 MiniMax 两条语音合成链路，以及两个用她自己的组件渲染会话的对话视图。
 - [hj9178/dsh-ottosmother](https://github.com/hj9178/dsh-ottosmother) — 给模型一份私密黑话词表：用户写「滚木」按「没有」理解、写「棍母」按「不存在」理解；模型要表达这些含义时，自己判断是否用词表里的词把整句组织得自然通顺。只注入一个 system prompt 段落，不改写输入输出；词表按分类存在 YAML（moba/fps/comments/ai/dev/private），设置页里可开关词表、切换提醒强度、直达词表目录。
-- [hsushjk/dsh-aurachat](https://github.com/hsushjk/dsh-aurachat) — 让 agent 以人设住进自建网页，分主人和客人两种账号：会随着时间回落到平常值的心情、可查看可修改的记忆、表情库、客人能评论的空间动态、闲置搭话、语音条、语音识别与朗读。
+- [hsushjk/dsh-aurachat](https://github.com/hsushjk/dsh-aurachat) — 让 agent 以人设住进自建网页，分主人和客人两种账号：会随着时间回落到平常值的心情、可查看可修改的记忆、表情库、客人能评论的空间动态、闲置搭话、语音条、语音识别与朗读。内置网页服务默认监听 0.0.0.0:2332；对外暴露端口前请先创建主人账号，客人账号只能由主人创建。
 - [huaizhuanghub/dsh-persona-dafeiyu](https://github.com/huaizhuanghub/dsh-persona-dafeiyu) — 把选中的人设注入系统提示词的 DeepSeek Harness 插件：内置三套人设，支持从文件导入或粘贴自定义人设，并可按 profile 全局生效或按会话单独选择（输入框上方有切换条）。
 - [imlishiyuan/deepseek-harness-zh-cn](https://github.com/imlishiyuan/deepseek-harness-zh-cn) — 每轮第一步注入固定的 system-reminder，要求模型用简体中文思考与回答，代码、命令、文件路径与标识符保持原文。
 - [iStarryDust/dsh-agent-suite#dist](https://github.com/iStarryDust/dsh-agent-suite/tree/main/dist) — Agent人格管理，Agent记忆，历史消息编辑并重新生成：创建和管理 Agent，每个 Agent 有独立身份、长期记忆、全局记忆与聊天记录，历史消息可编辑后重新生成。
