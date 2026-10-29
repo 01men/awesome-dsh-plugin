@@ -3721,6 +3721,7 @@ dsh plugin --profile web add dshmarket
 - [439436269-ctrl/dsh-zspace](https://github.com/439436269-ctrl/dsh-zspace) — 把极空间（ZSpace）NAS 变成 agent 的原生工具：列目录、查属性、按名检索、读取、下载、上传、写入、建目录、重命名、移动、复制、删除 NAS 文件。跨网络走桌面客户端中转——不需要同一局域网、不用 WebDAV、不用 SSH；同一网络时自动改走更快的 WebDAV 直连。删除需显式传 confirm: true；写入、上传、建目录、重命名、移动、复制默认直接执行，zspace_write 会覆盖同名文件（除非传 overwrite: false）。
 - [4444wjt/dsh-plugin-veriscope](https://github.com/4444wjt/dsh-plugin-veriscope) — AI 回答质量的发布门禁。两条通道：用原 Python 门禁重放 VeriScope 归档，或仅用 Node 对 Ragas 逐条导出做阈值判定，后者不需要 VeriScope、Python 或 pandas。返回通过／失败／待复核，附出处与可复验回执；支持逐条阈值与精确十进制比较。不重新评测、不调用模型，待复核永不转为通过。
 - [4KAForever11/dsh-mcd-mcp](https://github.com/4KAForever11/dsh-mcd-mcp) — 把麦当劳中国官方 MCP(mcp.mcd.cn)接入 DSH。粘贴自己在官网生成的 Token 后，插件会握手并调用 tools/list，把远端全部工具自动注册成 DSH 原生工具(mcd_ 前缀)，官方增删工具无需改代码，重启即同步。另附 mcd_status、mcd_test、mcd_tools、mcd_call 四个常驻工具用于自检与兜底直调，设置页可一键测试连通性。Token 只存本机 ~/.dsh/dsh-mcd-mcp.json(权限 600)，不进仓库、不进对话上下文。
+- [dsh-video-notes](https://github.com/5530-ok/5530) — 把 B 站视频下载、本地 whisper 转写、再用 DSH 自身 LLM 生成结构化 Markdown 笔记（并可转 PDF）的 agent 工具。提供 video_to_notes（下载视频→转写→生成笔记→落盘）与 note_to_pdf（把 Markdown 笔记转成 PDF）两个工具。转写依赖（whisper 二进制 + 模型 + yt-dlp + ffmpeg）自动检测、缺失时从国内镜像自动下载到数据目录，无需手动配置。纯 JS，用 DSH 自带 LLM 生成，无需额外 API key。
 - [58catmiao/dsh-sciwork](https://github.com/58catmiao/dsh-sciwork) — 给 DSH 的科研库面板与技能组：课题目录、带溯源的图表登记、草稿、文献、数据表、期刊档案、投稿台账，以及面向科研智能体的写作、引用与 Origin 出图纪律（出图需另装 dsh-origin-plugin）。
 - [643048695/dsh-mt-download](https://github.com/643048695/dsh-mt-download) — 新增 download_file 工具，用 16 路 aria2c 并发下载，aria2 不可用时自动退回单线程流式下载。需自行安装 aria2c；aria2 通道不校验 TLS 证书。
 - [dsh-douyin-publish](https://github.com/7gzgn/dsh-douyin-publish) — 把本地视频送到抖音投稿页的「待发布」状态：打开投稿页、真实点上传、递文件（回读校验）、填标题、设可见性，然后默认停手——可见性默认仅自己可见、不点发布。
@@ -7706,6 +7707,7 @@ dsh plugin --profile web add dshmarket
 - [potoior/dsh-bull-bear](https://github.com/potoior/dsh-bull-bear) — DSH 的实时行情牛熊桌宠：由自选组合平均涨跌驱动，收益越接近 20% 跑得越猛；带自选面板可搜索添加股票，还有展示每只标的涨跌的实时赛跑。
 - [proletari/shenshen-dsh-companion](https://github.com/proletari/shenshen-dsh-companion) — DSH 桌宠「深深」：跟随任务状态切换待机/敲键盘/思考/庆祝/失败，支持点击挥手、拖动左右奔跑，并保留 API 余额、本机用量记账、角色、气泡与音效设置。二创自 MeteorNOX/DeepSeek-Balance-Whale-Widget（dsh-whale-widget 0.4.2）；请勿与上游同时安装，否则会出现双角色与重复请求。
 - [pwping/moyu_games](https://github.com/pwping/moyu_games) — 任务开始时自动弹出的 5 个休闲小游戏（数字华容道、数独、贪吃蛇、舒尔特方格、数字记忆），支持跨会话自动保存进度。
+- [pyyxzi/dsh-deepmoyu](https://github.com/pyyxzi/dsh-deepmoyu) — 让桌宠鲸鱼娘自主刷 B站：自己搜片、读字幕原文，经你允许后发评论、发动态，并写日报、做视频。
 - [单机游戏内 AI 同伴「小汤圆」](https://github.com/qimidandapigu/dsh-xiaotangyuan-game/tree/main/apps/harness-plugin) — 单机游戏内 AI 同伴「小汤圆」：理解游戏画面，支持文字或按住说话交流并语音回复；现已支持《星露谷物语》，《饥荒联机版》和《缺氧》正在迁移接入。
 - [qiqibabyy/dsh-pet-desktop](https://github.com/qiqibabyy/dsh-pet-desktop) — 独立置顶窗口的桌面宠物：直接导入 ~/.codex/pets 的 Codex 宠物，含亲密度段位、会话活动气泡、贴边吸附拖拽、右键可达的智能鼠标穿透；已装 dsh-usage 时自动对齐其当日 token 台账。
 - [Rain-Shuoyu/dsh-client-deep-sneak](https://github.com/Rain-Shuoyu/dsh-client-deep-sneak) — 摸鱼伴侣：右下角小窗播放 B站视频（原生播放器/弹幕/评论/搜索），agent 需要你时自动暂停提醒，处理完从原位置精确续播。
