@@ -768,6 +768,7 @@ dsh plugin --profile web add dshmarket
 - [Kirkice/dsh-plugin-makima-tui](https://github.com/Kirkice/dsh-plugin-makima-tui) — 面向 dsh 的终端工作台，提供流式对话、工具执行、会话管理、Provider 管理与图片输入。
 - [kk112222/dsh-chat-index](https://github.com/kk112222/dsh-chat-index) — DSH Web UI 会话提问索引：右缘时间比例圆点窄条与可展开链面板，展示每次用户提问的问题与时间，含分支/子会话；点击节点跳转并高亮对应消息。
 - [kkbsgg/dsh-balance](https://github.com/kkbsgg/dsh-balance) — 在选择模型与推理强度后，于输入框模型选择器旁显示当前模型提供方的账户余额。
+- [kkhsu/dsh-conversation-icons](https://github.com/kkhsu/dsh-conversation-icons) — 为每个会话设置双色 SVG 图标和颜色，可通过侧边栏菜单或模型工具操作，并支持浏览器本地持久化与跨标签页更新。
 - [kkisok0123/dsh-sidechat](https://github.com/kkisok0123/dsh-sidechat) — 从主会话分叉独立侧聊，支持原生会话渲染、划选注释和结论回流。
 - [KNGLOKIKO/dsh-plugin-approval-zh](https://github.com/KNGLOKIKO/dsh-plugin-approval-zh) — 在 Web 客户端把 DeepSeek Harness 的权限审批面板本地化为中文：授权原因优先走内置词表翻译，词表未收录的由宿主侧模型路由兜底。
 - [Knight-Zjy/dsh-workspace-categories](https://github.com/Knight-Zjy/dsh-workspace-categories) — DSH 侧边栏工作区浏览器的分类树：工作区与其会话挂到自建分类下（折叠状态记忆），行可在分类间拖拽，新建工作区可直接落进某个分类（走系统目录选择器），分类可原地重命名与删除，会话行可归档 / 取消归档（运行中的会话走官方同款「停止并归档」确认）并配隐藏 / 含归档 / 仅归档三态筛选，行内按钮悬停有应用自带样式的提示，底栏开关可把面板切回原生列表。
@@ -2389,6 +2390,7 @@ dsh plugin --profile web add dshmarket
 - [callqh/dsh-codex-oauth](https://github.com/callqh/dsh-codex-oauth) — 在 DSH 设置页添加 Codex 登录入口，调用 llm-pi-ai 内置 OAuth 流程完成浏览器或设备码登录并展示脱敏账号状态，不另建模型适配器或凭证库。
 - [CARVIN94/dsh-router](https://github.com/CARVIN94/dsh-router) — 以 DSH 插件形式运行的 AI 路由网关。侧边栏新增「路由系统」面板管理供应商、账号池、回退组合与 API 密钥，并在 http://localhost:3080/v1 提供 OpenAI 兼容端点。
 - [CARVIN94/dsh-router-codebuddy](https://github.com/CARVIN94/dsh-router-codebuddy) — dsh-router 的 CodeBuddy 供应商插件。单账号负责轮询式 OAuth 登录与令牌刷新，选号、冷却与签到交由 dsh-router 核心处理。
+- [CARVIN94/dsh-router-qoder](https://github.com/CARVIN94/dsh-router-qoder) — dsh-router 的 Qoder 供应商插件，同时覆盖国内版与国际版。以个人访问令牌认证、对 Qoder 的 cosy 网关签名请求，并把上游 SSE 转成 OpenAI SSE；模型列表同时上报上游显示名与 key，选号与冷却仍由 dsh-router 核心处理。
 - [CARVIN94/dsh-router-traework](https://github.com/CARVIN94/dsh-router-traework) — dsh-router 的 TRAE SOLO 供应商插件，移植自 traework2api。提供 traework 供应商这一免费 SOLO 聊天通道，并向 dsh-router 核心上报单账号状态。
 - [ccccwwwxx/dsh-bifenggang](https://github.com/ccccwwwxx/dsh-bifenggang) — 按时间做模型路由：在设置页定义工作日峰谷时段与各时段使用的 Provider/模型（候选来自 harness 已注册的 API 与订阅账号），打开开关后由该策略决定每次请求的模型与思考档。开关按会话独立，会话列表每行带指示灯显示各自状态，设置页顶部写明此刻生效的模型与原因。无任何时段命中的日子（周末、假期）使用第一个方案的主力模型；高级思考模型是另一根轴，只在会话自身要求 max 思考时使用。
 - [Cci-65/deepseek-harness-plugin](https://github.com/Cci-65/deepseek-harness-plugin) — 为第三方模型配置推理强度档位，并在输入栏提供模型与强度选择器。
