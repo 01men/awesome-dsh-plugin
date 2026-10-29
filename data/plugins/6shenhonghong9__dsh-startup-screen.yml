@@ -7,8 +7,8 @@ name: 6shenhonghong9/dsh-startup-screen
 category: ui
 
 description:
-  en: 'Rhine Lab-style boot animation for DeepSeek Harness: six acts from a black title plate through irradiated white-out to a warm dossier panel, five interactive access-authorization steps with real-voice lines, and a liquid-glass theme with adjustable opacity, frost, and background blur.'
-  zh: '莱茵生命风格的 DeepSeek Harness 启动动画：黑幕标识 → 过曝洗白 → 暖白档案底板 → 五步交互式访问授权 → 色散揭幕，全程真声台词；附带液态玻璃主题，可调透明度、磨砂与背景模糊，设置页支持分类跳转与底部固定保存条。'
+  en: 'Rhine Lab-style boot animation for DeepSeek Harness: six acts from a black title plate through irradiated white-out to a warm dossier panel, five access-authorization steps (the first two can wait for a click or Enter, and Esc skips), real-voice recordings for the first five lines, and a settings page that switches between warm-light and dark themes and live-edits 33 playback, identity, voice and visual options.'
+  zh: '莱茵生命风格的 DeepSeek Harness 启动动画：黑幕标识 → 过曝洗白 → 暖白档案底板 → 五步访问授权（前两步可设为等点击/回车，Esc 可跳过）→ 色散揭幕，前五句为真声台词；设置页提供暖白/暗色两套主题，并可实时调整播放、身份、语音与视觉等 33 项参数。'
 
 # 可选：市场卡片图标。留空则回退到作者头像。
 # 图片必须是 GitHub 托管的位图（png/jpg），建议 180x180 以上。
