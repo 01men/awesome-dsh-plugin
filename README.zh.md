@@ -7673,6 +7673,7 @@ dsh plugin --profile web add dshmarket
 - [fbbDirge/dsh-xiaoheihe](https://github.com/fbbDirge/dsh-xiaoheihe) — 定时浏览小黑盒帖子，支持可选的人格评论与回复、扫码登录和浏览历史。
 - [FeWOO/DeepSeek-meme](https://github.com/FeWOO/DeepSeek-meme) — DSH 表情包库：输入区按钮打开默认表情（10 张 GPT 绘制）与社区二创梗图（8 张）两个包，点一下发送 180px 贴纸，模型也能通过 send_sticker 理解并回发表情。
 - [Firefox2100/dsh-agentic-roleplay#core](https://github.com/Firefox2100/dsh-agentic-roleplay/tree/main/packages/dsh-agentic-roleplay-core) — 为 DSH 提供具有结构化世界、自主角色、持久会话、世界创作、语音与图像生成功能的智能体角色扮演系统。需要安装并启用 Firefox2100/dsh-agentic-roleplay#state。
+- [flhy666/dsh-chatting-pet](https://github.com/flhy666/dsh-chatting-pet) — ?? dsh-pet ???:?????????????B?? QQ ??,??????????
 - [Flycat43/liang-desktop-pet#liang-harness-plugin](https://github.com/Flycat43/liang-desktop-pet/tree/main/plugins/liang-harness-plugin) — DeepSeek Harness Web 人物交互插件，支持六档人物与表达风格、四种任务模式、当前会话交流、公开思考摘要和浏览器语音朗读。
 - [Gastronomicluna/Matrix-code](https://github.com/Gastronomicluna/Matrix-code) — 矩阵风格 CLI 对话页：Agent 思考过程化作绿色代码雨倾泻而下，回复照常流式显示。
 - [ghang/dsh-achievement-helper](https://github.com/ghang/dsh-achievement-helper) — 在本地记录 DeepSeek Harness 主题成就、勋章与角色收藏。
