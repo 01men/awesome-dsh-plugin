@@ -148,6 +148,7 @@ dsh plugin --profile web add dshmarket
 - [1497105876/dsh-text-inject](https://github.com/1497105876/dsh-text-inject) — 在 DSH 设置页左侧栏新增「文字注入」分区：独立 Markdown 文件中的文字块可注入系统提示词（每轮生效）或会话上下文（关键词门控、去重），支持热加载与自动历史备份。
 - [1700563146/dsh-plugin-rightbar-divider](https://github.com/1700563146/dsh-plugin-rightbar-divider) — 修复整页缩放后右侧栏拖拽手柄偏移、分割线拖不动的问题，把命中区加宽到 12px 并显示悬停提示线。
 - [1700563146/dsh-plugin-ui-zoom](https://github.com/1700563146/dsh-plugin-ui-zoom) — DSH Web 界面整体缩放（70%–160%），可用 Ctrl+滚轮、DSH 快捷键中心或输入框旁的胶囊操作，带正文栏宽度补偿，缩小后是一行更多字而不是一条更窄的栏。
+- [1834395550/dsh-session-tabs](https://github.com/1834395550/dsh-session-tabs) — 给 DSH Web GUI 的浏览器式顶部会话标签栏：窗口顶部一条整宽标签，一个标签对应一个会话，会话按工作区收在可折叠的方框里，只有真正打开过的会话才会成为标签。
 - [18569663yz-web/dsh-plugin-crypto-ticker](https://github.com/18569663yz-web/dsh-plugin-crypto-ticker) — DSH 侧边栏左下角的实时加密货币行情卡片，位于余额与设置上方，显示 BTC、ETH、SOL、JUP 的价格、24 小时涨跌幅与 24 点迷你走势图，价格跳动时有脉冲反馈，零依赖、免密钥。
 - [1985899182/dsh-harness-chat-control](https://github.com/1985899182/dsh-harness-chat-control) — 为 DeepSeek Harness Desktop 增加接近 ChatGPT 的停止、编辑重发、原生引用注释，以及支持模型和图片输入的独立侧边栏追问对话。
 - [2002XiaoYu/dsh-session-diff](https://github.com/2002XiaoYu/dsh-session-diff) — 为 DSH Web 右侧栏提供按会话的 diff 视图：打开当前对话改动过的文件时原位渲染，按 git 风格显示新增/删除行底色、+/− 行标记、新旧双行号与语法高亮，头部带 +新增 −删除 计数、「仅看改动 / 整个文件」切换和「重新读取」按钮；另有一个配套标签页列出本次会话改动过的所有文件，点开即进入同一视图。当前对话没有改动过的文件仍使用自带文本查看器。
@@ -1238,6 +1239,7 @@ dsh plugin --profile web add dshmarket
 - [sjrslh/dsh-ui-zoom](https://github.com/sjrslh/dsh-ui-zoom) — Ctrl+滚轮整页缩放（60%–180%，记住比例），右下角常驻「设置」入口可打开宿主设置面板，Ctrl+0 复位。
 - [SkyblueeeLabs/dsh-iconic-launcher](https://github.com/SkyblueeeLabs/dsh-iconic-launcher) — 自定义 DeepSeek Harness 桌面快捷方式图标：选预设或上传图片，自动去除白底、生成多尺寸 ICO，一键写入桌面快捷方式。
 - [skyhancloud/dsh-client-ui-quote](https://github.com/skyhancloud/dsh-client-ui-quote) — 在网页聊天输入框上方为选中的 AI 回复内容添加可移除的引用横幅，随下一条消息一并发送。
+- [skyline66/dsh-desktop-clock](https://github.com/skyline66/dsh-desktop-clock) — 可拖动的 DSH 网页悬浮时钟：支持数字与指针表盘、专注计时、四套主题，并会记住窗口位置。
 - [SmailPang/dsh-effort-slider](https://github.com/SmailPang/dsh-effort-slider) — 在原位置将 DSH 原生推理等级选项替换为可拖动的 Off、Low、High、Max 滑块，并保留官方模型选择流程。
 - [SmileBuild/dsh-planchart](https://github.com/SmileBuild/dsh-planchart) — 把 agent 写出的项目规划显示出来：有序步骤在窗口右侧停靠的面板里，框架图在单独的中间标签页中自动排版，可下载为 SVG 或 PNG。图表由会话日志重建，重启与恢复后依然保留。
 - [smj-1680/dsh-plugin-liquid-glass](https://github.com/smj-1680/dsh-plugin-liquid-glass) — 适用于 DSH 桌面端的液态玻璃 UI 美化插件，可与大部分壁纸插件联动使用，目前仅适配深色模式。
@@ -1370,6 +1372,7 @@ dsh plugin --profile web add dshmarket
 - [weibaohui/dsh-sidebar-tidy](https://github.com/weibaohui/dsh-sidebar-tidy) — 侧栏收纳：把「新会话」下方被各插件塞满的入口行——全局面板行、插件入口行（自家/第三方一律识别）、底部入口——统统收进一个菜单按钮，点开二级菜单原样触发各入口；想常驻的加名称白名单即可，侧栏折叠成窄轨时按钮自动变纯图标。
 - [weien666/dsh-conversation-density-map](https://github.com/weien666/dsh-conversation-density-map) — 在 DSH 聊天区右侧添加非等长非等距对话密度地图（历史聊天标签），一轮对话一个刻度，刻度长度与纵向距离反映消息大小，点击刻度可跳转至对应对话，标签繁杂时鼠标悬停会自动拉伸便于点击。
 - [weimingyu9312/DSHSwitch](https://github.com/weimingyu9312/DSHSwitch) — 在 DSH Web GUI 聊天输入框左侧添加可自定义的 switch 快捷按钮，一键插入斜杠命令。
+- [weiYe-exployer/dsh-model-picker-2level](https://github.com/weiYe-exployer/dsh-model-picker-2level) — DeepSeek Harness 输入框的两级模型选择器：先选供应商再选模型，支持全局与供应商内搜索、可用思考强度设置，以及方向键、Enter 和 Esc 操作。
 - [Wenaixi/dsh-prompt-history](https://github.com/Wenaixi/dsh-prompt-history) — Claude Code 风格上下键历史回溯、双击 Esc 历史搜索、选中文本引用/自动复制与鼠标右键直接粘贴。
 - [wenhaolin-svg/dsh-background](https://github.com/wenhaolin-svg/dsh-background) — 用本地图片替换 DSH 的纯色背景，并提供可拖动面板来调整铺满方式、模糊、遮罩和界面不透明度。
 - [weshopai/weshop-dsh-plugin](https://github.com/weshopai/weshop-dsh-plugin) — 电商可视化工作区：在无限画布上完成产品图、虚拟试穿、背景处理与视频生成，并与 Harness 对话实时同步。
@@ -1442,6 +1445,7 @@ dsh plugin --profile web add dshmarket
 - [x2802490130-prog/dsh-client-ui-writing](https://github.com/x2802490130-prog/dsh-client-ui-writing) — Web 客户端「写作」面板：项目分卷与统计、书库与全文检索、设定演化版本链 diff、线索 SVG 图谱，仅在写作预设会话显示。
 - [xchannel1987/dsh-sdd-progress-xc](https://github.com/xchannel1987/dsh-sdd-progress-xc) — 在右侧边栏以当前会话为维度展示 SDD 任务进度（todos）与进度台账（sdd/progress.md），采用官方 MarkdownText 渲染，每 5 秒自动刷新。
 - [XcodeFish/dsh-file-link-menu](https://github.com/XcodeFish/dsh-file-link-menu) — 为聊天输出中的文件引用添加右键菜单，列出系统关联应用（带图标）供选择打开，在文件管理器中定位文件，并复制基于会话工作区解析的绝对或相对路径；代码块、普通文本与外部链接保持原生菜单。
+- [XenoPhonLau/dsh-activity-bar](https://github.com/XenoPhonLau/dsh-activity-bar) — 把 DeepSeek Harness 收起后的两侧栏变成 VS Code 那样的 44px 图标条：左条接管侧边栏导航与底部动作行，右条按 sidebarRightTabs 清单自动列出第三方面板，右侧面板可拖动改宽（300px 至窗口 60%）。设置里的「活动栏」两个开关，按浏览器保存。
 - [XHR666/dsh-mpkg-wallpaper](https://github.com/XHR666/dsh-mpkg-wallpaper) — 在浏览器里直接加载 Wallpaper Engine 的 .mpkg 作为 DSH 网页背景：内嵌视频、多时段切换、统一磨砂虚化、本地壁纸库与轮换。
 - [xi-zhao/OpenQuantum#openquantum-web-branding](https://github.com/xi-zhao/OpenQuantum/tree/main/packages/openquantum-web-branding) — 为 DeepSeek Harness 原生 Web 界面应用 OpenQuantum 品牌、浏览器元数据与 PWA 资产。
 - [xiaheng1/dsh-turn-nav](https://github.com/xiaheng1/dsh-turn-nav) — DeepSeek Harness Web 对话轮次导航轨，支持 mixed / DeepSeek / Codex 三种视觉风格。
@@ -3483,6 +3487,7 @@ dsh plugin --profile web add dshmarket
 - [GreatArrow-ai/dsh-greatarrow](https://github.com/GreatArrow-ai/dsh-greatarrow) — 通过 Streamable HTTP 将 dsh 连接到 GreatArrow.ai MCP 服务器，让智能体检索和保存与你其他 AI 客户端共享的工作区记忆、任务与决策；纯配置包，从 dsh 主目录的 great-arrow.token 读取令牌，从不读取环境变量。
 - [greyoak111/siyuan-codex-bridge](https://github.com/greyoak111/siyuan-codex-bridge) — 把 DeepSeek Harness 接到本机思源笔记桌面端：把笔记工具注册为 mcp__siyuan__<tool>，额外把思源里配置好的 AI 与其 agent 回路也做成一个工具（按档位门禁），附带笔记使用技能，并在每次调用上执行只读/创作/完整三级策略；思源关闭时工具列表依然可用。
 - [guo6x/dsh-palate](https://github.com/guo6x/dsh-palate) — 给 DSH agent 的积累型设计品味语料库：喂好坏例子、提炼原则，用学到的判断评审新设计，而不是套固定规则。
+- [hcg91/spike-ltm](https://github.com/hcg91/spike-ltm) — DeepSeek Harness 的本地长期记忆：SQLite 存储、自动提炼、语义召回、纠错、可靠遗忘，以及内置记忆摘要弹窗。
 - [hellosky983/dsh-qrcode](https://github.com/hellosky983/dsh-qrcode) — DeepSeek Harness 离线二维码（SVG/PNG/ASCII）与条码（Code128/EAN-13）生成器，无网络、无 shell。
 - [hellosky983/dsh-skillradar](https://github.com/hellosky983/dsh-skillradar) — 扫描当前会话可见的技能，按与最近对话的相关性排序推荐。
 - [HERO476/dsh-instruction-memory](https://github.com/HERO476/dsh-instruction-memory) — 在 DSH 设置界面维护常驻指令，自动注入此后每一轮对话的系统提示词。
