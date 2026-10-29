@@ -336,7 +336,7 @@ dsh plugin --profile web add dshmarket
 - [BroCC57/dsh-pending-review-glow](https://github.com/BroCC57/dsh-pending-review-glow) — 按待审批、运行中、刚完成三种状态给侧边栏会话行上色并加呼吸动效，行尾配同色状态点。
 - [btsd321/dsh-oh-my-terminal](https://github.com/btsd321/dsh-oh-my-terminal) — DSH Web GUI 底部终端面板插件，基于 node-pty 提供多标签交互式终端（Windows ConPTY / POSIX openpty），支持拆分面板、右侧终端列表与下拉新建/拆分菜单。同时兼容 DSH-better-sidebar——运行时自动检测并切换为底部工作台 tab，PTY 会话不绑定 DSH session 的 write handle。
 - [buaaflyaway/dsh-question-note](https://github.com/buaaflyaway/dsh-question-note) — 在 DSH 网页端 ask_user_question 弹窗中为每个选中选项增加可选的补充说明输入框，提交时补充内容随答案一并传给模型。
-- [BuildWithAIHub/dsh-boot-animation-plus](https://github.com/BuildWithAIHub/dsh-boot-animation-plus) — dsh-boot-animation 的社区分支：打开 DSH 时播放片头动画，内置四段片头并可管理片库，新增片库批量删除（同步删除自己加入的视频文件）。
+- [BuildWithAIHub/dsh-boot-animation-plus](https://github.com/BuildWithAIHub/dsh-boot-animation-plus) — dsh-boot-animation 的社区分支：打开 DSH 时播放片头动画，内置四段片头并可管理片库，新增片库批量删除（同步删除自己加入的视频文件）。沿用上游同一插件 id，不能与上游同装。
 - [burningg/dsh-workspace-categories](https://github.com/burningg/dsh-workspace-categories) — 给 DSH 侧边栏的工作区加自定义分类：平铺的项目列表变成可折叠的分组，工作区可拖到别的分组或在下拉框里改归类，工具栏一键收起全部分组，外观面板能分别调三层字号、文字颜色与底色，Ctrl+Tab 在最近打开的会话之间切换。
 - [dsh-code-collector](https://github.com/bycall/dsh-code-collector) — 会话代码收集器：输入框右侧按钮一键汇总当前会话中模型产出的全部代码块，支持按语言/按文件双视图、同一文件的版本历史、实时搜索过滤、单条/全部复制、下载合并 Markdown，点击直接跳转到产出该代码的回合（Alt+Shift+C 快捷开关）。
 - [dsh-conversation-timeline](https://github.com/bycall/dsh-conversation-timeline) — 对话时间线横条：输入框上方按轮次聚合的时间线，悬停显示该轮用户提示词，点击直接跳转到对话中的对应位置。
@@ -4925,7 +4925,7 @@ dsh plugin --profile web add dshmarket
 - [SZMY-haruhi/dsh-tavily](https://github.com/SZMY-haruhi/dsh-tavily) — 为 DSH 提供 Tavily 网页搜索：设置开关、默认无 Key，以及连通测试。
 - [T-Markus-Liang/dsh-webmcp](https://github.com/T-Markus-Liang/dsh-webmcp) — WebMCP 桥接器：让 agent 通过内置无头 Chromium，发现并调用网站按 W3C WebMCP 协议暴露的站点工具。
 - [Tabbit-Browser/dsh-tabbit](https://github.com/Tabbit-Browser/dsh-tabbit) — 让 DeepSeek Harness 能够控制 Tabbit 浏览器：安装即自动加载 tabbit-browser skill，检测国际版 Tabbit 与国内版 Tabbit Browser 正式版（>= 1.9.0），检查 tabbit-cli 常驻运行时，按平台诊断调用 CLI 所需的 DSH sandbox 模式，并在没有合格版本时通过后台任务下载与系统地区匹配的正式版安装包。
-- [tao1020/dsh-chrome-use](https://github.com/tao1020/dsh-chrome-use) — Codex 同款的浏览器控制：通过本机桥接操控你正在用的 Chrome，让模型读取页面、点击、填写、滚动、截图，并查看控制台与网络日志。
+- [tao1020/dsh-chrome-use](https://github.com/tao1020/dsh-chrome-use) — Codex 同款的浏览器控制：通过本机桥接操控你正在用的 Chrome，让模型读取页面、点击、填写、滚动、截图，并查看控制台与网络日志。需 Chrome 120+，并在 chrome://extensions 以「加载已解压的扩展程序」装好仓库自带的扩展，再用 8 位配对码连接。
 - [TC635807/better-crawler4agent](https://github.com/TC635807/better-crawler4agent) — 把真实浏览器抓取注册进 DSH profile：fetch_url 与 fetch_urls 渲染 JS 页面与中文反爬站点（知乎、CSDN、掘金、博客园），返回带分层诊断的干净正文 JSON，crawler_status 报告浏览器是否可用。装好后需要一次性安装 Python 依赖。
 - [Tencent/BrowserSkill#dsh-plugin-browserskill](https://github.com/Tencent/BrowserSkill/tree/main/packages/dsh-plugin-browserskill) — BrowserSkill 的 DeepSeek Harness 浏览器自动化桥接插件，通过原生浏览器工具控制可见的 Chrome 和 Edge Agent Window，支持可访问性与 VOM 页面观察、截图、隔离的多会话控制和 Web UI 实时观察浮层。
 - [Tests4gptplay/dsh-dots](https://github.com/Tests4gptplay/dsh-dots) — 在 DSH 原生页面中打开 ChatGPT Dots：Desktop 启动后台预加载，切换面板时保留同一个页面，并提供随主题适配的工具栏、刷新和外部浏览器入口。
@@ -5164,7 +5164,7 @@ dsh plugin --profile web add dshmarket
 - [jypjypjypjyp/dsh-music-studio](https://github.com/jypjypjypjyp/dsh-music-studio) — 在对话里作曲：模型按内置作曲规范写出乐谱 JSON，play_score 工具校验后渲染成对话内的卡片，含卷帘图、Web Audio 实时播放与 WAV/JSON 导出。
 - [KeinsteinNUS/dsh-speech-polish](https://github.com/KeinsteinNUS/dsh-speech-polish) — 给内置本地语音转写加一层术语纠错：沿用自带的麦克风与 SenseVoice 引擎（音频不出本机），在文字进入输入框前修正同音字、专业名词与数字写法。
 - [kekydream/dsh-meeting-room](https://github.com/kekydream/dsh-meeting-room) — 会议记录插件：一个会话对应一场会议，本机离线转写与发言人分离；要点、工作安排、手写笔记、复盘与月度评分都在面板里完成。可导出 SRT／Markdown／Word，也能打成「会议工程包」（zip）在另一台 dsh 导入；已确认的工作安排按设置一键推送到钉钉／企业微信。识别模型可更换（支持从本地文件导入更强的模型），云端识别默认关闭、未同意即零请求。导出 Word 需 Python 与 python-docx；首次使用会下载识别模型（28 MB 或 77 MB）。
-- [kinglhy2006/dsh-voice-bridge](https://github.com/kinglhy2006/dsh-voice-bridge) — Windows 上的免手语音：本地唤醒词、本地中文识别自动填入并发送、回答语音朗读，可打断与续播。
+- [kinglhy2006/dsh-voice-bridge](https://github.com/kinglhy2006/dsh-voice-bridge) — Windows 上的免手语音：本地唤醒词、本地中文识别自动填入并发送、回答语音朗读，可打断与续播。需先运行仓库自带的 install.ps1（安装 Python 语音依赖并选定麦克风），并准备 SenseVoice 识别模型（跑一次 DSH 语音输入让它自动下载，或放到 models/sensevoice-onnx）。
 - [Laplace-bit/dsh-pianist](https://github.com/Laplace-bit/dsh-pianist) — 让 Agent 弹一曲真钢琴：Salamander Grand 真实采样音色，Canvas2D 三角钢琴与沉浸式舞台渲染，88 键可弹。
 - [ldchaowin/dsh-plugin-notify-sound](https://github.com/ldchaowin/dsh-plugin-notify-sound) — 按工作区定制的任务完成铃声，以及审批、提问、计划评审、目标受阻、任务失败等需要人介入事件的注意提示音，支持内置合成音、语音播报与自定义音频。
 - [lengmodkx/dsh-mimo-tts](https://github.com/lengmodkx/dsh-mimo-tts) — 给 DeepSeek Harness 的小米 MiMo 语音插件：把每段回答念出来、把输入框里的口述变成文字，带 9 个内置音色和一个克隆音色槽位。
@@ -7566,7 +7566,7 @@ dsh plugin --profile web add dshmarket
 - [drliuhuan/dsh-plugin-vrmpet3d](https://github.com/drliuhuan/dsh-plugin-vrmpet3d) — 支持任务状态联动动画、独立悬浮窗、部位互动和可选 AI 碎碎念的 VRM 3D 桌宠。
 - [EagleClark/dsh-genshin-account](https://github.com/EagleClark/dsh-genshin-account) — 把原神账号读成一份快照（角色、天赋、武器、圣遗物、祈愿记录），对外给 6 个 agent 工具和一个六页签面板。圣遗物副词条取自游戏内公开的角色展柜；评分同时给 CV 与逐角色权重两套模型，各六档评级；抽卡分析包含保底、欧非分档与各池进度。读取角色、武器与祈愿需要米游社扫码登录；展柜数据按 UID 公开。
 - [Eapp1e/dsh-poker](https://github.com/Eapp1e/dsh-poker) — DeepSeek Harness 的德州扑克插件：无限注规则、机器人对手、真实感牌桌，教练模式讲解打法与赔率。
-- [Edwardpch/maodie-pet](https://github.com/Edwardpch/maodie-pet) — 橘猫桌宠「耄耋」——30 个透明动作（512×512 / 12fps / VP9-alpha），附抠像与体检工具链。
+- [Edwardpch/maodie-pet](https://github.com/Edwardpch/maodie-pet) — 橘猫桌宠「耄耋」——32 个透明动作（512×512 / 8–12fps / VP9-alpha），附抠像与体检工具链。
 - [Entaum/dsh-free-games](https://github.com/Entaum/dsh-free-games) — 在 DeepSeek Harness Web 侧边栏中添加 Spawnd.gg 游戏柜，支持搜索、排序、悬停预览、嵌入式游玩和最小化播放器。
 - [eric-song-dev/dsh-ikun-pet](https://github.com/eric-song-dev/dsh-ikun-pet) — ikun 桌宠填满「Deep diving...」状态行下方整行区块：坤宠动图沿 0%→100% 进度条行走，每 20% 切换动作与文案，完成时系统级播放「你干嘛~哎哟」提示音。
 - [falser101/dsh-mascot](https://github.com/falser101/dsh-mascot) — 可拖拽的猫狗悬浮伴侣，表情随当前会话变化，在 Companion 设置页里换皮肤。
