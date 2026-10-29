@@ -2071,6 +2071,7 @@ dsh plugin --profile web add dshmarket
 - [bauerelizabeth07139/tangsan](https://github.com/bauerelizabeth07139/tangsan) — DeepSeek Harness 网页端的唐三美化形象插件：把生成的唐三插画铺成界面背景（表面令牌淡出，配合不透明度、模糊、遮罩与位置调节），将同系列方形头像换到侧栏与会话标题的品牌标识位，并在设置页统一配置；素材与配置由宿主在 /api/tangsan 下本地提供，配置文件位于 $DSH_HOME/tangsan.json。
 - [BeiZi6/dsh-theme-plugin](https://github.com/BeiZi6/dsh-theme-plugin) — DSH Web GUI 主题工作室：5 套内置预设 + 完全可自定义的浅/深配色（强调色、背景、前景、UI 与代码字体、半透明侧栏、对比度），即时热切换并持久化到 localStorage。
 - [berhbro/dsh-cyrene-theme](https://github.com/berhbro/dsh-cyrene-theme) — 把 DSH Web GUI 换成昔涟（《崩坏：星穹铁道》）的粉白渐变毛玻璃主题，附带侧边栏可编辑的人格设定、昔涟表情包、新会话欢迎页形象，以及可开关 / 选图 / 轮换 / 调淡的整页背景图。非官方非商业同人作品；昔涟及相关美术素材版权归米哈游（miHoYo / HoYoverse）所有，与官方无隶属或背书关系。
+- [BossKrabs/product#dsh-madara-pixel-theme](https://github.com/BossKrabs/product/tree/main/packages/dsh-madara-pixel-theme) — 宇智波斑像素主题：暗红配色、中文像素字体和可跳过的写轮眼启动动画。
 - [brantshin/dsh-native-glass](https://github.com/brantshin/dsh-native-glass) — 在 macOS 的 Anywhere Labs DSH Desktop 中让主聊天区透出真实壁纸和后方窗口，复用原生玻璃材质并支持调整背景与面板不透明度。
 - [caoyiwei850/dsh-client-ui-skins](https://github.com/caoyiwei850/dsh-client-ui-skins) — DSH Web 换肤插件：4 套内置皮肤 + 自定义图片皮肤，图片作为全界面背景，配色自动跟随图片主色调。
 - [Cci-65/dsh-ui-plugin](https://github.com/Cci-65/dsh-ui-plugin) — 为 DeepSeek Harness 欢迎区和输入栏换肤，并提供工作区、模式与技能快捷入口。
@@ -2947,6 +2948,7 @@ dsh plugin --profile web add dshmarket
 - [Edge-Echo/dsh-driftwatch](https://github.com/Edge-Echo/dsh-driftwatch) — DSH 会话的行为漂移报告：对比两份 session log，输出工具序列对齐、工具构成、推理量、耗时、重试与文件目标的差异，并支持可选的 CI 阈值门禁。零依赖。
 - [EIGHTfs/dsh-session-conductor](https://github.com/EIGHTfs/dsh-session-conductor) — DSH 会话管理增强：归档/恢复、批量与条件删除、AI 自动重命名、中断自动续跑、按工作区分组、撤回最后一条消息、三类损坏日志修复（seq-gap/EIO/双格式）、价值分析与全文搜索——另含方案/收尾模板注入（系统提示词 + 上下文）。
 - [EIGHTfs/dsh-session-migrate](https://github.com/EIGHTfs/dsh-session-migrate) — DSH 会话跨版本迁移：扫描旧版会话目录（v0 明文、.zstd 与 .zip 导出包），改写 header cwd 绑定目标工作区并落盘，打开会话时由持久化层自动完成版本升级；设置侧边栏（环境 / 导入 / 列表 / 转换）加 CLI（check / fix / import）。
+- [Elefseus/dsh-default-workspace](https://github.com/Elefseus/dsh-default-workspace) — 把默认工作区从系统盘挪走（DSH 把新会话一律开在 <文档>/deepseek-harness/default-workspace 且从不迁移），同时让已存会话继续可用：无需重启即可改写工作区记录，同一套动作也有图形面板可点，连同 header cwd 把已存会话日志一起搬走，并重帧化首帧不是恰好一行 header 的日志。需桌面版宿主（workspaceRegistry 与 sessionPersistence）。
 - [elk-9527/dsh-auto-archive](https://github.com/elk-9527/dsh-auto-archive) — 按可配置天数自动归档闲置的 DSH 会话，并清理已归档会话的投影缓存，不删除会话记录或附件。
 - [EmptyVessel-000/dsh-file-history](https://github.com/EmptyVessel-000/dsh-file-history) — 按轮次给整个工作区留检查点：每轮结束存一份快照，本轮改了哪些文件直接列在聊天里那一条下方，任意一轮都能还原——只还原文件、只还原对话，或者全部还原。捕获靠扫描整棵树，而不是挂钩 write/edit 工具，所以 shell 命令、外部编辑器、git 操作改出来的东西同样留痕。还原对话是从那一轮分叉出新会话，不切断原来的会话；还原本身也能撤销。历史存放在 DSH_HOME 里的影子 git 仓库中，不碰项目的 .git。需 Git >= 2.20 与 Node.js >= 20。
 - [Enosensu/dsh-fork-relink](https://github.com/Enosensu/dsh-fork-relink) — DSH 的 fork 伴随插件:官方 fork 发生后,把原会话的直接子 agent 复制到 fork 出的新对话下(递归复制整棵子树,副本经官方 agent API 创建),每个副本留在磁盘上成为可被官方恢复路径唤醒的冷会话——新对话保留子代理面板,并能继续给这些子代理发消息;原件仍留在旧分支。
@@ -3235,6 +3237,7 @@ dsh plugin --profile web add dshmarket
 - [TetraSsky/dsh-hold](https://github.com/TetraSsky/dsh-hold) — 暂缓发送一条消息，直到主智能体空闲、没有子智能体在运行、也没有后台任务，然后再发出。每条暂缓可以设置发送时间，并选择排队、等待空闲或立即插话，消息与附件都保存在宿主端，重启也不会丢失。
 - [TGYD-helige/dsh-plugins#dsh-storage](https://github.com/TGYD-helige/dsh-plugins/tree/main/packages/dsh-storage) — 将 dsh 会话事件镜像到 MySQL、PostgreSQL、SQLite 或 SQL Server，同时保留本地会话文件。
 - [Theflippy978/dsh-auto-rename](https://github.com/Theflippy978/dsh-auto-rename) — 用首条消息为会话命名，并在重命名弹窗里流式给出 AI 标题建议。
+- [Thunderunruly/workspace-settings](https://github.com/Thunderunruly/workspace-settings) — 按工作区保存 DeepSeek Harness 的会话默认值：模式、权限预设、模型、推理强度、Chat 工作步骤展示与收起时机；在该工作区新建或复用的空白会话自动应用这些值。
 - [TianYa-DAO/dsh-pinned-sessions](https://github.com/TianYa-DAO/dsh-pinned-sessions) — 把运行中、跑完未点开和当前打开的会话固定在 DSH Web 侧栏工作区分组上方，并可从任意会话/工作区的「...」菜单里全局置顶。
 - [TiJun-Prime/dsh-turn-delete](https://github.com/TiJun-Prime/dsh-turn-delete) — 从 DSH 会话中删除一个已结束的轮次而不删除会话本身——最后一条助手回复旁的垃圾桶按钮会把该轮的提问、这条回复与工具记录从对话界面和模型上下文中移除，而 Session id、标题、之后的轮次与只追加日志保持不变；删除以持久 tombstone 记录，刷新后依然生效。
 - [tinyblckc0000al/dsh-deepworker](https://github.com/tinyblckc0000al/dsh-deepworker) — DSH 会话工作台：轮次操作、引用出处、本地笔记与摘要、会话内查找、专注锁和多工作区命令按钮。
@@ -3320,6 +3323,7 @@ dsh plugin --profile web add dshmarket
 - [youqu68/dsh-delete-chat](https://github.com/youqu68/dsh-delete-chat) — 在设置页中归档、恢复并删除会话。
 - [yoyococo1234/dsh-drag-graft](https://github.com/yoyococo1234/dsh-drag-graft) — Codex 同款拖拽引用对话：把侧栏的会话行拖到对话区，它就变成输入框里一枚原生会话引用 chip，可以继续打字再发送。拖侧栏的工作区（文件夹）行，则把那个文件夹的路径插进草稿，整个目录一起交给模型。候选按 session id 匹配而不是按标题，标题重名或为空都不会插错对话。引用条数由宿主决定（原版 3 条），插件在运行时从宿主读取该上限而不写死，宿主侧调大后自动跟随、不用改插件。chip 插不进时降级为直接发一条只含引用的消息，不会静默失败。
 - [yoza10635/dsh-argp](https://github.com/yoza10635/dsh-argp) — DeepSeek Harness 守卫式上下文压缩——LLM 提议、确定性守卫裁决：逐原子缩放（verbatim 守卫下 extract/summary/false）+ 引用图延迟剪枝（0-LLM）+ append-only 日志逐字节精确召回。
+- [yue7ye/dsh-Context-Drawer](https://github.com/yue7ye/dsh-Context-Drawer) — 按日期把已经结束的对话轮次从 DeepSeek Harness 会话的模型上下文里移走，聊天记录与只追加的会话日志保持原样。
 - [yuezengwu/dsh-explain](https://github.com/yuezengwu/dsh-explain) — 本地优先学习模式：跨会话全局学习线程、按来源讲解。
 - [YunongDai2005/dsh-theone](https://github.com/YunongDai2005/dsh-theone) — 所有事在一个对话框（主聊天）里聊：每条消息自动分到所属话题，每个话题在后台有独立的会话和上下文；已有的 DSH 旧会话也会自动整理、分类成话题。
 - [yxv1203-collab/dsh-conversation-archive](https://github.com/yxv1203-collab/dsh-conversation-archive) — 在 Windows 上管理 DSH 已归档会话，支持搜索、批量取消归档与删除、AI 辅助文件保留，以及经过校验的本地或网络目录备份。
@@ -6821,6 +6825,7 @@ dsh plugin --profile web add dshmarket
 - [rand0wn/dsh-wrapped](https://github.com/rand0wn/dsh-wrapped) — 注册 /wrapped 命令，读取会话自身的统计数据，渲染成一张可分享的深色 SVG 总结卡：工具耗时与思考耗时对比、解码速度，以及工具/思考占比的评语。
 - [Raphaelutumn/dsh-change-budget](https://github.com/Raphaelutumn/dsh-change-budget) — 为受支持的文件修改设置可配置的逐回合额度，在工具执行前限制不同文件数、修改调用数与 UTF-8 载荷字节数。
 - [RaulLazaro/dsh-pwa-plugin](https://github.com/RaulLazaro/dsh-pwa-plugin) — DSH 的 PWA 插件：离线支持、Service Worker 缓存，并可作为应用安装。
+- [regrevia/dsh-lifeguard](https://github.com/regrevia/dsh-lifeguard) — 把 DSH 真实崩溃日志沉淀成精简硬约束：装插件前静态预检拦崩，装完体检冲突，起不来时受控自愈；大会话还能转世成新会话，交接单由模型读懂原会话后写。
 - [regrevia/dsh-unlag](https://github.com/regrevia/dsh-unlag) — DSH 桌面端自己的刷新按钮。开发插件要重启，可手里还有任务在跑？刷新一下！开久了页面越来越卡？刷新一下！一个按钮解决这些烦恼，正在进行的会话、排队消息和草稿都不受影响。
 - [dsh-myrules](https://github.com/Relistencode/dsh-extension-hub/tree/main/packages/dsh-myrules) — 在设置页的「个性化」页编辑此主机全局指令（~/.dsh/AGENTS.md），此机器上的所有会话都会应用。
 - [ris-cloud/dsh-ris-ide](https://github.com/ris-cloud/dsh-ris-ide) — DSH 网页版的本机开发面板：跟随服务日志、启停工作区程序、JDWP 调试 Java、浏览编辑工作区文件与文件名搜索。需要 DSH 0.2.0-rc.2 或更高版本；启动或调试 Java 程序需要本机 JDK 与 Maven，启动前端程序需要 Node。
@@ -7545,6 +7550,7 @@ dsh plugin --profile web add dshmarket
 - [BitDG/dsh-plugins#music-player](https://github.com/BitDG/dsh-plugins/tree/main/plugins/music-player) — 提供多公共音源的侧栏音乐浏览、持续后台播放、队列续播，以及经审核安装的 MusicFree 兼容音源扩展。
 - [blackstar-baba/dsh-bird-bike](https://github.com/blackstar-baba/dsh-bird-bike) — 一只戴头盔的像素小鸡骑行在 GUI 底部的我的世界像素风骑行带里，带 80 秒昼夜循环、按铃音符、跳跃、车头灯与骑行统计。白天苦力怕出没，夜晚僵尸被撞飞。需要 DSH >=0.2.1-alpha。
 - [Bob-Bo1/dsh-stock-watch](https://github.com/Bob-Bo1/dsh-stock-watch) — DSH 本地优先的 A 股持仓与自选监控：侧栏行情、持仓盈亏，以及网页添加、修改、删除和 JSON 保存。
+- [BossKrabs/product#dsh-madara-pixel-pet](https://github.com/BossKrabs/product/tree/main/packages/dsh-madara-pixel-pet) — Windows 像素宇智波斑桌宠：16 组动作随 Harness 任务事件变化，直接依赖原作者的大肥鱼运行库。
 - [bubbleptr/dsh-holdem](https://github.com/bubbleptr/dsh-holdem) — 六人无限注德州扑克：1 名玩家对 5 位只能看到自己底牌的 LLM 智能体。在 Web GUI 中提供独立 Tab 与会话区可拖拽悬浮小窗，支持按浏览器隔离的牌局与 CSRF 防护、按底池倍数给出的加注尺度、每人 3 次买入后出局，以及摊牌亮牌与公共牌翻牌动效。
 - [Cerbur/clutch-dsh#clutch-dsh-fireworks](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-fireworks) — 通过 `happy_fireworks` Agent 工具为 DSH Web UI 增加庆祝礼花覆盖层。
 - [chen731215-dev/dsh-tavern-v2](https://github.com/chen731215-dev/dsh-tavern-v2) — 酒馆管理面板：多角色卡、多世界书、多预设与会话级隔离，记忆总结、角色关系网、剧情选项一键发送，另有 NSFW 模式。完整效果需同时安装伴生插件 dsh-muv-engine 与 dsh-muv-table，用于渲染状态栏、剧情选项与变量表格。
