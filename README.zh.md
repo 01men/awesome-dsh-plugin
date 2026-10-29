@@ -1009,7 +1009,7 @@ dsh plugin --profile web add dshmarket
 - [Neptune810/dsh-power-button](https://github.com/Neptune810/dsh-power-button) — 在 DeepSeek Harness Web 界面加一个可拖动的电源胶囊：实时状态点，加上重启与结束两个动作；重启交给脱离终端的辅助进程，等端口释放后按原启动命令重新拉起。
 - [Nethur-auro/dsh-multi-root-explorer](https://github.com/Nethur-auro/dsh-multi-root-explorer) — 把侧边栏的工作区区域换成双选项卡浏览器：多个工作区根并列登记、各自固定不变，对话按每个会话真实的工作目录归入目录树，资源是只读文件树、点击即用右侧栏预览。两个选项卡各自独立隐藏、只影响显示且完全可逆；资源文件夹或文件可复制路径，也可拖进输入框成为原生引用块；@ 补全覆盖全部已登记工作区，而不只是当前工作目录。
 - [Neumannzc/dsh-archive-manager#plugin](https://github.com/Neumannzc/dsh-archive-manager/tree/main/plugin) — 美化版归档管理设置页：按工作区分组展示归档会话，悬停即可取消归档，附相对时间显示。
-- [newbieQQ/dsh-better-workspace-group](https://github.com/newbieQQ/dsh-better-workspace-group) — DSH Web 客户端的分组工作区侧栏，带材料与实验图标集，默认工作区停靠底栏。
+- [newbieQQ/dsh-better-workspace-group](https://github.com/newbieQQ/dsh-better-workspace-group) — z-col/dsh-workspace-groups（MIT）的分支：DSH Web 客户端的分组工作区侧栏，带材料与实验图标集，默认工作区停靠底栏；不能与上游插件同装（同一个 bundle row）。
 - [NICEGSP/call-map](https://github.com/NICEGSP/call-map) — 在会话中新增一个视图，用归因树展示本会话实际调用了哪些技能、MCP 工具与子代理，并附调用明细与未使用清单。
 - [Nicercz007-cloud/schedule](https://github.com/Nicercz007-cloud/schedule) — DSH Desktop 的三个可拖动、可缩放、自动记忆位置的悬浮桌面小组件：每日时间安排、目标设置与日期规划。
 - [nickkkkkk123123/dsh-whale-girl](https://github.com/nickkkkkk123123/dsh-whale-girl) — 会卖萌、会记账、会弹跳的鲸鱼娘桌宠：实时余额/用量/上下文占用、中键弹弓抛掷、彩蛋气泡、省电模式；安装包 346KB，零新进程。
@@ -5817,7 +5817,7 @@ dsh plugin --profile web add dshmarket
 - [ljsysfurryACE/dsh-aura-scheduler](https://github.com/ljsysfurryACE/dsh-aura-scheduler) — 主动调度：自适应心跳 + 价值网络（紧迫度、相关性、打断代价）决定 Agent 何时主动开口。
 - [lkshjd/dsh-debate](https://github.com/lkshjd/dsh-debate) — DeepSeek Harness 多 agent 隔离辩论：不同底色的辩手各自独立联网取证（互不可见防人云亦云）、交叉辩论互相反驳、评审收敛出结论。后台 job 运行，逐 agent 进度可见、token 统计、波次并行、断点续传。
 - [lonelymoon87/dsh-specflow](https://github.com/lonelymoon87/dsh-specflow) — 增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。
-- [LongerWu2026/dsh-dev-workbench](https://github.com/LongerWu2026/dsh-dev-workbench) — 智能工作台，集成待办、待回复、AI资讯、知识空间、多AI对话与开发工具。
+- [LongerWu2026/dsh-dev-workbench](https://github.com/LongerWu2026/dsh-dev-workbench) — 智能工作台，集成待办、待回复、AI资讯、知识空间、多AI对话与开发工具；消息采集与待回复需云之家账号及 yzj-cli，多 AI 对话仅桌面端可用。
 - [LONGSASASASASA/dsh-issue2pr](https://github.com/LONGSASASASASA/dsh-issue2pr) — Issue-to-PR 可验证交付链：11 阶段流水线（分析→检索→理解→假设→规划→实现→补丁→测试→评审→归因→PR 构建），4 道人工复核闸门，GitHub/GitLab/CodeArts 凭据连接，5 页工作台与可拖拽智能助手浮窗。
 - [loopx-project/loopx#dsh-loopx-plugin](https://github.com/loopx-project/loopx/tree/main/packages/dsh-loopx-plugin) — LoopX——面向长周期 Agent 的提供商中立、本地优先状态内核与控制平面：在 DeepSeek Harness 执行层之上持久化 Goal、Todo、门禁、证据、配额、恢复与交接状态；插件负责引导安装 CLI 与技能、准入有界的同会话续跑，并为精确绑定的工作循环提供本地 GoalBar。
 - [Lorvaste/DSH-Project-Initialization](https://github.com/Lorvaste/DSH-Project-Initialization) — 「想法落地」agent preset：一句话想法 → 需求规格 → 技术方案 → 维护基准；每一步先复述、你确认、再继续。无场景预设：73 个原子 skill（6 主 + verify 调度 + 66 子）按上下文加载。
