@@ -2147,6 +2147,7 @@ dsh plugin --profile web add dshmarket
 - [BossKrabs/product#dsh-madara-pixel-theme](https://github.com/BossKrabs/product/tree/main/packages/dsh-madara-pixel-theme) — 宇智波斑像素主题：暗红配色、中文像素字体和可跳过的写轮眼启动动画。
 - [brantshin/dsh-native-glass](https://github.com/brantshin/dsh-native-glass) — 在 macOS 的 Anywhere Labs DSH Desktop 中让主聊天区透出真实壁纸和后方窗口，复用原生玻璃材质并支持调整背景与面板不透明度。
 - [caoyiwei850/dsh-client-ui-skins](https://github.com/caoyiwei850/dsh-client-ui-skins) — DSH Web 换肤插件：4 套内置皮肤 + 自定义图片皮肤，图片作为全界面背景，配色自动跟随图片主色调。
+- [CC-play/dsh-theme-cooldark](https://github.com/CC-play/dsh-theme-cooldark) — 低对比度深色主题，重映射 DSH 的 alias token，并自带聊天气泡、代码块语言条与 markdown 标题配色。
 - [Cci-65/dsh-ui-plugin](https://github.com/Cci-65/dsh-ui-plugin) — 为 DeepSeek Harness 欢迎区和输入栏换肤，并提供工作区、模式与技能快捷入口。
 - [Chael-Chael/dsh-ascii-whales](https://github.com/Chael-Chael/dsh-ascii-whales) — 在空白聊天背景中呈现 ASCII 鲸群与游鱼，提供中性毛玻璃输入框、可视化选色器、深浅色适配，以及鲸鱼、鱼群、栅格和尾迹参数设置。
 - [changan0617/dsh-skin](https://github.com/changan0617/dsh-skin) — DeepSeek Harness 首页风格聊天背景皮肤，对照 deepseek.com/harness 首页逐行移植：WebGL 流体背景（5 色噪声场、流场笔刷、光源、辉光、暗角、颗粒）、白色 90px 点线网格（鼠标扰动 + 弹簧回弹）、数字点云鲸鱼（粒子聚形、呼吸游动、鼠标径向推开、光标光束提亮）。仅深色主题生效，系统开启减少动态效果时自动停用。
@@ -3943,6 +3944,7 @@ dsh plugin --profile web add dshmarket
 - [Aurum807/dsh-bilibili-video-summary](https://github.com/Aurum807/dsh-bilibili-video-summary) — 用 yt-dlp 下载 B 站视频、抽帧并转写：优先用站方字幕，没有字幕时调用本机 faster-whisper。注册写总结所需的技能，当用户消息只有一条视频链接时自动启用。需 PATH 上有 yt-dlp 与 ffmpeg，转写另需 faster-whisper。
 - [aurumple/dsh-rea-toggle](https://github.com/aurumple/dsh-rea-toggle) — 一个开关，实时把某个 MCP 服务器的工具 schema 与说明块从每个 agent 的模型上下文中移除或放回，无需重启——针对 REA 在任何任务下都会注入的 207 个工具 schema 而做。输入框下方胶囊、/rea on|off|status|toggle 与 GET/POST /rea-toggle/state 三种驱动方式；位置跨重启保持，子智能体在第一步之前就被覆盖。
 - [AusertDream/TravelPlanner](https://github.com/AusertDream/TravelPlanner) — 中文旅行规划 agent 预设「旅行规划助手」（面向国内行程）：实时查 12306 余票、飞猪 / 途牛机票与酒店价格、高德真实路线，核实闭馆与天气，交付一份可离线打开的单文件 HTML 路书（可拖动地图、三档酒店、分项预算）；附 9 个技能、引导用户补齐 Key 的环境自检，以及 12306 MCP 的预售期补丁；只规划查询，不代订代付。
+- [Ayowait/dsh-task-dispatcher](https://github.com/Ayowait/dsh-task-dispatcher) — 注册 `dispatch_task` 工具，把局部或例行任务交给隔离子 Agent 执行，等待其完成后检查预期文件并运行可选的验证命令，只向主会话返回一份简短报告。
 - [Azhe0306/dsh-connectors#desktop-connector](https://github.com/Azhe0306/dsh-connectors/tree/main/packages/desktop-connector) — Windows 桌面控制连接器：通过 10 个工具截屏（含被遮挡与半出屏窗口）、枚举与置顶窗口、移动/点击/拖拽/滚轮鼠标、发送组合键与任意中文文字。基于 koffi FFI：无需编译器、不每次起子进程，自带 GDI 截图与 PNG 编码。
 - [Azonda/dsh-whale-writing](https://github.com/Azonda/dsh-whale-writing) — 在输入框上方增加写作控制台：四种风格档（T1–T4）与五种严谨档（L1–L5）可手动选择或自动判断；把术语、禁用写法等记入 .mem/config.md（人工区只读）；并提供只改表达、不改事实的 whale_polish 润色工具。
 - [backkom/dsh-at-file-everything](https://github.com/backkom/dsh-at-file-everything) — 用 es.exe 从 Everything 索引回答 @file 补全，而不是遍历工作区，并以工作区根目录作为排序范围。仅限 Windows；需先安装 Everything 与 es.exe 并加入 PATH。
