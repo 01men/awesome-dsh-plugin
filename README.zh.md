@@ -3414,7 +3414,7 @@ dsh plugin --profile web add dshmarket
 - [xohmai/dsh-session-delete](https://github.com/xohmai/dsh-session-delete) — 真正删除会话：回收站可还原、归档清理、设置页批量删除。
 - [xqh-jason/dsh-sidebar-delete](https://github.com/xqh-jason/dsh-sidebar-delete) — 在 dsh 侧栏真正删除会话（连带本地日志与投影缓存，子代理与 fork 子会话级联）并管理工作区与未分组会话，可选每天定时清理未分组会话。
 - [xrn1997/dsh-session-delete](https://github.com/xrn1997/dsh-session-delete) — 给 DSH 会话加上回收站。增加删除会话、多选批量删除会话功能，删除的会话会被移至回收站。回收站内的会话可恢复，也可彻底删除；彻底删除就是永久删除，之后不可恢复，也不会自动过期。回收站内可以查看会话正文，方便区分会话。
-- [xuedipiaofei/dsh-session-title-dated](https://github.com/xuedipiaofei/dsh-session-title-dated) — 用「日期 | 分类 | 名称」自动命名 DSH 新会话，模型不可用时本地降级。
+- [xuedipiaofei/dsh-session-title-stamp](https://github.com/xuedipiaofei/dsh-session-title-stamp) — 把 DSH 会话标题固定为「日期 | 分类 | 名称」，支持回答后自动重算、手动刷新和悬停成本/耗时。
 - [XWIDE/dsh-xwide-handoff](https://github.com/XWIDE/dsh-xwide-handoff) — 用 /handoff 生成交接卡，让快满的对话在全新零上下文会话里接着跑：标题自动递增编号、卡片在侧栏置顶，接近阈值时自动备好新会话。
 - [XXXXXQ-0206/dsh-session-delete](https://github.com/XXXXXQ-0206/dsh-session-delete) — 在原生会话操作菜单中加入「删除」，并提供支持搜索、排序、工作区分组、消息预览、批量恢复与按工作区彻底清除的会话回收站；活跃会话受到保护。
 - [xypang33-sketch/dsh-save-chat](https://github.com/xypang33-sketch/dsh-save-chat) — 把整轮问答（问题 + 完整回答）存成工作区里的纯 Markdown；把值得留的提升进跨项目个人知识库，模型可按需检索。无数据库、零运行时依赖。
@@ -4856,6 +4856,7 @@ dsh plugin --profile web add dshmarket
 - [zirscard/dsh-principles-audit](https://github.com/zirscard/dsh-principles-audit) — 为 DeepSeek Harness 注册一个 `principles_audit` 工具：审查原则库的 ID 冲突与旧版 ID、因果句/适用边界/反例/证据缺失、同名与近重复原则、状态与置信度不一致、长期未复核与维度覆盖缺口。问题按严重度分级，并用硬门禁给出 pass / warn / fail——严重项必须被有效且未过期的豁免覆盖。原则库只读不改。
 - [zirscard/dsh-valuation-service](https://github.com/zirscard/dsh-valuation-service) — 注册一个 `valuation_service` 工具：读取 01/02/04 JSON 底稿树，输出统一 schema——六大类比率、预测比率、带 missing 标记的 DCF 输入槽、可比 PS/PE 与 IRR。确定性、本机运行：缺 WACC/增长率/资本开支/折旧摊销/营运资本时留空而不猜测，假设差异逐项标出交人工复核。
 - [zirscard/dsh-workpaper-gate](https://github.com/zirscard/dsh-workpaper-gate) — 为 DeepSeek Harness 注册一个 `workpaper_gate` 工具：审核底稿完整性，既审目标（设计层/模板）自身，也审底稿实例与模板的结构一致性；规则清单、模板清单与核心表清单全部配置化在同一个 spec 文件里。结果按 blocker / warning / info 分级，底稿只读不改。需 Python 与 openpyxl。
+- [ziyans2022/dsh-problem-bank](https://github.com/ziyans2022/dsh-problem-bank) — 面向 DeepSeek Harness 的结构化数学题库：多解法、分层知识图谱、六维难度与技巧驱动的变式出题。
 - [ZiYuan258/dsh-mcp-control](https://github.com/ZiYuan258/dsh-mcp-control) — 面向 @deepseek-ai/dsh-mcp-client 注册的 MCP 服务器的面板：逐个开关服务器（即时生效），显示各服务器的已注册工具数与预估上下文 token 开销，并将选择持久化到主目录 cordis.patch.yml，每次写入前保留带时间戳的备份。面板本身可以放在设置里作为一节，也可以放在左侧边栏作为一行图标，任一时刻只保留一个入口，切换器在「设置 → 插件」的插件页里。dsh-mcp-toggle 的维护分支。
 - [zjl1989-li/dsh-harness-zh-cn](https://github.com/zjl1989-li/dsh-harness-zh-cn) — DeepSeek Harness 中文汉化插件：通过 system-prompt/assemble 瀑布钩子在运行时把全部系统提示词、工具描述与运行时上下文翻译成中文（1788 条译文，零源码修改，卸载即还原英文）。
 - [ZK-Andy/dsh-frecency](https://github.com/ZK-Andy/dsh-frecency) — 为 DeepSeek Harness 提供常驻索引 grep，以同名遮蔽内置 grep/glob 工具：重复内容检索命中按访问/修改 frecency 排序的内存索引，glob 在可用时对齐内置 ripgrep 语义、不可用时回退索引。
