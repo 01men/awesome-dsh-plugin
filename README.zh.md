@@ -3878,6 +3878,7 @@ dsh plugin --profile web add dshmarket
 - [bestGi/dsh-rf-toolkit](https://github.com/bestGi/dsh-rf-toolkit) — 六个射频计算工具：电平换算、链路预算与最大距离、级联噪声系数、香农容量、阻抗匹配。
 - [BetterZflyee/dsh-jev-adapter](https://github.com/BetterZflyee/dsh-jev-adapter) — 用任意 OpenAI 兼容大模型跑 Jev 决策范式——无需 TypeSafe key。注册 jev_decide 工具，一次调用返回带概率分布的类型化答案（choice/score/boolean）。
 - [bill277048-hash/DSH-guardian#dsh-guardian](https://github.com/bill277048-hash/DSH-guardian/tree/main/packages/dsh-guardian) — dsh-guardian 守护程序面板：在 dsh WebUI 中启动、停止并查看两个 macOS LaunchAgent 的状态、日志尾行与明确的失败提示。
+- [binbin-QAQ/BiliMemory](https://github.com/binbin-QAQ/BiliMemory) — 把本地 BiliMemory 接入 DSH，支持 B站搜索、视频采集、任务状态、登录管理、A-Memorix 共用记忆状态检查，以及 QQ 链接监听状态、QQ 白名单和监听重启。仓库提供 Windows 一键部署器，可在 A-Memorix 缺失时自动安装或修复，并配置 local-bge-small-zh、向量服务和共享记忆。另提供 `install-memory.cmd` 用于单独修复记忆库。需要 Windows、Node.js 22+、Python 3.12、Playwright/Edge、FFmpeg、运行中的 BiliMemory API，以及用于 QQ 的 MaiBot/NapCat。当前不包含语音、RVC 和翻唱功能。
 - [bitsmug/dsh-bgjobs](https://github.com/bitsmug/dsh-bgjobs) — 将命令提交为独立于 DSH 进程的后台任务（可选沙箱），关闭 DSH 也不影响运行，并提供实时网页面板与离线 CLI/GUI 管理。当前仅支持Windows系统。
 - [blkpne/dsh-database](https://github.com/blkpne/dsh-database) — DeepSeek Harness Web 数据库插件：统一管理 MySQL、MariaDB、PostgreSQL、SQL Server、Oracle 和 MongoDB 连接，让 Agent 按会话授权探索数据结构、执行只读查询并辅助数据分析。
 - [bmhty123/dsh-sketchpad](https://github.com/bmhty123/dsh-sketchpad) — 手写公式、画示意图的画板：浮动或侧栏画布，导出裁切后的图片作为消息附件。
@@ -7212,6 +7213,7 @@ dsh plugin --profile web add dshmarket
 - [Shaky77/KISS_Law-DSH](https://github.com/Shaky77/KISS_Law-DSH) — 唯稳律（KISS's Law）英文版：业界首个且唯一的领域无关白箱因果裁决中间件。与领域特定的因果推断工具（统计/经济/机器学习）或「需提供因果证据」的代理防火墙不同，它在执行前对*每个*工具调用沿确定性结构因果链（R->S->D->H->M）裁决——适用任意领域，无需训练或按领域调参。拦截破坏性与凭据文件操作、对反复越界升级止损、故障环节切断至修复验证、不可审计执行给出风险判定；纯本地运行、零 API 成本。
 - [Shaky77/weiwen-law-dsh](https://github.com/Shaky77/weiwen-law-dsh) — 唯稳律白箱因果闸门：每个工具调用执行前沿确定性因果逻辑链裁决——拦截破坏性与凭据文件操作、对反复越界升级止损、故障环节切断至修复验证、不可审计执行给出风险判定；纯本地运行、零 API 成本，附带 6 个白箱自查工具。
 - [shaoshi20/dshscan](https://github.com/shaoshi20/dshscan) — DSH 插件安全扫描器：对插件源码做静态与语义双通道检查，内置 DSH 特有攻击面规则，集成 npm audit，支持批量扫描，输出带严重等级与证据的 HTML 报告。
+- [Shark00I/dsh-audit](https://github.com/Shark00I/dsh-audit) — 审计 DeepSeek Harness 插件：安装前只读扫描并按 S–D 分级；装好后记录插件启停、敏感工具调用与每个插件的 token 估算，全部收在一个设置面板里。
 - [Shiyuedong-Jade/DM-security](https://github.com/Shiyuedong-Jade/DM-security) — 只读安全评估达梦 DM8 数据库：60 项检查，附等保 2.0 控制点对照，生成 HTML 报告。需 Java 8+ 并自备达梦 DmJdbcDriver jar。
 - [shuxue6662-a11y/dsh-risk-guard](https://github.com/shuxue6662-a11y/dsh-risk-guard) — 零打扰审计与保险丝拦截：静默记录每次工具调用并做纯规则风险评分（含累积加分、风险等级分布、归档保留期清理），只拦不可逆灾难（受保护路径删除、磁盘擦除、force push 到受保护分支/引用、凭据外发），/risk-guard 输出脱敏操作账单并支持 --since 时间过滤。
 - [simon300000/dsh-auto](https://github.com/simon300000/dsh-auto) — 为 WebUI 增加 Auto Approve 权限档位，由全新且受限的审查 Agent 逐次允许或拒绝审批请求。
