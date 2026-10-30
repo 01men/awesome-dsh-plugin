@@ -3045,6 +3045,7 @@ dsh plugin --profile web add dshmarket
 - [falling-ts/dsh-force-compact](https://github.com/falling-ts/dsh-force-compact) — llama-cpp qwen3.8-27b 低上下文时，强制上下文压缩插件，提示模型使用效率和使用流畅度，外加完善的压缩提示。
 - [FallnStrelitzia/dsh-chat-settings](https://github.com/FallnStrelitzia/dsh-chat-settings) — 为单个对话设置系统提示词、按轮数折叠上下文、采样参数，并提供低 token 的纯聊天模式。
 - [fallow5/dsh-pin-sessions](https://github.com/fallow5/dsh-pin-sessions) — 把会话置顶到 Web 侧边栏顶部：独立置顶面板、归档区、原生三点菜单集成。
+- [Fan-sx/dsh-session-focus](https://github.com/Fan-sx/dsh-session-focus) — 从会话行、悬浮卡或会话头一点即可标记「进行中／挂起」；侧边栏底部和折叠的工作区名旁始终显示还有几条。面板把标记过的会话与侧边栏本就跟踪的状态（等待回复、在跑、已完成未查看）列在一起，底部读数则直接跳到最该处理的那一条。
 - [feiertu/dsh-input-rewriter](https://github.com/feiertu/dsh-input-rewriter) — 你只管正常打字，停下约两秒，它就把你刚写的话自动改写成更容易得到好答案的样子；贴进来的代码、网址、长文原样不动，一次问几件事也一件不漏、排好顺序。
 - [feigo313/dsh-structured](https://github.com/feigo313/dsh-structured) — 让 DSH 每条实质回复默认结构化：无标签标题卡 + 表格/清单/步骤；按会话开关，style.md 可覆盖。
 - [FenrirCait/dsh-session-leftover-purge](https://github.com/FenrirCait/dsh-session-leftover-purge) — 在 DeepSeek Harness 中删除会话后，清理 billion-context 快照；cost-meter 账本记录的清理默认关闭，可在设置里打开。
@@ -4802,7 +4803,7 @@ dsh plugin --profile web add dshmarket
 - [YYK0402/dsh-siyuan-archive](https://github.com/YYK0402/dsh-siyuan-archive) — 把 DSH 对话产出归档到思源笔记：一次 siyuan_archive 调用按「<归档路径>/<年-月>/<类型>/<日期>_<时间>_<主题>_<内容>」写入并附元数据表，自动维护笔记本根的「索引与规范」索引文档；6 个 siyuan_* 宿主工具（列笔记本、全文检索、读文档、归档、删块、删文档）与 Web 设置页配置地址（含测试连接）、存宿主凭据库的 API token、归档目标与标题模板，以及按笔记本/文档的读写删权限（默认全拒、子级只能收紧）。
 - [YZz-S/dsh-bili-summary](https://github.com/YZz-S/dsh-bili-summary) — 提供 bili_summary 工具：B 站视频元数据、字幕时间轴与 sharp 切帧配图，内置错误处理与优雅降级。
 - [zdd3143/dsh-vision-click](https://github.com/zdd3143/dsh-vision-click) — 让 Agent 看着屏幕操作 Windows：用 Windows OCR 把界面文字变成可点目标，再执行点击、拖动、滚轮、键入与按键，每步都用逐像素差分和文字增删复核；F6+F7 由独立进程急停。
-- [zdkcomeon/dsh-mcp-link](https://github.com/zdkcomeon/dsh-mcp-link) — 扫描本机 AI 客户端和项目工作区的 MCP 配置，将选中服务接入当前 DSH profile，并支持 JSON 导入及图形化新增、编辑和移除。
+- [zdkcomeon/dsh-mcp-link](https://github.com/zdkcomeon/dsh-mcp-link) — 扫描 Cursor、Claude Code、Codex CLI、Gemini CLI、VS Code 等 13 种客户端和项目工作区的 MCP 配置，把选中服务接入当前 DSH profile，并提供连接测试、原地重连、JSON 导入和图形化新增、编辑和移除。
 - [zengjunlin2022/dsh-basemind-plugin](https://github.com/zengjunlin2022/dsh-basemind-plugin) — 按会话工作区启动 BaseMind MCP server，并注册其对外提供的代码智能工具，无需配置 MCP 行。
 - [ZF3373/dsh-algo-trainer](https://github.com/ZF3373/dsh-algo-trainer) — 算法学习工具：同步 Codeforces 与 AtCoder 提交记录，分析弱项画像， AI 生成训练计划，间隔复习排期，覆盖 114 课算法模板库。
 - [zhang-bin-98/sci-fork](https://github.com/zhang-bin-98/sci-fork) — 基于文献和实验结果的生物医学研究图谱，拆分假设，连接证据，推进研究。
