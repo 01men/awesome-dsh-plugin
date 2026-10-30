@@ -2250,6 +2250,7 @@ dsh plugin --profile web add dshmarket
 - [liuyaguang8023/dsh-jcc-theme](https://github.com/liuyaguang8023/dsh-jcc-theme) — 金铲铲同人风格的 DeepSeek Harness Web 界面主题：原创海克斯竞技场背景与金色铲影（浅色为羊皮纸棋盘地图），金/青/紫/蓝四套强化配色与令牌覆盖，界面底层铺六边形棋盘网格，另有可开关的极光与金色浮尘氛围、圆润/锐利棱角切换，以及三选一的海克斯强化草案和 12 张本地图鉴；右下角「海克斯核心」面板可一键关闭、即时还原原生界面；不含游戏素材。
 - [liyy996/dsh-theme-windowsxp](https://github.com/liyy996/dsh-theme-windowsxp) — 把 DSH 换成 Windows XP：Luna 蓝皮肤（米色面板、渐变按钮、#7F9DB9 输入框、圆角蓝色滚动条、纯 CSS 绘制的 Bliss 风格桌面），外加一轮跑完时的提示音，以及智能体停下来等你批准时的另一种提示音。
 - [llong12lll-ux/dsh-skin-c137-virus](https://github.com/llong12lll-ux/dsh-skin-c137-virus) — 荧光绿的深空主题：双角色立绘、九宫格对话框外壳，黑底配荧光绿描边。
+- [lmxcode/dsh-bing-wallpaper](https://github.com/lmxcode/dsh-bing-wallpaper) — 必应每日壁纸作为界面背景：每天自动更换，可在最近 30 天中任选一天固定。
 - [longgege-cd/dsh-skin-pixel-anime](https://github.com/longgege-cd/dsh-skin-pixel-anime) — 像素动态星空主题：五套配色、四套分层文字方案、五款像素字体（含简体中文像素字体）、方角与圆角可选、旋转像素星空与流星、顶栏像素时钟，均在插件设置页配置。
 - [Longxiangjunlin/dsh-endfield-theme](https://github.com/Longxiangjunlin/dsh-endfield-theme) — 《明日方舟：终末地》主题：炭黑与警戒黄的工业 HUD、在外壳渲染前注入的开屏动画、对话区背景，以及重新配色的 Windows 标题栏。侧栏品牌会改为「终末地工业 / ENDFIELD INDUSTRIES」，可用 URL 参数还原。
 - [LoveIrishCoffee/dsh-effort-ultra-skin](https://github.com/LoveIrishCoffee/dsh-effort-ultra-skin) — 给 hytime/dsh-thinking-effort 已经画出来的推理等级控件换一层 CSS 皮肤：蓝紫渐变胶囊、 星点与流光，浅色与深色主题各一套配色。需先安装该插件，自身不新增任何界面。
@@ -2382,7 +2383,7 @@ dsh plugin --profile web add dshmarket
 - [yryd/dafy-whale-theme](https://github.com/yryd/dafy-whale-theme) — 海洋蓝主题：游动鱼群、上升气泡、输入框上方的「每日鱼语」，以及左上角品牌区替换；「设置 → 海洋主题」提供 7 组 32 项可调（品牌文字与字号、徽章、主色、水印、鱼群、语录、整体缩放），改动即时生效无需刷新，并带二次确认的一键恢复默认。
 - [YSDLNGF/dsh-acrylic-light](https://github.com/YSDLNGF/dsh-acrylic-light) — 为 DeepSeek Harness 桌面版提供透明亚克力窗口材质与分层雾面面板：窗口透出桌面壁纸（模糊由 Windows Acrylic 负责），输入栏是一块毛玻璃，聊天文字在输入栏上沿硬裁切。注意：页面样式随插件安装，但「窗口透出壁纸」需要额外运行一次 app.asar 补丁脚本（仓库 Releases 里的补丁包，双击 enable-transparency.cmd），补丁重启后生效，DSH 更新后需重打。只装插件也能用，只是窗口保持不透明。
 - [yu502950715yang/dsh-use-wallpaper](https://github.com/yu502950715yang/dsh-use-wallpaper) — 把本机 Wallpaper Engine 壁纸放到 dsh Web 界面背后：scene 壁纸在浏览器内实时渲染（three.js 播放器 + Rust/WASM CPU 粒子模拟），视频与 web 壁纸原样播放，其余回退 preview 图，不需要安装 Wallpaper Engine 运行时。壁纸库从 Steam 创意工坊目录（431960）自动探测或手动指定，设置面板可选壁纸、配壁纸库与引擎目录、调光晕与暂停/画质。
-- [Yuanqs-pine/DSH-Transparent-Frosted](https://github.com/Yuanqs-pine/DSH-Transparent-Frosted) — 整页磨砂背景：一条滑杆从真实模糊的磨砂过渡到完全透明，所有区域、组件与展开面板作为画在 body::before 上的同一张纸一起变化；设置页有独立滑杆，另有可选的鲸鱼粒子图层，随鼠标推开与拖动。桌面端效果最佳：整个窗口透明后直接透出你自己的桌面壁纸；浏览器里没有壁纸可透，插件会自绘一层深色背景。
+- [Yuanqs-pine/DSH-Transparent-Frosted](https://github.com/Yuanqs-pine/DSH-Transparent-Frosted) — （UI 增强）整页磨砂背景：一条滑杆从真实模糊的磨砂过渡到完全透明，所有区域、组件与展开面板作为画在 body::before 上的同一张纸一起变化；设置页有独立滑杆，另有可选的鲸鱼粒子图层，随鼠标推开与拖动。桌面端效果最佳：整个窗口透明后直接透出你自己的桌面壁纸；浏览器里没有壁纸可透，插件会自绘一层深色背景。兼容性：适用于 DSH < 0.2.1-rc.5——Windows 桌面端自 0.2.1-rc.5 起主窗口不再透明，本版在其上背景会显示为黑色；Web 端与 macOS 不受影响。
 - [yunxiiQwQ/dsh-maid-whale-UI#maid-whale-webui](https://github.com/yunxiiQwQ/dsh-maid-whale-UI/tree/main/maid-whale-webui) — DSH 桌面端与 Web UI 鲸鱼女仆主题，提供亮暗配色、海洋插画、手绘边框和 Windows 原生桌宠。
 - [yzke/dsh-icon-theme](https://github.com/yzke/dsh-icon-theme) — 为 DSH 设置和侧边栏自动分配并支持自定义的 Fluent 风格图标，离线内置 SVG，默认保留插件原图标。
 - [zampie/sakura-afternoon-skin](https://github.com/zampie/sakura-afternoon-skin) — 樱色午后主题皮肤：浅色/深色各配一套柔和的樱色令牌配色，全屏飘落樱瓣与柔光晕（点击穿透），会话头部的樱瓣开关与「通用设置」里的皮肤总开关。
