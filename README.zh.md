@@ -1100,6 +1100,7 @@ dsh plugin --profile web add dshmarket
 - [Oxygen-Wang/dsh-cursorlike-sidebar](https://github.com/Oxygen-Wang/dsh-cursorlike-sidebar) — 为 DeepSeek Harness 提供类 Cursor 侧边栏，支持文件浏览、代码编辑、Git 差异、终端、侧边对话及 Ctrl+L 文件引用。
 - [oxygenforce/dsh-agent-activity](https://github.com/oxygenforce/dsh-agent-activity) — 输入框上方的「已做 / 正在做 / 接下来」实时卡片，回答还没出来时就能看到进度。
 - [OZONGO/dsh-keyboard-shortcut](https://github.com/OZONGO/dsh-keyboard-shortcut) — 为 DSH 设置面板增加「快捷键」页面：六个可改键命令（权限模式切换、思考强度调节、状态页、任务清单），并展示翻页键跳转与可选的输入框 Enter 重映射。
+- [P1gG0dG0d/dsh-study-ask](https://github.com/P1gG0dG0d/dsh-study-ask) — 在 DSH 对话中选中一段文字，右侧栏即开出独立的提问对话，与主对话分屏并排，追问不会顶走正在学的内容，也不会出现在左侧会话列表里。
 - [p56568833/dsh-plugin-groups](https://github.com/p56568833/dsh-plugin-groups) — 给插件页「已安装」列表加一行分类 Tab（全部 / 界面与外观 / 用量与账户 …），记住选中的分类；在可编辑对照表里登记的补丁插件会缩进挂在它修的插件下面。纯显示层，不写任何文件。
 - [Paimonshen/dsh-coding-plugin](https://github.com/Paimonshen/dsh-coding-plugin) — 编程学习悬浮面板：编辑并运行 Python/JavaScript/TypeScript/PowerShell（含退出码与耗时），JSON 课程包关卡自动评判并可导出进度，提供 Markdown 笔记与代码片段库；代码分析以用户消息直投当前对话，由对话主模型直接输出。
 - [panando/dsh-prompt-optimizer](https://github.com/panando/dsh-prompt-optimizer) — 一键提示词优化：按可配置策略改写输入框草稿，提供可编辑模板、Few-shot 示例、指定模型与推理强度。
@@ -5935,6 +5936,7 @@ dsh plugin --profile web add dshmarket
 - [huangziyuan-general/dsh-novel-forge](https://github.com/huangziyuan-general/dsh-novel-forge) — 小说写作护栏插件：20 个 novel_* 工具以代码强制事实账本一致性、阶段与落盘门禁、确定性机审与提案制修订；右侧栏工作台提供阅读/听书/润色/校对/全书体检/批量起草，旁路引擎让内部工序不占主对话。
 - [huazhaoyishiba/dsh-roundtable-theater](https://github.com/huazhaoyishiba/dsh-roundtable-theater) — 在原生面板中让产品经理、程序员和挑刺用户进行两轮讨论，支持追问、投票、重答和结论整理。
 - [hulibuld/dsh-sort-out-the-thoughts](https://github.com/hulibuld/dsh-sort-out-the-thoughts) — 梳理思路插件。输入框旁的开关把会话切进「梳理 → 批判 → 调研」三段模式，每段列着这一段该产出的东西，够了再点「推进」按钮换段；成稿按体裁存进 设置 → Thoughts Center。另有悬浮随想记录本，碎灵感先存着，点「去研究」直接开一条新对话，那句话已经写进输入框。
+- [hunmer/dsh-team-control#dsh-plugin](https://github.com/hunmer/dsh-team-control/tree/main/dsh-plugin) — DSH 的 Agent 团队编排 sidecar：成员上限可配，成员是真实的 sub-agent 且可单独指定模型；任务按 DAG 依赖自动派发；fs/exec/net/env 四域权限由 broker 强制；运行过程通过 SSE 在 Web 面板实时查看。
 - [huxint/dsh-team](https://github.com/huxint/dsh-team) — Agent 团队：派生具名常驻队友，用共享任务列表、成员邮箱与虚拟工作区协作，并在协作室页签里实时观察团队。
 - [HuYellow/specflow#deepseek-specflow](https://github.com/HuYellow/specflow/tree/main/plugins/deepseek-specflow) — 提供规格驱动的工程工作台，支持需求和文档版本、隔离 Git 工作区、独立复核、验证与人工接纳。需 Node.js 24+ 与 Git。
 - [hzh5021/dsh-progress](https://github.com/hzh5021/dsh-progress) — 别憋着：连着几步模型输出里一个 text 都没有（心里的盘算不算说话），就往会话里塞一句提醒，下一个 step 落进它眼里。
