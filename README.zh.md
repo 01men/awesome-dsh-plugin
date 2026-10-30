@@ -879,6 +879,7 @@ dsh plugin --profile web add dshmarket
 - [liu3734/jira-tasks-dsh-plugin](https://github.com/liu3734/jira-tasks-dsh-plugin) — DSH 输入框下方的 JIRA 任务面板：按工作区配置项目 Key 与可选 JQL，展示指派给当前用户的问题，带状态、优先级与类型标签、总数徽标、收起与刷新、跳转 JIRA，并在设置页卡片配置 JIRA 地址与令牌（含连接测试）。
 - [liudapeng0311/dsh-pwa-launcher](https://github.com/liudapeng0311/dsh-pwa-launcher) — 接管你桌面上已有的浏览器 PWA 快捷方式（保留原图标），双击即静默拉起 dsh web 并以应用窗口打开界面；网页右上角提供重启与 dsh 自助升级（失败自动回滚）两个控件。仅 Windows。
 - [liuhaolong16/dsh-quote-reply](https://github.com/liuhaolong16/dsh-quote-reply) — 把引用与消息正文彻底分开：引用任意助手回合里的段落会打开输入框上方的引用行，随下一回合作为 system-prompt 上下文注入模型（带来源与时间标注），并在回合尾部以可展开的「引用(N)」行显示这一轮到底用了哪几条；引用本地落盘、刷新不丢、按回合认领；宿主与客户端两半体做版本握手并上报兼容结论。
+- [liuhusk/dsh-status-card](https://github.com/liuhusk/dsh-status-card) — 内容区右上角的常驻状态卡片：一行写清本轮时间去向（模型/工具/等你），另列可折叠的任务与进度条、会话目标（可编辑/暂停/继续/清除）、已提交计划（可点开在右栏预览）、本次变更文件，以及带 token 与耗时数字的子智能体行；内容区收窄时正文向左让位，推到极限自动收成一颗圆钮。
 - [liujia-io/dsh-image-picker](https://github.com/liujia-io/dsh-image-picker) — 在会话输入框添加 📎 选图按钮，通过系统文件选择器选取参考图并注入官方附件管线（缩略图、数量与大小校验、随消息上传），绕开拖拽环境问题。
 - [liuming-dev/dsh-plugins#annotation-rewind-scroll](https://github.com/liuming-dev/dsh-plugins/tree/main/annotation-rewind-scroll) — 为回复和文档添加随下一条消息发送的注释，编辑历史用户消息并从该处重新执行，使用快捷键浏览用户消息或在输入框调出历史输入。
 - [liumorrisclaw/dsh-composer-input-history](https://github.com/liumorrisclaw/dsh-composer-input-history) — 在 DSH 输入框用 ↑ 调回本会话已发送的消息；↓ 前翻并恢复你正在写的草稿，再按一次 ↓ 丢弃草稿、清空输入框。
@@ -1203,6 +1204,7 @@ dsh plugin --profile web add dshmarket
 - [Ri0n72Y/dsh-workspace-scope](https://github.com/Ri0n72Y/dsh-workspace-scope) — 按工作区（工程）启停 Skill 与 MCP：每个项目单独控制新会话加载哪些技能与 MCP 工具。
 - [Rice00/dsh-job-progress](https://github.com/Rice00/dsh-job-progress) — DSH Web 界面中长时间后台任务的实时进度：有任务的会话里浮着一个小球，可拖动，点开是含已完成/总量、速度与剩余时间的面板。
 - [Rice00/dsh-loupe](https://github.com/Rice00/dsh-loupe) — 在浮窗里解释 DSH 对话中选中的词或句子：走独立通道、不污染当前会话，解答可以固定成独立会话。
+- [Rick1125/dsh-beads-viewer](https://github.com/Rick1125/dsh-beads-viewer) — 右侧栏的 Beads 议题浏览器：按可开工、受阻与各状态筛选并搜索 tracker，阅读渲染后的议题正文，其中的项目文件与议题 id 可直接点击，并可一键复制或插入 id。
 - [Ricketts-Guo/dsh-shortcuts](https://github.com/Ricketts-Guo/dsh-shortcuts) — Web UI 可自定义键盘快捷键：34 个预置功能（会话、视图、剪贴板、模型、静默权限切换、设置），一键录制自定义组合键，内置快捷键速查表与诊断面板。
 - [riesbri/dshline#dshline](https://github.com/riesbri/dshline/tree/main/packages/dshline) — DeepSeek Harness 的终端原生 TUI 前端，通过 Harness 能力提供会话、模型、插件、任务、子代理、待办事项和 Provider 配置，并保留真实的终端滚动历史。
 - [rinsoraa/dsh-pulse-rail](https://github.com/rinsoraa/dsh-pulse-rail) — 把 DSH 的轮次导航条变成音乐可视化：每根细横条按自己的频段变长变粗（系统声音用 WASAPI loopback 采集）。只改几何、不加颜色或发光，导航条原有的悬停预览、点击跳转与滚轮滚动都保留。
