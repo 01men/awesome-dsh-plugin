@@ -2089,7 +2089,7 @@ dsh plugin --profile web add dshmarket
 - [zhujunzhujunzhu/ai-token-report#dsh-plugin](https://github.com/zhujunzhujunzhu/ai-token-report/tree/main/packages/dsh-plugin) — DSH 的 token 用量面板：输入框上方一条用量条，点开是计费总量、趋势图、按模型/项目/来源的分组明细与自定义日期范围，数据来自本机 DSH / Codex / Claude Code / Trae / WorkBuddy 的会话日志；填了自建服务端地址与 appKey 后，用量事件会实时上报到那个服务端，两者都没配时一个字节都不采集；另提供 token_usage 工具与 ctx.tokenReport 服务。不采集对话内容。
 - [zhuzichen362/dsh-call-shrink](https://github.com/zhuzichen362/dsh-call-shrink) — DeepSeek Harness 的极端 LLM 调用压缩：标题生成短路、飞行中请求去重、24 小时回放缓存，并用 `[[TASK n]]`/`[[ANSWER n]]` 分隔协议把 N 个并行请求批量合并为 1 次上游调用——更少 API 调用、更低开销、相同答案。
 - [ZiOstudio/dsh-budget-handoff](https://github.com/ZiOstudio/dsh-budget-handoff) — 给 DeepSeek Harness 的会话设预算上限：按官方价目表实时算账，80% 预警、100% 拦停任务，并落盘一份交接快照，让下一个会话接着干。
-- [Zoria-Lind/dsh-token-optimizer](https://github.com/Zoria-Lind/dsh-token-optimizer) — token 优化管道：按上下文压力分层压缩（40% 以下无损投影、以上 LLM 摘要）、按 agent 裁剪工具列表、长文本转图片视觉摘要、/token-status 查看压力与节省量。
+- [Zoria-Lind/dsh-token-optimizer](https://github.com/Zoria-Lind/dsh-token-optimizer) — Token 优化：支持可搜索的 MCP 工具发现与懒加载、可配置的压缩控制与状态查看、工具输出精简、长文本视觉摘要，以及可选的对话原文归档与分页回查。
 - [zouxiaoyang/dsh-commandcode-usage](https://github.com/zouxiaoyang/dsh-commandcode-usage) — DSH 的 CommandCode 用量与余额面板：在侧边栏底部显示 API 用量、信用额度、5小时/每周窗口。
 - [zy12342/usage-widget](https://github.com/zy12342/usage-widget) — DSH 侧边栏账户余额快捷查看：显示余额、赠送额度、当前模型和官方高峰 / 空闲计费时段，按余额分四档显示质感，余额过低时提醒。
 
@@ -3787,7 +3787,7 @@ dsh plugin --profile web add dshmarket
 - [zhengjy01/dsh-notion-connector](https://github.com/zhengjy01/dsh-notion-connector) — 配置一次 Notion Integration Token，Agent 即可搜索、读取、查询、创建、更新、追加 Notion 页面与数据库内容，并提供 Web 设置页。
 - [zhujunpeng12/dsh-memory-system](https://github.com/zhujunpeng12/dsh-memory-system) — 面向 DeepSeek Harness 的本地优先持久记忆：在 pre-step 注入有预算上限的热记忆，使用精确匹配与中文二元 BM25 召回冷层，提供六个 Agent 工具，并以审批门禁、租约锁、恢复回执和只读治理与轨迹复盘候选保护写入。
 - [zilliztech/memsearch#MemSearch](https://github.com/zilliztech/memsearch/tree/main/plugins/dsh) — 供 DSH 与其他编程 Agent 共享的 Markdown 记忆，支持自动捕获、步骤前上下文注入、搜索召回，以及通过审阅面板实现 memory-to-skill 自进化。
-- [Zoria-Lind/dsh-ecolink#adapter](https://github.com/Zoria-Lind/dsh-ecolink/tree/main/adapter) — dsh-ecolink 记忆生态的 dsh 侧组件：浏览器扩展收割 DSM 格式记忆标签并向网页对话注入回忆、零依赖本地服务写入共享记忆池、本 adapter 负责 pre-step 注入与 /ecolink-push 写回，共同打通 chat.deepseek.com 与 DSH；压缩为事务化双池（暂存提交/回滚）。
+- [Zoria-Lind/dsh-ecolink#adapter](https://github.com/Zoria-Lind/dsh-ecolink/tree/main/adapter) — 跨端记忆的 DSH 适配器：支持 DSM 短标签自动捕获入池、记忆注入与写回、网页完整回答保存、DSH 侧栏浏览与手动注入、指定条目读取、通用/非通用分类及事务化记忆压缩；配合需另行加载的 extension/ 目录下 Chrome/Edge 扩展，以及适配器可自动启动的本地 @zoria-lind/dsh-ecolink-service 服务。
 - [ZSeven-W/dsh-noema](https://github.com/ZSeven-W/dsh-noema) — 为 DSH Agent 提供长期记忆——可检索、可检视的持久记忆，带回忆、搜索、浏览与知识图谱工具，支持从十个其他 AI 编码工具导入记忆，并附设置页。
 - [zzy-fxxxexxxyxxx/dsh-openclaw-memory](https://github.com/zzy-fxxxexxxyxxx/dsh-openclaw-memory) — 把现有 OpenClaw Markdown workspace 作为有界的人格与记忆上下文共享给 DeepSeek Harness，并提供 Sidebar 浏览与编辑。
 
@@ -4830,7 +4830,7 @@ dsh plugin --profile web add dshmarket
 - [zoahdev/dsh-artifacts](https://github.com/zoahdev/dsh-artifacts) — 把 Markdown + JSON 渲染成自包含 HTML 文档/卡片/仪表盘/画廊（CLI + 内置 artifact_render 工具）。
 - [zoahdev/dsh-browser-use](https://github.com/zoahdev/dsh-browser-use) — Browser Use 云端桥接：通过 Browser Use API 让 dsh agent 执行真实网页任务，包括打开页面、点击、输入、填表和提取数据。
 - [zoahdev/dsh-firecrawl](https://github.com/zoahdev/dsh-firecrawl) — 通过 Firecrawl Cloud API 把 URL 抓成 LLM 可用 Markdown，或搜索网页并返回结果内容。
-- [Zoria-Lind/dsh-behavior-enhancer](https://github.com/Zoria-Lind/dsh-behavior-enhancer) — 工具调用纪律：注入静态行为约束段、工具失败后并行池收敛到 1（连续 3 次成功恢复）、连续失败提醒模型停止重试、写后检查与 .bak 回滚、高风险命令闸门、/behavior-status 遵守度统计。
+- [Zoria-Lind/dsh-behavior-enhancer](https://github.com/Zoria-Lind/dsh-behavior-enhancer) — 工具调用纪律：提供行为提示、失败后降低并行度与重试提醒、写后检查及备份回滚、高风险命令闸门、变更摘要与验证提醒、项目记忆建议性检查、可配置的项目纪律周期重述与压缩后补充，以及遵守度统计。
 - [zp-home/dsh-recommend](https://github.com/zp-home/dsh-recommend) — DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。
 - [ZRui-C/dsh-computer-use](https://github.com/ZRui-C/dsh-computer-use) — DSH 电脑控制：Playwright/CDP 后台操作 Chromium，Accessibility 优先控制 macOS；动作锁定到正确进程与窗口，不抢前台、不移动鼠标，提供已签名公证的 Universal 2 DMG 安装包。
 - [zuihouye/dsh-agnes-tools](https://github.com/zuihouye/dsh-agnes-tools) — 把 Agnes AI 的生图 / 生视频接成 DSH 原生工具，长视频任务可稍后续查。需设置 Agnes API Key（AGNES_API_KEY）。
@@ -5046,7 +5046,7 @@ dsh plugin --profile web add dshmarket
 - [SciF-Lin/dsh-browsercontrol-mcp](https://github.com/SciF-Lin/dsh-browsercontrol-mcp) — 通过官方 dsh-mcp-client 挂载微软的 Playwright MCP，把浏览器工具以 stdio 接入智能体；一次性的 CDP 授权由提示注入、调用拦截与 /bw-setup 命令引导完成。
 - [Shad0wwa1ker/dsh-browser-mode](https://github.com/Shad0wwa1ker/dsh-browser-mode) — 新增「浏览器操作」Agent 预设（基于 Playwright MCP 工具集的导航、填表、点击与截图规程），并加门禁：其他预设里的浏览器工具调用一律拒绝，直到用户通过内置的 browser_access 工具授权该会话。插件自带 Playwright MCP provider，插件页的设置页与 browser_source 工具都能在运行时把浏览器来源切换为 Microsoft Edge（默认）、Playwright 内置 Chromium 或 CDP 地址。需在 profile 里保留共享的 browser-use 注册表行（一个进程只能有一个 provider）。
 - [ShallBay/dsh-bridge-browser](https://github.com/ShallBay/dsh-bridge-browser) — 让 DSH 直接操控你当前正在浏览的 Chrome 标签页，无需视觉能力：页面以带编号元素清单的结构化文本交给模型；点击、输入、按键、滚动、标签页操作与导航都会在扩展侧边栏等你确认，密码与支付卡字段保持掩码。15 个 browser_* 工具覆盖 snapshot、文本读取、标签页列举/打开/跟随、点击、输入、按键、滚动、等待、导航、后退、关闭、前进与刷新。本项目是 omdsh-dev/dsh-browser 桥接插件的再打包版，发布到 npm，可直接 `dsh plugin add` 安装：放宽了宿主安装时校验的 peer 范围，避免被判为版本不兼容；随包的扩展额外探测 DSH 桌面端宿主端口 19387，因此无需手填桥接地址；并附带脚本把扩展复制到固定目录，避免切换 profile 或重装后扩展失效。预构建 Release tarball 内含插件本体与已构建的 MV3 扩展。上游：https://github.com/omdsh-dev/dsh-browser。
-- [SheepofSheep/dsh-doyourweb](https://github.com/SheepofSheep/dsh-doyourweb) — 用 @ 引用已登录的 Chrome / Edge 标签页和已授权的本地 HTML，读取、批量操作、截图并调用 WebMCP；拖动批注浮窗，将多条批注加入聊天草稿后统一发送。应用菜单显示运行中窗口和图标，优先连接匹配的本地 MCP，未安装先询问，无匹配时使用 Cua Driver。支持打字、快捷键、控件分页、最小化坐标检查及可选的操作后校验；连接页和批注界面已更新，后台输入能力取决于应用。
+- [SheepofSheep/dsh-doyourweb](https://github.com/SheepofSheep/dsh-doyourweb) — 用 @ 引用已登录的 Chrome / Edge 标签页和已授权的本地 HTML，读取、批量操作、截图并调用 WebMCP；拖动批注浮窗，将多条批注加入聊天草稿。按用户明确给出的本地文件路径上传，支持隐藏 input、自定义选择器及 iframe。轻量快照句柄使用新元素引用前需读取游标；浏览器输入显示独立停止按钮。选择运行中的 Windows 应用，优先连接匹配的本地 MCP，未安装先询问，无匹配时使用 Cua Driver，支持打字、快捷键、控件分页和操作后校验。复用 Windows helper，后台输入能力取决于应用。
 - [shinjiyu/dsh-plugin-search](https://github.com/shinjiyu/dsh-plugin-search) — 不用官方 DeepSeek API 也能用内置 web_search：关掉 web-search-deepseek，默认走 Tavily keyless。
 - [sryimnoob123/dsh-web-search-ollama](https://github.com/sryimnoob123/dsh-web-search-ollama) — 让 DSH 的 web_search 工具走 Ollama 联网搜索 API，复用 OLLAMA_API_KEY，无需 DeepSeek 官方 Key。
 - [Starp1ume/dsh-chat-mode](https://github.com/Starp1ume/dsh-chat-mode) — 在 DSH 桌面版标题栏加入聊天/工作切换：聊天模式用原生 webview 内嵌 DeepSeek 网页版（chat.deepseek.com），插件自身不调用 DSH API，首次启动默认进入聊天；工作模式保留原生 Agent 界面，切换时网页保持挂载；「带入工作」对话框需先确认，只会填入工作模式草稿、不自动发送。
@@ -7756,7 +7756,7 @@ dsh plugin --profile web add dshmarket
 - [fbbDirge/dsh-xiaoheihe](https://github.com/fbbDirge/dsh-xiaoheihe) — 定时浏览小黑盒帖子，支持可选的人格评论与回复、扫码登录和浏览历史。
 - [FeWOO/DeepSeek-meme](https://github.com/FeWOO/DeepSeek-meme) — DSH 表情包库：输入区按钮打开默认表情（10 张 GPT 绘制）与社区二创梗图（8 张）两个包，点一下发送 180px 贴纸，模型也能通过 send_sticker 理解并回发表情。
 - [Firefox2100/dsh-agentic-roleplay#core](https://github.com/Firefox2100/dsh-agentic-roleplay/tree/main/packages/dsh-agentic-roleplay-core) — 为 DSH 提供具有结构化世界、自主角色、持久会话、世界创作、语音与图像生成功能的智能体角色扮演系统。需要安装并启用 Firefox2100/dsh-agentic-roleplay#state。
-- [flhy666/dsh-chatting-pet](https://github.com/flhy666/dsh-chatting-pet) — DSH 桌面宠物：语音聊天、多人设、聊天记忆、B 站视频与 QQ 群记忆（只读本地文件）；「电脑操作」需在面板里显式打开总开关后才响应语音指令。
+- [flhy666/dsh-chatting-pet](https://github.com/flhy666/dsh-chatting-pet) — ?? dsh-pet ???:?????????????B?? QQ ??,?????????????????? DSH ??????????
 - [Flycat43/liang-desktop-pet#liang-harness-plugin](https://github.com/Flycat43/liang-desktop-pet/tree/main/plugins/liang-harness-plugin) — DeepSeek Harness Web 人物交互插件，支持六档人物与表达风格、四种任务模式、当前会话交流、公开思考摘要和浏览器语音朗读。
 - [Gastronomicluna/Matrix-code](https://github.com/Gastronomicluna/Matrix-code) — 矩阵风格 CLI 对话页：Agent 思考过程化作绿色代码雨倾泻而下，回复照常流式显示。
 - [ghang/dsh-achievement-helper](https://github.com/ghang/dsh-achievement-helper) — 在本地记录 DeepSeek Harness 主题成就、勋章与角色收藏。
