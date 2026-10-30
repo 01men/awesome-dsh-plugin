@@ -4225,11 +4225,11 @@ dsh plugin --profile web add dshmarket
 - [liuhange789/data-asset-inspector#data-asset-attestation](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-attestation) — 数据资产认证报告插件 — 生成带证据链的认证级数据质量报告
 - [liuhange789/data-asset-inspector#data-asset-orchestration](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-orchestration) — 数据资产编排引擎，把套件内工具串成预置流水线（脱敏→清洗→盘点→封装、鉴证、AI数据集体检、政务巡检、可流通性评估），支持增量与定时处理
 - [liuhange789/data-asset-inspector#data-asset-quality-score](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-quality-score) — 依据 GB/T 36344-2018 国家标准，从规范性、完整性等六个维度对数据质量进行量化评分，为企业数据资产入表提供可审计的底稿。
-- [liuhange789/data-asset-inspector#data-asset-valuation](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-valuation) — 数据资产估值插件 — 成本法（重置成本）+收益法+市场法三轨估值
+- [liuhange789/data-asset-inspector#data-asset-valuation](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-valuation) — 数据资产估值插件 — 成本法（重置成本）+收益法两轨估值
 - [liuhange789/data-asset-inspector#data-cleaning](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-cleaning) — 数据清洗插件 — 去重+格式标准化+异常值检测
 - [liuhange789/data-asset-inspector#data-lineage](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-lineage) — 数据血缘追踪工具，梳理数据从产生到流转的全链路，满足数据产权登记中的来源合法性审查要求。
 - [liuhange789/data-asset-inspector#data-masking](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-masking) — 基于国家标准的自动化数据脱敏工具，自动识别身份证、手机号等敏感字段，支持完全匿名化与假名化分级策略，生成合规审计日志。
-- [liuhange789/data-asset-inspector#data-packaging](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-packaging) — 数据封装插件 — 产品说明书生成+合规附件+元数据打包
+- [liuhange789/data-asset-inspector#data-packaging](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-packaging) — 数据封装插件 — 产品说明书生成+合规附件
 - [liuhange789/data-asset-inspector#data-sensitivity-classification](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-sensitivity-classification) — 数据敏感度分类插件 — 自动识别敏感字段+分级（高/中/低/公开）
 - [liuhange789/data-asset-inspector#data-visualization](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-visualization) — 数据可视化插件 — 生成自包含HTML报告，支持五种图表(bar/comparison/pie/radar/flowchart)与两列布局
 - [liuhange789/data-asset-inspector#gov-data-inspector](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/gov-data-inspector) — 政务数据巡检工具，覆盖数据完整率、准确率、时效率等核心指标。
