@@ -2479,6 +2479,7 @@ dsh plugin --profile web add dshmarket
 - [ctianye/dsh_gearbox](https://github.com/ctianye/dsh_gearbox) — 第三方模型的思考档位预设：内置 16 组按「厂家 → 模型」组织的官方档位，支持自定义档位与逐模式传输值，校验后直写 llm-pi-ai 配置；支持按模型在 OpenAI Chat Completions、OpenAI Responses 与 Anthropic Messages 三种协议间切换并自动重新分组路由；输入框提供「优化提示词」按钮，用设置中指定的大模型改写当前内容。
 - [cuboteam/dsh-plugin-dit](https://github.com/cuboteam/dsh-plugin-dit) — DIT.ai 的 DeepSeek Harness 模型接入 bundle：使用一个 DIT_API_KEY 安装 29 个 OpenAI Chat Completions 模型和 10 个 Anthropic Messages 模型，并按协议配置 thinking。
 - [cv-superding/dsh-deepseek-web-login](https://github.com/cv-superding/dsh-deepseek-web-login) — 新增 deepseek-web provider，把 chat.deepseek.com 网页端模型接入 DSH：浏览器登录抓取、PoW 请求签名、SSE 流式传输与基于提示词的工具调用。
+- [cybtachyon/dsh-plugin-local-infer](https://github.com/cybtachyon/dsh-plugin-local-infer) — 一个 DeepSeek Harness 插件，用于管理本地推理引擎。
 - [CynthiaYX/dsh-plan-act-models](https://github.com/CynthiaYX/dsh-plan-act-models) — 简化RooCode和Cline在VSCode插件上的功能，为 Plan 与 Act 两种模式各绑定一套 provider、模型与思考复杂度，支持按工作区覆盖。
 - [CypherNaught-0x/DSH-Subagent-Model-Router](https://github.com/CypherNaught-0x/DSH-Subagent-Model-Router) — 借助别名、能力标签和使用说明，将每项委派任务自动智能路由到最合适的已配置模型——常规工作更快、更省，复杂任务则交给更强的专用模型。可通过 Web 设置页或引导流程组建模型团队，让多个专家并行工作并可靠汇总结果；所选模型会显示在子代理视图中，并以内联标签无缝融入 Better Sidebar 的 Tasks 任务树。
 - [Dalizi2026/dsh-factory-provider](https://github.com/Dalizi2026/dsh-factory-provider) — 把 Factory (Droid) 订阅额度接入 DSH 的原生模型 provider：三条协议路由、用你自己的 API key 经本机回环网关认证，并提供设置页查看连接状态、订阅额度、按模型的 token 统计与切换 key。
@@ -6511,6 +6512,7 @@ dsh plugin --profile web add dshmarket
 - [miiaowuwu/dsh-sound-lab](https://github.com/miiaowuwu/dsh-sound-lab) — DSH 声音工坊：在会话结束、弹出选项、请求许可与停止时播放指定音效，支持 AI 角色语音生成与音效库管理。
 - [miiy/dsh-notify](https://github.com/miiy/dsh-notify) — DeepSeek Harness 的跨设备通知插件。执行长任务期间无需值守：任务结束、等待审批或等待回答时，通过已启用的渠道发出提醒，可选桌面通知、浏览器标签页、ntfy 推送或飞书机器人。
 - [mill413/dsh-notify](https://github.com/mill413/dsh-notify) — 在任务结束或需要处理时发送桌面通知和自定义 HTTP 推送。
+- [MinEagle/dsh-dingtalk-self](https://github.com/MinEagle/dsh-dingtalk-self) — 以你本人钉钉身份自动回复私聊：在绑定的 DSH 工作区里查资料生成回答，通过 dws CLI 以本人身份发出。
 - [mingzeng21/dsh-notion](https://github.com/mingzeng21/dsh-notion) — 通过官方 Notion MCP（OAuth + PKCE）把 dsh 连接到 Notion：通过 `mcp__notion__*` 工具搜索、读写页面、数据库与评论。
 - [monkey-sking/dsh-im-global](https://github.com/monkey-sking/dsh-im-global) — 一个插件接入 Telegram、Discord、Slack、Mattermost、Zulip 与 Matrix，按对话隔离会话、重启后仍能续上；带设置页可增删与测试通道、无需改 YAML，白名单 fail-closed——未配置前拒绝所有发送者。
 - [moon09300731/dsh-peak-cost-mode](https://github.com/moon09300731/dsh-peak-cost-mode) — 在 DeepSeek 高峰计价时段（北京时间 09:00–12:00、14:00–18:00，价格 ×2）自动切换 caveman 超精简输出省 token，标题栏常驻状态徽章，档位切换时弹提醒。
@@ -7480,6 +7482,7 @@ dsh plugin --profile web add dshmarket
 - [netbka/local-commander-plugins](https://github.com/netbka/local-commander-plugins) — 通过 mcp-remote 把 DeepSeek Harness 接到 localcmd.app 上托管的 Local Commander MCP 服务（浏览器登录），在你的 Windows 电脑上读文件、查 Git、执行你批准的检查并探测本地服务。需 Local Commander 账号，且配对的 agent 要跑在那台 Windows 电脑上。
 - [NNNNyang/dsh-remote-gpu](https://github.com/NNNNyang/dsh-remote-gpu) — 在会话顶栏显示 dsh-remote 所连服务器还有几张空闲显卡，右侧边栏面板展示每张卡的利用率、显存、温度与占用用户，并提供返回同一快照的 remote_gpu 工具。
 - [NOirBRight/dsh-mobile-pairing](https://github.com/NOirBRight/dsh-mobile-pairing) — DSH 手机远程配对：提供二维码 offer、回环 Host Gateway、加密 Relay 或 Quick Tunnel、同网 WebRTC Direct，以及可撤销的 Android Device Token。
+- [observer130/dsh-peerbar](https://github.com/observer130/dsh-peerbar) — 把本机与多台远端 DeepSeek Harness 聚合进官方侧栏：远端工作区/会话作为原生行出现、由官方中栏打开，执行始终留在远端，经 HTTP/TLS 直连。远端无需安装插件，界面不使用 iframe。
 - [OMSociety/dsh-ssh-tunnel](https://github.com/OMSociety/dsh-ssh-tunnel) — 多机 SSH 工作台：把远程服务器收进主机库、按项目授权，在右侧栏里开交互式终端或双栏 SFTP；模型用 SSHManager 工具远程执行命令、上传下载文件，密钥不进模型上下文。
 - [onesmash/dsh-remote-bot-bridge](https://github.com/onesmash/dsh-remote-bot-bridge) — 基于 ds-harness-remote 的跨机器 Bot 传话：五个工具让本地 Bot 列出对端 Bot、固定目标设备并给它发消息，不用切换本地窗口。
 - [ook826092-cloud/dsh-mobile-css](https://github.com/ook826092-cloud/dsh-mobile-css) — DSH Web UI 移动端适配：紧凑排版、全宽输入卡（含光标修复）、抽屉式侧边栏（点击遮罩关闭）、两页式设置流程、响应式表格与统计、安全触控目标。
