@@ -2065,6 +2065,7 @@ dsh plugin --profile web add dshmarket
 - [YZz-S/dsh-token-cost-meter](https://github.com/YZz-S/dsh-token-cost-meter) — 在输入框下方统计行实时显示当前会话累计 token 消耗与估算费用（人民币），价格从 DeepSeek 官方价格页动态获取。
 - [zdt3476/dsh-metrics](https://github.com/zdt3476/dsh-metrics) — Token 用量与成本看板：请求数、Token、最近 60 分钟 RPM/TPM、缓存命中率、按模型与供应商拆分、12 个月活动热力图，成本按 OpenRouter 公开价目估算。数据只落在本地账本，无遥测。
 - [zeng6125-rgb/dsh-usage-heatmap](https://github.com/zeng6125-rgb/dsh-usage-heatmap) — DSH 设置页的 Token 用量看板：九宫指标卡（累计/今日/昨日/峰值日/最长会话/连续活跃/活跃天数/会话/子代理 Token）、GitHub 风格每日/每周/累计热力图与活动洞察，全部从本地会话日志与投影缓存聚合，会话被删后历史 token 仍然保留。
+- [zengxiangpeng123/dsh-our-free-model-balance-zxp](https://github.com/zengxiangpeng123/dsh-our-free-model-balance-zxp) — 在 DSH 输入框旁显示 Our Free Model（OFM）当前渠道的剩余额度，点开可看全部已登录渠道；余额用尽时红底标注，切换模型会跟着切渠道。需先安装 dsh-our-free-model 并登录至少一个渠道。
 - [Zenjibad/deepseek-cost-usage-status-plugin](https://github.com/Zenjibad/deepseek-cost-usage-status-plugin) — 在 DSH 会话统计行下方新增彩色状态行，实时显示 DeepSeek API 费用、用量与账户余额，并带高峰/错峰计费指示。
 - [Zenjibad/headroom-stats-plugin](https://github.com/Zenjibad/headroom-stats-plugin) — 在 DSH 内实时展示 Headroom 压缩代理的 token 与费用节省：设置页仪表盘 + 输入区常驻统计行。
 - [Zenjibad/llmtrim-stats-plugin](https://github.com/Zenjibad/llmtrim-stats-plugin) — 在 DSH 内实时展示 llmtrim 节省统计：设置页金额卡片（已支付、未压缩应付、今日与本周节省）与按模型明细，输入区可配置轮播或静态统计条。
