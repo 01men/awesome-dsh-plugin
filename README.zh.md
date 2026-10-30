@@ -532,6 +532,7 @@ dsh plugin --profile web add dshmarket
 - [Eyeing0721/dsh-cot-en2cn](https://github.com/Eyeing0721/dsh-cot-en2cn) — 在 DSH 网页对话里把每段英文思考的中文译文显示在原文正下方，不改动会话记录；按译文块缓存、可指定翻译模型，并带设置面板。
 - [Faide-cyber/dsh-model-in-use](https://github.com/Faide-cyber/dsh-model-in-use) — 让 DSH 的模型菜单看见会话占用、记住模型推理档位与折叠状态。
 - [Fakek0f3sT/dsh-mcp-diff](https://github.com/Fakek0f3sT/dsh-mcp-diff) — 把网页对话里的每次文件改动渲染成一张折叠的 diff 卡片并逐行高亮，涵盖 MCP filesystem 的 edit_file/write_file 与内置的 edit/write。
+- [FallenWings27/dsh-provider-card-release](https://github.com/FallenWings27/dsh-provider-card-release) — 切换模型时在会话输入框旁播一张角色登场卡：身份名、六轴分数（智力／编码／速度／稳定／性价比／上下文）、额度提示与台词；23 张精选卡覆盖 15 个 provider，库里没有的模型按公开基准派生数据卡。web 客户端插件，无依赖、无 hooks。
 - [fan56/dsh-tui-pi](https://github.com/fan56/dsh-tui-pi) — DeepSeek Harness 的全功能 TUI：流式对话、powerline 状态栏、实时思考/工具/待办面板、子代理双视图、主题热切换——全部以纯 cordis 插件实现，不 fork、不 patch 上游一行代码。
 - [fangwen9527/dsh-composer-ux](https://github.com/fangwen9527/dsh-composer-ux) — 可配置发送/换行键位、输入框右键菜单三种来源（插件不介入 / 浏览器菜单 / 自定义样式菜单）、带分类的快捷指令面板（每条可设「每次发送都附加」或「仅在本会话第一条消息附加」，并有跨分类移动与新建）、用另一次模型调用把草稿整理成清晰指令的提示词优化、设置面板尺寸记忆，并为 OpenCode 路由自动注入 x-opencode-session 请求头。快捷指令存在全局文件 ~/.dsh/quick-prompts.json 里，与会话、项目无关。
 - [FanXi1230/fanxi#dsh-nova](https://github.com/FanXi1230/fanxi/tree/main/plugins/dsh-nova) — 把 DeepSeek Harness 输入框的推理强度滑轨做成一片小宇宙。Off、Low、High、Max 各有专属星场与极光，档位之间平滑过渡，并绑定真实的当前会话模型选择。
@@ -3278,6 +3279,7 @@ dsh plugin --profile web add dshmarket
 - [ptrel1/dsh-interrupted-resume](https://github.com/ptrel1/dsh-interrupted-resume) — 轻量级的 dsh 崩溃恢复：重启后识别上一轮被强杀中断的会话，注入一条「先核实现状再动手」的续跑指令，避免盲目重做已有副作用的操作。只认真正的崩溃信号（turn/end 的 reason 为 interrupted，由 session repair 冷读时合成），因此不会把用户主动取消、限流或模型报错误判为可续，也就不需要错误分类、退避策略或配置界面。与通用自动续跑插件相比，它还覆盖「子代理执行中被中断」的盲区：此时父代理的轮次已正常结束（正在等待子代理），常规判定看不到任何可续对象，整棵子代理树会静默死掉；本插件会识别出被中断的子代理并唤醒父代理。单个宿主文件、零外部依赖、七个配置常量。
 - [PwnKY/dsh-session-link](https://github.com/PwnKY/dsh-session-link) — 复制、打开 `dsh://` 会话深链，或将其粘贴到另一对话中，注入被引用会话的受限只读快照。
 - [qiangweiliu/dsh-context#agent-embodiment](https://github.com/qiangweiliu/dsh-context/tree/main/agent-embodiment) — 为 DeepSeek Harness 提供上下文可观测性与控制：跨会话 token 分析、会话级预算/提示词/工具控制，以及可选的 Agent 脚手架。复用官方 tokenMeter、compaction、systemPrompt、tools.restrict seam；监控只读。
+- [qiesh-cn/dsh-huiyou](https://github.com/qiesh-cn/dsh-huiyou) — 把 DSH 会话删除到可搜索的回收站，再从侧栏恢复或彻底删除。
 - [qingmomo233/dsh-thinking-language](https://github.com/qingmomo233/dsh-thinking-language) — 切换智能体思考过程（推理/链式思考）的语言：支持简体中文、英文、俄语、法语、德语、西班牙语、日语、韩语等，或跟随系统界面语言（自动）。新增「设置 → 通用」中的思考语言选择行、系统提示词注入（每次组装提示词时求值，新会话生效）与 /thinking-language 命令。
 - [qingyou002/dsh-auto-handoff](https://github.com/qingyou002/dsh-auto-handoff) — DSH 插件：通过 /handoff 或会话累计 Token 阈值把长会话交接给同工作区的新会话，并继承 preset、模型、权限与 Plan 模式；交接简报由会话自身的模型撰写，切换在 Step 边界发生，不中断正在执行的步骤。
 - [qinu321/dsh-archive-viewer](https://github.com/qinu321/dsh-archive-viewer) — 已归档 DSH 会话的只读查看器：按工作区筛选、按标题/ID 搜索，不取消归档即可阅读从完整日志折出的对话——包括上下文压缩前的原文与工具调用。
