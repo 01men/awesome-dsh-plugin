@@ -2042,6 +2042,7 @@ dsh plugin --profile web add dshmarket
 - [xfqz86/dsh-usage-stats](https://github.com/xfqz86/dsh-usage-stats) — 在侧边栏按模型、会话与日期统计 token 用量，并监控 OpenCode Go 额度、DeepSeek 余额与 Z.ai 额度。
 - [xgxx666/dsh-clear-usage](https://github.com/xgxx666/dsh-clear-usage) — 在 DSH 设置中统计本地 Token 用量，支持小时活动图、日历热力图、自定义日期、模型用量分布、本地/API 筛选和原生缓存命中口径，不估算费用，不替换输入框状态栏。需要 DSH 0.2.0-rc.2 或更高兼容版本。
 - [xiangrikuibaize/dsh-tide-badge](https://github.com/xiangrikuibaize/dsh-tide-badge) — DSH 输入框下方的计费时段与余额药丸：常显账户余额与本次对话花费，并显示峰价/谷价档位与距下次切换的倒计时。峰谷判定含中国法定节假日与周末；本次对话花费按余额差值记账，采样点是插件自带的「对话停止满一分钟后刷新余额」。
+- [xiao2236/dsh-kon-fee-widget](https://github.com/xiao2236/dsh-kon-fee-widget) — 《轻音少女》部费挂件：茶桌加五人，点一下看余额、今天花费与峰谷状态；每轮对话结束弹消耗气泡，双击出中日对照角色台词。
 - [XiaoOu2024/dsh-self-review](https://github.com/XiaoOu2024/dsh-self-review) — 在最终回答送达前先扣住，交给一次独立、最小上下文的模型调用重新推导并校验，只放出校验后的文本，用户看不到草稿。被复核的回答多一次模型请求，文字出现前会多几秒。
 - [xiaweiliang060035/dsh-opencode-go-usage](https://github.com/xiaweiliang060035/dsh-opencode-go-usage) — 悬浮组件实时显示 OpenCode Go 各 key 用量（滚动/每周/每月），限流预警，自动发现 key 池。
 - [Xidong-AI/dsh-rate-limiter](https://github.com/Xidong-AI/dsh-rate-limiter) — 按 provider 令牌桶主动限速，超限请求在发出前延迟排队而非失败，避免触发上游 429。
@@ -6236,6 +6237,7 @@ dsh plugin --profile web add dshmarket
 - [Cerbur/clutch-dsh#clutch-dsh-worktree](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-worktree) — 为 DSH Web UI 增加按 Git Worktree 组织 Session 的视角，同时继续由 DSH 管理原始 Project 和 Session 数据。
 - [cherrchen/dsh-plugin-git](https://github.com/cherrchen/dsh-plugin-git) — Git 服务 + 右侧边栏 UI：Changes 页（暂存/取消暂存、逐文件 diff、提交/修补、推送与 rebase 同步、二次确认的丢弃）、分页 canvas 提交图谱页、Worktrees 页（列出/进入/新建工作树）、输入框旁分支选择器，以及可选的 LLM 提交信息生成。
 - [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) — 会话修改审查插件：追踪会话内 write/edit 工具调用并展示 diff 对比；会话隔离、子代理聚合、SSE 实时推送、角标与颜色自定义。
+- [cnHuaShao/dsh-gitee-enterprise](https://github.com/cnHuaShao/dsh-gitee-enterprise) — 在 Harness 侧栏提供 Gitee 企业版工作台：浏览项目及任务、需求、缺陷，查看详情、子任务、评论与 Markdown，支持新建或编辑工作项，并可通过 @ 引用。
 - [CoolTea001/dsh-cool-git](https://github.com/CoolTea001/dsh-cool-git) — Git 插件 —— 会话 Tab 栏添加 Git 管理功能，支持 commit | pull | push | branch | diff 等基础功能。
 - [crystal-hang/dsh-branch-flow](https://github.com/crystal-hang/dsh-branch-flow) — 输入框内的分支面板：按规范从 production6 切分支，按 type(scope) 约定校验提交信息，一键提交、推送并合并到 stage。
 - [cyrusgogogo/dsh-git](https://github.com/cyrusgogogo/dsh-git) — Git 面板，支持提交图、文件差异、分支与工作树管理，以及 AI 辅助生成提交说明预览。
