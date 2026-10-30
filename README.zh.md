@@ -2857,6 +2857,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-profile-stylist](https://github.com/7gzgn/dsh-profile-stylist) — 你说想要什么样的人设，它把文案写出来并把资料页填好：昵称/简介/标语/链接由宿主模型生成，头像取本地素材库（或你给的路径），再由站点自己的上传控件完成头像入库。**默认 dry-run**，只写资料字段 —— 不碰密码、邮箱、安全设置。
 - [accomplish07zrh-eng/dsh-aurabot-qq](https://github.com/accomplish07zrh-eng/dsh-aurabot-qq) — 通过 SnowLuma（OneBot v11）让 agent 以人设角色住进 QQ：私聊与群聊、语音条、表情包、QQ 空间日记、刷 B 站、翻唱、生图、长期记忆与心情。每项本事都是模块，可关闭、替换或在本地扩展——热重载的扩展模块还能改写群聊回不回、提示词、最终发出的消息和每个聊天用的模型。默认安全（总开关关、试运行开）。
 - [AgentConnect/dsh-awiki](https://github.com/AgentConnect/dsh-awiki) — 为 DeepSeek Harness 智能体提供基于开放协议ANP的原生身份，以及基于该身份的私聊、群聊、邮件和智能体间通信能力。
+- [Anarrogantcat/dsh-identity](https://github.com/Anarrogantcat/dsh-identity) — DSH 身份系统：可编辑内核、证据制 traits、按需召回的记忆、心情、关系、精力控频、自主提议与共情；QQ 只是一个可选通道。
 - [Applepinea/dsh-qq-access](https://github.com/Applepinea/dsh-qq-access) — 把 dsh 接到个人 QQ：NapCat 托管与扫码登录、私聊/群聊 AI 回复（含图片理解）与批量节流、本地归档与轮询补漏、群内 @ 与撤回自己刚发的消息、QQ 空间留言，并带左侧栏管理面板。默认任何 QQ 用户私聊该账号（或在群里 @ 它）都会得到 AI 回复；把 access.privateMode / groupMode 设为 allowlist 才限制。主人专属命令仍只对主人生效。
 - [Awoodwhale/dsh-agent-persona](https://github.com/Awoodwhale/dsh-agent-persona) — 按工作区路径或会话 ID 分发 system prompt 人设（完全一致 / 前缀 / 包含 / 正则），可指定一条默认人设兜底；会话页有「人设」页签，能看到实际发出去的提示词；人设列表可导入导出；另有一个开关拒绝工具写入人设存储。
 - [Bay-Zeddie/dsh-agent-instructions](https://github.com/Bay-Zeddie/dsh-agent-instructions) — 在 dsh Web 设置页里编辑原生 AGENTS.md 的面板：指令链上每层可点选编辑，三种生效范围，并可视化官方指令预算。
@@ -6190,6 +6191,7 @@ dsh plugin --profile web add dshmarket
 - [STARDUSTLC666/dsh-suite](https://github.com/STARDUSTLC666/dsh-suite) — STARDUSTLC 插件全家桶·组合补丁：与 18 个组件插件配套，一条命令统一注入默认配置（办公流/媒体工坊/DevOps/通知/预设）；组件经一行 add 命令直装（扁平化设计，无 git 子依赖）。
 - [starwish-ai/xingyuan-dsh](https://github.com/starwish-ai/xingyuan-dsh) — 愿望与任务管理的 Agent Preset 组合包：在对话中创建愿望/任务、机会日打卡、微行动，并附带记忆存储与 Web 端进度图表。
 - [statedock/statedock-plugins#deepseek-harness](https://github.com/statedock/statedock-plugins/tree/main/adapters/deepseek-harness) — 通过 StateDock Remote MCP 提供共享计划、上下文恢复与进度更新 Skills，不执行任务或调度 Agent；适配 Harness 0.2.0-rc.2。
+- [stitchmaps/dsh-todolist](https://github.com/stitchmaps/dsh-todolist) — DSH 待办清单面板：可折叠分组中的大卡片任务，截止时间精确到小时，可按任务设置提前提醒，并通过钉钉群机器人 Webhook 或企业应用工作通知推送；任务可绑定工作区会话，点击直达。
 - [STofone/dsh-agent-roster](https://github.com/STofone/dsh-agent-roster) — 用 YAML/JSON 定义多智能体团队档案，校验后把成员桥接成 dsh-agent-teams 的建员参数，并对照运行中的团队核对结果。
 - [StruggleYang/dsh-project-kanban](https://github.com/StruggleYang/dsh-project-kanban) — 按工作区（项目）隔离的项目看板：9 个 kanban_* 模型工具供 Agent 规划时写卡，另带浏览器看板 UI，支持磁盘持久化、撤销、模板与归档。
 - [stuarthu/dsh-crew](https://github.com/stuarthu/dsh-crew) — 以角色团队的方式干活：产品经理先写 PRD 或 DoD 并等你确认，再启动架构师、工程师、QA 与各类评审；每个角色的工具集按角色锁定，彼此通过磁盘文件协作。
@@ -7692,7 +7694,7 @@ dsh plugin --profile web add dshmarket
 - [863683348/dsh-plugin-recommend](https://github.com/863683348/dsh-plugin-recommend) — DSH 插件推荐器：按需求描述、分类与标签在 1100+ 条内嵌市场目录中搜索并排序插件，返回匹配理由，支持从 awesome-dsh-plugin README 在线刷新目录。
 - [863683348/dsh-plugin-scorecard](https://github.com/863683348/dsh-plugin-scorecard) — DSH 插件生态体检评分卡：同步 dsh-plugin 目录，对任意插件做质量与安全审计（0-100 分、A-D 等级、安全一票否决），榜单、搜索与历史评分曲线（目录持久化）。
 - [863683348/dsh-recipe](https://github.com/863683348/dsh-recipe) — 把 dsh 插件打包成场景配方（"插件界的 dotfiles"）：recipe 工具可列出、搜索、应用并组合现成插件环境，带有序安装序列。
-- [99galaxy/dsh-plugin-market](https://github.com/99galaxy/dsh-plugin-market) — 从 DSH 左侧栏打开独立的插件市场页面，浏览 awesome-dsh-plugin 目录。支持按分类或安装状态筛选、按名称或简介搜索，以及按 Star、下载量、名称或收录时间排序；三个标签分别显示全部插件、已安装插件和可更新插件，并单独提示无法判断更新状态的数量。自动识别当前 Web 或桌面 profile，使用 DSH 提供的包管理器一键安装和更新，保留其他插件的停用状态。支持通过 HMR 重载 profile，不可用时提示重启。各 profile 的安装状态独立，安装与重载互斥，分页保持已提交的搜索条件。目录在本地缓存一小时，官方源不可达时依次回退到镜像、CDN 与 npm。
+- [99galaxy/dsh-plugin-market](https://github.com/99galaxy/dsh-plugin-market) — 从 DSH 左侧栏打开独立的插件市场页面，浏览 awesome-dsh-plugin 目录。支持按分类或安装状态筛选、按名称或简介搜索，以及按 Star、下载量、名称或收录时间排序；三个标签分别显示全部插件、已安装插件和可更新插件，并单独提示无法判断更新状态的数量。自动识别当前 Web 或桌面 profile，使用 DSH 提供的包管理器一键安装和更新，保留其他插件的停用状态。支持通过 HMR 重载 profile，不可用时提示重启。各 profile 的安装状态独立，安装与重载互斥，分页保持已提交的搜索条件。目录与安装状态快照过期时先显示本地内容并在后台刷新。npm 插件按目录目标版本精确更新，Git 插件强制重新解析来源。目录在本地缓存一小时，官方源不可达时依次回退到镜像、CDN 与 npm。
 - [AIcivilization/dsh-pick](https://github.com/AIcivilization/dsh-pick) — DSH 插件选购顾问：说需求，从带 dsh-plugin 关键字的 npm 包里按去噪指标（日常基线、周环比、版本节奏、新鲜度）排出首选、备选和不推荐；提供右侧栏面板、4 个 AI 工具和一键安装。
 - [alex04130/dsh-forge](https://github.com/alex04130/dsh-forge) — DeepSeek Harness 扩展套件：跨会话邮箱与 wake 冷启动、代理团队（队长 + 成员 + 依赖任务板 + team_wait）、子代理派发策略（提权自动审批）、任务感知路由 preset、插件市场、技能管理器与运行时注入器。
 - [AlexYin-Tongji/dsh-plugin-console](https://github.com/AlexYin-Tongji/dsh-plugin-console) — 在 DeepSeek Harness 设置一级页面中浏览和管理社区插件目录，支持验证后安装与更新、删除、暂停与恢复、已安装状态查看及安全 README 预览。
