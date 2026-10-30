@@ -3194,6 +3194,7 @@ dsh plugin --profile web add dshmarket
 - [liuyu-f/dsh-plugin-session-cascade-delete](https://github.com/liuyu-f/dsh-plugin-session-cascade-delete) — 从界面删除会话（会话头部按钮或侧栏行菜单），或由 agent 调用 session_delete 工具：先停止并释放运行中的 Agent 与会话，再清理日志目录、投影缓存与工作区记账，级联删除它拥有的子代理会话（分叉分支不受影响）。
 - [liuyuelintop/dsh-conversation-exporter](https://github.com/liuyuelintop/dsh-conversation-exporter) — 将当前 DSH 对话或选定轮次导出为干净、易读的 Markdown。
 - [ljp888/dsh-session-delete-next](https://github.com/ljp888/dsh-session-delete-next) — 在侧栏会话菜单中加入「删除会话」，永久删除该会话的本地记录；正在运行的会话会被拒绝。
+- [LLL-lyh0/dsh-continue-guard](https://github.com/LLL-lyh0/dsh-continue-guard) — 在输入框停靠区加一个「继续」按钮，并在某一轮被断网或上游输出超限截断时自动续跑。常驻的链路监测每 10 秒问一次网络是否回来（链路恢复本身不发任何事件），而一个正常跑完的回合会被当作链路可用的证据。点击走宿主真实的提交链路（beginSubmission + session.prompt），消息带的是真实用户署名而不是伪造来源，真实拒绝会被如实报告而不是重试。宿主重启时还会扫描最近的会话日志，同时识别「宿主半路走了」的两种指纹：回合没关，以及被 disposed 关掉的回合（正常关闭宿主写下的正是这一种）。用户自己按过停止的回合永不续跑。
 - [lolipop-1x1/dsh-recap](https://github.com/lolipop-1x1/dsh-recap) — 通过 /recap 或闲置触发回顾当前 DeepSeek Harness 会话，支持配置模型、中英文输出，并在对话内展示可展开的摘要。
 - [loonai321/dsh-humanized-deepseek-maid](https://github.com/loonai321/dsh-humanized-deepseek-maid) — 为 DSH 添加可配置的女仆鲸鱼娘人格：沉浸式扮演（称呼/自称/说话方式）、防出戏规则，以及借鉴 ALTM 的轻量分层记忆与按需召回。
 - [dsh-loulan-rules](https://github.com/loulangogogo/dsh-plugins-loulan/tree/main/packages/rules) — 在首次 agent pre-step 读取 $DSH_HOME/rules 与 <cwd>/.dsh/rules 下的规则文件并注入会话，被 compaction 遮蔽后自动补回。
@@ -3633,6 +3634,7 @@ dsh plugin --profile web add dshmarket
 - [liuyuhao1122/dsh-hermes-memory](https://github.com/liuyuhao1122/dsh-hermes-memory) — 为 DeepSeek Harness 提供分层长期记忆，支持自动模型提炼、可追溯的加密会话日志和带校验的记忆压缩。
 - [ljsysfurryACE/dsh-compaction](https://github.com/ljsysfurryACE/dsh-compaction) — 压缩后端：用确定性语义提取器替换 LLM 摘要（保留代码/路径/命令，剔除闲聊），附带 28.4x KV 压缩记账。
 - [ljsysfurryACE/dsh-memory-director](https://github.com/ljsysfurryACE/dsh-memory-director) — LLM 驱动的记忆记/忘插件：每轮对话后由模型决定记住什么/忘记什么（MemoryDirector），请求前注入相关记忆，自动去重，跨会话持久化。
+- [LLL-lyh0/dsh-archived-digest](https://github.com/LLL-lyh0/dsh-archived-digest) — 把已归档的会话变成可用的记忆，而不是躺在磁盘上的死数据。每条归档提炼成可复用技能、带 ADD/UPDATE/NOOP 判定与 validUntil / supersededBy 时效的事实台账（旧事实会退场而不是无限堆积），以及用 single-linkage 相似度聚合的主题簇。还能对仍在进行中的会话做增量提炼——用只读的 seq 水位线，会话日志一个字节都不改；并能自检精简不断变脏的记忆：合并重复事实、清退失效事实、归并重复技能。自检默认只测量不动手，且从不硬删除，只做取代。
 - [LornBerry/dsh-memory-center](https://github.com/LornBerry/dsh-memory-center) — DSH 的本地长期记忆库：面板里浏览、检索（BM25 + 同义词）、编辑；文件夹、归档、回收站；逐会话决定注入哪些；模型写入的记忆需你确认；可导入导出备份；可选同步到自己的 Git 或 WebDAV 实现多设备。
 - [LoserFox/distill](https://github.com/LoserFox/distill) — 自动对话蒸馏：后台 subagent 反省 + 技能 create/update。
 - [LoveDoLove/Veyra](https://github.com/LoveDoLove/Veyra) — 面向编程代理的工程智能——为 DeepSeek Harness 提供持久化、证据感知、项目隔离的工程记忆，以及统一的混合搜索（记忆 + RAG 文档）。
@@ -6323,6 +6325,7 @@ dsh plugin --profile web add dshmarket
 - [LingYingNX/dsh-codex-parity](https://github.com/LingYingNX/dsh-codex-parity) — 为 DeepSeek Harness 提供 Codex 风格的 Git 面板：会话头部按钮打开菜单，提供提交、推送、切换分支、创建并切换与初始化仓库；显示当前分支与未提交文件的总增减。
 - [LinXueyuanStdio/dsh-git](https://github.com/LinXueyuanStdio/dsh-git) — DSH 官方右侧栏里的本地 Git 与四个 GitHub 远端页签：Changes（按文件暂存、逐行 diff、提交信息由 DSH 里已配好的模型生成）、History，以及由 host 半代理的 Code / Issues / Pull requests / Actions。令牌只存在 host 半（ctx.credentials），/dsh-git/* 只接受 loopback 请求。
 - [liufangrui1105/dsh-plugin-github](https://github.com/liufangrui1105/dsh-plugin-github) — 面向 Agent 的 GitHub 仓库工具：首次调用弹窗绑定账号，之后把仓库克隆到工作区并读写文件、精确替换、提交与推送，写远端默认关闭。
+- [LLL-lyh0/dsh-github-manager](https://github.com/LLL-lyh0/dsh-github-manager) — 同一个账户库的两半：左侧「GitHub 仓库」面板是结构性只读（只有三个 GET 端点，任何非 GET 在路由前直接 405，请求体从不读取，令牌不出宿主），以及一个 github-manager 技能，只暴露两个工具 —— github_accounts 与 github_api —— 写入动作交给 Agent。登录走 GitHub Device Flow，账户库按 mtime 自动失效，后加进来的令牌无需重启即可生效。
 - [lonelymoon87/dsh-gitflow](https://github.com/lonelymoon87/dsh-gitflow) — 增加需要审批的 Git 状态、diff、日志、提交、分支和可选检查点工具。
 - [LoserFox/dsh-git-identity](https://github.com/LoserFox/dsh-git-identity) — git 提交固定使用环境自身作者身份，环境变量注入压过一切 `git config` 设置。
 - [lucas-ward/dsh-ci-context](https://github.com/lucas-ward/dsh-ci-context) — 将白名单内的 GitHub Actions 与 GitLab CI 运行元数据注入 Agent 上下文，不读取日志、凭据或服务商 API。
@@ -6936,6 +6939,8 @@ dsh plugin --profile web add dshmarket
 - [liuhaolong16/dsh-hot-refresh](https://github.com/liuhaolong16/dsh-hot-refresh) — 把官方客户端插件热重载做成面板入口，并且先告诉你「到底变了什么」：比对每行 rev 与上次所见后只重载 bundle 变化的那几个插件；整图重载必须显式二次确认（不带参数会被拒绝并回报受影响行数）；同时暴露重放计数，让「点了没反应」无法被静默掩盖。
 - [liujianqiao701/dsh-compat-vet](https://github.com/liujianqiao701/dsh-compat-vet) — dsh 插件兼容性体检：把已装插件的 peerDependencies 与当前 dsh 运行时比对，提前指出哪些会在下次启动被预检拒绝加载，并给出可直接执行的中文修复命令；dsh web 顶部横幅可按键隔离、卸载或升级，改动前自动备份、复检不过自动回滚。
 - [ljc6413/yihe-packs-dsh](https://github.com/ljc6413/yihe-packs-dsh) — 面向 DeepSeek Harness 的 YiHe pkg-dev 知识包：52 个领域包与 90 个 RFB 经验文件，用于编程认知。
+- [LLL-lyh0/dsh-accelerator](https://github.com/LLL-lyh0/dsh-accelerator) — 在不依赖任何自建服务器的前提下，从 DSH 内部修复被 SNI 阻断的域名。运行回环 MITM 代理，按域名逐个实测决定 SNI 策略（real / none / cdn），引导 hosts 条目，每 15 分钟对节点池竞速优选，并安装自己的本地 CA。对整段 SNI 被阻断、换任何 IP 都被拒的域名（RST 跟着域名走而不是地址走），可以整个交给外部 HTTP 或 SOCKS5 上游转发，支持全局兜底与按域名覆盖。自带 accelerator-repair 技能，让 Agent 能自行诊断并补充节点池。
+- [LLL-lyh0/dsh-autostart](https://github.com/LLL-lyh0/dsh-autostart) — 写 HKCU\Software\Microsoft\Windows\CurrentVersion\Run 让 DSH 在 Windows 登录时启动，插件被关闭或卸载时精确移除那一条。84 行，没有守护进程、没有后台进程、不装服务；通过 execFileSync 写入，安装路径含空格时仍保留引号，登录时确实能拉起。
 - [LLYlab/DSHEssentialTools](https://github.com/LLYlab/DSHEssentialTools) — DSH 永久插件工作台：LVAL 工程工具的编译/运行、代码查看与程序版本快照回退；会话内对话树（就地编辑 / 重新生成 / 分支）与消息小版本；DET 管理器，以及每条记录各带一档启停权限的全局插件库；跨对话记忆、一次性临时对话与模型合作；五档网络权限、混合模型路由、安全审计，以及经配套浏览器扩展的浏览器控制。
 - [loeanxi/dsh-cursor-acp](https://github.com/loeanxi/dsh-cursor-acp) — 将独立任务交给同机已登录的 Cursor 命令行，并提供命令行就绪/代理诊断、子模型设置和只读连通性测试。
 - [loeanxi/dsh-injection-guard](https://github.com/loeanxi/dsh-injection-guard) — 面向 DSH 的来源感知提示词注入防护：跟踪 Turn 中的不可信上下文，检测注入信号，评估敏感 Sink，并通过可解释审计日志阻断高风险工具调用。
