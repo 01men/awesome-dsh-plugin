@@ -1676,6 +1676,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zzt0818/dsh-task-details](https://github.com/zzt0818/dsh-task-details) - Task details sidebar for DeepSeek Harness: a "View task details" button under every finished turn opens a resizable right-sidebar panel showing that task's input files, intermediate artifacts, output files, tools and skills used, inferred languages, a step-by-step flow timeline, and the model provider with token usage and cache hit rate.
 - [zzx-dear/dsh-selection-followup](https://github.com/zzx-dear/dsh-selection-followup) - Select any text in a DSH chat reply to get a floating Follow-up/Copy pill: one click quotes the selection into the composer so you can type your own follow-up question, or copies it.
 - [zzy6-a/dsh-prompt-enhance](https://github.com/zzy6-a/dsh-prompt-enhance) - Adds a sparkle button left of the model selector in the composer: it rewrites the draft into a clearer, more complete task brief, replaces it in place with one-click undo, offers five rewrite styles, and greys out while the draft carries file/command chips.
+- [zzzzym7018/dsh-fudan-status-wallpaper](https://github.com/zzzzym7018/dsh-fudan-status-wallpaper) - Fudan · Desktop: DeepSeek quota and campus-weather status bar, six curated campus wallpapers, and a fully local 知行台 schedule/knowledge workspace with a Fudan editorial UI and week-by-week review.
 
 ### Usage & Billing
 

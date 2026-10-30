@@ -1676,6 +1676,7 @@ dsh plugin --profile web add dshmarket
 - [zzt0818/dsh-task-details](https://github.com/zzt0818/dsh-task-details) — DeepSeek Harness 任务详情侧边栏：每个已结束任务的最下方显示「查看任务详情」，点开后从右侧边栏打开可拖拽调宽的面板，列出该任务的输入文件、中间产物、输出文件、所用工具与 skill、推断出的语言、按步骤组织的流程时间线，以及模型提供方与 Token 用量、缓存命中率。
 - [zzx-dear/dsh-selection-followup](https://github.com/zzx-dear/dsh-selection-followup) — 选中聊天回复中的任意文字，浮出「追问/复制」气泡：一键把选中内容作为引用填入输入框（问题由你输入），或一键复制。另附安装与实现文档。
 - [zzy6-a/dsh-prompt-enhance](https://github.com/zzy6-a/dsh-prompt-enhance) — 在输入框的模型选择器左侧加一个星标按钮：把草稿改写成目标明确、细节完整的任务说明并就地替换，可一键撤销；提供五种改写风格，草稿含文件引用 / 命令芯片时自动置灰。
+- [zzzzym7018/dsh-fudan-status-wallpaper](https://github.com/zzzzym7018/dsh-fudan-status-wallpaper) — 复旦 · 桌面：DeepSeek 额度与校园天气状态栏、六张精选校园壁纸，以及带复旦编辑感界面、支持按周回顾的本地知行台日程 / 知识工作台。
 
 ### 💰 用量与计费
 
