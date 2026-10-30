@@ -89,7 +89,7 @@ dsh plugin --profile web add dshmarket
 - [CanaryJing/dsh-big-fat-whale-maid-adaptive](https://github.com/CanaryJing/dsh-big-fat-whale-maid-adaptive) — 提供自适应工具呈现与环境适配 Shell 路由的智能体预设。复用了从 yjh051108/dsh-routing-suite 与 xiaobright/dsh-anchored-standard 移植的模块（前者已收录），不要与这两个预设同时启用。
 - [ccll/dsh-advisor-flow](https://github.com/ccll/dsh-advisor-flow) — 移植自 pi-advisor-flow 的执行者/顾问工作流：执行者经 ask_advisor 工具按需请求第二意见（可附问题、草稿、仓库上下文档位与点名文件）；等价工具调用重复达到阈值时在执行前拦截，由顾问以 proceed/revise/blocked 三值裁决，硬模式下回合收口前强制评审；提供逐次 token 与成本台账、/advisor status 状态读数、仓库上下文与文件内容分级授权、六类密钥形状脱敏与 web 设置卡；advisor 失败不停摆主循环。
 - [Clearailhc/clearai-dsh](https://github.com/Clearailhc/clearai-dsh) — 以证据为准的研究用智能体预设：每一步只能靠系统核验过的观测推进，L3 以上的结论交给独立评估者，整场会话折成一份可重放的账本，并长成可浏览的领域本体。需要 DSH >=0.1.7-alpha.1。
-- [DDL095/dsh-moa-native](https://github.com/DDL095/dsh-moa-native) — 原生生成时 MoA：每轮参考模型并行预演同一会话上下文产出草稿，单一聚合模型带完整工具循环执行；配置即模型配方、F 镜像 / R 裁剪双视野、子会话门控。
+- [DDL095/dsh-moa-native](https://github.com/DDL095/dsh-moa-native) — 原生生成时 MoA：每轮参考模型并行预演同一会话上下文产出草稿，单一聚合模型带完整工具循环执行；配置即模型配方、F 镜像 / R 裁剪双视野、子会话门控、按成分派生的配方级视觉（视觉参考路可为纯文本聚合转述图像）。
 - [DoreiHime/dsh-help-me-to-ask](https://github.com/DoreiHime/dsh-help-me-to-ask) — 每个聊天窗口的第一段工作内容前，先问清缺失的目标、交付物、限制与验收标准，再把回答整理成简短的任务说明注入聊天；纯寒暄不会触发。
 - [FelixJiashengFu/dsh-force-collab](https://github.com/FelixJiashengFu/dsh-force-collab) — 强制协作：在输入框左侧选 0–6 个子 Agent，开启后每个动手的任务都必须通过没有数量参数的 collab_fanout 工具拆给正好这么多个子 Agent 并行，再由主 Agent 汇总。
 - [FelixJiashengFu/dsh-muse-code](https://github.com/FelixJiashengFu/dsh-muse-code) — 在 DSH 里使用 Meta 的 Muse Code CLI：输入框开关启动 muse serve，右侧边栏面板与五个聊天工具（muse_open、muse_prompt、muse_read、muse_status、muse_interrupt）共享同一个 Muse 会话，审批只能在面板里决定，本地花费护栏默认到 $10 硬停止。仅限 Windows；需已装好并登录 Muse Code CLI。$10 上限为本机估算，只管本插件启动的 muse serve。
@@ -2770,6 +2770,7 @@ dsh plugin --profile web add dshmarket
 - [V1ki/dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) — 把 ChatGPT（Codex）、Claude、Grok 订阅当作 DeepSeek Harness 的 LLM 提供方：设置页登录、模型目录、用量展示，以及 image_generate、video_generate 与 x_search 工具。
 - [Venshell/dsh-workbuddy-connect](https://github.com/Venshell/dsh-workbuddy-connect) — 把已登录的 WorkBuddy 桌面 App 里可用的模型接进模型选择器，复用 App 的登录与积分；国内版与国际版各成一组。corrinehu/dsh-workbuddy-connect（仓库已删除）的续作；注册相同的 workbuddy / workbuddy-ai provider id，不能与其它 WorkBuddy 桥同装。
 - [Venshell/dsh-zcode-startplan](https://github.com/Venshell/dsh-zcode-startplan) — 把 ZCode 赠送的免费 plan 接进模型选择器：多账号池轮换、按账号的限流与额度展示、bigmodel/zai 双渠道设备登录。
+- [VICqiufeeng/dsh-minimax-connect](https://github.com/VICqiufeeng/dsh-minimax-connect) — 把本机已登录的 MiniMax Code（Mavis）订阅接入 DSH 作为模型 provider，自己完成 OAuth 续期所以桌面客户端可以一直关着，并提供积分、签到与订阅额度面板。
 - [Vikrant-Aleph/dsh-opencode-bridge](https://github.com/Vikrant-Aleph/dsh-opencode-bridge) — 在 DSH 中使用 OpenCode 免费模型，支持模型列表动态刷新与可选的代理出口轮换，并提供默认拒绝不安全转换的工具桥与离线、按 Agent 作用域的兼容性审计。
 - [vitas/dsh-model-pricing](https://github.com/vitas/dsh-model-pricing) — DSH 设置页中的模型价格表：约 7,250 个模型 / 213 个提供商（叠加本地路由目录），诚实的最低标价比较、按实际路由计价的会话成本、缓存泄漏归因，以及经验证的促销信息源。
 - [volcengine/ark-cli#ark-plan-api](https://github.com/volcengine/ark-cli/tree/main/dsh-plugins/ark-plan-api) — 在 DSH 原生模型选择器中注册方舟 Agent Plan、Coding Plan 与后付费模型路由。
@@ -5462,7 +5463,7 @@ dsh plugin --profile web add dshmarket
 - [linkingoscar/dsh-attachment-formats](https://github.com/linkingoscar/dsh-attachment-formats) — DeepSeek Harness Web 插件——PDF 文字层与扫描件 OCR、Office 文档转 Markdown、TIFF/epub 与长文档索引卡。
 - [logb-1/dsh-course-assistant](https://github.com/logb-1/dsh-course-assistant) — 把课程文件（PPTX、PDF、DOCX、Markdown）解析成目录、带原文引证的分章要点、B 站网课推荐与考纲覆盖检查，并可导出 Anki 卡片和 JSON。
 - [Lry722/dsh-humanize](https://github.com/Lry722/dsh-humanize) — 面向人类写入内容的行文审查。write 和 edit 调用需声明 human_facing，插件在后台按分层 PROSE.md 规则审查文本并暂存批注，再按全文核对已有批注，主会话照常推进；用 /humanize、/humanize-loop 或压缩后自动合并批注，/humanize-review 按需批量审查 git 管理的文件。
-- [ltmroberthk915/markpilot#dsh-markdown](https://github.com/ltmroberthk915/markpilot/tree/main/dsh-markdown) — DSH 右侧栏 Markdown 编辑面：实时渲染公式与 Mermaid，版本守卫保存，选中文段直接插入对话。
+- [ltmroberthk915/markpilot#dsh-markdown-typora](https://github.com/ltmroberthk915/markpilot/tree/main/dsh-markdown-typora) — DSH 右侧栏 Markdown 编辑面：实时渲染公式与 Mermaid，版本守卫保存，选中文段直接插入对话。
 - [maple-pwn/paperlab](https://github.com/maple-pwn/paperlab) — Overleaf 式 LaTeX 论文工作台：在渲染后的 PDF 上选中任意文字批注，由 dsh agent 改写源文件、编译验证并提交 git 修订。
 - [MrmoLabs/dsh-mermaid](https://github.com/MrmoLabs/dsh-mermaid) — 将 Mermaid 代码围栏渲染为 SVG 图表，支持流式输出、图形/代码切换、全屏缩放与拖拽、SVG 导出，以及内置的同源运行时。
 - [omdsh-dev/dsh-tool-markdown](https://github.com/omdsh-dev/dsh-tool-markdown) — HTML↔Markdown 转换、GFM 表格规范化、目录生成。
@@ -6481,6 +6482,7 @@ dsh plugin --profile web add dshmarket
 - [faukwaa/dsh-gap-feed](https://github.com/faukwaa/dsh-gap-feed) — agent 思考超时时，直接在对话流中推出一条今日头条热点或提醒消息。
 - [Funny1Potato/dsh-onebot-hub](https://github.com/Funny1Potato/dsh-onebot-hub) — OneBot v11 枢纽：夹在上游 OneBot 实现（LLOneBot 等）与下游 bot 实现之间，逐字转发事件与动作；给 agent 一条按会话的时间线、动作账本、分层记忆（进行中的话题与任务、长期事件、人物与群档案）以及一组 onebot_* 工具（回复、媒体、成员、原始 API 调用）。
 - [game25011/dsh-notify-toast](https://github.com/game25011/dsh-notify-toast) — 为 DeepSeek Harness 提供带进度条、自动收回、Goal 模式汇总和点击回会话的 Windows 原生通知。
+- [GeXiubinHelloWorld/dsh-qq-sounds](https://github.com/GeXiubinHelloWorld/dsh-qq-sounds) — 用本机 QQ 的音效提醒 DSH：任务完成响好友消息音，需要审批或回答问题时响系统消息音；Windows 下自动发现 QQ 目录，其它平台回落到内置音效。
 - [good-boy4069/dsh-mobile-remote](https://github.com/good-boy4069/dsh-mobile-remote) — 微信遥控 DeepSeek Harness：iLink 双向加密文件收发（入站自动解密落盘 + /send 出站）、weixin_send 主动通知、完成通知、多会话切换、健康面板与文件日志。
 - [GooDAnDReaDY/dsh-messenger-gateway](https://github.com/GooDAnDReaDY/dsh-messenger-gateway) — DeepSeek Harness 的 Telegram 桥接：双向会话、对话引导、主频道路由，以及以 Telegram 语音消息发送的 TTS 语音笔记。
 - [GRmaid/dsh-LimBusCompany-dancinglyrics-toast](https://github.com/GRmaid/dsh-LimBusCompany-dancinglyrics-toast) — 会话事件（权限请求、回合开始/结束）以 Limbus Company 桌面歌词风格的逐字动画浮在所有窗口之上：波纹/跌落入退场、抖动或波动律动、分事件光晕配色、屏幕两侧随机落位、{tool}/{outcome}/{title} 文案模板，全部参数在 DSH 设置页实时编辑；透明悬浮伴侣窗由宿主自动拉起、消失即守护重生。仅 Windows；需在包内 companion/ 目录执行一次 npm install 以安装悬浮窗依赖的 Electron ^33。
