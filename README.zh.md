@@ -148,6 +148,7 @@ dsh plugin --profile web add dshmarket
 - [1497105876/dsh-text-inject](https://github.com/1497105876/dsh-text-inject) — 在 DSH 设置页左侧栏新增「文字注入」分区：独立 Markdown 文件中的文字块可注入系统提示词（每轮生效）或会话上下文（关键词门控、去重），支持热加载与自动历史备份。
 - [1700563146/dsh-plugin-rightbar-divider](https://github.com/1700563146/dsh-plugin-rightbar-divider) — 修复整页缩放后右侧栏拖拽手柄偏移、分割线拖不动的问题，把命中区加宽到 12px 并显示悬停提示线。
 - [1700563146/dsh-plugin-ui-zoom](https://github.com/1700563146/dsh-plugin-ui-zoom) — DSH Web 界面整体缩放（70%–160%），可用 Ctrl+滚轮、DSH 快捷键中心或输入框旁的胶囊操作，带正文栏宽度补偿，缩小后是一行更多字而不是一条更窄的栏。
+- [1834395550/dsh-chat-search](https://github.com/1834395550/dsh-chat-search) — 在当前对话里用 Ctrl+F 查找文字：命中处在正文中高亮，上一个/下一个逐个跳转，点计数可列出命中位置并直接跳过去，计数随扫描逐步增长；不展开任何折叠块，也不改变阅读位置。
 - [1834395550/dsh-session-tabs](https://github.com/1834395550/dsh-session-tabs) — 给 DSH Web GUI 的浏览器式顶部会话标签栏：窗口顶部一条整宽标签，一个标签对应一个会话，会话按工作区收在可折叠的方框里，只有真正打开过的会话才会成为标签。
 - [18569663yz-web/dsh-plugin-crypto-ticker](https://github.com/18569663yz-web/dsh-plugin-crypto-ticker) — DSH 侧边栏左下角的实时加密货币行情卡片，位于余额与设置上方，显示 BTC、ETH、SOL、JUP 的价格、24 小时涨跌幅与 24 点迷你走势图，价格跳动时有脉冲反馈，零依赖、免密钥。
 - [1985899182/dsh-harness-chat-control](https://github.com/1985899182/dsh-harness-chat-control) — 为 DeepSeek Harness Desktop 增加接近 ChatGPT 的停止、编辑重发、原生引用注释，以及支持模型和图片输入的独立侧边栏追问对话。
@@ -3733,6 +3734,7 @@ dsh plugin --profile web add dshmarket
 - [yiyunet/dsh-learn-skills](https://github.com/yiyunet/dsh-learn-skills) — DSH 插件：会话输入区的四入口学习流程——初始预设、收集提炼、关联升级、沉淀复用。
 - [youchen-yc/dsh-heartprint](https://github.com/youchen-yc/dsh-heartprint) — 为 DeepSeek Harness 提供会淡忘的性格、情感与记忆：分层压缩后只保留性格、情感与转折节点，痛苦感受强制淡忘而事实保留；一份记忆文档在满 3 个月后自动交付、之后每月一份；长时间不在会冻结遗忘计时，不会一回来就批量淡忘。
 - [ys118/harnmem#dsh-harnmem](https://github.com/ys118/harnmem/tree/master/packages/dsh-harnmem) — DSH 跨 harness 全局记忆：DSH、pi 适配器与 harnmem CLI 共享同一份本地纯文件记忆库，在一个 harness 写入的记忆在另一个 harness 可用；以字节稳定的热索引注入系统提示，提供五个 harnmem_* 工具、会话结束记忆提取与只读记忆浏览面板。
+- [yunkong-134/xiaoman-memory](https://github.com/yunkong-134/xiaoman-memory) — 纯文本记忆：一条事一节、六个字段，靠元素联想而不是向量检索，每轮最多交两条旧事；不调模型、不联网，写库留给人——库能直接打开、能 grep、能改、能整份拷走。
 - [yushenghai1106/dsh-memory-plugin](https://github.com/yushenghai1106/dsh-memory-plugin) — 为 DeepSeek Harness 提供人工记忆、自动对话保留以及图谱和向量排序召回的持久记忆插件。
 - [Yuuyuko-uu/dsh-fish-memory](https://github.com/Yuuyuko-uu/dsh-fish-memory) — 按会话分开的长期记忆，会随时间变淡，按证据分召回、每轮注入几条到系统提示词里。
 - [yuyolin/dsh-decision-log](https://github.com/yuyolin/dsh-decision-log) — DeepSeek Harness 决策日志：通过 decision_log / decision_list / decision_audit 工具把关键决策（选了什么 + 为什么）沉淀为可版本化的 DECISIONS.md，并在后续会话自动注入摘要，让决策可追溯、不重复、不推翻。
@@ -6091,6 +6093,7 @@ dsh plugin --profile web add dshmarket
 - [weixshaw/dsh-plugin-task-runner](https://github.com/weixshaw/dsh-plugin-task-runner) — 任务拆解模式：主代理把大任务拆成独立子任务，派给子代理（默认本地模型）在全新短上下文中执行并综合结果；并发数与模型可在设置面板图形化配置。
 - [whateverboy2333/dsh-round-table](https://github.com/whateverboy2333/dsh-round-table) — 面向 Windows 桌面版 DeepSeek Harness 0.2.0-rc.2 的圆桌会议，复用已有 Agent 会话，提供讨论、可编辑任务卡、顺序与并行步骤、会议文件归档及秘书纪要。
 - [whyihaveyou/dsh-suite#plugin-team-board](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-team-board) — 多 agent 共享任务板：经 Cordis service key 创建/认领/流转/查询任务。
+- [Willmylife/dsh-event-gate](https://github.com/Willmylife/dsh-event-gate) — 事件驱动触发器插件（dsh-proactive 闹钟旁的门铃）：递归目录监视按规则防抖合并并支持 glob 过滤，本机回环 webhook 端点按规则 token 鉴权；规则命中后经宿主 agents 服务唤醒目标会话（活会话直接投递，冷会话先恢复再投递），并注入渲染后的 prompt（支持 paths、count、payload 模板变量）。规则文件保存即热更新，无需重启 DSH；每次触发追加 JSONL 审计历史，可通过 trigger_list / trigger_history 工具查询；另提供回环 health 路由报告安装与运行状态。典型用途：下载目录自动整理、CI/监控报警自动诊断、日志错误自动定位。纯 JS 免构建，MIT。
 - [WintryGrass/dsh-multi-candidate](https://github.com/WintryGrass/dsh-multi-candidate) — 多候选模式插件（test-time scaling）：悬浮球面板配置，模型对任务自动执行并行候选加验证选优，仅当前会话生效。
 - [wuuuuu123-32/dsh-tandem](https://github.com/wuuuuu123-32/dsh-tandem) — 双 agent 协作：把互不依赖的子任务并行交给本机 Codex（同时最多三路），并在方案交给你看之前先让它盲审一轮，必须回「结论 / 证据 / 反例 / 验证方式」四段；缺超时或缺验收判据的派活会被插件当场拒绝，不靠模型自己记得。
 - [wwwangzilin/dsh-character-presets](https://github.com/wwwangzilin/dsh-character-presets) — DeepSeek Harness 的露娜预设：小恶魔人设配完整的 standard 工具面，由感知、理解、状态、表达、调节、记忆六层确定性规则驱动，外加生理派生层；跨会话记忆写入经证据门控，遗忘用抑制而非删除。
