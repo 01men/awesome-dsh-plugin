@@ -4222,11 +4222,14 @@ dsh plugin --profile web add dshmarket
 - [littleblakew/msds-chain-mcp#dsh](https://github.com/littleblakew/msds-chain-mcp/tree/main/plugins/dsh) — 通过托管的 MSDS Chain MCP 端点接入化学品安全数据：23 个工具覆盖相容性与投料顺序、GHS 危害、PPE、储存、废弃处置、职业接触限值、运输分类、多法域合规、SDS 查询与版本比对、签名审计报告；每条回答都标注其依据的供应商 SDS 与版本日期。
 - [liudejua27-blip/fitmeet-dsh-plugin](https://github.com/liudejua27-blip/fitmeet-dsh-plugin) — 通过每位用户独立的 OAuth 授权将 DeepSeek Harness 接入 FitMeet，提供找人、组局查询、提醒、个人事项、连接反馈、大厅发布与私聊的 17 个工具，写入操作保留预览与确认步骤。
 - [liuhange789/data-asset-inspector#ai-dataset-inspector](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/ai-dataset-inspector) — AI数据集质量巡检工具，自动检测数据集中的标注一致性、类别分布偏差与数据泄露风险。
+- [liuhange789/data-asset-inspector#data-asset-attestation](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-attestation) — 数据资产认证报告插件 — 生成带证据链的认证级数据质量报告
 - [liuhange789/data-asset-inspector#data-asset-orchestration](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-orchestration) — 数据资产编排引擎，把套件内工具串成预置流水线（脱敏→清洗→盘点→封装、鉴证、AI数据集体检、政务巡检、可流通性评估），支持增量与定时处理
 - [liuhange789/data-asset-inspector#data-asset-quality-score](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-quality-score) — 依据 GB/T 36344-2018 国家标准，从规范性、完整性等六个维度对数据质量进行量化评分，为企业数据资产入表提供可审计的底稿。
+- [liuhange789/data-asset-inspector#data-asset-valuation](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-valuation) — 数据资产估值插件 — 成本法（重置成本）+收益法+市场法三轨估值
 - [liuhange789/data-asset-inspector#data-cleaning](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-cleaning) — 数据清洗插件 — 去重+格式标准化+异常值检测
 - [liuhange789/data-asset-inspector#data-lineage](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-lineage) — 数据血缘追踪工具，梳理数据从产生到流转的全链路，满足数据产权登记中的来源合法性审查要求。
 - [liuhange789/data-asset-inspector#data-masking](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-masking) — 基于国家标准的自动化数据脱敏工具，自动识别身份证、手机号等敏感字段，支持完全匿名化与假名化分级策略，生成合规审计日志。
+- [liuhange789/data-asset-inspector#data-packaging](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-packaging) — 数据封装插件 — 产品说明书生成+合规附件+元数据打包
 - [liuhange789/data-asset-inspector#data-sensitivity-classification](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-sensitivity-classification) — 数据敏感度分类插件 — 自动识别敏感字段+分级（高/中/低/公开）
 - [liuhange789/data-asset-inspector#data-visualization](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-visualization) — 数据可视化插件 — 生成自包含HTML报告，支持五种图表(bar/comparison/pie/radar/flowchart)与两列布局
 - [liuhange789/data-asset-inspector#gov-data-inspector](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/gov-data-inspector) — 政务数据巡检工具，覆盖数据完整率、准确率、时效率等核心指标。
@@ -5896,6 +5899,7 @@ dsh plugin --profile web add dshmarket
 - [ktdhhc/dsh-custom-subagents](https://github.com/ktdhhc/dsh-custom-subagents) — 用设置页维护可复用的子代理定义，通过统一的 delegate_agent 工具委派；内置只读的 Explorer 预置与嵌套委派开关。
 - [kui123456789/dsh-codex-workflow](https://github.com/kui123456789/dsh-codex-workflow) — 协调 Codex 制定计划和独立审查，由 DSH 原会话完成代码修改与测试。
 - [kvmem/dsh-super-advisor](https://github.com/kvmem/dsh-super-advisor) — 通过 ask_advisor 按需求助顾问，支持编辑请求与逐次人工批准，由 DSH 中配置的模型返回文字建议。
+- [kw12121212/strict-spec-driven#dsh-plugin-strict-spec](https://github.com/kw12121212/strict-spec-driven/tree/main/plugins/dsh-strict-spec) — 在 DeepSeek Harness 中查看和驱动严格规范与工作流文档的插件。
 - [kw78/academic-agent#academic-dsh-plugin](https://github.com/kw78/academic-agent/tree/main/packages/academic-dsh-plugin) — 本地优先的学业助手：事件溯源的课程、任务、计划、提醒、课程资料与 23 个 DSH 工具。
 - [kx121/dsh-github-digest](https://github.com/kx121/dsh-github-digest) — 到点把会话叫醒，翻你关注的 GitHub 仓库和主题，判断哪些变化值得跟，写成一份日报，顺手记下看过什么；侧边栏能翻历史、看 GitHub 热门榜单。只读，不写 GitHub。
 - [L3n3L/dsh-resume](https://github.com/L3n3L/dsh-resume) — AI 写简历容易，但写完常会遇到模板不合适、排版溢出、页面留白过多，以及改一处导致全局变形等问题。dsh-resume 专注解决手动修改简历繁琐、低效的问题，让 DSH 覆盖从内容撰写、模板选择到排版调优的完整简历工作流，并支持针对不同求职场景产出合适的简历版本。
@@ -6195,6 +6199,7 @@ dsh plugin --profile web add dshmarket
 - [he-yufeng/dsh-tool-radar](https://github.com/he-yufeng/dsh-tool-radar) — 用活的合并与维护者证据，给一个 GitHub 仓库的对外贡献友好度打分。
 - [HeathHe/dsh-worktree-panel](https://github.com/HeathHe/dsh-worktree-panel) — DSH Web 的 Git worktree 面板：将工作区侧栏替换为项目 → 主/关联 worktree → 会话分组，支持创建和删除 worktree、切换主分支，并在脏工作树与活跃会话保护下迁移可配置的项目内或全局存储位置。
 - [huayuguo/dsh-gitee-chat](https://github.com/huayuguo/dsh-gitee-chat) — 在对话里管理 Gitee 企业版项目：issue、Pull Request、看板与 Gitee MCP 工具链。
+- [hulibuld/dsh-gitdeck](https://github.com/hulibuld/dsh-gitdeck) — 在对话框左下角连接你的 GitHub 账号（设备流或 Personal Access Token），提供一个 github_api 工具直接调 REST 接口——建仓库、写文件、读 PR 与 Actions，带只读开关和调用记录。改自 Moon-shiyue/dsh-github-connect（MIT）：不再拒收设备流 Client ID，路径可带查询串与非 ASCII 字符，不再硬依赖 undici，面板改成四页签。工具名 github_api 与凭据命名空间都与原插件相同，两者不能同时安装。
 - [hunan36/dsh-git-flow](https://github.com/hunan36/dsh-git-flow) — 位于 composer 工具栏的分支标记：切换、新建、刷新工作区分支；提交时可勾选部分改动文件，提交信息由当前 Session 的模型根据 diff 生成；并可推送当前分支。
 - [ijry/DeepSeek-Harness-Desktop-Ultra#dsh-plugin-repopanel](https://github.com/ijry/DeepSeek-Harness-Desktop-Ultra/tree/main/plugins/dsh-plugin-repopanel) — 浏览工作区 origin 远端对应的 GitHub issue 与 pull request，筛选、评论、关闭或重开，并可转成任务写到 dsh-plugin-taskboard 的看板上等 agent 领取。
 - [ItQianChen/dsh-github-flow](https://github.com/ItQianChen/dsh-github-flow) — 把本机 GitHub CLI (gh) 包装成 Agent 工具集（PR、Issue、Actions 运行、仓库检索与原始 API 调用），另提供 /gh status 与 /gh help 两个斜杠命令，以及全局仓库驾驶舱和会话工作区两个 Web 面板。
@@ -7704,6 +7709,7 @@ dsh plugin --profile web add dshmarket
 - [huangziyuan-general/dsh-xuanji](https://github.com/huangziyuan-general/dsh-xuanji) — 玄学算命插件：八字、紫微斗数、梅花易数、六爻纳甲、黄历、称骨、星座、择日、奇门遁甲、风水、起名、合婚、生命数字、人生K线、塔罗、小六壬共 16 个工具，干支、星曜、卦象、骨重全部由本地确定性引擎计算，模型只负责解读；支持公历/农历（含闰月）输入，自动校正中国夏令时与真太阳时，附带十页只读侧栏面板。
 - [HuanLinOTO/dsh-plugin-d399](https://github.com/HuanLinOTO/dsh-plugin-d399) — 模型生成时弹出小游戏菜单（wordle/消消乐，可扩展）。
 - [huashenglian/dsh-livechat](https://github.com/huashenglian/dsh-livechat) — 给 DSH Web 对话区叠加 B 站风格弹幕：按 agent 事件生成滚动/顶部/底部三轨弹幕，三套预设包、可选 LLM 生成吐槽、可拖动控制球、分会话弹幕池与历史回放，以及完整设置卡。
+- [hulibuld/dsh-pet-cuteness-plugin](https://github.com/hulibuld/dsh-pet-cuteness-plugin) — dsh-pet 的附属插件：给桌面上的鲸鱼娘套上二次元人格，让她的思考过程说中文、被点会回话，还会每天自己写一篇日记。
 - [HYClub/dsh-ufo](https://github.com/HYClub/dsh-ufo) — UFO 档案终端：检索官方与民间记录，落到本地档案馆，离线可读。
 - [Hyfwdnmd666/dsh-ai-ball](https://github.com/Hyfwdnmd666/dsh-ai-ball) — 通过 ai-ball 悬浮球给 agent 一张嘴：让球逐字打出你要说的话、按 mood 改变边缘光颜色、显示或收起独白面板、读回你打的字，以及检查接线和启动球。球是独立的 Python 3.10+ 悬浮层，需自行另外安装；插件只写它监听的那几个文件。
 - [imfuxing/dsh-widget-journey-west](https://github.com/imfuxing/dsh-widget-journey-west) — 西游师徒卡通桌面悬浮窗：无边框、透明、置顶。点击切换唐僧/孙悟空/猪八戒/沙僧/白龙马，静止自动播放追逐动画。
