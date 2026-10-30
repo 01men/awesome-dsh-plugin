@@ -1979,7 +1979,7 @@ dsh plugin --profile web add dshmarket
 - [SoDaZilla-zzz/dsh-liquid-glass-balance-card](https://github.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card) — DSH 网页右上角可拖动 3D 液态玻璃余额卡片：显示 DeepSeek API 余额、累计消费与 Token 统计（今天/昨天/近7天/近30天/全部），玻璃参数/3D 厚度/颜色均可调，内置官方充值入口。
 - [solstice621/dsh-conversation-cost](https://github.com/solstice621/dsh-conversation-cost) — 根据已记录的 Token 用量估算每轮回答和会话费用，支持自动更新模型价格及查看价格来源明细。
 - [solstice621/dsh-token-usage-dashboard](https://github.com/solstice621/dsh-token-usage-dashboard) — 根据 DSH 会话日志展示 Token 用量统计、每日与每周热力图、活跃情况和模型排名，并在本地持久保存汇总数据。
-- [songrui111/dsh-token-frugal](https://github.com/songrui111/dsh-token-frugal) — 降低长会话的上下文开销：只读取指定行，对过大的网页保留正文头部与章节摘要，对过长的 shell 输出保留首尾两端。在文件、网页和命令输出上实测节省 91–99% 的 token。
+- [songrui111/dsh-readprune](https://github.com/songrui111/dsh-readprune) — 为 DeepSeek Harness 会话节省 token：按行号或符号定位读取文件而不是整份读，并对过大的工具结果设上限且保留取回路径。修剪发生在源头，而不是内容进入上下文之后。在建模的 30 步会话上实测 prompt tokens 减少 43.9%。
 - [Starlight-bananice/dsh-status-bar](https://github.com/Starlight-bananice/dsh-status-bar) — 输入栏下可配置的 17 段会话状态栏，提供实时 TPS、按模型分别计价的费用估算，以及用量与费用弹窗。
 - [stevenx65/dsh-balance-plugin](https://github.com/stevenx65/dsh-balance-plugin) — dsh 网页侧边栏的 DeepSeek 余额与 token 用量监控：今日/累计切换，并按 provider 过滤其他厂商。
 - [Stmol/dsh-rub-cost](https://github.com/Stmol/dsh-rub-cost) — 在输入框坞区显示以卢布计的当前会话费用：当前时段与倒计时、该时段的 API 费用、央行汇率、含 subagent 的合计、缓存节省与 DeepSeek 平台余额。
@@ -6494,6 +6494,7 @@ dsh plugin --profile web add dshmarket
 - [michaelcode-wang/dsh-wecom](https://github.com/michaelcode-wang/dsh-wecom) — 企业微信智能机器人桥接：aibot WebSocket 双向对话（bot_id + secret），无需公网回调。
 - [MichengAI/dsh-im-connect](https://github.com/MichengAI/dsh-im-connect) — 把微信、企业微信、钉钉、飞书、Lark、QQ、Telegram 接到本机 DeepSeek Harness，每个 IM 聊天对应一条独立工作区频道。
 - [miiaowuwu/dsh-sound-lab](https://github.com/miiaowuwu/dsh-sound-lab) — DSH 声音工坊：在会话结束、弹出选项、请求许可与停止时播放指定音效，支持 AI 角色语音生成与音效库管理。
+- [miiy/dsh-notify](https://github.com/miiy/dsh-notify) — DeepSeek Harness 的跨设备通知插件。执行长任务期间无需值守：任务结束、等待审批或等待回答时，通过已启用的渠道发出提醒，可选桌面通知、浏览器标签页、ntfy 推送或飞书机器人。
 - [mill413/dsh-notify](https://github.com/mill413/dsh-notify) — 在任务结束或需要处理时发送桌面通知和自定义 HTTP 推送。
 - [mingzeng21/dsh-notion](https://github.com/mingzeng21/dsh-notion) — 通过官方 Notion MCP（OAuth + PKCE）把 dsh 连接到 Notion：通过 `mcp__notion__*` 工具搜索、读写页面、数据库与评论。
 - [monkey-sking/dsh-im-global](https://github.com/monkey-sking/dsh-im-global) — 一个插件接入 Telegram、Discord、Slack、Mattermost、Zulip 与 Matrix，按对话隔离会话、重启后仍能续上；带设置页可增删与测试通道、无需改 YAML，白名单 fail-closed——未配置前拒绝所有发送者。
@@ -6728,7 +6729,7 @@ dsh plugin --profile web add dshmarket
 - [csuwzw/dsh-restart](https://github.com/csuwzw/dsh-restart) — 在 DeepSeek Harness 标题栏加一个重启按钮，让新安装的插件生效：第一次点击进入确认态，第二次点击结束当前桌面实例并重新拉起可执行文件。重启由 WMI 创建的 PowerShell 脚本执行，处于应用的 job object 之外，且不弹出控制台窗口；每一步写入 $DSH_HOME/logs/dsh-restart-plugin.log。仅支持 Windows 桌面版。
 - [cyrusgogogo/dsh-codeeek](https://github.com/cyrusgogogo/dsh-codeeek) — 只读代码阅读工作台，支持多仓库项目、源码关联笔记、代码地图与 Mermaid 图表。
 - [CZ-ZL/duo#dsh-plugin](https://github.com/CZ-ZL/duo/tree/main/dsh-plugin) — DSH 有界智能体评测插件：针对提示词或受支持的配置改动，用用户提供的检查比较原版与候选，记录证据和成本，由用户决定是否采用。
-- [daimingxing/dsh-reload](https://github.com/daimingxing/dsh-reload) — 面向 DSH 插件开发的热重载与一键重启。重载用 DSH 自带的重载，而不是另造一套，所以行为和宿主一致：只刷新有改动的插件，其余继续运行。重启是安全的那个：跑在客户端之外，所以即使要换掉的正是客户端本身也能重新拉起；有会话或后台任务在跑时直接拒绝；并确认客户端真的重新打开了。轻量：只多一个工具、不带参数、不向模型上下文注入内容，按钮默认不出现。
+- [daimingxing/dsh-reload](https://github.com/daimingxing/dsh-reload) — 给 DSH 插件开发准备三件事：重载文件有改动的插件、重载办不到的改动就重启客户端、模型能自己触发热重载。重载走 DSH 自带的路径，没碰过的插件继续运行。重启从客户端外部发起，所以被替换的正是客户端也能完成，有会话或后台任务在跑时拒绝。轻量：不带参数、不添加上下文、按钮默认不出现。
 - [DaJiang07/dsh-plugin-backup](https://github.com/DaJiang07/dsh-plugin-backup) — 换机迁移 DSH profile，连插件本身一起：把插件包选择与整个配置层打包成一个 JSON 文件，恢复时写回配置、还原本地插件源码与插件数据，并安装备份里记录、新机器缺失的插件包（优先插件管理器，失败回退 pnpm）。
 - [DamonKoy/dsh-plugin-toggle](https://github.com/DamonKoy/dsh-plugin-toggle) — 设置→插件开关面板：每个已加载插件的卡片显示简述与运行阶段，支持模糊搜索与运行时启动/关闭（不改写配置文件）。
 - [DamonKoy/dsh-plugins#dsh-system-proxy](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-system-proxy) — 系统代理检测（scutil/env/PAC）：状态工具 + proxy_export 导出 bash 代理片段。
